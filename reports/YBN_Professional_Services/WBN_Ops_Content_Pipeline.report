@@ -52,7 +52,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Solution,Contract,Closed Won,Closed Lost</value>
+            <value>Solution,Contract,Closed Won,Closed Lost,Client Discovery,Demo/Value Prop</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Opportunity_Detail__c</column>
@@ -62,11 +62,11 @@
             <value>YBN Corporate Opportunity</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.National_Account_Status__c</column>
+            <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>,Prospect,Parent Company - Prospect,Prospect - With Bottoms Up Accounts</value>
+            <value>Opportunity.YBN_Growth_Opportunity</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -93,7 +93,7 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>CLOSE_DATE</sortColumn>
+    <sortColumn>ACCOUNT_NAME</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>

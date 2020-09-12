@@ -110,6 +110,13 @@
             <operator>contains</operator>
             <value>Pin Collection</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lighthouse,National Account,National Master Account,YBN</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>

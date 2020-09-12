@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
@@ -33,6 +36,9 @@
     <columns>
         <field>Account.Next_Billing_Date__c</field>
     </columns>
+    <columns>
+        <field>Account.invoiced_last_mtd__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>Account.Status__c</column>
@@ -47,6 +53,20 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse Field Service</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Test_Management__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Internal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

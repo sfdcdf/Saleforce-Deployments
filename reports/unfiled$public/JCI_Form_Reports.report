@@ -39,6 +39,54 @@
     <columns>
         <field>EMAIL</field>
     </columns>
+    <columns>
+        <field>Lead.Who_is_the_Portal_Submitted_By__c</field>
+    </columns>
+    <columns>
+        <field>Lead.If_Other_what_is_your_title__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Dealer_Type__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Template__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Marketing_Tagline__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Payment_Methods__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Business_Hours_of_Operation__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Geographical_Areas_to_Service__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Service_Needed__c</field>
+    </columns>
+    <columns>
+        <field>Lead.JCI_Facebook_Link__c</field>
+    </columns>
+    <columns>
+        <field>Lead.JCI_Twitter_Link__c</field>
+    </columns>
+    <columns>
+        <field>Lead.JCI_Google_Link__c</field>
+    </columns>
+    <columns>
+        <field>Lead.JCI_YouTube_Link__c</field>
+    </columns>
+    <columns>
+        <field>Lead.JCI_Angies_List_Link__c</field>
+    </columns>
+    <columns>
+        <field>Lead.JCI_Custom_Logo__c</field>
+    </columns>
+    <columns>
+        <field>Lead.JCI_About_Us_Content__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>LEAD_SOURCE</column>
@@ -66,12 +114,10 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>CREATED_DATE</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
-        <endDate>2018-12-31</endDate>
+        <endDate>2020-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-01-01</startDate>
+        <startDate>2020-01-01</startDate>
     </timeFrameFilter>
 </Report>

@@ -1,25 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>anne.fulton@yodle.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>craines@yodle.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>shannon.vaughn@yodle.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>tdube@yodle.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
+    
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>VPofOperations</sharedTo>
@@ -64,6 +45,10 @@
         <accessLevel>View</accessLevel>
         <sharedTo>WebDev</sharedTo>
         <sharedToType>Role</sharedToType>
+    </folderShares><folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>anne.fulton@yodle.com</sharedTo>
+        <sharedToType>User</sharedToType>
     </folderShares>
     <name>CS Management Reports</name>
 </ReportFolder>

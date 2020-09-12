@@ -15,6 +15,18 @@
     <columns>
         <field>Account.Product_Team_Applicability__c</field>
     </columns>
+    <columns>
+        <field>Account.Biz_Dev_Product_Line_Manager__c</field>
+    </columns>
+    <columns>
+        <field>Account.Biz_Dev_Product_Manager__c</field>
+    </columns>
+    <columns>
+        <field>Account.Biz_Dev_Internal_Product_Division__c</field>
+    </columns>
+    <columns>
+        <field>Account.Biz_Dev_Internal_Division_Owner__c</field>
+    </columns>
     <description>All Active Product and Corp Procurement Partners in SBD</description>
     <filter>
         <criteriaItems>
@@ -33,6 +45,11 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>USERS.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>SBD All Active Partners</name>
     <params>
         <name>co</name>

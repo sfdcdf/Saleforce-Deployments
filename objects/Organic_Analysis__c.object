@@ -139,6 +139,21 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to track our maps verification and pin collection</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>ASW_OPO__c</fullName>
         <externalId>false</externalId>
@@ -13447,67 +13462,7 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Used to track our maps verification and pin collection</description>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Organic Case</label>
-    <nameField>
-        <displayFormat>YO-{0000}</displayFormat>
-        <label>YO ID</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Organic Cases</pluralLabel>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts>
-        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Attempts_to_Contact__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Client_Type__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>IMS_Rep__c</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Account_Name__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Client_ID__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Attempts_to_Contact__c</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Account_Name__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Attempts_to_Contact__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Client_ID__c</lookupPhoneDialogsAdditionalFields>
-        <searchFilterFields>RECORDTYPE</searchFilterFields>
-        <searchFilterFields>OBJECT_ID</searchFilterFields>
-        <searchFilterFields>Account_Name__c</searchFilterFields>
-        <searchFilterFields>Client_ID__c</searchFilterFields>
-        <searchFilterFields>CREATED_DATE</searchFilterFields>
-        <searchFilterFields>Status__c</searchFilterFields>
-        <searchFilterFields>Attempts_to_Contact__c</searchFilterFields>
-        <searchFilterFields>Client_Type__c</searchFilterFields>
-        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Account_Name__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Attempts_to_Contact__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
-    <startsWith>Vowel</startsWith>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>Bulk_Close_Photo_Upload</fullName>
         <columns>NAME</columns>
@@ -13590,12 +13545,23 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         <fullName>Maps_Customer_Support</fullName>
         <columns>RECORDTYPE</columns>
         <columns>NAME</columns>
+        <columns>Parent_Account_Name__c</columns>
         <columns>Account_Name__c</columns>
         <columns>Client_ID__c</columns>
         <columns>CREATED_DATE</columns>
+        <columns>Listing_1_Action_Completed__c</columns>
         <columns>Status__c</columns>
-        <columns>Attempts_to_Contact__c</columns>
         <filterScope>Queue</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <filters>
+            <field>Client_Type__c</field>
+            <operation>equals</operation>
+            <value>YBN</value>
+        </filters>
         <label>Maps Customer Support</label>
         <queue>MapsCustomerSupport</queue>
     </listViews>
@@ -13887,6 +13853,27 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         </sharedTo>
     </listViews>
     <listViews>
+        <fullName>SubbaMaps_Initial_Claiming_Case</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Name__c</columns>
+        <columns>AdStation_Status__c</columns>
+        <columns>Google_PIN_Send_Attempts__c</columns>
+        <columns>Location_Group_Id__c</columns>
+        <columns>Google_Login_Email__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming,Organic_Analysis__c.Maps_Initial_Claiming_Test</value>
+        </filters>
+        <filters>
+            <field>CSC_Date_Time__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <label>SubbaMaps Initial Claiming Case</label>
+    </listViews>
+    <listViews>
         <fullName>YBN_PES_Team_Organic_Analysis</fullName>
         <filterScope>Queue</filterScope>
         <label>(DONOTUSE) YBN PES Team</label>
@@ -13904,6 +13891,16 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <nameField>
+        <displayFormat>YO-{0000}</displayFormat>
+        <label>YO ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Organic Cases</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Canda_Maps_Claiming</fullName>
         <active>true</active>
@@ -64271,6 +64268,41 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Attempts_to_Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IMS_Rep__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Client_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Attempts_to_Contact__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Attempts_to_Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_ID__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>RECORDTYPE</searchFilterFields>
+        <searchFilterFields>OBJECT_ID</searchFilterFields>
+        <searchFilterFields>Account_Name__c</searchFilterFields>
+        <searchFilterFields>Client_ID__c</searchFilterFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchFilterFields>Attempts_to_Contact__c</searchFilterFields>
+        <searchFilterFields>Client_Type__c</searchFilterFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Attempts_to_Contact__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
     <validationRules>
         <fullName>Attempts_to_Contact</fullName>
         <active>true</active>
@@ -64432,6 +64464,7 @@ ISBLANK( Created_Email_PW__c)
     ISBLANK(Listing_2_Business_Name_Address__c)
   )
 )</errorConditionFormula>
+        <errorDisplayField>Htaccess_File_Functioning__c</errorDisplayField>
         <errorMessage>All Listing 2 Fields must be filled in.</errorMessage>
     </validationRules>
     <validationRules>
@@ -64739,6 +64772,7 @@ ISPICKVAL(Pin_Action_Reason__c, "Maps Contact - Comanage")
 )</errorConditionFormula>
         <errorMessage>Only MVT and SEO Members Can Create this Pin Action Reason Case Type</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
     <webLinks>
         <fullName>Update_Lead_in_Marketo_ADMIN_ONLY</fullName>
         <availability>online</availability>

@@ -43,7 +43,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Brian Pekarek,Andrea Wilson,Andrea Murray,Michael Chaides,Stephanie Cinque,Ashleigh Ratkovich,Ashland Murphy,Jared Pfaff,Kavar McDaniel,Tiffany Cleveland</value>
+            <value>Shaun McGee,Jared Pfaff</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -59,6 +59,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Organic_Analysis__c.Closed_Date__c</dateColumn>
-        <interval>INTERVAL_LAST60</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

@@ -42,6 +42,13 @@
             <operator>notEqual</operator>
             <value>test,Test Accounts for Internal Use</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LIVE,PROVISIONING</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>

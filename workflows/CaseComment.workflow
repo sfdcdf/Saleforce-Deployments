@@ -24,39 +24,6 @@
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Fire_Drill_Case_Comment_Added</template>
     </alerts>
-    <alerts>
-        <fullName>YBN_new_case_comment</fullName>
-        <description>YBN new case comment email alert</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>sarah.mctate@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>National_Templates/YBN_new_case_comment</template>
-    </alerts>
-    <alerts>
-        <fullName>YBN_new_case_comment_email_alert</fullName>
-        <description>YBN new case comment email alert</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>sarah.mctate@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>National_Templates/YBN_new_case_comment</template>
-    </alerts>
-    <alerts>
-        <fullName>YBN_new_case_comment_email_alertS</fullName>
-        <description>YBN new case comment email alert</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>sarah.mctate@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>National_Templates/YBN_new_case_comment</template>
-    </alerts>
     <fieldUpdates>
         <fullName>lock_case_comment_true</fullName>
         <field>lock_case_comments__c</field>

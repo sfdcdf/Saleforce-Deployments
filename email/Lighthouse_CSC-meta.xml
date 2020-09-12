@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
-    <accessType>Shared</accessType>
+    <accessType>Public</accessType>
     <name>Lighthouse CSC</name>
     <publicFolderAccess>ReadOnly</publicFolderAccess>
-    <sharedTo>
-        <group>Email_template_Access</group>
-        <role>Lighthouse_CS</role>
-        <role>Lighthouse_CSC_Rep</role>
-        <role>Lighthouse_Config_Rep</role>
-        <role>Lighthouse_Inbound</role>
-        <role>Lighthouse_Install_Rep</role>
-        <role>Lighthouse_Marketing_Associate</role>
-        <role>Program_Management</role>
-        <role>TrainingExecutive</role>
-    </sharedTo>
 </EmailFolder>

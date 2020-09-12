@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -13,7 +13,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -28,7 +28,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorBreakpoint1>3.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>6.0</indicatorBreakpoint2>
             <indicatorHighColor>#C25454</indicatorHighColor>
@@ -45,7 +45,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -60,7 +60,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorBreakpoint1>2.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>5.0</indicatorBreakpoint2>
             <indicatorHighColor>#C25454</indicatorHighColor>
@@ -77,7 +77,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorBreakpoint1>10.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>25.0</indicatorBreakpoint2>
             <indicatorHighColor>#C25454</indicatorHighColor>
@@ -94,7 +94,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -109,7 +109,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorBreakpoint1>10.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>25.0</indicatorBreakpoint2>
             <indicatorHighColor>#C25454</indicatorHighColor>
@@ -120,6 +120,21 @@
             <sortBy>RowLabelAscending</sortBy>
             <title>IB/OB: Acct Update, Offer, &amp; Opt Cases</title>
         </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>unfiled$public/Completed_Oracle_Cases_CS</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Completed Oracle Cases</title>
+        </components>
     </leftSection>
     <middleSection>
         <columnSize>Medium</columnSize>
@@ -129,7 +144,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorBreakpoint1>3.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>6.0</indicatorBreakpoint2>
             <indicatorHighColor>#C25454</indicatorHighColor>
@@ -146,7 +161,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -161,7 +176,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -176,7 +191,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorBreakpoint1>2.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>5.0</indicatorBreakpoint2>
             <indicatorHighColor>#C25454</indicatorHighColor>
@@ -193,7 +208,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -208,14 +223,29 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>National_Reports/IB_OB_Crew_Open_Organic_Opt_Cases</report>
+            <report>National_Reports/WFE_0_6_NPS_Responses_Open</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
-            <title>IB/OB Team: Organic Opt Cases</title>
+            <title>Scores of 0-6 Location Responses</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>National_Reports/WFE_7_10_NPS_Responses_Open</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Scores of 7-10 Location Responses</title>
         </components>
     </middleSection>
     <rightSection>
@@ -226,7 +256,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -241,7 +271,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -270,7 +300,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C25454</indicatorMiddleColor>
@@ -284,7 +314,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -299,22 +329,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>National_Reports/Cons_Today_s_TP_Attempts_Completes</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>My TP Attempts/Completes Today</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -322,21 +337,6 @@
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
             <title>IB/OB:Past Due/Upcoming TPs Next 2 Wks</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>National_Reports/IB_OB_Team_Today_s_Attempts_Completes</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>IB/OB Team: TP Attempts/Completes Today</title>
         </components>
     </rightSection>
     <runningUser>sarah.mctate@yodle.com</runningUser>

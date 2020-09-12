@@ -46,7 +46,7 @@
     </columns>
     <description>Queue for IT Pro - existing listings that have been claimed and need updating</description>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND (9 OR 10 OR 11 OR 12)</booleanFilter>
+        <booleanFilter>((1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND (9 OR 10 OR 11 OR 12)) AND 13) AND 14</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
             <columnToColumn>false</columnToColumn>
@@ -130,6 +130,20 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Listing Claimed Needs Updating</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Owner_Verified_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Owner Verified/Managed - Read Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Active Listing - Read Only</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

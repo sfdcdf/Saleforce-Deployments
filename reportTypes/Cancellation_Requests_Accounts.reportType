@@ -212,6 +212,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Test_Account__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Annual_Revenue__c</field>
             <table>Account</table>
         </columns>
@@ -397,26 +402,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Cancel_Code_2_Details__c</field>
-            <table>Account.Cancellation_Requests__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Cancel_Code_2__c</field>
-            <table>Account.Cancellation_Requests__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Cancel_Code_1_Details__c</field>
-            <table>Account.Cancellation_Requests__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Cancel_Code_1__c</field>
-            <table>Account.Cancellation_Requests__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Budget_Change_Date__c</field>
             <table>Account</table>
         </columns>
@@ -434,11 +419,6 @@
             <checkedByDefault>false</checkedByDefault>
             <field>Budget_Last_Changed_By__c</field>
             <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Cancel_Type__c</field>
-            <table>Account.Cancellation_Requests__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
@@ -2655,6 +2635,36 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Type__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Code_1__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Code_1_Details__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Code_2__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Code_2_Details__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cancellation_Status__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Outcome__c</field>
             <table>Account.Cancellation_Requests__r</table>
         </columns>
@@ -3000,6 +3010,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Teardown_Date__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Upsell_Details__c</field>
             <table>Account.Cancellation_Requests__r</table>
         </columns>
@@ -3056,6 +3071,26 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>User_Manager__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Approval_By__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Outcome_Sub_Status__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Sales_Rep_Email__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Revenue_Lost_Month__c</field>
             <table>Account.Cancellation_Requests__r</table>
         </columns>
         <masterLabel>Cancellation Requests</masterLabel>

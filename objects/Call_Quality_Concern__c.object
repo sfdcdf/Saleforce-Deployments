@@ -139,6 +139,21 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To submit call quality concerns from clients to Marketing Ops team to review for potential paused distribution outlets.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -1315,36 +1330,7 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>To submit call quality concerns from clients to Marketing Ops team to review for potential paused distribution outlets.</description>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Call Quality Concern</label>
-    <nameField>
-        <displayFormat>Q-{00000}</displayFormat>
-        <label>Call Quality Concern ID</label>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Call Quality Concerns</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>Client_ID__c</columns>
@@ -1372,6 +1358,20 @@ not(isblank( Callers_are_Often_Calling_For__c ))),
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <nameField>
+        <displayFormat>Q-{00000}</displayFormat>
+        <label>Call Quality Concern ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Call Quality Concerns</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Blacklist_Number_Must_Be_Numbers</fullName>
         <active>true</active>
@@ -1445,4 +1445,5 @@ isblank(Callers_are_Often_Calling_For__c ))</errorConditionFormula>
         <errorDisplayField>Callers_are_Often_Calling_For__c</errorDisplayField>
         <errorMessage>You must fill in Callers are Often Calling For if you indicate that many of the calls for the same business.</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>

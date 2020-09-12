@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
-    <assignments>
-        <users>
-            <user>cjackobel@yodle.com</user>
-            <user>dawn.jordan@yodle.com</user>
-            <user>linda.keating@yodle.com</user>
-            <user>marsha.cunningham@yodle.com</user>
-        </users>
-    </assignments>
     <autoGreeting>Hi, thanks for contacting us. My name is {!User_FirstName}. Who do I have the pleasure of speaking with today?</autoGreeting>
     <capacity>3</capacity>
     <criticalWaitTime>45</criticalWaitTime>

@@ -3,25 +3,22 @@
         <fullName>WBN_Send_Email_New_Key_Decision_maker_contact_added_to_Master_Acc</fullName>
         <description>WBN - Send Email when a New Key Decision Maker contact added to master Acc record Type</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>dlynch@web.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jennifer.hendrickson@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>lmayo@web.com.yodle</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>raymond.rosario@web.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/WBN_New_Key_Contact_YBN_Master_Account</template>
-    </alerts>
+    <recipients>
+            <recipient>dlynch@web.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>jennifer.hendrickson@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>raymond.rosario@web.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <fieldUpdates>
         <fullName>Date_Post_Launch_Survey_Sent</fullName>
         <field>Date_Post_Launch_Survey_Sent__c</field>
@@ -93,17 +90,4 @@
         <description>Contact is added/edited where Role = 'Decision Maker' on YBN Master Account Records</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
-    <tasks>
-        <fullName>TEST_AMM_New_Keu_Decision_Maker_Alert</fullName>
-        <assignedTo>annemarie.messineo@yodle.com</assignedTo>
-        <assignedToType>user</assignedToType>
-        <description>Testing alert</description>
-        <dueDateOffset>0</dueDateOffset>
-        <notifyAssignee>false</notifyAssignee>
-        <offsetFromField>Contact.CreatedDate</offsetFromField>
-        <priority>Normal</priority>
-        <protected>false</protected>
-        <status>Not Started</status>
-        <subject>TEST-New Key Decision Maker Alert</subject>
-    </tasks>
 </Workflow>

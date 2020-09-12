@@ -4,6 +4,9 @@
         <field>SUBJECT</field>
     </columns>
     <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <columns>
         <field>DUE_DATE</field>
     </columns>
     <columns>
@@ -43,6 +46,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <interval>INTERVAL_LASTWEEK</interval>
     </timeFrameFilter>
 </Report>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -14,8 +14,8 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Auto</displayUnits>
-                <groupingSortProperties/>
-                <header>Prior Day&apos;s Dials</header>
+                <groupingSortProperties />
+                <header>Prior Day's Dials</header>
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -38,7 +38,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Auto</displayUnits>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <header>Current Week Dials</header>
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
@@ -62,7 +62,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Auto</displayUnits>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <header>Prior Day Closed Won Deals</header>
                 <indicatorBreakpoint1>4.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
@@ -86,7 +86,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Auto</displayUnits>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <indicatorBreakpoint1>20.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>60.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -109,7 +109,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -133,7 +133,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <indicatorBreakpoint1>1000.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>5000.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -163,7 +163,7 @@
                 <enableHover>true</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>Activity$Owner</groupingColumn>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <header>Prior Day Call Data by Rep</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>WBN_SE_MGMT/Call_Report_SE_SDR_Yest</report>
@@ -193,7 +193,7 @@
                 <enableHover>true</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>Activity$Owner</groupingColumn>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <header>Current Week Call Data by Rep</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>WBN_SE_MGMT/Call_Report_SE_SDR</report>
@@ -223,7 +223,7 @@
                 <enableHover>true</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>FULL_NAME</groupingColumn>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <header>Prior Day Closed Won by SE</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>WBN_SE_MGMT/CW_IL_Sales_Yest</report>
@@ -253,7 +253,7 @@
                 <enableHover>true</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>Activity$Owner</groupingColumn>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <legendPosition>Bottom</legendPosition>
                 <report>WBN_SE_MGMT/Call_Report_SE_SDR_Yest</report>
                 <showPercentage>false</showPercentage>
@@ -277,7 +277,7 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>true</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <legendPosition>Bottom</legendPosition>
                 <report>WBN_SE_MGMT/Call_Report_SE_SDR</report>
                 <showPercentage>false</showPercentage>
@@ -307,7 +307,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>FULL_NAME</groupingColumn>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <legendPosition>Bottom</legendPosition>
                 <report>WBN_SE_MGMT/CW_IL_Sales_Yest</report>
                 <showPercentage>false</showPercentage>
@@ -331,19 +331,20 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarGrouped</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>true</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>ASSIGNED</groupingColumn>
-                <groupingColumn>Activity.Milestone__c</groupingColumn>
-                <groupingSortProperties/>
-                <header>Demos Set/Held</header>
-                <legendPosition>Bottom</legendPosition>
+                <groupingColumn>BucketField_49621723</groupingColumn>
+                <groupingSortProperties />
+                <header>SE Demo Set/Held Yest</header>
+                <legendPosition>Right</legendPosition>
                 <report>WBN_SE_MGMT/SE_Demo_Set_Held_Yest</report>
                 <showPercentage>false</showPercentage>
-                <showValues>false</showValues>
+                <showValues>true</showValues>
                 <sortBy>RowValueDescending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
@@ -361,19 +362,20 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarGrouped</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>true</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>ASSIGNED</groupingColumn>
-                <groupingColumn>Activity.Milestone__c</groupingColumn>
-                <groupingSortProperties/>
-                <header>Demos Set/Held</header>
+                <groupingColumn>BucketField_17818025</groupingColumn>
+                <groupingSortProperties />
+                <header>CW IL Demo Set / Ran</header>
                 <legendPosition>Right</legendPosition>
                 <report>WBN_SE_MGMT/CW_IL_Demo_Set_Ran</report>
                 <showPercentage>false</showPercentage>
-                <showValues>false</showValues>
+                <showValues>true</showValues>
                 <sortBy>RowValueDescending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
@@ -390,7 +392,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Auto</displayUnits>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <header>Current Week Closed Won Deals</header>
                 <indicatorBreakpoint1>20.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>40.0</indicatorBreakpoint2>
@@ -415,7 +417,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <indicatorBreakpoint1>8000.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>14000.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -445,7 +447,7 @@
                 <enableHover>true</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>FULL_NAME</groupingColumn>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <header>Current Week Closed Won by SE</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>WBN_SE_MGMT/CW_IL_Sales</report>
@@ -476,7 +478,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>FULL_NAME</groupingColumn>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <legendPosition>Bottom</legendPosition>
                 <report>WBN_SE_MGMT/CW_IL_Sales</report>
                 <showPercentage>false</showPercentage>
@@ -499,7 +501,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <header>Current Month Totals</header>
                 <indicatorBreakpoint1>80000.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>100000.0</indicatorBreakpoint2>
@@ -530,7 +532,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>FULL_NAME</groupingColumn>
-                <groupingSortProperties/>
+                <groupingSortProperties />
                 <header>Current Month Closed Won by SE</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>National_Sales/MTD_NCSE_Sales_for_Commissions</report>

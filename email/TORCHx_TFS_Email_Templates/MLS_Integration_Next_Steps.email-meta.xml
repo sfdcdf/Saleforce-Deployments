@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send once we begin MLS integration phase</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TORCHx</letterhead>
+    <name>MLS Integration - Next Steps- Revamped Emails</name>
+    <style>freeForm</style>
+    <subject>TORCHx MLS INTEGRATION – Next Steps:</subject>
+    <textOnly>Hi {Client_First_Name__ },
+
+
+We have some great news! We’re beginning the MLS integration phase of your TORCHx website!
+
+
+What we&apos;ll do:
+
+
+Connect with the MLS database, which contains all of the properties we list on your website
+Pull in any properties you wish to have displayed on the site
+Remove any properties you do not wish to display
+
+
+If you have any additional questions, feel free to give us a call at
+
+1 (888) 428-9659.  We&apos;re available Monday - Friday from 8:00 a.m. – 7:00 p.m. EST
+
+
+You can find 24/7 support here:
+
+INSERT SINGLE PAGE LINK
+
+
+Thank you for choosing TORCHx. We appreciate your business!
+
+
+{!User.FirstName}
+
+TORCHx Support
+
+(888) 428-9659</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

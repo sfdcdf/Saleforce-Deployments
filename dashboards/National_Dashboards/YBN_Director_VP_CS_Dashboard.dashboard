@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -16,7 +16,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>National_Reports/Current_relationships_by_Service_Level</report>
             <showPercentage>false</showPercentage>
@@ -39,7 +39,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Account.Individual_Location_Service_Level__c</groupingColumn>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>National_Reports/Consultant_Dash_service_level</report>
             <showPercentage>false</showPercentage>
@@ -54,7 +54,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -67,7 +67,7 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -81,14 +81,14 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>National_Reports/YBN_Cons_Mgr_Team_s_Save_Mode_Accts</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Consultant&apos;s PPC Save Mode Accts</title>
+            <title>Consultant's PPC Save Mode Accts</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -96,7 +96,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -114,7 +114,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -129,7 +129,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -144,7 +144,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -159,7 +159,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -174,41 +174,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <indicatorBreakpoint1>4.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>7.0</indicatorBreakpoint2>
-            <indicatorHighColor>#C25454</indicatorHighColor>
-            <indicatorLowColor>#54C254</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>National_Reports/YBN_Cons_CSDs_Cases_1</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>Cons/CSD YBN Master/Master/Inbound Cases</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <indicatorBreakpoint1>5.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
-            <indicatorHighColor>#C25454</indicatorHighColor>
-            <indicatorLowColor>#54C254</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>National_Reports/YBN_Cons_CSDs_Cases_2</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>Cons/CSD Acct Update &amp; Opt Cases</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -223,7 +189,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -241,7 +207,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -256,7 +222,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -271,14 +237,14 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>National_Reports/Cons_CSDs_Open_Outbound_TPs</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Team&apos;s Open Outbound TPs</title>
+            <title>Team's Open Outbound TPs</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -286,14 +252,14 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>National_Reports/ybn_CSCs_needed</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Team&apos;s Accounts Needing CSCs</title>
+            <title>Team's Accounts Needing CSCs</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -301,14 +267,14 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>National_Reports/YBN_Upcoming_TPs</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Team&apos;s Upcoming &amp; Past Due TPs</title>
+            <title>Team's Upcoming &amp; Past Due TPs</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -316,14 +282,44 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>National_Reports/Mgr_Today_s_TP_Attempts_Completes</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Today&apos;s TP Attempts / Completes</title>
+            <title>Today's TP Attempts / Completes</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>National_Reports/WFE_NPS_2018_W_Contact_ID1</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>All Location Responses</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>National_Reports/WFE_Corp_NPS_Responses_All_Scores</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>All Corporate Responses</title>
         </components>
     </rightSection>
     <runningUser>sarah.mctate@yodle.com</runningUser>

@@ -36,8 +36,11 @@
     <columns>
         <field>Account$Next_TP_Needed_By__c</field>
     </columns>
+    <columns>
+        <field>Account$Last_Completed_YBN_TP__c</field>
+    </columns>
     <filter>
-        <booleanFilter>(1 AND 2 AND 3 AND 4 AND (5 OR 6) AND 7 AND 8 AND 9) AND 10</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6 or 11) AND 7 AND 8 AND 9 AND 10</booleanFilter>
         <criteriaItems>
             <column>Account$Status__c</column>
             <columnToColumn>false</columnToColumn>
@@ -108,6 +111,13 @@
             <operator>notEqual</operator>
             <value>Prefers No Contact</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account$Next_TP_Needed_By__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -122,7 +132,7 @@
     </params>
     <reportType>Accounts_and_Cases__c</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <sortColumn>Account$Next_TP_Needed_By__c</sortColumn>

@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
-        <fullName>Lead_Mktg_Alert_ION_lead_creation</fullName>
-        <description>Lead - Mktg - Alert ION lead creation</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>mary.kellum@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Marketing/New_Lead_Notification_ION</template>
-    </alerts>
-    <alerts>
         <fullName>Lead_Mktg_Alert_ION_lead_validated</fullName>
         <description>Lead - Mktg - Alert ION lead validated</description>
         <protected>false</protected>
@@ -771,10 +760,6 @@
     </rules>
     <rules>
         <fullName>YBN - Mktg - Alert ION lead creation</fullName>
-        <actions>
-            <name>Lead_Mktg_Alert_ION_lead_creation</name>
-            <type>Alert</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Lead.LeadSource</field>

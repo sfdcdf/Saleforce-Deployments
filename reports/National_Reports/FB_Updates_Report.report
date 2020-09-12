@@ -51,6 +51,13 @@
             <operator>equals</operator>
             <value>Case.YBN_Request</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>FB Updates Report</name>

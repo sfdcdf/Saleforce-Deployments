@@ -43,7 +43,7 @@
         <field>ESCALATION_STATE</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND (2 OR 3) AND 4 AND 5 AND 6</booleanFilter>
+        <booleanFilter>(1 AND (2 OR 3) AND 4 AND 5 AND 6)</booleanFilter>
         <criteriaItems>
             <column>CLOSED</column>
             <columnToColumn>false</columnToColumn>
@@ -70,7 +70,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
-            <value>Offer Verification</value>
+            <value>Offer Verification,OR 3.0 - Organic Setup Search Influence</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.general_notes__c</column>
@@ -107,8 +107,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Case.Case_Age__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
+    <sortColumn>STATUS</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

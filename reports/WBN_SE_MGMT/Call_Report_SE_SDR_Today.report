@@ -44,9 +44,6 @@
         <field>Activity$CallDurationInSeconds</field>
     </columns>
     <columns>
-        <field>Activity$LOCC_App__Call_Recording__c</field>
-    </columns>
-    <columns>
         <field>Activity$CallType</field>
     </columns>
     <columns>
@@ -81,7 +78,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
-            <value>SDR,sales executive</value>
+            <value>SDR,sales executive,Sales Manager</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$LOCC_App__campaignname__c</column>
@@ -103,6 +100,7 @@
         <value>1</value>
     </params>
     <reportType>Activities__c</reportType>
+    <roleHierarchyFilter>YBN_SVP_GM</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

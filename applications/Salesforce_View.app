@@ -19,6 +19,4 @@
     <tabs>Worksheets__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Notification_Log__c</tabs>
-    <tabs>MarketoLeadSFAccountMapping__c</tabs>
-    <tabs>Schedule_Split__c</tabs>
 </CustomApplication>

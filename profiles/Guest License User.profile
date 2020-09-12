@@ -1846,19 +1846,19 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>LiveAgentSession.NumFlagLoweredAgent</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>LiveAgentSession.NumFlagLoweredSupervisor</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>LiveAgentSession.NumFlagRaised</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -2046,9 +2046,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>LiveChatTranscript.VisitorNetwork</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -3260,9 +3260,6 @@
         <recordType>Account.YBN_Strategic_Partner_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AccountBeacon__c-AccountBeacon Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>AccountBrand-Account BrandLayout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3280,9 +3277,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account_Snapshot__c-Account Snapshot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Acct_Email_Sub_to_Survey__c-Acct Email Sub to Survey Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Activity_Type__c-Activity Type Layout</layout>
@@ -3944,6 +3938,15 @@
         <recordType>Contact.YBN_IL_Contact_Type</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ContactPointAddress-Contact Point Address Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointEmail-Contact Point Email Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointPhone-Contact Point Phone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ContentVersion-General</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4129,6 +4132,9 @@
         <layout>DebugInfo__c-Debug Info Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>DuplicateRecordItem-Duplicate Record Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4300,6 +4306,9 @@
         <recordType>Lighthouse_Worksheets__c.PMS_Swap_Form</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>LinkedArticle-Linked Article Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ListEmail-List Email Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4334,9 +4343,6 @@
         <layout>Macro-Macro Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Marketo_Campaign__c-Marketo Campaign Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4359,6 +4365,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Mgmt_Goal__c-Mgmt Goal Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MilestoneSnapshotobj__c-MilestoneSnapshotobj Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Milestone_Conversion__c-Milestone Conversion Layout</layout>
@@ -4461,6 +4470,14 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Forecast_Client_Services</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Forecast_Network_Sales</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
         <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -4474,6 +4491,14 @@
     <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
         <recordType>Opportunity.Partner_CPP_Child_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Plan_Client_Services</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+        <recordType>Opportunity.Plan_Network_Sales</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
@@ -4498,6 +4523,9 @@
     <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
         <recordType>Opportunity.YBN_Strategic_Partner_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OpportunityContactRole-Opportunity Contact Role Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>OpportunityLineItem-Opportunity Product Layout</layout>
@@ -4687,9 +4715,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Sales_Wizard_API_Setting__mdt-Sales Wizard API Setting Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Schedule_Split__c-Schedule Split Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Scheduled_Data_Pull_from_YL_to_SF__c-Scheduled Data Pull from YL to SF Layout</layout>
@@ -5955,6 +5980,16 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Opportunity.Forecast_Client_Services</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Forecast_Network_Sales</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -5971,6 +6006,16 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.Partner_CPP_Child_Account</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Plan_Client_Services</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Plan_Network_Sales</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -6289,7 +6334,7 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
-        <tab>Schedule_Split__c</tab>
+        <tab>MilestoneSnapshotobj__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -6413,10 +6458,6 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Acct_Email_Sub_to_Survey__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Activity_Type__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -6502,10 +6543,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>MLS__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

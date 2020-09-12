@@ -2,15 +2,9 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
         <processMetadataValues>
-            <name>processSelection</name>
-            <value>
-                <stringValue>Organic Google Request Approval - Organic_Google_Request_Approval</stringValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
             <name>selectionType</name>
             <value>
-                <stringValue>selectedProcess</stringValue>
+                <stringValue>firstFound</stringValue>
             </value>
         </processMetadataValues>
         <processMetadataValues>
@@ -33,18 +27,6 @@
         </inputParameters>
         <inputParameters>
             <name>comment</name>
-        </inputParameters>
-        <inputParameters>
-            <name>processDefinitionNameOrId</name>
-            <value>
-                <stringValue>Organic_Google_Request_Approval</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>skipEntryCriteria</name>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
         </inputParameters>
     </actionCalls>
     <assignments>
@@ -239,7 +221,7 @@
             <label>Check for Organic Case Features</label>
         </rules>
     </decisions>
-    <interviewLabel>Organic_Case_Google_Approval_Process-6_InterviewLabel</interviewLabel>
+    <interviewLabel>Organic_Case_Google_Approval_Process-3_InterviewLabel</interviewLabel>
     <label>Organic Case - Google Approval Process</label>
     <processMetadataValues>
         <name>ObjectType</name>

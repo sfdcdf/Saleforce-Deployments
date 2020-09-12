@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_49621723</developerName>
+        <masterLabel>Demo Activity</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Activity.Milestone__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Ran IL Demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Demo &amp; Value Presentation</sourceValue>
+            </sourceValues>
+            <value>Ran Demo</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>IL Demo Scheduled</sourceValue>
+            </sourceValues>
+            <value>Scheduled Demo</value>
+        </values>
+    </buckets>
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
         <backgroundColor2>#FFFFFF</backgroundColor2>
@@ -11,7 +34,7 @@
         <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Activity.Milestone__c</groupingColumn>
+        <groupingColumn>ASSIGNED</groupingColumn>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -70,13 +93,13 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>IL Demo Scheduled,Ran IL Demo</value>
+            <value>IL Demo Scheduled,Ran IL Demo,Demo &amp; Value Presentation</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
-        <field>Activity.Milestone__c</field>
+        <field>BucketField_49621723</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>

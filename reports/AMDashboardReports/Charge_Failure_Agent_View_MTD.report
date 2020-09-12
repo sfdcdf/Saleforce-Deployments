@@ -56,6 +56,9 @@
     <columns>
         <field>Case.Reason__c</field>
     </columns>
+    <columns>
+        <field>Case.Product_Type__c</field>
+    </columns>
     <filter>
         <booleanFilter>1 AND 2 AND 3</booleanFilter>
         <criteriaItems>

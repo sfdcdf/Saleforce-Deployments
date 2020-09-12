@@ -44,9 +44,6 @@
         <field>Activity$CallDurationInSeconds</field>
     </columns>
     <columns>
-        <field>Activity$LOCC_App__Call_Recording__c</field>
-    </columns>
-    <columns>
         <field>Activity$CallType</field>
     </columns>
     <columns>
@@ -81,7 +78,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
-            <value>Patrick quinlan,Press Miller</value>
+            <value>clayton carter,Press Miller</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$LOCC_App__campaignname__c</column>

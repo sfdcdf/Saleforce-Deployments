@@ -18,7 +18,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Andrea Murray,Kavar McDaniel,Jared Pfaff</value>
+            <value>Jared Pfaff,Kavar McDaniel,Shaun Mcgee</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -40,6 +40,6 @@
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Case.PES_Campaigns_Completed_Date__c</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <interval>INTERVAL_LASTWEEK</interval>
     </timeFrameFilter>
 </Report>

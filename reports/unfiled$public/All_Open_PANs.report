@@ -22,6 +22,12 @@
         <field>Account.Organic_Analyses__r$Client_ID__c</field>
     </columns>
     <columns>
+        <field>Account.Organic_Analyses__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account$Status__c</field>
+    </columns>
+    <columns>
         <field>Account.Organic_Analyses__r$Name</field>
     </columns>
     <columns>
@@ -72,6 +78,13 @@
             <operator>notContain</operator>
             <value>IT Pro</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>National Account,National Master Account,Lighthouse,YBN</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -94,6 +107,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Organic_Analyses__r$Pin_Action_Taken__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account.Organic_Analyses__r$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

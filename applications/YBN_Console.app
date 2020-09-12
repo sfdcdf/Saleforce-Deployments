@@ -197,14 +197,9 @@
     <tabs>standard-Chatter</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Notification_Log__c</tabs>
-    <tabs>MarketoLeadSFAccountMapping__c</tabs>
-    <tabs>Schedule_Split__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>CS_Operations__c</tab>
-        </mappings>
-        <mappings>
-            <tab>MarketoLeadSFAccountMapping__c</tab>
         </mappings>
         <mappings>
             <tab>Notification_Log__c</tab>
@@ -215,9 +210,6 @@
         </mappings>
         <mappings>
             <tab>Quality_Team_Rep_Management</tab>
-        </mappings>
-        <mappings>
-            <tab>Schedule_Split__c</tab>
         </mappings>
         <mappings>
             <tab>standard-Account</tab>

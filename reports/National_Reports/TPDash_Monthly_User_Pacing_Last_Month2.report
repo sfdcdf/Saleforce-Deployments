@@ -28,7 +28,7 @@
         <scale>0</scale>
     </aggregates>
     <aggregates>
-        <calculatedFormula>0.90</calculatedFormula>
+        <calculatedFormula>1.00</calculatedFormula>
         <datatype>percent</datatype>
         <developerName>FORMULA4</developerName>
         <isActive>true</isActive>
@@ -67,7 +67,7 @@
     </chart>
     <colorRanges>
         <columnName>FORMULA3</columnName>
-        <highBreakpoint>90.0</highBreakpoint>
+        <highBreakpoint>100.0</highBreakpoint>
         <highColor>#54C254</highColor>
         <lowBreakpoint>0.0</lowBreakpoint>
         <lowColor>#C25454</lowColor>
@@ -110,7 +110,7 @@
         <field>Account.Cases$Attempt_1_Method__c</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND (2 OR 3 OR (8 AND 9)) AND (4 OR (5 AND 6)) AND 7 AND (((10 OR 11) AND 15) OR 14) AND 12 AND 13</booleanFilter>
+        <booleanFilter>(1 AND (2 OR 3 OR (8 AND 9)) AND (4 OR (5 AND 6)) AND 7 AND (((10 OR 11) AND 15) OR 14) AND 12 AND 13) AND 16</booleanFilter>
         <criteriaItems>
             <column>Account$Include_Pacing__c</column>
             <columnToColumn>false</columnToColumn>
@@ -215,6 +215,13 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Weekly_TouchPlan__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

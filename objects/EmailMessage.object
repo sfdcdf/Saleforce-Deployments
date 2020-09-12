@@ -83,6 +83,8 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>BccAddress</fullName>
     </fields>
@@ -181,8 +183,6 @@
     <fields>
         <fullName>LastOpenedDate</fullName>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
     <searchLayouts>
         <customTabListAdditionalFields>Status</customTabListAdditionalFields>
         <customTabListAdditionalFields>HasAttachment</customTabListAdditionalFields>
@@ -206,8 +206,9 @@
     </searchLayouts>
     <validationRules>
         <fullName>Webcom_Domain_Filter</fullName>
-        <active>true</active>
-        <errorConditionFormula>Incoming = False &amp;&amp; !CONTAINS( ToAddress ,'@web.com')</errorConditionFormula>
+        <active>false</active>
+        <description>PLEASE DON'T ACTIVE THIS IN PRODUCTION</description>
+        <errorConditionFormula>Incoming = False &amp;&amp; !CONTAINS(ToAddress ,'@web.com')</errorConditionFormula>
         <errorMessage>You can send Email to Web.com Contacts only</errorMessage>
     </validationRules>
 </CustomObject>

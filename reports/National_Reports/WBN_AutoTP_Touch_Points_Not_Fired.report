@@ -10,6 +10,21 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>Account.Marketo_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Marketo_ID_For_Touchplan__c</field>
+    </columns>
+    <columns>
+        <field>Account.Primary_Multi_Location_Owner_For_TP__c</field>
+    </columns>
+    <columns>
+        <field>Account.Multi_Location_Owner_Primary_CID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
         <field>Account.Last_Completed_YBN_TP__c</field>
     </columns>
     <columns>
@@ -25,12 +40,6 @@
         <field>Account.IMS_Rep__c</field>
     </columns>
     <columns>
-        <field>Account.Marketo_ID__c</field>
-    </columns>
-    <columns>
-        <field>Account.Marketo_ID_For_Touchplan__c</field>
-    </columns>
-    <columns>
         <field>Account.Email_for_Touchplan__c</field>
     </columns>
     <columns>
@@ -41,15 +50,6 @@
     </columns>
     <columns>
         <field>Account.YBN_CSC_Due_By__c</field>
-    </columns>
-    <columns>
-        <field>Account.Failed_to_Sync_to_Marketo__c</field>
-    </columns>
-    <columns>
-        <field>Account.Date_Email_added_to_Marketo__c</field>
-    </columns>
-    <columns>
-        <field>Account.Sync_to_Marketo__c</field>
     </columns>
     <crossFilters>
         <criteriaItems>
@@ -71,7 +71,7 @@
     </crossFilters>
     <description>List of OutBound TP which did not create a case</description>
     <filter>
-        <booleanFilter>1 AND (2 OR 3) AND 4 AND 5 AND 6 AND 7</booleanFilter>
+        <booleanFilter>(1 AND (2 OR 3) AND 4 AND 5 AND 6) AND 7</booleanFilter>
         <criteriaItems>
             <column>Account.Status__c</column>
             <columnToColumn>false</columnToColumn>
@@ -133,7 +133,7 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Account.Next_TP_Needed_By__c</sortColumn>
+    <sortColumn>Account.Email_for_Touchplan__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>LAST_UPDATE</dateColumn>

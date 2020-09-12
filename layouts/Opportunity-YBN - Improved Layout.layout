@@ -54,10 +54,6 @@
                 <behavior>Edit</behavior>
                 <field>Run_Rate__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>LOE_Agreement__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -182,11 +178,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Key_Financial_Decis_Maker_Title__c</field>
+                <field>Working_w_Financial_Decision_Maker__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Working_w_Financial_Decision_Maker__c</field>
+                <field>Key_Financial_Decision_Maker_Title__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Client_Discovery_Date__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -216,7 +216,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Pain_Points__c</field>
+                <field>Primary_Pain_Point__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Demo_Completed__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -251,10 +255,6 @@
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Amount</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Annual_Contract_Value_Sum__c</field>
@@ -391,10 +391,10 @@
         <fields>Quantity</fields>
         <fields>ContractLength__c</fields>
         <fields>SUBTOTAL</fields>
-        <fields>Discount</fields>
         <fields>TotalPrice</fields>
         <fields>AnnualProductValue__c</fields>
         <fields>TotalProductValue__c</fields>
+        <fields>ServiceDate</fields>
         <relatedList>RelatedLineItemList</relatedList>
     </relatedLists>
     <relatedLists>

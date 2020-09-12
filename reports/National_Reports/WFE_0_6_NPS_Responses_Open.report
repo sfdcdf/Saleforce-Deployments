@@ -13,8 +13,78 @@
         <field>CUST_CREATED_DATE</field>
     </columns>
     <columns>
+        <field>Customer_Surveys__c.Days_Live_at_Creation_Date__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Client_ID_2__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.WBN_JAX_CUST_ID__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Parent_Name__c</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_NAME</field>
+    </columns>
+    <columns>
         <field>FK_NAME</field>
     </columns>
+    <columns>
+        <field>FK_CNTC_ID</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Care_to_tell_us_why__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Anything_to_share_about_your_experience__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Detail_on_your_likelihood_to_recomm__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Customer_Survey_Name__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Customer_Surveys__c.NPS_Survey_YBN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Customer_Surveys__c.Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NPS Survey WBN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_ACC_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Standard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Customer_Surveys__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New</value>
+        </criteriaItems>
+    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
@@ -31,6 +101,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>CUST_CREATED_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
         <interval>INTERVAL_CURY</interval>

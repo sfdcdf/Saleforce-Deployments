@@ -30,7 +30,7 @@
         <field>CREATED_DATEONLY</field>
     </columns>
     <columns>
-        <field>SUBJECT</field>
+        <field>RECORDTYPE</field>
     </columns>
     <columns>
         <field>Case.Bing_WMT_Username__c</field>
@@ -41,7 +41,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Case.SEO_Tasks,Case.LBW_Content_Organic_Setup</value>
+            <value>Case.SEO_Tasks,Case.LBW_Content_Organic_Setup,Case.LS_ATV_Organic_Setup</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>

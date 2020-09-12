@@ -28,6 +28,7 @@
         <field>Case.Web_Dev_Score_for_IMS__c</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
         <field>Case.Web_Dev_Total_Minutes_for_Changes__c</field>
     </columns>
     <columns>
@@ -105,7 +106,9 @@
     <sortColumn>CREATED_DATEONLY</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <dateColumn>Case.Web_Dev_Score_for_IMS__c</dateColumn>
+        <endDate>2019-08-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-08-01</startDate>
     </timeFrameFilter>
 </Report>

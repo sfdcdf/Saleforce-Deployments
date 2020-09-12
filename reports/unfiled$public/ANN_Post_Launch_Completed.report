@@ -19,6 +19,9 @@
         <field>SUBJECT</field>
     </columns>
     <columns>
+        <field>Case.Product_Type__c</field>
+    </columns>
+    <columns>
         <field>Case.Pro_Website_Care__c</field>
     </columns>
     <columns>
@@ -45,11 +48,11 @@
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.QA_Partner__c</column>
+            <column>Case.Product_Type__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Alisha Herzberg,Holly Macki,Lindsey Schmid,Johnna Guidry,Prisma Hernandez,Shannon Lang,Nikki Micou,Leslie Goldman,Cynthia Mota,Adam Livingstone,Amanda Peake,Jason Gee,Maria McLean,Terry Beaver</value>
+            <value>TORCHx Ads,TORCHx</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

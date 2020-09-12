@@ -14,10 +14,6 @@
         <ccEmails>support@viviallocalleads.com</ccEmails>
         <description>Berry 72 Hour Email</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>logan.rollier@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
         <senderAddress>berrysales@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Partner_Email_Templates/Berry_72_Hour_Emails</template>
@@ -126,10 +122,7 @@
         <ccEmails>pmcgee@boltontechnology.com</ccEmails>
         <description>Bolt On Cancellation - Cancel All</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>bosteros@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderAddress>support@lighthousepmg.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Support/Bolt_On_Cancellation_ProPack_Welcome_Station</template>
@@ -170,21 +163,15 @@
         <fullName>CSC_Date_in_the_Past</fullName>
         <description>CSC Date in the Past</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>katie.green@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>makenzie.cunningham@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>pkoepke@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/CSC_Date_in_the_Past</template>
-    </alerts>
+    <recipients>
+            <recipient>katie.green@yodle.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <alerts>
         <fullName>CSC_Survey_Dedicated_Email</fullName>
         <description>CSC Survey Dedicated - Email</description>
@@ -221,17 +208,17 @@
     </alerts>
     <alerts>
         <fullName>CTS_Send_Organic_cases_to_CopywritingCTS_web_com</fullName>
-        <ccEmails>ticketingtest@web.com</ccEmails>
+        <ccEmails>copywritingcts@web.com</ccEmails>
         <description>CTS - Send Organic cases to  CopywritingCTS@web.com</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>sfdc@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderAddress>copywritingsfdc@web.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CTS_Templates/CTS_OrganicCases_Send</template>
-    </alerts>
+    <recipients>
+            <recipient>sfdc@yodle.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <alerts>
         <fullName>Case_Assigned_to_LH_Auto_Support_send_email</fullName>
         <ccEmails>LHAutoTechBots@yodle.com</ccEmails>
@@ -265,10 +252,8 @@
         <fullName>Case_Email_Rescheduled_CSC_or_TP_LBW_Lead_Stream_Queue</fullName>
         <description>Case - Email Rescheduled CSC, TP, or Adoption Call LBW or Lead Stream Support Queue</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>makenzie.cunningham@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/Case_Email_Rescheduled_CSC_or_TP</template>
     </alerts>
@@ -384,7 +369,6 @@
     </alerts>
     <alerts>
         <fullName>Client_Escalation_Case_Closed</fullName>
-        <ccEmails>mhausman@yodle.com</ccEmails>
         <description>Client Escalation Case Closed</description>
         <protected>false</protected>
         <recipients>
@@ -580,10 +564,6 @@
         <ccEmails>GreenSkyReferral@yodle.com</ccEmails>
         <description>Greenskye Sales Lab Alert</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>jrozenblat@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
         <senderType>CurrentUser</senderType>
         <template>Agent_Emails_Local_Pooled/GreenSky_Email_Lead_for_Sales_Team</template>
     </alerts>
@@ -663,10 +643,7 @@
         <fullName>LH_New_Training_Email_from_Support</fullName>
         <description>LH New Training Email from Support</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>crystal.bellew@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>Support/LH_Support_Email_to_Casey</template>
     </alerts>
@@ -767,10 +744,7 @@
         <fullName>Lighthouse_Site_Listing_Teardown_owner_email_alert</fullName>
         <description>LH Master Needs Your Attention to Adam Stanton</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>ta.stanton@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>Support/LH_Master_Site_Listing_Teardown</template>
     </alerts>
@@ -2160,15 +2134,12 @@
         <recipients>
             <field>Case_Creator_Manager_Email__c</field>
             <type>email</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Escalated_Case</template>
     </alerts>
@@ -2213,15 +2184,12 @@
         <recipients>
             <field>Case_Creator_Manager_Email__c</field>
             <type>email</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Escalated_Case</template>
     </alerts>
@@ -2351,15 +2319,12 @@
         <recipients>
             <field>Case_Creator_Manager_Email__c</field>
             <type>email</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Escalated_Case</template>
     </alerts>
@@ -2647,15 +2612,12 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Fire_Drill</template>
     </alerts>
@@ -2725,15 +2687,12 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Fire_Drill</template>
     </alerts>
@@ -2943,15 +2902,12 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Fire_Drill</template>
     </alerts>
@@ -3017,10 +2973,7 @@
         <fullName>YBN_Relationship_Budget_Estimates_Completed</fullName>
         <description>YBN Relationship Budget Estimates Completed</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>ryan.ciampi@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Relationship_Budget_Estimates_Completed</template>
     </alerts>
@@ -3282,10 +3235,7 @@
         <fullName>YBN_Requests_Escalated_for_Production_Specialists</fullName>
         <description>YBN Requests Escalated for Production Specialists</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>jared.pfaff@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>Support/Escalation_Standard_Email</template>
     </alerts>
@@ -3398,31 +3348,17 @@
         <template>National_Templates/YBN_extended_sla_for_performance_estimates</template>
     </alerts>
     <alerts>
-        <fullName>YBN_new_case_comment_email_alert</fullName>
-        <description>YBN new case comment email alert</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>sarah.mctate@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>National_Templates/YBN_new_case_comment</template>
-    </alerts>
-    <alerts>
         <fullName>YBN_perforamnce_estimtes_email_alert</fullName>
         <description>YBN perforamnce estimtes email alert</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>doleary@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Estimates_Needed</template>
-    </alerts>
+    <recipients>
+            <recipient>doleary@yodle.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <alerts>
         <fullName>budget_decrease_closed_case_email_to_contact</fullName>
         <description>budget decrease - closed case email to contact</description>
@@ -3433,6 +3369,16 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>contracts/Completed_Budget_Change_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>charge_failure_case_EmailElert</fullName>
+        <description>When a charge failure case is created an email alert should be sent to the Case Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SUPPORTNewassignmentnotification</template>
     </alerts>
     <alerts>
         <fullName>notify_AD_when_status_of_custom_implementation_quote_moves_to_in_progress</fullName>
@@ -3461,23 +3407,20 @@
         <protected>false</protected>
         <recipients>
             <type>owner</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>cbolton@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>kristen.krzesicki@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mbrevig@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mpagonas@yodle.com</recipient>
             <type>user</type>
         </recipients>
+        
+        
+        
+        
         <senderType>DefaultWorkflowUser</senderType>
         <template>National_Templates/NCS_Case_Not_Touched_in_4_days</template>
     </alerts>
@@ -3548,17 +3491,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Assign_to_Bryan_Heckler</fullName>
-        <description>H2 Escalation cases should assign to Bryan Heckler</description>
-        <field>OwnerId</field>
-        <lookupValue>bheckler@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Case - Owner to Bryan Heckler</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Assign_to_Client_Update_Queu</fullName>
         <field>OwnerId</field>
         <lookupValue>Client_Update_Queue</lookupValue>
@@ -3591,8 +3523,9 @@
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Assign_to_Makenzie_Cunningham</fullName>
+        <description>Changed to Randy Dewey - 1/8/2019 with the departure of Makenzie.</description>
         <field>OwnerId</field>
-        <lookupValue>makenzie.cunningham@yodle.com</lookupValue>
+        <lookupValue>rdewey@web.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>Assign to Makenzie Cunningham</name>
         <notifyAssignee>true</notifyAssignee>
@@ -3673,16 +3606,6 @@
         <name>Berry Account Manager Email</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Berry_Escalations_Update_Owner</fullName>
-        <field>OwnerId</field>
-        <lookupValue>support@berrylocalleads.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Case Owner to Berry Support</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -3895,16 +3818,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Case_Owner_to_Shannon_Vaughn</fullName>
-        <field>OwnerId</field>
-        <lookupValue>shannon.vaughn@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Case Owner to Shannon Vaughn</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Case_Owner_to_Sophie_Lavin</fullName>
         <field>OwnerId</field>
         <lookupValue>anne.fulton@yodle.com</lookupValue>
@@ -3925,16 +3838,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Case_Owner_to_Tricia_Valadez</fullName>
-        <field>OwnerId</field>
-        <lookupValue>tricia.valadez@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Case Owner to Tricia Valadez</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Case_Populate_Owner_Manager_Email</fullName>
         <field>Owner_Manager_Email__c</field>
         <formula>Owner:User.Manager.Email</formula>
@@ -3950,16 +3853,6 @@
         <name>Case - Postpone by 3 Days</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Reason_ViaMedia_Assignment</fullName>
-        <field>OwnerId</field>
-        <lookupValue>stephanie.verdusco@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Case Owner to Stephanie Smith</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -4483,16 +4376,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Master_Call_Answering_Web_Dev</fullName>
-        <field>OwnerId</field>
-        <lookupValue>mary.kellum@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Case Owner to Sophie Lavin</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Move_to_Local_Email_Queue</fullName>
         <field>OwnerId</field>
         <lookupValue>Local_Email_Queue</lookupValue>
@@ -4725,33 +4608,11 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Owner_Updates_To_Aaron_Woodul</fullName>
-        <description>Case Owner field updates to Aaron Woodul</description>
-        <field>OwnerId</field>
-        <lookupValue>awoodul@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Owner Updates To Aaron Woodul</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Owner_Updates_To_Beau_Osteros</fullName>
         <field>OwnerId</field>
-        <lookupValue>bosteros@yodle.com</lookupValue>
+        <lookupValue>sfdc@yodle.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>Owner Updates To Beau Osteros</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Updates_To_Erik_Vicars</fullName>
-        <description>Case Owner field updates to Erik Vicars</description>
-        <field>OwnerId</field>
-        <lookupValue>erik.vicars@web.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Owner Updates To Erik Vicars</name>
         <notifyAssignee>true</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
@@ -4760,41 +4621,9 @@
         <fullName>Owner_Updates_To_Lynn_Tobias</fullName>
         <description>Case Owner field updates to Lynn Tobias</description>
         <field>OwnerId</field>
-        <lookupValue>lynn.tobias@yodle.com</lookupValue>
+        <lookupValue>sfdc@yodle.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>Owner Updates To Lynn Tobias</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Updates_To_Travis_Dube</fullName>
-        <description>Case Owner field updates to Travis Dube</description>
-        <field>OwnerId</field>
-        <lookupValue>tdube@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Owner Updates To Travis Dube</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Updates_To_Tricia_Llanas</fullName>
-        <description>Case Owner field updates to Aaron Woodul</description>
-        <field>OwnerId</field>
-        <lookupValue>tricia.valadez@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Owner Updates To Tricia Llanas</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_to_Kelly_Hall</fullName>
-        <field>OwnerId</field>
-        <lookupValue>kelly.hall@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Owner to Kelly Hall</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
@@ -5049,26 +4878,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>TORCHx_Proactive_Touch_Assignment</fullName>
-        <field>OwnerId</field>
-        <lookupValue>TORCHx_Outbound</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>TORCHx Proactive Touch Assignment- Owner</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>TORCHx_Proactive_Touch_Assignment_IMS</fullName>
-        <field>IMS_Rep__c</field>
-        <lookupValue>support@torchx.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>TORCHx Proactive Touch Assignment - IMS</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Template_Escalation</fullName>
         <field>Escalated__c</field>
         <literalValue>1</literalValue>
@@ -5287,16 +5096,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Update_to_Care_Customer</fullName>
-        <field>OwnerId</field>
-        <lookupValue>customercare@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Update to Care, Customer</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Vivial_Escalated_Detail</fullName>
         <field>Escalated_Detail__c</field>
         <literalValue>Vivial Escalation (non-error)</literalValue>
@@ -5441,6 +5240,15 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>YBNR_equest_Reason</fullName>
+        <field>YBNRequestReason__c</field>
+        <literalValue>Web Dev</literalValue>
+        <name>YBN Request Reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>YBN_Auto_TP_Date</fullName>
         <field>Auto_TP_Date__c</field>
         <formula>/*
@@ -5461,16 +5269,6 @@ Account.Next_TP_Needed_By__c</formula>
         <lookupValue>mbrevig@yodle.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>YBN: Case Owner to Michele Brevig</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>YBN_Case_Owner_to_Sarah_Mc</fullName>
-        <field>OwnerId</field>
-        <lookupValue>sarah.mctate@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>YBN Case Owner to Sarah Mc</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
@@ -5529,6 +5327,33 @@ Account.Next_TP_Needed_By__c</formula>
         <name>YBN Outbound TP</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>YBN_Request_Detail</fullName>
+        <field>YBNRequestDetail__c</field>
+        <literalValue>Website Change/Update</literalValue>
+        <name>YBN Request Detail</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>YBN_Request_Detail_Update</fullName>
+        <field>YBNRequestDetail__c</field>
+        <literalValue>Website Change/Update</literalValue>
+        <name>YBN Request Detail Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>YBN_Request_Reason</fullName>
+        <field>YBNRequestReason__c</field>
+        <literalValue>Web Dev</literalValue>
+        <name>YBN Request Reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -5830,9 +5655,9 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
     </fieldUpdates>
     <outboundMessages>
         <fullName>AcuitySchedulingWebhook</fullName>
-        <apiVersion>47.0</apiVersion>
+        <apiVersion>46.0</apiVersion>
         <description>AcutitySchedulingWebhook Event Handler</description>
-        <endpointUrl>https://promote-account-dev-gw.acquisio.com/services/api/webhooks/incoming/sfsoap/yodlefull</endpointUrl>
+        <endpointUrl>https://acuityeventmanager.api.yodle.com/salesforce</endpointUrl>
         <fields>AccountId</fields>
         <fields>Account_Status__c</fields>
         <fields>Attempt_1_Method__c</fields>
@@ -5850,7 +5675,7 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <fields>Subject</fields>
         <fields>Sync_to_Marketo__c</fields>
         <includeSessionId>true</includeSessionId>
-        <integrationUser>khill@web.com</integrationUser>
+        <integrationUser>sfdc@yodle.com</integrationUser>
         <name>AcuitySchedulingWebhook</name>
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>
@@ -6116,14 +5941,14 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
-        <fullName>AcuitySchedulingWebhookTrigger</fullName>
+        <fullName>AcutitySchedulingWebhookTrigger</fullName>
         <actions>
             <name>AcuitySchedulingWebhook</name>
             <type>OutboundMessage</type>
         </actions>
         <active>true</active>
         <description>The case trigger for events that should be sent to the AcuitySchedulingWebhook Handler</description>
-        <formula>NOT(ISBLANK(IMS_Rep__r.Acuity_Id__c)) &amp;&amp; 
+        <formula>NOT(ISBLANK(IMS_Rep__r.Acuity_Id__c)) &amp;&amp;
 RecordType.Name = 'YBN Outbound Touch Point' &amp;&amp;
 ISPICKVAL(Account.Client_Type__c, 'YBN') &amp;&amp;
 ISPICKVAL(Reason, 'Proactive Touch') &amp;&amp;
@@ -6802,10 +6627,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
     </rules>
     <rules>
         <fullName>Berry Escalations - Update Owner</fullName>
-        <actions>
-            <name>Berry_Escalations_Update_Owner</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -7754,7 +7575,7 @@ ispickval( Status ,"New"))</formula>
         <criteriaItems>
             <field>Case.CreatedById</field>
             <operation>notContain</operation>
-            <value>Tolman,Jayaraj,Connector,Laughlin,Flanagan,Lavin,Gelardi,Mettille,Mcmillian,Mcintyre,Fincke,Banker,Woodul,Salesforce,Sync,Amp</value>
+            <value>Tolman,Jayaraj,Connector,Laughlin,Flanagan,Lavin,Gelardi,Mettille,Mcmillian,Mcintyre,Fincke,Banker,Woodul,Salesforce,Sync,Amp,Ross,Starett</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.User_Created_By__c</field>
@@ -8274,10 +8095,6 @@ ispickval(Status ,"Unscheduled - 4+ Attempts"))</formula>
     </rules>
     <rules>
         <fullName>Case Reason ViaMedia Assignment</fullName>
-        <actions>
-            <name>Case_Reason_ViaMedia_Assignment</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.Reason</field>
@@ -9974,6 +9791,10 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>LH Master - Delayed Consumable</fullName>
+        <actions>
+            <name>Case_Owner_to_LH_Future_Request</name>
+            <type>FieldUpdate</type>
+        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.RecordTypeId</field>
@@ -10334,10 +10155,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     <rules>
         <fullName>LH Support Email2Case to Tricia</fullName>
         <actions>
-            <name>Case_Owner_to_Tricia_Valadez</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
             <name>Outrank_Wordpress_Email_to_Case_Reason</name>
             <type>FieldUpdate</type>
         </actions>
@@ -10416,6 +10233,24 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
             <value>Lighthouse,LH</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LandstarSupport</fullName>
+        <actions>
+            <name>YBN_Request_Detail</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>YBN_Request_Reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>LandstarSupport@web.com</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
         <fullName>Lighthouse Follow Up Needed</fullName>
@@ -10541,11 +10376,7 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>Manager Approved H2 Escalation</fullName>
-        <actions>
-            <name>Assign_to_Bryan_Heckler</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Reason</field>
             <operation>equals</operation>
@@ -12026,25 +11857,6 @@ NOT(ISPICKVAL(Status, "Unscheduled - 4+ Attempts"))
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Owner to Kelly SEM Upsell Change Order Copy</fullName>
-        <actions>
-            <name>Owner_to_Kelly_Hall</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>equals</operation>
-            <value>Change Order</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Master</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>Partner Master Case Population</fullName>
         <actions>
             <name>Channel_Type_to_Partner</name>
@@ -12246,36 +12058,6 @@ OwnerId = "00G60000001CJm2"))</formula>
             <operation>equals</operation>
             <value>Call Quality - Reactive</value>
         </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Reassign a Reopened Case</fullName>
-        <actions>
-            <name>Update_to_Care_Customer</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Re-Opened</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Channel_Type__c</field>
-            <operation>equals</operation>
-            <value>Local</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Outbound Call</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>CSC</value>
-        </criteriaItems>
-        <description>Reassign are Reopened Local Case to Care, Customer</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -13119,35 +12901,6 @@ OwnerId = "00G60000001CJm2"))</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
-        <fullName>TORCHx Proactive Touch Assignment</fullName>
-        <actions>
-            <name>TORCHx_Proactive_Touch_Assignment</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>TORCHx_Proactive_Touch_Assignment_IMS</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Outbound Call</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type_Transactional__c</field>
-            <operation>contains</operation>
-            <value>TORCHx</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Proactive Touch</value>
-        </criteriaItems>
-        <description>This updated the Case Owner and IMS Rep to be TORCHx Queue and Support when the case is an Outbound Call and Proactive Touch.</description>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>Target Service Area Added</fullName>
         <actions>
             <name>Target_Service_Area_Added</name>
@@ -13723,10 +13476,6 @@ ISCHANGED(Estimated_Completion_Date__c)
     </rules>
     <rules>
         <fullName>YBN Default Auto Assign</fullName>
-        <actions>
-            <name>YBN_Case_Owner_to_Sarah_Mc</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.RecordTypeId</field>
@@ -14399,10 +14148,6 @@ ISCHANGED(Estimated_Completion_Date__c)
     </rules>
     <rules>
         <fullName>YBN Relationship Budget Estimates Completed</fullName>
-        <actions>
-            <name>YBN_Relationship_Budget_Estimates_Completed</name>
-            <type>Alert</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.Reason_Detail__c</field>
@@ -14872,7 +14617,7 @@ ISCHANGED(Estimated_Completion_Date__c)
             <name>YBN_sub_status_to_geo_targeting_analysi</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Reason_Detail__c</field>
             <operation>equals</operation>
@@ -15435,6 +15180,38 @@ ISCHANGED(Estimated_Completion_Date__c)
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
+        <fullName>charge failure case</fullName>
+        <actions>
+            <name>charge_failure_case_EmailElert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Charge Failure</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>email_To_case_field_update</fullName>
+        <actions>
+            <name>YBNR_equest_Reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>YBN_Request_Detail_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>HomeTeamSupport@web.com</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
         <fullName>sales promo  - new case</fullName>
         <actions>
             <name>description_client_id</name>
@@ -15552,15 +15329,4 @@ ISCHANGED(Estimated_Completion_Date__c)
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
     </rules>
-    <tasks>
-        <fullName>Mary_Case_Task</fullName>
-        <assignedTo>mary.kellum@yodle.com</assignedTo>
-        <assignedToType>user</assignedToType>
-        <dueDateOffset>0</dueDateOffset>
-        <notifyAssignee>false</notifyAssignee>
-        <priority>Normal</priority>
-        <protected>false</protected>
-        <status>Not Started</status>
-        <subject>Mary Case Task</subject>
-    </tasks>
 </Workflow>

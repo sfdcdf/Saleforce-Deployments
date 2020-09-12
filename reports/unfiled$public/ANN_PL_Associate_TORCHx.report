@@ -43,13 +43,6 @@
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>SUBJECT</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>notContain</operator>
-            <value>mature audit</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -71,8 +64,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Case.Hours_SLA__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
+    <sortColumn>CREATED_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

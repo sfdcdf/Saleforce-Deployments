@@ -113,12 +113,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Opportunity__c.OpportunityId18__c</field>
-            <table>Schedule_Split__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Opportunity__c.Opportunity_ID__c</field>
+            <field>Opportunity__c.Account.AccountId18__c</field>
             <table>Schedule_Split__c</table>
         </columns>
         <columns>
@@ -128,7 +123,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Opportunity__c.Account.AccountId18__c</field>
+            <field>Opportunity__c.Account.AccountNumber</field>
+            <table>Schedule_Split__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c.Name</field>
             <table>Schedule_Split__c</table>
         </columns>
         <masterLabel>Schedule Splits</masterLabel>

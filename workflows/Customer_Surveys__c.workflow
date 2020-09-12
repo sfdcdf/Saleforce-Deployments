@@ -24,10 +24,7 @@
         <fullName>Lighthouse_Exit_Survey_Poor_Customer_Service</fullName>
         <description>Lighthouse Exit Survey - Poor Customer Service</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>crystal.bellew@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>Survey_Emails/Lighthouse_Poor_Customer_Service_Alert</template>
     </alerts>

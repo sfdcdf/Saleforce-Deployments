@@ -19,6 +19,7 @@
         <field>Case.Web_Dev_User__c</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
         <field>Case.Web_Dev_Total_Minutes_for_Changes__c</field>
     </columns>
     <columns>
@@ -30,7 +31,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Bryan Chapman,Michelle Garcia,Theorem Users,Edson Gonzalez,Joshua Lawson</value>
+            <value>Gary Surette,Theorem Users,Edson Gonzalez</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -50,6 +51,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Case.Web_Dev_Score_for_IMS__c</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <endDate>2019-07-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-07-01</startDate>
     </timeFrameFilter>
 </Report>

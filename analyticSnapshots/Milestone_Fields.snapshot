@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalyticSnapshot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <mappings>
+        <sourceField>CASE_NUMBER</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>MilestoneSnapshotobj__c.Name</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>ELPSD_TIME_MINS</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>MilestoneSnapshotobj__c.elapse_time__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>STOPPED_TIME_MINS</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>MilestoneSnapshotobj__c.Stopped_time__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>ACTUAL_ELPSD_TIME_MINS</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>MilestoneSnapshotobj__c.Atual_ElapseTime__c</targetField>
+    </mappings>
+    <name>Milestone Fields</name>
+    <runningUser>sfsync@yodle.com</runningUser>
+    <sourceReport>unfiled$public/Milestones</sourceReport>
+    <targetObject>MilestoneSnapshotobj__c</targetObject>
+</AnalyticSnapshot>

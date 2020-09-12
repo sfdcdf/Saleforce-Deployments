@@ -9,22 +9,25 @@
         <useOther>false</useOther>
         <values>
             <sourceValues>
-                <sourceValue>Mark Nagy</sourceValue>
-            </sourceValues>
-            <sourceValues>
                 <sourceValue>Shelia Kelly</sourceValue>
             </sourceValues>
             <sourceValues>
                 <sourceValue>Jennifer Degreef</sourceValue>
             </sourceValues>
             <sourceValues>
-                <sourceValue>Shelby Cowman</sourceValue>
-            </sourceValues>
-            <sourceValues>
                 <sourceValue>Reagan Neely</sourceValue>
             </sourceValues>
             <sourceValues>
-                <sourceValue>Kyler Wood</sourceValue>
+                <sourceValue>Zachery Shubow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Demetria Atkins</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Batcher</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emma Brown</sourceValue>
             </sourceValues>
             <value>AM Blue</value>
         </values>
@@ -45,13 +48,16 @@
                 <sourceValue>Erik Vicars</sourceValue>
             </sourceValues>
             <sourceValues>
-                <sourceValue>Valerie Garner</sourceValue>
-            </sourceValues>
-            <sourceValues>
                 <sourceValue>Erika Persil</sourceValue>
             </sourceValues>
             <sourceValues>
-                <sourceValue>Samantha Starett</sourceValue>
+                <sourceValue>Valerie Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Graham McGee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cassandra Stowers</sourceValue>
             </sourceValues>
             <value>AM Red</value>
         </values>
@@ -66,12 +72,6 @@
                 <sourceValue>Rondell Humphreys</sourceValue>
             </sourceValues>
             <sourceValues>
-                <sourceValue>Alvin Jobe</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Keegan Sandman</sourceValue>
-            </sourceValues>
-            <sourceValues>
                 <sourceValue>Marilyn Slaunwhite</sourceValue>
             </sourceValues>
             <sourceValues>
@@ -81,13 +81,7 @@
                 <sourceValue>Marilyn Bray</sourceValue>
             </sourceValues>
             <sourceValues>
-                <sourceValue>Nina Avery</sourceValue>
-            </sourceValues>
-            <sourceValues>
                 <sourceValue>April Law</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Angela Snow</sourceValue>
             </sourceValues>
             <sourceValues>
                 <sourceValue>Kathy Caldwell</sourceValue>
@@ -101,14 +95,26 @@
             <sourceValues>
                 <sourceValue>Kathleen Wilson</sourceValue>
             </sourceValues>
+            <sourceValues>
+                <sourceValue>Samantha Sewell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tracey Peel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walter Rundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jean Austin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kasey DeVries</sourceValue>
+            </sourceValues>
             <value>NG Pod</value>
         </values>
         <values>
             <sourceValues>
                 <sourceValue>Adam Kovacs</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Amber Tamayo</sourceValue>
             </sourceValues>
             <sourceValues>
                 <sourceValue>James Brady</sourceValue>
@@ -121,6 +127,33 @@
             </sourceValues>
             <sourceValues>
                 <sourceValue>Andrew Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brittany Fountain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amber Woodhams</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jamie Russell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kinsley Hill</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephanie Lucas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jake Overman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joshua Alvarez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ashley Black</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jordan Valentine</sourceValue>
             </sourceValues>
             <value>AM Jax</value>
         </values>
@@ -141,30 +174,6 @@
                 <sourceValue>Outbound Touch</sourceValue>
             </sourceValues>
             <value>Queue</value>
-        </values>
-        <values>
-            <sourceValues>
-                <sourceValue>Walter Rundle</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Stephen Gerrior</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Angela Hoddinott</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Blake MacPhee</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Karen Park</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Kimberley Boutilier</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Kayla Muir</sourceValue>
-            </sourceValues>
-            <value>AMP Inbound</value>
         </values>
     </buckets>
     <chart>
@@ -201,6 +210,9 @@
         <field>Account.Test_Management__c</field>
     </columns>
     <columns>
+        <field>Account.Product_Type_Transactional__c</field>
+    </columns>
+    <columns>
         <field>Case.Scheduled_Call__c</field>
     </columns>
     <columns>
@@ -225,7 +237,7 @@
         <field>Account.Monthly_Budget__c</field>
     </columns>
     <filter>
-        <booleanFilter>((1 or 4) AND 2 AND 3) or (5 and 6 and 3)</booleanFilter>
+        <booleanFilter>((1 or 4) AND 2 AND 3) or (5 and 6 and 3) or (7 and 8)</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
             <columnToColumn>false</columnToColumn>
@@ -259,7 +271,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>leads by web</value>
+            <value>leads by web,Lead Stream ATV</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
@@ -267,6 +279,20 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>CSC,CS Touch Plan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Outbound Touch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lead Stream Support</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

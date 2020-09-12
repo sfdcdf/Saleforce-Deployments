@@ -34,8 +34,6 @@ public class AccountSalesRepEmailUpdate
                         a.Sales_Rep_Email__c = null;
                         dmlAccounts.add(a);
                     
-                        System.Debug('*** Added DMC info to Map for: ' + a.Sales_Rep_Name_YL__c);
-                    
                         if(String.IsNotBlank(a.Sales_Rep_Name_YL__c)){
                             // Add to Map
                             salesRepAcctMap.put(a.Sales_Rep_Name_YL__c, a);
@@ -65,7 +63,6 @@ public class AccountSalesRepEmailUpdate
                     for(Account ua : salesRepAcctMap.values()){
                     
                         if(String.IsNotBlank(ua.Sales_Rep_Name_YL__c) && String.IsNotBlank(userObjMap.get(ua.Sales_Rep_Name_YL__c).Email)){
-                            System.Debug('*** Updating DMC Email to: ' + userObjMap.get(ua.Sales_Rep_Name_YL__c).Email);
                             ua.Sales_Rep_Email__c = (ua.Sales_Rep_Name_YL__c == userObjMap.get(ua.Sales_Rep_Name_YL__c).Name && String.IsNotBlank(userObjMap.get(ua.Sales_Rep_Name_YL__c).Email) ? userObjMap.get(ua.Sales_Rep_Name_YL__c).Email : '');
                         }
                     }

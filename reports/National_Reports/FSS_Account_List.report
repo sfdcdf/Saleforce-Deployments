@@ -10,13 +10,19 @@
         <field>PARENT.NAME</field>
     </columns>
     <columns>
+        <field>Account.Live_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Important_Account_Notes__c</field>
+    </columns>
+    <columns>
+        <field>Account.Individual_Location_Service_Level__c</field>
+    </columns>
+    <columns>
         <field>Account.Status__c</field>
     </columns>
     <columns>
         <field>Account.AdStation_Status__c</field>
-    </columns>
-    <columns>
-        <field>ADDRESS1_STATE</field>
     </columns>
     <columns>
         <field>Account.Multi_Location_Owner_Primary_CID__c</field>
@@ -26,11 +32,32 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>PARENT.NAME</column>
+            <column>Account.Corp_Acct_in_YL_Parent_Account__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Four Seasons Sunrooms Master</value>
+            <value>235</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LIVE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Live_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>1/1/2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.AdStation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OFF</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

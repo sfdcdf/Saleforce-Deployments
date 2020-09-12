@@ -15,6 +15,9 @@
     <columns>
         <field>Case.Date_Opt_Completed__c</field>
     </columns>
+    <columns>
+        <field>Case.Time_To_Complete_Task_Minutes__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>Case.Client_Type__c</column>
@@ -79,8 +82,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2018-01-30</endDate>
+        <endDate>2018-04-30</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-01-01</startDate>
+        <startDate>2018-04-01</startDate>
     </timeFrameFilter>
 </Report>

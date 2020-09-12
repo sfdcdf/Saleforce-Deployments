@@ -10,6 +10,15 @@
         <field>STATUS</field>
     </columns>
     <columns>
+        <field>Case.Sub_Status__c</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Case.Product_Type__c</field>
+    </columns>
+    <columns>
         <field>Case.Case_Age__c</field>
     </columns>
     <columns>
@@ -47,8 +56,15 @@
             <column>Case.Product_Type__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Leads By Web</value>
+            <operator>contains</operator>
+            <value>Leads By Web,LeadStream,ATV,Stream</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Escalated</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

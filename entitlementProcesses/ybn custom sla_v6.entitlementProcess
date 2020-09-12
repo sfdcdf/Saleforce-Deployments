@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
     <SObjectType>Case</SObjectType>
-    <active>false</active>
+    <active>true</active>
     <businessHours>Business 9-5 EST</businessHours>
     <entryStartDateField>Case.CreatedDate</entryStartDateField>
     <exitCriteriaFilterItems>
@@ -9,7 +9,7 @@
         <operation>equals</operation>
         <value>true</value>
     </exitCriteriaFilterItems>
-    <isVersionDefault>false</isVersionDefault>
+    <isVersionDefault>true</isVersionDefault>
     <milestones>
         <milestoneCriteriaFilterItems>
             <field>Case.IsClosed</field>

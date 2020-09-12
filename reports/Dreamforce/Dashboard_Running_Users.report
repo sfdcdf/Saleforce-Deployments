@@ -15,15 +15,6 @@
     <columns>
         <field>Dashboard$LastModifiedBy</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Dashboard$RunningUser</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>miller,rustin,reeder,Spinelli</value>
-        </criteriaItems>
-    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>

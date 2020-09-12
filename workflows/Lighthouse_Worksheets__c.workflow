@@ -5,10 +5,7 @@
         <ccEmails>pmcgee@boltontechnology.com</ccEmails>
         <description>Bolt On Backed Out Sale - Cancel All</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>bosteros@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderAddress>autosupport@lighthousepmg.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Support/Bolt_On_Cancellation_ProPack_Welcome_Station</template>
@@ -118,18 +115,16 @@
         <ccEmails>support@curvedental.com</ccEmails>
         <description>LH - Curve Cloud Install Notification</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>jamartini@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mstaffieri@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
+        
         <senderAddress>support@lighthousepmg.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Lighthouse_Config_and_Install/Curve_Cloud_Install</template>
-    </alerts>
+    <recipients>
+            <recipient>mstaffieri@yodle.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <alerts>
         <fullName>LH_Install_Backed_Out</fullName>
         <description>LH Install/CSC Backed Out</description>
@@ -153,21 +148,22 @@
         <fullName>LH_Install_Moved_to_Stalled</fullName>
         <description>LH Install Moved to Stalled</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>alewis@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mstaffieri@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>sjohnson@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/Lighthouse_Install_Stalled</template>
-    </alerts>
+    <recipients>
+            <recipient>alewis@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>mstaffieri@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>sjohnson@yodle.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <alerts>
         <fullName>LH_Install_Rescheduled</fullName>
         <description>LH Install Rescheduled</description>

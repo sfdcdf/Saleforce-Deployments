@@ -95,13 +95,16 @@
         <field>Cancellation_Request__c.Outcome__c</field>
     </columns>
     <columns>
-        <field>Cancellation_Request__c.Cancellation_Code__c</field>
+        <field>Cancellation_Request__c.Cancel_Code_1__c</field>
     </columns>
     <columns>
-        <field>Cancellation_Request__c.Cancellation_Code_Details__c</field>
+        <field>Cancellation_Request__c.Cancel_Code_1_Details__c</field>
     </columns>
     <columns>
-        <field>Cancellation_Request__c.Other_Cancel_Code__c</field>
+        <field>Cancellation_Request__c.Cancel_Code_2__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Cancel_Code_2_Details__c</field>
     </columns>
     <columns>
         <field>Cancellation_Request__c.Days_Live_at__c</field>

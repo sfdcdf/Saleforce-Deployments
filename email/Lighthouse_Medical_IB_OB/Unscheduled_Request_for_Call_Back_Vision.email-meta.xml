@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow up to client requesting to schedule a call</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Lighthouse_Medical_March_2016</letterhead>
+    <name>Unscheduled – Request for Call Back – Vision</name>
+    <style>freeForm</style>
+    <subject>Lighthouse Setup and Portal Overview - {!Account.Client_ID__c}</subject>
+    <textOnly>Hi {!Account.Name},
+
+We have reached out in an attempt to schedule the setup call for your Lighthouse 360 account. This call is to review all the messages available within the system and to finalize the setup of your campaigns. We will also use this time to provide you with an overview of the Lighthouse platform.
+
+Please reach out to our team at your earliest convenience to schedule this call.
+
+Thank you for choosing Lighthouse. We appreciate your business!
+
+{!User.FirstName}
+Lighthouse Support
+(888) 427-5454</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

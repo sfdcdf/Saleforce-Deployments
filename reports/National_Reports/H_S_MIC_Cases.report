@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Account.Organic_Analyses__r$Account_Name__c</field>
+        <field>Account.Organic_Analyses__r$Name</field>
     </columns>
     <columns>
         <field>Account$Client_ID__c</field>
     </columns>
     <columns>
-        <field>Account.Organic_Analyses__r$Client_ID__c</field>
+        <field>Account.Organic_Analyses__r$Account_Name__c</field>
     </columns>
     <columns>
-        <field>Account.Organic_Analyses__r$Name</field>
+        <field>Account.Organic_Analyses__r$Google_Listing_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account$Organic_Live_Date__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -41,6 +44,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_CURPREV1</interval>
     </timeFrameFilter>
 </Report>

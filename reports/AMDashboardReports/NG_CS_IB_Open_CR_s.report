@@ -93,7 +93,7 @@
         <field>Account.Cancellation_Requests__r$Next_Scheduled_Contact_Date__c</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <booleanFilter>(1 AND (2 OR 3)) AND 4</booleanFilter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
             <columnToColumn>false</columnToColumn>
@@ -106,14 +106,21 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Leonard Edwards</value>
+            <value>Leonard Edwards,Angela Anderson</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Leonard Edwards,Angela Luddington,Marsha Cunningham,Dawn Jordan,Linda Keating</value>
+            <value>Leonard Edwards,Angela Anderson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$LastModifiedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>TODAY</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

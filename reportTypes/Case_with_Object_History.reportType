@@ -527,16 +527,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Case_Age_Business_Hours__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Case_Age_Bus_Hours_98EST__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Case_Closed_By__c</field>
             <table>Case</table>
         </columns>
@@ -2912,16 +2902,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Response_Time_Hours__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Response_Time_Bus_Hours_98EST__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Result_of_QA__c</field>
             <table>Case</table>
         </columns>
@@ -3748,6 +3728,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>ZTO_Time_Stamp__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Account.IMS_Rep__c</field>
             <table>Case</table>
         </columns>
         <masterLabel>Cases</masterLabel>

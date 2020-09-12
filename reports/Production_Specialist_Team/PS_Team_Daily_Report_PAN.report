@@ -25,7 +25,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Andrea Murray,Kavar McDaniel,Jared Pfaff</value>
+            <value>Jared Pfaff,Shaun Mcgee,Jared Brock</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -41,6 +41,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Organic_Analysis__c.Closed_Date__c</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <interval>INTERVAL_LASTWEEK</interval>
     </timeFrameFilter>
 </Report>

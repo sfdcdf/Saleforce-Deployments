@@ -1,16 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Performance NCS QA</name>
     <queueMembers>
         <users>
-            <user>scott.forsythe@web.com</user>
-        </users>
+            
+            
+            
+        <user>scott.forsythe@web.com</user></users>
     </queueMembers>
     <queueSobject>
-        <sobjectType>Performance_Analysis__c</sobjectType>
+        <sobjectType>Case</sobjectType>
     </queueSobject>
     <queueSobject>
-        <sobjectType>Performance_Snapshot__c</sobjectType>
+        <sobjectType>Performance_Analysis__c</sobjectType>
     </queueSobject>
 </Queue>

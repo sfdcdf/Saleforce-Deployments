@@ -27,6 +27,12 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Case.Refund_Amount__c</field>
     </columns>
@@ -81,13 +87,6 @@
             <operator>notContain</operator>
             <value>net zero</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Case.Credit_Refund_Reason__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Credit: Service Concerns,Refund: Service Concerns,Refund: CS Billing Issue,Credit: CS Billing Issue,Refund: Performance Issue,Credit: Performance Issue</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -100,7 +99,7 @@
         <field>Case.Credit_Refund_Reason__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Refund Report Stack Rank 2018 Update</name>
+    <name>Refund Report - &quot;This Month&quot;</name>
     <params>
         <name>units</name>
         <value>h</value>
@@ -118,8 +117,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2018-03-31</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-03-01</startDate>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>

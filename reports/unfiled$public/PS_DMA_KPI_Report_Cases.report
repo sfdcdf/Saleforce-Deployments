@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
+        <field>Case.Client_ID__c</field>
+    </columns>
+    <columns>
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
@@ -17,6 +20,9 @@
     </columns>
     <columns>
         <field>Case.YBNRequestDetail__c</field>
+    </columns>
+    <columns>
+        <field>MILESTONESTATUS</field>
     </columns>
     <columns>
         <field>SUBJECT</field>
@@ -37,7 +43,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
-            <value>chase woodhams,chaides,shawna kays,Minert,Ferrell</value>
+            <value>fouraker,erin fouraker,Ciurdar,Murphy,Lucas,Meirow,eden meirow,addico,solomon,heather lowe,lowe,lakeisha Kinsey,Kinsey</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
@@ -45,6 +51,13 @@
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Request,Case.New_Client_Setup,Case.Performance_Issue,Case.O_Account_Update,Case.YBN_Master_Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>7 Day Opt,3 Day Error Check</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -62,10 +75,10 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Case.Date_Opt_Completed__c</dateColumn>
-        <endDate>2017-05-31</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2017-05-01</startDate>
+        <interval>INTERVAL_LAST60</interval>
     </timeFrameFilter>
 </Report>

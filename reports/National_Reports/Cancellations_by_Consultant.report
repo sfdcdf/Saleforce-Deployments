@@ -4,9 +4,14 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
+        <field>FK_$Account.IMS_Rep__c</field>
+    </columns>
+    <columns>
         <field>FK_NAME</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
         <field>Cancellation_Request__c.Revenue_Lost_Month__c</field>
     </columns>
     <columns>
@@ -16,13 +21,13 @@
         <field>Cancellation_Request__c.Cancel_Code__c</field>
     </columns>
     <columns>
+        <field>Cancellation_Request__c.First_Cancel_Code_Notes__c</field>
+    </columns>
+    <columns>
         <field>Cancellation_Request__c.First_Cancel_Code_Details__c</field>
     </columns>
     <columns>
         <field>Cancellation_Request__c.Second_Cancel_Code__c</field>
-    </columns>
-    <columns>
-        <field>Cancellation_Request__c.Second_Cancel_Code_Details__c</field>
     </columns>
     <columns>
         <field>Cancellation_Request__c.Additional_Notes__c</field>
@@ -38,6 +43,13 @@
             <operator>equals</operator>
             <value>Cancellation_Request__c.WBN_Cancellation_Request</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Cancelled</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -52,11 +64,11 @@
     </params>
     <reportType>CustomEntity$Cancellation_Request__c@Cancellation_Request__c.Account_Name__c</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_LAST7</interval>
+        <dateColumn>CUST_LAST_UPDATE</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

@@ -17,10 +17,7 @@
         <fullName>LH_Opportunity_Stage_changed_to_Demo</fullName>
         <description>LH Opportunity Stage changed to Demo</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>bosteros@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/New_LH_Opportunity_in_Demo_Stage</template>
     </alerts>
@@ -44,28 +41,6 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/Upsell_Followup_Needed</template>
-    </alerts>
-    <alerts>
-        <fullName>Upsell_Addition_notification_to_Steve_Marshall</fullName>
-        <description>Upsell Addition notification to Steve Marshall</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>smarshall@web.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Alert_for_Opportunity_Upsell_Addition_Approval</template>
-    </alerts>
-    <alerts>
-        <fullName>Upsell_Addition_to_Josh_Cummings</fullName>
-        <description>Upsell Addition notification to Josh Cummings</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>jcummings@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Alert_for_Opportunity_Upsell_Addition_Approval</template>
     </alerts>
     <alerts>
         <fullName>Upsell_approved_notification</fullName>
@@ -315,32 +290,26 @@
         <fullName>YBN_Opp_in_Exec_Review_Call_Stage_Assign_PImS</fullName>
         <description>YBN - Assign PImS</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>doleary@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Opp_in_Exec_Review_Call_Stage_Assign_PImS</template>
-    </alerts>
+    <recipients>
+            <recipient>doleary@yodle.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <alerts>
         <fullName>YBN_Perf_Team_Run_Book_Weekly_Meeting</fullName>
         <description>YBN Perf Team Run Book &amp; Weekly Meeting</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>doleary@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Perf_Team_Run_Book_Weekly_Meeting</template>
-    </alerts>
+    <recipients>
+            <recipient>doleary@yodle.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <alerts>
         <fullName>YBN_Phased_Launch_Date_Changed</fullName>
         <description>YBN: Phased Launch Date Changed</description>
@@ -356,31 +325,28 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>ami.dave@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>jswitzer@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mbrevig@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>sarah.mctate@yodle.com</recipient>
             <type>user</type>
         </recipients>
+        
+        
+        
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Phased_Launch_Date_Changed</template>
     </alerts>
@@ -395,47 +361,44 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>ami.dave@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>jennifer.hendrickson@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>jswitzer@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>kelly.rix@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mbrevig@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mmachado@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mpugh@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ryan.deller@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>sarah.mctate@yodle.com</recipient>
             <type>user</type>
         </recipients>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Relationship_Launch_Date_Changed</template>
     </alerts>
@@ -777,7 +740,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
     <fieldUpdates>
         <fullName>Owner_to_Beau</fullName>
         <field>OwnerId</field>
-        <lookupValue>bosteros@yodle.com</lookupValue>
+        <lookupValue>sfdc@yodle.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>Owner to Beau</name>
         <notifyAssignee>true</notifyAssignee>
@@ -839,19 +802,20 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>StageDetailupdate</fullName>
-        <field>Stage_Detail__c</field>
-        <literalValue>Deal Approved</literalValue>
-        <name>StageDetailupdate</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Status_Change_Today</fullName>
         <field>Last_Status_Change__c</field>
         <formula>TODAY()</formula>
         <name>Opportunity Last Status Change to Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Today_date</fullName>
+        <description>displaying today date in the filed</description>
+        <field>Client_Discovery_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Today date</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -2110,6 +2074,20 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
+        <fullName>Client Discovery Date auto populate</fullName>
+        <actions>
+            <name>Today_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Demo_Completed__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
         <fullName>Complete SEOPPC Ranking Scrape</fullName>
         <actions>
             <name>Completed_SEOPPC_Ranking_Scrape</name>
@@ -2548,7 +2526,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
             <name>Solution_Achitect_Requested</name>
             <type>Task</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Opportunity.Solutions_Architect__c</field>
             <operation>equals</operation>
@@ -2581,7 +2559,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
             <name>YBN_Opp_in_Exec_Review_Call_Stage_Assign_CSM</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 and 2 and (3 or (4 and 5))</booleanFilter>
         <criteriaItems>
             <field>Opportunity.StageName</field>
@@ -2616,7 +2594,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
             <name>YBN_Opp_in_Exec_Review_Call_Stage_Assign_CSM</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 and 2 and (3 or 4)</booleanFilter>
         <criteriaItems>
             <field>Opportunity.StageName</field>
@@ -2922,7 +2900,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
             <name>contract_status</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
@@ -3338,7 +3316,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
             <name>Populate_Sales_Director_Email</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Opportunity.Strategic_Project_Manager__c</field>
             <operation>notEqual</operation>
@@ -3649,10 +3627,6 @@ OR(
     <rules>
         <fullName>YBN%3A Stage Date - Client Discovery</fullName>
         <actions>
-            <name>Client_Discovery_Date_Today</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
             <name>Last_Stage_Change_Date_Today</name>
             <type>FieldUpdate</type>
         </actions>
@@ -3661,10 +3635,6 @@ OR(
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
             <value>Client Discovery</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Opportunity.Client_Discovery_Date__c</field>
-            <operation>equals</operation>
         </criteriaItems>
         <description>Populates date field on stage change</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>

@@ -27,6 +27,11 @@
         <label>Converted</label>
     </standardValue>
     <standardValue>
+        <fullName>Delivered</fullName>
+        <default>false</default>
+        <label>Delivered</label>
+    </standardValue>
+    <standardValue>
         <fullName>No Contact</fullName>
         <default>false</default>
         <label>No Contact</label>
@@ -47,9 +52,19 @@
         <label>Not Interested</label>
     </standardValue>
     <standardValue>
+        <fullName>Processing</fullName>
+        <default>false</default>
+        <label>Processing</label>
+    </standardValue>
+    <standardValue>
         <fullName>Qualified</fullName>
         <default>false</default>
         <label>Qualified</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ready to Send</fullName>
+        <default>false</default>
+        <label>Ready to Send</label>
     </standardValue>
     <standardValue>
         <fullName>Record</fullName>
@@ -67,8 +82,18 @@
         <label>Sent</label>
     </standardValue>
     <standardValue>
+        <fullName>Shipped</fullName>
+        <default>false</default>
+        <label>Shipped</label>
+    </standardValue>
+    <standardValue>
         <fullName>Test</fullName>
         <default>false</default>
         <label>Test</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Undeliverable</fullName>
+        <default>false</default>
+        <label>Undeliverable</label>
     </standardValue>
 </StandardValueSet>

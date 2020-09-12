@@ -37,7 +37,7 @@
         <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Account.Status__c</groupingColumn>
+        <groupingColumn>CASE_COMMENT_CREATED_BY</groupingColumn>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -105,32 +105,20 @@
             <value>Delete Case</value>
         </criteriaItems>
         <criteriaItems>
-            <column>CASE_COMMENT_CREATED_BY</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>joseph vickers</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>CASE_COMMENT</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>site build complete</value>
+            <operator>startsWith</operator>
+            <value>CSL</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Status__c</field>
+        <field>CASE_COMMENT_CREATED_BY</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Case.Sub_Status__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <name>ANN: Torchx Vickers</name>
+    <name>ANN: Torchx Launched by</name>
     <params>
         <name>units</name>
         <value>h</value>
@@ -145,7 +133,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <dateColumn>Account.Live_Date__c</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
     </timeFrameFilter>
 </Report>

@@ -2,7 +2,7 @@
 <ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
     <canvasConfig>
         <accessMethod>Post</accessMethod>
-        <canvasUrl>https://localhost:44317/</canvasUrl>
+        <canvasUrl>https://atxapp.registeredsite.com/qualityTeam/</canvasUrl>
         <locations>Visualforce</locations>
         <locations>Aura</locations>
         <locations>PageLayout</locations>
@@ -11,14 +11,15 @@
     <contactEmail>sfdc@yodle.com</contactEmail>
     <description>Used for Salesforce internal canvas applications for Quality Team</description>
     <label>Quality Team</label>
-    <mobileStartUrl>https://localhost:44317/</mobileStartUrl>
+    <mobileStartUrl>https://atxapp.registeredsite.com/qualityTeam/</mobileStartUrl>
     <oauthConfig>
-        <callbackUrl>https://localhost:44317/api/callback/</callbackUrl>
+        <callbackUrl>https://atxapp.registeredsite.com/qualityTeam/api/callback</callbackUrl>
         
         <isAdminApproved>true</isAdminApproved>
         <scopes>Full</scopes>
     </oauthConfig>
     <permissionSetName>Quality Team Rep Management Access</permissionSetName>
     <profileName>System Administrator</profileName>
-    <startUrl>https://localhost:44317/</startUrl>
+    <profileName>Salesforce Partner - Platinum</profileName>
+    <startUrl>https://atxapp.registeredsite.com/qualityTeam/</startUrl>
 </ConnectedApp>

@@ -48,13 +48,6 @@
             <value>Case.YBN_Outbound_Touch_Point</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.Reason_Detail__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Introduction Call/CSC,Month 1 Check In</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>PARENT_ACCOUNT_NAME</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>

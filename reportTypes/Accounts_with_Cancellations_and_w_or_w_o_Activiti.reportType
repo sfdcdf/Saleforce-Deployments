@@ -3219,6 +3219,31 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Type__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Code_1__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Code_1_Details__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Code_2__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Code_2_Details__c</field>
+            <table>Account.Cancellation_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Outcome__c</field>
             <table>Account.Cancellation_Requests__r</table>
         </columns>

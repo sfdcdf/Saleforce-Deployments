@@ -10,6 +10,9 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
+        <field>Case.Auto_Close_Date__c</field>
+    </columns>
+    <columns>
         <field>Case.Scheduled_Call__c</field>
     </columns>
     <columns>
@@ -22,7 +25,7 @@
         <field>AGE</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 or 6)</booleanFilter>
+        <booleanFilter>((1 AND 2 AND 3 AND 4 AND (5 or 6)) AND ((7 and 10) or (8 and 11) or (9 and 12) or 13))</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
@@ -64,6 +67,55 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lead Stream TP 1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lead Stream TP 2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lead Stream TP 3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Days_Since_Live__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>14</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Days_Since_Live__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>56</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Days_Since_Live__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>86</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lead Stream TP 1,Lead Stream TP 2,Lead Stream TP 3</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

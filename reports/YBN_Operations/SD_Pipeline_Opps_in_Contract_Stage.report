@@ -49,9 +49,6 @@
         <field>Opportunity.Total_Forecasted_Adoption_Value_Sum__c</field>
     </columns>
     <columns>
-        <field>PROBABILITY</field>
-    </columns>
-    <columns>
         <field>FISCAL_QUARTER</field>
     </columns>
     <columns>
@@ -96,13 +93,6 @@
             <value>THIS_MONTH</value>
         </criteriaItems>
         <criteriaItems>
-            <column>CLOSE_DATE</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>lessOrEqual</operator>
-            <value>NEXT_N_MONTHS:4</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>STAGE_NAME</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
@@ -141,6 +131,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_CURY</interval>
+        <interval>INTERVAL_CURNEXTY</interval>
     </timeFrameFilter>
 </Report>

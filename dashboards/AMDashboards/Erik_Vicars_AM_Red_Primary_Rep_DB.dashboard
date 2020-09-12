@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -11,13 +11,28 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <metricLabel>Scheduled Calls</metricLabel>
             <report>AMDashboardReports/Erik_Vicars_Future_Events</report>
             <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>AMP_Dashboard_Reports/AM_Red_Pending_Refund_Requests</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Pending Refund Requests</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -40,13 +55,35 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>AMDashboardReports/Erik_Vicars_Open_CRs</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>Open CRs</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>Account.Cancellation_Requests__r$Owner</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <showTotal>false</showTotal>
+                <sortBy>RowValueAscending</sortBy>
+            </dashboardTableColumn>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>AMP_Dashboard_Reports/AM_Red_CRs_Not_In_Save_Mode</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -63,7 +100,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>SLA Check</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -78,11 +115,11 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/AM_Red_Needs_Response</report>
+            <report>AMP_Dashboard_Reports/AM_Red_Needs_Response</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
             <title>Needs Response</title>
@@ -93,11 +130,11 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/AM_Red_No_Attempts_CRs</report>
+            <report>AMP_Dashboard_Reports/AM_Red_No_Attempts_CRs</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
             <title>No Attempt CRs</title>
@@ -106,7 +143,7 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -132,13 +169,42 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/AM_Red_Count_Unscheduled_TPs</report>
+            <report>AMP_Dashboard_Reports/AM_Red_Count_Unscheduled_TPs</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title># of Unscheduled TPs</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>BucketField_29626377</column>
+                <sortBy>RowLabelAscending</sortBy>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <showTotal>true</showTotal>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>true</calculatePercent>
+                <column>FORMULA1</column>
+                <decimalPlaces>1</decimalPlaces>
+                <showTotal>false</showTotal>
+            </dashboardTableColumn>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>AMP_Dashboard_Reports/AM_Red_TPs_This_Month</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <title>TPs Affecting Bonus This Month</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -161,11 +227,11 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/AM_Red_Open_Upsell_Ops</report>
+            <report>AMP_Dashboard_Reports/AM_Red_Open_Upsell_Ops</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>Open Upsell Opportunities</title>
         </components>
@@ -191,11 +257,11 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/AM_Red_Open_Charge_Failures</report>
+            <report>AMP_Dashboard_Reports/AM_Red_Open_Charge_Failures</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>Open Charge Failures</title>
         </components>
@@ -217,11 +283,11 @@
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/AM_Red_BoB</report>
+            <report>AMP_Dashboard_Reports/AM_Red_BoB</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title># Of Accts. / Rep</title>
         </components>
@@ -232,12 +298,12 @@
             </chartSummary>
             <componentType>Metric</componentType>
             <displayUnits>Integer</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#C25454</indicatorHighColor>
             <indicatorLowColor>#54C254</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <metricLabel>Churned Revenue</metricLabel>
-            <report>AMDashboardReports/AM_Red_Churn</report>
+            <report>AMP_Dashboard_Reports/AM_Red_Churn</report>
             <showRange>false</showRange>
         </components>
         <components>
@@ -245,25 +311,25 @@
             <componentType>Table</componentType>
             <dashboardTableColumn>
                 <column>Account.IMS_Rep__c</column>
-                <sortBy>RowLabelAscending</sortBy>
             </dashboardTableColumn>
             <dashboardTableColumn>
                 <calculatePercent>false</calculatePercent>
                 <column>FORMULA2</column>
                 <decimalPlaces>2</decimalPlaces>
                 <showTotal>false</showTotal>
+                <sortBy>RowValueAscending</sortBy>
             </dashboardTableColumn>
             <decimalPrecision>2</decimalPrecision>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <indicatorBreakpoint1>7.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>14.0</indicatorBreakpoint2>
+            <groupingSortProperties />
+            <indicatorBreakpoint1>14.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>17.0</indicatorBreakpoint2>
             <indicatorHighColor>#C25454</indicatorHighColor>
             <indicatorLowColor>#54C254</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/AM_Red_Churn</report>
+            <report>AMP_Dashboard_Reports/AM_Red_Churn</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>Approx. Percentage Churn</title>
         </components>
@@ -289,11 +355,11 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/AM_Red_Closed_CRs</report>
+            <report>AMP_Dashboard_Reports/AM_Red_Closed_CRs</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>Closed CRs This Month</title>
         </components>
@@ -314,11 +380,11 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/AM_Red_Left_to_Bill_This_Month</report>
+            <report>AMP_Dashboard_Reports/AM_Red_Left_to_Bill_This_Month</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>$ That is Scheduled to Bill This Month</title>
         </components>
@@ -328,11 +394,11 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/AM_Red_Cases_Closed_Today</report>
+            <report>AMP_Dashboard_Reports/AM_Red_Cases_Closed_Today</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
             <title>Cases Closed Today</title>

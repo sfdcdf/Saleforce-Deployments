@@ -139,6 +139,21 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object used to make request to the CS &amp; YBN Operations teams</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -1261,7 +1276,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
     <fields>
         <fullName>Minutes_to_Complete_Request__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Put in the total minutes it took to complete the task. Don’t worry about if this number is large or small – no one is judging. We want it to reflect the amount of work we are putting into these requests, so be honest here.</inlineHelpText>
+        <inlineHelpText>Put in the total minutes it took to complete the task. Don't worry about if this number is large or small - no one is judging. We want it to reflect the amount of work we are putting into these requests, so be honest here.</inlineHelpText>
         <label>Minutes to Complete Request</label>
         <precision>18</precision>
         <required>false</required>
@@ -4170,38 +4185,7 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
         <type>LongTextArea</type>
         <visibleLines>25</visibleLines>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Object used to make request to the CS &amp; YBN Operations teams</description>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Operations</label>
-    <nameField>
-        <displayFormat>Ops-{0000}</displayFormat>
-        <label>Operations Name</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Operations</pluralLabel>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>true</recordTypeTrackHistory>
-    <searchLayouts>
-        <searchResultsAdditionalFields>Opened_Date__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Expected_Completion_Date__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>JIRA_Issue_ID__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
@@ -4696,6 +4680,16 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
             <role>OperationsSL</role>
         </sharedTo>
     </listViews>
+    <nameField>
+        <displayFormat>Ops-{0000}</displayFormat>
+        <label>Operations Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Operations</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Administrative_Items</fullName>
         <active>true</active>
@@ -24412,6 +24406,12 @@ CASE(MOD( Opened_Date__c - DATE(1985,6,24),7),
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Opened_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Expected_Completion_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>JIRA_Issue_ID__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Cannot_Approve_Your_Own_Case</fullName>
         <active>true</active>
@@ -24676,4 +24676,5 @@ ispickval( Proposed_Corporate_Service_Level__c,"" ),
 ispickval(   Exisiting_Corporate_Service_Level__c  ,"" ))))</errorConditionFormula>
         <errorMessage>The "proposed corporate service level" and "existing corporate service level" fields must be filled out</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>

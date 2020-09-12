@@ -49,11 +49,23 @@
             <operator>notEqual</operator>
             <value>Shannon Lang,Ryan Northover</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Daily</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Case.QAed_By__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Product_Type__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>SWAT - PLQA completed by agent - Daily</name>

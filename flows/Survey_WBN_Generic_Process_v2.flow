@@ -485,7 +485,7 @@ ISPICKVAL({!myVariable_current.Status__c}, &quot;New&quot;),
             <name>originalFormula</name>
             <value>
                 <stringValue>AND(
-NOT(ISBLANK([Customer_Surveys__c].Account__c.IMS_Rep__c )),[Customer_Surveys__c].RecordType.Name = &quot;NPS Survey YBN&quot;,
+NOT(ISBLANK([Customer_Surveys__c].Account__c.IMS_Rep__c )), [Customer_Surveys__c].RecordType.Name = &quot;NPS Survey YBN&quot;,
 [Customer_Surveys__c].Customer_Survey_Name__c = &quot;NPS Survey WBN&quot;,
 ISPICKVAL([Customer_Surveys__c].Status__c, &quot;New&quot;),
 [Customer_Surveys__c].How_likely_are_you_to_recommend_NPS__c &gt;  6
@@ -495,7 +495,7 @@ ISPICKVAL([Customer_Surveys__c].Status__c, &quot;New&quot;),
         <name>formula_myRule_15</name>
         <dataType>Boolean</dataType>
         <expression>AND(
-NOT(ISBLANK({!myVariable_current.Account__r.IMS_Rep__c} )),{!myVariable_current.RecordType.Name} = &quot;NPS Survey YBN&quot;,
+NOT(ISBLANK({!myVariable_current.Account__r.IMS_Rep__c} )), {!myVariable_current.RecordType.Name} = &quot;NPS Survey YBN&quot;,
 {!myVariable_current.Customer_Survey_Name__c} = &quot;NPS Survey WBN&quot;,
 ISPICKVAL({!myVariable_current.Status__c}, &quot;New&quot;),
 {!myVariable_current.How_likely_are_you_to_recommend_NPS__c} &gt;  6
@@ -624,7 +624,7 @@ OR({!myVariable_current.Network_satisfaction_with_Web_com__c} = &quot;7&quot;,
 {!myVariable_current.Network_satisfaction_with_Web_com__c} = &quot;10&quot;)
 )</expression>
     </formulas>
-    <interviewLabel>Survey_WBN_Generic_Process_v2-3_InterviewLabel</interviewLabel>
+    <interviewLabel>Survey_WBN_Generic_Process_v2-2_InterviewLabel</interviewLabel>
     <label>Survey - WBN - Generic Process v2</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -671,7 +671,7 @@ OR({!myVariable_current.Network_satisfaction_with_Web_com__c} = &quot;7&quot;,
             </value>
         </processMetadataValues>
         <name>myRule_15_A1</name>
-        <label>Update YBN Consultant</label>
+        <label>Update YBN Consultant and YBN CSD</label>
         <locationX>1500</locationX>
         <locationY>200</locationY>
         <connector>
@@ -883,7 +883,7 @@ OR({!myVariable_current.Network_satisfaction_with_Web_com__c} = &quot;7&quot;,
         <object>Customer_Surveys__c</object>
     </recordUpdates>
     <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
-    <status>Obsolete</status>
+    <status>Draft</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>

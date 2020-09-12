@@ -7,6 +7,5 @@
     <label>TLS1.0 Warning</label>
     <tabs>Config_TLS_Warning</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
-    <tabs>MarketoLeadSFAccountMapping__c</tabs>
-    <tabs>Schedule_Split__c</tabs>
+    <tabs>Notification_Log__c</tabs>
 </CustomApplication>

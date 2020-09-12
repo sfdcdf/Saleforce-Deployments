@@ -46,10 +46,6 @@
                 <behavior>Edit</behavior>
                 <field>Maintain_Ongoing_Relationship__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Client_Email_from_Survey__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -66,28 +62,6 @@
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
-    </layoutSections>
-    <layoutSections>
-        <customLabel>true</customLabel>
-        <detailHeading>true</detailHeading>
-        <editHeading>true</editHeading>
-        <label>Alert fields</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>YBN_Consultant_email_alert__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>YBN_CSD_email_alert__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Manager_of_YBN_CSD__c</field>
-            </layoutItems>
-        </layoutColumns>
-        <layoutColumns/>
-        <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
         <customLabel>true</customLabel>
@@ -455,15 +429,6 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedFileList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>EmailSubscription__c.Account__c</fields>
-        <fields>EmailSubscription__c.CREATED_DATE</fields>
-        <fields>EmailSubscription__c.Email__c</fields>
-        <fields>Owner.CUSTENT_OWNER_NAME</fields>
-        <fields>EmailSubscription__c.Sent_Date_Issue_Resolution_Survey__c</fields>
-        <relatedList>Acct_Email_Sub_to_Survey__c.Customer_Survey_ID__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>

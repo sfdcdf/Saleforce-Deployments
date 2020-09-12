@@ -87,11 +87,11 @@
             <value>Escalated to IMS,Promise to Pay</value>
         </criteriaItems>
         <criteriaItems>
-            <column>OWNER_ROLE</column>
+            <column>Case.Case_Owner_Manager__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>Collections Consultant</value>
+            <operator>equals</operator>
+            <value>Dawn Rodgers</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

@@ -22,7 +22,25 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>Case.ICC_Complete__c</field>
+    </columns>
+    <columns>
+        <field>Case.DNS_Received__c</field>
+    </columns>
+    <columns>
+        <field>Case.MLS_Paperwork_Complete__c</field>
+    </columns>
+    <columns>
+        <field>Case.MLS_Approved__c</field>
+    </columns>
+    <columns>
+        <field>Case.Client_ID__c</field>
+    </columns>
+    <columns>
         <field>Case.Last_Attempt_Date__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.STATE</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -37,7 +55,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>Shannon Lang,Prisma Hernandez,Johnna Guidry,Alisha Herzberg,Amanda Peake,Adam Livingstone,Nikki Micou,Lindsey Schmid,Leslie Goldman,Holly Macki,Terry Beaver,Maria Mclean,Jason Gee</value>
+            <value>Shannon Lang,Prisma Hernandez,Alisha Herzberg,Colin Heighton,Nikki Micou,Leslie Goldman,Holly Macki,Terry Beaver,Maria Mclean,Jason Gee,berkley desmond,terrance beaver</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -46,7 +64,7 @@
         <field>OWNER</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>TFS Case Assignments</name>
+    <name>Shannon: TFS Case Assignments</name>
     <params>
         <name>units</name>
         <value>h</value>
@@ -60,6 +78,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>Case.Sub_Status__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

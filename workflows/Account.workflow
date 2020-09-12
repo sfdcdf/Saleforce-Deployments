@@ -839,10 +839,6 @@ MOD(Last_Completed_YBN_TP__c - DATE(1900,1,7),7 ),
     </rules>
     <rules>
         <fullName>Client Touch Point Reminder IL SL A</fullName>
-        <actions>
-            <name>Client_Touch_Point_Reminder_A</name>
-            <type>Task</type>
-        </actions>
         <active>false</active>
         <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
         <criteriaItems>
@@ -1188,35 +1184,6 @@ MOD(Last_Completed_YBN_TP__c - DATE(1900,1,7),7 ),
             <value>Letters</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Lighthouse Exit Survey</fullName>
-        <actions>
-            <name>Lighthouse_Exit_Survey</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>LH_Exit_Survey_Sent_Date</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>sent to lighthouse dental/chiro clients when account moves to "off" status</description>
-        <formula>AND( 
- ISPICKVAL(Status__c, "OFF"),
- CONTAINS (IMS_Rep__c, "Lighthouse"),
-
-OR(
-CONTAINS(Secondary_Segments__c , "Dentist"),
-CONTAINS(Secondary_Segments__c , "Chiro"),
-CONTAINS(Secondary_Segments__c , "Orthodontist")),
-
-
- CPP_Account__c = "No", 
- CONTAINS (Product_Type_Transactional__c, "Lighthouse"),
- Days_Live__c &gt; 60
-
-)</formula>
-        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>Live Date Update</fullName>
@@ -1957,17 +1924,6 @@ NOT(ISNULL(PRIORVALUE(Service_Model_Local__c))))</formula>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
-    <tasks>
-        <fullName>Client_Touch_Point_Reminder_A</fullName>
-        <assignedTo>sarah.mctate@yodle.com</assignedTo>
-        <assignedToType>user</assignedToType>
-        <dueDateOffset>10</dueDateOffset>
-        <notifyAssignee>false</notifyAssignee>
-        <priority>Normal</priority>
-        <protected>false</protected>
-        <status>Not Started</status>
-        <subject>Client Touch Point Reminder_A</subject>
-    </tasks>
     <tasks>
         <fullName>Client_Touch_Point_Reminder_B</fullName>
         <assignedTo>YBN_Consultant</assignedTo>

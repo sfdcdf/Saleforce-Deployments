@@ -72,9 +72,6 @@
         <field>STAGE_NAME</field>
     </columns>
     <columns>
-        <field>PROBABILITY</field>
-    </columns>
-    <columns>
         <field>FISCAL_QUARTER</field>
     </columns>
     <columns>
@@ -132,7 +129,7 @@
     </params>
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

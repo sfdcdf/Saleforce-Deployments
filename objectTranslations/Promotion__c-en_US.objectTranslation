@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Promotion</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Promotions</value>
+    </caseValues>
     <fields>
-        <help><!-- e.g. If PPC Budget increase - what is the minimum monthly budget to qualify (e.g. $1000/mo) what is the % of budget increase and for how long? --></help>
+        <help><!-- e.g. If PPC Budget increase - what is the minimum monthly budget to qualify (e.g. $1000/mo) what is the % of budget increase and for how long? --></help>
         <label><!-- Campaign Economics --></label>
         <name>CampaignEconomics__c</name>
     </fields>
@@ -121,13 +129,5 @@
             <translation><!-- 9 Month --></translation>
         </picklistValues>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Promotion</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Promotions</value>
-    </caseValues>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

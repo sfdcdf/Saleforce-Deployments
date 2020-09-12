@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Operations</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Operations</value>
+    </caseValues>
     <fields>
         <label><!-- Account Name --></label>
         <name>Account_Name__c</name>
@@ -551,7 +559,7 @@
         <name>Minutes_Saved__c</name>
     </fields>
     <fields>
-        <help><!-- Put in the total minutes it took to complete the task. Don’t worry about if this number is large or small – no one is judging. We want it to reflect the amount of work we are putting into these requests, so be honest here. --></help>
+        <help><!-- Put in the total minutes it took to complete the task. Don&apos;t worry about if this number is large or small - no one is judging. We want it to reflect the amount of work we are putting into these requests, so be honest here. --></help>
         <label><!-- Minutes to Complete Request --></label>
         <name>Minutes_to_Complete_Request__c</name>
     </fields>
@@ -1982,15 +1990,6 @@
         <label><!-- What is the new process? --></label>
         <name>What_is_the_new_process__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Operations</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Operations</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
     <layouts>
         <layout>Administrative Items (feed)</layout>
         <sections>
@@ -2478,6 +2477,7 @@
         <label><!-- Dedicated YO2/OR3 Free Time Request --></label>
         <name>YO_2_0_Free_Time_Request</name>
     </recordTypes>
+    <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- You cannot approve your own case.  Please have your manager approve this escalation. --></errorMessage>
         <name>Cannot_Approve_Your_Own_Case</name>

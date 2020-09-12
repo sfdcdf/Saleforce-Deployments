@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardGridLayout>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Gauge</componentType>
+                <displayUnits>Auto</displayUnits>
+                <gaugeMax>20.0</gaugeMax>
+                <gaugeMin>0.0</gaugeMin>
+                <groupingSortProperties />
+                <header>SE Demos This Wk</header>
+                <indicatorBreakpoint1>10.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>17.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <report>WBN_SE_MGMT/SE_Demos_This_Wk</report>
+                <showPercentage>false</showPercentage>
+                <showRange>false</showRange>
+                <showTotal>true</showTotal>
+                <showValues>false</showValues>
+            </dashboardComponent>
+            <rowIndex>0</rowIndex>
+            <rowSpan>3</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>2</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Gauge</componentType>
+                <displayUnits>Auto</displayUnits>
+                <gaugeMax>100.0</gaugeMax>
+                <gaugeMin>0.0</gaugeMin>
+                <groupingSortProperties />
+                <header>SE Demos This Month</header>
+                <indicatorBreakpoint1>35.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>70.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <report>WBN_SE_MGMT/SE_Demos_This_Month</report>
+                <showPercentage>false</showPercentage>
+                <showRange>false</showRange>
+                <showTotal>true</showTotal>
+                <showValues>false</showValues>
+            </dashboardComponent>
+            <rowIndex>0</rowIndex>
+            <rowSpan>3</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>1</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <groupingSortProperties />
+                <header>Deals This Week</header>
+                <indicatorBreakpoint1>20.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>40.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <metricLabel>Deals Won</metricLabel>
+                <report>WBN_SE_MGMT/CW_IL_Sales</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>3</rowIndex>
+            <rowSpan>2</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>1</colSpan>
+            <columnIndex>1</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <column>Opportunity.Monthly_Average_Revenue__c</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <displayUnits>Integer</displayUnits>
+                <groupingSortProperties />
+                <indicatorBreakpoint1>8000.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>14000.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <metricLabel>LRR Won</metricLabel>
+                <report>WBN_SE_MGMT/CW_IL_Sales</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>3</rowIndex>
+            <rowSpan>2</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>2</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Bar</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>true</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>FULL_NAME</groupingColumn>
+                <groupingSortProperties />
+                <legendPosition>Bottom</legendPosition>
+                <report>WBN_SE_MGMT/CW_IL_Sales</report>
+                <showPercentage>false</showPercentage>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <title>Deals This Wk by SE</title>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>3</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>1</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <groupingSortProperties />
+                <header>Deals This Month</header>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <metricLabel>Deals Won</metricLabel>
+                <report>National_Sales/Taylor_SE_Monthly_Bookings</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>5</rowIndex>
+            <rowSpan>2</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>1</colSpan>
+            <columnIndex>1</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <column>FORMULA2</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Integer</displayUnits>
+                <groupingSortProperties />
+                <indicatorBreakpoint1>80000.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>100000.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <metricLabel>MTD LRR</metricLabel>
+                <report>National_Sales/Taylor_SE_Monthly_Bookings</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>5</rowIndex>
+            <rowSpan>2</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>2</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>FORMULA2</column>
+                </chartSummary>
+                <componentType>Bar</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Integer</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>FULL_NAME</groupingColumn>
+                <groupingSortProperties />
+                <legendPosition>Bottom</legendPosition>
+                <report>National_Sales/MTD_NCSE_Sales_for_Commissions</report>
+                <showPercentage>false</showPercentage>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <title>MTD LRR by SE</title>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>7</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <numberOfColumns>9</numberOfColumns>
+        <rowHeight>80</rowHeight>
+    </dashboardGridLayout>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>true</isGridLayout>
+    
+    <textColor>#000000</textColor>
+    <title>SE KPI Dash</title>
+    <titleColor>#3333FF</titleColor>
+    <titleSize>10</titleSize>
+</Dashboard>

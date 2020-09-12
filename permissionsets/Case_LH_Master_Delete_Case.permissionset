@@ -37512,4 +37512,21 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Case - LH Master - Delete Case</label>
     <license>Salesforce</license>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Case</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <recordTypeVisibilities>
+        <recordType>Case.LH_Master</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Case.Master</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
 </PermissionSet>

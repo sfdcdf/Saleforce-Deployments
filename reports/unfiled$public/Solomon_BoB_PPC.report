@@ -4,6 +4,9 @@
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
+        <field>Case.Client_ID__c</field>
+    </columns>
+    <columns>
         <field>PARENT_ACCOUNT_NAME</field>
     </columns>
     <columns>
@@ -64,14 +67,14 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
-            <value>Senior Helpers,Affordable Dentures,Handy Man Matters</value>
+            <value>Affordable Dentures,Johnson Controls - Liberties Dealers,Dimensional Dental Management,West Coast Dental,Pilkingtown Law Firm</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT_ACCOUNT_NAME</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
-            <value>Senior Helpers,Affordable Dentures,Handyman Matters,Handy Man Matters</value>
+            <value>Affordable Dentures,Johnson Controls - Liberties Dealers,Dimensional Dental Management,West Coast Dental,Pilkingtown Law Firm</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

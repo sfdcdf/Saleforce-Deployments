@@ -19,20 +19,13 @@
         <field>Case$ClosedDate</field>
     </columns>
     <filter>
-        <booleanFilter>((1 OR 2) AND 3) AND 4</booleanFilter>
+        <booleanFilter>((1) AND 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>Case.Activities$Subject</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>startsWith</operator>
             <value>Email:</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Case.Activities$CallType</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Assigned_To_Role__c</column>
@@ -67,7 +60,7 @@
     </params>
     <reportType>Cases_with_Activities__c</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

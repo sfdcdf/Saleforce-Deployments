@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -9,35 +9,11 @@
         <columnSize>Medium</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Metric</componentType>
-            <displayUnits>Integer</displayUnits>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <metricLabel>Total LRR Closed Today</metricLabel>
-            <report>WBN_SE_MGMT/NCSE_Daily_LRR_Report</report>
-            <showRange>false</showRange>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Metric</componentType>
-            <displayUnits>Integer</displayUnits>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <metricLabel>Total LRR Closed This Month</metricLabel>
-            <report>National_Sales/NCSE_Daily_LRR_Report_This_Month</report>
-            <showRange>false</showRange>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Table</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Bottoms Up Deals this Month</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -49,45 +25,9 @@
     </leftSection>
     <middleSection>
         <columnSize>Medium</columnSize>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <componentType>Line</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingSortProperties/>
-            <legendPosition>Bottom</legendPosition>
-            <report>National_Sales/SE_Daily_Revenue_Trending_This_Month</report>
-            <showPercentage>false</showPercentage>
-            <showValues>true</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>SE Daily LRR</title>
-            <useReportChart>false</useReportChart>
-        </components>
     </middleSection>
     <rightSection>
         <columnSize>Medium</columnSize>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <componentType>Column</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingSortProperties/>
-            <legendPosition>Bottom</legendPosition>
-            <report>National_Sales/NCSE_Daily_LRR_Report_This_Month</report>
-            <showPercentage>false</showPercentage>
-            <showValues>true</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>Total Monthly LRR By Rep</title>
-            <useReportChart>false</useReportChart>
-        </components>
     </rightSection>
     <runningUser>ryan.volkel@yodle.com</runningUser>
     <textColor>#000000</textColor>

@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quality Case</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quality Case</value>
+    </caseValues>
     <fields>
         <label><!-- Account Name --></label>
         <name>Account_Name__c</name>
@@ -1569,6 +1577,10 @@
             <translation><!-- Charlotte --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Field Sales</masterLabel>
+            <translation><!-- Field Sales --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Jacksonville</masterLabel>
             <translation><!-- Jacksonville --></translation>
         </picklistValues>
@@ -1649,15 +1661,6 @@
             <translation><!-- &gt;2000 --></translation>
         </picklistValues>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Quality Case</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Quality Case</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
     <layouts>
         <layout>Acquisio Master Quality</layout>
         <sections>
@@ -1775,4 +1778,5 @@
         <label><!-- TORCHx Master Quality --></label>
         <name>TORCHx_Master_Quality</name>
     </recordTypes>
+    <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

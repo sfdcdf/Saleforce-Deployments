@@ -4,7 +4,13 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>PARENT.NAME</field>
+    </columns>
+    <columns>
         <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Monthly_Budget__c</field>
     </columns>
     <columns>
         <field>Account.Individual_Location_Service_Level__c</field>
@@ -12,7 +18,11 @@
     <columns>
         <field>Account.Status__c</field>
     </columns>
+    <columns>
+        <field>Account.Email_for_Touchplan__c</field>
+    </columns>
     <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND ((6 OR 7))</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
@@ -46,7 +56,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
-            <value>JCI,Berry</value>
+            <value>Berry</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep_Role__c</column>
@@ -55,13 +65,15 @@
             <operator>equals</operator>
             <value>YBN: Customer Success Consultant,YBN: Senior Customer Success Consultant</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Kimberly Williams,Logan Rollier</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>PARENT.NAME</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Account.IMS_Rep__c</field>
@@ -74,7 +86,7 @@
     </params>
     <reportType>AccountList</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

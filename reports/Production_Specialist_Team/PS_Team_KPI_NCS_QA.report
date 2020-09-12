@@ -13,6 +13,7 @@
         <field>Case.QA_Completed_By__c</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
         <field>Case.PES_Time_To_Complete_Task__c</field>
     </columns>
     <columns>
@@ -23,11 +24,11 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Case.QA_Completed_By__c</column>
+            <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Brian Pekarek,Andrea Wilson,Andrea Murray,Stephanie Cinque,Ashleigh Ratkovich,Jared Pfaff,Kavar McDaniel,Tiffany Cleveland</value>
+            <value>Case.New_Client_Setup</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -49,6 +50,6 @@
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Case.QA_Completed_Date__c</dateColumn>
-        <interval>INTERVAL_LAST60</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

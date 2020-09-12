@@ -43,7 +43,7 @@
             <name>Automated_TP_Event_Scheduled</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Event.RecordTypeId</field>
             <operation>equals</operation>
@@ -57,7 +57,7 @@
             <name>YBN_Automated_TP_Event_Rescheduled</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <formula>AND(   RecordType.Name = "WBN Calendar Blocker",    OR(     ISCHANGED(ActivityDate),     ISCHANGED(ActivityDateTime)   ) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>

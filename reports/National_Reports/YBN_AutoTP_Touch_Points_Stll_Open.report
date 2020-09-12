@@ -55,7 +55,7 @@
         <relatedTableJoinColumn>Account</relatedTableJoinColumn>
     </crossFilters>
     <filter>
-        <booleanFilter>(((((1 AND (2 OR 3)) AND 4) AND 5) AND 6) AND 7) AND 8</booleanFilter>
+        <booleanFilter>(((((1 AND (2 OR 3)) AND 4) AND 5) AND 6) AND 7)</booleanFilter>
         <criteriaItems>
             <column>Account.Status__c</column>
             <columnToColumn>false</columnToColumn>
@@ -97,13 +97,6 @@
             <isUnlocked>true</isUnlocked>
             <operator>lessThan</operator>
             <value>TODAY</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Account.Marketo_ID_For_Touchplan__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.YBN_Relationship__c</column>

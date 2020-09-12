@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
-    <assignments>
-        <users>
-            <user>brooke.grossman@yodle.com</user>
-            <user>joe.janisch@yodle.com</user>
-            <user>jordan.sanchez@web.com</user>
-            <user>julia.correa@yodle.com</user>
-            <user>kati.yee@yodle.com</user>
-            <user>laura.vitro@yodle.com</user>
-            <user>lynn.tobias@yodle.com</user>
-            <user>mchamp@yodle.com</user>
-            <user>tdube@yodle.com</user>
-            <user>tricia.valadez@yodle.com</user>
-            <user>mwightman@yodle.com</user>
-        </users>
-    </assignments>
-    <autoGreeting>Hi, thanks for contacting Lighthouse.  My name is {!User_FirstName}. Who do I have the pleasure of speaking with today?</autoGreeting>
+    <autoGreeting>Thanks for contacting Lighthouse. My name is {!User_FirstName}. For account security, may I please have your first and last name?</autoGreeting>
     <capacity>3</capacity>
     <criticalWaitTime>20</criticalWaitTime>
     <customAgentName>Lighthouse Support</customAgentName>

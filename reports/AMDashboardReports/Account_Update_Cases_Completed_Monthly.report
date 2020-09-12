@@ -82,7 +82,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Andrew Roy</value>
+            <value>Janine Martin,Thomas Peppard</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
@@ -90,6 +90,13 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>TORCHx</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -109,7 +116,7 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

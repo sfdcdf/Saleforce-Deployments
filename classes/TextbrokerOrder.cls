@@ -29,7 +29,7 @@ public with sharing class TextbrokerOrder {
         + ' - Domain Name to be Used for YO: ' +  c.Domain_Name_to_be_used_for_YO__c + '\n'
         + ' - Short Description of the Business: ' +  c.Description_of_the_Business__c + '\n'
         //+ ' - Hours of Operation: ' +  c.Hours_of_Operation__c + '\n'
-        + ' - Homepage (Verticals): ' +  c.Homepage__c + '\n'
+        + ' - Please write custom content for the homepage only based on these Vertical(s): ' +  c.Homepage__c + '\n'
         + ' - Services Offered: ' +  c.Services_Offered__c + '\n'
         + ' - Geographic Areas to Service: ' +  c.Geographic_Areas_To_Service__c + '\n'
         + ' - USPs/Certs/Testimonials: ' + c.Unique_Selling_Points__c;

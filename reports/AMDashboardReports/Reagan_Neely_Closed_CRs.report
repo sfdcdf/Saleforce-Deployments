@@ -86,6 +86,12 @@
         <field>BucketField_82746846</field>
     </columns>
     <columns>
+        <field>Account.Cancellation_Requests__r$Days_Live_at__c</field>
+    </columns>
+    <columns>
+        <field>Account$Cancellation_Status__c</field>
+    </columns>
+    <columns>
         <field>Account.Cancellation_Requests__r$Name</field>
     </columns>
     <columns>
@@ -104,7 +110,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
-            <value>Reagan Neely</value>
+            <value>Reagan Neely,walter rundle</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
@@ -118,7 +124,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Reagan Neely</value>
+            <value>Reagan Neely,walter rundle</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

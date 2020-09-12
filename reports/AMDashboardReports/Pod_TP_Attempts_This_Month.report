@@ -85,7 +85,6 @@
     </columns>
     <description>Attempts on touchplans this month</description>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
         <criteriaItems>
             <column>Case$Reason</column>
             <columnToColumn>false</columnToColumn>
@@ -94,25 +93,25 @@
             <value>CS Touch Plan,CS Touch Plan - Dedicated,CSC</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.Activities$CallType</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>2</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Case.Activities$Assigned_To_Manager__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>makenzie cunningham,erik vicars,barb jenkins,shelia kelly,adam kovacs,randy dewey,leonard edwards,Nathaniel Nipper</value>
+            <value>makenzie cunningham,erik vicars,shelia kelly,adam kovacs,randy dewey,Nathaniel Nipper</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.Activities$CallDurationInSeconds</column>
+            <column>Case.Activities$Subject</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>greaterThan</operator>
-            <value>30</value>
+            <operator>contains</operator>
+            <value>Call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>email</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

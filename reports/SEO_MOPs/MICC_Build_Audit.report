@@ -16,6 +16,15 @@
         <field>Account.Organic_Analyses__r$Google_Listing_Created__c</field>
     </columns>
     <columns>
+        <field>Account.Organic_Analyses__r$Owner_Verified_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_Login_Email__c</field>
+    </columns>
+    <columns>
+        <field>Account.Organic_Analyses__r$Google_White_List_Test__c</field>
+    </columns>
+    <columns>
         <field>Account.Organic_Analyses__r$Listing_1_URL_IT_Pro__c</field>
     </columns>
     <columns>
@@ -64,6 +73,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Account.Organic_Analyses__r$Setup_Date__c</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <interval>INTERVAL_LASTWEEK</interval>
     </timeFrameFilter>
 </Report>

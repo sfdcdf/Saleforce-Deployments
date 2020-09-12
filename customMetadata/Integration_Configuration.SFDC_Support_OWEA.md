@@ -12,7 +12,7 @@
     </values>
     <values>
         <field>Configuration_Value__c</field>
-        <value xsi:type="xsd:string">sfdc@yodle.com</value>
+        <value xsi:type="xsd:string">sfdc@enspireforenterprise.com</value>
     </values>
     <values>
         <field>Data_Type__c</field>

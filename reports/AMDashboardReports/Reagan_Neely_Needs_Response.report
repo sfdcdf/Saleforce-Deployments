@@ -201,9 +201,6 @@
         <field>Case.Response_Time__c</field>
     </columns>
     <columns>
-        <field>Case.Response_Time_Hours__c</field>
-    </columns>
-    <columns>
         <field>CREATED_DATE</field>
     </columns>
     <columns>
@@ -219,7 +216,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Reagan Neely</value>
+            <value>Reagan Neely,walter rundle</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Response_Time__c</column>

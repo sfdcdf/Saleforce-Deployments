@@ -28,13 +28,13 @@
         <field>Case.Case_Age_Business_Days__c</field>
     </columns>
     <filter>
-        <booleanFilter>(1 AND 2) OR 3 OR 4</booleanFilter>
+        <booleanFilter>((1 AND 2 AND 5) OR 3 OR 4)</booleanFilter>
         <criteriaItems>
             <column>Case.Result_of_QA__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Error Found,Error Free - Suggestion</value>
+            <value>Error Found,Error Free - Suggestion,Error Free</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.MA_Corrected_QA_Date__c</column>
@@ -57,13 +57,15 @@
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>2/1/2018 12:00 AM</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>RECORDTYPE</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>STATUS</field>

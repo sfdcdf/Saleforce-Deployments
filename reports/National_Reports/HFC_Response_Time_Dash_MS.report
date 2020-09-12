@@ -4,7 +4,7 @@
         <calculatedFormula>ELPSD_TIME_MINS:SUM/IF(RowCount=0, 1, RowCount)</calculatedFormula>
         <datatype>number</datatype>
         <developerName>FORMULA1</developerName>
-        <isActive>true</isActive>
+        <isActive>false</isActive>
         <isCrossBlock>false</isCrossBlock>
         <masterLabel>Avg Time (Bus Min)</masterLabel>
         <scale>2</scale>
@@ -13,7 +13,7 @@
         <calculatedFormula>ELPSD_TIME_HRS:SUM/IF(RowCount=0, 1, RowCount)</calculatedFormula>
         <datatype>number</datatype>
         <developerName>FORMULA2</developerName>
-        <isActive>true</isActive>
+        <isActive>false</isActive>
         <isCrossBlock>false</isCrossBlock>
         <masterLabel>Avg Time (Bus Hrs)</masterLabel>
         <scale>2</scale>
@@ -55,8 +55,9 @@
         <backgroundColor2>#FFFFFF</backgroundColor2>
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
+            <aggregate>Average</aggregate>
             <axisBinding>y</axisBinding>
-            <column>FORMULA2</column>
+            <column>ACTUAL_ELPSD_TIME_MINS</column>
         </chartSummaries>
         <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
@@ -102,10 +103,18 @@
         <field>CM.COMPLETION_DATE</field>
     </columns>
     <columns>
-        <field>ELPSD_TIME_MINS</field>
+        <field>STOPPED_TIME_MINS</field>
     </columns>
     <columns>
-        <field>ELPSD_TIME_HRS</field>
+        <field>STOPPED_TIME_HRS</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>ACTUAL_ELPSD_TIME_MINS</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>ACTUAL_ELPSD_TIME_HRS</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -137,11 +146,11 @@
             <value>Phone</value>
         </criteriaItems>
         <criteriaItems>
-            <column>PARENT_ACCOUNT_NAME</column>
+            <column>Account.Corp_Acct_in_YL_Parent_Account__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>home franchise concepts,tailored living</value>
+            <value>632,762,768,783,787,790</value>
         </criteriaItems>
         <criteriaItems>
             <column>MT.NAME</column>

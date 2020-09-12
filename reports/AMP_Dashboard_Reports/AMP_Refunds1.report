@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Cancellation_Request__c.Refund_Amount_Requested__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Refund Requested</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Cancellation_Request__c.Refund_Amount__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Refund Approved</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Cancellation_Request__c.Refund_Amount_Requested__c:SUM-Cancellation_Request__c.Refund_Amount__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Refund Prevented</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>BucketField_874395</acrossGroupingContext>
+        <calculatedFormula>RowCount / PARENTGROUPVAL(RowCount, ROW_GRAND_SUMMARY, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA4</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% of CRs Refunded</masterLabel>
+        <scale>1</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_874395</developerName>
+        <masterLabel>Refunded?</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Cancellation_Request__c.Refund_Amount__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>No Refund</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+            </sourceValues>
+            <value>Refunded</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_94050631</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CUST_OWNER_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Erik Vicars</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valerie Garner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sara Davis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thad Dameris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Erika Persil</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sherri Aguinaga</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ron Brown</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samantha Starett</sourceValue>
+            </sourceValues>
+            <value>AM Red</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Shelia Kelly</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reagan Neely</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelby Cowman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jordan Sanchez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mark Nagy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Keegan Sandman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kyler Wood</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Degreef</sourceValue>
+            </sourceValues>
+            <value>AM Blue</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Adam Kovacs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amber Tamayo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James Brady</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Mascitti</sourceValue>
+            </sourceValues>
+            <value>AM Jax</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alvin Jobe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marilyn Slaunwhite</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert Jones</sourceValue>
+            </sourceValues>
+            <value>NG Pod</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Angela Hoddinott</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kayla Muir</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karen Park</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kimberley Boutilier</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephen Gerrior</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walter Rundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Leonard Edwards</sourceValue>
+            </sourceValues>
+            <value>AMP Inbound</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>BucketField_94050631</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Refund_Amount_Requested__c</field>
+    </columns>
+    <columns>
+        <field>Cancellation_Request__c.Refund_Amount__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jennifer Degreef,Kyler Wood,Reagan Neely,Shelia Kelly,Adam Kovacs,Amber Tamayo,Andrew Smith,James Brady,Erik Vicars,Erika Persil,Ron Brown,Sara Davis,Sherri Aguinaga,Thad Dameris,Valerie Garner,ashley black,jacob overman,kinsley hill,jamie russell,jordan valentine,joshua alvarez,cassandra stowers,graham mcgee,demetria atkins,hank haigler,jennifer batcher,zachery shubow</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_874395</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>AMP Refunds</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Cancellation_Request__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Cancellation_Request__c.Closed_Date__c</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

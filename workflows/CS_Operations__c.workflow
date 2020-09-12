@@ -43,18 +43,6 @@
         <template>CS_Ops_Object/CS_Operations_Project_Declined_By_Channel_Lead</template>
     </alerts>
     <alerts>
-        <fullName>CS_Ops_Auto_Assign_Sophie</fullName>
-        <ccEmails>sfdc@yodle.com</ccEmails>
-        <description>CS Ops - Auto Assign Sophie</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>slavin@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>CS_Ops_Object/CS_Ops_Auto_Assign_Sophie</template>
-    </alerts>
-    <alerts>
         <fullName>CS_Ops_In_Progress_Request</fullName>
         <description>CS Ops - In Progress Request</description>
         <protected>false</protected>
@@ -262,16 +250,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>CS_Operations_Owner_to_Sophie_Lavin</fullName>
-        <field>OwnerId</field>
-        <lookupValue>mary.kellum@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>CS Operations Owner to Sophie Lavin</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>CS_Operations_Owner_to_YBN_Operations</fullName>
         <field>OwnerId</field>
         <lookupValue>YBN_Operations</lookupValue>
@@ -338,11 +316,12 @@
     </fieldUpdates>
     <fieldUpdates>
         <fullName>CS_Ops_Web_Dev_Escalation</fullName>
+        <description>Original User (Sean Cornwall) was deactivated as a user; Salesforce Automation put in place to ensure deactivation of user</description>
         <field>OwnerId</field>
-        <lookupValue>scornwall@yodle.com</lookupValue>
+        <lookupValue>sfdc@yodle.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>CS Ops Owner to Sean Cornwall</name>
-        <notifyAssignee>true</notifyAssignee>
+        <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
     </fieldUpdates>
@@ -517,10 +496,6 @@
     </rules>
     <rules>
         <fullName>CS Ops - Auto Assign Sophie</fullName>
-        <actions>
-            <name>CS_Ops_Auto_Assign_Sophie</name>
-            <type>Alert</type>
-        </actions>
         <actions>
             <name>CS_Ops_Request_Owner</name>
             <type>FieldUpdate</type>
@@ -970,10 +945,6 @@ Email Alert to the person who submitted the request with the details of their re
     </rules>
     <rules>
         <fullName>Essentials Features Request - Assign to Sophie</fullName>
-        <actions>
-            <name>CS_Operations_Owner_to_Sophie_Lavin</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>CS_Operations__c.RecordTypeId</field>

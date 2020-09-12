@@ -19,6 +19,7 @@
         <field>ORIGIN</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
         <field>Case.Time_To_Complete_Task_Minutes__c</field>
     </columns>
     <columns>
@@ -72,7 +73,7 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

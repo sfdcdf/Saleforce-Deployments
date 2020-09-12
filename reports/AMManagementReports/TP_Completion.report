@@ -33,6 +33,9 @@
             <sourceValues>
                 <sourceValue>LBW Monthly Touchplan - 40 Days Live</sourceValue>
             </sourceValues>
+            <sourceValues>
+                <sourceValue>Lead Stream TP 1</sourceValue>
+            </sourceValues>
             <value>1st TP</value>
         </values>
         <values>
@@ -68,6 +71,9 @@
             </sourceValues>
             <sourceValues>
                 <sourceValue>LBW Monthly Touchplan - 76 Days Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lead Stream TP 2</sourceValue>
             </sourceValues>
             <value>2nd TP</value>
         </values>
@@ -117,12 +123,13 @@
             <sourceValues>
                 <sourceValue>LBW Monthly Touchplan - 99 Days Live</sourceValue>
             </sourceValues>
+            <sourceValues>
+                <sourceValue>Lead Stream TP 3</sourceValue>
+            </sourceValues>
             <value>3rd TP</value>
         </values>
     </buckets>
-    <columns>
-        <field>SUBJECT</field>
-    </columns>
+    <description>Completion % for TPs based on Which TP and Days Live</description>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
@@ -157,7 +164,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>LBW Monthly Touchplan</value>
+            <value>LBW Monthly Touchplan,tp 1,tp 2,tp 3</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -169,6 +176,11 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>BucketField_26125588</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SUBJECT</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>TP Completion</name>
@@ -187,6 +199,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_LAST120</interval>
     </timeFrameFilter>
 </Report>

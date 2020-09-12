@@ -37,36 +37,6 @@
             <value>Proactive Outreach - Non TP</value>
         </milestoneCriteriaFilterItems>
         <milestoneName>First Response</milestoneName>
-        <minutesToComplete>60</minutesToComplete>
-        <useCriteriaStartTime>false</useCriteriaStartTime>
-    </milestones>
-    <milestones>
-        <milestoneCriteriaFilterItems>
-            <field>Case.Initial_DateTime_Closed__c</field>
-            <operation>equals</operation>
-            <value></value>
-        </milestoneCriteriaFilterItems>
-        <milestoneCriteriaFilterItems>
-            <field>Case.Escalated__c</field>
-            <operation>equals</operation>
-            <value>false</value>
-        </milestoneCriteriaFilterItems>
-        <milestoneCriteriaFilterItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>YBN Inbound Inquiry, Partner Inbound Inquiry</value>
-        </milestoneCriteriaFilterItems>
-        <milestoneCriteriaFilterItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>false</value>
-        </milestoneCriteriaFilterItems>
-        <milestoneCriteriaFilterItems>
-            <field>Case.Reason</field>
-            <operation>notEqual</operation>
-            <value>Proactive Outreach - Non TP</value>
-        </milestoneCriteriaFilterItems>
-        <milestoneName>First Response</milestoneName>
         <minutesToComplete>125</minutesToComplete>
         <timeTriggers>
             <actions>

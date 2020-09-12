@@ -10,10 +10,10 @@
           <!--<apex:includeScript value="{!$Resource.ReferenceGuide}"/>  -->
          
           <apex:outputLink value="{!$Resource.ReferenceGuide}" target="_blank">
-          <apex:image id="theImage" value="{!$Resource.ReferenceGuideIcon}" width="60" height="60" alt="Description of image here"/>
+          <apex:image id="theImage" value="{!$Resource.ReferenceGuideIcon}"  width="60" height="60" alt="Description of image here"/>
           </apex:outputLink>
           <br/>
-          <apex:outputLink value="{!$Resource.ReferenceGuide}" target="_blank" >Reference Guide</apex:outputLink>
+          <apex:outputLink value="{!$Resource.ReferenceGuide}" target="_blank">Reference Guide</apex:outputLink>
         </apex:tab>
         <apex:tab label="Request Form" name="name2" id="tabTwo">
             <c:MDFRequestForm />

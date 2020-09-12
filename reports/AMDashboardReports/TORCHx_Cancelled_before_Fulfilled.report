@@ -50,8 +50,8 @@
     </filter>
     <format>Summary</format>
     <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>FK_$Account.Legacy_TORCHx_Client__c</field>
+        <dateGranularity>Month</dateGranularity>
+        <field>Cancellation_Request__c.Closed_Date__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>

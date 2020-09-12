@@ -4,7 +4,7 @@
         <calculatedFormula>ELPSD_TIME_MINS:SUM/IF(RowCount=0, 1, RowCount)</calculatedFormula>
         <datatype>number</datatype>
         <developerName>FORMULA1</developerName>
-        <isActive>true</isActive>
+        <isActive>false</isActive>
         <isCrossBlock>false</isCrossBlock>
         <masterLabel>Avg Time (Bus Min)</masterLabel>
         <scale>2</scale>
@@ -13,7 +13,7 @@
         <calculatedFormula>ELPSD_TIME_HRS:SUM/IF(RowCount=0, 1, RowCount)</calculatedFormula>
         <datatype>number</datatype>
         <developerName>FORMULA2</developerName>
-        <isActive>true</isActive>
+        <isActive>false</isActive>
         <isCrossBlock>false</isCrossBlock>
         <masterLabel>Avg Time (Bus Hrs)</masterLabel>
         <scale>2</scale>
@@ -55,23 +55,16 @@
         <backgroundColor2>#FFFFFF</backgroundColor2>
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
+            <aggregate>Average</aggregate>
             <axisBinding>y</axisBinding>
-            <column>FORMULA1</column>
+            <column>ACTUAL_ELPSD_TIME_HRS</column>
         </chartSummaries>
         <chartSummaries>
             <axisBinding>y</axisBinding>
             <column>FORMULA3</column>
         </chartSummaries>
-        <chartSummaries>
-            <axisBinding>y</axisBinding>
-            <column>RowCount</column>
-        </chartSummaries>
-        <chartSummaries>
-            <axisBinding>y</axisBinding>
-            <column>FORMULA2</column>
-        </chartSummaries>
         <chartType>HorizontalBar</chartType>
-        <enableHoverLabels>false</enableHoverLabels>
+        <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>OWNER</groupingColumn>
         <legendPosition>Right</legendPosition>
@@ -115,6 +108,14 @@
         <field>CM.COMPLETION_DATE</field>
     </columns>
     <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>ACTUAL_ELPSD_TIME_MINS</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>ACTUAL_ELPSD_TIME_HRS</field>
+    </columns>
+    <columns>
         <field>ELPSD_TIME_MINS</field>
     </columns>
     <columns>
@@ -143,11 +144,11 @@
             <value>New Offer,Offer Verification</value>
         </criteriaItems>
         <criteriaItems>
-            <column>ORIGIN</column>
+            <column>Account.IMS_Team__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Phone</value>
+            <operator>contains</operator>
+            <value>Slocum,Greene</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

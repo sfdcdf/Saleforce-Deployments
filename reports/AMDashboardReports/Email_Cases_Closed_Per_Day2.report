@@ -80,7 +80,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Stephanie Hemmings,Marsha Cunningham,Dawn Jordan,Linda Keating</value>
+            <value>Joseph Dahdah,Stephen Gerrior,Angela Luddington,Kate Dowell,Norma Dupuis,Angela Snow,Chris Goyeche,Cindy Melanson,Marsha Cunningham,Dawn Jordan,Linda Keating,Leonard Edwards,Angela Anderson</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
@@ -95,6 +95,27 @@
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Barb Jenkins,Alvah Mayo,Andrew Roy,Leonard Edwards,Kayla McLaren,Dawn Rodgers,Angela Anderson,Kim Amiro,Janine Martin,Kendel McArdle</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Phone</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>charge failure</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>CSC</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

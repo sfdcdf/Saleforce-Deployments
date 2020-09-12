@@ -5,6 +5,7 @@
             <alignment>right</alignment>
             <components>Console.BuiltInComponent.mostRecentlyUsed</components>
             <components>Console.BuiltInComponent.knowledgeOne</components>
+            <components>Console.BuiltInComponent.macroBrowser</components>
         </componentList>
         <detailPageRefreshMethod>autoRefresh</detailPageRefreshMethod>
         <footerColor>#f89514</footerColor>
@@ -207,8 +208,6 @@
     <tabs>Worksheets__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
     <tabs>Notification_Log__c</tabs>
-    <tabs>MarketoLeadSFAccountMapping__c</tabs>
-    <tabs>Schedule_Split__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>CS_Operations__c</tab>
@@ -225,9 +224,6 @@
             <tab>Lighthouse_Worksheets__c</tab>
         </mappings>
         <mappings>
-            <tab>MarketoLeadSFAccountMapping__c</tab>
-        </mappings>
-        <mappings>
             <tab>Notification_Log__c</tab>
         </mappings>
         <mappings>
@@ -236,9 +232,6 @@
         </mappings>
         <mappings>
             <tab>Quality_Team_Rep_Management</tab>
-        </mappings>
-        <mappings>
-            <tab>Schedule_Split__c</tab>
         </mappings>
         <mappings>
             <tab>Worksheets__c</tab>

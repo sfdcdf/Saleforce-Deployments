@@ -717,6 +717,7 @@ public without sharing class CTSSyncService{
                             newAsyncRecord.NumberOfRetryAttempts__c = 0;
                             newAsyncRecord.ObjectId__c = objId;
                             newAsyncRecord.Object_Name__c = objectName;
+                            newAsyncRecord.Object_Route_MDT_Id__c = rt.Id;
                             newAsyncRecord.ScheduledDateTime__c = System.Now();
                             newAsyncRecord.SFDC_Record_URL__c = baseURL + objId;
                             newAsyncRecord.Status__c ='NEW';

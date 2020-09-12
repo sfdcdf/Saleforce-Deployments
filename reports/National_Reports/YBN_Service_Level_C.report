@@ -46,27 +46,6 @@
             <operator>greaterThan</operator>
             <value>1000</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Account.Status__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>LIVE</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>ACCOUNT.NAME</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Miracle-Ear</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>PARENT.NAME</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>notContain</operator>
-            <value>Macco</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <name>YBN Service Level C</name>

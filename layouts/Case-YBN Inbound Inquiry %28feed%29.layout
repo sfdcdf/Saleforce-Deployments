@@ -82,7 +82,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>IsStopped</field>
+                <field>First_Response_Atual_Elapse_Time__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -99,10 +99,6 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>AccountId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Resolved__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -137,6 +133,10 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Reason_Detail__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Request_Classification__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -445,10 +445,6 @@
                 <behavior>Readonly</behavior>
                 <field>EntitlementId</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>WorkItemSLA__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -533,7 +529,7 @@
         <fields>CASEMILESTONE.ELPSD_TIME_MINS</fields>
         <fields>CASEMILESTONE.ELPSD_TIME_HRS</fields>
         <fields>CASEMILESTONE.ACTL_ELPSD_MINS</fields>
-        <fields>CASEMILESTONE.STP_TIME_MINS</fields>
+        <fields>CASEMILESTONE.ACTL_ELPSD_HRS</fields>
         <relatedList>RelatedCaseMilestoneList</relatedList>
     </relatedLists>
     <relatedLists>

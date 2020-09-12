@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>BucketField_51870989</acrossGroupingContext>
+        <calculatedFormula>RowCount/PARENTGROUPVAL(RowCount, Account.IMS_Rep__c, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>Account.IMS_Rep__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% for Grand Total</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_51870989</developerName>
+        <masterLabel>Completion %</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Complete</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Completed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Did Not Complete - Sent Recap Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Completed on Callback</sourceValue>
+            </sourceValues>
+            <value>Complete</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Did Not Complete</sourceValue>
+            </sourceValues>
+            <value>Not Complete</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Unscheduled - Reattempt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Unscheduled - 4+ Attempts</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scheduled - Reattempt</sourceValue>
+            </sourceValues>
+            <value>Pending</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_24141844</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.IMS_Rep__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Ron Brown</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sherri Aguinaga</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sara Davis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thad Dameris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valerie Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Erika Persil</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Graham McGee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samantha Starett</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cassandra Stowers</sourceValue>
+            </sourceValues>
+            <value>AM Red</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Reagan Neely</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kyler Wood</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emma Brown</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Zachery Shubow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Demetria Atkins</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kiaira Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Batcher</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelby Cowman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jordan Sanchez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelia Kelly</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hank Haigler</sourceValue>
+            </sourceValues>
+            <value>AM Blue</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Amber Woodhams</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James Brady</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrew Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephanie Lucas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kinsley Hill</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ashley Black</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Adam Kovacs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jake Overman</sourceValue>
+            </sourceValues>
+            <value>AM No Beard</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ryan Crary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Suzanne Oyenarte</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brittany Fountain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jamie Russell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jordan Valentine</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joshua Alvarez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Drew Cooper</sourceValue>
+            </sourceValues>
+            <value>AM Red Beard</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>Case.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>CASE_ID</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>Case.Scheduled_Call__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <description>Used for Bonus</description>
+    <filter>
+        <criteriaItems>
+            <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>CS Touch Plan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Outbound_Call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>leads by web,lead stream atv</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Churned,Delete Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>makenzie cunningham,kyle zaffin</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_51870989</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_24141844</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.IMS_Rep__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>AM Touch Plan Completion %</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case.Auto_Close_Date__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

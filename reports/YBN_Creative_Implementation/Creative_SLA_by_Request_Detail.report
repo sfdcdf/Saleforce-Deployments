@@ -61,7 +61,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Case.YBNRequestDetail__c</field>
+        <field>CLOSED_DATEONLY</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Creative SLA by Request Detail</name>
@@ -82,6 +82,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <endDate>2018-12-11</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-01-01</startDate>
     </timeFrameFilter>
 </Report>

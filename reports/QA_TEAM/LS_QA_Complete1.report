@@ -7,46 +7,31 @@
         <field>Case.Client_ID__c</field>
     </columns>
     <columns>
-        <field>Case.Reason_Detail__c</field>
+        <field>Case.Product_Type__c</field>
     </columns>
     <columns>
         <field>CREATED_DATEONLY</field>
     </columns>
     <columns>
-        <field>Case.Product_Type__c</field>
+        <field>CLOSED_DATEONLY</field>
     </columns>
     <columns>
-        <field>OWNER</field>
-    </columns>
-    <columns>
-        <field>CREATED</field>
-    </columns>
-    <columns>
-        <field>STATUS</field>
-    </columns>
-    <columns>
-        <field>CLOSED_DATE</field>
-    </columns>
-    <columns>
-        <field>Case.Minutes_Recorded__c</field>
-    </columns>
-    <columns>
-        <field>Case.Words_Transcribed__c</field>
-    </columns>
-    <columns>
-        <field>Case.Quality_Offense__c</field>
-    </columns>
-    <columns>
-        <field>Case.QA_Action_Taken__c</field>
+        <field>Case.Sales_Person_text__c</field>
     </columns>
     <columns>
         <field>Case.Developmental_Supervisor_del__c</field>
     </columns>
     <columns>
-        <field>Account.Sales_Director__c</field>
+        <field>Case.Sales_Office__c</field>
     </columns>
     <columns>
-        <field>Case.Sales_Office__c</field>
+        <field>Case.Date_Processed_QA__c</field>
+    </columns>
+    <columns>
+        <field>Case.QA_Action_Taken__c</field>
+    </columns>
+    <columns>
+        <field>Case.Quality_Offense__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -64,11 +49,11 @@
             <value>Quality Team</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.Case_Closed_By__c</column>
+            <column>Case.QA_Action_Taken__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>elizabeth koepke,cameron mcclure,david hamrick,anna cibulsky,anna maria cibulsky,g paul swanson,rebecca mueller,patrick koepke,michael erwin,victoria kanicka,kevin yee,joseph sanchez,Dan McMullen,Crystal Perez,Sophie Hamann,Jordan Houston,andrew frenenski</value>
+            <value>$100 Fine,Full Commission Loss</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Product_Type__c</column>
@@ -76,6 +61,20 @@
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Lighthouse,Lighthouse Essentials</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Date_Processed_QA__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2017</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Date_Processed_QA__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>12/31/2017</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -98,8 +97,12 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>CREATED_DATEONLY</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <endDate>2017-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-01</startDate>
     </timeFrameFilter>
 </Report>

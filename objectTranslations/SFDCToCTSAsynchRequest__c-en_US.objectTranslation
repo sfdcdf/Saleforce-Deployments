@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SFDCToCTSAsynchRequest</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SFDCToCTSAsynchRequests</value>
+    </caseValues>
     <fields>
         <help><!-- Identifier when the Integration Type is API; used by CTS system to create and place the new ticket in the proper CTS queue; required when Integration Type is API --></help>
         <label><!-- API Identifier --></label>
@@ -79,6 +87,11 @@
         </picklistValues>
     </fields>
     <fields>
+        <help><!-- Unique Id from the CTSObjectTriggerMap which represents the record used for the metadata populated for this record --></help>
+        <label><!-- Object Route MDT Id --></label>
+        <name>Object_Route_MDT_Id__c</name>
+    </fields>
+    <fields>
         <help><!-- Date/ time the record was processed to CTS for ticket creation --></help>
         <label><!-- Processed Date Time --></label>
         <name>ProcessedDateTime__c</name>
@@ -122,15 +135,6 @@
             <translation><!-- UNQUALIFIED --></translation>
         </picklistValues>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>SFDCToCTSAsynchRequest</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>SFDCToCTSAsynchRequests</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
     <layouts>
         <layout>SFDCToCTSAsynchRequest Layout</layout>
         <sections>
@@ -138,4 +142,5 @@
             <section>Custom Links</section>
         </sections>
     </layouts>
+    <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

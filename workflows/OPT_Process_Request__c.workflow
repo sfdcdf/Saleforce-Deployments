@@ -21,24 +21,10 @@
         <template>Support/Organic_Process_Request_In_Progress</template>
     </alerts>
     <alerts>
-        <fullName>Organic_Process_Request_Alert_John_King_of_Rogers_MOPs_Update</fullName>
-        <description>Organic Process Request - Alert John King of Rogers MOPs Update</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>mary.kellum@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Organic_Process_Request_Completed</template>
-    </alerts>
-    <alerts>
         <fullName>Organic_Process_Request_Alert_Michal_of_Web_Dev_Update</fullName>
         <description>Organic Process Request - Alert Michal of Web Dev Update</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>mswiader@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>Support/Organic_Process_Request_Completed</template>
     </alerts>
@@ -169,10 +155,6 @@
     </rules>
     <rules>
         <fullName>Organic Process Request - Status Completed%2C Rogers Mops Impacted</fullName>
-        <actions>
-            <name>Organic_Process_Request_Alert_John_King_of_Rogers_MOPs_Update</name>
-            <type>Alert</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>OPT_Process_Request__c.Status__c</field>

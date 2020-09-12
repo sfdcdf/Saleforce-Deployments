@@ -48,13 +48,6 @@
             <value>Case.YBN_Outbound_Touch_Point</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.Reason_Detail__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Introduction Call/CSC</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>PARENT_ACCOUNT_NAME</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
@@ -67,6 +60,13 @@
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed - Multi Location Owner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>CSC</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -91,6 +91,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <endDate>2019-09-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-09-01</startDate>
     </timeFrameFilter>
 </Report>

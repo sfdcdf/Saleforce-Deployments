@@ -52,9 +52,6 @@
         <field>Opportunity.Total_Forecasted_Adoption_Value_Sum__c</field>
     </columns>
     <columns>
-        <field>PROBABILITY</field>
-    </columns>
-    <columns>
         <field>FISCAL_QUARTER</field>
     </columns>
     <columns>
@@ -142,6 +139,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_CURY</interval>
+        <interval>INTERVAL_CURNEXTY</interval>
     </timeFrameFilter>
 </Report>

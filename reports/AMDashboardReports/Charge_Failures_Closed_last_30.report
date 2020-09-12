@@ -66,6 +66,9 @@
     <columns>
         <field>Case.Reason__c</field>
     </columns>
+    <columns>
+        <field>Case.Total_Collected__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
@@ -82,11 +85,11 @@
             <value>Delete Case</value>
         </criteriaItems>
         <criteriaItems>
-            <column>OWNER_ROLE</column>
+            <column>Case.Case_Owner_Manager__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Collections Consultant</value>
+            <value>Dawn Rodgers</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Product_Type__c</column>

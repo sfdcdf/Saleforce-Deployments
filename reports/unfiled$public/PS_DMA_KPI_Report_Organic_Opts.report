@@ -39,6 +39,9 @@
         <field>Account.Organic_Analyses__r$Submission_Reason__c</field>
     </columns>
     <columns>
+        <field>Account.Organic_Analyses__r$Business_Days_Open__c</field>
+    </columns>
+    <columns>
         <field>Account.Organic_Analyses__r$Subject__c</field>
     </columns>
     <columns>
@@ -71,14 +74,14 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
-            <value>chase woodhams,matt austin,danielle dembitzer,gustavo,chaides,shawna kays</value>
+            <value>kays,fouraker,Ciurdar,Murphy,Lucas,Minert,Fein,Cardenas,addico,Tyler Eisenhart,eisenhart,john,andrew,ian,solomon,rob</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$IMS_Completing_Opt__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
-            <value>chase woodhams,wesley adams,matt austin,joshua fortunatus,anderson allen,danielle dembitzer,gustavo,rachel gibbs,chaides,shawna kays</value>
+            <value>kays,fouraker,Ciurdar,Murphy,Lucas,Minert,Fein,Cardenas,addico,Tyler Eisenhart,eisenhart,john,andrew,ian,solomon,rob</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -92,10 +95,12 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Organic_Analyses__r$IMS_Completing_Opt__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account.Organic_Analyses__r$Date_Opt_Completed__c</dateColumn>
-        <endDate>2016-11-21</endDate>
+        <endDate>2018-08-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-11-01</startDate>
+        <startDate>2018-08-01</startDate>
     </timeFrameFilter>
 </Report>

@@ -43,12 +43,12 @@
                 <behavior>Edit</behavior>
                 <field>PPC_Product_Margin__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Renewal_Status__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Payment_Terms__c</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>StartDate</field>
@@ -72,6 +72,14 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Auto_Renewal__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Renewal_Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Renewal_Commentary__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -177,10 +185,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Description</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Renewal_Commentary__c</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>

@@ -34,6 +34,7 @@
         <field>Case.Web_Dev_Score_for_IMS__c</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
         <field>Case.Web_Dev_Total_Minutes_for_Changes__c</field>
     </columns>
     <columns>
@@ -56,6 +57,9 @@
     </columns>
     <columns>
         <field>Case.Total_of_Accounts_Affected__c</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
     </columns>
     <columns>
         <field>Case.Close_Notes__c</field>
@@ -131,7 +135,7 @@
     <sortColumn>CREATED_DATEONLY</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <dateColumn>Case.Web_Dev_Score_for_IMS__c</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

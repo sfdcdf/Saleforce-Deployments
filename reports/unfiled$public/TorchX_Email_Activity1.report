@@ -6,6 +6,18 @@
     <columns>
         <field>Case.Activities$Subject</field>
     </columns>
+    <columns>
+        <field>Case$Origin</field>
+    </columns>
+    <columns>
+        <field>Case$SEO_Product__c</field>
+    </columns>
+    <columns>
+        <field>Case$Product_Type_at_Open_Date__c</field>
+    </columns>
+    <columns>
+        <field>Case$Status</field>
+    </columns>
     <filter>
         <booleanFilter>(1 OR 2) AND 3 AND 4</booleanFilter>
         <criteriaItems>
@@ -55,11 +67,13 @@
     </params>
     <reportType>Cases_with_Activities__c</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Case.Activities$CreatedDate</dateColumn>
-        <interval>INTERVAL_TODAY</interval>
+        <endDate>2018-02-28</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-02-01</startDate>
     </timeFrameFilter>
 </Report>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_57617598</developerName>
+        <masterLabel>Queue</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Local Email Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email Call Back Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Local Pod Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LBW Customer Service</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rogers Dedicated Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Platinum Support</sourceValue>
+            </sourceValues>
+            <value>Email Queue</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lyndsay Spa</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nick Johnson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christopher Grau</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emily Kareiva</sourceValue>
+            </sourceValues>
+            <value>Individual</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mark Nagy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelia Kelly</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christina Yeckley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Degreef</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reagan Neely</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Keegan Sandman</sourceValue>
+            </sourceValues>
+            <value>AM Blue</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Erik Vicars</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ron Brown</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sara Davis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sherri Aguinaga</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thad Dameris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samantha Starett</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valerie Garner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Erika Persil</sourceValue>
+            </sourceValues>
+            <value>AM Red</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Stephen Collens</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alyson MacDonald</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rondell Humphreys</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alvin Jobe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marilyn Slaunwhite</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barb Jenkins</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gwen Doyle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mark Cosh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>April Law</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Angela Snow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathleen Wilson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marilyn Bray</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nina Avery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathy Caldwell</sourceValue>
+            </sourceValues>
+            <value>NG Pod</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kimberley Boutilier</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephen Gerrior</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walter Rundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kayla Muir</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Angela Hoddinott</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karen Park</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathryn Leadbeater</sourceValue>
+            </sourceValues>
+            <value>AMP Inbound</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Adam Kovacs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amber Tamayo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James Brady</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Mascitti</sourceValue>
+            </sourceValues>
+            <value>AM Jax</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Case.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>Case.Response_Time__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>WEBEMAIL</field>
+    </columns>
+    <columns>
+        <field>CASE_COMMENT</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND (4 or (5 AND 6))) AND 7 AND 8 AND 9 AND 10 AND 11</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Kyler Wood,Jake Overman</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Response_Time__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Non-Actionable Email,Spam</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TODAY,YESTERDAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Chat,Phone,Circuit Breaker,Self,YodleGoldService@yodle.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Master</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WEBEMAIL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>@lighthousepmg.com,noreply,no-reply,invitations@linkedin.com,lbwcustomerservice@web.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Undeliverable,low advertising funds,client spend alert,Welcome to Egencia!,Organic Setup Search Influence Work Completed,OR 3.0 GLocal &amp; BLocal Initial Setup Work Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Upsell</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_57617598</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Jake Overman | Needs Response</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CREATED_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

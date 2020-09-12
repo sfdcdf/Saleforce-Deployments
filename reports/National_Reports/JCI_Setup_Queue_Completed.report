@@ -64,13 +64,6 @@
             <value>Sarah McMillian</value>
         </criteriaItems>
         <criteriaItems>
-            <column>SUBJECT</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>2016 JCI Website Update,New Client Setup Case</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>CLOSED_DATEONLY</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
@@ -83,6 +76,13 @@
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>York,Coleman,Luxaire</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.New_Client_Setup</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -115,10 +115,12 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>CLOSED_DATEONLY</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2018-12-31</endDate>
+        <endDate>2020-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-01-01</startDate>
+        <startDate>2020-01-01</startDate>
     </timeFrameFilter>
 </Report>

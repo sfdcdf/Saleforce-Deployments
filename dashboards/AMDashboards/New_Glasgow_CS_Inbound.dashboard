@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -9,18 +9,76 @@
         <columnSize>Medium</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
+            <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <header>Closed CR&apos;s - Saved</header>
+            <groupingSortProperties />
+            <header>Volume</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/NG_CS_IB_Saves</report>
-            <showPicturesOnTables>false</showPicturesOnTables>
-            <sortBy>RowLabelDescending</sortBy>
+            <metricLabel>Local Email Queue</metricLabel>
+            <report>AMDashboardReports/Local_Email_Queue2</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Email Call Back Queue</metricLabel>
+            <report>AMDashboardReports/Email_Call_Back_Queue</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Yodle Gold Cases</metricLabel>
+            <report>AMDashboardReports/Email_Yodle_Gold_Cases1</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Survey Follow Up</metricLabel>
+            <report>AMDashboardReports/Email_Survey_Follow_up</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Proactive Touch - Due Today</metricLabel>
+            <report>AMDashboardReports/Email_Proactive_Touch_Today</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Need Response</metricLabel>
+            <report>AMDashboardReports/Cases_That_Need_Response1</report>
+            <showRange>false</showRange>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -28,14 +86,29 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <header>Closed CR&apos;s - Cancelled</header>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/NG_CS_IB_Cancels</report>
+            <report>AMDashboardReports/NG_IB_Working_Email</report>
             <showPicturesOnTables>false</showPicturesOnTables>
-            <sortBy>RowLabelDescending</sortBy>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Email Cases This Week</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <header>CSC's Completed</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>AMDashboardReports/NG_CS_CSC_s_Completed</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowValueAscending</sortBy>
         </components>
     </leftSection>
     <middleSection>
@@ -46,7 +119,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Cases - Work or Escalate Today</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -61,8 +134,8 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <header>Today&apos;s Max/Essential CSC&apos;s</header>
+            <groupingSortProperties />
+            <header>CSC Due or Past Due</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -76,12 +149,12 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <header>CR&apos;s Closed Incorrectly</header>
+            <groupingSortProperties />
+            <header>CSC's in Unscheduled Status</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/NG_CS_IB_CR_s_Closed_Incorrectly</report>
+            <report>AMDashboardReports/NG_IB_CSC_Reattempts</report>
             <showPicturesOnTables>false</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
         </components>
@@ -91,8 +164,8 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <header>Open CR&apos;s</header>
+            <groupingSortProperties />
+            <header>Open CR's</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -106,7 +179,22 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
+            <header>CR's Closed Incorrectly</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>AMDashboardReports/NG_CS_IB_CR_s_Closed_Incorrectly</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <header>SLA Misses</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -121,7 +209,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Incorrect Case Reason: Other</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -136,7 +224,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Unsatisfactory Submission Quality</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -154,7 +242,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Organic Waiting Approval or Denied</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -169,29 +257,39 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <header>Duplicate CR&apos;s Waiting Approval</header>
+            <groupingSortProperties />
+            <header>Closed CR's - Cancelled</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/NG_CS_IB_Duplicate_CRs</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <sortBy>RowLabelAscending</sortBy>
+            <report>AMDashboardReports/NG_CS_IB_Cancels</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowLabelDescending</sortBy>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>CUST_OWNER_NAME</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>true</calculatePercent>
+                <column>FORMULA1</column>
+                <decimalPlaces>1</decimalPlaces>
+                <showTotal>false</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <decimalPrecision>1</decimalPrecision>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <header>Opportunities Waiting Approval or Denied</header>
+            <groupingSortProperties />
+            <header>Percentage CR's Saved</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/NG_CS_IB_Opportunities_to_Approve</report>
+            <report>AMDashboardReports/Inbound_Retention</report>
             <showPicturesOnTables>false</showPicturesOnTables>
-            <sortBy>RowLabelAscending</sortBy>
         </components>
     </rightSection>
     <runningUser>leonard.edwards@yodle.com</runningUser>

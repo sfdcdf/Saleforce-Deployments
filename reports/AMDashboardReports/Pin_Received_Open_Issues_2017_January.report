@@ -52,7 +52,7 @@
         <field>Account.Organic_Analyses__r$Pin_Action_Details__c</field>
     </columns>
     <filter>
-        <booleanFilter>(1 AND 2 AND 3 AND (4 OR 5) AND 6 AND 7 AND 8)</booleanFilter>
+        <booleanFilter>((1 AND 2 AND 3 AND (4 OR 5) AND 6 AND 7 AND 8)) AND 9</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
             <columnToColumn>false</columnToColumn>
@@ -108,6 +108,13 @@
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Bing Only,Bing Pin Received,Bing Pin Resend</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>YBN</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

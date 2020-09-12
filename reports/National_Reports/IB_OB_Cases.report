@@ -43,6 +43,20 @@
             <operator>notEqual</operator>
             <value>Closed - Multi Location Owner</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>YBN Email</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Dawn Dantzler,Jason Normoyle</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -66,8 +80,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2017-11-30</endDate>
+        <endDate>2017-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2017-07-01</startDate>
+        <startDate>2017-01-01</startDate>
     </timeFrameFilter>
 </Report>

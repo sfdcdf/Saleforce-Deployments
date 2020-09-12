@@ -94,6 +94,13 @@
             <operator>notEqual</operator>
             <value>Off</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account$Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Leads By Web</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -113,8 +120,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Account.Organic_Analyses__r$CreatedDate</dateColumn>
-        <endDate>2017-03-04</endDate>
+        <endDate>2018-07-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2017-02-19</startDate>
+        <startDate>2018-07-01</startDate>
     </timeFrameFilter>
 </Report>

@@ -50,7 +50,7 @@
         <field>Account.Organic_Analyses__r$Name</field>
     </columns>
     <columns>
-        <field>Account.Organic_Analyses__r$Client_Type__c</field>
+        <field>Account.Organic_Analyses__r$AdStation_Status__c</field>
     </columns>
     <columns>
         <field>Account$Days_Since_Live__c</field>
@@ -82,7 +82,7 @@
     <columns>
         <field>Account.Organic_Analyses__r$Google_Login_Password__c</field>
     </columns>
-    <description>Audit to remove active from Google Account Status</description>
+    <description>API has not created listing</description>
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
@@ -106,28 +106,47 @@
             <value>New Listing Created</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Organic_Analyses__r$Google_Account_Status__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Active</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Account.Organic_Analyses__r$Google_Login_Email__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>googlecertification@yodle.com,webdotcomlistings1@gmail.com</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>OFF</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Organic_Analyses__r$Bulk_Google_Account_2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>OFF</value>
+        </criteriaItems>
     </filter>
-    <format>Tabular</format>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Client_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>New Listing Created / Active</name>
     <params>
         <name>co</name>

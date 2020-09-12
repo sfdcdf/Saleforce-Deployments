@@ -4,7 +4,7 @@
     <protected>false</protected>
     <values>
         <field>Additional_Values__c</field>
-        <value xsi:type="xsd:string">hipchat.com,yodle.onmicrosoft.com,yodle.net,salesforce.com</value>
+        <value xsi:type="xsd:string">event.splashthat.com,salesforce.com,zoom.us,google.com,webpronews.com,knowbe4.com,enspireforenterprise.com,constellationhbs.com,constellationreg.com,z57.com,Zurple.com,marketleader.com,csiperseus.com,constellationhb.com</value>
     </values>
     <values>
         <field>Description__c</field>
@@ -20,6 +20,6 @@
     </values>
     <values>
         <field>Value__c</field>
-        <value xsi:type="xsd:string">yodle.com,jira.yodle.com,smartsheet.com,theoreminc.net,liveclicker.com,event.splashthat.com,amben.com,lighthousepmg.com,trello.com,registeredsite.com,solidcactus.com,crestcom.com,rpm.com,facebookmail.com,ccaglobal.com,chatter.salesforce.com,web.com</value>
+        <value xsi:type="xsd:string">web.com,yodle.com,acuityscheduling.com,smartsheet.com,theoreminc.net,webconnect.web.com,amben.com,lighthousepmg.com,registeredsite.com,solidcactus.com,crestcom.com,facebookmail.com,chatter.salesforce.com,acquisio.com,monday.com,email.teams.microsoft.com</value>
     </values>
 </CustomMetadata>

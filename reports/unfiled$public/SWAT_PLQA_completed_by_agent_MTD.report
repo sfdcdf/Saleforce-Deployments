@@ -10,6 +10,9 @@
         <field>Case.Client_ID__c</field>
     </columns>
     <columns>
+        <field>Case.Product_Type__c</field>
+    </columns>
+    <columns>
         <field>Account.Channel_Development__c</field>
     </columns>
     <columns>
@@ -47,7 +50,14 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value>Shannon Lang</value>
+            <value>Shannon Lang,Ryan Northover</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>daily</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -67,7 +77,7 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

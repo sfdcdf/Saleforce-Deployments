@@ -213,9 +213,9 @@
                     </value>
                 </processMetadataValues>
                 <leftValueReference>myVariable_current.Status__c</leftValueReference>
-                <operator>NotEqualTo</operator>
+                <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>New</stringValue>
+                    <stringValue>Closed</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -225,7 +225,7 @@
         </rules>
     </decisions>
     <description>Checks to determine if the Parent Case should be updated to reflect the status that All Work has been completed and the Client needs to be contacted</description>
-    <interviewLabel>Call_Quality_Concern_All_Work_Completed-3_InterviewLabel</interviewLabel>
+    <interviewLabel>Call_Quality_Concern_All_Work_Completed-2_InterviewLabel</interviewLabel>
     <label>Call Quality Concern - All Work Completed</label>
     <processMetadataValues>
         <name>ObjectType</name>

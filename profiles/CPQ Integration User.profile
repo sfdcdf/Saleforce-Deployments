@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <classAccesses>
         <apexClass>icCancelAppointmentController</apexClass>
         <enabled>true</enabled>
@@ -9816,17 +9816,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Case.Case_Age_Bus_Hours_98EST__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Case.Case_Age_Business_Days__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Case_Age_Business_Hours__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12002,16 +11992,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Response_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Response_Time_Bus_Hours_98EST__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Response_Time_Hours__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -17566,11 +17546,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.Main_Revenue_Service_Offered__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Lead.Manufacturer_Brand__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -17612,11 +17587,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Lead.NAICS__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.National_Commission_Master__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -17696,11 +17666,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.Parent_Ownership_Structure__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Lead.Participated_in_Dealer_Website_in_Past__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -17755,11 +17720,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Promotion_Strategy__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Lead.Prospect_Tier__c</field>
         <readable>true</readable>
@@ -17767,11 +17727,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Prospect_Total_Score__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Prospect_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -30915,21 +30870,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>AccountBeacon__c.Client_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>AccountBeacon__c.IdHS__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>AccountBeacon__c.IdWebDC__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
     <editable>false</editable>
     <readable>false</readable>
     <field>Event.AlternateSFId__c</field>
@@ -31034,9 +30974,6 @@
         <recordType>Account.YBN_Strategic_Partner_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AccountBeacon__c-AccountBeacon Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>AccountBrand-Account BrandLayout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -31054,9 +30991,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account_Snapshot__c-Account Snapshot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Acct_Email_Sub_to_Survey__c-Acct Email Sub to Survey Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Activity_Type__c-Activity Type Layout</layout>
@@ -32172,9 +32106,6 @@
         <layout>Macro-Macro Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Marketo_Campaign__c-Marketo Campaign Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -32525,9 +32456,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Sales_Wizard_API_Setting__mdt-Sales Wizard API Setting Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Schedule_Split__c-Schedule Split Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Scheduled_Data_Pull_from_YL_to_SF__c-Scheduled Data Pull from YL to SF Layout</layout>
@@ -34133,10 +34061,6 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
-        <tab>Schedule_Split__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -34257,10 +34181,6 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Acct_Email_Sub_to_Survey__c</tab>
-        <visibility>DefaultOff</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Activity_Type__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -34347,10 +34267,6 @@
     <tabVisibilities>
         <tab>MLS__c</tab>
         <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>MarketoLeadSFAccountMapping__c</tab>
-        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Marketo_Campaign__c</tab>

@@ -24,13 +24,6 @@
     <description>CSCs completed by Alyson Macdonald this week</description>
     <filter>
         <criteriaItems>
-            <column>OWNER</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>alyson macdonald</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>REASON</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
@@ -43,6 +36,13 @@
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>field</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>erika persil</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

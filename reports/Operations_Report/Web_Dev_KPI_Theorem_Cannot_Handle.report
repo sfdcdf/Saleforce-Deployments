@@ -10,6 +10,10 @@
         <field>Case.Web_Dev_User__c</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.Web_Dev_Total_Minutes_for_Changes__c</field>
+    </columns>
+    <columns>
         <field>Case.Web_Dev_Member_Round_2_Changes__c</field>
     </columns>
     <columns>
@@ -69,6 +73,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2019-07-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-07-01</startDate>
     </timeFrameFilter>
 </Report>

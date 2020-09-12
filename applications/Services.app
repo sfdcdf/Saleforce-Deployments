@@ -215,9 +215,8 @@
     <tabs>MLS_Name__c</tabs>
     <tabs>Worksheets__c</tabs>
     <tabs>Quality_Team_Rep_Management</tabs>
+    <tabs>Google_Location_Group__c</tabs>
     <tabs>Notification_Log__c</tabs>
-    <tabs>MarketoLeadSFAccountMapping__c</tabs>
-    <tabs>Schedule_Split__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Account_MLS__c</tab>
@@ -240,6 +239,9 @@
             <tab>Customer_Surveys__c</tab>
         </mappings>
         <mappings>
+            <tab>Google_Location_Group__c</tab>
+        </mappings>
+        <mappings>
             <fieldName>Practice_Name__c</fieldName>
             <tab>Lighthouse_Worksheets__c</tab>
         </mappings>
@@ -248,9 +250,6 @@
         </mappings>
         <mappings>
             <tab>MLS__c</tab>
-        </mappings>
-        <mappings>
-            <tab>MarketoLeadSFAccountMapping__c</tab>
         </mappings>
         <mappings>
             <tab>Notification_Log__c</tab>
@@ -264,9 +263,6 @@
         </mappings>
         <mappings>
             <tab>Quality_Team_Rep_Management</tab>
-        </mappings>
-        <mappings>
-            <tab>Schedule_Split__c</tab>
         </mappings>
         <mappings>
             <fieldName>Account_Name__c</fieldName>

@@ -8,7 +8,7 @@
         <ruleEntry>
             <assignedTo>Email_Catch_All</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <booleanFilter>1 OR 2</booleanFilter>
+            <booleanFilter>3 AND (1 OR 2)</booleanFilter>
             <criteriaItems>
                 <field>Case.SuppliedEmail</field>
                 <operation>equals</operation>
@@ -19,25 +19,11 @@
                 <operation>contains</operation>
                 <value>@onesourcevhr.com,@theoreminc.net,@00d600000006ycdeay.pnet,@barracudanetworks.com,@chatter.salesforce.com,@jobvite.com,@myworkday.com,@aetnagetactive.com,@office.lhmailer.com,@adp.com,perkopolis.com</value>
             </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>Lighthouse_Field_Service</assignedTo>
-            <assignedToType>Queue</assignedToType>
             <criteriaItems>
                 <field>Case.Origin</field>
-                <operation>equals</operation>
-                <value>LHFS Android App,LHFS iOS App</value>
+                <operation>notContain</operation>
+                <value>HomeTeamSupport@web.com,LandstarSupport@web.com</value>
             </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>salesforcealerts@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Case.Reason</field>
-                <operation>equals</operation>
-                <value>Sales Promotion</value>
-            </criteriaItems>
-            <template>unfiled$public/SUPPORTNewassignmentnotification</template>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Centermark_BI</assignedTo>
@@ -292,7 +278,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>brollier@yodle.com</assignedTo>
+            <assignedTo>leadstreamsupport@web.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Case.RecordTypeId</field>
@@ -1618,9 +1604,16 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>YBN Outbound Touch Point</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
             <assignedTo>Email_Catch_All</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <booleanFilter>(1 AND (2 OR 7) AND 3) OR (1 AND 2 AND 5 AND 6) OR 4</booleanFilter>
+            <booleanFilter>(1 AND (2 OR 7) AND 3 AND 8) OR (1 AND 2 AND 5 AND 6 AND 8) OR 4</booleanFilter>
             <criteriaItems>
                 <field>Case.Status</field>
                 <operation>equals</operation>
@@ -1655,6 +1648,11 @@
                 <field>Case.SuppliedEmail</field>
                 <operation>contains</operation>
                 <value>@registeredsite.com,@hipchat.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>notEqual</operation>
+                <value>HomeTeamSupport@web.com,LandstarSupport@web.com</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
@@ -1784,30 +1782,12 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>megan.scully@yodle.com</assignedTo>
+            <assignedTo>sfdc@yodle.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Case.Origin</field>
                 <operation>equals</operation>
                 <value>productideas@yodle.com</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>gswanson@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Case.Origin</field>
-                <operation>equals</operation>
-                <value>lhproductfeedback@yodle.com</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>gswanson@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Case.Origin</field>
-                <operation>equals</operation>
-                <value>TORCHxProductFeedback@yodle.com</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
@@ -1897,6 +1877,11 @@
             <template>Support/Case_Assigned_to_You_Alert</template>
         </ruleEntry>
         <ruleEntry>
+            <assignedTo>Local_Email_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>OwnerId = '00G60000001CJm2'</formula>
+        </ruleEntry>
+        <ruleEntry>
             <assignedTo>HomeTeamSupport</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
@@ -1904,11 +1889,17 @@
                 <operation>equals</operation>
                 <value>HomeTeamSupport@web.com</value>
             </criteriaItems>
+            <template>unfiled$public/SUPPORTNewassignmentnotification</template>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>Local_Email_Queue</assignedTo>
+            <assignedTo>LandstarSupport</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <formula>OwnerId = '00G60000001CJm2'</formula>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>LandstarSupport@web.com</value>
+            </criteriaItems>
+            <template>unfiled$public/SUPPORTNewassignmentnotification</template>
         </ruleEntry>
     </assignmentRule>
 </AssignmentRules>

@@ -58,13 +58,16 @@
     <columns>
         <field>TASK_TYPE</field>
     </columns>
+    <columns>
+        <field>Activity.Created_DateTime__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>Activity.Owner_Name__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Erika Persil,Samantha Starett,Sara Davis,Sherri Aguinaga,Ron Brown,Thad Dameris,Valerie Smith</value>
+            <value>Erika Persil,Samantha Starett,Sara Davis,Sherri Aguinaga,Ron Brown,Thad Dameris,Valerie Smith,Graham McGee</value>
         </criteriaItems>
         <criteriaItems>
             <column>TASK_TYPE</column>
@@ -100,6 +103,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <endDate>2018-05-08</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-05-08</startDate>
     </timeFrameFilter>
 </Report>

@@ -69,6 +69,9 @@
     <columns>
         <field>Case.Web_Dev_User__c</field>
     </columns>
+    <columns>
+        <field>Case.Case_Submission_Quality__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
@@ -82,7 +85,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Ozzy Campbell,Michelle MacLean,Shari DeYoung,Russell Pilgrim,Ryan Hubbard,Troy Sanders,Valerie Bigney,Debra Sterling,Elizabeth Miller,Kim Amiro,Janine Martin,Andrew Roy,Chris Halverson,Berkley Desmond,Chelsea MacEachern,Douglas Walsh,Gerard Kennedy,Jo-Ann McKenzie,Joshua Grant,Julianna Meyer,Justin Ferguson,Katharine Langille,Kevin Grant,Kristen MacKay</value>
+            <value>,Ozzy Campbell,Michelle MacLean,Shari DeYoung,Russell Pilgrim,Ryan Hubbard,Troy Sanders,Valerie Bigney,Debra Sterling,Elizabeth Miller,Kim Amiro,Janine Martin,Andrew Roy,Chris Halverson,Berkley Desmond,Chelsea MacEachern,Douglas Walsh,Gerard Kennedy,Jo-Ann McKenzie,Joshua Grant,Julianna Meyer,Justin Ferguson,Katharine Langille,Kevin Grant,Kristen MacKay,Shannon York</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -107,8 +110,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2018-03-31</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-03-26</startDate>
+        <interval>INTERVAL_LASTWEEK</interval>
     </timeFrameFilter>
 </Report>

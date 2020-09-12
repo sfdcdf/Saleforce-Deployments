@@ -41,37 +41,37 @@
         <criteriaItems>
             <column>CLOSED</column>
             <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
             <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>National Performance Queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
             <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>miracleear,miracle ear,miracle-ear,cottman,deca,deca dental,maaco</value>
+            <value>johnson,stratus,tailored living,senior,senior helpers</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT_ACCOUNT_NAME</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>miracleear,miracle ear,miracle-ear,cottman,deca,deca dental,maaco</value>
+            <value>johnson,stratus,tailored living,senior,senior helpers</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

@@ -29,8 +29,8 @@
             <column>OWNER_ROLE</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>YBN: Sales/Account Director C,YBN: Sales Director Manager (East Coast B)</value>
+            <operator>contains</operator>
+            <value>YBN: Sales/Account Director</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
@@ -80,13 +80,11 @@
     </params>
     <reportType>Activity</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
-        <endDate>2016-05-31</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-01-01</startDate>
+        <interval>INTERVAL_CURY</interval>
     </timeFrameFilter>
 </Report>

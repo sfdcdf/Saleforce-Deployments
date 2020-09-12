@@ -965,7 +965,9 @@ Temporarily Exclude [ We will use this to exclude the user from deactivating bat
     </fields>
     <fields>
         <fullName>AlternateSFId__c</fullName>
+        <description>Unique identifier signifying the target instance created Id for the corresponding source record</description>
         <externalId>false</externalId>
+        <inlineHelpText>Unique identifier signifying the target instance created Id for the corresponding source record</inlineHelpText>
         <label>AlternateSFId</label>
         <length>18</length>
         <required>false</required>
@@ -988,12 +990,14 @@ Temporarily Exclude [ We will use this to exclude the user from deactivating bat
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.TITLE</columns>
         <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.DIVISION</columns>
         <columns>CREATED_DATE</columns>
         <columns>CORE.USERS.LAST_LOGIN</columns>
         <columns>CORE.USER_ROLE.NAME</columns>
         <columns>CORE.USERS.ACTIVE</columns>
         <columns>CORE.PROFILE.NAME</columns>
         <columns>MANAGER</columns>
+        <columns>LiveOps_ID__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CORE.USERS.ACTIVE</field>
@@ -1011,6 +1015,7 @@ Temporarily Exclude [ We will use this to exclude the user from deactivating bat
         <columns>CORE.USER_ROLE.NAME</columns>
         <columns>CORE.USERS.ACTIVE</columns>
         <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CORE.PROFILE.NAME</field>
@@ -1023,6 +1028,23 @@ Temporarily Exclude [ We will use this to exclude the user from deactivating bat
             <value>1</value>
         </filters>
         <label>Admin Users</label>
+    </listViews>
+    <listViews>
+        <fullName>AdminUsers_AMM</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>System Administrator,YBN System Administrator,System Admin +</value>
+        </filters>
+        <label>Admin Users - ALLAMM</label>
     </listViews>
     <listViews>
         <fullName>AllUsers</fullName>
@@ -1041,6 +1063,36 @@ Temporarily Exclude [ We will use this to exclude the user from deactivating bat
         <sharedTo>
             <role>ExecutiveVP</role>
         </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Beacon_LH_CS_Business_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <columns>KNOWLEDGE_USER</columns>
+        <columns>MARKETING_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.DIVISION</field>
+            <operation>startsWith</operation>
+            <value>LH</value>
+        </filters>
+        <label>Beacon LH CS &amp; Business Users</label>
     </listViews>
     <listViews>
         <fullName>CPP_Portal</fullName>
@@ -1064,6 +1116,129 @@ Temporarily Exclude [ We will use this to exclude the user from deactivating bat
         </sharedTo>
     </listViews>
     <listViews>
+        <fullName>CTS_Sync_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SFDC_to_CTS_Sync_Enabled__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>CTS Sync Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Disabled_Users_Last_2_Days</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>equals</operation>
+            <value>4/1/2020 12:00 AM</value>
+        </filters>
+        <label>Disabled Users Last 2 Days</label>
+    </listViews>
+    <listViews>
+        <fullName>Forecast_users</fullName>
+        <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>equals</operation>
+            <value>YBN: Sales/Account Director D,YBN: Sales Director Manager (East Coast C)</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>equals</operation>
+            <value>egarz,rciam,srobi</value>
+        </filters>
+        <label>Forecast users</label>
+    </listViews>
+    <listViews>
+        <fullName>IT_Setup_New_SF_User_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CREATED_BY_NAME</columns>
+        <columns>CREATED_BY_ALIAS</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <columns>LAST_UPDATE_BY_ALIAS</columns>
+        <columns>Role_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>IT Setup - New SF User</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>IT Setup - New SF User Users</label>
+    </listViews>
+    <listViews>
+        <fullName>New_User_Requests_for_X_days</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CREATED_BY_NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <columns>Role_Name__c</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:10</value>
+        </filters>
+        <label>New User Requests for X days</label>
+    </listViews>
+    <listViews>
         <fullName>Partner_Portal</fullName>
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
@@ -1080,6 +1255,32 @@ Temporarily Exclude [ We will use this to exclude the user from deactivating bat
             <value>Partner Community Lighthouse Dental</value>
         </filters>
         <label>Partner Portal</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Partner_Portal_Active</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Partner Community Lighthouse Dental</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Partner Portal Active</label>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
@@ -1111,6 +1312,187 @@ Temporarily Exclude [ We will use this to exclude the user from deactivating bat
             <value>Communit</value>
         </filters>
         <label>Stale Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Subba_Active_API_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>API</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Subba Active API Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Subba_Okta_New_User_Requests_for_X_days</fullName>
+        <booleanFilter>1 and 2</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CREATED_BY_NAME</columns>
+        <columns>CREATED_BY_ALIAS</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <columns>LAST_UPDATE_BY_ALIAS</columns>
+        <columns>Role_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_BY_NAME</field>
+            <operation>equals</operation>
+            <value>Okta System</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:10</value>
+        </filters>
+        <label>Subba Okta New User Requests for X days</label>
+    </listViews>
+    <listViews>
+        <fullName>Subba_Recent_Modified_User</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_DAYS:5</value>
+        </filters>
+        <label>Recently Modified Users</label>
+        <sharedTo>
+            <group>ExecutiveTeam</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Subba_Salseforce_Active_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.LAST_LOGIN</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:60</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Subba Salseforce Active Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Users_Active_Not_Logged_Since_last_10_Da</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>User_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.LAST_LOGIN</field>
+            <operation>notEqual</operation>
+            <value>LAST_N_DAYS:60</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>Communit</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>API</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Users Active and NotLogged For 60 Days</label>
+    </listViews>
+    <listViews>
+        <fullName>WBN_W4E_Active_Users</fullName>
+        <booleanFilter>2 AND (1 OR 3 OR 4)</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.PROFILE.USERTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>National</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>YBN</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>NCSE - SDR</value>
+        </filters>
+        <label>WBN/ W4E Active Users</label>
     </listViews>
     <searchLayouts>
         <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>

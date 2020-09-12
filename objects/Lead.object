@@ -1845,17 +1845,6 @@
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>Main_Revenue_Service_Offered__c</fullName>
-        <externalId>false</externalId>
-        <label>Main Revenue Service Offered</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Manager__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>For yodle.info routing.</inlineHelpText>
@@ -2074,51 +2063,6 @@
         <trackHistory>true</trackHistory>
     </fields>
     <fields>
-        <fullName>National_Commission_Master__c</fullName>
-        <externalId>false</externalId>
-        <label>National Commission Master</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <controllingField>Prospect_Type__c</controllingField>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Johnson Controls</fullName>
-                    <default>false</default>
-                    <label>Johnson Controls</label>
-                </value>
-                <value>
-                    <fullName>MaidPro</fullName>
-                    <default>false</default>
-                    <label>MaidPro</label>
-                </value>
-                <value>
-                    <fullName>MiracleEar</fullName>
-                    <default>false</default>
-                    <label>MiracleEar</label>
-                </value>
-            </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>National-Corporate Spend</controllingFieldValue>
-                <controllingFieldValue>National-Preferred Vendor</controllingFieldValue>
-                <valueName>Johnson Controls</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National-Corporate Spend</controllingFieldValue>
-                <controllingFieldValue>National-Preferred Vendor</controllingFieldValue>
-                <valueName>MaidPro</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National-Corporate Spend</controllingFieldValue>
-                <controllingFieldValue>National-Preferred Vendor</controllingFieldValue>
-                <valueName>MiracleEar</valueName>
-            </valueSettings>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>National_Company_Type__c</fullName>
         <externalId>false</externalId>
         <label>National Company Type</label>
@@ -2127,7 +2071,6 @@
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
-            <controllingField>Prospect_Type__c</controllingField>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
@@ -2166,36 +2109,6 @@
                     <label>Franchise</label>
                 </value>
             </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>National-Corporate Spend</controllingFieldValue>
-                <controllingFieldValue>National-Preferred Vendor</controllingFieldValue>
-                <valueName>Corporate</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National-Corporate Spend</controllingFieldValue>
-                <controllingFieldValue>National-Preferred Vendor</controllingFieldValue>
-                <valueName>Individual Location</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National-Corporate Spend</controllingFieldValue>
-                <controllingFieldValue>National-Preferred Vendor</controllingFieldValue>
-                <valueName>Franchisee</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National-Corporate Spend</controllingFieldValue>
-                <controllingFieldValue>National-Preferred Vendor</controllingFieldValue>
-                <valueName>Manufacturer</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National-Corporate Spend</controllingFieldValue>
-                <controllingFieldValue>National-Preferred Vendor</controllingFieldValue>
-                <valueName>Multi-Location</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>National-Corporate Spend</controllingFieldValue>
-                <controllingFieldValue>National-Preferred Vendor</controllingFieldValue>
-                <valueName>Franchise</valueName>
-            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -2586,35 +2499,6 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Parent_Ownership_Structure__c</fullName>
-        <externalId>false</externalId>
-        <label>Parent Ownership Structure</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Public</fullName>
-                    <default>false</default>
-                    <label>Public</label>
-                </value>
-                <value>
-                    <fullName>Private</fullName>
-                    <default>false</default>
-                    <label>Private</label>
-                </value>
-                <value>
-                    <fullName>Family Owned</fullName>
-                    <default>false</default>
-                    <label>Family Owned</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Participated_in_Dealer_Website_in_Past__c</fullName>
         <externalId>false</externalId>
         <label>Participated in Dealer Website in Past?</label>
@@ -2687,65 +2571,6 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Partner_Pipeline_Status__c</fullName>
-        <externalId>false</externalId>
-        <label>Partner Pipeline Status</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Initial Fact Finding Completed</fullName>
-                    <default>false</default>
-                    <label>Initial Fact Finding Completed</label>
-                </value>
-                <value>
-                    <fullName>Logistics Meeting Scheduled</fullName>
-                    <default>false</default>
-                    <label>Logistics Meeting Scheduled</label>
-                </value>
-                <value>
-                    <fullName>Logistics Meeting Held</fullName>
-                    <default>false</default>
-                    <label>Logistics Meeting Held</label>
-                </value>
-                <value>
-                    <fullName>Contract Sent</fullName>
-                    <default>false</default>
-                    <label>Contract Sent</label>
-                </value>
-                <value>
-                    <fullName>Sent to Margie</fullName>
-                    <default>false</default>
-                    <label>Sent to Margie</label>
-                </value>
-                <value>
-                    <fullName>Scheduled Reseller logistics meeting</fullName>
-                    <default>false</default>
-                    <label>Scheduled Reseller logistics meeting</label>
-                </value>
-                <value>
-                    <fullName>Completed Reseller logistics meeting</fullName>
-                    <default>false</default>
-                    <label>Completed Reseller logistics meeting</label>
-                </value>
-                <value>
-                    <fullName>Completed product demonstration</fullName>
-                    <default>false</default>
-                    <label>Completed product demonstration</label>
-                </value>
-                <value>
-                    <fullName>Not compatible for partnership</fullName>
-                    <default>false</default>
-                    <label>Not compatible for partnership</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Payment_Methods__c</fullName>
         <externalId>false</externalId>
         <label>Payment Methods</label>
@@ -2788,40 +2613,6 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Potential_type_of_partner__c</fullName>
-        <externalId>false</externalId>
-        <label>Potential type of partner</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>$200</fullName>
-                    <default>false</default>
-                    <label>$200</label>
-                </value>
-                <value>
-                    <fullName>$300</fullName>
-                    <default>false</default>
-                    <label>$300</label>
-                </value>
-                <value>
-                    <fullName>Rev Share</fullName>
-                    <default>false</default>
-                    <label>Rev Share</label>
-                </value>
-                <value>
-                    <fullName>Reseller</fullName>
-                    <default>false</default>
-                    <label>Reseller</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>Premium_List__c</fullName>
@@ -3030,15 +2821,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Promotion_Strategy__c</fullName>
-        <externalId>false</externalId>
-        <label>Promotion/Coupon Strategy</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
-    </fields>
-    <fields>
         <fullName>Prospect_Contact_ID__c</fullName>
         <description>Prospect Contact ID from ProspectDB</description>
         <externalId>false</externalId>
@@ -3094,35 +2876,6 @@ if(
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Prospect_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>Prospect Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Local</fullName>
-                    <default>false</default>
-                    <label>Local</label>
-                </value>
-                <value>
-                    <fullName>National-Corporate Spend</fullName>
-                    <default>false</default>
-                    <label>National-Corporate Spend</label>
-                </value>
-                <value>
-                    <fullName>National-Preferred Vendor</fullName>
-                    <default>false</default>
-                    <label>National-Preferred Vendor</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>Quality_of_Partner__c</fullName>
@@ -5807,7 +5560,7 @@ if(
         <externalId>false</externalId>
         <label>Trade Show</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -8732,18 +8485,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <fields>
-        <fullName>JCI_Secondary_Brand_Color__c</fullName>
-        <description>As part of lead conversion, JCI System will be sending the color selection over as a Hexidecimal value.</description>
-        <externalId>false</externalId>
-        <label>JCI Secondary Brand Color</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
     <listViews>
         <fullName>CPP_LH_360_PMS_Leads</fullName>
         <columns>LEAD.STATUS</columns>
@@ -9133,6 +8874,32 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             <value>PMS</value>
         </filters>
         <label>CPP - PMS</label>
+    </listViews>
+    <listViews>
+        <fullName>JCI_Leads_Admin_View</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.LEAD_SOURCE</field>
+            <operation>equals</operation>
+            <value>JCI Portal</value>
+        </filters>
+        <filters>
+            <field>LEAD.CREATED_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_MONTHS:2</value>
+        </filters>
+        <label>JCI Leads - Admin View</label>
+        <sharedTo>
+            <group>Sys_Local_Admin</group>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>My_CPP_Leads</fullName>
@@ -11263,21 +11030,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>National_Commission_Master__c</picklist>
-            <values>
-                <fullName>Johnson Controls</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MaidPro</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MiracleEar</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>National_Company_Type__c</picklist>
             <values>
                 <fullName>Corporate</fullName>
@@ -11482,21 +11234,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Parent_Ownership_Structure__c</picklist>
-            <values>
-                <fullName>Family Owned</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Private</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Public</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Participated_in_Dealer_Website_in_Past__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -11515,64 +11252,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Partner_Pipeline_Status__c</picklist>
-            <values>
-                <fullName>Completed Reseller logistics meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Completed product demonstration</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contract Sent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Initial Fact Finding Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logistics Meeting Held</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logistics Meeting Scheduled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not compatible for partnership</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Scheduled Reseller logistics meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sent to Margie</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Potential_type_of_partner__c</picklist>
-            <values>
-                <fullName>%24200</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%24300</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rev Share</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11695,21 +11374,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Yodle Max</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Prospect_Type__c</picklist>
-            <values>
-                <fullName>Local</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National-Corporate Spend</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National-Preferred Vendor</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -15805,21 +15469,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>National_Commission_Master__c</picklist>
-            <values>
-                <fullName>Johnson Controls</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MaidPro</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MiracleEar</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>National_Company_Type__c</picklist>
             <values>
                 <fullName>Corporate</fullName>
@@ -16024,21 +15673,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Parent_Ownership_Structure__c</picklist>
-            <values>
-                <fullName>Family Owned</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Private</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Public</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Participated_in_Dealer_Website_in_Past__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -16057,64 +15691,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Partner_Pipeline_Status__c</picklist>
-            <values>
-                <fullName>Completed Reseller logistics meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Completed product demonstration</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contract Sent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Initial Fact Finding Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logistics Meeting Held</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logistics Meeting Scheduled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not compatible for partnership</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Scheduled Reseller logistics meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sent to Margie</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Potential_type_of_partner__c</picklist>
-            <values>
-                <fullName>%24200</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%24300</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rev Share</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16237,21 +15813,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Yodle Max</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Prospect_Type__c</picklist>
-            <values>
-                <fullName>Local</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National-Corporate Spend</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National-Preferred Vendor</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -20351,21 +19912,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>National_Commission_Master__c</picklist>
-            <values>
-                <fullName>Johnson Controls</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MaidPro</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MiracleEar</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>National_Company_Type__c</picklist>
             <values>
                 <fullName>Corporate</fullName>
@@ -20570,21 +20116,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Parent_Ownership_Structure__c</picklist>
-            <values>
-                <fullName>Family Owned</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Private</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Public</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Participated_in_Dealer_Website_in_Past__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -20603,64 +20134,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Partner_Pipeline_Status__c</picklist>
-            <values>
-                <fullName>Completed Reseller logistics meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Completed product demonstration</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contract Sent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Initial Fact Finding Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logistics Meeting Held</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logistics Meeting Scheduled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not compatible for partnership</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Scheduled Reseller logistics meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sent to Margie</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Potential_type_of_partner__c</picklist>
-            <values>
-                <fullName>%24200</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%24300</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rev Share</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -20783,21 +20256,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Yodle Max</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Prospect_Type__c</picklist>
-            <values>
-                <fullName>Local</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National-Corporate Spend</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National-Preferred Vendor</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -24886,21 +24344,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>National_Commission_Master__c</picklist>
-            <values>
-                <fullName>Johnson Controls</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MaidPro</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MiracleEar</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>National_Company_Type__c</picklist>
             <values>
                 <fullName>Corporate</fullName>
@@ -25105,21 +24548,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Parent_Ownership_Structure__c</picklist>
-            <values>
-                <fullName>Family Owned</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Private</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Public</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Participated_in_Dealer_Website_in_Past__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -25138,64 +24566,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Partner_Pipeline_Status__c</picklist>
-            <values>
-                <fullName>Completed Reseller logistics meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Completed product demonstration</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contract Sent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Initial Fact Finding Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logistics Meeting Held</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logistics Meeting Scheduled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not compatible for partnership</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Scheduled Reseller logistics meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sent to Margie</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Potential_type_of_partner__c</picklist>
-            <values>
-                <fullName>%24200</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%24300</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rev Share</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -25318,21 +24688,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Yodle Max</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Prospect_Type__c</picklist>
-            <values>
-                <fullName>Local</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National-Corporate Spend</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National-Preferred Vendor</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -29557,21 +28912,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>National_Commission_Master__c</picklist>
-            <values>
-                <fullName>Johnson Controls</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MaidPro</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MiracleEar</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>National_Company_Type__c</picklist>
             <values>
                 <fullName>Corporate</fullName>
@@ -29776,21 +29116,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Parent_Ownership_Structure__c</picklist>
-            <values>
-                <fullName>Family Owned</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Private</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Public</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Participated_in_Dealer_Website_in_Past__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -29809,64 +29134,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Partner_Pipeline_Status__c</picklist>
-            <values>
-                <fullName>Completed Reseller logistics meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Completed product demonstration</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contract Sent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Initial Fact Finding Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logistics Meeting Held</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logistics Meeting Scheduled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not compatible for partnership</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Scheduled Reseller logistics meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sent to Margie</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Potential_type_of_partner__c</picklist>
-            <values>
-                <fullName>%24200</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%24300</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rev Share</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -29989,21 +29256,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Yodle Max</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Prospect_Type__c</picklist>
-            <values>
-                <fullName>Local</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National-Corporate Spend</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National-Preferred Vendor</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -34205,21 +33457,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>National_Commission_Master__c</picklist>
-            <values>
-                <fullName>Johnson Controls</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MaidPro</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MiracleEar</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>National_Company_Type__c</picklist>
             <values>
                 <fullName>Corporate</fullName>
@@ -34424,21 +33661,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Parent_Ownership_Structure__c</picklist>
-            <values>
-                <fullName>Family Owned</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Private</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Public</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Participated_in_Dealer_Website_in_Past__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -34457,64 +33679,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Partner_Pipeline_Status__c</picklist>
-            <values>
-                <fullName>Completed Reseller logistics meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Completed product demonstration</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contract Sent</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Initial Fact Finding Completed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logistics Meeting Held</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Logistics Meeting Scheduled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not compatible for partnership</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Scheduled Reseller logistics meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sent to Margie</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Potential_type_of_partner__c</picklist>
-            <values>
-                <fullName>%24200</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%24300</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rev Share</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -34637,21 +33801,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Yodle Max</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Prospect_Type__c</picklist>
-            <values>
-                <fullName>Local</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National-Corporate Spend</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>National-Preferred Vendor</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

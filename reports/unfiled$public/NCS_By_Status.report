@@ -37,6 +37,13 @@
             <operator>equals</operator>
             <value>Escalated</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Case.Sub_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Questionnaire Not Received</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -58,6 +65,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>Case.Client_ID__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Case.Website_Setup_Date__c</dateColumn>
         <interval>INTERVAL_LAST30</interval>

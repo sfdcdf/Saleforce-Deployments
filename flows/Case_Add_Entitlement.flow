@@ -179,7 +179,7 @@
                 <stringValue>AND(
      $User.Id &lt;&gt; &apos;005600000019S5w&apos;, /* SFDC Sync */
      $Profile.Id &lt;&gt; &apos;00e32000000ovPU&apos;, /* API Integration Read/Write */
-     $Profile.Id &lt;&gt; &apos;00eV0000000HzTb&apos;,  /* API Integration DB AMP */
+     $Profile.Id &lt;&gt; &apos;00e0e000001JiYs&apos;, /* API Integration DB AMP */
      NOT(ISBLANK([Case].AccountId)),
      NOT(ISBLANK([Case].RecordTypeId)),
      [Case].IsClosed = false,
@@ -192,7 +192,7 @@
         <expression>AND(
      {!$User.Id} &lt;&gt; &apos;005600000019S5w&apos;, /* SFDC Sync */
      {!$Profile.Id} &lt;&gt; &apos;00e32000000ovPU&apos;, /* API Integration Read/Write */
-     {!$Profile.Id} &lt;&gt; &apos;00eV0000000HzTb&apos;,  /* API Integration DB AMP */
+     {!$Profile.Id} &lt;&gt; &apos;00e0e000001JiYs&apos;, /* API Integration DB AMP */
      NOT(ISBLANK({!myVariable_current.AccountId})),
      NOT(ISBLANK({!myVariable_current.RecordTypeId})),
      {!myVariable_current.IsClosed} = false,
@@ -206,6 +206,7 @@
                 <stringValue>AND(
      $User.Id &lt;&gt; &apos;005600000019S5w&apos;, /* SFDC Sync */
      $Profile.Id &lt;&gt; &apos;00e32000000ovPU&apos;, /* API Integration Read/Write */
+     $Profile.Id &lt;&gt; &apos;00e0e000001JiYs&apos;,  /* API Integration DB AMP */
      NOT(ISBLANK([Case].AccountId)),
      NOT(ISBLANK([Case].RecordTypeId)),
      [Case].IsClosed = true,
@@ -218,13 +219,14 @@
         <expression>AND(
      {!$User.Id} &lt;&gt; &apos;005600000019S5w&apos;, /* SFDC Sync */
      {!$Profile.Id} &lt;&gt; &apos;00e32000000ovPU&apos;, /* API Integration Read/Write */
+     {!$Profile.Id} &lt;&gt; &apos;00e0e000001JiYs&apos;,  /* API Integration DB AMP */
      NOT(ISBLANK({!myVariable_current.AccountId})),
      NOT(ISBLANK({!myVariable_current.RecordTypeId})),
      {!myVariable_current.IsClosed} = true,
      NOT(ISBLANK({!myVariable_current.EntitlementId}))
 )</expression>
     </formulas>
-    <interviewLabel>Case_Add_Entitlement-31_InterviewLabel</interviewLabel>
+    <interviewLabel>Case_Add_Entitlement-32_InterviewLabel</interviewLabel>
     <label>Case - Add Entitlement</label>
     <processMetadataValues>
         <name>ObjectType</name>

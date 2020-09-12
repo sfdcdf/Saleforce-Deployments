@@ -139,6 +139,20 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -2610,6 +2624,11 @@ false)</formula>
                     <default>false</default>
                     <label>Jacksonville</label>
                 </value>
+                <value>
+                    <fullName>Field Sales</fullName>
+                    <default>false</default>
+                    <label>Field Sales</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -2741,7 +2760,7 @@ false)</formula>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
         <label>CS Timestamp</label>
-        <length>255</length>
+        <length>20</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -2879,7 +2898,7 @@ false)</formula>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
         <label>QO Timestamp</label>
-        <length>255</length>
+        <length>20</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -3657,9 +3676,39 @@ false)</formula>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Recording Issue</fullName>
+                    <fullName>Business Info</fullName>
                     <default>false</default>
-                    <label>Recording Issue</label>
+                    <label>Business Info</label>
+                </value>
+                <value>
+                    <fullName>Commitment Length</fullName>
+                    <default>false</default>
+                    <label>Commitment Length</label>
+                </value>
+                <value>
+                    <fullName>Contact Info</fullName>
+                    <default>false</default>
+                    <label>Contact Info</label>
+                </value>
+                <value>
+                    <fullName>CSC</fullName>
+                    <default>false</default>
+                    <label>CSC</label>
+                </value>
+                <value>
+                    <fullName>E-Contract</fullName>
+                    <default>false</default>
+                    <label>E-Contract</label>
+                </value>
+                <value>
+                    <fullName>Exception</fullName>
+                    <default>false</default>
+                    <label>Exception</label>
+                </value>
+                <value>
+                    <fullName>Launch Date</fullName>
+                    <default>false</default>
+                    <label>Launch Date</label>
                 </value>
                 <value>
                     <fullName>Multiple Calls</fullName>
@@ -3672,14 +3721,9 @@ false)</formula>
                     <label>Not Reading the Entire Script Verbatim</label>
                 </value>
                 <value>
-                    <fullName>Reading Incorrect Sections</fullName>
+                    <fullName>Other</fullName>
                     <default>false</default>
-                    <label>Reading Incorrect Sections</label>
-                </value>
-                <value>
-                    <fullName>Contact Info</fullName>
-                    <default>false</default>
-                    <label>Contact Info</label>
+                    <label>Other</label>
                 </value>
                 <value>
                     <fullName>Pricing/Billing</fullName>
@@ -3687,14 +3731,24 @@ false)</formula>
                     <label>Pricing/Billing</label>
                 </value>
                 <value>
-                    <fullName>Commitment Length</fullName>
+                    <fullName>Reactivation</fullName>
                     <default>false</default>
-                    <label>Commitment Length</label>
+                    <label>Reactivation</label>
                 </value>
                 <value>
-                    <fullName>E-Contract</fullName>
+                    <fullName>Reading Incorrect Sections</fullName>
                     <default>false</default>
-                    <label>E-Contract</label>
+                    <label>Reading Incorrect Sections</label>
+                </value>
+                <value>
+                    <fullName>Recording Issue</fullName>
+                    <default>false</default>
+                    <label>Recording Issue</label>
+                </value>
+                <value>
+                    <fullName>Segment</fullName>
+                    <default>false</default>
+                    <label>Segment</label>
                 </value>
                 <value>
                     <fullName>Target Metro</fullName>
@@ -3707,44 +3761,9 @@ false)</formula>
                     <label>TBC</label>
                 </value>
                 <value>
-                    <fullName>Segment</fullName>
-                    <default>false</default>
-                    <label>Segment</label>
-                </value>
-                <value>
-                    <fullName>Launch Date</fullName>
-                    <default>false</default>
-                    <label>Launch Date</label>
-                </value>
-                <value>
-                    <fullName>CSC</fullName>
-                    <default>false</default>
-                    <label>CSC</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>Reactivation</fullName>
-                    <default>false</default>
-                    <label>Reactivation</label>
-                </value>
-                <value>
                     <fullName>Tradeshow</fullName>
                     <default>false</default>
                     <label>Tradeshow</label>
-                </value>
-                <value>
-                    <fullName>Exception</fullName>
-                    <default>false</default>
-                    <label>Exception</label>
-                </value>
-                <value>
-                    <fullName>Business Info</fullName>
-                    <default>false</default>
-                    <label>Business Info</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -3769,7 +3788,7 @@ false)</formula>
         <description>For Closing Script - Auto Close Case</description>
         <externalId>false</externalId>
         <label>Fail Timestamp</label>
-        <length>255</length>
+        <length>50</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -3836,6 +3855,11 @@ false)</formula>
                     <label>Lighthouse - Dental</label>
                 </value>
                 <value>
+                    <fullName>Lighthouse - Vision</fullName>
+                    <default>false</default>
+                    <label>Lighthouse - Vision</label>
+                </value>
+                <value>
                     <fullName>Lighthouse - Chiro</fullName>
                     <default>false</default>
                     <label>Lighthouse - Chiro</label>
@@ -3890,11 +3914,6 @@ false)</formula>
                     <default>false</default>
                     <label>Lead Stream</label>
                 </value>
-                <value>
-                    <fullName>Lighthouse - Vision</fullName>
-                    <default>false</default>
-                    <label>Lighthouse - Vision</label>
-                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -3945,33 +3964,7 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
-    <allowInChatterGroups>true</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Quality Case</label>
-    <nameField>
-        <displayFormat>Q-{0000}</displayFormat>
-        <label>Quality Case Name</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Quality Case</pluralLabel>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts />
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
@@ -3980,6 +3973,15 @@ false)</formula>
         <columns>Client_ID_del__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Austin_Closing_Scripts_Quality_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Austin Closing Scripts</label>
+        <queue>Austin_Closing_Scripts</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>Local_Quality_Cases_All</fullName>
@@ -4016,13 +4018,38 @@ false)</formula>
     </listViews>
     <listViews>
         <fullName>Quality_Closing_Scripts_Quality_Case</fullName>
-        <filterScope>Queue</filterScope>
+        <columns>NAME</columns>
+        <columns>Account_Name__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Sales_Date__c</columns>
+        <columns>Sales_Office__c</columns>
+        <columns>Sales_Rep__c</columns>
+        <columns>Created_Date__c</columns>
+        <filterScope>Everything</filterScope>
         <label>Quality Closing Scripts</label>
-        <queue>Quality_Closing_Scripts</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <listViews>
+        <fullName>Trifecta_Closing_Scripts_Quality_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Trifecta Closing Scripts</label>
+        <queue>Trifecta_Closing_Scripts</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>Q-{0000}</displayFormat>
+        <label>Quality Case Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Quality Case</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Acquisio_Master_Quality</fullName>
         <active>true</active>
@@ -5434,6 +5461,10 @@ false)</formula>
             </values>
             <values>
                 <fullName>Charlotte</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Sales</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -6898,6 +6929,10 @@ false)</formula>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Field Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Jacksonville</fullName>
                 <default>false</default>
             </values>
@@ -8196,6 +8231,10 @@ false)</formula>
             <values>
                 <fullName>Austin</fullName>
                 <default>true</default>
+            </values>
+            <values>
+                <fullName>Field Sales</fullName>
+                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -9567,6 +9606,10 @@ false)</formula>
             </values>
             <values>
                 <fullName>Charlotte</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Sales</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10950,6 +10993,10 @@ false)</formula>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Field Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>New York</fullName>
                 <default>false</default>
             </values>
@@ -11005,4 +11052,7 @@ false)</formula>
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

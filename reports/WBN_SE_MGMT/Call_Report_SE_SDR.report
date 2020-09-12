@@ -34,6 +34,9 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <field>Activity$CreatedDate</field>
+    </columns>
+    <columns>
         <field>Activity$Subject</field>
     </columns>
     <columns>
@@ -44,16 +47,10 @@
         <field>Activity$CallDurationInSeconds</field>
     </columns>
     <columns>
-        <field>Activity$LOCC_App__Call_Recording__c</field>
-    </columns>
-    <columns>
         <field>Activity$CallType</field>
     </columns>
     <columns>
         <field>Activity$LOCC_App__dnis__c</field>
-    </columns>
-    <columns>
-        <field>Activity$CreatedDate</field>
     </columns>
     <columns>
         <field>Activity$Description</field>
@@ -69,7 +66,7 @@
     </columns>
     <description>Call Report - SE/SDR</description>
     <filter>
-        <booleanFilter>1 and 2 AND 3</booleanFilter>
+        <booleanFilter>(1 and 2 AND 3)</booleanFilter>
         <criteriaItems>
             <column>Activity$CallDurationInSeconds</column>
             <columnToColumn>false</columnToColumn>
@@ -104,6 +101,7 @@
         <value>1</value>
     </params>
     <reportType>Activities__c</reportType>
+    <roleHierarchyFilter>YBN_SVP_GM</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>

@@ -7,6 +7,9 @@
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
+        <field>Account.Product_Type_Transactional__c</field>
+    </columns>
+    <columns>
         <field>STATUS</field>
     </columns>
     <columns>
@@ -17,6 +20,9 @@
     </columns>
     <columns>
         <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>Case.GCC1_Date_Time__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -45,7 +51,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Leads By Web,Essentials,Yodle Max,Yodle Web,Yodle Ads,Other,Yodle Organic</value>
+            <value>Leads By Web,Essentials,Yodle Max,Yodle Web,Yodle Ads,Other,Yodle,Organic,LeadStream-ATV</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Closed_By__c</column>

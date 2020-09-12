@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>myVariable_waitStartTimeAssignment</name>
+        <label>myVariable_waitStartTimeAssignment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>myDecision</targetReference>
+        </connector>
+    </assignments>
     <decisions>
         <processMetadataValues>
             <name>index</name>
@@ -36,7 +52,7 @@
                 <stringValue>[Case].Account_Level_IMS_ID__c </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_A1_2267816059</name>
+        <name>formula_2_myRule_1_A1_6104342813</name>
         <dataType>String</dataType>
         <expression>{!myVariable_current.Account_Level_IMS_ID__c}</expression>
     </formulas>
@@ -50,6 +66,7 @@
     OR(
     [Case].Product_Type__c = &quot;Leads By Web&quot;,
     [Case].Product_Type__c = &quot;Lead Stream ATV&quot;),
+    CONTAINS([Case].Product_Type__c, &quot;Yodle&quot;),
     [Case].Account_Level_IMS_ID__c &lt;&gt; &quot;&quot;,
 [Case].Account.IMS_Rep__c.IsActive = true,
 
@@ -76,6 +93,7 @@
     OR(
     {!myVariable_current.Product_Type__c} = &quot;Leads By Web&quot;,
     {!myVariable_current.Product_Type__c} = &quot;Lead Stream ATV&quot;),
+    CONTAINS({!myVariable_current.Product_Type__c}, &quot;Yodle&quot;),
     {!myVariable_current.Account_Level_IMS_ID__c} &lt;&gt; &quot;&quot;,
 {!myVariable_current.Account.IMS_Rep__r.IsActive} = true,
 
@@ -195,13 +213,13 @@
             </processMetadataValues>
             <field>OwnerId</field>
             <value>
-                <elementReference>formula_2_myRule_1_A1_2267816059</elementReference>
+                <elementReference>formula_2_myRule_1_A1_6104342813</elementReference>
             </value>
         </inputAssignments>
         <object>Case</object>
     </recordUpdates>
-    <startElementReference>myDecision</startElementReference>
-    <status>Draft</status>
+    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
+    <status>Active</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>
@@ -217,5 +235,15 @@
         <isInput>true</isInput>
         <isOutput>false</isOutput>
         <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_waitStartTimeVariable</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Flow.CurrentDateTime</elementReference>
+        </value>
     </variables>
 </Flow>

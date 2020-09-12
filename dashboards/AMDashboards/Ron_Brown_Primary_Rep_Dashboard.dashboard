@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -11,12 +11,12 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <metricLabel>Scheduled Calls</metricLabel>
-            <report>AMDashboardReports/Ron_Brown_Future_Events</report>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Future_Events1</report>
             <showRange>false</showRange>
         </components>
         <components>
@@ -40,11 +40,11 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/Ron_Brown_Open_CRs</report>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Open_CRs</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>Open CRs</title>
         </components>
@@ -52,25 +52,25 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>SLA Check</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <metricLabel>Needs to Be Worked Today</metricLabel>
-            <report>AMDashboardReports/Ron_NTBWT</report>
+            <report>AMP_Dashboard_Reports/Ron_NTBWT</report>
             <showRange>false</showRange>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <metricLabel>Needs Response</metricLabel>
-            <report>AMDashboardReports/Ron_Brown_Needs_Response</report>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Needs_Response</report>
             <showRange>false</showRange>
         </components>
         <components>
@@ -79,85 +79,14 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/Ron_Brown_No_Attempts_CRs</report>
+            <report>AMP_Dashboard_Reports/Ron_Brown_No_Attempts_CRs</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
             <title>No Attempt CRs</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Metric</componentType>
-            <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <metricLabel>Unattached Calls</metricLabel>
-            <report>AMDashboardReports/Ron_Brown_Unattached_Calls</report>
-            <showRange>false</showRange>
-        </components>
-    </leftSection>
-    <middleSection>
-        <columnSize>Wide</columnSize>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Metric</componentType>
-            <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <metricLabel># of Unscheduled TPs</metricLabel>
-            <report>AMDashboardReports/Ron_Brown_Count_Unscheudled_TPs</report>
-            <showRange>false</showRange>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/Ron_Brown_Unscheduled_Touch_Plans</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <sortBy>RowLabelAscending</sortBy>
-            <title># of Attempts on Unscheduled TPs</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>FULL_NAME</column>
-                <sortBy>RowLabelAscending</sortBy>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>RowCount</column>
-                <showTotal>true</showTotal>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>FORMULA1</column>
-                <decimalPlaces>0</decimalPlaces>
-                <showTotal>true</showTotal>
-            </dashboardTableColumn>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/Ron_Brown_Open_Upsell_Ops</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <title>Open Upsell Opportunities</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -181,13 +110,127 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
+            <header>Charge Failures</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/Ron_Brown_Open_Charge_Failures</report>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Open_Charge_Failures</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>Open Charge Failures</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Surveys</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Surveys</title>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties />
+            <header>Touch Plans</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel># of Unscheduled TPs</metricLabel>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Count_Unscheudled_TPs1</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>BucketField_29626377</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>true</calculatePercent>
+                <column>FORMULA1</column>
+                <decimalPlaces>1</decimalPlaces>
+                <showTotal>false</showTotal>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <decimalPlaces>1</decimalPlaces>
+                <showTotal>true</showTotal>
+                <sortBy>RowValueAscending</sortBy>
+            </dashboardTableColumn>
+            <decimalPrecision>1</decimalPrecision>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <indicatorBreakpoint1>0.6</indicatorBreakpoint1>
+            <indicatorBreakpoint2>0.7</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>AMP_Dashboard_Reports/Ron_Bown_TPs_This_Month</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <title>TPs Affecting Bonus This Month</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingSortProperties />
+            <header>Upsells</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Closed_Upsells</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Upsell Payout for Bonus</title>
+            <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>FULL_NAME</column>
+                <sortBy>RowLabelAscending</sortBy>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <showTotal>true</showTotal>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>FORMULA1</column>
+                <decimalPlaces>0</decimalPlaces>
+                <showTotal>true</showTotal>
+            </dashboardTableColumn>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Open_Upsell_Ops</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <title>Open Upsell Opportunities</title>
         </components>
     </middleSection>
     <rightSection>
@@ -199,12 +242,13 @@
             </chartSummary>
             <componentType>Metric</componentType>
             <displayUnits>Integer</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
+            <header>Book of Business</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <metricLabel>Total # of Accounts</metricLabel>
-            <report>AMDashboardReports/Ron_Brown_BoB</report>
+            <report>AMP_Dashboard_Reports/Ron_Brown_BoB</report>
             <showRange>false</showRange>
         </components>
         <components>
@@ -214,12 +258,27 @@
             </chartSummary>
             <componentType>Metric</componentType>
             <displayUnits>Integer</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#C25454</indicatorHighColor>
             <indicatorLowColor>#54C254</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <metricLabel>Churned Revenue</metricLabel>
-            <report>AMDashboardReports/Ron_Brown_Churn</report>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Churn</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <column>FORMULA4</column>
+            </chartSummary>
+            <componentType>Metric</componentType>
+            <displayUnits>Integer</displayUnits>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Billed Revenue</metricLabel>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Billed_Revenue</report>
             <showRange>false</showRange>
         </components>
         <components>
@@ -239,13 +298,13 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <indicatorBreakpoint1>7.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>14.0</indicatorBreakpoint2>
+            <groupingSortProperties />
+            <indicatorBreakpoint1>14.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>17.0</indicatorBreakpoint2>
             <indicatorHighColor>#C25454</indicatorHighColor>
             <indicatorLowColor>#54C254</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/Ron_Brown_Churn</report>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Churn</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>Approx. Percentage Churn</title>
         </components>
@@ -271,11 +330,11 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/Ron_Brown_Closed_CRs</report>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Closed_CRs</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>Closed CRs This Month</title>
         </components>
@@ -296,11 +355,11 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/Ron_Brown_Left_to_Bill_This_Month</report>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Left_to_Bill_This_Month</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>$ That is Scheduled to Bill This Month</title>
         </components>
@@ -310,11 +369,11 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/Ron_Brown_Closed_Cases_Today</report>
+            <report>AMP_Dashboard_Reports/Ron_Brown_Closed_Cases_Today</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
             <title>Cases Closed Today</title>

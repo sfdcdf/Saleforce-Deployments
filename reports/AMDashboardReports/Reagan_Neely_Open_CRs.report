@@ -68,6 +68,12 @@
         <field>Account.Cancellation_Requests__r$Client_ID__c</field>
     </columns>
     <columns>
+        <field>Account$Entered_Save_Mode__c</field>
+    </columns>
+    <columns>
+        <field>Account$Cancellation_Status__c</field>
+    </columns>
+    <columns>
         <field>Account$Name</field>
     </columns>
     <columns>
@@ -111,25 +117,25 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
-            <value>reagan neely</value>
+            <value>reagan neely,walter rundle</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>reagan neely</value>
+            <value>reagan neely,walter rundle</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Cancellation_Requests__r$Owner</field>
+        <field>BucketField_68135872</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>BucketField_68135872</field>
+        <field>Account.Cancellation_Requests__r$Owner</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Reagan Neely | Open CRs</name>

@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>National Support Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>National Support Requests</value>
+    </caseValues>
     <fields>
         <label><!-- Account Name --></label>
         <name>Account_Name__c</name>
@@ -461,7 +469,7 @@ Lead Analyst --></help>
         <name>Expected_time_of_decision_making__c</name>
     </fields>
     <fields>
-        <help><!-- The Franchise or Business name that best describes this client. e.g. Two Men And A Truck or Bob’s Taco Stand. --></help>
+        <help><!-- The Franchise or Business name that best describes this client. e.g. Two Men And A Truck or Bob&apos;s Taco Stand. --></help>
         <label><!-- Franchise/Business Name --></label>
         <name>Franchise_Business_Name__c</name>
     </fields>
@@ -1270,7 +1278,7 @@ Strategic member should be present on at least first performance call. --></help
         <relationshipLabel><!-- National Support Requests (Sales Person) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Only use this box if this client’s business is seasonally based. --></help>
+        <help><!-- Only use this box if this client&apos;s business is seasonally based. --></help>
         <label><!-- Seasonal --></label>
         <name>Seasonal__c</name>
     </fields>
@@ -2819,7 +2827,7 @@ Strategic member should be present on at least first performance call. --></help
         <name>Segment_Viability__c</name>
     </fields>
     <fields>
-        <help><!-- The segment that most closely matches what this client’s business offerings are related to. e.g. Medical Spa, General Contractor --></help>
+        <help><!-- The segment that most closely matches what this client&apos;s business offerings are related to. e.g. Medical Spa, General Contractor --></help>
         <label><!-- Segment --></label>
         <name>Segment__c</name>
     </fields>
@@ -3328,7 +3336,7 @@ Strategic member should be present on at least first performance call. --></help
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- The current URL of this client’s business. --></help>
+        <help><!-- The current URL of this client&apos;s business. --></help>
         <label><!-- Website URL --></label>
         <name>Website_URL__c</name>
     </fields>
@@ -3524,15 +3532,6 @@ Strategic member should be present on at least first performance call. --></help
         <label><!-- 30-60 Days --></label>
         <name>X30_60_Days__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>National Support Request</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>National Support Requests</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
     <layouts>
         <layout>Initiation Form</layout>
         <sections>
@@ -3760,6 +3759,7 @@ Strategic member should be present on at least first performance call. --></help
         <label><!-- Transition Form --></label>
         <name>Transition_Form</name>
     </recordTypes>
+    <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- Required in Stage 5 and Do they Use CRM is Yes --></errorMessage>
         <name>Conf_Check_Box_CRM_Yes</name>

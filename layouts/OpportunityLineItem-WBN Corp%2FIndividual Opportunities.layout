@@ -26,12 +26,12 @@
                 <field>UnitPrice</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>ContractLength__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>Quantity</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ContractLength__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -110,11 +110,20 @@
                 <behavior>Edit</behavior>
                 <field>Description</field>
             </layoutItems>
+        </layoutColumns>
+        <style>OneColumn</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Schedules</label>
+        <layoutColumns>
             <layoutItems>
-                <height>550</height>
+                <height>600</height>
                 <page>OpportunityLineItemRelatedList</page>
                 <showLabel>false</showLabel>
-                <showScrollbars>true</showScrollbars>
+                <showScrollbars>false</showScrollbars>
                 <width>100%</width>
             </layoutItems>
         </layoutColumns>
@@ -143,6 +152,7 @@
     <multilineLayoutFields>Quantity</multilineLayoutFields>
     <multilineLayoutFields>Initial_Charge__c</multilineLayoutFields>
     <multilineLayoutFields>ContractLength__c</multilineLayoutFields>
+    <multilineLayoutFields>ServiceDate</multilineLayoutFields>
     <multilineLayoutFields>OpportunityId</multilineLayoutFields>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>

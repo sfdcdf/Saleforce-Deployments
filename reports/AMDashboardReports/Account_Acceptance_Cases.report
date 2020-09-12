@@ -21,6 +21,9 @@
     <columns>
         <field>CREATED_DATEONLY</field>
     </columns>
+    <columns>
+        <field>Case.Next_Bill_Date_From_Accounts__c</field>
+    </columns>
     <description>Report for AA work to be completed in</description>
     <filter>
         <booleanFilter>1 AND 4 AND (2 OR (3 AND 5))</booleanFilter>

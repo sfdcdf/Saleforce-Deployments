@@ -7,6 +7,9 @@
         <field>RECORDTYPE</field>
     </columns>
     <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
         <field>SUBJECT</field>
     </columns>
     <columns>
@@ -25,7 +28,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>YBN E2C Catch all,Sarah McMillian,Salesforce Automation</value>
+            <value>YBN E2C Catch all,Salesforce Automation</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPEN</column>
@@ -55,7 +58,7 @@
         <field>ACCOUNT.NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>YBN Cases To Monitor</name>
+    <name>YBN Catch All Queue</name>
     <params>
         <name>units</name>
         <value>h</value>

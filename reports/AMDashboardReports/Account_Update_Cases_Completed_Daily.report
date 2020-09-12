@@ -31,6 +31,9 @@
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
+        <field>Case.Client_ID__c</field>
+    </columns>
+    <columns>
         <field>Account.Days_Live__c</field>
     </columns>
     <columns>
@@ -47,6 +50,9 @@
     </columns>
     <columns>
         <field>Case.Hours_SLA__c</field>
+    </columns>
+    <columns>
+        <field>Case.ageWeekdayHours__c</field>
     </columns>
     <columns>
         <field>Case.Result_of_QA__c</field>
@@ -92,7 +98,21 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Andrew Roy,Janine Martin,Kayla Mclaren</value>
+            <value>Janine Martin,Thomas Peppard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.QA_Partner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>TORCHx</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

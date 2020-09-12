@@ -21,7 +21,19 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>CreateEditPage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>EstablishSchedulePage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>HermesAccountRedirect</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>OpportunityLineItemRelatedList</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <applicationVisibilities>
@@ -910,7 +922,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.Exclude_from_AutoTP_Process__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1107,6 +1119,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.JCI_Payment_Method__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.JCI_Primary_Brand_Color__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.JCI_Secondary_Brand_Color__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9640,10 +9662,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Case.Finance_Approved__c</field>
-</fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Finance_Approved__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Fine_Amount__c</field>
@@ -9695,10 +9717,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Case.GCC2_Date_Time__c</field>
-</fieldPermissions>
+        <editable>true</editable>
+        <field>Case.GCC2_Date_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.GCC_1_Status__c</field>
@@ -10155,10 +10177,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-    <editable>false</editable>
-    <readable>false</readable>
-    <field>Case.Max_Upsell_Outcome__c</field>
-</fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Max_Upsell_Outcome__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.MilestoneStatus</field>
@@ -15431,11 +15453,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.Main_Revenue_Service_Offered__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Lead.Manufacturer_Brand__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -15472,11 +15489,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Monthly_Advertising_Spend__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.National_Commission_Master__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -15541,11 +15553,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Lead.Parent_Ownership_Structure__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Lead.Participated_in_Dealer_Website_in_Past__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -15600,11 +15607,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Promotion_Strategy__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Lead.Prospect_Tier__c</field>
         <readable>true</readable>
@@ -15612,11 +15614,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Prospect_Total_Score__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.Prospect_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -18175,19 +18172,19 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>LiveAgentSession.NumFlagLoweredAgent</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>LiveAgentSession.NumFlagLoweredSupervisor</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>LiveAgentSession.NumFlagRaised</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -18390,9 +18387,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>LiveChatTranscript.VisitorNetwork</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -25461,6 +25458,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Quality_Case__c.Account_Product_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Quality_Case__c.Cancellation_Parent__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -25517,6 +25519,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>References__c.Requested_By__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFDCToCTSAsynchRequest__c.Object_Route_MDT_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -26720,9 +26727,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>Performance_Analysis__c.Time_To_Complete_Minutes__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -26951,21 +26958,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>AccountBeacon__c.Client_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>AccountBeacon__c.IdHS__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>AccountBeacon__c.IdWebDC__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Account.Account_Director__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -26987,11 +26979,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Monthly_Budget__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.LOE_Agreement__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -27065,14 +27052,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.JCI_Secondary_Brand_Color__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
+        <readable>false</readable>
         <field>Account.Next_TP_Needed_By_Place_Holder__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout %28Feed%29</layout>
@@ -27114,9 +27096,6 @@
         <recordType>Account.YBN_Strategic_Partner_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AccountBeacon__c-AccountBeacon Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>AccountBrand-Account BrandLayout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -27134,9 +27113,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account_Snapshot__c-Account Snapshot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Acct_Email_Sub_to_Survey__c-Acct Email Sub to Survey Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Activity_Type__c-Activity Type Layout</layout>
@@ -27542,7 +27518,7 @@
         <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
+        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
         <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -27862,6 +27838,15 @@
         <recordType>Contact.YBN_IL_Contact_Type</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ContactPointAddress-Contact Point Address Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointEmail-Contact Point Email Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointPhone-Contact Point Phone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ContentVersion-General</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -28047,6 +28032,9 @@
         <layout>DebugInfo__c-Debug Info Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>DuplicateRecordItem-Duplicate Record Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -28218,6 +28206,9 @@
         <recordType>Lighthouse_Worksheets__c.PMS_Swap_Form</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>LinkedArticle-Linked Article Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ListEmail-List Email Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -28252,9 +28243,6 @@
         <layout>Macro-Macro Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MarketoLeadSFAccountMapping__c-MarketoLeadSFAccountMapping Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Marketo_Campaign__c-Marketo Campaign Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -28277,6 +28265,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Mgmt_Goal__c-Mgmt Goal Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MilestoneSnapshotobj__c-MilestoneSnapshotobj Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Milestone_Conversion__c-Milestone Conversion Layout</layout>
@@ -28363,6 +28354,14 @@
         <recordType>Opportunity.Affiliate_Initial_Transaction</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity-WBN Forecast</layout>
+        <recordType>Opportunity.Forecast_Client_Services</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-WBN Forecast</layout>
+        <recordType>Opportunity.Forecast_Network_Sales</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-LH - Upsell Opportunity</layout>
         <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
     </layoutAssignments>
@@ -28394,6 +28393,14 @@
         <recordType>Opportunity.CPP_Initial_Transaction</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity-WBN Forecast</layout>
+        <recordType>Opportunity.Plan_Client_Services</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-WBN Forecast</layout>
+        <recordType>Opportunity.Plan_Network_Sales</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-TORCHx - Cross-Sell Opportunity</layout>
         <recordType>Opportunity.TORCHx_Upsell_Opportunity</recordType>
     </layoutAssignments>
@@ -28416,6 +28423,9 @@
     <layoutAssignments>
         <layout>Opportunity-YBN - Strategic Partner Opportunity</layout>
         <recordType>Opportunity.YBN_Strategic_Partner_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OpportunityContactRole-Opportunity Contact Role Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>OpportunityLineItem-Opportunity Product Layout</layout>
@@ -28605,9 +28615,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Sales_Wizard_API_Setting__mdt-Sales Wizard API Setting Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Schedule_Split__c-Schedule Split Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Scheduled_Data_Pull_from_YL_to_SF__c-Scheduled Data Pull from YL to SF Layout</layout>
@@ -29879,6 +29886,16 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Opportunity.Forecast_Client_Services</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Forecast_Network_Sales</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -29895,6 +29912,16 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.Partner_CPP_Child_Account</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Plan_Client_Services</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Plan_Network_Sales</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -30214,7 +30241,7 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
-        <tab>Schedule_Split__c</tab>
+        <tab>MilestoneSnapshotobj__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -30267,15 +30294,15 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-LiveAgentSession</tab>
-        <visibility>DefaultOff</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-LiveChatTranscript</tab>
-        <visibility>DefaultOff</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-LiveChatVisitor</tab>
-        <visibility>DefaultOff</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Macro</tab>
@@ -30336,10 +30363,6 @@
     <tabVisibilities>
         <tab>Account_Marketo_Activity__c</tab>
         <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Acct_Email_Sub_to_Survey__c</tab>
-        <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Activity_Type__c</tab>
@@ -30428,10 +30451,6 @@
     <tabVisibilities>
         <tab>MLS__c</tab>
         <visibility>DefaultOff</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>MarketoLeadSFAccountMapping__c</tab>
-        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Marketo_Campaign__c</tab>

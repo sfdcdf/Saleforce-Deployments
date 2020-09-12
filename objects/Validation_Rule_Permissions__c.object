@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+  <description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description>
+  <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Lead_Stream_TP_1_Scheduled_Call_Bypass__c</fullName>
         <defaultValue>false</defaultValue>
@@ -32,6 +35,16 @@
         <description>If checked, the Profile/ User will bypass the Validation Rule(s) for being able to update the Touch Plan Cases status to 'Did Not Complete'</description>
         <externalId>false</externalId>
         <label>Lead Stream TP Did Not Complete Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>National_New_Client_Setup__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Admins can bypass this rule</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Admins can bypass this rule</inlineHelpText>
+        <label>National New Client Setup</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -125,9 +138,9 @@
     <fields>
         <fullName>Opportunity_Bypass_All__c</fullName>
         <defaultValue>false</defaultValue>
-        <description>Used only by API Read Write Integration and System Administrator Profiles to ensure no errors occurring during automation processes. Leverage this field when writing User/ Profile based Validation Rules on the Opportunity object</description>
+        <description>Used only by API Read Write Integration  and System Administrator Profiles to ensure no errors occurring during automation processes. Leverage this field when writing User/ Profile based Validation Rules on the Opportunity object</description>
         <externalId>false</externalId>
-        <inlineHelpText>Used only by API Read Write Integration and System Administrator Profiles to ensure no errors occurring during automation processes. Leverage this field when writing User/ Profile based Validation Rules on the Opportunity object</inlineHelpText>
+        <inlineHelpText>Used only by API Read Write Integration  and System Administrator Profiles to ensure no errors occurring during automation processes. Leverage this field when writing User/ Profile based Validation Rules on the Opportunity object</inlineHelpText>
         <label>Opportunity Bypass All</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -152,15 +165,22 @@
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
-  <customSettingsType>Hierarchy</customSettingsType>
-  <description>Custom Setting to keep validation rules clean and to not have to hard code Profiles and Users within a validation rule</description>
-  <enableFeeds>false</enableFeeds>
-  <label>Validation Rule Permissions</label>
-  <visibility>Public</visibility>
+    <fields>
+        <fullName>WBN_Process_Bypass_All__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to bypass any WBN process validation rule</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to bypass any WBN process validation rule</inlineHelpText>
+        <label>WBN Process Bypass All</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Validation Rule Permissions</label>
     <listViews>
         <fullName>All_Details</fullName>
         <columns>SETUP_OWNER_NAME</columns>
         <columns>SETUP_TYPE</columns>
+        <columns>Opportunity_Closed_Won_Edit_Bypass__c</columns>
         <columns>Lead_Stream_TP_1_Owner_Update_Bypass__c</columns>
         <columns>Lead_Stream_TP_1_Scheduled_Call_Bypass__c</columns>
         <columns>Lead_Stream_TP_2_Scheduled_Call_Bypass__c</columns>
@@ -176,4 +196,21 @@
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <listViews>
+        <fullName>WORKING_Check</fullName>
+        <columns>SETUP_OWNER_NAME</columns>
+        <columns>SETUP_TYPE</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lead_Stream_TP_Did_Not_Complete_Bypass__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>WORKING-Check</label>
+        <sharedTo>
+            <group>Sys_Local_Admin</group>
+        </sharedTo>
+    </listViews>
+    <visibility>Public</visibility>
 </CustomObject>

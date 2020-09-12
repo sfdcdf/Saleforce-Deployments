@@ -37,10 +37,6 @@
                 <behavior>Edit</behavior>
                 <field>Maintain_Ongoing_Relationship__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Client_Email_from_Survey__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -50,6 +46,14 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Client_ID_2__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>External_Ticket_System__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>External_Ticket_ID__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

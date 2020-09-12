@@ -19,14 +19,7 @@
         <field>DESCRIPTION</field>
     </columns>
     <filter>
-        <booleanFilter>(((((1 and 6) or 4) AND 2 AND 3) AND 5)) AND 7</booleanFilter>
-        <criteriaItems>
-            <column>OWNER_ROLE</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>local consultant</value>
-        </criteriaItems>
+        <booleanFilter>((((5 or 3) AND 1 AND 2) AND 4)) AND 6</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
@@ -46,7 +39,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Leonard Edwards</value>
+            <value>Leonard Edwards,Angela Anderson</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
@@ -60,7 +53,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Leonard Edwards,Makenzie Cunningham</value>
+            <value>Leonard Edwards,Angela Anderson</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>

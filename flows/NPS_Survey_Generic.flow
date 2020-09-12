@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <assignments>
-        <name>myVariable_waitStartTimeAssignment</name>
-        <label>myVariable_waitStartTimeAssignment</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Flow.CurrentDateTime</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>myDecision</targetReference>
-        </connector>
-    </assignments>
     <decisions>
         <processMetadataValues>
             <name>index</name>
@@ -27,6 +11,9 @@
         <label>myDecision</label>
         <locationX>50</locationX>
         <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision3</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_1</name>
@@ -44,6 +31,86 @@
             <label>Close YBN NPS Survey</label>
         </rules>
     </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision3</name>
+        <label>myDecision3</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_4</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NPS Survey YBN</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>GlobalConstant</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Client_Email_from_Survey__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <label>NPS WBN Direct Survey</label>
+        </rules>
+    </decisions>
     <description>Covers all processes for channels using the NPS Survey.</description>
     <formulas>
         <processMetadataValues>
@@ -52,7 +119,7 @@
                 <stringValue>TODAY()</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_A1_4831514140</name>
+        <name>formula_2_myRule_1_A1_2745309814</name>
         <dataType>Date</dataType>
         <expression>TODAY()</expression>
     </formulas>
@@ -77,7 +144,7 @@ isblank({!myVariable_current.Completed_Date__c}),
 ISPICKVAL({!myVariable_current.Status__c}, &quot;Closed Completed&quot;)
 )</expression>
     </formulas>
-    <interviewLabel>NPS_Survey_Generic-1_InterviewLabel</interviewLabel>
+    <interviewLabel>NPS_Survey_Generic-2_InterviewLabel</interviewLabel>
     <label>NPS Survey Generic</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -112,6 +179,9 @@ ISPICKVAL({!myVariable_current.Status__c}, &quot;Closed Completed&quot;)
             </value>
         </processMetadataValues>
         <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
             <name>isChildRelationship</name>
             <value>
                 <booleanValue>false</booleanValue>
@@ -122,6 +192,9 @@ ISPICKVAL({!myVariable_current.Status__c}, &quot;Closed Completed&quot;)
             <value>
                 <stringValue>[Customer_Surveys__c]</stringValue>
             </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
         </processMetadataValues>
         <name>myRule_1_A1</name>
         <label>Update Completed Date for NPS Survey YBN</label>
@@ -173,13 +246,13 @@ ISPICKVAL({!myVariable_current.Status__c}, &quot;Closed Completed&quot;)
             </processMetadataValues>
             <field>Completed_Date__c</field>
             <value>
-                <elementReference>formula_2_myRule_1_A1_4831514140</elementReference>
+                <elementReference>formula_2_myRule_1_A1_2745309814</elementReference>
             </value>
         </inputAssignments>
         <object>Customer_Surveys__c</object>
     </recordUpdates>
-    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
-    <status>Active</status>
+    <startElementReference>myDecision</startElementReference>
+    <status>Draft</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>
@@ -195,15 +268,5 @@ ISPICKVAL({!myVariable_current.Status__c}, &quot;Closed Completed&quot;)
         <isInput>true</isInput>
         <isOutput>false</isOutput>
         <objectType>Customer_Surveys__c</objectType>
-    </variables>
-    <variables>
-        <name>myVariable_waitStartTimeVariable</name>
-        <dataType>DateTime</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <elementReference>$Flow.CurrentDateTime</elementReference>
-        </value>
     </variables>
 </Flow>

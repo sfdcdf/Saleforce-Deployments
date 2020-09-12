@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Best Practice Evaluation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Best Practice Evaluations</value>
+    </caseValues>
     <fields>
         <label><!-- ACL Guidelines Followed --></label>
         <name>ACL_Guidelines_Followed2__c</name>
@@ -1471,9 +1479,9 @@
         <relationshipLabel><!-- Best Practice Evaluations (MPA Manager) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Not mentioned as an issue – 0%
-Several issues identified, but not tackled – 25% 
-Several issues identified, partially tackled/not tackled appropriately – 50%
+        <help><!-- Not mentioned as an issue - 0%
+Several issues identified, but not tackled - 25% 
+Several issues identified, partially tackled/not tackled appropriately - 50%
 Several issues identified, most issues tackled - 75%
 All issues identified &amp; tackled - 100% --></help>
         <label><!-- All Perf Issues Identified &amp; Tackled --></label>
@@ -2442,7 +2450,7 @@ All issues identified &amp; tackled - 100% --></help>
         <relationshipLabel><!-- Best Practice Evaluations (Yodle Relationship Manager) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Add the name of Yodle’s corporate contact here. --></help>
+        <help><!-- Add the name of Yodle&apos;s corporate contact here. --></help>
         <label><!-- Yodle&apos;s Main Corporate Point Of Contact --></label>
         <name>Yodle_corporate_contact__c</name>
     </fields>
@@ -2522,15 +2530,6 @@ All issues identified &amp; tackled - 100% --></help>
         <label><!-- Performance reports being produced --></label>
         <name>performance_reports_are__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Best Practice Evaluation</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Best Practice Evaluations</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
     <layouts>
         <layout>National Audit</layout>
         <sections>
@@ -2716,6 +2715,7 @@ All issues identified &amp; tackled - 100% --></help>
         <label><!-- Website Audit --></label>
         <name>Website_Audit</name>
     </recordTypes>
+    <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- For Local Accounts, you must fill in the 6 Website Tier fields for Compliance. --></errorMessage>
         <name>Local_Auditors_to_fill_in_Website_Tiers</name>

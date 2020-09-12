@@ -42,13 +42,6 @@
             <value>Case.YBN_Request</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.YBNRequestDetail__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>PPC Budget Estimates for existing relationship,PPC budget estimates for new relationship,PPL Investigation,Pre-launch Custom Content Creation,Zoom Rank Custom Reporting,SEO Keyword Strategy,Organic Site Audit Request,ROI Calculator,PPC Geo Targeting Analysis for PPL/Budget Estimates,SEO Meta/Title Tag Creation,Facebook Performance Inquiry</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>STATUS</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
@@ -60,7 +53,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>YBN PIMS,Chase Woodhams,Ryan Deller</value>
+            <value>YBN PIMS,Chase Woodhams</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

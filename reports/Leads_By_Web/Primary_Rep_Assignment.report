@@ -53,13 +53,19 @@
                 <sourceValue>Marilyn Bray</sourceValue>
             </sourceValues>
             <sourceValues>
-                <sourceValue>Lesa Lemay</sourceValue>
-            </sourceValues>
-            <sourceValues>
                 <sourceValue>Nina Avery</sourceValue>
             </sourceValues>
             <sourceValues>
                 <sourceValue>Reagan Neely</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Zachery Shubow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emma Brown</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sara MacFarlane</sourceValue>
             </sourceValues>
             <value>AM Blue</value>
         </values>
@@ -87,6 +93,12 @@
             </sourceValues>
             <sourceValues>
                 <sourceValue>Sara Davis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valerie Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lesa Lemay</sourceValue>
             </sourceValues>
             <value>AM Red</value>
         </values>
@@ -131,6 +143,9 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>Account.Product_Type_Transactional__c</field>
+    </columns>
+    <columns>
         <field>Account.Sales_Channel_YL__c</field>
     </columns>
     <columns>
@@ -159,7 +174,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>leads by web</value>
+            <value>leads by web,lead stream atv</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Test_Account__c</column>

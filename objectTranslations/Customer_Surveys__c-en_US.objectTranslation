@@ -3568,6 +3568,10 @@
         <name>Issue_Survey_How_courteous_Count__c</name>
     </fields>
     <fields>
+        <label><!-- Issue Survey - Overall Satisfaction --></label>
+        <name>Issue_Survey_Overall_Satisfaction__c</name>
+    </fields>
+    <fields>
         <label><!-- Issue Survey - Product Performance Sat. --></label>
         <name>Issue_Survey_Product_Performance_Satisfa__c</name>
     </fields>
@@ -7532,10 +7536,6 @@
             <section>Overall Satisfaction &amp; NPS</section>
         </sections>
         <sections>
-            <label><!-- Product + Service Feedback --></label>
-            <section>Product + Service Feedback</section>
-        </sections>
-        <sections>
             <label><!-- Resolution Details --></label>
             <section>Resolution Details</section>
         </sections>
@@ -7553,10 +7553,6 @@
         <sections>
             <label><!-- Account Information --></label>
             <section>Account Information</section>
-        </sections>
-        <sections>
-            <label><!-- Alert fields --></label>
-            <section>Alert fields</section>
         </sections>
         <sections>
             <label><!-- Communication --></label>

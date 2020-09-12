@@ -139,12 +139,27 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to evaluate best practices for Analysts in regards to New Client Setups and Optimizations.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>ACL_Guidelines_Followed2__c</fullName>
         <externalId>false</externalId>
         <label>ACL Guidelines Followed</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -171,7 +186,7 @@
         <precision>3</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
     </fields>
@@ -711,7 +726,7 @@
         <externalId>false</externalId>
         <label>Batch Added Terms</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -743,7 +758,7 @@
         <precision>3</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
     </fields>
@@ -3066,9 +3081,9 @@
     <fields>
         <fullName>Main_Issue_OPT__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Not mentioned as an issue – 0%
-Several issues identified, but not tackled – 25% 
-Several issues identified, partially tackled/not tackled appropriately – 50%
+        <inlineHelpText>Not mentioned as an issue - 0%
+Several issues identified, but not tackled - 25% 
+Several issues identified, partially tackled/not tackled appropriately - 50%
 Several issues identified, most issues tackled - 75%
 All issues identified &amp; tackled - 100%</inlineHelpText>
         <label>All Perf Issues Identified &amp; Tackled</label>
@@ -4969,7 +4984,7 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
     <fields>
         <fullName>Yodle_corporate_contact__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Add the name of Yodle’s corporate contact here.</inlineHelpText>
+        <inlineHelpText>Add the name of Yodle's corporate contact here.</inlineHelpText>
         <label>Yodle's Main Corporate Point Of Contact</label>
         <length>100</length>
         <required>false</required>
@@ -5201,72 +5216,16 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Used to evaluate best practices for Analysts in regards to New Client Setups and Optimizations.</description>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Best Practice Evaluation</label>
-    <nameField>
-        <displayFormat>E-{0000}</displayFormat>
-        <label>Evaluation ID</label>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Best Practice Evaluations</pluralLabel>
-    <recordTypeTrackHistory>true</recordTypeTrackHistory>
-    <searchLayouts>
-        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Case_in_Review__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>User__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Evaluation_for__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Client_ID__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Case_in_Review__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>User__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Evaluation_for__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>RECORDTYPE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Client_ID__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Case_in_Review__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>User__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Evaluation_for__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CREATED_DATE</lookupPhoneDialogsAdditionalFields>
-        <searchFilterFields>RECORDTYPE</searchFilterFields>
-        <searchFilterFields>NAME</searchFilterFields>
-        <searchFilterFields>Client_ID__c</searchFilterFields>
-        <searchFilterFields>Case_in_Review__c</searchFilterFields>
-        <searchFilterFields>User__c</searchFilterFields>
-        <searchFilterFields>Evaluation_for__c</searchFilterFields>
-        <searchFilterFields>CREATED_DATE</searchFilterFields>
-        <searchFilterFields>OBJECT_ID</searchFilterFields>
-        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Case_in_Review__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>User__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Evaluation_for__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>Global</fullName>
+        <columns>Account_Name__c</columns>
         <columns>NAME</columns>
         <columns>OBJECT_ID</columns>
         <columns>User__c</columns>
         <columns>Evaluation_for__c</columns>
         <columns>Client_ID__c</columns>
+        <columns>RECORDTYPE</columns>
         <filterScope>Everything</filterScope>
         <label>Global</label>
     </listViews>
@@ -5331,6 +5290,14 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <nameField>
+        <displayFormat>E-{0000}</displayFormat>
+        <label>Evaluation ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Best Practice Evaluations</pluralLabel>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
     <recordTypes>
         <fullName>National_Audit</fullName>
         <active>true</active>
@@ -13731,6 +13698,41 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Case_in_Review__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>User__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Evaluation_for__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Client_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Case_in_Review__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>User__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Evaluation_for__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RECORDTYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_ID__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Case_in_Review__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>User__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Evaluation_for__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CREATED_DATE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>RECORDTYPE</searchFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Client_ID__c</searchFilterFields>
+        <searchFilterFields>Case_in_Review__c</searchFilterFields>
+        <searchFilterFields>User__c</searchFilterFields>
+        <searchFilterFields>Evaluation_for__c</searchFilterFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchFilterFields>OBJECT_ID</searchFilterFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Case_in_Review__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>User__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Evaluation_for__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Local_Auditors_to_fill_in_Website_Tiers</fullName>
         <active>false</active>
@@ -13918,4 +13920,5 @@ NOT(ispickval( Account_Channel_Type__c , "National")),
         <errorDisplayField>Account_Channel_Type__c</errorDisplayField>
         <errorMessage>For Local and Partner accounts, all fields must be filled in with a value.</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>

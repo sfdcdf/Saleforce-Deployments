@@ -54,17 +54,6 @@
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Move_to_Customer_Care</fullName>
-        <field>OwnerId</field>
-        <lookupValue>customercare@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Move to Customer Care</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <targetObject>ParentId</targetObject>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>New_Inbound_Email</fullName>
         <field>Status</field>
         <literalValue>New Inbound Email</literalValue>
@@ -328,39 +317,6 @@
             <field>EmailMessage.DoNotReopen__c</field>
             <operation>equals</operation>
             <value>False</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Local Email Case Open and Move</fullName>
-        <actions>
-            <name>Move_to_Customer_Care</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Reopen_Email</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>EmailMessage.Status</field>
-            <operation>equals</operation>
-            <value>New</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Client_Type__c</field>
-            <operation>contains</operation>
-            <value>Local</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Client_ID__c</field>
-            <operation>equals</operation>
-            <value>999991010</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>

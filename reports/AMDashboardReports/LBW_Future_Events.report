@@ -45,6 +45,11 @@
         <field>DUE_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Activity.Activity_Start_Time__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>LBW Future Events</name>
     <params>
         <name>closed</name>

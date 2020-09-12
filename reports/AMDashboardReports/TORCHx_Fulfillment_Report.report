@@ -31,7 +31,7 @@
         <field>Account.Days_to_Live_without_Escalated__c</field>
     </columns>
     <filter>
-        <booleanFilter>(1 AND 2 AND 3 AND (4 OR 5)) AND 6</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND (7 OR (4 AND 5)) AND 6</booleanFilter>
         <criteriaItems>
             <column>Account.Client_Experience_Key__c</column>
             <columnToColumn>false</columnToColumn>
@@ -57,7 +57,7 @@
             <column>Account.Live_Date__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
+            <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
@@ -74,12 +74,19 @@
             <operator>notEqual</operator>
             <value>Test Accounts for Internal Use</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account.Live_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
         <field>CREATED_DATE</field>
-        <sortOrder>Asc</sortOrder>
+        <sortOrder>Desc</sortOrder>
     </groupingsDown>
     <name>TORCHx Fulfillment Report</name>
     <params>

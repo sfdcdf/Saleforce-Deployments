@@ -3,10 +3,7 @@
         <fullName>LBW_Cancellation_Alert</fullName>
         <description>LBW Cancellation Alert</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>kwells@web.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/LBW_New_Cancellation_Alert</template>
     </alerts>
@@ -22,9 +19,11 @@
     </alerts>
     <alerts>
         <fullName>LH_Canceled_Lighthouse_Auto_Account_Alert_to_BoltOn</fullName>
-        <ccEmails>elysa.rambaud@in-cloud.ca</ccEmails>
+        <ccEmails>billing@boltontechnology.com</ccEmails>
         <description>LH - Canceled Lighthouse Auto Account - Alert to BoltOn</description>
         <protected>false</protected>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Lighthouse_Auto_IB_OB/Canceled_Lighthouse_Auto_Account_Alert_to_BoltOn</template>
     </alerts>
@@ -56,10 +55,7 @@
         <fullName>New_LH_Auto_Cancel_Request_has_been_created</fullName>
         <description>New LH Auto Cancel Request has been created</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>bosteros@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderAddress>csops@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Lighthouse_Field_Service_Retention/Cancellation_Confirmation_Field_Service</template>
@@ -119,10 +115,7 @@
         <fullName>Yodle_Gold_Service_Cancel_Closed_Email</fullName>
         <description>Yodle Gold Service Cancel Closed Email</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>katie.green@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderAddress>sfdc@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Agent_Emails_Retention/Yodle_Gold_Cancel_Request_Closed</template>
@@ -744,7 +737,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <criteriaItems>
             <field>User.Email</field>
             <operation>notEqual</operation>
-            <value>sfdc@yodle.com</value>
+            <value>sfdc@enspireforenterprise.com</value>
         </criteriaItems>
         <criteriaItems>
             <field>Cancellation_Request__c.Refund2__c</field>
@@ -821,7 +814,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <name>LBW_Cancellation_Alert</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Cancellation_Request__c.Initial_Product__c</field>
             <operation>equals</operation>
@@ -1153,7 +1146,7 @@ Original Leadstream Auto Close First Cancel Code</description>
             <name>Yodle_Gold_Service_Cancel_Closed_Email</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Cancellation_Request__c.Yodle_Gold_Service__c</field>
             <operation>equals</operation>
@@ -1166,15 +1159,4 @@ Original Leadstream Auto Close First Cancel Code</description>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
-    <tasks>
-        <fullName>Test_Task</fullName>
-        <assignedTo>awoodul@yodle.com</assignedTo>
-        <assignedToType>user</assignedToType>
-        <dueDateOffset>1</dueDateOffset>
-        <notifyAssignee>false</notifyAssignee>
-        <priority>Normal</priority>
-        <protected>false</protected>
-        <status>Not Started</status>
-        <subject>Test Task</subject>
-    </tasks>
 </Workflow>

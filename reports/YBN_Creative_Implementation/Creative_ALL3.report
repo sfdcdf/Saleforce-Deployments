@@ -31,13 +31,13 @@
         <field>Case.Web_Dev_QA_Status__c</field>
     </columns>
     <filter>
-        <booleanFilter>((1 OR 2) AND (3 OR 4 OR 5 OR 6) AND 7) AND 8</booleanFilter>
+        <booleanFilter>((1 OR 2) AND (3 OR 4 OR 5 OR 6) AND 7)</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Sean Cornwall,Mike Cross,Stephanie Stark,Tyler Klepfish,Scott Montgomery,Katherine Vega,Quinn Campbell,YBN Creative,Web Dev,Theorem</value>
+            <value>Sean Cornwall,Mike Cross,Stephanie Stark,Scott Montgomery,Quinn Campbell,James Hartley,YBN Creative,Web Dev,Theorem</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
@@ -80,13 +80,6 @@
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Case.Potential_Integration_Risk__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>notContain</operator>
-            <value>At Risk</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

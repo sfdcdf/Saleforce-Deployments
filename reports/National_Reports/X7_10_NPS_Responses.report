@@ -4,7 +4,7 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.YBN_Consultant__c</field>
+        <field>Customer_Surveys__c.YBN_CSD__c</field>
     </columns>
     <columns>
         <field>Customer_Surveys__c.Status__c</field>
@@ -14,6 +14,18 @@
     </columns>
     <columns>
         <field>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.NPS_Score_Count__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Care_to_tell_us_why__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Anything_to_share_about_your_experience__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Surveys__c.Detail_on_your_likelihood_to_recomm__c</field>
     </columns>
     <columns>
         <field>CUST_CREATED_DATE</field>
@@ -58,13 +70,6 @@
             <value>Yodle,Jeremy&apos;s Powerhouse</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Customer_Surveys__c.Status__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Closed Completed,Closed Not Complete</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
@@ -82,7 +87,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Customer_Surveys__c.YBN_CSD__c</field>
+        <field>Customer_Surveys__c.YBN_Consultant__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>7-10 NPS Responses: Locations</name>
@@ -97,6 +102,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_CURPREV1</interval>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>

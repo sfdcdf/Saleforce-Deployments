@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -13,7 +13,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>PLQA</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -32,7 +32,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/SWAT_PLQA_completed_by_agent_Daily</report>
             <showPercentage>false</showPercentage>
@@ -46,7 +46,7 @@
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -64,13 +64,28 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/SWAT_PLQA_completed_by_agent_MTD</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
             <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>AMDashboardReports/SWAT_DGA_s_completed_MTD1</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+            <title>DGA QA - MTD</title>
         </components>
     </leftSection>
     <middleSection>
@@ -79,8 +94,21 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Queues</header>
+            <indicatorBreakpoint1>1.0</indicatorBreakpoint1>
+            <indicatorHighColor>#C25454</indicatorHighColor>
+            <indicatorLowColor>#FFFFFF</indicatorLowColor>
+            <indicatorMiddleColor>#C25454</indicatorMiddleColor>
+            <metricLabel>PLQA - Escalated</metricLabel>
+            <report>AMDashboardReports/SWAT_Escalated_PLQA1</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -92,7 +120,7 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -104,7 +132,7 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -116,7 +144,19 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
+            <groupingSortProperties />
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>LeadStream - Escalated NCS</metricLabel>
+            <report>AMDashboardReports/Escalated_NCS_CSQ_Fail1</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -126,23 +166,11 @@
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Metric</componentType>
-            <displayUnits>Auto</displayUnits>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <metricLabel>TORCHx Launch Queue</metricLabel>
-            <report>unfiled$public/TORCHx_Launch_Queue</report>
-            <showRange>false</showRange>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Table</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Open Cases</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -153,41 +181,10 @@
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <header>PLQA Results</header>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SWAT_PLQA_By_Error_All_Cases</report>
-            <showPicturesOnTables>false</showPicturesOnTables>
-            <sortBy>RowValueDescending</sortBy>
-            <title>All Cases - PLQA Results</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>AMDashboardReports/PLQA_Results_LeadStream_AM_SWAT_DB</report>
-            <showPicturesOnTables>false</showPicturesOnTables>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>LeadSteam AM - PLQA Results</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
             <drillDownUrl>https://docs.google.com/spreadsheets/d/1DvCK21AH4j8lHcTCrKDiCWz9OL3c1hCKSeWWXUhDjWw/edit?ts=59d37592#gid=0</drillDownUrl>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Quick Links</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -198,29 +195,54 @@
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Metric</componentType>
+            <componentType>Table</componentType>
             <displayUnits>Auto</displayUnits>
-            <drillDownUrl>https://docs.google.com/spreadsheets/d/13lFQk83J_ogwPosPeETQiWJs36Uc8dyqEt2ex8e0Q-Y/edit#gid=0</drillDownUrl>
-            <groupingSortProperties/>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
+            <header>Closed in QC Agent Name</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <metricLabel>SEM Failed Launch QA - MA Review</metricLabel>
-            <report>AMDashboardReports/Vivial_New_Builds</report>
-            <showRange>false</showRange>
+            <report>AMDashboardReports/SWAT_Account_Update_Cases_Non_MA</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Metric</componentType>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
             <displayUnits>Auto</displayUnits>
-            <drillDownUrl>https://docs.google.com/spreadsheets/d/1ntgrZ111mwYMEj4-XrbmgRn0h75sNG-ZeDvTeautp8I/edit#gid=297161866</drillDownUrl>
-            <groupingSortProperties/>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <metricLabel>SEM Failed Launch QA - CS Review</metricLabel>
-            <report>AMDashboardReports/Vivial_New_Builds</report>
-            <showRange>false</showRange>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingSortProperties />
+            <header>PLQA Completion Rate - MTD</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>AMDashboardReports/SWAT_100_QC_Report</report>
+            <showPercentage>true</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <groupingSortProperties />
+            <header>BPE Completion Rate - MTD</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>AMDashboardReports/SWAT_100_BPE_Report</report>
+            <showPercentage>true</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
         </components>
     </middleSection>
     <rightSection>
@@ -231,12 +253,12 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>BPE</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SWAT_BPE_completed_by_agent_Daily</report>
+            <report>AMDashboardReports/Marketing_Associates_Harmony_QC_Daily</report>
             <showPicturesOnTables>false</showPicturesOnTables>
             <sortBy>RowValueDescending</sortBy>
             <title>BPE - Daily</title>
@@ -250,9 +272,9 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
-            <report>unfiled$public/SWAT_BPE_completed_by_agent_Daily</report>
+            <report>AMDashboardReports/Marketing_Associates_Harmony_QC_Daily</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
@@ -264,11 +286,11 @@
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SWAT_BPE_completed_by_agent_MTD1</report>
+            <report>AMDashboardReports/Marketing_Associates_Harmony_QC_MTD</report>
             <showPicturesOnTables>false</showPicturesOnTables>
             <sortBy>RowValueDescending</sortBy>
             <title>BPE - MTD</title>
@@ -282,9 +304,9 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
-            <report>unfiled$public/SWAT_BPE_completed_by_agent_MTD1</report>
+            <report>AMDashboardReports/Marketing_Associates_Harmony_QC_MTD</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
