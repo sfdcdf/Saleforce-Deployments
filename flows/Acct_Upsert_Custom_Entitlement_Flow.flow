@@ -216,17 +216,17 @@
             <targetReference>Search_SLA</targetReference>
         </connector>
         <filters>
-            <field>IsVersionDefault</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
             <field>Name</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>YBN Custom SLA</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsVersionDefault</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <object>SlaProcess</object>

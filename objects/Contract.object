@@ -214,7 +214,7 @@
     </fields>
     <fields>
         <fullName>ActivatedDate</fullName>
-        
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -245,7 +245,7 @@
         <externalId>false</externalId>
         <label>Auto-Renewal</label>
         <required>false</required>
-        
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -1072,7 +1072,7 @@
         <externalId>false</externalId>
         <label>Renewal Term</label>
         <required>false</required>
-        
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
@@ -1689,7 +1689,7 @@
         <inlineHelpText>Initial Start of Monthly Billing for the contract.</inlineHelpText>
         <label>Initial Go Live Date</label>
         <required>false</required>
-        
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -1701,7 +1701,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1712,7 +1712,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
