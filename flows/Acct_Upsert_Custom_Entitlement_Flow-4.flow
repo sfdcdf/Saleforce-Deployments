@@ -119,17 +119,17 @@
             <targetReference>Business_Hour_Lookup</targetReference>
         </connector>
         <filters>
-            <field>IsActive</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
             <field>Name</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Business 9-5 EST</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <object>BusinessHours</object>

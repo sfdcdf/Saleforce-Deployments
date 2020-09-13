@@ -494,6 +494,13 @@
             <targetReference>Find_Existing_Scheduled_Task</targetReference>
         </connector>
         <filters>
+            <field>WhatId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>objEvent.WhatId</elementReference>
+            </value>
+        </filters>
+        <filters>
             <field>Milestone__c</field>
             <operator>EqualTo</operator>
             <value>
@@ -512,13 +519,6 @@
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Completed</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>WhatId</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>objEvent.WhatId</elementReference>
             </value>
         </filters>
         <object>Task</object>
@@ -565,6 +565,13 @@
             <targetReference>Find_Completed_Task</targetReference>
         </connector>
         <filters>
+            <field>WhatId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>objEvent.WhatId</elementReference>
+            </value>
+        </filters>
+        <filters>
             <field>Milestone__c</field>
             <operator>EqualTo</operator>
             <value>
@@ -583,13 +590,6 @@
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Completed</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>WhatId</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>objEvent.WhatId</elementReference>
             </value>
         </filters>
         <object>Task</object>

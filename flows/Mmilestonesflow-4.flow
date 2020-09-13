@@ -25,17 +25,17 @@
             <targetReference>UpdateMilestones</targetReference>
         </connector>
         <filters>
-            <field>Elapse_time__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>ElapseTime</elementReference>
-            </value>
-        </filters>
-        <filters>
             <field>Name</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>CaseNumber</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Elapse_time__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ElapseTime</elementReference>
             </value>
         </filters>
         <object>Mmilestones__c</object>

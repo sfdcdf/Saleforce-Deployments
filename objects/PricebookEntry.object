@@ -35,6 +35,8 @@
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+  <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>IsActive</fullName>
         <trackHistory>false</trackHistory>
@@ -61,20 +63,12 @@
         <fullName>UseStandardPrice</fullName>
         <trackHistory>false</trackHistory>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-  <enableFeeds>false</enableFeeds>
-  <searchLayouts>
-        <searchResultsAdditionalFields>PRODUCT.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT.DEFAULT_PRICE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.FAMILY_ENUM</searchResultsAdditionalFields>
-    </searchLayouts>
     <listViews>
         <fullName>WBN_IL</fullName>
         <columns>PRODUCT.NAME</columns>
         <columns>PRODUCT.CUSTOMER_PRODUCT_ID</columns>
         <columns>PRODUCT2.FAMILY_ENUM</columns>
+        <columns>Product2.ProductChargeType__c</columns>
         <columns>PRODUCT.DEFAULT_PRICE</columns>
         <columns>PRODUCT2.DESCRIPTION</columns>
         <filterScope>Queue</filterScope>
@@ -84,4 +78,11 @@
             <group>Sys_Local_Admin</group>
         </sharedTo>
     </listViews>
+    <searchLayouts>
+        <searchResultsAdditionalFields>PRODUCT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT.DEFAULT_PRICE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.FAMILY_ENUM</searchResultsAdditionalFields>
+    </searchLayouts>
 </CustomObject>
