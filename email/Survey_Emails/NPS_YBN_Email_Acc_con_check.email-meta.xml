@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template if Account OR contact are empty</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NPS YBN Acc con check Email Template</name>
+    <style>none</style>
+    <subject>Yodle Client Satisfaction Survey</subject>
+    <textOnly>Dear {!Account.Client_First_Name__c},
+
+At Yodle, we are passionate about your success and are committed to continually improving the quality of the products and services we provide to you.
+
+In that spirit, we would appreciate your feedback on Yodle by responding to a brief survey about your experience. This survey should take less than five minutes to complete and will help us reach our goal of making your program a success.
+
+We know your time is valuable. As a “thank you” for your participation, we want you to enjoy a coffee on us. A gift card will be sent to this email address after completing the survey*.
+        
+To access the survey link, http://www.clicktools.com/survey?iv=1pcorlsyyc30n&amp;q1={!Account.Id}
+
+Thank you,
+Court Cunningham
+CEO of Yodle, Inc.
+
+
+*In order to receive your free coffee we require that you complete the survey in full. You will receive your gift card via email within 30 days of completion.
+
+©{!User.Today_s_Year__c} Yodle for Brand Networks. All Rights Reserved. | Terms &amp; Conditions</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

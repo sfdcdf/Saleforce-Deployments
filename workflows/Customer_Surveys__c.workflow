@@ -247,6 +247,17 @@
         <protected>false</protected>
     </fieldUpdates>
     <rules>
+        <fullName>Alert for surveys not associated with an account record</fullName>
+        <actions>
+            <name>Alert_for_surveys_not_associated_with_an_account_record</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Since we're adding the NPS survey link to the Salesforce signature on the CS rep we need an alert if a survey response comes in and Salesforce can't associate it with a Contact or Account record. This alert should come sent to Emily Garza @ emily.garza@en</description>
+        <formula>(ISBLANK(Account__c)  ||  ISBLANK( Contact__c ))&amp;&amp;  Account_Empty_check__c  = True</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
         <fullName>CSC Business Customization Form</fullName>
         <actions>
             <name>BCF_Status</name>

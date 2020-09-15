@@ -16051,6 +16051,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Customer_Surveys__c.Account_Empty_check__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Customer_Surveys__c.Account_Product_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
