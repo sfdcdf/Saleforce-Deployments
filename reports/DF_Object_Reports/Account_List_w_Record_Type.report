@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
+        <field>Account.AccountId18__c</field>
+    </columns>
+    <columns>
         <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.IMS_Rep__c</field>
+    </columns>
+    <columns>
+        <field>Account.Parent_Name__c</field>
     </columns>
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>Account.Biz_Dev_Internal_Product_Division__c</field>
+    </columns>
+    <columns>
+        <field>Account.Relationship_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Corp_Acct_in_YL_Parent_Account__c</field>
+    </columns>
+    <columns>
+        <field>Account.Client_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.WBN_JAX_CUST_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Client_Type__c</field>
+    </columns>
+    <columns>
         <field>TYPE</field>
     </columns>
     <columns>
-        <field>RATING</field>
+        <field>Account.Status__c</field>
     </columns>
     <columns>
         <field>DUE_DATE</field>

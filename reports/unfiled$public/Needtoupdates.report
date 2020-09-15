@@ -4,13 +4,13 @@
         <field>CASE_ID</field>
     </columns>
     <columns>
-        <field>MT.NAME</field>
-    </columns>
-    <columns>
         <field>ACTUAL_ELPSD_TIME_MINS</field>
     </columns>
     <columns>
-        <field>LAST_UPDATE_BY</field>
+        <field>Case.First_Response_Actual_Elapse_Time__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -25,14 +25,14 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Resolution time</value>
+            <value>First Response</value>
         </criteriaItems>
         <criteriaItems>
-            <column>LAST_UPDATE_BY</column>
+            <column>Case.First_Response_Actual_Elapse_Time__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Sravani Mutnuru</value>
+            <operator>equals</operator>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -52,8 +52,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2020-09-02</endDate>
+        <endDate>2020-09-14</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-08-19</startDate>
+        <startDate>2019-01-01</startDate>
     </timeFrameFilter>
 </Report>
