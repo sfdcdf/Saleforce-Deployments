@@ -139,6 +139,21 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to track our maps verification and pin collection</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Account_Acceptance_Exception__c</fullName>
         <externalId>false</externalId>
@@ -13447,68 +13462,7 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Used to track our maps verification and pin collection</description>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
-    <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Organic Case</label>
-    <nameField>
-        <displayFormat>YO-{0000}</displayFormat>
-        <label>YO ID</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Organic Cases</pluralLabel>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts>
-        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Attempts_to_Contact__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Client_Type__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>IMS_Rep__c</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Account_Name__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Client_ID__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Attempts_to_Contact__c</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Account_Name__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Attempts_to_Contact__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Client_ID__c</lookupPhoneDialogsAdditionalFields>
-        <searchFilterFields>RECORDTYPE</searchFilterFields>
-        <searchFilterFields>OBJECT_ID</searchFilterFields>
-        <searchFilterFields>Account_Name__c</searchFilterFields>
-        <searchFilterFields>Client_ID__c</searchFilterFields>
-        <searchFilterFields>CREATED_DATE</searchFilterFields>
-        <searchFilterFields>Status__c</searchFilterFields>
-        <searchFilterFields>Attempts_to_Contact__c</searchFilterFields>
-        <searchFilterFields>Client_Type__c</searchFilterFields>
-        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Account_Name__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Attempts_to_Contact__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
-    <startsWith>Vowel</startsWith>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>Bulk_Close_Photo_Upload</fullName>
         <columns>NAME</columns>
@@ -13554,6 +13508,17 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         <sharedTo>
             <role>Pin_Collection_Associate</role>
         </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>IT_Pro_SEO_Optimization</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Google_Listing_Created__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Queue</filterScope>
+        <label>IT Pro SEO Optimization</label>
+        <queue>IT_Pro_SEO_Optimization</queue>
     </listViews>
     <listViews>
         <fullName>Lawn_Doctor_MIC_Cases</fullName>
@@ -13937,6 +13902,16 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         </filters>
         <label>SubbaMaps Initial Claiming Case</label>
     </listViews>
+    <nameField>
+        <displayFormat>YO-{0000}</displayFormat>
+        <label>YO ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Organic Cases</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Canda_Maps_Claiming</fullName>
         <active>true</active>
@@ -64304,6 +64279,41 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Attempts_to_Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Client_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IMS_Rep__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Client_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Attempts_to_Contact__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Attempts_to_Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Client_ID__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>RECORDTYPE</searchFilterFields>
+        <searchFilterFields>OBJECT_ID</searchFilterFields>
+        <searchFilterFields>Account_Name__c</searchFilterFields>
+        <searchFilterFields>Client_ID__c</searchFilterFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchFilterFields>Attempts_to_Contact__c</searchFilterFields>
+        <searchFilterFields>Client_Type__c</searchFilterFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Attempts_to_Contact__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
     <validationRules>
         <fullName>Attempts_to_Contact</fullName>
         <active>true</active>
@@ -64773,6 +64783,7 @@ ISPICKVAL(Pin_Action_Reason__c, "Maps Contact - Comanage")
 )</errorConditionFormula>
         <errorMessage>Only MVT and SEO Members Can Create this Pin Action Reason Case Type</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
     <webLinks>
         <fullName>Update_Lead_in_Marketo_ADMIN_ONLY</fullName>
         <availability>online</availability>
