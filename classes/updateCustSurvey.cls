@@ -3,6 +3,10 @@
  * Developer : Mahesh Bogila
  * Date:07/10/2020
  * Usage: Forcustomer Survey which is submitted directly with email, then by email corresponding contact and account details are updated.
+ * Modification Date 09/15/2020
+ * Reason:Added logic to update checkbox if we don't find matching account- 
+ * By:Mahesh Bogila
+ * 
  * **************/
 public without sharing class updatecustSurvey 
 {
@@ -35,6 +39,12 @@ public without sharing class updatecustSurvey
             temp.Id= temp.Id;
             temp.Contact__c=map4CId.get(temp.Client_Email_from_Survey__c);
             temp.Account__c=map4AId.get(temp.Client_Email_from_Survey__c);
+            // Added logic to update checkbox if we don't find matching account- Mahesh Bogila 09/15/2020
+            if(temp.Account__c==null)
+            {
+                temp.Account_Empty_check__c=True;
+            } 
+           // Modification Ended 09/15/2020 
             lst2itterate.add(temp);
             system.debug('***lst2itterate'+lst2itterate);
         }
