@@ -139,6 +139,20 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Account_IMS__c</fullName>
         <externalId>false</externalId>
@@ -10965,34 +10979,7 @@ false)</formula>
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
-    <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Cancellation Form</label>
-    <nameField>
-        <displayFormat>CR-{0000}</displayFormat>
-        <label>Cancellation Request Name</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Cancellation Requests</pluralLabel>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts />
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>LBW_Support_Cancellation_Request</fullName>
         <columns>NAME</columns>
@@ -11169,6 +11156,16 @@ false)</formula>
         </filters>
         <label>Subba - LH Cancellation Request</label>
     </listViews>
+    <nameField>
+        <displayFormat>CR-{0000}</displayFormat>
+        <label>Cancellation Request Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Cancellation Requests</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Rogers_Cancellation_Request</fullName>
         <active>true</active>
@@ -22453,6 +22450,8 @@ false)</formula>
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Cannot_Change_Owner_for_LWB</fullName>
         <active>true</active>
@@ -22494,7 +22493,7 @@ $User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
 NOT(RecordType.Name = "TORCHx Cancellation Request"),
 NOT(RecordType.Name = "WBN Cancellation Request"),
 NOT(RecordType.Name = "LH Cancellation Request"),
-NOT($User.Email = "sfdc@yodle.com"), 
+NOT($User.Email = "sfdc@enspireforenterprise.com"), 
 not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
 or(
 ispickval( Account_in_Save_Mode__c  ,"")))</errorConditionFormula>
@@ -22507,7 +22506,7 @@ ispickval( Account_in_Save_Mode__c  ,"")))</errorConditionFormula>
 $User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
 NOT(RecordType.Name = "TORCHx Cancellation Request"),
 NOT(RecordType.Name = "LH Cancellation Request"),
-NOT($User.Email = "sfdc@yodle.com"), 
+NOT($User.Email = "sfdc@enspireforenterprise.com"), 
 NOT(ISPICKVAL( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
 OR(
 ISBLANK( Additional_Notes__c )))</errorConditionFormula>
@@ -22533,7 +22532,7 @@ $User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
 NOT(RecordType.Name = "TORCHx Cancellation Request"),
 NOT(RecordType.Name = "WBN Cancellation Request"),
 NOT(RecordType.Name = "LH Cancellation Request"),
-NOT($User.Email = "sfdc@yodle.com"),  
+NOT($User.Email = "sfdc@enspireforenterprise.com"),  
 NOT(ISPICKVAL( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
 OR(
 ISBLANK( Agent_Confirmation__c )))</errorConditionFormula>
@@ -22544,7 +22543,7 @@ ISBLANK( Agent_Confirmation__c )))</errorConditionFormula>
         <active>true</active>
         <errorConditionFormula>and(
 $User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
-NOT($User.Email = "sfdc@yodle.com"), 
+NOT($User.Email = "sfdc@enspireforenterprise.com"), 
 RecordType.Name &lt;&gt; "TORCHx Cancellation Request",
 not(RecordType.Name = "WBN Cancellation Request") &amp;&amp;
 not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
@@ -22560,7 +22559,7 @@ $User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
 RecordTypeId &lt;&gt; "012320000005P4X",
 NOT(RecordType.Name = "WBN Cancellation Request"),
 NOT(RecordType.Name = "LH Cancellation Request"), 
-NOT($User.Email = "sfdc@yodle.com"), 
+NOT($User.Email = "sfdc@enspireforenterprise.com"), 
 ISPICKVAL( Got_client_into_dashboard__c ,""),
 NOT(ISPICKVAL( Outcome__c , "In Progress")),
 NOT(ISPICKVAL(Outcome__c , "Duplicate Retention Case")))</errorConditionFormula>
@@ -22585,7 +22584,7 @@ $User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
 NOT(RecordType.Name = "TORCHx Cancellation Request"),
 NOT(RecordType.Name = "WBN Cancellation Request"),
 NOT(RecordType.Name = "LH Cancellation Request"), 
-NOT($User.Email = "sfdc@yodle.com"), 
+NOT($User.Email = "sfdc@enspireforenterprise.com"), 
 not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
 or(
 ispickval( Escalation_Potential__c ,"")))</errorConditionFormula>
@@ -22598,7 +22597,7 @@ ispickval( Escalation_Potential__c ,"")))</errorConditionFormula>
 $User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
 RecordType.Name &lt;&gt; "WBN Cancellation Request", 
 RecordType.Name &lt;&gt; "LH Cancellation Request", 
-NOT($User.Email = "sfdc@yodle.com"), 
+NOT($User.Email = "sfdc@enspireforenterprise.com"), 
 not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ||
 ISPICKVAL(Outcome__c , "New") ),
 or(
@@ -22624,7 +22623,7 @@ isblank( Retention_Consultant__c )))</errorConditionFormula>
         <errorConditionFormula>and(NOT(RecordType.Name = "TORCHx Cancellation Request"),
 NOT(RecordType.Name = "WBN Cancellation Request"),
 NOT(RecordType.Name = "LH Cancellation Request"), 
-NOT($User.Email = "sfdc@yodle.com"),  
+NOT($User.Email = "sfdc@enspireforenterprise.com"),  
 not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
 or(
 ispickval( Send_Confirmation_to_Client__c  ,"")))</errorConditionFormula>
@@ -22682,7 +22681,7 @@ $Profile.Name&lt;&gt;"System Administrator"))</errorConditionFormula>
 ISBLANK( Refund_Approved_By__c ) &amp;&amp;  
 RecordType.Name &lt;&gt; 'TORCHx Cancellation Request' &amp;&amp;
 RecordType.Name &lt;&gt; 'LH Cancellation Request' &amp;&amp;
-$User.Email &lt;&gt; "sfdc@yodle.com" &amp;&amp;    
+$User.Email &lt;&gt; "sfdc@enspireforenterprise.com" &amp;&amp;    
 NOT(ISPICKVAL(Refund2__c, "Requested, Countered and Denied"))</errorConditionFormula>
         <errorMessage>For this refund please specify who approved the refund.</errorMessage>
     </validationRules>
@@ -22942,7 +22941,7 @@ ISBLANK(Refund_Detail__c)))</errorConditionFormula>
         <active>true</active>
         <errorConditionFormula>Refund_Amount__c &gt;= 1000 &amp;&amp;   NOT(ISPICKVAL( Outcome__c , 'In Progress')) &amp;&amp;  Director_Approved__c  &lt;&gt; True &amp;&amp;  RecordType.Name &lt;&gt; 'TORCHx Cancellation Request' &amp;&amp;
 RecordType.Name &lt;&gt; 'LH Cancellation Request' &amp;&amp;
-$User.Email &lt;&gt; "sfdc@yodle.com"</errorConditionFormula>
+$User.Email &lt;&gt; "sfdc@enspireforenterprise.com"</errorConditionFormula>
         <errorMessage>Requires Director Approval to close this cancel form.</errorMessage>
     </validationRules>
     <validationRules>
@@ -22953,7 +22952,7 @@ $User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
 NOT(RecordType.Name = "TORCHx Cancellation Request"), 
 NOT(RecordType.Name = "WBN Cancellation Request"), 
 NOT(RecordType.Name = "LH Cancellation Request"), 
-NOT($User.Email   = "sfdc@yodle.com"),
+NOT($User.Email   = "sfdc@enspireforenterprise.com"),
  ISPICKVAL( Refund2__c , ''),
  (ISPICKVAL( Outcome__c , 'Saved with No Concessions') ||
  ISPICKVAL( Outcome__c , 'Saved with Hard Concessions') ||
@@ -23080,7 +23079,7 @@ ispickval( Cancel_Code__c , "")))</errorConditionFormula>
         <errorConditionFormula>and(
 $User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
 RecordType.Name &lt;&gt; "Rogers Cancellation Request", 
-NOT($User.Email = "sfdc@yodle.com"),  
+NOT($User.Email = "sfdc@enspireforenterprise.com"),  
 not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
 or(
 ispickval(  Cancel_Code_1__c , "")))</errorConditionFormula>
@@ -23209,7 +23208,7 @@ You must fill out Cancel Code Notes if you select a Cancel Code</description>
         <errorConditionFormula>and(
 $User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/ 
 RecordType.Name &lt;&gt; "Rogers Cancellation Request", 
-NOT($User.Email = "sfdc@yodle.com"), 
+NOT($User.Email = "sfdc@enspireforenterprise.com"), 
 ISBlank(Second_Cancel_Code_Notes__c),
 NOT(ispickval(  Cancel_Code_2__c ,"")))</errorConditionFormula>
         <errorDisplayField>Second_Cancel_Code_Notes__c</errorDisplayField>
@@ -23223,7 +23222,7 @@ You must fill out Cancel Code Notes if you select a Cancel Code</description>
         <errorConditionFormula>and(
 $User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/ 
 RecordType.Name &lt;&gt; "Rogers Cancellation Request", 
-NOT($User.Email = "sfdc@yodle.com"), 
+NOT($User.Email = "sfdc@enspireforenterprise.com"), 
 ISBlank(First_Cancel_Code_Notes__c),
 NOT(ispickval( Cancel_Code_1__c,"")))</errorConditionFormula>
         <errorDisplayField>First_Cancel_Code_Notes__c</errorDisplayField>
@@ -23345,7 +23344,7 @@ $User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
 not( RecordType.Name = "TORCHx Cancellation Request"),
 NOT(RecordType.Name = "LH Cancellation Request"),
 NOT(RecordType.Name = "WBN Cancellation Request"), 
-NOT($User.Email = "sfdc@yodle.com"), 
+NOT($User.Email = "sfdc@enspireforenterprise.com"), 
 not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
 or(
 ispickval ( Future_Product__c  ,"")))</errorConditionFormula>
@@ -23533,6 +23532,7 @@ AND(
         <errorDisplayField>Teardown_Date__c</errorDisplayField>
         <errorMessage>You must enter a Teardown Date that is in the FUTURE when changing the Outcome to Cancelled.</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
     <webLinks>
         <fullName>Approve_Duplicate_Form</fullName>
         <availability>online</availability>

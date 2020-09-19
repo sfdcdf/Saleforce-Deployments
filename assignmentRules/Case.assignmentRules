@@ -992,25 +992,6 @@
             <template>Support/SUPPORTNewassignmentnotificationSAMPLE</template>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>leadstreamsupport@web.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Case.Origin</field>
-                <operation>equals</operation>
-                <value>YodleGoldService@yodle.com</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Help_Portal_Product_Type__c</field>
-                <operation>equals</operation>
-                <value>Lead Stream</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Subject</field>
-                <operation>equals</operation>
-                <value>Yodle Gold Service - Web Form</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>TORCHx_Inbound_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>

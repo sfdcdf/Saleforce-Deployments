@@ -6151,10 +6151,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
     </rules>
     <rules>
         <fullName>Assign Platinum Support to IMS Rep on Outbound Cases</fullName>
-        <actions>
-            <name>Update_IMS_Rep_to_Platinum_Support</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Case.RecordTypeId</field>
@@ -9611,10 +9607,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>LBW Email Route</fullName>
-        <actions>
-            <name>LBW_Case_Owner_Change</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Account.Product_Type_Transactional__c</field>
@@ -9640,14 +9632,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>LBW Outbound Call</fullName>
-        <actions>
-            <name>Update_Case_IMS_Rep_LBW_Customer_Service</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Update_Case_Owner_LBW_Customer_Service</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
         <criteriaItems>
@@ -14240,10 +14224,6 @@ ISCHANGED(Estimated_Completion_Date__c)
         <actions>
             <name>YBN</name>
             <type>Alert</type>
-        </actions>
-        <actions>
-            <name>YBN_Case_Owner_to_Sarah_McMillian</name>
-            <type>FieldUpdate</type>
         </actions>
         <active>false</active>
         <criteriaItems>
