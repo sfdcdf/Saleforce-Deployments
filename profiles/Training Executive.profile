@@ -28941,6 +28941,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Organic_Analysis__c.OrgnicCase18__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Organic_Analysis__c.Other__c</field>
         <readable>true</readable>

@@ -14961,6 +14961,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Customer_Surveys__c.CustomerSurvey18__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Customer_Surveys__c.Customer_Review__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -28197,6 +28202,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Organic_Analysis__c.Organic_Product__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Organic_Analysis__c.OrgnicCase18__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

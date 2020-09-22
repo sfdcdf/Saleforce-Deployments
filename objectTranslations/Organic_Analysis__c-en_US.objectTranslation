@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Organic Case</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Organic Cases</value>
+    </caseValues>
     <fields>
         <label><!-- ASW/OPO keywords mismatched? --></label>
         <name>ASW_OPO__c</name>
@@ -4848,6 +4856,10 @@
         <name>Organic_Product__c</name>
     </fields>
     <fields>
+        <label><!-- OrgnicCase18 --></label>
+        <name>OrgnicCase18__c</name>
+    </fields>
+    <fields>
         <label><!-- Other --></label>
         <name>Other__c</name>
         <picklistValues>
@@ -7038,15 +7050,6 @@
             <translation><!-- Yes --></translation>
         </picklistValues>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Organic Case</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Organic Cases</value>
-    </caseValues>
-    <startsWith>Vowel</startsWith>
     <layouts>
         <layout>Canada Maps Claiming</layout>
         <sections>
@@ -7821,6 +7824,7 @@
         <label><!-- YO Initial Error Check --></label>
         <name>YO_Initial_Error_Check</name>
     </recordTypes>
+    <startsWith>Vowel</startsWith>
     <validationRules>
         <errorMessage><!-- If Status is in Pending Reattampt, Attempts to Contact cannot be blank or 0 --></errorMessage>
         <name>Attempts_to_Contact</name>

@@ -3105,6 +3105,18 @@ contains(Account_Name__r.Product_Type__c , "Organic"),
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>OrgnicCase18__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>OrgnicCase18</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Owned_Co_Managed__c</fullName>
         <externalId>false</externalId>
         <formula>IF(

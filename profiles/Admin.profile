@@ -16551,6 +16551,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.digit_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Case.general_notes__c</field>
         <readable>true</readable>
@@ -18618,6 +18623,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Customer_Surveys__c.Created_DateTime__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Surveys__c.CustomerSurvey18__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -33343,6 +33353,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Organic_Analysis__c.Organic_Product__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Organic_Analysis__c.OrgnicCase18__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
