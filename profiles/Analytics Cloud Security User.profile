@@ -3051,6 +3051,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account_Marketo_Activity__c.AccountMarketoActivity18__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account_Marketo_Activity__c.Account__c</field>
         <readable>true</readable>
     </fieldPermissions>

@@ -140,7 +140,7 @@ Account.Product_Type_Transactional__c}</div></td></tr>
     <p> <div class="slds-text-body--small"><strong>Client Information</strong></div>
         <apex:outputText rendered="{!Account.Client_Type__c == 'YBN'}">
           <div class="slds-text-body--small">
-            <a href="https://dashboard.web.com/dashboard/leadstream?clientId={!Account.Client_ID__c}" target="_blank">View Client Dashboard</a>
+            <a href="https://local.mycentermark.com/dashboard/enterprise?clientId={!Account.Client_ID__c}" target="_blank">View Client Dashboard</a>
           </div>
         </apex:outputText>
         <apex:outputText rendered="{!Account.Client_Type__c != 'YBN'}">

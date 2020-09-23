@@ -12,7 +12,7 @@
     </values>
     <values>
         <field>Configuration_Value__c</field>
-        <value xsi:type="xsd:string">https://salestools.web.web.com/sales/wizard/packages/WBN/campaigns/DIRECT/orders/</value>
+        <value xsi:type="xsd:string">https://sales-tools.yodle.com/sales/wizard/packages/WBN/campaigns/DIRECT/orders/</value>
     </values>
     <values>
         <field>Data_Type__c</field>

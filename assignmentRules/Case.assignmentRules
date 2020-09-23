@@ -278,26 +278,6 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>leadstreamsupport@web.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Case.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>NCS - AutoLaunch</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Website_Type2__c</field>
-                <operation>equals</operation>
-                <value>Client-Hosted</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Status</field>
-                <operation>equals</operation>
-                <value>1-Web Dev AutoLaunch,1-MA Setup AutoLaunch</value>
-            </criteriaItems>
-            <template>Support/SUPPORTNewassignmentnotificationSAMPLE</template>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>LocalRMNCSQueue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
