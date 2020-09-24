@@ -4075,6 +4075,11 @@
             <field>zzProduct_Vendor_Type__c</field>
             <table>Account</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Entitlement__c.Entitlement_Id_18__c</field>
+            <table>Account</table>
+        </columns>
         <masterLabel>Accounts</masterLabel>
     </sections>
     <sections>

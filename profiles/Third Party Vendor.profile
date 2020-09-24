@@ -14206,6 +14206,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Contract.contractID18__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>ContractLineItem.AssetId</field>
         <readable>true</readable>
@@ -28423,6 +28428,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Partner_Name__c.W9_Received__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Partner_Quarterly_Managed_Account_Count__c.Partner_Quarterly_Managed_AccountCount18__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

@@ -15109,6 +15109,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Contract.contractID18__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>ContractLineItem.AssetId</field>
         <readable>true</readable>
@@ -17271,6 +17276,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Entitlement.EndDate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Entitlement.Entitlement_Id_18__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -31321,6 +31331,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Partner_Quarterly_Managed_Account_Count__c.Parent_Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Partner_Quarterly_Managed_Account_Count__c.Partner_Quarterly_Managed_AccountCount18__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
