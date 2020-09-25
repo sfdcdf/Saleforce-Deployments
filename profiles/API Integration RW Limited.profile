@@ -1245,6 +1245,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Check_Box__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.Children_Accounts_Live__c</field>
         <readable>true</readable>
     </fieldPermissions>
