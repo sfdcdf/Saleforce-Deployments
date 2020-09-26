@@ -16,8 +16,14 @@
         <callbackUrl>https://atxapp.registeredsite.com/qualityTeam/api/callback</callbackUrl>
         
         <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
         <scopes>Full</scopes>
     </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
     <permissionSetName>Quality Team Rep Management Access</permissionSetName>
     <profileName>System Administrator</profileName>
     <profileName>Salesforce Partner - Platinum</profileName>
