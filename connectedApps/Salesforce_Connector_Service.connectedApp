@@ -6,6 +6,8 @@
         <callbackUrl>https://nonsense.not.real.com/this/is/just/a/place/holder</callbackUrl>
         
         <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
         <scopes>Basic</scopes>
         <scopes>Api</scopes>
         <scopes>Web</scopes>
@@ -16,4 +18,8 @@
         <scopes>OpenID</scopes>
         <scopes>CustomPermissions</scopes>
     </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
 </ConnectedApp>

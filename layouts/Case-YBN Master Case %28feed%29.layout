@@ -114,6 +114,10 @@
                 <behavior>Edit</behavior>
                 <field>SD_Geo_Email__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Account_Checked__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

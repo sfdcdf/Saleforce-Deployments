@@ -127,6 +127,10 @@
                 <behavior>Edit</behavior>
                 <field>First_Response_Actual_Elapse_Time__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Account_Checked__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
