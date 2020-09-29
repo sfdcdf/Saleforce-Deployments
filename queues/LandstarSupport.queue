@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>true</doesSendEmailToMembers>
     <email>landstarsupport@enspireforenterprise.com</email>
     <name>LandstarSupport</name>
     <queueMembers>
         <users>
-            <user>austin.webb@web.com</user>
-            <user>lmayo@web.com</user>
-            <user>lreed@web.com</user>
-        </users>
+            
+            
+        <user>lmayo@web.com</user><user>lreed@web.com</user></users>
     </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
