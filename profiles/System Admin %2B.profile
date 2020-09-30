@@ -25011,6 +25011,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.ACT_CHECK__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.AD__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -28452,6 +28457,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>OpportunityLineItem.TotalProductValue__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Organic_Analysis__c.ACT_CHECK__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

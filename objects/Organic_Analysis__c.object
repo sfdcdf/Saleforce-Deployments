@@ -155,6 +155,16 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
+        <fullName>ACT_CHECK__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.Check_Box__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ACT_CHECK</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Account_Acceptance_Exception__c</fullName>
         <externalId>false</externalId>
         <formula>IF( Account_Name__r.Account_Acceptance_Exception__c  = True, True, False)</formula>

@@ -66,6 +66,10 @@
                 <behavior>Edit</behavior>
                 <field>Sales_Rep_Name__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>ACT_CHECK__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

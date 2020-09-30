@@ -77,6 +77,10 @@
                 <behavior>Edit</behavior>
                 <field>Affiliate_URL__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>ACT_CHECK__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -70,6 +70,10 @@
                 <behavior>Edit</behavior>
                 <field>Related_Organic_Case__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>ACT_CHECK__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

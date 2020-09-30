@@ -378,6 +378,16 @@
     <enableHistory>true</enableHistory>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>ACT_CHECK__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Check_Box__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ACT_CHECK</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>AD__c</fullName>
         <externalId>false</externalId>
         <formula>Account.Account_Director__r.LastName</formula>

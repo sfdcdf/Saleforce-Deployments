@@ -24989,6 +24989,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Organic_Analysis__c.ACT_CHECK__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Organic_Analysis__c.ASW_OPO__c</field>
         <readable>true</readable>

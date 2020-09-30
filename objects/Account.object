@@ -13508,6 +13508,19 @@ or(
         <label>A Plus Transmissions</label>
     </listViews>
     <listViews>
+        <fullName>Account_with_no_record_type</fullName>
+        <columns>AccountId18__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Product_Team_Applicability__c</columns>
+        <columns>ACCOUNT.LAST_ACTIVITY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Accounts with no record type</label>
+    </listViews>
+    <listViews>
         <fullName>Accounts_with_no_activity_60_days</fullName>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7</booleanFilter>
         <columns>ACCOUNT.NAME</columns>
