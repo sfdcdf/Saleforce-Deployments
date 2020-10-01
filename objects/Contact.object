@@ -342,6 +342,15 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Act_Checkbox__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Check_Box__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Act Checkbox</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Alternate_Email__c</fullName>
         <externalId>false</externalId>
         <label>Alternate Email</label>

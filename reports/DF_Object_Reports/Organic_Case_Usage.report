@@ -11,6 +11,11 @@
         <field>CUST_RECORDTYPE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_CREATED_ALIAS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>Organic Case Usage</name>
     <params>
         <name>co</name>
