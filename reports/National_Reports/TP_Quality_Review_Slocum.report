@@ -43,7 +43,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Kimberly Williams,Todd Weiss,Casey Hatch,Emily Kareiva,Jordan Valentine,Richell Green,lawrence liles</value>
+            <value>Kimberly Williams,Todd Weiss,Casey Hatch,Emily Kareiva,Jordan Valentine,Richell Green,lawrence liles,tommie hayes</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -66,6 +66,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Case.Activities$CreatedDate</dateColumn>
-        <interval>INTERVAL_CURY</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>
