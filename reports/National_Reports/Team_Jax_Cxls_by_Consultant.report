@@ -74,7 +74,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>CUST_LAST_UPDATE</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <dateColumn>Cancellation_Request__c.Date_of_Cancellation_Request__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>

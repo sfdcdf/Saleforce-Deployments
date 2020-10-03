@@ -38,6 +38,13 @@
             <operator>equals</operator>
             <value>Contract.WBN_Amendment,Contract.WBN_MSA</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Draft,Activated</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>

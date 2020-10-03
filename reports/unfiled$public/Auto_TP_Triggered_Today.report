@@ -46,9 +46,6 @@
         <field>Account.Last_Completed_YBN_TP__c</field>
     </columns>
     <columns>
-        <field>Account.Next_TP_Trigger_Date__c</field>
-    </columns>
-    <columns>
         <field>Account.Next_TP_Needed_By__c</field>
     </columns>
     <filter>
@@ -99,6 +96,11 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
+        <field>Account.Next_TP_Trigger_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
         <field>Account.Individual_Location_Service_Level__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
@@ -114,6 +116,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Account.Next_TP_Trigger_Date__c</dateColumn>
-        <interval>INTERVAL_TODAY</interval>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>
