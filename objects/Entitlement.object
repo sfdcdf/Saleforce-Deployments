@@ -129,6 +129,15 @@
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
+        <fullName>Act_Check__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Check_Box__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Act Check</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>AssetId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
