@@ -36842,12 +36842,12 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.YBN_Growth_Opportunity</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.YBN_Initial_Transaction</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>

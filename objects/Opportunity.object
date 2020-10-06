@@ -76549,6 +76549,10 @@ Used by YBN.</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Paid Search - Display</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Paid Search - Google</fullName>
                 <default>false</default>
             </values>
@@ -84322,6 +84326,10 @@ Used by YBN.</description>
             </values>
             <values>
                 <fullName>Organic Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid Search - Display</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -95482,9 +95490,15 @@ And(
     <validationRules>
         <fullName>Lead_Source_Must_be_filled</fullName>
         <active>true</active>
-        <errorConditionFormula>AND(
-OR(RecordTypeId="012600000009YRJ",RecordTypeId="012600000009YRE"),
-ISBLANK(TEXT(LeadSource)))</errorConditionFormula>
+        <errorConditionFormula>and (
+Or((RecordType.Name = "YBN - Growth Opportunity"),
+  (RecordType.Name = "YBN - Initial Transaction")),
+Or
+   (($UserRole.Name = "YBN: Solutions Architect"),
+   ($UserRole.Name = "YBN: Sales Director Manager (East Coast C)"),
+   ($UserRole.Name = "YBN: Sales/Account Director D"),
+   ($UserRole.Name = "YBN: Sales Executive II")),  
+    ISBLANK(TEXT(LeadSource)))</errorConditionFormula>
         <errorDisplayField>LeadSource</errorDisplayField>
         <errorMessage>You must fill out Lead Source</errorMessage>
     </validationRules>
