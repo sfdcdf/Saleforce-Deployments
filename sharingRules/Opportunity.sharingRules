@@ -13,6 +13,19 @@
             <value>YBN - Growth Opportunity,YBN - Initial Transaction,YBN - Renewal</value>
         </criteriaItems>
     </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>opportunity</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>opportunity</label>
+        <sharedTo>
+            <role>YBN_Sales_Executive_II</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordType_Name__c</field>
+            <operation>equals</operation>
+            <value>YBN - Growth Opportunity,YBN - Initial Transaction</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
     <sharingOwnerRules>
         <fullName>WBN_CS_Edit_Abilities</fullName>
         <accessLevel>Edit</accessLevel>
