@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingCriteriaRules>
+        <fullName>Opportunity_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Opportunity sharing</label>
+        <sharedTo>
+            <role>YBN_Sales_Executive_II</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YBN - Growth Opportunity,YBN - Initial Transaction</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
         <fullName>WBN_Corp_Ops_SA_and_PrjMgmt_Managers</fullName>
         <accessLevel>Edit</accessLevel>
         <description>Allow SA And Project manager Management to edit corp opportunities to assign roles</description>
