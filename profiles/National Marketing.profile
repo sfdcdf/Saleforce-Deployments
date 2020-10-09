@@ -14494,6 +14494,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Contract.AckCHk__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Contract.ActivatedById</field>
         <readable>true</readable>
     </fieldPermissions>

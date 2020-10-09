@@ -9159,14 +9159,10 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     <rules>
         <fullName>Escalated Email Response New</fullName>
         <actions>
-            <name>Case_Owner_to_Sophie_Lavin</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
             <name>Case_Reason_to_Escalated_Email_Response</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -9201,11 +9197,7 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>Exit Email Case Routing to Anne Marie Fulton</fullName>
-        <actions>
-            <name>Case_Owner_to_Sophie_Lavin</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -9225,10 +9217,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>Exit Email Case Routing to Ron Lancaster</fullName>
-        <actions>
-            <name>Case_Owner_to_Sophie_Lavin</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>

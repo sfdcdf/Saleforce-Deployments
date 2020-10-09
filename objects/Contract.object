@@ -178,6 +178,15 @@
     </compactLayouts>
     <enableFeeds>true</enableFeeds>
     <fields>
+        <fullName>AckCHk__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Check_Box__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>AckCHk</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Client_ID__c</fullName>
         <externalId>false</externalId>
         <formula>Account.Client_ID__c</formula>

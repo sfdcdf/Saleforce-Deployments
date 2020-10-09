@@ -16024,6 +16024,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Contract.AckCHk__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Contract.ActivatedById</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -38719,7 +38724,7 @@
         <layout>Lead-Sys Admin-leads</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lead-Sys Admin-leads</layout>
+        <layout>Lead-WBN Corporate Lead Layout</layout>
         <recordType>Lead.WBN_Corporate_Lead</recordType>
     </layoutAssignments>
     <layoutAssignments>
