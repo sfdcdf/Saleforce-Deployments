@@ -18258,6 +18258,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Event.Prospect_Engaged__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Event.Reason__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -33254,6 +33259,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Task.Products_upsold__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.Prospect_Engaged__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
