@@ -17383,6 +17383,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Event.Prospect_Engaged__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Event.Reason__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -26897,7 +26902,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Opportunity.Solutions_Architect__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -31689,6 +31694,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Task.Products_upsold__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.Prospect_Engaged__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

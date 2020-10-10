@@ -517,6 +517,15 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Prospect_Engaged__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates that the Prospect has responded</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please check if Prospect responds</inlineHelpText>
+        <label>Prospect Engaged</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Related_to_ID__c</fullName>
         <externalId>false</externalId>
         <formula>LEFT(WhatId, 3)</formula>
