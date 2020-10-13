@@ -7,6 +7,15 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
+        <object>Campaign</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
         <object>NetworkAdoptionProduct__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
@@ -20,6 +29,10 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <recordTypeVisibilities>
+        <recordType>Campaign.Marketing_Campaign_Record_Type</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Opportunity.YBN_Growth_Opportunity</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -31,4 +44,9 @@
         <recordType>Task.YBN_Sales_Corporate</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.ParentId</field>
+        <readable>true</readable>
+    </fieldPermissions>
 </PermissionSet>

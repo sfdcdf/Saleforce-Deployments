@@ -143,10 +143,6 @@
                 <behavior>Edit</behavior>
                 <field>Case_Comments__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Account_Checked__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -591,14 +587,6 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedCommentsList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Client_First_Name__c</fields>
-        <fields>Client_Last_Name__c</fields>
-        <fields>Client_Phone_Number__c</fields>
-        <fields>Client_Response__c</fields>
-        <relatedList>SMS_Tracking__c.Case__c</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedFileList</relatedList>

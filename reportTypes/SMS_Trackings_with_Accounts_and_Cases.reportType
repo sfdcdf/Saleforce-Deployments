@@ -5,10 +5,6 @@
     <deployed>true</deployed>
     <description>Report type - SMS Trackings with Accounts and Cases all in one report.</description>
     <join>
-        <join>
-            <outerJoin>false</outerJoin>
-            <relationship>SMS_Trackings__r</relationship>
-        </join>
         <outerJoin>false</outerJoin>
         <relationship>Cases</relationship>
     </join>
@@ -7828,103 +7824,5 @@
             <table>Account.Cases</table>
         </columns>
         <masterLabel>Cases</masterLabel>
-    </sections>
-    <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Id</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Owner</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>true</checkedByDefault>
-            <field>Name</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>RecordType</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedDate</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedBy</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedDate</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedBy</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Account__c</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Client_First_Name__c</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Client_Last_Name__c</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Client_Phone_Number__c</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Client_Response__c</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Intro_Sent__c</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Invalid_Phone_Number__c</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Marketo_Email_Campaign__c</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Marketo_Lead_Id__c</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Response_Date_Time__c</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Twilio_Id__c</field>
-            <table>Account.Cases.SMS_Trackings__r</table>
-        </columns>
-        <masterLabel>SMS Trackings</masterLabel>
     </sections>
 </ReportType>

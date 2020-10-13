@@ -1312,25 +1312,6 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>anne.fulton@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Case.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>Master</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Reason</field>
-                <operation>equals</operation>
-                <value>Client Escalation</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Account.Client_Type__c</field>
-                <operation>notEqual</operation>
-                <value>Partner,YBN,National</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>Brand_Network_Support</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
