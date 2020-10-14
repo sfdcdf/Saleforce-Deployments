@@ -45,13 +45,6 @@
             <operator>equals</operator>
             <value>Case.Charge_Failure</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>CREATED_DATE</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>TODAY</value>
-        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>Current Day Charge Failures</name>
@@ -72,6 +65,6 @@
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>
