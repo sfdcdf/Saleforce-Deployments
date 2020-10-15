@@ -1477,35 +1477,6 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>kzaffin@yodle.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <criteriaItems>
-                <field>Case.Origin</field>
-                <operation>equals</operation>
-                <value>customercare@yodle.com,Local Pooled VM</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Status</field>
-                <operation>equals</operation>
-                <value>New</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.SuppliedEmail</field>
-                <operation>notEqual</operation>
-                <value>no-reply@yodle.com,noreply@yodle.com,customercare@yodle.com,sfsync@yodle.com,itprosalesforce@yodle.com</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Account.OwnerId</field>
-                <operation>equals</operation>
-                <value>Kyle Zaffin</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.SuppliedEmail</field>
-                <operation>notContain</operation>
-                <value>@salesforce.com</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>Local_Email_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5 AND 6) OR 7</booleanFilter>
