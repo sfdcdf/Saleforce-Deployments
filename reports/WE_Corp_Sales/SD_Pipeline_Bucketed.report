@@ -130,8 +130,8 @@
             <column>User.Role_Name__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>YBN: Sales/Account Director,YBN: Sales Director Manager,Solutions Architect</value>
+            <operator>notContain</operator>
+            <value>Customer Success,SVP</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
