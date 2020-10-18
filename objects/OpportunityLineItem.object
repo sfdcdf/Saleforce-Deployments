@@ -114,6 +114,7 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>Oppty_Product</fullName>
         <fields>Product2Id</fields>
@@ -123,6 +124,7 @@
         <fields>ProductChargeType__c</fields>
         <label>Oppty Product</label>
     </compactLayouts>
+    <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>AnnualProductValue__c</fullName>
         <externalId>false</externalId>
@@ -253,6 +255,9 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
     </fields>
     <fields>
         <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
     </fields>
     <fields>
         <fullName>OpportunityId</fullName>
@@ -435,8 +440,6 @@ UnitPrice *  CRV_Recurring_Multiplier__c,
             <valueSetName>ProductChargeType</valueSetName>
         </valueSet>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
     <validationRules>
         <fullName>YBN_Contract_Length_Must_Be_Greater_0</fullName>
         <active>true</active>
