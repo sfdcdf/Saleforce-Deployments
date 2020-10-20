@@ -2966,7 +2966,7 @@ NOW () + 1
         <criteriaItems>
             <field>Organic_Analysis__c.CreatedDate</field>
             <operation>greaterThan</operation>
-            <value>1/2/2013 1:00 AM</value>
+            <value>1/2/2013 2:00 AM</value>
         </criteriaItems>
         <description>Fill the setup date if it is not input in the case</description>
         <triggerType>onCreateOnly</triggerType>

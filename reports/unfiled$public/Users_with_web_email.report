@@ -29,8 +29,8 @@
             <column>EMAIL</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>web.com</value>
+            <operator>notContain</operator>
+            <value>enspireforenterprise</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
