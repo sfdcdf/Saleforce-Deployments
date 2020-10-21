@@ -1572,10 +1572,6 @@ NOT(ISNULL(PRIORVALUE(Service_Model_Local__c))))</formula>
     </rules>
     <rules>
         <fullName>Test</fullName>
-        <actions>
-            <name>Lighthouse_Exit_Survey</name>
-            <type>Alert</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Account.Name</field>

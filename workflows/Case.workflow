@@ -6961,10 +6961,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
     </rules>
     <rules>
         <fullName>Bolt On Cancellation - Cancel All</fullName>
-        <actions>
-            <name>Bolt_On_Cancellation_Cancel_All</name>
-            <type>Alert</type>
-        </actions>
         <active>false</active>
         <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
         <criteriaItems>
@@ -7787,10 +7783,6 @@ Case Reason - Proactive Touch</description>
     </rules>
     <rules>
         <fullName>Case - Send LH Winback Notification</fullName>
-        <actions>
-            <name>Case_Send_LH_Winback_Notification</name>
-            <type>Alert</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -9725,10 +9717,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>LH - Lighthouse Gold Service for Field Service</fullName>
-        <actions>
-            <name>Send_Email_to_LHFS_Reps_for_Yodle_Gold</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Case.OwnerId</field>
@@ -9750,10 +9738,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>LH - Lighthouse Gold Service for Medical</fullName>
-        <actions>
-            <name>Send_Email_to_LHFS_Reps_for_Yodle_Gold_Medical</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Case.OwnerId</field>
@@ -9790,10 +9774,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>LH Inbound Support Email to Crystal</fullName>
-        <actions>
-            <name>LH_New_Training_Email_from_Support</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -9809,10 +9789,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>LH Logo Work Complete</fullName>
-        <actions>
-            <name>LH_Logo_Work_Complete</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Case.Reason</field>
@@ -9962,10 +9938,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>LH Master Case Escalation</fullName>
-        <actions>
-            <name>LH_Master_Escalation</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
@@ -10331,10 +10303,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>Lighthouse Follow Up Needed</fullName>
-        <actions>
-            <name>Lighthouse_Follow_Up_Needed</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Case.OwnerId</field>
@@ -11921,10 +11889,6 @@ NOT(ISPICKVAL(Status, "Unscheduled - 4+ Attempts"))
     </rules>
     <rules>
         <fullName>Owner %3D LH Auto Support</fullName>
-        <actions>
-            <name>Case_Assigned_to_LH_Auto_Support_send_email</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Case.OwnerId</field>
@@ -12525,10 +12489,6 @@ OwnerId = "00G60000001CJm2"))</formula>
     </rules>
     <rules>
         <fullName>Surveys - LH Issue Resolution SC%2FLO</fullName>
-        <actions>
-            <name>LH_Surveys_Issue_Res</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 and 12 AND 13 AND 14</booleanFilter>
         <criteriaItems>
@@ -12604,10 +12564,6 @@ OwnerId = "00G60000001CJm2"))</formula>
     </rules>
     <rules>
         <fullName>Surveys - LH Issue Resolution SC%2FLO AUTO</fullName>
-        <actions>
-            <name>LH_Surveys_Issue_Res_AUTO</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 and 12 AND 13 AND 14</booleanFilter>
         <criteriaItems>

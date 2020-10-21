@@ -1410,10 +1410,6 @@
     </rules>
     <rules>
         <fullName>Bolt On Backed Sale - Cancel All</fullName>
-        <actions>
-            <name>Bolt_On_Backed_Out_Sale_Cancel_All</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
@@ -2010,10 +2006,6 @@ RecordTypeId = "012600000009a0h")</formula>
     </rules>
     <rules>
         <fullName>LH - New CW%2FAR Assigned</fullName>
-        <actions>
-            <name>LH_New_CS_Assigned</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <formula>AND(
 
@@ -2031,10 +2023,6 @@ ISPICKVAL(Status__c,"RFC")),
     </rules>
     <rules>
         <fullName>LH - New IW Assigned</fullName>
-        <actions>
-            <name>LH_New_IW_Assigned</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <formula>AND(
  RecordTypeId = "012600000009a0h",
@@ -2045,10 +2033,6 @@ $UserRole.Id &lt;&gt; "00E60000001Gham" )</formula>
     </rules>
     <rules>
         <fullName>LH Auto Nov 2015 Lab Sale</fullName>
-        <actions>
-            <name>LH_Auto_Nov_Sales_Lab_Sale</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Segment__c</field>
@@ -2064,10 +2048,6 @@ $UserRole.Id &lt;&gt; "00E60000001Gham" )</formula>
     </rules>
     <rules>
         <fullName>LH Auto%2C Package Upsell to LH Retention</fullName>
-        <actions>
-            <name>LH_Auto_Retention_for_AR_Request_Form</name>
-            <type>Alert</type>
-        </actions>
         <actions>
             <name>Owner_to_LH_CSC</name>
             <type>FieldUpdate</type>
@@ -2097,10 +2077,6 @@ $UserRole.Id &lt;&gt; "00E60000001Gham" )</formula>
     </rules>
     <rules>
         <fullName>LH CSC%2FAR Rescheduled</fullName>
-        <actions>
-            <name>LH_CSC_Rescheduled</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <formula>AND(
 (OwnerId &lt;&gt;  $User.Id ),
@@ -2134,10 +2110,6 @@ ISCHANGED( CSC_Time__c )))</formula>
     </rules>
     <rules>
         <fullName>LH Install Rescheduled</fullName>
-        <actions>
-            <name>LH_Install_Rescheduled</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <formula>AND(
 OwnerId &lt;&gt;  $User.Id ,
@@ -2146,10 +2118,6 @@ ISCHANGED( Date_Time_Install_Scheduled__c ))</formula>
     </rules>
     <rules>
         <fullName>LH Install Stalled</fullName>
-        <actions>
-            <name>LH_Install_Moved_to_Stalled</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
@@ -2179,10 +2147,6 @@ ISCHANGED( Date_Time_Install_Scheduled__c ))</formula>
     </rules>
     <rules>
         <fullName>LH Install%2FCSC Backed Out</fullName>
-        <actions>
-            <name>LH_Install_Backed_Out</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
@@ -2252,10 +2216,6 @@ ISCHANGED( Date_Time_Install_Scheduled__c ))</formula>
     </rules>
     <rules>
         <fullName>LH OOS Updated Email Alert</fullName>
-        <actions>
-            <name>LH_OOS_Updated_Email_Alert</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
@@ -2487,10 +2447,6 @@ ISPICKVAL( Status__c ,"RFC"))</formula>
     </rules>
     <rules>
         <fullName>Lighthouse Business Customization Form %28BCF%29 - Auto - NEW</fullName>
-        <actions>
-            <name>Lighthouse_Business_Customization_Form_Auto_New</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.RecordTypeId</field>
@@ -2699,10 +2655,6 @@ ISPICKVAL( Status__c ,"RFC"))</formula>
     </rules>
     <rules>
         <fullName>Owner %3D LH Auto Support 2</fullName>
-        <actions>
-            <name>Worksheet_Assigned_to_LH_Auto_Support_send_email</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.OwnerId</field>

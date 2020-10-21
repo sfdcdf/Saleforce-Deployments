@@ -2184,10 +2184,6 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
     <rules>
         <fullName>LH Upsell Probability %25 update Stage - Demo</fullName>
         <actions>
-            <name>LH_Opportunity_Stage_changed_to_Demo</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
             <name>Update_Probibility_to_15</name>
             <type>FieldUpdate</type>
         </actions>

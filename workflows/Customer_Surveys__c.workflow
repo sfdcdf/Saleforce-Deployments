@@ -321,10 +321,6 @@
     <rules>
         <fullName>LH Issue Res All 5%27s</fullName>
         <actions>
-            <name>LH_Issue_Resolution_All_5_Response_to_Client</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
             <name>Survey_Status_Closed_Complete</name>
             <type>FieldUpdate</type>
         </actions>
@@ -392,10 +388,6 @@
     <rules>
         <fullName>LH Issue Res All 5%27s with comments</fullName>
         <actions>
-            <name>LH_Issue_Resolution_All_5_Response_to_Client</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
             <name>Update_Owner_to_LHSuppport_Austin</name>
             <type>FieldUpdate</type>
         </actions>
@@ -458,10 +450,6 @@
     </rules>
     <rules>
         <fullName>LH NPS Product Feedback</fullName>
-        <actions>
-            <name>LH_NPS_Survey_Product_Feedback</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
@@ -483,10 +471,6 @@
     </rules>
     <rules>
         <fullName>Lighthouse Exit Survey Poor Customer Service</fullName>
-        <actions>
-            <name>Lighthouse_Exit_Survey_Poor_Customer_Service</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Customer_Surveys__c.Customer_Survey_Name__c</field>

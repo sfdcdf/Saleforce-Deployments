@@ -142,6 +142,14 @@
         <minutesToComplete>485</minutesToComplete>
         <timeTriggers>
             <actions>
+                <name>Case_Milestone_SLA_Warning</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <timeTriggers>
+            <actions>
                 <name>Case_Milestone_SLA_Violation</name>
                 <type>Alert</type>
             </actions>
@@ -150,14 +158,6 @@
                 <type>FieldUpdate</type>
             </actions>
             <timeLength>-15</timeLength>
-            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
-        </timeTriggers>
-        <timeTriggers>
-            <actions>
-                <name>Case_Milestone_SLA_Warning</name>
-                <type>Alert</type>
-            </actions>
-            <timeLength>-60</timeLength>
             <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
         </timeTriggers>
         <useCriteriaStartTime>false</useCriteriaStartTime>

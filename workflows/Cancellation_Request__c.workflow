@@ -897,10 +897,6 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
     </rules>
     <rules>
         <fullName>LH Cancel - Ownership Change Alert</fullName>
-        <actions>
-            <name>LH_Cancel_Ownership_Change_Alert</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <formula>AND(RecordType.Name = "LH Cancellation Request", ISCHANGED( OwnerId ), LEFT(PRIORVALUE(OwnerId),3) = '00G', LEFT(OwnerId,3) = '005' )</formula>
         <triggerType>onAllChanges</triggerType>
@@ -921,10 +917,6 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
     </rules>
     <rules>
         <fullName>LH Cancellation Request - Churned</fullName>
-        <actions>
-            <name>LH_Cancellation_Request_Churned</name>
-            <type>Alert</type>
-        </actions>
         <actions>
             <name>LH_Cancellation_Request_Churned</name>
             <type>FieldUpdate</type>
@@ -1101,11 +1093,7 @@ Original Leadstream Auto Close First Cancel Code</description>
     </rules>
     <rules>
         <fullName>TORCHx Cancellation Email</fullName>
-        <actions>
-            <name>TORCHx_Cancellation_Resolution_Email</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Cancellation_Request__c.RecordTypeId</field>
             <operation>equals</operation>

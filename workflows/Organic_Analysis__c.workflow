@@ -1346,10 +1346,6 @@ NOW () + 1
     </rules>
     <rules>
         <fullName>Lighthouse Received All Pins</fullName>
-        <actions>
-            <name>Lighthouse_Received_Pins</name>
-            <type>Alert</type>
-        </actions>
         <active>false</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
         <criteriaItems>
