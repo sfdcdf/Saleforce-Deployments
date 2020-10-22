@@ -15,6 +15,7 @@ MID(FieldValue__c, 15,2)
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <rules>
         <fullName>Object History Update Time</fullName>

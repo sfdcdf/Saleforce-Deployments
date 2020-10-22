@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <formulas>
         <name>CoachingCallName</name>
         <dataType>String</dataType>
@@ -338,6 +339,7 @@
         <connector>
             <targetReference>Yodle_Path_Setup_Call</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -372,6 +374,7 @@
         <connector>
             <targetReference>Lookup_Account</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -397,6 +400,7 @@
         <connector>
             <targetReference>Update_Touch_Plan_1</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -432,6 +436,7 @@
         <connector>
             <targetReference>Update_Coaching_Call</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -473,6 +478,7 @@
         <connector>
             <targetReference>Update_Touch_Plan_2</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -499,6 +505,7 @@
         <label>Update Touch Plan 2</label>
         <locationX>438</locationX>
         <locationY>198</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>

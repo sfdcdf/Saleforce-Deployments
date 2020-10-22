@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <assignments>
         <name>Assign_Account_ID</name>
         <label>Assign Account ID</label>
@@ -107,6 +108,7 @@
         <connector>
             <targetReference>Update_WBN_Last_Activity</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -129,6 +131,7 @@
         <connector>
             <targetReference>Found_Opportunity</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -152,6 +155,7 @@
         <label>Update WBN Last Activity</label>
         <locationX>149</locationX>
         <locationY>507</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>

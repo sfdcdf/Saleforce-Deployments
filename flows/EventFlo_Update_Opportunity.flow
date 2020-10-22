@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <assignments>
         <name>Move_Event_To_Opp</name>
         <label>Move Event To Opp</label>
@@ -492,6 +493,7 @@
         <connector>
             <targetReference>Find_Existing_Scheduled_Task</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Milestone__c</field>
             <operator>EqualTo</operator>
@@ -533,6 +535,7 @@
         <connector>
             <targetReference>Event_Status</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -563,6 +566,7 @@
         <connector>
             <targetReference>Find_Completed_Task</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Milestone__c</field>
             <operator>EqualTo</operator>
@@ -604,6 +608,7 @@
         <connector>
             <targetReference>Found_Open_Opportunities</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>AccountId</field>
             <operator>EqualTo</operator>
@@ -632,6 +637,7 @@
         <connector>
             <targetReference>Lookup_Completed_Task</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -683,6 +689,7 @@
         <connector>
             <targetReference>Lookup_Completed_Task</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -724,6 +731,7 @@
         <label>Update Completed Presentation Task Field</label>
         <locationX>499</locationX>
         <locationY>36</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Completed_Presentation_Task__c</field>
             <operator>EqualTo</operator>

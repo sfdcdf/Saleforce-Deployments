@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <decisions>
         <processMetadataValues>
             <name>index</name>
@@ -327,6 +328,7 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
         <connector>
             <targetReference>myDecision3</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -404,6 +406,7 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
         <connector>
             <targetReference>myDecision6</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -478,6 +481,7 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
         <label>Update Account Last Completed YBN TP</label>
         <locationX>700</locationX>
         <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>

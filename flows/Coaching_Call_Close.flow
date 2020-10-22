@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <constants>
         <name>Null</name>
         <dataType>String</dataType>
@@ -21,6 +22,7 @@
         <connector>
             <targetReference>Update_Touch_Plan_1</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -43,6 +45,7 @@
         <connector>
             <targetReference>Account_Lookup</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -109,6 +112,7 @@
         <label>Parent Case Update</label>
         <locationX>100</locationX>
         <locationY>329</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -153,6 +157,7 @@
         <connector>
             <targetReference>Parent_Case_Update</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <constants>
         <name>CancelOutcome</name>
         <dataType>String</dataType>
@@ -174,6 +175,7 @@
         <connector>
             <targetReference>Cancel_Request_Status</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -196,6 +198,7 @@
         <connector>
             <targetReference>Lookup_Owner</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -230,6 +233,7 @@
         <connector>
             <targetReference>Account_Lookup_Fast</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -246,6 +250,7 @@
         <label>Remove Temp TMS Rep ID</label>
         <locationX>921</locationX>
         <locationY>194</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -266,6 +271,7 @@
         <label>Remove Temp TMS Rep ID</label>
         <locationX>740</locationX>
         <locationY>525</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -286,6 +292,7 @@
         <label>Remove Temp TMS Rep ID</label>
         <locationX>422</locationX>
         <locationY>626</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -312,6 +319,7 @@
         <label>Set Temp TMS Rep ID</label>
         <locationX>877</locationX>
         <locationY>100</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -338,6 +346,7 @@
         <label>update cancel form</label>
         <locationX>606</locationX>
         <locationY>403</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>

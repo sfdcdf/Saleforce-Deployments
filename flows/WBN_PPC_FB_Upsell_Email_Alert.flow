@@ -55,6 +55,7 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <apiVersion>49.0</apiVersion>
     <assignments>
         <name>Account_IMS_Rep</name>
         <label>Account IMS Rep</label>
@@ -164,6 +165,7 @@ removed extra no ims email</description>
         <connector>
             <targetReference>Account_IMS_Rep</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -187,6 +189,7 @@ removed extra no ims email</description>
         <connector>
             <targetReference>Was_PPC_Upsell_Sold</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>OpportunityId</field>
             <operator>EqualTo</operator>
@@ -220,6 +223,7 @@ removed extra no ims email</description>
         <connector>
             <targetReference>PPC_Lookup</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Type__c</field>
             <operator>EqualTo</operator>
@@ -246,6 +250,7 @@ removed extra no ims email</description>
         <connector>
             <targetReference>Account_Information</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -272,6 +277,7 @@ removed extra no ims email</description>
         <connector>
             <targetReference>PPC_Upsell_Sold</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>OpportunityId</field>
             <operator>EqualTo</operator>
@@ -300,6 +306,7 @@ removed extra no ims email</description>
     <status>Active</status>
     <textTemplates>
         <name>FacebookUpsellEmailTempalte</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
         <text>Hi {!varIMSRepName},
 
 Client ID: {!soAccount.Client_ID__c}
@@ -314,12 +321,14 @@ Please work on the following action items:
     </textTemplates>
     <textTemplates>
         <name>NoIMSRepOnAccount</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
         <text>There is no IMS Rep on the account 
 Account Name: {!soAccount.Name}
 Opportunity ID: {!varOppID}</text>
     </textTemplates>
     <textTemplates>
         <name>PPCUpsellEmailTemplate</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
         <text>Hi {!varIMSRepName},
 Client ID: {!soAccount.Client_ID__c}
 

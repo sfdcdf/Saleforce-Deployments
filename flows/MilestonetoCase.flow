@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <interviewLabel>MilestonetoCase {!$Flow.CurrentDateTime}</interviewLabel>
     <label>MilestonetoCase</label>
     <processMetadataValues>
@@ -24,6 +25,7 @@
         <connector>
             <targetReference>caserecordsUpdate</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Name</field>
             <operator>EqualTo</operator>
@@ -40,6 +42,7 @@
         <label>caserecordsUpdate</label>
         <locationX>170</locationX>
         <locationY>348</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>CaseNumber</field>
             <operator>EqualTo</operator>

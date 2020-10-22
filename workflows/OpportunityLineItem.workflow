@@ -7,6 +7,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Projected_Adoption_Total_Value</fullName>
@@ -21,6 +22,7 @@ IF(NOT(ISBLANK(ProjectedAdoptionEndDate__c)) &amp;&amp; NOT(ISBLANK(ProjectedAdo
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Total_Product_Cost</fullName>
@@ -30,6 +32,7 @@ IF(NOT(ISBLANK(ProjectedAdoptionEndDate__c)) &amp;&amp; NOT(ISBLANK(ProjectedAdo
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_OppProducts_ChargeType_OneTime</fullName>
@@ -39,6 +42,7 @@ IF(NOT(ISBLANK(ProjectedAdoptionEndDate__c)) &amp;&amp; NOT(ISBLANK(ProjectedAdo
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_OppProducts_ChargeType_PPCMonthly</fullName>
@@ -48,6 +52,7 @@ IF(NOT(ISBLANK(ProjectedAdoptionEndDate__c)) &amp;&amp; NOT(ISBLANK(ProjectedAdo
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_OppProducts_ChargeType_PPCSeasonal</fullName>
@@ -57,6 +62,7 @@ IF(NOT(ISBLANK(ProjectedAdoptionEndDate__c)) &amp;&amp; NOT(ISBLANK(ProjectedAdo
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_OppProducts_ChargeType_Recurring</fullName>
@@ -66,6 +72,7 @@ IF(NOT(ISBLANK(ProjectedAdoptionEndDate__c)) &amp;&amp; NOT(ISBLANK(ProjectedAdo
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_Update_Annual_Product_Value</fullName>
@@ -77,6 +84,7 @@ IF(NOT(ISBLANK(ProjectedAdoptionEndDate__c)) &amp;&amp; NOT(ISBLANK(ProjectedAdo
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_Update_Total_Product_Value</fullName>
@@ -86,6 +94,7 @@ IF(NOT(ISBLANK(ProjectedAdoptionEndDate__c)) &amp;&amp; NOT(ISBLANK(ProjectedAdo
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <rules>
         <fullName>Update Projected Adoption Values</fullName>

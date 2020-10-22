@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <interviewLabel>Duplicate Cancel Form Delete {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Duplicate Cancel Form Delete</label>
     <processType>Flow</processType>
@@ -8,6 +9,7 @@
         <label>Delete Duplicate Cancel Form</label>
         <locationX>157</locationX>
         <locationY>264</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -26,6 +28,7 @@
         <connector>
             <targetReference>AcctUpdate</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -47,6 +50,7 @@
         <connector>
             <targetReference>Delete_Duplicate_Cancel_Form</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>

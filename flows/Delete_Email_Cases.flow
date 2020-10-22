@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <interviewLabel>Delete Email Cases {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Delete Email Cases</label>
     <processType>AutoLaunchedFlow</processType>
@@ -8,6 +9,7 @@
         <label>Case to Delete</label>
         <locationX>188</locationX>
         <locationY>251</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -26,6 +28,7 @@
         <connector>
             <targetReference>Case_to_Delete</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>

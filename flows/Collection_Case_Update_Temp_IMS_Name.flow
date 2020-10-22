@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <constants>
         <name>False</name>
         <dataType>Boolean</dataType>
@@ -129,6 +130,7 @@
         <connector>
             <targetReference>Case_Status_Updates_Account</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -151,6 +153,7 @@
         <connector>
             <targetReference>Update_Account_Based_on_Ownership</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -173,6 +176,7 @@
         <connector>
             <targetReference>Account_Details</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -199,6 +203,7 @@
         <label>Update Account From Case</label>
         <locationX>454</locationX>
         <locationY>218</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -219,6 +224,7 @@
         <label>Update Account From Case</label>
         <locationX>615</locationX>
         <locationY>280</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -239,6 +245,7 @@
         <label>Update Account Temp TMS Rep from Cancel Form</label>
         <locationX>890</locationX>
         <locationY>300</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -259,6 +266,7 @@
         <label>Update Account Temp TMS Rep from Cancel Form</label>
         <locationX>905</locationX>
         <locationY>435</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>

@@ -786,6 +786,7 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <apiVersion>49.0</apiVersion>
     <decisions>
         <name>myDecision</name>
         <label>Primary Decision</label>
@@ -5634,6 +5635,7 @@
         <label>Escalated - YBN Master Update Priority</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -5762,6 +5764,7 @@
         <label>YBN: Case Owner to Michele Brevig</label>
         <locationX>2500</locationX>
         <locationY>300</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -5830,6 +5833,7 @@
         <label>YBN: Case Owner to Michele Brevig</label>
         <locationX>3400</locationX>
         <locationY>300</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>

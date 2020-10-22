@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <decisions>
         <name>Has_Account</name>
         <label>Has Account?</label>
@@ -34,6 +35,7 @@
         <connector>
             <targetReference>Has_Account</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Client_Type__c</field>
             <operator>EqualTo</operator>
@@ -59,6 +61,7 @@
         <label>Update Original Case</label>
         <locationX>62</locationX>
         <locationY>257</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>AccountId</field>
             <operator>IsNull</operator>

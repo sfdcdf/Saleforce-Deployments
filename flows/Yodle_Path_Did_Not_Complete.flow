@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <interviewLabel>Yodle Path - Did Not Complete  {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Yodle Path - Did Not Complete - Setup Call</label>
     <processType>AutoLaunchedFlow</processType>
@@ -9,6 +10,7 @@
         <locationX>26</locationX>
         <locationY>126</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -29,6 +31,7 @@
         <connector>
             <targetReference>Update_Coaching_Call</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>

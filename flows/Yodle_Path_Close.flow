@@ -224,6 +224,7 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <apiVersion>49.0</apiVersion>
     <assignments>
         <name>myVariable_waitStartTimeAssignment</name>
         <label>myVariable_waitStartTimeAssignment</label>
@@ -2491,6 +2492,7 @@
         <connector>
             <targetReference>myRule_10_A2</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -2586,6 +2588,7 @@
         <label>update Yodle Path</label>
         <locationX>1000</locationX>
         <locationY>300</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -2657,6 +2660,7 @@
         <connector>
             <targetReference>myRule_13_A2</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -2752,6 +2756,7 @@
         <label>Update Yodle Path</label>
         <locationX>1300</locationX>
         <locationY>300</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -2820,6 +2825,7 @@
         <label>Update Case</label>
         <locationX>1600</locationX>
         <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -2891,6 +2897,7 @@
         <connector>
             <targetReference>myRule_17_A2</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -3013,6 +3020,7 @@
         <label>Yodle Path Update</label>
         <locationX>1700</locationX>
         <locationY>300</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -3081,6 +3089,7 @@
         <label>Update Case from Path</label>
         <locationX>2100</locationX>
         <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -3149,6 +3158,7 @@
         <label>Update Case to In Progress</label>
         <locationX>2200</locationX>
         <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -3220,6 +3230,7 @@
         <connector>
             <targetReference>myRule_5_A2</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -3291,6 +3302,7 @@
         <connector>
             <targetReference>myRule_5_A3</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -3362,6 +3374,7 @@
         <connector>
             <targetReference>myRule_5_A4</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -3430,6 +3443,7 @@
         <label>Update Touch Plan 2</label>
         <locationX>500</locationX>
         <locationY>500</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -3501,6 +3515,7 @@
         <connector>
             <targetReference>myRule_6_A2</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -3569,6 +3584,7 @@
         <label>Update Yodle Path to In Progress</label>
         <locationX>600</locationX>
         <locationY>300</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -3640,6 +3656,7 @@
         <connector>
             <targetReference>myRule_7_A2</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -3735,6 +3752,7 @@
         <label>Update Yodle Path</label>
         <locationX>700</locationX>
         <locationY>300</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>

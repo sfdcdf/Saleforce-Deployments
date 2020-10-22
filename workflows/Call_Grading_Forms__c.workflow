@@ -29,6 +29,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>CSC_Grade_April_2015</fullName>
@@ -40,6 +41,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>CSC_Grade_June_2015</fullName>
@@ -51,6 +53,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>CSC_Script_Adherence_Percent</fullName>
@@ -125,6 +128,7 @@ ISPICKVAL( Information_Accuracy_new__c , "Misinformation"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Collections_Call_Grade</fullName>
@@ -136,6 +140,7 @@ ISPICKVAL( Information_Accuracy_new__c , "Misinformation"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Email_Grade</fullName>
@@ -198,6 +203,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>LH_Inbound_Call_Total_Grade</fullName>
@@ -209,6 +215,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>LH_Inbound_Total_Grade</fullName>
@@ -220,6 +227,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>LH_Save_Call_Total_Grade</fullName>
@@ -231,6 +239,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Lighthouse_Auto_CSC_Total_Grade</fullName>
@@ -242,6 +251,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Lighthouse_CSC_New_Portal_Total_Grade</fullName>
@@ -253,6 +263,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Lighthouse_Essentials_CSC_Total_Grade</fullName>
@@ -264,6 +275,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Local_20_Day_Touch_Plan_Grade</fullName>
@@ -276,6 +288,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Local_70_Day_Touch_Plan_Grade</fullName>
@@ -287,6 +300,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Local_CSC_Script_Adherence</fullName>
@@ -296,6 +310,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Local_Inbound_Call_Total_Grade_NEW</fullName>
@@ -307,6 +322,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>New_40_Day_Total_Grade</fullName>
@@ -318,6 +334,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>New_Save_Call_Grade</fullName>
@@ -329,6 +346,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>New_Setup_Completion_Total_Grade</fullName>
@@ -340,6 +358,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Outbound_Call_Non_Touch_Plan_Grade</fullName>
@@ -351,6 +370,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>PIN_Collection_Call_Total_Grade</fullName>
@@ -362,6 +382,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>PIN_Collection_Owner_Verified_Total_Grad</fullName>
@@ -373,6 +394,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Partner_20_Total_Grade</fullName>
@@ -384,6 +406,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Partner_40_Total_Grade</fullName>
@@ -395,6 +418,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Partner_70_Day_Total_Grade</fullName>
@@ -406,6 +430,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Partner_CSC_Engage_Call_Grade</fullName>
@@ -417,6 +442,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Partner_CSC_with_Engage_Features_Total_G</fullName>
@@ -428,6 +454,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Partner_Inbound_Call_Total_Grade_Engag</fullName>
@@ -439,6 +466,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Partner_Save_Call_Total_Grade</fullName>
@@ -450,6 +478,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Save_Call_Path_Total_Grade</fullName>
@@ -461,6 +490,7 @@ ISPICKVAL( Interaction_and_Follow_Up_Logged__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Soft_Skills_Score</fullName>
@@ -507,6 +537,7 @@ ISPICKVAL( Reference_previous_comments_notes__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Soft_Skills_Score_Total</fullName>
@@ -553,6 +584,7 @@ ISPICKVAL( Reference_previous_comments_notes__c , "No"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Testing_CSC_Adherence_July_2015</fullName>
@@ -723,6 +755,7 @@ ISPICKVAL( Template_Notes_in_Issue_Tracker__c , "Yes"), 2,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Testing_Qualitative_July_2015</fullName>
@@ -782,6 +815,7 @@ ISPICKVAL( Information_Accuracy_new__c , "Misinformation"), 0,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>X40_Day_Percentage</fullName>
@@ -807,6 +841,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Yodle_Path_Setup_Call_Grade</fullName>
@@ -818,6 +853,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Yodle_Path_Touch_Point_Grade</fullName>
@@ -829,6 +865,7 @@ ISPICKVAL( Product_Type__c , "Organic"), (X40_Day_Script_Adherence_Section__c / 
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <rules>
         <fullName>40 Day Script Adherence Percentage %25</fullName>

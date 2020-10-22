@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <interviewLabel>Opp - Update Completed Presentation Tasks {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Opp - Update Completed Presentation Tasks</label>
     <processType>AutoLaunchedFlow</processType>
@@ -8,6 +9,7 @@
         <label>Update Completed Presentation Task Field</label>
         <locationX>347</locationX>
         <locationY>166</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Completed_Presentation_Task__c</field>
             <operator>EqualTo</operator>

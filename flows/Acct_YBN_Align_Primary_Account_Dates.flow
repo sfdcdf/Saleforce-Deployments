@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <decisions>
         <name>Primary_Found</name>
         <label>Primary Found</label>
@@ -34,6 +35,7 @@
         <connector>
             <targetReference>Primary_Found</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Client_ID__c</field>
             <operator>EqualTo</operator>
@@ -67,6 +69,7 @@
         <label>Update Record Dates</label>
         <locationX>166</locationX>
         <locationY>264</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
