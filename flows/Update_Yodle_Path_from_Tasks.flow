@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <formulas>
         <name>CountAll</name>
         <dataType>Number</dataType>
@@ -18,6 +19,7 @@
         <connector>
             <targetReference>Update_the_Path</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -40,6 +42,7 @@
         <connector>
             <targetReference>Lookup_Yodle_Path</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -70,6 +73,7 @@
         <label>Update the Path</label>
         <locationX>66</locationX>
         <locationY>260</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>

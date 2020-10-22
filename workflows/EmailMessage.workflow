@@ -7,6 +7,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -18,6 +19,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -29,6 +31,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -40,6 +43,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -51,6 +55,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -72,6 +77,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -82,6 +88,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -92,6 +99,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -103,6 +111,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -113,6 +122,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -123,6 +133,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <rules>

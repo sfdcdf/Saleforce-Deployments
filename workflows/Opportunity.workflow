@@ -549,6 +549,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>CPP_Update_Probability_to_30</fullName>
@@ -558,6 +559,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>CPP_Update_Probability_to_5</fullName>
@@ -567,6 +569,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>CPP_Update_Probability_to_50</fullName>
@@ -576,6 +579,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>CPP_Update_Probability_to_80</fullName>
@@ -585,6 +589,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Client_Discovery_Date_Today</fullName>
@@ -594,6 +599,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Close_Date_Today</fullName>
@@ -603,6 +609,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Commission_NCSE_Split</fullName>
@@ -625,6 +632,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Contract_Signed_Field_Update_IL_Renwa</fullName>
@@ -644,6 +652,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Demo_Value_Date_Today</fullName>
@@ -653,6 +662,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Email_from_Account_to_Opportunity</fullName>
@@ -662,6 +672,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Last_Stage_Change_Date_Today</fullName>
@@ -671,6 +682,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Local_Completed_By_Manager</fullName>
@@ -680,6 +692,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Local_Completed_By_Rep</fullName>
@@ -689,6 +702,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Local_Completed_By_Role</fullName>
@@ -698,6 +712,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Local_Update_Stage_to_Closed_Won</fullName>
@@ -708,6 +723,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>M6</fullName>
@@ -717,6 +733,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Milestone_Client_Discovery</fullName>
@@ -726,6 +743,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Milestone_Contract</fullName>
@@ -735,6 +753,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Milestone_Demo_Value_Prop</fullName>
@@ -744,6 +763,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Milestone_Solution</fullName>
@@ -753,6 +773,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Opportunity_Update_Client_Phone_Number</fullName>
@@ -762,6 +783,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Owner_to_Beau</fullName>
@@ -772,6 +794,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>true</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Phone_Demo_Completed_today</fullName>
@@ -781,6 +804,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Populate_FF_Sales_Director_Email</fullName>
@@ -790,6 +814,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Populate_Sales_Director_Email</fullName>
@@ -799,6 +824,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Populate_Stage_Lost_Field</fullName>
@@ -808,6 +834,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>SE_Follow_Up_Date_Today</fullName>
@@ -817,6 +844,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Solution_Date_Today</fullName>
@@ -826,6 +854,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Status_Change_Today</fullName>
@@ -835,6 +864,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Today_date</fullName>
@@ -845,6 +875,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Totalupdated</fullName>
@@ -854,6 +885,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>URL_website</fullName>
@@ -863,6 +895,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Next_Bill_Date</fullName>
@@ -872,6 +905,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Phase_1_Original_Est_Launch_Date</fullName>
@@ -881,6 +915,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Phase_2_Original_Est_Launch_Date</fullName>
@@ -890,6 +925,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Phase_3_Original_Est_Launch_Date</fullName>
@@ -899,6 +935,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Probibility_to_15</fullName>
@@ -908,6 +945,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Probibility_to_25</fullName>
@@ -917,6 +955,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Upsell_Addition_Approved</fullName>
@@ -926,6 +965,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Upsell_Addition_Pending</fullName>
@@ -935,6 +975,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Upsell_Addition_Rejected</fullName>
@@ -944,6 +985,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Upsell_Rejected_Stage_Closed_Lost</fullName>
@@ -953,6 +995,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Notes_Update_Step1_Approved</fullName>
@@ -963,6 +1006,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Notes_Update_Step1_Rejected</fullName>
@@ -973,6 +1017,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Notes_Update_Step2_Approved</fullName>
@@ -983,6 +1028,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Notes_Update_Step2_Rejected</fullName>
@@ -993,6 +1039,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Notes_Update_Step3_Approved</fullName>
@@ -1003,6 +1050,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Notes_Update_Step3_Rejected</fullName>
@@ -1013,6 +1061,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Status_Update_Saved</fullName>
@@ -1023,6 +1072,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Status_Update_Step0_InProgrss</fullName>
@@ -1033,6 +1083,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Status_Update_Step1_Approve</fullName>
@@ -1043,6 +1094,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Status_Update_Step1_Reject</fullName>
@@ -1053,6 +1105,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Status_Update_Step2_Approve</fullName>
@@ -1063,6 +1116,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Status_Update_Step2_Reject</fullName>
@@ -1073,6 +1127,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Status_Update_Step3_Approve</fullName>
@@ -1083,6 +1138,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Status_Update_Step3_Reject</fullName>
@@ -1093,6 +1149,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Status_Update_Step4_Approve</fullName>
@@ -1103,6 +1160,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>WBN_APRVL_Status_Update_Step4_Reject</fullName>
@@ -1113,6 +1171,7 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_Commissionable_Revenue_Amount_Calc</fullName>
@@ -1125,6 +1184,7 @@ IF(ISBLANK(Setup_Fee_CR__c), 0, Setup_Fee_CR__c)
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_Contract_Lost</fullName>
@@ -1144,6 +1204,7 @@ IF(ISBLANK(Setup_Fee_CR__c), 0, Setup_Fee_CR__c)
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_M100S</fullName>
@@ -1153,6 +1214,7 @@ IF(ISBLANK(Setup_Fee_CR__c), 0, Setup_Fee_CR__c)
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_M1_Date</fullName>
@@ -1162,6 +1224,7 @@ IF(ISBLANK(Setup_Fee_CR__c), 0, Setup_Fee_CR__c)
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_M2_Date</fullName>
@@ -1171,6 +1234,7 @@ IF(ISBLANK(Setup_Fee_CR__c), 0, Setup_Fee_CR__c)
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_M3_Date</fullName>
@@ -1180,6 +1244,7 @@ IF(ISBLANK(Setup_Fee_CR__c), 0, Setup_Fee_CR__c)
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_M4_Date</fullName>
@@ -1189,6 +1254,7 @@ IF(ISBLANK(Setup_Fee_CR__c), 0, Setup_Fee_CR__c)
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_M5_Date</fullName>
@@ -1198,6 +1264,7 @@ IF(ISBLANK(Setup_Fee_CR__c), 0, Setup_Fee_CR__c)
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_M6_Date</fullName>
@@ -1207,6 +1274,7 @@ IF(ISBLANK(Setup_Fee_CR__c), 0, Setup_Fee_CR__c)
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_Milestone_to_Stage_M002_IL</fullName>
@@ -1306,6 +1374,7 @@ IF(ISBLANK(Setup_Fee_CR__c), 0, Setup_Fee_CR__c)
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_Stage_to_Milestone_M001_IL</fullName>
@@ -1325,6 +1394,7 @@ IF(ISBLANK(Setup_Fee_CR__c), 0, Setup_Fee_CR__c)
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_Stage_to_Milestone_M003_IL</fullName>
@@ -1497,6 +1567,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_Update_Display_Original_Est_Launch</fullName>
@@ -1506,6 +1577,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_Update_PPC_Original_Est_Launch_Date</fullName>
@@ -1515,6 +1587,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_Update_Portal_Original_Est_Launch_D</fullName>
@@ -1524,6 +1597,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_Update_Reviews_Original_Est_Launch</fullName>
@@ -1533,6 +1607,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_Update_Website_Orig_Est_Launch_Date</fullName>
@@ -1542,6 +1617,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_date_stamp_close_plan</fullName>
@@ -1551,6 +1627,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_date_stamp_for_why</fullName>
@@ -1560,6 +1637,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_date_stamp_for_why_do_biz_with_us</fullName>
@@ -1569,6 +1647,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_percent_to_close_update</fullName>
@@ -1588,6 +1667,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_update_estimated_launch_date</fullName>
@@ -1597,6 +1677,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_update_organic_locations</fullName>
@@ -1616,6 +1697,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>YBN_update_status_to_launch</fullName>
@@ -1625,6 +1707,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>amount</fullName>
@@ -1634,6 +1717,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>contract_status</fullName>
@@ -1643,6 +1727,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>do_not_call_account_type</fullName>
@@ -1652,6 +1737,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>AccountId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -1662,6 +1748,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>in_person_demo_complete_today</fullName>
@@ -1671,6 +1758,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>inbound_opp_true</fullName>
@@ -1680,6 +1768,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>media_management_fee</fullName>
@@ -1702,6 +1791,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>national_record_type_natl_opp</fullName>
@@ -1711,6 +1801,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>newopp</fullName>
@@ -1720,6 +1811,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>oppownerchange</fullName>
@@ -1729,6 +1821,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>review_management_contractlength</fullName>
@@ -1738,6 +1831,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>review_management_locations</fullName>
@@ -1747,6 +1841,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>sdr_true</fullName>
@@ -1756,6 +1851,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>setup_fee_locations</fullName>
@@ -1765,6 +1861,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>splitistrue</fullName>
@@ -1774,6 +1871,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>type_national</fullName>
@@ -1783,6 +1881,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>update_current_onboarding_checkbox</fullName>
@@ -1792,6 +1891,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>update_opp_detail_for_corp_opps</fullName>
@@ -1802,6 +1902,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>upselltype</fullName>
@@ -1811,6 +1912,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>ybn_centermark_contract_length_update</fullName>
@@ -1830,6 +1932,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>ybn_display_contract_lenght_update</fullName>
@@ -1849,6 +1952,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>ybn_m11</fullName>
@@ -1858,6 +1962,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>ybn_m14</fullName>
@@ -1867,6 +1972,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>ybn_m3</fullName>
@@ -1876,6 +1982,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>ybn_m8</fullName>
@@ -1885,6 +1992,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>ybn_update_centermark_locations</fullName>
@@ -1904,6 +2012,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>ybn_update_organic_contract_length</fullName>
@@ -1933,6 +2042,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>ybn_update_start_date_for_organic_renewa</fullName>
@@ -1942,6 +2052,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>ybn_update_yodle_web_fee_locations</fullName>
@@ -1961,6 +2072,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>ybn_yodle_web_contract_length_update</fullName>

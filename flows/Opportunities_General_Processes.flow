@@ -125,6 +125,7 @@ If you consider the Opportunity is LOST - then Continue with APPROVAL and add an
             </value>
         </inputParameters>
     </actionCalls>
+    <apiVersion>49.0</apiVersion>
     <assignments>
         <name>myVariable_waitStartTimeAssignment</name>
         <label>myVariable_waitStartTimeAssignment</label>
@@ -1510,6 +1511,7 @@ ISCHANGED({!myVariable_current.Stage_Detail__c})
         <label>Update Opp Product line items - uncheck</label>
         <locationX>1200</locationX>
         <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -1584,6 +1586,7 @@ ISCHANGED({!myVariable_current.Stage_Detail__c})
         <label>WBN 2018 Checkbox - Chec ked</label>
         <locationX>1500</locationX>
         <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -1661,6 +1664,7 @@ ISCHANGED({!myVariable_current.Stage_Detail__c})
         <connector>
             <targetReference>myDecision4</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>

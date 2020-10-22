@@ -33,6 +33,7 @@
             <name>Help Page Url Text</name>
         </outputParameters>
     </apexPluginCalls>
+    <apiVersion>49.0</apiVersion>
     <decisions>
         <description>Is the user&apos;s browser using TLSv1.0. If yes direct them to warning screen. If not then do nothing.</description>
         <name>TLS_Is_TLSv10</name>

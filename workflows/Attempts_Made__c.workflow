@@ -7,6 +7,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>ICC_Complete_to_Today</fullName>
@@ -16,6 +17,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>Case__c</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -26,6 +28,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>Case__c</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -37,6 +40,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>Case__c</targetObject>
     </fieldUpdates>
     <fieldUpdates>
@@ -47,6 +51,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>Case__c</targetObject>
     </fieldUpdates>
     <rules>

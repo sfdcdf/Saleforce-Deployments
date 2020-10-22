@@ -32,6 +32,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <rules>

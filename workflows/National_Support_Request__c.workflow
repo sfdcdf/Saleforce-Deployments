@@ -402,6 +402,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Approval_by_CS_to_Blank</fullName>
@@ -410,6 +411,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Approval_by_Finance_to_Blank</fullName>
@@ -418,6 +420,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Approval_by_Legal_to_Blank</fullName>
@@ -426,6 +429,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Approval_by_Product_to_Blank</fullName>
@@ -434,6 +438,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Approval_by_Sales_to_Blank</fullName>
@@ -442,6 +447,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Assigns_Strategery</fullName>
@@ -454,6 +460,7 @@ Stage 2 Demo</description>
         <notifyAssignee>true</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Contract_Approved_Sub_Status</fullName>
@@ -463,6 +470,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Date_Removal_Stage_3B_Revised_Prop_2</fullName>
@@ -471,6 +479,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Date_Removal_Stage_3B_Revised_Prop_3</fullName>
@@ -479,6 +488,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Date_Removal_Stage_3B_Revised_Prop_4</fullName>
@@ -487,6 +497,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Date_Removal_Stage_3B_Revised_Prop_5</fullName>
@@ -495,6 +506,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Date_Removal_Stage_3B_Revised_Proposa</fullName>
@@ -504,6 +516,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Estimated_Number_of_Locations</fullName>
@@ -513,6 +526,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Expected_Time_of_Decision_Making</fullName>
@@ -522,6 +536,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Initiation_Form_Stage_5_to_Re</fullName>
@@ -531,6 +546,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Initiation_Form_Sub_Status_to_Mktg_Analy</fullName>
@@ -540,6 +556,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Initiation_Form_Sub_Status_to_Needs_Staf</fullName>
@@ -549,6 +566,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Initiation_Form_sub_status_to_Ranking_Sc</fullName>
@@ -558,6 +576,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Initiation_Form_sub_status_to_pending_ne</fullName>
@@ -567,6 +586,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Margin_Recommendation_Status_Update</fullName>
@@ -577,6 +597,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>National_Sub_Status_to_Recommend_Strateg</fullName>
@@ -586,6 +607,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>National_sub_status_to_Demo_Creation</fullName>
@@ -595,6 +617,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>New_Initiation_form_defaults_to_stage_1</fullName>
@@ -604,6 +627,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Organic_Fee_per_Location_C</fullName>
@@ -613,6 +637,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Owner_to_National_Performance_Queue</fullName>
@@ -623,6 +648,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Owner_to_National_Sales_Queue</fullName>
@@ -633,6 +659,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Project_Tier_Populate</fullName>
@@ -642,6 +669,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Setup_Fee_per_Location</fullName>
@@ -651,6 +679,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Stage_3_Proposal_Creation_Queue_Assign</fullName>
@@ -661,6 +690,7 @@ Stage 2 Demo</description>
         <notifyAssignee>true</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Stage_5_Contract_Review_Date_1_Removal</fullName>
@@ -669,6 +699,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Stage_5_Contract_Review_Date_2_Removal</fullName>
@@ -677,6 +708,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Stage_5_Contract_Review_Date_3_Removal</fullName>
@@ -685,6 +717,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Stage_5_Contract_Review_Date_4_Removal</fullName>
@@ -693,6 +726,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Stage_5_Contract_Review_Date_5_Removal</fullName>
@@ -701,6 +735,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Stage_5_Contract_Review_Date_6_Removal</fullName>
@@ -709,6 +744,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Strategery_Owner</fullName>
@@ -719,6 +755,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Strategic_Client_Side_to_True</fullName>
@@ -728,6 +765,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Strategic_Custom_Template_to_True</fullName>
@@ -737,6 +775,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Strategic_Display_to_True</fullName>
@@ -746,6 +785,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Strategic_Organic_to_True</fullName>
@@ -755,6 +795,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Strategic_Sponsored_to_True</fullName>
@@ -764,6 +805,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Sub_Status_Submit_Contract_to_Contract_R</fullName>
@@ -773,6 +815,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Sub_Status_Update_Proposal_Approved</fullName>
@@ -782,6 +825,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Sub_Status_to_Proposal_Approved</fullName>
@@ -791,6 +835,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Sub_Status_to_Proposal_Creation</fullName>
@@ -800,6 +845,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Sub_Status_to_Proposal_Estimates</fullName>
@@ -809,6 +855,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Sub_Status_to_Proposal_Review</fullName>
@@ -818,6 +865,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Sub_Status_to_Revised_Proposal_Review</fullName>
@@ -827,6 +875,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Sub_Status_to_Submit_Contract_for_Review</fullName>
@@ -836,6 +885,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Sub_Status_to_Submit_Proposal_Review</fullName>
@@ -845,6 +895,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Yodle_Web_Fee_per_Location_C</fullName>
@@ -854,6 +905,7 @@ Stage 2 Demo</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <rules>
         <fullName>CS Support Filled In Move to Proposal Creation</fullName>

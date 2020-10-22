@@ -69,6 +69,7 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <apiVersion>49.0</apiVersion>
     <assignments>
         <name>myVariable_waitStartTimeAssignment</name>
         <label>myVariable_waitStartTimeAssignment</label>
@@ -921,6 +922,7 @@
         <connector>
             <targetReference>myWaitEvent_myWait_myRule_1_event_0_SA2</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -992,6 +994,7 @@
         <connector>
             <targetReference>myWaitEvent_myWait_myRule_1_event_0_SA3</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -1106,6 +1109,7 @@
         <connector>
             <targetReference>myWaitEvent_myWait_myRule_3_event_0_SA2</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -1177,6 +1181,7 @@
         <connector>
             <targetReference>myWaitEvent_myWait_myRule_3_event_0_postWaitExecutionAssignment</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -1291,6 +1296,7 @@
         <connector>
             <targetReference>myWaitEvent_myWait_myRule_5_event_0_SA2</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -1362,6 +1368,7 @@
         <connector>
             <targetReference>myWaitEvent_myWait_myRule_5_event_0_postWaitExecutionAssignment</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>

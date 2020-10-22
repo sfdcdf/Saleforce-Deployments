@@ -34,6 +34,7 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <apiVersion>49.0</apiVersion>
     <assignments>
         <name>Assign_Case_Values</name>
         <label>Assign Case Values</label>
@@ -635,6 +636,7 @@
         <connector>
             <targetReference>Check_Parent_Account</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -667,6 +669,7 @@
         <connector>
             <targetReference>Found_Case</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>AccountId</field>
             <operator>IsNull</operator>
@@ -705,6 +708,7 @@
         <connector>
             <targetReference>Found_Email_Subscription</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Email__c</field>
             <operator>EqualTo</operator>

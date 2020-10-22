@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <assignments>
         <name>Assign_Entitlement_Values</name>
         <label>Assign Entitlement Values</label>
@@ -257,6 +258,7 @@
         <connector>
             <targetReference>Check_Account_Service_Level</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -277,6 +279,7 @@
         <locationX>16</locationX>
         <locationY>20</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>IsActive</field>
             <operator>EqualTo</operator>
@@ -306,6 +309,7 @@
         <connector>
             <targetReference>Found_Std_Entitlement</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>AccountId</field>
             <operator>EqualTo</operator>
@@ -341,6 +345,7 @@
         <connector>
             <targetReference>Found_SlaProcess</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>IsVersionDefault</field>
             <operator>EqualTo</operator>
@@ -370,6 +375,7 @@
         <connector>
             <targetReference>Found_SlaProcess</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>IsVersionDefault</field>
             <operator>EqualTo</operator>
@@ -399,6 +405,7 @@
         <connector>
             <targetReference>Found_SlaProcess</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>IsVersionDefault</field>
             <operator>EqualTo</operator>

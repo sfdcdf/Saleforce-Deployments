@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <constants>
         <name>conBusHourId</name>
         <dataType>String</dataType>
@@ -109,6 +110,7 @@
         <connector>
             <targetReference>Standard_vs_Custom</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -130,6 +132,7 @@
         <connector>
             <targetReference>Get_Account</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -152,6 +155,7 @@
         <connector>
             <targetReference>Lookup_Entitlement</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>AccountId</field>
             <operator>EqualTo</operator>
@@ -188,6 +192,7 @@
         <connector>
             <targetReference>Lookup_Entitlement</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>AccountId</field>
             <operator>EqualTo</operator>
@@ -220,6 +225,7 @@
         <label>Update Case</label>
         <locationX>187</locationX>
         <locationY>431</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -246,6 +252,7 @@
         <label>Update Case - No Entitlement</label>
         <locationX>411</locationX>
         <locationY>318</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
     <decisions>
         <name>YBN_Local_FirstResponse_Local_Follow_up</name>
         <label>YBN, Local FirstResponse, Local Follow-up</label>
@@ -94,6 +95,7 @@
         <connector>
             <targetReference>YBN_Local_FirstResponse_Local_Follow_up</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -127,6 +129,7 @@
         <connector>
             <targetReference>UpdateCase</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>CaseId</field>
             <operator>EqualTo</operator>
@@ -164,6 +167,7 @@
         <connector>
             <targetReference>UpdateCase_0</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>CaseId</field>
             <operator>EqualTo</operator>
@@ -198,6 +202,7 @@
         <label>UpdateCase</label>
         <locationX>342</locationX>
         <locationY>250</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -218,6 +223,7 @@
         <label>UpdateCase</label>
         <locationX>473</locationX>
         <locationY>68</locationY>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>

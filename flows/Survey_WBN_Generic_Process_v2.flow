@@ -120,6 +120,7 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <apiVersion>49.0</apiVersion>
     <assignments>
         <name>myVariable_waitStartTimeAssignment</name>
         <label>myVariable_waitStartTimeAssignment</label>
@@ -677,6 +678,7 @@ OR({!myVariable_current.Network_satisfaction_with_Web_com__c} = &quot;7&quot;,
         <connector>
             <targetReference>myDecision16</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -754,6 +756,7 @@ OR({!myVariable_current.Network_satisfaction_with_Web_com__c} = &quot;7&quot;,
         <connector>
             <targetReference>myDecision4</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
@@ -831,6 +834,7 @@ OR({!myVariable_current.Network_satisfaction_with_Web_com__c} = &quot;7&quot;,
         <connector>
             <targetReference>myDecision6</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>

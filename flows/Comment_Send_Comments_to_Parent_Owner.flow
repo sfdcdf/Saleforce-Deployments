@@ -28,6 +28,7 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <apiVersion>49.0</apiVersion>
     <decisions>
         <name>Decide_Opp_Vs_Cancel</name>
         <label>Decide Opp vs Cancel</label>
@@ -150,6 +151,7 @@
         <connector>
             <targetReference>TORCHx_or_LH</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -171,6 +173,7 @@
         <connector>
             <targetReference>Decide_Opp_Vs_Cancel</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -198,6 +201,7 @@
         <connector>
             <targetReference>LH_Upsell_1</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -219,6 +223,7 @@
         <connector>
             <targetReference>Update_Comment</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -241,6 +246,7 @@
         <connector>
             <targetReference>Opp_Update</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -262,6 +268,7 @@
         <connector>
             <targetReference>Send_Opp_Email</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -285,6 +292,7 @@
         <connector>
             <targetReference>Send_Cancel_Email</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -304,6 +312,7 @@
     <status>Obsolete</status>
     <textTemplates>
         <name>CancellationEmail</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
         <text>The following comment has been added to Cancellation Request: {!sobjComment.Cancellation_Form__c}
 
 Comment: {!sobjComment.Comment__c}
