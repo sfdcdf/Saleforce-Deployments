@@ -3,7 +3,17 @@
         <fullName>Basic assignments</fullName>
         <active>true</active>
         <ruleEntry>
+            <assignedTo>NationalCharlotte</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( RecordType.Name = "YBN Request", ISPICKVAL(Type, "Work Item"), ISPICKVAL(YBNRequestReason__c, "Performance Team") )</formula>
+        </ruleEntry>
+        <ruleEntry>
             <formula>AND(   RecordType.Name = "YBN Request",   ISPICKVAL(Type, "Work Item"),   OR(     AND(       ISPICKVAL(YBNRequestReason__c, "SPMs"),       ISPICKVAL(YBNRequestDetail__c, "SOW")      ),     AND(       ISPICKVAL(YBNRequestReason__c, "Billing/Finance"),       OR(         ISPICKVAL(YBNRequestDetail__c, "Credit Approval"),         ISPICKVAL(YBNRequestDetail__c, "Refund Approval")       )     ),     AND(       ISPICKVAL(YBNRequestReason__c, "Production Specialists"),       ISPICKVAL(YBNRequestDetail__c, "Project"),       $User.UserRoleId &lt;&gt; "00E60000000umPx", /* YBN: Manager, Customer Success Consultants */        $User.UserRoleId &lt;&gt; "00E60000001J50u" /* YBN: Customer Success Director */      )   ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>WebDev</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( RecordType.Name = "YBN Request", ISPICKVAL(Type, "Work Item"), ISPICKVAL(YBNRequestReason__c, "Web Dev") )</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Email_Catch_All</assignedTo>
