@@ -13,9 +13,6 @@
         <field>Customer_Surveys__c.YBN_CSD__c</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.YBN_Consultant__c</field>
-    </columns>
-    <columns>
         <field>CUST_NAME</field>
     </columns>
     <columns>
@@ -91,6 +88,11 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Customer_Surveys__c.YBN_Consultant__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>7-10 NPS Responses: Locations</name>
     <params>
         <name>co</name>

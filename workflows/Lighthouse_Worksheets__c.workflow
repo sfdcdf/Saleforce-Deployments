@@ -1813,10 +1813,6 @@ NOT(ISBLANK(Defer_Until__c))),
     </rules>
     <rules>
         <fullName>Initial Backed Out Date</fullName>
-        <actions>
-            <name>Initial_Backed_Out_Date_to_Today</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Lighthouse_Worksheets__c.Status__c</field>

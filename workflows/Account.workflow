@@ -1158,10 +1158,6 @@ MOD(Last_Completed_YBN_TP__c - DATE(1900,1,7),7 ),
     </rules>
     <rules>
         <fullName>LH PPP Important Account Notes - MAX</fullName>
-        <actions>
-            <name>LH_PPP_Important_Account_Notes_MAX</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Account.Product_Type__c</field>
@@ -1177,10 +1173,6 @@ MOD(Last_Completed_YBN_TP__c - DATE(1900,1,7),7 ),
     </rules>
     <rules>
         <fullName>LH PPP Important Account Notes - ORGANIC</fullName>
-        <actions>
-            <name>LH_PPP_Important_Account_Notes_ORGANIC</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Account.Product_Type__c</field>
