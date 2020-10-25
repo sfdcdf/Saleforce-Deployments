@@ -2783,6 +2783,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.leadfeederapp__LatestWebsiteVisit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.leadfeederapp__LeadfeederLink__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.leadspace_CompanyCity__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -17718,6 +17728,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Lead.leadfeederapp__LatestWebsiteVisit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.leadfeederapp__LeadfeederLink__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Lead.leadspace_CompanyCity__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -25234,6 +25254,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.lead_gen_rep_profile__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.leadfeederapp__LatestWebsiteVisit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.leadfeederapp__LeadfeederLink__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
