@@ -335,10 +335,6 @@
             <name>Survey_Status_Closed_Complete</name>
             <type>FieldUpdate</type>
         </actions>
-        <actions>
-            <name>Update_Owner_to_LHSuppport_Austin</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11</booleanFilter>
         <criteriaItems>

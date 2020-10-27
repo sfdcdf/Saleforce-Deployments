@@ -2118,10 +2118,6 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
     </rules>
     <rules>
         <fullName>CPP Probability %25 update Stage - Long-term Nurture</fullName>
-        <actions>
-            <name>CPP_Update_Probability_to_5</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Opportunity.RecordTypeId</field>
@@ -2305,10 +2301,6 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
     </rules>
     <rules>
         <fullName>LH Upsell Probability %25 update Stage - In Discussion</fullName>
-        <actions>
-            <name>CPP_Update_Probability_to_5</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Opportunity.RecordTypeId</field>

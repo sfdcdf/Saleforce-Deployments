@@ -10026,7 +10026,7 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
             <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.RecordTypeId</field>
             <operation>equals</operation>
@@ -10041,10 +10041,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>LH Master - Change to LH Future Request</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Future_Request</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <description>Consolidating 3 Workflow Rules.  Disabling 2, removed this Field update on another one. Using Case to compare if values not in the list</description>
         <formula>AND( RecordTypeId = "012600000009bZX", /* LH Master RT */ OR(      ISPICKVAL(Reason, "Custom Message Migration"),     ISPICKVAL(Reason, "Delayed Consumables"),     ISPICKVAL(Reason, "Remove Newsletter Special Pricing"),     ISPICKVAL(Reason, "Site/Listings Teardown"),     ISPICKVAL(Reason, "Transports On/Off") ),  OR(     ISNEW() ,   /*check if the reason changed to something outside this list */   AND(             NOT(ISNEW()), 	   Case( 		 TEXT(Reason), 		 "Custom Message Migration",1,  		 "Delayed Consumables", 1, 		 "Remove Newsletter Special Pricing", 1, 		 "Site/Listings Teardown", 1, 		 "Transports On/Off",1, 		 0) 	   &lt;&gt; 	   Case( 		 TEXT(PRIORVALUE(Reason)), 		 "Custom Message Migration",1,  		 "Delayed Consumables", 1, 		 "Remove Newsletter Special Pricing", 1, 		 "Site/Listings Teardown", 1, 		 "Transports On/Off",1, 		 0) 	) ) )</formula>
