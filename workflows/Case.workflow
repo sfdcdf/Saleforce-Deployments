@@ -9110,10 +9110,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
             <name>Email_to_Case_Outrank_Support</name>
             <type>FieldUpdate</type>
         </actions>
-        <actions>
-            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7</booleanFilter>
         <criteriaItems>
@@ -9157,10 +9153,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
         <fullName>Email to Case - Outrank Support Updated 12 11 13</fullName>
         <actions>
             <name>Email_to_Case_Outrank_Support</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
             <type>FieldUpdate</type>
         </actions>
         <active>false</active>
@@ -12080,10 +12072,6 @@ NOT(ISPICKVAL(Status, "Unscheduled - 4+ Attempts"))
             <name>Email_to_Case_Outrank_Support</name>
             <type>FieldUpdate</type>
         </actions>
-        <actions>
-            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -12206,10 +12194,6 @@ OwnerId = "00G60000001CJm2"))</formula>
         <actions>
             <name>Pre_MA_Case_Assigned_to_Sugar_Hill_Support</name>
             <type>Alert</type>
-        </actions>
-        <actions>
-            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
-            <type>FieldUpdate</type>
         </actions>
         <active>true</active>
         <criteriaItems>

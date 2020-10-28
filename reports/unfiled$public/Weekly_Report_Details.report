@@ -10,33 +10,6 @@
         <field>Opportunity.On_Hold_Status__c</field>
     </columns>
     <columns>
-        <field>CONTACT</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Client_Email__c</field>
-    </columns>
-    <columns>
-        <field>Account.Client_First_Name__c</field>
-    </columns>
-    <columns>
-        <field>Account.Client_Last_Name__c</field>
-    </columns>
-    <columns>
-        <field>ADDRESS1_LINE1</field>
-    </columns>
-    <columns>
-        <field>ADDRESS1_CITY</field>
-    </columns>
-    <columns>
-        <field>ADDRESS1_STATE</field>
-    </columns>
-    <columns>
-        <field>ADDRESS1_ZIP</field>
-    </columns>
-    <columns>
-        <field>Account.Key_Account__c</field>
-    </columns>
-    <columns>
         <field>PROBABILITY</field>
     </columns>
     <columns>
@@ -52,6 +25,9 @@
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
+        <field>Opportunity.Products__c</field>
+    </columns>
+    <columns>
         <field>Opportunity.Mutually_Agreed_Upon_Next_Steps__c</field>
     </columns>
     <columns>
@@ -62,24 +38,6 @@
     </columns>
     <columns>
         <field>FULL_NAME</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Working_w_Financial_Decision_Maker__c</field>
-    </columns>
-    <columns>
-        <field>CON.TITLE</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Key_Financial_Decision_Maker_Title__c</field>
-    </columns>
-    <columns>
-        <field>Account.Segment_YL__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Products__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Close_Plan__c</field>
     </columns>
     <columns>
         <field>LEAD_SOURCE</field>
@@ -113,12 +71,11 @@
         <field>Account.National_Company_Type__c</field>
     </columns>
     <columns>
-        <field>Account.NAICS__c</field>
+        <field>Account.Segment_YL__c</field>
     </columns>
     <columns>
-        <field>ROLLUP_DESCRIPTION</field>
+        <field>Account.NAICS__c</field>
     </columns>
-    <description>All Opps</description>
     <filter>
         <criteriaItems>
             <column>User.Role_Name__c</column>
@@ -136,7 +93,7 @@
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>Enspire Sales Team</name>
+    <name>Weekly Report Details</name>
     <params>
         <name>open</name>
         <value>open</value>
@@ -155,8 +112,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>CAMPAIGN_SOURCE</sortColumn>
-    <sortOrder>Asc</sortOrder>
+    <sortColumn>STAGE_NAME</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
         <interval>INTERVAL_CURNEXTFY</interval>

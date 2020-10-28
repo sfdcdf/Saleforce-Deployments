@@ -7,37 +7,7 @@
         <field>CLOSE_DATE</field>
     </columns>
     <columns>
-        <field>Opportunity.On_Hold_Status__c</field>
-    </columns>
-    <columns>
-        <field>CONTACT</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Client_Email__c</field>
-    </columns>
-    <columns>
-        <field>Account.Client_First_Name__c</field>
-    </columns>
-    <columns>
-        <field>Account.Client_Last_Name__c</field>
-    </columns>
-    <columns>
-        <field>ADDRESS1_LINE1</field>
-    </columns>
-    <columns>
-        <field>ADDRESS1_CITY</field>
-    </columns>
-    <columns>
-        <field>ADDRESS1_STATE</field>
-    </columns>
-    <columns>
-        <field>ADDRESS1_ZIP</field>
-    </columns>
-    <columns>
-        <field>Account.Key_Account__c</field>
-    </columns>
-    <columns>
-        <field>PROBABILITY</field>
+        <field>LAST_STAGE_CHANGE_DATE</field>
     </columns>
     <columns>
         <field>STAGE_NAME</field>
@@ -52,43 +22,10 @@
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
-        <field>Opportunity.Mutually_Agreed_Upon_Next_Steps__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Growth_Initiative__c</field>
-    </columns>
-    <columns>
-        <field>Account.Prospect_Account_Tier__c</field>
-    </columns>
-    <columns>
-        <field>FULL_NAME</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Working_w_Financial_Decision_Maker__c</field>
-    </columns>
-    <columns>
-        <field>CON.TITLE</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Key_Financial_Decision_Maker_Title__c</field>
-    </columns>
-    <columns>
-        <field>Account.Segment_YL__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Products__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Close_Plan__c</field>
-    </columns>
-    <columns>
-        <field>LEAD_SOURCE</field>
-    </columns>
-    <columns>
         <field>CAMPAIGN_SOURCE</field>
     </columns>
     <columns>
-        <field>Opportunity.Solutions_Architect__c</field>
+        <field>LEAD_SOURCE</field>
     </columns>
     <columns>
         <field>Opportunity.Total_One_Time_Fees_Sum__c</field>
@@ -110,33 +47,47 @@
         <field>Opportunity.OpportunityId18__c</field>
     </columns>
     <columns>
-        <field>Account.National_Company_Type__c</field>
+        <field>Opportunity.Growth_Initiative__c</field>
     </columns>
-    <columns>
-        <field>Account.NAICS__c</field>
-    </columns>
-    <columns>
-        <field>ROLLUP_DESCRIPTION</field>
-    </columns>
-    <description>All Opps</description>
     <filter>
-        <criteriaItems>
-            <column>User.Role_Name__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>notContain</operator>
-            <value>Customer Success,SVP</value>
-        </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal</value>
+            <value>,Opportunity.YBN_Initial_Transaction</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LEAD_SOURCE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>referral</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LEAD_SOURCE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>cold call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Growth_Initiative__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>csi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_SOURCE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>blank</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>Enspire Sales Team</name>
+    <name>Marketing Opportunity Report</name>
     <params>
         <name>open</name>
         <value>open</value>
@@ -156,7 +107,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <sortColumn>CAMPAIGN_SOURCE</sortColumn>
-    <sortOrder>Asc</sortOrder>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
         <interval>INTERVAL_CURNEXTFY</interval>
