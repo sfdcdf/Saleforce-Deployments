@@ -25899,19 +25899,19 @@
         <recordType>Call_Grading_Form_2_0__c.LBW_Performance_Call_Quality_Process</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Lighthouse CSC</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Lighthouse CSC %2B Essentials %28feed%29</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC_Essentials</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Lighthouse Inbound Call %28feed%29</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.Lighthouse_Inbound_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Lighthouse Save Call</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.Lighthouse_Save_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -25943,23 +25943,23 @@
         <recordType>Call_Grading_Form_2_0__c.Save_Call_Monitoring_Forms</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx CSC - Advanced Features</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Advanced_Features</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx CSC - Building Awareness and Driving Leads</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Building_Awareness_and_Driving_Leads</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx CSC - Managing Relationships</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Managing_Relationships</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx Inbound Call</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.TORCHx_Inbound_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx Save Call</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.TORCHx_Save_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -25982,27 +25982,27 @@
         <recordType>Call_Grading_Forms__c.Outbound_Call_Non_Touch_Point</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Lighthouse CSC</layout>
+        <layout>Call_Grading_Forms__c-20 Day</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_Training_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Lighthouse CSC %2B Essentials</layout>
+        <layout>Call_Grading_Forms__c-20 Day</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_CSC_Essentials</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Lighthouse CSC - Auto</layout>
+        <layout>Call_Grading_Forms__c-20 Day</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_CSC_Auto</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Lighthouse CSC New Portal</layout>
+        <layout>Call_Grading_Forms__c-20 Day</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_Training_TEST</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Lighthouse Inbound Call</layout>
+        <layout>Call_Grading_Forms__c-20 Day</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_Inbound_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Lighthouse Save Call</layout>
+        <layout>Call_Grading_Forms__c-20 Day</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_Save_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -26132,15 +26132,15 @@
         <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-LH Cancellation Request</layout>
+        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
         <recordType>Cancellation_Request__c.LH_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
+        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
         <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-TORCHx Cancellation Request %28feed%29</layout>
+        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
         <recordType>Cancellation_Request__c.TORCHx_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -26523,31 +26523,31 @@
         <recordType>Customer_Surveys__c.YBN_Issue_Resolution_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse Customer Support Survey</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Issue_Resolution_Lighthouse</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse Exit Interview Survey</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Lighthouse_Exit_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse NPS Survey Auto</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Auto</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse NPS Survey Dental%2FChiro</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Dental_Chiro</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse NPS Survey Essentials%2FMax</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Essentials_Max</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse Post-Install Survey</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Ligthouse_Post_Install_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse Post-Setup Survey</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Lighthouse_Post_Setup_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -26563,11 +26563,11 @@
         <recordType>Customer_Surveys__c.NPS_Survey_LBW</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-NPS Survey Lighthouse</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.NPS_Survey_Lighthouse</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-NPS Survey TORCHx</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.NPS_Survey_TORCHx</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -26587,7 +26587,7 @@
         <recordType>Customer_Surveys__c.NPS_Survey_Yodle_Non_Essentials</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-OutRank CSC Survey</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.OutRank_CSC_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -26595,7 +26595,7 @@
         <recordType>Customer_Surveys__c.POD_Resolution_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-TORCHx Post Call Survey</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.TORCHx_Post_Call_Surveys</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -26755,35 +26755,35 @@
         <layout>Lighthouse_PMS_and_SMS_Guides__kav-Lighthouse Documentation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-AR Request Form %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.AR_Request_Form</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Auto Support Ticket %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.Auto_Support_Ticket</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-CSC Worksheet - Auto %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Auto</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-CSC Worksheet - Dental %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-CSC Worksheet - Medical %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Medical</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Installation Worksheet %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.Installation_Worksheet</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-LH OOS %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.LH_OOS</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
