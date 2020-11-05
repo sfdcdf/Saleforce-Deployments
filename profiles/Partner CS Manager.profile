@@ -32150,7 +32150,7 @@
         <recordType>Account.Business_Development</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Lighthouse CS %28feed%29</layout>
+        <layout>Account-Account Layout %28Feed%29</layout>
         <recordType>Account.LH_Master_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -32169,7 +32169,7 @@
         <layout>Account-Partner IMS %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Rogers National Account %28feed%29</layout>
+        <layout>Account-Account Layout %28Feed%29</layout>
         <recordType>Account.Rogers_National_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33567,7 +33567,7 @@
         <recordType>Opportunity.Forecast_Network_Sales</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-LH - Upsell Opportunity</layout>
+        <layout>Opportunity-Admin Only</layout>
         <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33614,7 +33614,7 @@
         <recordType>Opportunity.Plan_Network_Sales</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-TORCHx - Cross-Sell Opportunity</layout>
+        <layout>Opportunity-Admin Only</layout>
         <recordType>Opportunity.TORCHx_Upsell_Opportunity</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33793,18 +33793,18 @@
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-Lighthouse Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.Local_Master_Quality</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
     </layoutAssignments>
     <layoutAssignments>
