@@ -13991,6 +13991,35 @@ or(
         </sharedTo>
     </listViews>
     <listViews>
+        <fullName>My_Accounts_Standard</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Relationship_ID__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Client_Type__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Standard</value>
+        </filters>
+        <filters>
+            <field>IMS_Rep__c</field>
+            <operation>equals</operation>
+            <value>Emily Garza</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>LIVE</value>
+        </filters>
+        <label>My Accounts_Standard</label>
+        <sharedTo>
+            <roleAndSubordinates>Operations</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
         <fullName>Naturalawn</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.ADDRESS1_STATE</columns>
