@@ -139,6 +139,21 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to document the Partner Closing Script and transition to training.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Additional_team_members_to_involve__c</fullName>
         <externalId>false</externalId>
@@ -583,21 +598,6 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <allowInChatterGroups>true</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Used to document the Partner Closing Script and transition to training.</description>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Partner Transition</label>
     <nameField>
         <displayFormat>PT-{0000}</displayFormat>
@@ -608,7 +608,6 @@
     <pluralLabel>Partner Transition</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <validationRules>
         <fullName>If_Other_Required</fullName>
         <active>true</active>
@@ -658,4 +657,5 @@ ISBLANK( Personality_traits_Notes__c )))</errorConditionFormula>
         <errorConditionFormula>AND(ISPICKVAL(  Do_you_have_specific_prospects_in_mind__c  , "YES"),  ISBLANK(  If_yes_who__c  ))</errorConditionFormula>
         <errorMessage>Please specify who the specific clients are.</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>

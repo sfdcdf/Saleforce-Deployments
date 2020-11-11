@@ -404,7 +404,7 @@
     </compactLayouts>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Activity_Indicator__c</fullName>
         <externalId>false</externalId>
@@ -29109,6 +29109,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
             <values>
+                <fullName>EFE Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Email Marketing</fullName>
                 <default>false</default>
             </values>
@@ -29145,6 +29149,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
             <values>
+                <fullName>OppaDay</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Organic Search</fullName>
                 <default>false</default>
             </values>
@@ -29158,6 +29166,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Paid Search - Bing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid Search - Display</fullName>
                 <default>false</default>
             </values>
             <values>

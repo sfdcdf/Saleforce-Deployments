@@ -139,6 +139,20 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -172,20 +186,6 @@
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>false</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Partner User Quiz Score</label>
     <nameField>
         <displayFormat>PUQS-{000000000}</displayFormat>

@@ -139,6 +139,21 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to setup promotion offers and discounts.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>CampaignEconomics__c</fullName>
         <externalId>false</externalId>
@@ -369,22 +384,12 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Used to setup promotion offers and discounts.</description>
-    <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Promotion</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <displayFormat>PR-{00000}</displayFormat>
         <label>Promo Name</label>
@@ -395,9 +400,4 @@
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
-    <listViews>
-        <fullName>All</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
 </CustomObject>

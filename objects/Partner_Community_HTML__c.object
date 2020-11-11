@@ -139,6 +139,20 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Active__c</fullName>
         <defaultValue>false</defaultValue>
@@ -168,21 +182,12 @@
         <type>LongTextArea</type>
         <visibleLines>10</visibleLines>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Partner Community HTML</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <label>Partner Community HTML Name</label>
         <trackHistory>false</trackHistory>
@@ -192,11 +197,6 @@
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
-    <listViews>
-        <fullName>All</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
     <webLinks>
         <fullName>View_Current_Supported_Bindings</fullName>
         <availability>online</availability>

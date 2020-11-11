@@ -139,6 +139,21 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stores DE-normalized CTS Ticket data to be executed by BULK job on a schedule to create CTS Tickets</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>API_Identifier__c</fullName>
         <description>Identifier when the Integration Type is API; used by CTS system to create and place the new ticket in the proper CTS queue; required when Integration Type is API</description>
@@ -411,51 +426,7 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <allowInChatterGroups>true</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Stores DE-normalized CTS Ticket data to be executed by BULK job on a schedule to create CTS Tickets</description>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>SFDCToCTSAsynchRequest</label>
-    <nameField>
-        <displayFormat>AR-{000000000}</displayFormat>
-        <label>Asynch Request Name</label>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>SFDCToCTSAsynchRequests</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Object_Name__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ObjectId__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ExternalTicketId__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ErrorDescription__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>NumberOfRetryAttempts__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Integration_Type__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ScheduledDateTime__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ProcessedDateTime__c</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Object_Name__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ObjectId__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ExternalTicketId__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Integration_Type__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ScheduledDateTime__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ProcessedDateTime__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>NumberOfRetryAttempts__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ErrorDescription__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <booleanFilter>1</booleanFilter>
@@ -721,4 +692,33 @@
         </filters>
         <label>All_ERROR and New UnProcessed All Time</label>
     </listViews>
+    <nameField>
+        <displayFormat>AR-{000000000}</displayFormat>
+        <label>Asynch Request Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>SFDCToCTSAsynchRequests</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Object_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ObjectId__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ExternalTicketId__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ErrorDescription__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>NumberOfRetryAttempts__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Integration_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ScheduledDateTime__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ProcessedDateTime__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Object_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ObjectId__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ExternalTicketId__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Integration_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ScheduledDateTime__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ProcessedDateTime__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>NumberOfRetryAttempts__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ErrorDescription__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

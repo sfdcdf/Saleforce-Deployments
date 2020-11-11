@@ -139,6 +139,21 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object used to store metadata about automated notifications sent through custom logic. Can be leveraged for any sObject and/ or Record Type</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Notification_Sent_Date__c</fullName>
         <description>Date the notification associated to the record was sent</description>
@@ -212,36 +227,7 @@
         <trackTrending>false</trackTrending>
         <type>Url</type>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Object used to store metadata about automated notifications sent through custom logic. Can be leveraged for any sObject and/ or Record Type</description>
-    <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Notification Log</label>
-    <nameField>
-        <displayFormat>NL-{00000000}</displayFormat>
-        <label>Notification Log Name</label>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Notification Logs</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>SObject_Name__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Record_Link__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Notification_Sent_Date__c</customTabListAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
@@ -257,10 +243,24 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <nameField>
+        <displayFormat>NL-{00000000}</displayFormat>
+        <label>Notification Log Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Notification Logs</pluralLabel>
     <recordTypes>
         <fullName>WBN_Log</fullName>
         <active>true</active>
         <description>WBN Notification Logs Record Type</description>
         <label>WBN Log</label>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SObject_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Record_Link__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Notification_Sent_Date__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

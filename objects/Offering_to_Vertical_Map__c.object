@@ -139,6 +139,21 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Mapping of Services Offered to Verticals from Aquisio custom sync</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Is_Active__c</fullName>
         <defaultValue>true</defaultValue>
@@ -197,37 +212,7 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Mapping of Services Offered to Verticals from Aquisio custom sync</description>
-    <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Offering to Vertical Map</label>
-    <nameField>
-        <displayFormat>OVM-{000000}</displayFormat>
-        <label>Offering to Vertical Map Name</label>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Offerings to Verticals Maps</pluralLabel>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts>
-        <customTabListAdditionalFields>Segment__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Offering_Name__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Vertical_Name__c</customTabListAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
@@ -238,10 +223,25 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <nameField>
+        <displayFormat>OVM-{000000}</displayFormat>
+        <label>Offering to Vertical Map Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Offerings to Verticals Maps</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Default</fullName>
         <active>true</active>
         <description>Default Record Type for Offering to Vertical Map</description>
         <label>Default</label>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Segment__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Offering_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Vertical_Name__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

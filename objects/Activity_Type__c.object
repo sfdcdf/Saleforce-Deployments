@@ -139,16 +139,6 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <fields>
-        <fullName>Activity_Type_ID__c</fullName>
-        <externalId>false</externalId>
-        <label>Activity Type ID</label>
-        <length>15</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -162,8 +152,25 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Activity_Type_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity Type ID</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <label>Activity Type</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Activity_Type_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <label>Activity Type Name</label>
         <type>Text</type>
@@ -172,11 +179,4 @@
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
-    <listViews>
-        <fullName>All</fullName>
-        <columns>NAME</columns>
-        <columns>Activity_Type_ID__c</columns>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
 </CustomObject>

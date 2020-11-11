@@ -4,7 +4,16 @@
         <field>USER_ID</field>
     </columns>
     <columns>
+        <field>LAST_UPDATE_BY_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
         <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>User.User_Status__c</field>
     </columns>
     <columns>
         <field>LAST_NAME</field>
@@ -32,6 +41,20 @@
             <operator>notContain</operator>
             <value>enspireforenterprise</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>LAST_UPDATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>11/10/2020 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_UPDATE_BY_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Sravani mutnuru</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>Users with web email</name>
@@ -48,7 +71,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <sortColumn>LAST_LOGIN</sortColumn>
-    <sortOrder>Asc</sortOrder>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>LAST_LOGIN</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

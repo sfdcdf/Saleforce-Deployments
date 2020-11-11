@@ -151,16 +151,8 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <label>Milestone Conversion</label>
-    <nameField>
-        <label>Milestone Conversion</label>
-        <type>Text</type>
-    </nameField>
-    <pluralLabel>Milestone Conversions</pluralLabel>
-    <searchLayouts />
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>Rogers_Support_Milestone_Conversion</fullName>
         <filterScope>Queue</filterScope>
@@ -179,4 +171,12 @@
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <nameField>
+        <label>Milestone Conversion</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Milestone Conversions</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

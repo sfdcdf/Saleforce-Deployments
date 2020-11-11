@@ -139,6 +139,20 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Storage of all CTS flow errors that occur during the CTS Sync Service process</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Asynch_Request_Id__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -203,32 +217,7 @@
         <trackTrending>false</trackTrending>
         <type>Url</type>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Storage of all CTS flow errors that occur during the CTS Sync Service process</description>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>CTS Error Log</label>
-    <nameField>
-        <displayFormat>CEL-{000000000}</displayFormat>
-        <label>CTS Error Log Name</label>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>CTS Error Logs</pluralLabel>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts />
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
@@ -242,6 +231,14 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <nameField>
+        <displayFormat>CEL-{000000000}</displayFormat>
+        <label>CTS Error Log Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>CTS Error Logs</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>POST_CTS_Request_Log</fullName>
         <active>true</active>
@@ -254,4 +251,7 @@
         <description>Logs recorded prior to sending the CTS Request for ticket creation</description>
         <label>PRE CTS Request Log</label>
     </recordTypes>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

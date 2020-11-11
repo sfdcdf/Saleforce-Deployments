@@ -151,19 +151,8 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <label>45 Day Survey</label>
-    <nameField>
-        <displayFormat>Y-{000000}</displayFormat>
-        <label>Survey Name</label>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>45 Day Surveys</pluralLabel>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts />
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>Rogers_Support_Survey</fullName>
         <filterScope>Queue</filterScope>
@@ -182,9 +171,20 @@
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <nameField>
+        <displayFormat>Y-{000000}</displayFormat>
+        <label>Survey Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>45 Day Surveys</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Issue_Resolution</fullName>
         <active>true</active>
         <label>Issue Resolution</label>
     </recordTypes>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

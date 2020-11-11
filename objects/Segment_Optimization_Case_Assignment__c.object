@@ -155,17 +155,8 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <label>Segment Optimization Case Assignment</label>
-    <nameField>
-        <label>Segment Name</label>
-        <trackHistory>true</trackHistory>
-        <type>Text</type>
-    </nameField>
-    <pluralLabel>Segment Optimization Case Assignments</pluralLabel>
-    <searchLayouts />
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>AccountPerformanceQueue295311_Segment_Optimization_Case_Assignment</fullName>
         <filterScope>Queue</filterScope>
@@ -184,6 +175,14 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <nameField>
+        <label>Segment Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Segment Optimization Case Assignments</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Segment_Name_Change_Validation</fullName>
         <active>true</active>
@@ -191,4 +190,5 @@
         <errorDisplayField>Name</errorDisplayField>
         <errorMessage>You can't change a Segment name. Create a new record.</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>
