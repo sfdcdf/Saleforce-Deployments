@@ -7264,10 +7264,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
     <rules>
         <fullName>CS Upsell Cases</fullName>
         <actions>
-            <name>Assign_to_Makenzie_Cunningham</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
             <name>Update_Case_Reason_to_Product</name>
             <type>FieldUpdate</type>
         </actions>
