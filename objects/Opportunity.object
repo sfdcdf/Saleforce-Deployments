@@ -112522,7 +112522,7 @@ NOT(ISPICKVAL(Stage_Detail__c, "SA Client Discovery"))
         <active>true</active>
         <description>Probability field can only be overridden for Corporate opportunities and by National RM profile users (custom settings used)</description>
         <errorConditionFormula>AND(
- $Setup.Validation_Rule_Permissions__c.Opportunity_Probability_Edit_Bypass__c = True,
+ $Setup.Validation_Rule_Permissions__c.Opportunity_Probability_Edit_Bypass__c = False,
 
 NOT(OR(
 RecordType.Id = "012600000009YRE",
