@@ -68,43 +68,40 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>ami.dave@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jennifer.hendrickson@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>jswitzer@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>kelly.rix@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mbrevig@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mpugh@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>ryan.deller@web.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>sarah.mctate@yodle.com</recipient>
             <type>user</type>
         </recipients>
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/FUL_YBN_Relationship_Launch_Date_Changed</template>
     </alerts>

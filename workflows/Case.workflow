@@ -919,19 +919,16 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>iitenberg@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jennifer.hendrickson@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mmachado@yodle.com</recipient>
             <type>user</type>
         </recipients>
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Fire_Drill</template>
     </alerts>

@@ -157,49 +157,46 @@
         <fullName>YBN_Contract_Signed</fullName>
         <description>YBN Contract Signed</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>emily.garza@web.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jennifer.hendrickson@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>justin.petrillo@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>lcuiman@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mark.fucaloro@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mpugh@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mswiader@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ryan.ciampi@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>scornwall@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Contract_Signed</template>
-    </alerts>
+    <recipients>
+            <recipient>emily.garza@web.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>justin.petrillo@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>lcuiman@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>mark.fucaloro@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>mbrevig@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>mpugh@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>mswiader@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>ryan.ciampi@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>scornwall@yodle.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <alerts>
         <fullName>YBN_Contract_Signed_Assign_AD</fullName>
         <description>YBN Contract Signed-Assign AD</description>
@@ -384,47 +381,44 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>ami.dave@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jennifer.hendrickson@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>jswitzer@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>kelly.rix@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mbrevig@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mmachado@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mpugh@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>ryan.deller@web.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>sarah.mctate@yodle.com</recipient>
             <type>user</type>
         </recipients>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Relationship_Launch_Date_Changed</template>
     </alerts>
