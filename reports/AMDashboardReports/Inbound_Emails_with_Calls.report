@@ -43,24 +43,28 @@
         <booleanFilter>(1 AND 2 AND 3) AND 4</booleanFilter>
         <criteriaItems>
             <column>Case$Origin</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web,CS@Outrank.com,Local Pooled VM,customercare@yodle.com,YodleGoldService@yodle.com,CS Upsell</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Assigned_To_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Inbound Specialist</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Account</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Yodle</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>1</value>

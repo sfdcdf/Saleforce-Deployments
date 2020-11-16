@@ -34,12 +34,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Individual_Location</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Massage Heights</value>

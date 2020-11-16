@@ -9,24 +9,28 @@
     <filter>
         <criteriaItems>
             <column>Account.Days_Since_Organic_Live_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>51</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Days_Since_Organic_Live_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>81</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Live</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.JCI_Upsold_to_PPC__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

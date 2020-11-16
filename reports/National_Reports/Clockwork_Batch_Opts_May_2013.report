@@ -27,12 +27,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Performance_Issue</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Clockwork Batch Opts</value>

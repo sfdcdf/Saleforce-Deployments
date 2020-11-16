@@ -57,6 +57,7 @@
     <filter>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>lyndsay spa</value>

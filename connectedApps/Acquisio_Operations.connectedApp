@@ -6,6 +6,13 @@
         <callbackUrl>https://login.salesforce.com/services/oauth2/callback
 https://www.getpostman.com/oauth2/callback</callbackUrl>
         
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
         <scopes>Full</scopes>
     </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <refreshTokenPolicy>zero</refreshTokenPolicy>
+    </oauthPolicy>
 </ConnectedApp>

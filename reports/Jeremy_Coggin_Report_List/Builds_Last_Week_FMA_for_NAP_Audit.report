@@ -19,24 +19,28 @@
         <booleanFilter>1 AND ((2 AND 4) OR 3)</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$G_B_New_Listing_Build_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LAST_WEEK</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Existing_Listing_Update__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LAST_WEEK</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_1_URL_IT_Pro__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

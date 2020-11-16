@@ -64,36 +64,42 @@
         <booleanFilter>1 and (2 or 3) and 4 and 5 and 6</booleanFilter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Web Dev,Theorem</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Web Dev</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Order_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>11/30/2011</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.GCC_IRF_Completed_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>12/12/2011 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National</value>

@@ -109,24 +109,28 @@
         <booleanFilter>(1 OR 2) AND (3 OR 4)</booleanFilter>
         <criteriaItems>
             <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Elizabeth Koepke</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Kevin Yee</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Form_2_0__c.CSC_Monitoring_Forms</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Form_2_0__c.Local_Max_CSC_Grading_Form</value>

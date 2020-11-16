@@ -27,36 +27,42 @@
     <filter>
         <criteriaItems>
             <column>Account$Days_Live__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>87</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$invoiced_last_mtd__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>,0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>customer care,platinum support</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.XJen_Test_COBRA</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>customer care,platinum support</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Budget__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>500</value>

@@ -20,48 +20,56 @@
         <booleanFilter>((((1 AND (2 OR 3 OR 4) AND 5)) AND 6) AND 7) AND 8</booleanFilter>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yodle_Path__c.Touch_Plan_1,Yodle_Path__c.Touch_Plan_2,Yodle_Path__c.Touch_Plan_3</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$X1st_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete - Full Script,Complete - Short Script</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$X2nd_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete - Full Script,Complete - Short Script</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$X3rd_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete - Full Script,Complete - Short Script</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Rusty&apos;s Cleaning Service - Test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r.Activities$CallDurationInSeconds</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>180</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

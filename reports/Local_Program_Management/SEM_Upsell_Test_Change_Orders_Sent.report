@@ -27,18 +27,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>SEM Upsell Test</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>sophie lavin,kelly hall</value>

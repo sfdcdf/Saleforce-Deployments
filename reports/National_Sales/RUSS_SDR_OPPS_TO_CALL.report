@@ -100,36 +100,42 @@
     <filter>
         <criteriaItems>
             <column>PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>,Senior Helpers,world gym,mr. electric</value>
         </criteriaItems>
         <criteriaItems>
             <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>russ</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Won,Closed Lost</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Individual_Location</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test,dorm</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>mr. electric,senior helpers,world gym</value>

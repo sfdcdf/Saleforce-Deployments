@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Sarah Taft</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>daily global setup</value>

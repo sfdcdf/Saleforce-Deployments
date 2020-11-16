@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Lead.WBN_Lead</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lead.National_Company_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Multi-Location</value>

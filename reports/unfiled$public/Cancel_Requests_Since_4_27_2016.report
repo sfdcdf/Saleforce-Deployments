@@ -15,6 +15,7 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Cancelled</value>

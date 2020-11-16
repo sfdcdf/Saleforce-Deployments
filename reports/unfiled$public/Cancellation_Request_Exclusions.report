@@ -15,24 +15,28 @@
     <filter>
         <criteriaItems>
             <column>Account$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Local</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Yodle Max</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>1/7/2017 12:00 AM</value>

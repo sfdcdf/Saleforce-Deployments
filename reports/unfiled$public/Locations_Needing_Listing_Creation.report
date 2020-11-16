@@ -24,36 +24,42 @@
     <filter>
         <criteriaItems>
             <column>Organic_Analysis__c.YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Live</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Bulk_Google_Account_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Google_Listing_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Awaiting PIN,Active Listing,Client Refuses Claim,Owner-Verified/Pending Management,Owner-Verified/Managed,Migrated To Bulk Account</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Listing_1_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Do Not Claim</value>

@@ -27,30 +27,35 @@
     <filter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Work Completed,In Progress,Awaiting Internal Response,New</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Outbound_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>CS Touch Plan</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Scheduled_Call__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Owner_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Stephanie Verdusco</value>

@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New,Awaiting Customer Response,In Progress,ProductionTeam Mistake</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Paul Zwicker,Ashley Marco,Christopher Litchfield</value>

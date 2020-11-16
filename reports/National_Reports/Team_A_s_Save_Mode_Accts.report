@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Jordan Heller,Samantha Grande,Anna Hammett,John Scott,Natalie Lance,Raji Green,Casey Hatch,Sabreena Ahmed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Entered_Save_Mode__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

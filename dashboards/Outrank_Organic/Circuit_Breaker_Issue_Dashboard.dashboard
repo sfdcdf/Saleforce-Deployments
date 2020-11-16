@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>TopToBottom</backgroundFadeDirection>
@@ -18,6 +18,7 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>What percent of Circuit Breakers were SLA Compliant?</footer>
+            <groupingSortProperties />
             <header>SLA Compliance Percent (Last 90)</header>
             <legendPosition>OnChart</legendPosition>
             <report>Reports_To_Be_Deleted/SLA_Trends</report>
@@ -45,15 +46,16 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>Of the compliant CB&apos;s, what is the average &amp; max days open?</footer>
+            <footer>Of the compliant CB's, what is the average &amp; max days open?</footer>
             <groupingColumn>Account.Organic_Analyses__r$CreatedDate</groupingColumn>
+            <groupingSortProperties />
             <header>Last 90 Days Avg &amp; Max Days Open-Week Over Week</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/CB_s_Average_Max_Days_SLA_Compliant</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>&apos;Compliant&apos; CB Cases</title>
+            <title>'Compliant' CB Cases</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -78,6 +80,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <header>Last 90 Days Avg &amp; Max Days Open-Week Over Week</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C2C254</indicatorLowColor>
@@ -93,6 +96,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>Weekly queue we work from</footer>
+            <groupingSortProperties />
             <header>Circuit Breaker Working Queue</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -112,7 +116,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>How many YO launches versus how many CB&apos;s, by month?</footer>
+            <footer>How many YO launches versus how many CB's, by month?</footer>
+            <groupingSortProperties />
             <header>YO 2.0 Launches Versus Circuit Breaker Trends</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/SLA_vs_Launches_WOW</report>
@@ -130,7 +135,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>How many CB&apos;s had tracking issues?</footer>
+            <footer>How many CB's had tracking issues?</footer>
+            <groupingSortProperties />
             <header>TRACKING ISSUE in YL</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/Tracking_Issue_Tasks</report>
@@ -148,7 +154,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>How many CB&apos;s had Bing indexing Issues?</footer>
+            <footer>How many CB's had Bing indexing Issues?</footer>
+            <groupingSortProperties />
             <header>Bing Page Indexing Issue</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/Bing_Resubmit</report>
@@ -166,7 +173,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>How many CB&apos;s need additional citations?</footer>
+            <footer>How many CB's need additional citations?</footer>
+            <groupingSortProperties />
             <header>Additional Citations Needed</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/Submit_for_bookmarking</report>
@@ -188,6 +196,7 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>How many Circuit Breakers were SLA Compliant?</footer>
+            <groupingSortProperties />
             <header>SLA Compliant COUNT (Last 90)</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/SLA_Trends</report>
@@ -205,14 +214,15 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>Of the non-compliant CB&apos;s, what is the avg &amp; max days open?</footer>
+            <footer>Of the non-compliant CB's, what is the avg &amp; max days open?</footer>
+            <groupingSortProperties />
             <header>Last 90 Days Avg &amp; Max Days Open-Week Over Week</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/CB_s_Avg_Max_Days_SLA_Non_Compliant</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>&apos;Non-Compliant&apos; CB Cases</title>
+            <title>'Non-Compliant' CB Cases</title>
             <useReportChart>true</useReportChart>
         </components>
         <components>
@@ -237,6 +247,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <header>Last 90 Days Avg &amp; Max Days Open-Week Over Week</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -254,7 +265,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>How many CB&apos;s were False Triggers?</footer>
+            <footer>How many CB's were False Triggers?</footer>
+            <groupingSortProperties />
             <header>False Triggers</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/False_Trigger_Counts</report>
@@ -272,7 +284,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>How many CB&apos;s had BUILD issues?</footer>
+            <footer>How many CB's had BUILD issues?</footer>
+            <groupingSortProperties />
             <header>Slow Account Build Issues</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/BUILD_ISSUES</report>
@@ -290,7 +303,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>How many CB&apos;s had Google indexing issues?</footer>
+            <footer>How many CB's had Google indexing issues?</footer>
+            <groupingSortProperties />
             <header>Google Page Indexing Issue</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/Google_Resubmit</report>
@@ -308,7 +322,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>How many CB&apos;s had Sitemap Issues?</footer>
+            <footer>How many CB's had Sitemap Issues?</footer>
+            <groupingSortProperties />
             <header>Count of Sitemap Issues</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/Sitemap_Issues</report>
@@ -326,7 +341,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>How many CB&apos;s had Robots.txt issues?</footer>
+            <footer>How many CB's had Robots.txt issues?</footer>
+            <groupingSortProperties />
             <header>Count of Robots.txt Issues</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/Robots_txt_Issues</report>

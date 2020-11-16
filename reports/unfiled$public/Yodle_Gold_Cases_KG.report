@@ -30,12 +30,14 @@
     <filter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>yodle gold service</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>New,In Progress</value>

@@ -56,12 +56,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS_Operations__c.Upsell_Tracking</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Created_by_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Stephanie Verdusco</value>

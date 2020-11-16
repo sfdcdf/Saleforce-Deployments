@@ -26,18 +26,21 @@
         <booleanFilter>(1 OR 3) AND 2</booleanFilter>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Upsell</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>PPC Upsell PItch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ads</value>

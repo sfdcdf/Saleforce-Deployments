@@ -6,6 +6,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Entitlements$BusinessHours</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Business 9-5 EST</value>

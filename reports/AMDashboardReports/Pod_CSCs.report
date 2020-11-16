@@ -25,24 +25,28 @@
         <booleanFilter>1 AND (2 or  3 or 4)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.XJen_Test_COBRA</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>local pod queue,diane mulkey,elayne hoover,erik vicars,jackie riedl,kelly o&apos;brien,lynn tobias,sherri aguinaga,rory diller,Makenzie Cunningham</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>local pod queue,diane mulkey,elayne hoover,erik vicars,jackie riedl,kelly o&apos;brien,lynn tobias,sherri aguinaga,rory diller,Makenzie Cunningham</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>local pod queue,diane mulkey,elayne hoover,erik vicars,jackie riedl,kelly o&apos;brien,lynn tobias,sherri aguinaga,rory diller,Makenzie Cunningham</value>

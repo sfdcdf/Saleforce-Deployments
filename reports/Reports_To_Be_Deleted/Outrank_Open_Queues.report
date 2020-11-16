@@ -58,30 +58,35 @@
         <booleanFilter>2 AND 4 AND (1 OR (3 AND 5))</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Auto Launch Queue,Account Acceptance Issue</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Post Launch Associate Queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Channel_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Partner,Local</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Customer Care</value>

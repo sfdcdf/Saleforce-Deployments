@@ -72,18 +72,21 @@
     <filter>
         <criteriaItems>
             <column>Opportunity$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Upsell Pilot 2016</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Parent_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Four Seasons Sunrooms Master,Maaco,Merry Maids,Senior Helpers,ServiceMaster Clean &amp; ServiceMaster Restore Corporate</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Activities$ActivityDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>6/12/2016 12:00 AM</value>

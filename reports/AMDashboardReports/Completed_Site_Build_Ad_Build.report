@@ -6,6 +6,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Object_History__r$FieldValue__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Ad build,Site Build</value>

@@ -27,36 +27,42 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>
         </criteriaItems>
         <criteriaItems>
             <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>DO NOT CALL,Bad Fit YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National,National-Master Prospect,Prospect</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_Company_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Franchise</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Segment_YL__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Real Estate,Insurance</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Number_of_Locations_Specific__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>25</value>

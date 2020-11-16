@@ -62,24 +62,28 @@
     <filter>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Platinum Support</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>local pod queue,platinum support,diane mulkey,elayne hoover,erik vicars,sherri aguinaga,Makenzie Cunningham,shelia kelly,nick johnson</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Automatic reply:,[Auto-Reply]</value>

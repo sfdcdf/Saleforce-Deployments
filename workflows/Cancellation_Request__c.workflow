@@ -139,6 +139,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Assign_to_Local_Pod</fullName>
@@ -149,6 +150,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Assign_to_Rogers_Queue</fullName>
@@ -159,6 +161,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Attempts_to_Contact_to_0</fullName>
@@ -168,6 +171,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Auto_Close_Date_Filler</fullName>
@@ -178,6 +182,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>CF_Days_Live_at_Created_Date</fullName>
@@ -197,6 +202,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>CR_Client_ID_to_Account_Client_ID</fullName>
@@ -216,6 +222,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>CR_Initial_Product_to_New_Record</fullName>
@@ -227,6 +234,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>CR_Next_Bill_Date_to_Account_Bill_Date</fullName>
@@ -245,6 +253,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Client_Email_from_Account</fullName>
@@ -254,6 +263,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>First_Cancel_Code_unknown</fullName>
@@ -263,6 +273,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Free_Time_Period_Checkbox</fullName>
@@ -272,6 +283,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Future_Product_to_None</fullName>
@@ -280,6 +292,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Future_Revenue_to_0</fullName>
@@ -289,6 +302,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>LBW_AMP_Cancellation_Auto_Close</fullName>
@@ -298,6 +312,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>LH_Cancel_Free_Time_Period</fullName>
@@ -307,6 +322,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>LH_Cancel_Free_Time_Period_CallDate</fullName>
@@ -316,6 +332,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>LH_Cancel_Free_Time_Period_Checkbox</fullName>
@@ -325,6 +342,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>LH_Cancellation_Fill_in_Date_of_Cancel</fullName>
@@ -334,6 +352,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>LH_Cancellation_Request_Churned</fullName>
@@ -343,6 +362,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Office_Phone_FillIn</fullName>
@@ -352,6 +372,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>PreLaunch_Cancel_Select</fullName>
@@ -361,6 +382,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Products_in_Cancel_to_All</fullName>
@@ -370,6 +392,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Retention_Agent_Change</fullName>
@@ -378,6 +401,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Retention_Duplicate_Owner_Queue</fullName>
@@ -388,6 +412,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Cancel_Outcome_Cancelled</fullName>
@@ -397,6 +422,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Cancel_Outcome_Duplicate_Case</fullName>
@@ -406,6 +432,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Cancel_Outcome_In_Progress</fullName>
@@ -415,6 +442,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Cancel_Outcome_In_Review</fullName>
@@ -424,6 +452,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Owner_to_LBW_Customer_Care</fullName>
@@ -434,6 +463,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Owner_to_TORCHx_Retention_Queue</fullName>
@@ -444,6 +474,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Ownership</fullName>
@@ -454,6 +485,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Ownership_Retention_Dupldate</fullName>
@@ -464,6 +496,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Cancel_Code_1_unknown</fullName>
@@ -474,6 +507,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Set_Approved_checked</fullName>
@@ -484,6 +518,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <rules>
         <fullName>Add Phone Number to Cancel Form</fullName>

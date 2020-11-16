@@ -25,36 +25,42 @@
         <booleanFilter>6 and 1 AND 2 AND 3 AND (4 or 5)</booleanFilter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master,012600000009PKs</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>choute</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Created_by_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>IMA</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Response_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

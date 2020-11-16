@@ -57,48 +57,56 @@
     <filter>
         <criteriaItems>
             <column>Account$YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Live</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Canda_Maps_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Active Listing,Owner-Verified/Managed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Listing Teardown Requested,Non Compliant Client,Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>National Account,National Master Account,OEM National</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Listing Resides in Bulk Account,Pending Google Whitelist,Google Whitelist</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Login_Email__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

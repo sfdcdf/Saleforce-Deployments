@@ -48,12 +48,14 @@
     <filter>
         <criteriaItems>
             <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Nimish Amin</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Demo/Value Prop,Solution,Contract</value>

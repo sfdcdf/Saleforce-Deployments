@@ -42,12 +42,14 @@
     <filter>
         <criteriaItems>
             <column>Case.IMS_Completing_Opt2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>barreda,katie collins,jennifer carpenter,medford,wesley adams,roush,belk,hamzah,kelsie mettille,ryan ciocca,marissa gelardi,matthew linville,micah helfrey,rebecca zandstein,christopher carr</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Performance_Issue</value>

@@ -19,18 +19,21 @@
         <booleanFilter>(1 OR 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>Customer_Surveys__c.Survey_Code__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS - Management of Account,CS - Requesting Action from Consultant</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Survey_Code_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS - Management of Account,CS - Requesting Action from Consultant</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Attempt 3,Closed Completed,Closed Not Complete</value>

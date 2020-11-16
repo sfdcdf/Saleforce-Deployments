@@ -48,18 +48,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Cancellation_Request__c.TORCHx_Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>In Progress,Save Mode,Duplicate Retention Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Rusty&apos;s Cleaning Service - Test</value>

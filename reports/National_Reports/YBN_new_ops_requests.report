@@ -27,30 +27,35 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS_Operations__c.YBN_Operations_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Request_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed - Completed,Need More Information,Closed - Could Not Complete,Closed - Review for CS Ops Plan,Closed - Declined by Channel Lead,Closed - Not Approved,Closed - Completed/Updates Made,Pending approval from YBN Leadership</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Request_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Request New Account,Account Director Assignment/Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN Operations</value>

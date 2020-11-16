@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Krista Avantini</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>greg</value>

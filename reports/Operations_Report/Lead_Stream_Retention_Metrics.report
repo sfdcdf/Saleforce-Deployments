@@ -102,18 +102,21 @@
         <booleanFilter>((1 or 2)) AND 3</booleanFilter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>lbw customer service,Local Pod Queue,erik vicars,makenzie cunningham,barb jenkins,shelia kelly</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Owner_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>local consultant</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Initial_Product__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Leads by Web</value>

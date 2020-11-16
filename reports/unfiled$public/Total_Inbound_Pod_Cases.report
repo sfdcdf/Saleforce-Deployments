@@ -54,42 +54,49 @@
         <booleanFilter>(((((1 or 2) AND 3) AND 4) AND 5) AND 6) AND 7</booleanFilter>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>platinum support</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leadstreamsupport@web.com,Email,Phone,Web,Platinum Support,Local Pooled VM,Partner VM,Partner Voicemail,Rogers Dedicated VM,Rogers Pooled VM,clientsuccess@yodle.com,CS@Outrank.com,customercare@yodle.com,Voicemail,LBWCustomerService@web.com,LBW VM</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Quality Team,Taxonomy</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>nick johnson,lyndsay spa,christopher grau,erik vicars,Sherri Aguinaga,Makenzie Cunningham,shelia kelly,emily kareiva,Adam Kovacs,Amber Tamayo,Samantha Starett,Ron Brown,Tameka davidson,stephen collens,walter rundle,kayla muir,reagan neely,mark nagy,sara davis,thad dameris,steven gerrior,alyson macdonald,robert jones,mark cosh,valerie garner,erika persil,keegan sandman,Jennifer Degreef,marilyn slaunwhite,kimberley boutilier,gwen doyle,alvin jobe,barb jenkins,angela hoddinott,blake macphee,karen park,paula fraser</value>
         </criteriaItems>
         <criteriaItems>
             <column>WEBEMAIL</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>noreply@salesforce.com,noreply@yodle.com,no-reply@yodle.com,mailer-daemon@salesforce.com,platinumsupport@yodle.com,lbwcustomerservice@web.com</value>

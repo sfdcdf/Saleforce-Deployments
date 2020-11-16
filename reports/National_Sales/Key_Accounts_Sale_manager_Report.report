@@ -42,12 +42,14 @@
     <filter>
         <criteriaItems>
             <column>Account$Key_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$StageName</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Won,Closed Lost</value>

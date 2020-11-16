@@ -15,6 +15,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Lighthouse_Worksheets__r$Initial_Scheduled_CSC_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

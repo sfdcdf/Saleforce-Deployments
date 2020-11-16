@@ -30,18 +30,21 @@
     <filter>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>nick dispenza</value>
         </criteriaItems>
         <criteriaItems>
             <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National-Master Prospect</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Hit_List__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>No</value>

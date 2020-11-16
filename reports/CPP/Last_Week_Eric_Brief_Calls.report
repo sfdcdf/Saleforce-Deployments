@@ -13,12 +13,14 @@
     <filter>
         <criteriaItems>
             <column>LEAD_STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>new,bad data,not qualified,no answer,left voicemail,email sent,not interested,qualified</value>
         </criteriaItems>
         <criteriaItems>
             <column>LEAD_OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Eric Brief</value>

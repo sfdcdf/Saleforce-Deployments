@@ -44,18 +44,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Lighthouse_Worksheets__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.Installation_Worksheet</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Lighthouse_Worksheets__r$Fast_Track_Picklist__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Secondary_Segments__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>chiro</value>

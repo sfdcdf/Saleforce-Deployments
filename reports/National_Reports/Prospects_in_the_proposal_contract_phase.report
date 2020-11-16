@@ -64,36 +64,42 @@
         <booleanFilter>4 and (5 and (1 or 2 or 3) or 6)</booleanFilter>
         <criteriaItems>
             <column>National_Support_Request__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Stage 3 – Proposal</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Stage 4 – Implementation Plan</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Stage 5 – Contract</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Jeremy&apos;s,Testing</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National_Support_Request__c.New_Initiation_Form</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National_Support_Request__c.Proposal_Contract_Review_for_Existing</value>

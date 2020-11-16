@@ -94,108 +94,126 @@
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 AND 12 AND 13 AND 14 AND 15 AND 16 AND (17 or 18)</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Client Refuses Claim,Owner-Verified/Pending Management,Owner-Verified/Managed,Un-Claimable,Active Listing</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Product_Type_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>ads,web,Lighthouse Standalone</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_1_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Owner-Verified</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_2_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Owner-Verified</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_3_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Owner-Verified</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_4_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Owner-Verified</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$AdStation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Non Compliant Client,Closed,Closed - Errors Found,Closed - False Trigger,Closed - No Errors Found,Closed - Sent to SDB,Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Owner_Verified_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Owner-Verified/Pending Management,Owner-Verified/Managed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Pin_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Pin Collected</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>- Rogers -</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Pending Google Whitelist,New Listing Created,Existing Listings Found</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Live</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Google_White_List__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>No Listing</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

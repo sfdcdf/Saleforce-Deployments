@@ -37,18 +37,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Charge_Failure</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Payment Received,Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>sherri aguinaga,elayne hoover,jackie riedl,kelly o&apos;brien,zaffin,mccurdy,diane mulkey,kami banner,lynn tobias,erik vicars,rory diller,Makenzie Cunningham</value>

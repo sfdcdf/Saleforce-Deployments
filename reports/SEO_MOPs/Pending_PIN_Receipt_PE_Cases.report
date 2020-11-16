@@ -68,18 +68,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Organic_Optimization_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>IT Pro</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Pending Pin Receipt</value>

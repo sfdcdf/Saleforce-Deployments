@@ -19,24 +19,28 @@
         <booleanFilter>1 AND 2 AND 4 AND 3</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Outbound_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Adoption</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.IMS_Rep_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Outbound Associate</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete</value>

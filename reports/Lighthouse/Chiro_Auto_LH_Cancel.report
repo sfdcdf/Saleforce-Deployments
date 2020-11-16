@@ -27,12 +27,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Secondary_Segments__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Chiropractor,Auto</value>

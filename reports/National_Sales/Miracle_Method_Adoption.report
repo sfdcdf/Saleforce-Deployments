@@ -109,36 +109,42 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Individual_Location</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.YBN_Sub_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Corporate Paid Contract</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Miracle Method Surface Refinishing</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Won,Closed Lost</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPPORTUNITY_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>upsell</value>
         </criteriaItems>
         <criteriaItems>
             <column>ROLLUP_DESCRIPTION</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>team miller,team hess</value>

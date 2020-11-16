@@ -26,6 +26,7 @@
         <filter>
             <criteriaItems>
                 <column>Opportunity.Contract_Expiration_Date__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>NEXT_N_MONTHS:6</value>
@@ -79,6 +80,7 @@
         <filter>
             <criteriaItems>
                 <column>RECORDTYPE</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>Opportunity.YBN_Renewal</value>

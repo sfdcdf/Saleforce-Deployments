@@ -45,30 +45,35 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Master_Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.IMS_Completing_Opt2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Andrea Wilson,Christine Bergman,Shawna Davis,Mark Fazio,Shannon Doherty,Charles Butzine,Chase Woodhams,Brian Pekarek</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed,Work Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>affordable dentures,interdent</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Gentle Dental Weekly Changes</value>

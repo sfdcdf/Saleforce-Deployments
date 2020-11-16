@@ -79,30 +79,35 @@
     <filter>
         <criteriaItems>
             <column>Account$Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Duplicate</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Delete</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Saved</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$First_Cancel_Code_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Buyer&apos;s Remorse</value>

@@ -9,12 +9,14 @@
     <filter>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Justin Platt</value>
         </criteriaItems>
         <criteriaItems>
             <column>ADDRESS1_STATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>AZ,NM,CO,CA,UT,NV,TX</value>

@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Waived_Setup_Fees__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Reviewed and Charged Fee,Reviewed and Accepted Downsell,Reviewed and Waived Fee,Reviewed and Saved No Concessions</value>

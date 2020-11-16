@@ -12,24 +12,28 @@
     <filter>
         <criteriaItems>
             <column>CS_Operations__c.Channel_Requested_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Performance</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Batch Uploads</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS_Operations__c.YBN_Operations_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Request_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Batch Case Upload</value>

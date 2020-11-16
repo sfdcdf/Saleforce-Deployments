@@ -101,18 +101,21 @@
         <booleanFilter>(1 or 3) AND 2</booleanFilter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Shelby Cowman</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>In Progress,Duplicate Retention Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Shelby Cowman</value>

@@ -15,6 +15,7 @@
     <filter>
         <criteriaItems>
             <column>Account$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Eric Brief,Martin Kearns</value>

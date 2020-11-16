@@ -33,18 +33,21 @@
     <filter>
         <criteriaItems>
             <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Martin Kearns,Eric Brief,Kiley Shianna</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Partner_Program__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CPP</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed Won</value>

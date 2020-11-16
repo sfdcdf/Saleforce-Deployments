@@ -45,48 +45,56 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Non Compliant Client,Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Live</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$AdStation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Organic_Product__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Lighthouse PPP,SEMonly,webOnly,Outrank 1.0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Pending Google Whitelist,Google Whitelist</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Awaiting PIN,Active Listing,Pending,Error Message,No Listing,Needs Re-Verification</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Google_White_List__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

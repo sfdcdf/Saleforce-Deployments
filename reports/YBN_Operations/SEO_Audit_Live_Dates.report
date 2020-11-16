@@ -9,12 +9,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>hand and stone,mr. rooter,cko kickboxing,take 5,tenet,livhome,aire serv</value>

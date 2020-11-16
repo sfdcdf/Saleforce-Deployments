@@ -9,18 +9,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Local Manager Approval Queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Angela Luddington,Nina Avery,Angela Hoddinott,Karen Park,Kayla Muir,Kimberly Boutilier,Stephen Gerrior,Walter Rundle,Leonard Edwards,Marsha Cunningham,Dawn Jordan,Linda Keating</value>

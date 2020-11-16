@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Win Back</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test</value>

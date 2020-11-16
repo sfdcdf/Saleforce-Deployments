@@ -13,18 +13,21 @@
     <filter>
         <criteriaItems>
             <column>Activity.Activity_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Sales Activity</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Win Back</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED_BY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

@@ -30,24 +30,28 @@
     <filter>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>OR 3.0 - Organic Setup Search Influence</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Off</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT_ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Affordable Dentures</value>

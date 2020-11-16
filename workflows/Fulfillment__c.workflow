@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
         <fullName>FUL_Phased_Launch_Date_Changed</fullName>
         <description>FUL - Phased Launch Date Changed</description>
         <protected>false</protected>
@@ -40,7 +41,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/FUL_Phased_Launch_Date_Changed</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>FUL_YBN_Estimated_Launch_Dates_Needed</fullName>
         <description>FUL - YBN: Estimated Launch Dates Needed</description>
         <protected>false</protected>
@@ -54,7 +56,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/FUL_YBN_Estimated_Launch_Dates_Needed</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>YBN_Relationship_Launch_Date_Changed</fullName>
         <description>YBN: Relationship Launch Date Changed</description>
         <protected>false</protected>
@@ -104,7 +107,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/FUL_YBN_Relationship_Launch_Date_Changed</template>
-    </alerts><fieldUpdates>
+    </alerts>
+    <fieldUpdates>
         <fullName>FUL_Update_CM_Original_Est_Launch_Date</fullName>
         <field>Centermark_Original_Est_Launch_Date__c</field>
         <formula>Centermark_Estimated_Launch_Date__c</formula>
@@ -112,7 +116,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>FUL_Update_Custom_Imp_Original_Est_Lau</fullName>
         <field>Custom_Imp_Original_Est_Launch_Date__c</field>
         <formula>Custom_Implementation_Estimated_Launch__c</formula>
@@ -120,7 +126,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>FUL_Update_Display_Original_Est_Launch</fullName>
         <field>Display_Original_Est_Launch_Date__c</field>
         <formula>Display_Estimated_Launch_Date__c</formula>
@@ -128,7 +136,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>FUL_Update_FB_Original_Est_Launch_Date</fullName>
         <field>Facebook_Estimated_Launch_Date__c</field>
         <formula>Facebook_Estimated_Launch_Date__c</formula>
@@ -136,7 +146,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>FUL_Update_PPC_Original_Est_Launch_Dt</fullName>
         <field>PPC_Original_Est_Launch_Date__c</field>
         <formula>PPC_Estimated_Launch_Date__c</formula>
@@ -144,7 +156,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>FUL_Update_Phase_1_Original_Est_Launch</fullName>
         <field>Phase_1_Original_Est_Launch_Date__c</field>
         <formula>Phase_1_Estimated_Launch_Date__c</formula>
@@ -152,7 +166,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>FUL_Update_Phase_2_Original_Est_Launch</fullName>
         <field>Phase_2_Original_Est_Launch_Date__c</field>
         <formula>Phase_2_Estimated_Launch_Date__c</formula>
@@ -160,7 +176,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>FUL_Update_Phase_3_Original_Est_Launch</fullName>
         <field>Phase_3_Original_Est_Launch_Date__c</field>
         <formula>Phase_3_Estimated_Launch_Date__c</formula>
@@ -168,7 +186,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>FUL_Update_Reviews_Original_Est_Launch</fullName>
         <field>Reviews_Original_Est_Launch_Date__c</field>
         <formula>Reviews_Estimated_Launch_Date__c</formula>
@@ -176,7 +196,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>FUL_Update_Website_Orig_Est_Launch_Da</fullName>
         <field>Website_Template_Original_Est_Launch__c</field>
         <formula>Website_Template_Estimated_Launch_Date__c</formula>
@@ -184,7 +206,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><rules>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
         <fullName>FUL - Phased Launch Estimated Dates Changed</fullName>
         <actions>
             <name>FUL_Phased_Launch_Date_Changed</name>
@@ -193,7 +217,8 @@
         <active>true</active>
         <formula>OR(   AND(     ISCHANGED(Phase_1_Estimated_Launch_Date__c),       NOT(ISNULL(PRIORVALUE(Phase_1_Estimated_Launch_Date__c)))   ),        AND(     ISCHANGED(Phase_2_Estimated_Launch_Date__c),     NOT(ISNULL(PRIORVALUE(Phase_2_Estimated_Launch_Date__c)))   ),    AND(     ISCHANGED(Phase_3_Estimated_Launch_Date__c),     NOT(ISNULL(PRIORVALUE(Phase_3_Estimated_Launch_Date__c)))   ) )</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>FUL - Update Centermark Original Est Launch Date</fullName>
         <actions>
             <name>FUL_Update_CM_Original_Est_Launch_Date</name>
@@ -209,7 +234,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>FUL - Update Custom Imp Original Est Launch Date</fullName>
         <actions>
             <name>FUL_Update_Custom_Imp_Original_Est_Lau</name>
@@ -225,7 +251,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>FUL - Update Display Original Est Launch Date</fullName>
         <actions>
             <name>FUL_Update_Display_Original_Est_Launch</name>
@@ -241,7 +268,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>FUL - Update Facebook Original Est Launch Date</fullName>
         <actions>
             <name>FUL_Update_FB_Original_Est_Launch_Date</name>
@@ -257,7 +285,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>FUL - Update PPC Original Est Launch Date</fullName>
         <actions>
             <name>FUL_Update_PPC_Original_Est_Launch_Dt</name>
@@ -273,7 +302,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>FUL - Update Phase 1 Original Est Launch Date</fullName>
         <actions>
             <name>FUL_Update_Phase_1_Original_Est_Launch</name>
@@ -289,7 +319,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>FUL - Update Phase 2 Original Est Launch Date</fullName>
         <actions>
             <name>FUL_Update_Phase_2_Original_Est_Launch</name>
@@ -305,7 +336,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>FUL - Update Phase 3 Original Est Launch Date</fullName>
         <actions>
             <name>FUL_Update_Phase_3_Original_Est_Launch</name>
@@ -321,7 +353,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>FUL - Update Reviews Original Est Launch Date</fullName>
         <actions>
             <name>FUL_Update_Reviews_Original_Est_Launch</name>
@@ -337,7 +370,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>FUL - Update Website Template Original Est Launch Date</fullName>
         <actions>
             <name>FUL_Update_Website_Orig_Est_Launch_Da</name>
@@ -353,7 +387,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>FUL - YBN Estimated Launch Date Required</fullName>
         <actions>
             <name>FUL_YBN_Estimated_Launch_Dates_Needed</name>
@@ -372,7 +407,8 @@
   )
 )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>FUL - YBN%3A Estimated Launch Dates Changed</fullName>
         <actions>
             <name>YBN_Relationship_Launch_Date_Changed</name>
@@ -388,4 +424,5 @@
   AND(ISCHANGED(Display_Estimated_Launch_Date__c), NOT(ISNULL(PRIORVALUE(Display_Estimated_Launch_Date__c))))
 )</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules></Workflow>
+    </rules>
+</Workflow>

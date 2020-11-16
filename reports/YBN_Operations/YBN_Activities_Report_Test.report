@@ -39,12 +39,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Task.YBN_Corporate_Relationship</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>,Left Voicemail,Customer Email,Connected with Gatekeeper,Connected with Target,Customer Meeting,No Voicemail</value>

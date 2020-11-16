@@ -75,12 +75,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Bing Rebuild Needed,Errors Found/Fixed,G &amp; B Pins Received - Claim IYPs,Google &amp; Bing Rebuild Needed,Google Account Rebuild Needed,Google Listing Rebuild Needed,In Progress,Scheduled Call,Listing Teardown Requested,Missing Information,Awaiting Internal Response,Pending Reattempt,Profile Optimization,Reopened,Cannot Complete,Closed,Closed - Errors Found,Closed - False Trigger,Closed - No Errors Found,Closed - Sent to SDB,Opt Not Completed - Invalid Case,New Google Build Needed,Completed,Delete Case,Pending Manager Approval</value>

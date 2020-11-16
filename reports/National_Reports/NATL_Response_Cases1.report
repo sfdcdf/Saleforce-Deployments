@@ -43,54 +43,63 @@
         <booleanFilter>(1 OR 2) and 3 and 4 and 5 and 6 and 7 and 8 and 9</booleanFilter>
         <criteriaItems>
             <column>Case.Created_by_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>IMA,inbound specialist,Pin Collection Associate,Outbound Specialist</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>5 in 60,1 in 30,berry wso</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>production,Web Dev Cases</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>rawling</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>YBN: Customer Success Consultant,YBN: Account Director A,YBN: Account Director B,YBN: Account Director C,YBN: Senior Customer Success Consultant</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Response_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

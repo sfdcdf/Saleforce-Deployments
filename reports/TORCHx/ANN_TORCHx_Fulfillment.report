@@ -33,30 +33,35 @@
     <filter>
         <criteriaItems>
             <column>Account.Client_Experience_Key__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>torchx</value>
         </criteriaItems>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>SFDC Sync</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Deactivation_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>

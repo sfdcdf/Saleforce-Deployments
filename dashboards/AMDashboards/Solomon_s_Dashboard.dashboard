@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -16,18 +16,20 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Solomon_s_Last_30_Day_Cases</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Solomon&apos;s Last 30 Day Report</title>
+            <title>Solomon's Last 30 Day Report</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Metric</componentType>
             <displayUnits>Auto</displayUnits>
+            <groupingSortProperties />
             <header>GMBL Locations for BOB</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -44,6 +46,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -60,6 +63,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Solomon_s_BOB_SEO</report>
             <showPercentage>false</showPercentage>
@@ -81,6 +85,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>My BOB- PPC</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Solomon_BoB_PPC</report>
@@ -95,7 +100,8 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <header>Solomon&apos;s NCS Cases</header>
+            <groupingSortProperties />
+            <header>Solomon's NCS Cases</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -105,7 +111,7 @@
     </rightSection>
     <runningUser>matt.austin@yodle.com</runningUser>
     <textColor>#000000</textColor>
-    <title>Solomon&apos;s Dashboard</title>
+    <title>Solomon's Dashboard</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>

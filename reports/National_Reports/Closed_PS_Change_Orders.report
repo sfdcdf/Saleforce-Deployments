@@ -31,18 +31,21 @@
         <booleanFilter>(1 AND 2) OR (2 AND 3)</booleanFilter>
         <criteriaItems>
             <column>Case.PS_Change_Order__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Close_Case_Reviewed_by_CS__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>PS Change Order</value>

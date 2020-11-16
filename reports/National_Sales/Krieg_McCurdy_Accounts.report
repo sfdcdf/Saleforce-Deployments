@@ -27,12 +27,14 @@
     <filter>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Adam Lester,Casey McCurdy,Danielle Krieg</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>

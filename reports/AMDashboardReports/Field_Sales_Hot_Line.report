@@ -45,6 +45,7 @@
     <filter>
         <criteriaItems>
             <column>Activity.LOCC_App__campaignname__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Field Sales Hotline,Field Sales Hotline - Rollover</value>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -16,6 +16,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
+            <groupingSortProperties />
             <header>Cancel Reasons</header>
             <legendPosition>Bottom</legendPosition>
             <report>Local_Program_Management/Cancellation_Codes_Last_30_Saved</report>
@@ -34,6 +35,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>Local_Program_Management/Cancellation_Codes_Last_Month_Cancelled</report>
             <showPercentage>true</showPercentage>
@@ -54,6 +56,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
+            <groupingSortProperties />
             <header>Segment</header>
             <legendPosition>Bottom</legendPosition>
             <report>Online_Production_Team/Cancellation_Segment_Saved</report>
@@ -72,6 +75,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>Online_Production_Team/Cancellation_Segment_Canceled</report>
             <showPercentage>true</showPercentage>
@@ -90,6 +94,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>Limited to top 10</footer>
+            <groupingSortProperties />
             <header>Cancellation By Segment - Last 30</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>

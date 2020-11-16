@@ -51,6 +51,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Case_Owner_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Customer Success Director</value>

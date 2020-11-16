@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><fieldUpdates>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
         <fullName>Attempts_Made_Current_Sub_Status_Stamp</fullName>
         <field>Current_Sub_Status__c</field>
         <formula>IF(ISPICKVAL(Case__r.Sub_Status__c, "New"), "New", IF(ISPICKVAL(Case__r.Sub_Status__c, "In Progress"), "In Progress", IF(ISPICKVAL(Case__r.Sub_Status__c, "MLS - Client"), "MLS - Client", IF(ISPICKVAL(Case__r.Sub_Status__c, "MLS - Setup"), "MLS - Setup", IF(ISPICKVAL(Case__r.Sub_Status__c, "Site Build"), "Site Build", IF(ISPICKVAL(Case__r.Sub_Status__c, "Site - Client"), "Site - Client", ""))))))</formula>
@@ -6,7 +7,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>ICC_Complete_to_Today</fullName>
         <field>ICC_Complete__c</field>
         <formula>Attempt_Date__c</formula>
@@ -14,8 +17,10 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>Case__c</targetObject>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Last_Attempt_By_Update</fullName>
         <field>Last_Attempt_By__c</field>
         <formula>Attempts_Made_By__r.Full_Name__c</formula>
@@ -23,8 +28,10 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>Case__c</targetObject>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Last_Attempt_Date</fullName>
         <description>Updates the Last Attempt Date Date/Time field, not the formula field. This is updating based on the Attempts Made Object</description>
         <field>Attempt_Date_1__c</field>
@@ -33,8 +40,10 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>Case__c</targetObject>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Number_of_Attempts_to_CompleteICC</fullName>
         <field>Number_of_Attempts_to_Complete_ICC__c</field>
         <formula>Case__r.Number_of_Attempts_Made__c+1</formula>
@@ -42,8 +51,10 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>Case__c</targetObject>
-    </fieldUpdates><rules>
+    </fieldUpdates>
+    <rules>
         <fullName>Attempts Made - Current Sub Status Stamp</fullName>
         <actions>
             <name>Attempts_Made_Current_Sub_Status_Stamp</name>
@@ -55,7 +66,8 @@
             <operation>notEqual</operation>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>ICC Complete to Today</fullName>
         <actions>
             <name>ICC_Complete_to_Today</name>
@@ -68,7 +80,8 @@
             <value>True</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Last Attempt Date - Update from Attempt Date</fullName>
         <actions>
             <name>Last_Attempt_By_Update</name>
@@ -82,7 +95,8 @@
         <description>Updates the Last Attempt Date Date/Time field, not the formula field.  This is updating based on the Attempts Made Object</description>
         <formula>OR(IF(Attempt_Date__c &gt; DATETIMEVALUE(Case__r.Last_Attempt_Date__c), TRUE , FALSE), ISBLANK(DATETIMEVALUE(Case__r.Last_Attempt_Date__c)))</formula>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Number of Attempts Made to Close ICC</fullName>
         <actions>
             <name>Update_Number_of_Attempts_to_CompleteICC</name>
@@ -105,4 +119,5 @@
             <value>TORCHx NCS - AutoLaunch</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules></Workflow>
+    </rules>
+</Workflow>

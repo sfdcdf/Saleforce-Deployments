@@ -21,6 +21,7 @@
     <filter>
         <criteriaItems>
             <column>Account.IMS_Rep_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Customer Success Consultant,YBN: Senior Customer Success Consultant</value>

@@ -18,18 +18,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Courtney Visser,Jorge Suarez,Javier Quiroz,Natalie Larner,Steven Grousnick,Jeffrey Aguilar,Sarah Sweet,Janie Bratcher,Peyden Edwards,Chad Davis,Malik Khendek,Ivan Mora,Ron Brown,Johnny Venegas,Levar Manuel,Jaime Jimenez,Michele Burch,Roy Lazorwitz</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Organic_Optimization_Request</value>

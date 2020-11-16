@@ -114,12 +114,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Cancellation_Requests__r$Account_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Leads By Web,LBW,Lead Stream,Leadstream</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Reason</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Quality Team</value>

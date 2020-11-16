@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>Account.YBN_Relationship__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.YBN_Relationship__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>N/A</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>

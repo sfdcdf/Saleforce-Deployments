@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>Account$IMS_Team__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>craig kluka</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Activities$Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LM7 - Performance Review</value>

@@ -15,7 +15,16 @@
     <oauthConfig>
         <callbackUrl>https://atxapp.registeredsite.com/fsCustRpts/api/callback</callbackUrl>
         
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
         <scopes>Full</scopes>
     </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+    <profileName>Company Community - Field Sales</profileName>
     <startUrl>https://atxapp.registeredsite.com/fsCustRpts/</startUrl>
 </ConnectedApp>

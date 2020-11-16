@@ -68,18 +68,21 @@
         <booleanFilter>1 and 2 AND 3</booleanFilter>
         <criteriaItems>
             <column>Activity$CallDurationInSeconds</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>5</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Assigned_To_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>SDR,sales executive</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$LOCC_App__campaignname__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>inbound holding</value>

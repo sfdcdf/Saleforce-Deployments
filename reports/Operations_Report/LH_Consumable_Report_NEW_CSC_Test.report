@@ -42,12 +42,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Yodle_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>,339070,225339,238907,338300,339230,339035,336966,338757,338638,338284,238561,338999,339398,339030,338768,338678,339532,338318,339873,338321,335122,339020,335686,339142,338413,339731,339077,336503,338723,339311,339604,309967</value>

@@ -48,18 +48,21 @@
     <filter>
         <criteriaItems>
             <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>john berk</value>
         </criteriaItems>
         <criteriaItems>
             <column>LEAD_SOURCE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Email – NACDL,email-national,email-national-webinar,Inbound partner inquiry,National,National Rollout Plan,NATIONAL-WEBINAR,Partner Inquiry,Premium List - National Lists,Referral - National Accounts,Trade Show (National) - 2012,Lockbox Campaign,Centermark Resume Campaign</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPPORTUNITY_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>corp</value>

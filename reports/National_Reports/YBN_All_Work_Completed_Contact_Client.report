@@ -22,30 +22,35 @@
         <booleanFilter>1 AND 2 AND 4 AND (3 OR 5)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Master_Case,Case.YBN_Inbound_Inquiry</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>All Work Completed – Contact Client</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Customer Success Consultant,YBN: Senior Customer Success Consultant</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>

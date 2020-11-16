@@ -42,30 +42,35 @@
     <filter>
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Decision_Tree_Optimization,Case.Performance_Issue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$IsClosed</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Date_Opt_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Submitted_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>4 in 60,1 in 30,5 in 60</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Berry_Account_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

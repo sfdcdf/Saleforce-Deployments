@@ -45,18 +45,21 @@
     <filter>
         <criteriaItems>
             <column>ROLLUP_DESCRIPTION</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Team Heppner</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSE_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>12/20/2016</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSE_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessThan</operator>
             <value>7/1/2017</value>

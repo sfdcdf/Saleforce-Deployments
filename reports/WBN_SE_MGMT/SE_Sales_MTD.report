@@ -28,12 +28,14 @@
     <filter>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Closed Won</value>
         </criteriaItems>
         <criteriaItems>
             <column>ROLLUP_DESCRIPTION</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Team Miller,Team Hess</value>

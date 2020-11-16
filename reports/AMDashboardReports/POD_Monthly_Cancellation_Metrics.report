@@ -240,18 +240,21 @@
         <booleanFilter>(1 or 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>lead stream support,lbw customer service,Local Pod Queue,erik vicars,makenzie cunningham,barb jenkins,shelia kelly,adam kovacs,randy dewey,nathaniel nipper,leonard edwards</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Owner_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>local consultant</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.No_Save_Mode__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

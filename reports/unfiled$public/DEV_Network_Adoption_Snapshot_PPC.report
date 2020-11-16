@@ -87,18 +87,21 @@
     <filter>
         <criteriaItems>
             <column>NetworkAdoptionSnapshot__c.YBNRelationship__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>NetworkAdoptionSnapshot__c.YBNRelationship__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>N/A</value>
         </criteriaItems>
         <criteriaItems>
             <column>NetworkAdoptionSnapshot__c.YBNRelationship__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Aire Serv Heating &amp; Air Conditioning Master,Miracle-Ear,Mr. Electric</value>

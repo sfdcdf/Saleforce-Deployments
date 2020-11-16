@@ -30,42 +30,49 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Login_Email__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>googleverification@yodle.com,googlemybusiness@lighthousepmg.com,googlemybusiness6@rogersoutrank.com,googlemybusiness8@rogersoutrank.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$AdStation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Google Whitelist</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Non Compliant Client,Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>YO-679830,YO-440757</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

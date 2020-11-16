@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LH QA</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Submission_Quality__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>QA - False Positive</value>

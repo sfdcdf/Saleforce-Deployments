@@ -28,42 +28,49 @@
         <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5) OR (1 AND 4 AND 6 AND 7)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.SEO_Tasks</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Search Influence</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Affordable Dentures,Carespot,Care Spot,Wishbone Athletics,Cordell,Miracle Ear,Miracle-Ear,Brightway,Two Men,Hungry Hearts,Yodle Test,Lawn Doctor,Synergy,Yodle Dental,Maaco,Senior Helpers</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Content Pilot</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>GLocal</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Miracle Ear,Miracle-Ear</value>

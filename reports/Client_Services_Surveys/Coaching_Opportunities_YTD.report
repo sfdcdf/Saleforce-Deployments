@@ -37,18 +37,21 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>Customer_Surveys__c.Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Survey_Code__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>CS - Hard to understand,CS - Poor Service,CS - Product Knowledge,CS - Scripted,CS - Too Fast,CS - Work Not Completed,CS - Setup Issue,CS - Positive Feedback,CS - Follow Up Issue,CS - Management of Account,CS - Miscommunication,CS - Missed Touch Plan</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.True_Escalation__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yes</value>

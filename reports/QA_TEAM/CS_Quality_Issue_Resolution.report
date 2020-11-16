@@ -67,6 +67,7 @@
         <booleanFilter>1</booleanFilter>
         <criteriaItems>
             <column>Customer_Surveys__c.Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Issue Resolution</value>

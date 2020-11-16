@@ -22,12 +22,14 @@
     <filter>
         <criteriaItems>
             <column>Customer_Surveys__c.Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>NPS Survey Yodle</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.How_likely_are_you_to_recommend_NPS__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

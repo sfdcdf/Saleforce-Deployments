@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -16,6 +16,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>Build Tasks</header>
             <legendPosition>Bottom</legendPosition>
             <report>SEO_MOPs/MICC_Build_Audit</report>
@@ -34,6 +35,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>SEO_MOPs/Content_Cases_Completed_Audit</report>
             <showPercentage>false</showPercentage>
@@ -51,6 +53,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>SEO_MOPs/Bing_WMT_Tasks_Completed</report>
             <showPercentage>false</showPercentage>
@@ -68,6 +71,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>Winback Tasks</header>
             <legendPosition>Bottom</legendPosition>
             <report>SEO_MOPs/Reactivation_Task_Audit</report>
@@ -89,6 +93,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>Maintenance Tasks</header>
             <legendPosition>Bottom</legendPosition>
             <report>Jeremy_Coggin_Report_List/Existing_Listing_Updated_in_Week</report>
@@ -107,6 +112,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>SEO_MOPs/NAP_Queue_Audit1</report>
             <showPercentage>false</showPercentage>
@@ -124,6 +130,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>SEO_MOPs/Owner_Management_Invite_Audit</report>
             <showPercentage>false</showPercentage>
@@ -141,6 +148,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>Claim Unverified Listings Audit</header>
             <legendPosition>Bottom</legendPosition>
             <report>SEO_MOPs/Claimed_Unverified_Listings</report>
@@ -158,6 +166,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>SEO_MOPs/Photo_Upload_Audit</report>
             <showPercentage>false</showPercentage>
@@ -180,6 +189,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Account.Organic_Analyses__r$Closed_Date__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>SEO_MOPs/Listing_Keyword_Update_Audit</report>
             <showPercentage>false</showPercentage>
@@ -205,6 +215,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>CLOSED_DATEONLY</groupingColumn>
+            <groupingSortProperties />
             <header>Cleanout Tasks</header>
             <legendPosition>Bottom</legendPosition>
             <report>SEO_MOPs/Immediate_Teardown_Audit2</report>
@@ -223,6 +234,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>SEO_MOPs/CA_Listing_Citation_Cleanout_Audit</report>
             <showPercentage>false</showPercentage>
@@ -240,6 +252,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>SEO_MOPs/Google_Listing_Cleanout_Tasks_Audit</report>
             <showPercentage>false</showPercentage>

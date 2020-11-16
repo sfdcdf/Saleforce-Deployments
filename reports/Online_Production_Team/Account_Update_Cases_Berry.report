@@ -27,18 +27,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Requested_Website_Updates__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Website Change/Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>DESCRIPTION</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>mirror</value>

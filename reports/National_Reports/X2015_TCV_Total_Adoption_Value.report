@@ -26,12 +26,14 @@
     <filter>
         <criteriaItems>
             <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Hand &amp; Stone,Hand and Stone</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Total_Contract_Value__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>0</value>

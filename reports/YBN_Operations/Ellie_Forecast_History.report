@@ -44,18 +44,21 @@
     <filter>
         <criteriaItems>
             <column>Forecast_SnapShot__c$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Lara Richardson,Tricia Gahagan,Therse O&apos;BrianCory Morrison,Emily Currin,Amy Kramer,Chris Cormier,Greg George,Ian Burris,Debra Lozano,Russell Tvedt,John Benjamin,Adam Kazansky,Seth Kriegel,Sandra Martinez,Carinne Richdale</value>
         </criteriaItems>
         <criteriaItems>
             <column>Forecast_SnapShot__c$Stage__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Lost</value>
         </criteriaItems>
         <criteriaItems>
             <column>Forecast_SnapShot__c$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>5/19/2014 12:00 AM</value>

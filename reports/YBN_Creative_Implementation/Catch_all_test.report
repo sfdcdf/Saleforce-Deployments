@@ -40,42 +40,49 @@
         <booleanFilter>(1 OR 2) AND (3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Sean Cornwall,Ernest Cook,Mike Cross,Stephanie Stark,Tyler Klepfish,YBN Creative,Web Dev,Theorem</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Creative,Web Dev</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.YBNRequestDetail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN Presale Mockup,YBN Presale Pricing Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.YBNRequestDetail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN Corporate Site Design,YBN Corporate Site Development,YBN Corporate Site Update/Change,YBN Locations Template Design,YBN Locations Template Development,YBN Locations Template Update/Change</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.YBNRequestDetail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN Metropage Template Design,YBN Metropage Template Development,YBN Metropage Template Update/Change,YBN Portal Creation,YBN Portal Update/Change</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.YBNRequestDetail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>YBN Display Creative Creation,YBN Display Creative Update/Change,YBN Email Marketing Template Design,YBN Email Marketing Template Development,YBN Email Marketing Template Update/Change</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

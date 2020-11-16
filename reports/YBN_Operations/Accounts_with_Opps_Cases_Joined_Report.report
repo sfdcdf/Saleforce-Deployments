@@ -11,24 +11,28 @@
         <filter>
             <criteriaItems>
                 <column>RECORDTYPE</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal</value>
             </criteriaItems>
             <criteriaItems>
                 <column>ACCOUNT_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>notContain</operator>
                 <value>test,dorm</value>
             </criteriaItems>
             <criteriaItems>
                 <column>STAGE_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>Implementation</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Opportunity.Opportunity_Launched__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>notEqual</operator>
                 <value>Launched</value>
@@ -84,12 +88,14 @@
             <booleanFilter>1 OR 2</booleanFilter>
             <criteriaItems>
                 <column>REASON</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>Launch QA Document</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Case.Reason_Detail__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>Billing QA For Launch</value>

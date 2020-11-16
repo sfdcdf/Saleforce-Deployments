@@ -34,18 +34,21 @@
         <booleanFilter>(1 OR 2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>Case.Other_reason_detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>EPP</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Other_reason_detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>EPP - Security Code</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Other_reason_detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>EPP - Transfer Complete</value>

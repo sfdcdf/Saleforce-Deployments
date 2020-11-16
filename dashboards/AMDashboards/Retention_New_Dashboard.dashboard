@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -13,6 +13,7 @@
             <displayUnits>Auto</displayUnits>
             <gaugeMax>50.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
+            <groupingSortProperties />
             <indicatorBreakpoint1>25.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>30.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
@@ -23,7 +24,7 @@
             <showRange>false</showRange>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
-            <title>Today&apos;s Saved Opportunity</title>
+            <title>Today's Saved Opportunity</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -44,9 +45,11 @@
                 <decimalPlaces>0</decimalPlaces>
                 <showTotal>false</showTotal>
             </dashboardTableColumn>
+            <decimalPrecision>2</decimalPrecision>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <indicatorBreakpoint1>0.25</indicatorBreakpoint1>
             <indicatorBreakpoint2>0.3</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
@@ -62,6 +65,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -79,6 +83,7 @@
             <displayUnits>Auto</displayUnits>
             <gaugeMax>50.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
+            <groupingSortProperties />
             <indicatorBreakpoint1>25.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>30.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
@@ -110,9 +115,11 @@
                 <decimalPlaces>0</decimalPlaces>
                 <showTotal>true</showTotal>
             </dashboardTableColumn>
+            <decimalPrecision>2</decimalPrecision>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <indicatorBreakpoint1>0.25</indicatorBreakpoint1>
             <indicatorBreakpoint2>0.3</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
@@ -132,6 +139,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>NEEDS TO BE ZERO BY EOD</footer>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -147,6 +155,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>NEEDS TO BE ZERO BY EOD</footer>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -162,6 +171,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>NEEDS TO BE ZERO BY EOD</footer>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -177,6 +187,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>NEEDS TO BE ZERO BY EOD</footer>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -205,6 +216,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -227,6 +239,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>

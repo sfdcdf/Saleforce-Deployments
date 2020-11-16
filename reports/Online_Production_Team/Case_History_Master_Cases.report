@@ -33,24 +33,28 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master,Case.XJenTest_No_Use</value>
         </criteriaItems>
         <criteriaItems>
             <column>field_key</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>owner</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>BPF Entry,General/Common Questions,Yodle Service Issue,Sales Wizard Confirmation Email,Manager Action Request,New Segment Request,Organic Pin Collected,Performance,Quality Team,Performance Issue,Renewal / Upsell,Proactive Communication</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>,Failed Landing Pages,Feedback - Global Adversite/Content,National Metropage/LP Creation,National Template Creation,National Template Update/Change,BPF Entry,BPF Inquiry,Template Suggestion,Display Creative</value>

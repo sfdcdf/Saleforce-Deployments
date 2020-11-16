@@ -96,30 +96,35 @@
     <filter>
         <criteriaItems>
             <column>Customer_Surveys__c.Survey_Categorization__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>negative survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.IMS_Rep_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>national</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_ACC_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Jeremy&apos;s Powerhouse,Jen&apos;s Test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.IMS_Rep_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Customer_Surveys__c.Marketing_Survey</value>

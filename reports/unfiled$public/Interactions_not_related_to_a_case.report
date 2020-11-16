@@ -33,18 +33,21 @@
     <filter>
         <criteriaItems>
             <column>Activity$What</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>am,pm</value>

@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.Installation_Worksheet</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Install_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>N_DAYS_AGO:15</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Install_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>N_DAYS_AGO:9</value>

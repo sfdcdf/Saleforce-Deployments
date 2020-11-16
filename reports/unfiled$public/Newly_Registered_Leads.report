@@ -19,6 +19,7 @@
     <filter>
         <criteriaItems>
             <column>CPP_Lead_Registration__c.Lead_Registration_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Newly Registered</value>

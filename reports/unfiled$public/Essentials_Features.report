@@ -15,36 +15,42 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.CSC_Call_Grading</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Call_Grade__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>90</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Photo_Upload__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Fully Covered</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Social__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Fully Covered</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Reviews_Solicitation__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Fully Covered</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Contacts_Essentials__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Fully Covered</value>

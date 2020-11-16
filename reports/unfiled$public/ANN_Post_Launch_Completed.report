@@ -39,12 +39,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Partner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Alisha Herzberg,Holly Macki,Lindsey Schmid,Johnna Guidry,Prisma Hernandez,Shannon Lang,Nikki Micou,Leslie Goldman,Cynthia Mota,Adam Livingstone,Amanda Peake,Jason Gee,Maria McLean,Terry Beaver</value>

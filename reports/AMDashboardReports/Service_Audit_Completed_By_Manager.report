@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>Service_Audit__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Service_Audit__c.Results_of_QA__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>NA - Poor Audio Quality,NA - Call Not Recorded</value>

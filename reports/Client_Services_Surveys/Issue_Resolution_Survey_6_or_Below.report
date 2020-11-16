@@ -52,12 +52,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Customer_Surveys__c.YBN_Issue_Resolution_Survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Issue_Survey_CS_Satisfaction__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>6</value>

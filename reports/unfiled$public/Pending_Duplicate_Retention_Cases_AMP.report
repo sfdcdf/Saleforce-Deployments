@@ -160,24 +160,28 @@
         <booleanFilter>1 AND (2 or 3 or 4)</booleanFilter>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>In Review</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.User_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leonard edwards,shelia kelly,erik vicars,barb jenkins; adam kovacs,nathaniel nipper</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>local pod queue,lead stream support,lbw customer service</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_LAST_UPDATE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Jennifer Degreef,Jordan Sanchez,Keegan Sandman,Kyler Wood,Mark Nagy,Reagan Neely,Shelby Cowman,Shelia Kelly,Adam Kovacs,Amber Tamayo,Andrew Smith,James Brady,Paul Mascitti,Ryan Crary,Suzanne Oyenarte,Erik Vicars,Erika Persil,Ron Brown,Samantha Starett,Sara Davis,Sherri Aguinaga,Thad Dameris,Valerie Garner,Angela Hoddinott,Karen Park,Kayla Muir,Kimberley Boutilier,Leonard Edwards,Stephen Gerrior,Walter Rundle,Alvin Jobe,Alyson MacDonald,Angela Snow,April Law,Barb Jenkins,Blake MacPhee,Gwen Doyle,Kathleen Wilson,Kathryn Leadbeater,Kathy Caldwell,Lesa Lemay Marilyn Bray,Marilyn Slaunwhite,Nina Avery,Robert Jones,Rondell Humphreys,Samantha Sewell</value>

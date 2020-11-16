@@ -28,54 +28,63 @@
         <booleanFilter>((1 AND 2 AND 3 AND 4 AND 5 AND 8) OR (1 AND 2 AND 3 AND 4 AND 6 AND 7)) AND 9</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Post Launch Associate Queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>National</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Channel_Development__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Rogers</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Requested_Website_Updates__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Escalated CMS3 Photo Change</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Promotion in Ad Copies,New Offer</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Age__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>0.08</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Promotion in Ad Copies,New Offer</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Requested_Updates__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>excludes</operator>
             <value>DemandForce Review Migration</value>

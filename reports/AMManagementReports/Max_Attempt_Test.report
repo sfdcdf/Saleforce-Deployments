@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Organic_Analysis__c.FeedItems$Body</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Max Attempt Test</value>

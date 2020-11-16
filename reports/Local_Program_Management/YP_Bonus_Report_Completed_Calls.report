@@ -22,30 +22,35 @@
         <booleanFilter>(1 AND 2 AND (3 OR 4 OR 5))</booleanFilter>
         <criteriaItems>
             <column>Yodle_Path__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Setup Call,Coaching Call,Touch Plan 1,Touch Plan 2,Touch Plan 3</value>
         </criteriaItems>
         <criteriaItems>
             <column>Yodle_Path__c.X1st_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Complete - Full Script</value>
         </criteriaItems>
         <criteriaItems>
             <column>Yodle_Path__c.X2nd_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Complete - Full Script</value>
         </criteriaItems>
         <criteriaItems>
             <column>Yodle_Path__c.X3rd_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Complete - Full Script</value>

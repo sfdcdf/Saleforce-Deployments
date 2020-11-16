@@ -24,24 +24,28 @@
     <filter>
         <criteriaItems>
             <column>Case.Activities$Assigned_To_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Customer Success Consultant,YBN: Senior Customer Success Consultant</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Natalie Lance,Christine Begley,Jarrett Keels,Matthew Wible,Ryan Wilson,Meera Pattison,Anna Hammett,Eric Lindberg,Samantha Grande,Elizabeth Groce,Conor Mooney,Angelica Oglesby,Jeremy Giles</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$CallDurationInSeconds</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>600</value>

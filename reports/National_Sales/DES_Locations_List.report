@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>PARENT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Ben franklin,one hour heating,mister sparky</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>ad fund,adfund</value>

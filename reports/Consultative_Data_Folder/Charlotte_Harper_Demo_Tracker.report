@@ -7,12 +7,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Phone_Result__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Set Demo,On the Fly Demo,Conducted Demo</value>
         </criteriaItems>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>jim mcphee,guylaine diehl,christopher Carrothers,elizabeth luedeman,Andrew Cook,Brian Lee,Bill Campbell,Carolyn Stittgen</value>

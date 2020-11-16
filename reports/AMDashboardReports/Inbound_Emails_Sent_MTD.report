@@ -43,30 +43,35 @@
         <booleanFilter>((1 OR 2) AND 3 AND 4) AND 5</booleanFilter>
         <criteriaItems>
             <column>Case.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>startsWith</operator>
             <value>Email:</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Origin</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web,CS@Outrank.com,Local Pooled VM,customercare@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Assigned_To_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Inbound Specialist</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Assigned_To_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Lauren Aldana</value>

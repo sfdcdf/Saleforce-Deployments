@@ -27,18 +27,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r.Activities$CallDurationInSeconds</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>500</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Not Started,In Progress,Did Not Complete</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$Touch_Plan_Pass_Fail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Pass</value>

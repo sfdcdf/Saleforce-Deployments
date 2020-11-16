@@ -72,12 +72,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Ozzy Campbell,Michelle MacLean,Shari DeYoung,Russell Pilgrim,Ryan Hubbard,Troy Sanders,Valerie Bigney,Debra Sterling,Elizabeth Miller,Kim Amiro,Janine Martin,Andrew Roy,Chris Halverson,Berkley Desmond,Chelsea MacEachern,Douglas Walsh,Gerard Kennedy,Jo-Ann McKenzie,Joshua Grant,Julianna Meyer,Justin Ferguson,Katharine Langille,Kevin Grant,Kristen MacKay</value>

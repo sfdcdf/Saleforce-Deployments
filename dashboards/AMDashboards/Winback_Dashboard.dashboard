@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -13,6 +13,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <header>Winback Queue</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -33,6 +34,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>Winback Saved Cases</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Winback_Saved_Cases</report>
@@ -51,6 +53,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Winback_Saved_Cases_Count_Weekly</report>
             <showPercentage>false</showPercentage>
@@ -67,6 +70,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Winback_Saved_Product_Type_Monthly</report>
             <showPercentage>false</showPercentage>
@@ -94,6 +98,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>OWNER</groupingColumn>
+            <groupingSortProperties />
             <header>Winback Saved Revenue</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Winback_Saved_Revenue</report>
@@ -118,6 +123,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>OWNER</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Winback_Saved_Revenue_Weekly</report>
             <showPercentage>false</showPercentage>

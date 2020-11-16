@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
         <fullName>WBN_Send_Email_New_Key_Decision_maker_contact_added_to_Master_Acc</fullName>
         <description>WBN - Send Email when a New Key Decision Maker contact added to master Acc record Type</description>
         <protected>false</protected>
@@ -20,7 +21,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/WBN_New_Key_Contact_YBN_Master_Account</template>
-    </alerts><fieldUpdates>
+    </alerts>
+    <fieldUpdates>
         <fullName>Date_Post_Launch_Survey_Sent</fullName>
         <field>Date_Post_Launch_Survey_Sent__c</field>
         <formula>today()</formula>
@@ -28,7 +30,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Days_Since_Live_on_Contact</fullName>
         <field>Days_Since_Live__c</field>
         <formula>Account.Days_Since_Live__c</formula>
@@ -36,7 +40,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><rules>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
         <fullName>Date Post Launch Survey Sent</fullName>
         <actions>
             <name>Date_Post_Launch_Survey_Sent</name>
@@ -49,7 +55,8 @@
             <value>True</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Days %28%23%29 Since Live</fullName>
         <actions>
             <name>Days_Since_Live_on_Contact</name>
@@ -67,7 +74,8 @@
             <value>jshecker@gmail.com</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>WBN - New Decision Maker Contact added to YBN Master Account</fullName>
         <actions>
             <name>WBN_Send_Email_New_Key_Decision_maker_contact_added_to_Master_Acc</name>
@@ -86,7 +94,8 @@
         </criteriaItems>
         <description>Contact is added/edited where Role = 'Decision Maker' on YBN Master Account Records</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><tasks>
+    </rules>
+    <tasks>
         <fullName>TEST_AMM_New_Keu_Decision_Maker_Alert</fullName>
         <assignedTo>annemarie.messineo@yodle.com</assignedTo>
         <assignedToType>user</assignedToType>
@@ -98,4 +107,5 @@
         <protected>false</protected>
         <status>Not Started</status>
         <subject>TEST-New Key Decision Maker Alert</subject>
-    </tasks></Workflow>
+    </tasks>
+</Workflow>

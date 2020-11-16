@@ -62,12 +62,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Call_Grading_Forms__c.Email</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Courtney Visser,Jorge Suarez,Javier Quiroz,Natalie Larner,Steven Grousnick,Jeffrey Aguilar,Sarah Sweet,Janie Bratcher,Peyden Edwards,Chad Davis,Malik Khendek,Ivan Mora,Ron Brown,Johnny Venegas,Levar Manuel,Jaime Jimenez,Michele Burch</value>

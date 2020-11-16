@@ -16,72 +16,84 @@
         <booleanFilter>1 AND ((2 AND 10) OR (3 AND 11) OR (4 AND 12) OR (5 AND 13)) AND 6 AND 7 AND 8 AND 9</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_1_Business_Name_Address__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>1,2,3,4,5,6,7,8,9,0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_2_Business_Name_Address__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>1,2,3,4,5,6,7,8,9,0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_3_Business_Name_Address__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>1,2,3,4,5,6,7,8,9,0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_4_Business_Name_Address__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>1,2,3,4,5,6,7,8,9,0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Client Refuses Claim</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Pending Pin Receipt</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Yodle Ads,Yodle Web</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_1_URL_IT_Pro__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_2_URL_IT_Pro__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_3_URL_IT_Pro__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_4_URL_IT_Pro__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

@@ -50,30 +50,35 @@
     <filter>
         <criteriaItems>
             <column>Account.Quarantine_from_Relationship__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Individual_Location</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Won,Closed Lost</value>
         </criteriaItems>
         <criteriaItems>
             <column>ROLLUP_DESCRIPTION</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>team miller,team hess</value>
         </criteriaItems>
         <criteriaItems>
             <column>BucketField_92839757</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Debra Lozano,Eric Brief,John Licciardi,Russell Tvedt,Aly Gangemi,Ian Burris,Jacob Ahern,John Naylor,Tyler Kaufman</value>

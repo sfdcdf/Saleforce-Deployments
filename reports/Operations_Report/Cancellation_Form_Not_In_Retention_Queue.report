@@ -21,36 +21,42 @@
     <filter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Retention</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>OFF</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Date_of_Cancellation_Request__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>2/18/2015</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Local</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Retention Consultant,Local Consultant</value>

@@ -22,42 +22,49 @@
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Outbound_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CSC</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YESTERDAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Segment__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Acupuncturist,Allergists,Cardiologists,Chiropractor,Dentist,Denturist,Dermatologist,Family and General Practice Physicians,Geriatric Physician,Gynecologists,Hospitals and Medical Facilities,Obstetricians,Oncologists,Ophthalmologist,Optician,Optometrist,Orthodontist,Orthopedist,Otolaryngologist,Pediatrician,Physical Therapist,Physician,Plastic Surgeon,Podiatrist,Radiologists,Surgeons,Urgent Care,Urologists,Hospice,Neurologist,Nutritionist</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yodle Max</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Lead</value>

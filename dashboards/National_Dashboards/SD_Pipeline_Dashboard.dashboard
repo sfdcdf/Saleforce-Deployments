@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -18,6 +18,7 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>Includes Opps in Contract Stage</footer>
+            <groupingSortProperties />
             <header>SD Opps in Contract Stage by Month</header>
             <legendPosition>Bottom</legendPosition>
             <report>YBN_Operations/SD_Pipeline_Opps_in_Contract_Stage</report>
@@ -42,6 +43,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>FULL_NAME</groupingColumn>
             <groupingColumn>BucketField_20139526</groupingColumn>
+            <groupingSortProperties />
             <header>SD Pipeline Pre-Contract vs. Contract</header>
             <legendPosition>Bottom</legendPosition>
             <report>YBN_Operations/SD_Pipeline_Pre_Contract_vs_Contract2</report>
@@ -63,6 +65,7 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>Includes all Open Opportunity Stages</footer>
+            <groupingSortProperties />
             <header>SD Pipeline - Next 4 Months (All Open Opps)</header>
             <legendPosition>Bottom</legendPosition>
             <report>YBN_Operations/SD_Pipeline_Next_4_Mths</report>
@@ -81,6 +84,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>SD Pipeline by Month (All Open Opps)</header>
             <legendPosition>Bottom</legendPosition>
             <report>YBN_Operations/SD_Pipeline_Next_4_Mths</report>
@@ -106,6 +110,7 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>FULL_NAME</groupingColumn>
+            <groupingSortProperties />
             <header>SD Pipeline - Open Opps with an old Close Date</header>
             <legendPosition>Bottom</legendPosition>
             <report>YBN_Operations/SD_Pipeline_Open_Opps_in_Past</report>

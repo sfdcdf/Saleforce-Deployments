@@ -25,24 +25,28 @@
     <filter>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>CSC</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Sales_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>field sales,field sale</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Next_Scheduled_Call__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>YESTERDAY</value>

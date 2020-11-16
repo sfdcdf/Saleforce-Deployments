@@ -39,12 +39,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.YBN_Sub_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Low Influence- Preferred Partner Agreement,Exclusive Preferred Partner Agreement,Premier Preferred Partner Agreement,Preferred Partner Agreement,New Exclusive Preferred Partner Agreement</value>

@@ -10,6 +10,7 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Initial_Product__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web</value>

@@ -9,6 +9,7 @@
     <filter>
         <criteriaItems>
             <column>Lead$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lead.CPP</value>

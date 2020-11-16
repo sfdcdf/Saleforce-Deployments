@@ -26,18 +26,21 @@
         <filter>
             <criteriaItems>
                 <column>Case.Client_Type__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>ybn,national</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Case.IMS_Completing_Opt2__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>contains</operator>
                 <value>anderson allen,fortunatus,wesley adams,matt austin,dembitzer,gustavo,kunis,gibbs</value>
             </criteriaItems>
             <criteriaItems>
                 <column>PARENT_ACCOUNT_NAME</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>contains</operator>
                 <value>mr. rooter,mr. electric,aire serv</value>
@@ -90,18 +93,21 @@
         <filter>
             <criteriaItems>
                 <column>Account$Client_Type__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>equals</operator>
                 <value>YBN,National</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Account.Organic_Analyses__r$IMS_Completing_Opt__c</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>contains</operator>
                 <value>anderson allen,fortunatus,wesley adams,matt austin,dembitzer,gustavo,kunis,gibbs</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Account$Parent</column>
+                <columnToColumn>false</columnToColumn>
                 <isUnlocked>false</isUnlocked>
                 <operator>contains</operator>
                 <value>mr. rooter,mr. electric,aire serv</value>

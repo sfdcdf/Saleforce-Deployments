@@ -30,24 +30,28 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Performance_Issue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Channel_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Lighthouse,National</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>YBN</value>

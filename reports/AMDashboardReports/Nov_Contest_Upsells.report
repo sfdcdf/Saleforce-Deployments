@@ -134,12 +134,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS_Operations__c.Upsell_Tracking</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Erik Vicars,Shelia Kelly,Nick Johnson,Sherri aguinaga,Christopher grau,Lyndsay spa,emily kareiva,Johnny Venegas,Ivan Mora,Terrell Pasley,Natalie Larner,Sarah Sweet,Laura Gentry,Levar Manuel,Felicia Morales,David Derego,Javier Quiroz,Jeffrey aguilar,Ryan McDonald,Malik Khendek,Thomas Standing,Dayna Horton,Courtney Schoonover,Cynthia Mota,Gary Poole,Sharica Thomas,Valencia Wilson</value>

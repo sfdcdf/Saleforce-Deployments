@@ -12,12 +12,14 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Account_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Lighthouse</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Cancellation_Request__c.LH_Cancellation_Request</value>

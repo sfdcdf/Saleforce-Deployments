@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -16,6 +16,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>Local_Program_Management/Cancellation_Codes_Last_30</report>
             <showPercentage>true</showPercentage>
@@ -33,6 +34,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>Lost to Competitor - MOM</header>
             <legendPosition>Bottom</legendPosition>
             <report>Local_Program_Management/Max_Cancellation_Codes_By_Comp_MOM</report>
@@ -53,6 +55,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>Local_Program_Management/Cancellation_Codes_Last_Month_Cancelled</report>
             <showPercentage>true</showPercentage>
@@ -68,6 +71,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>Limited to top 20</footer>
+            <groupingSortProperties />
             <header>New Sales By Segment - Last 30</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -89,6 +93,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>Local_Program_Management/Cancellation_Codes_Last_30_Saved</report>
             <showPercentage>true</showPercentage>
@@ -104,6 +109,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>Limited to top 20</footer>
+            <groupingSortProperties />
             <header>Cancellation By Segment - Last 30</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>

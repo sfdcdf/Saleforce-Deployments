@@ -30,30 +30,35 @@
     <filter>
         <criteriaItems>
             <column>Case.Activities$Assigned_To_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Customer Success Consultant,YBN: Senior Customer Success Consultant</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Inbound_Inquiry</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Account</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Berry</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Emily,Zachary</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Email:</value>

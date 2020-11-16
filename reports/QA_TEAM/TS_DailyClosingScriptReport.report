@@ -52,12 +52,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Closing_Script_Auto_Launch,Case.Closing_Script_Auto_Launch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Developmental_Supervisor_del__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Martin Kearns</value>

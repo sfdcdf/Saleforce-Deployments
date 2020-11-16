@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>jennifer degreef,Brittany Fountain</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>PTO,Not Scheduled,LUNCH,loa,ooo,out of office,supervisor</value>

@@ -15,12 +15,14 @@
     <filter>
         <criteriaItems>
             <column>Organic_Analysis__c.Google_Listing_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Awaiting PIN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Live</value>

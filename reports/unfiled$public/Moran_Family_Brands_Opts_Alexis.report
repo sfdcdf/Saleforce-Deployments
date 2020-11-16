@@ -15,18 +15,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT_ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>moran family of brands</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.YBNRequestReason__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Performance Team</value>

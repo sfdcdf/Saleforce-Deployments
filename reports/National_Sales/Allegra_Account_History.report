@@ -36,18 +36,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT_PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>allegra,insty</value>
         </criteriaItems>
         <criteriaItems>
             <column>field_key</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Account Status</value>

@@ -42,6 +42,7 @@
     <filter>
         <criteriaItems>
             <column>PARENT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>The Little Gym</value>

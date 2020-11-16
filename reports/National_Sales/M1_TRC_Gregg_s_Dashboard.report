@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Discovery</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Interaction_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Follow Up,Prep</value>

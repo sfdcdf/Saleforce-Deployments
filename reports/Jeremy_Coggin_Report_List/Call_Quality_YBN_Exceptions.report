@@ -42,18 +42,21 @@
     <filter>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web Dev</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Quality_Concern__c.Custom_Call_Tracking__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YES</value>

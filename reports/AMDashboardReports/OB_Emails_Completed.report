@@ -10,36 +10,42 @@
         <booleanFilter>(((((1 OR 2) AND 3) AND 4) AND 5)) AND 6</booleanFilter>
         <criteriaItems>
             <column>Case.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>startsWith</operator>
             <value>Email:</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>2</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Origin</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>autosupport@lighthousepmg.com,customercare@lighthousepmg.com,customercare@yodle.com,Email,LBW VM,LBWCustomerService@web.com,LH Auto VM,LH Field Services VM,LH Medical VM,LH Upsell,Local Pooled VM,mlsc@torchx.com,New Client,outranksupport@service.rogersoutrank.com,Platinum Support,Rep Email,support@lighthousepmg.com,support@torchx.com,TORCHx VM,Voicemail,Web,YodleGoldService@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Learn</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Case_Owner_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Crystal Bellew,Stephanie Verdusco</value>

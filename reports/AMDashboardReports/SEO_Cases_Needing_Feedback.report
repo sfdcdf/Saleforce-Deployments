@@ -12,12 +12,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Organic_Optimization_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.CS_Feedback_For_SEO_Mops__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

@@ -57,30 +57,35 @@
     <filter>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Weekly Global Setup Audit - Campaign/Website Updates,Daily Global Setup Audit - Campaign/Website Updates</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Requested_Website_Updates__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Escalated CMS3 Photo Change</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.CMS_2_0__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Bill Vines</value>

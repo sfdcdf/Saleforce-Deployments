@@ -53,60 +53,70 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>IT Pro,SEO Marketing Ops</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Bulk_Google_Account_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>OFF</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Owner-Verified/Pending Management</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Teardown_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Listing Cleaned Out,Listing Teardown Complete</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Teardown_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Date_Removed_from_Google_Bulk_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Days_Since_Organic_Deactivation__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>7</value>

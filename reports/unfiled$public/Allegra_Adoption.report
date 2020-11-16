@@ -31,24 +31,28 @@
     <filter>
         <criteriaItems>
             <column>PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Allegra,Insty</value>
         </criteriaItems>
         <criteriaItems>
             <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Paid Media Mgmt Fee</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPPORTUNITY_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Marketpage</value>
         </criteriaItems>
         <criteriaItems>
             <column>TOTAL_PRICE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>0</value>

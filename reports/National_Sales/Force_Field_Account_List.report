@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Minde Fawcett,Jennifer Torres,Mark Armstrong,Daniel Boyce,Danielle Krieg</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>

@@ -12,12 +12,14 @@
     <filter>
         <criteriaItems>
             <column>Case$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Yodle_Path_Experience</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>startsWith</operator>
             <value>Call</value>

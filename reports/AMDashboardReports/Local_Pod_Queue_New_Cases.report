@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Local Pod Queue,Elyane Hoover,Erik Vicars,Sherri Aguinaga,Rory Diller,Kelly O&apos;Brien,Jackie Riedl,Mackenzie Cunningham</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>1 in 30,Failed Landing Page,Credit Card Expiration</value>

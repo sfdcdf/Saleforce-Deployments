@@ -7,18 +7,21 @@
     <filter>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>makenzie cunningham,sara davis,walter rundle,alvin jobe,erik vicars,shelia kelly,barb jenkins,leonard edwards</value>
         </criteriaItems>
         <criteriaItems>
             <column>field_key</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>case owner</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master</value>

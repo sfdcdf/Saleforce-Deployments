@@ -36,6 +36,7 @@
     <filter>
         <criteriaItems>
             <column>EMAIL.TO_ADDRESS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>ybnpremiumplussupport@yodle.com</value>

@@ -56,48 +56,56 @@
     <filter>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Organic Setup Search Influence</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Off</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_Side_ClientPL__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.SEO_Content_Preferences__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Client Provided Unique Content - Do Not Write</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>YBN,National</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>330514,330513,330512,330511,330510,330507,330505,330504,330502,330501,330500,330497,330491,330488,330481,330480,330479,330477,330476,330471,330468,330465,330459,330454,330453,330447,330445,330444,330436,330434,330431,330429,330426,330424,330422,330421,330420,330419,330417,330416,330415,330413,330412,330411,330410,330408,330407,330399,330398,330397,330396,330395,330394,330393,330388,330386,330373,330281,330266,330265</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Closed</value>

@@ -23,24 +23,28 @@
         <booleanFilter>1 AND (2 OR (3 AND 4))</booleanFilter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.Installation_Worksheet</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New,In Progress,Post Install Ready,Post Install In Progress,Logo Ready,Logo Complete,Stalled</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Backed Out Sale</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>LH Install</value>

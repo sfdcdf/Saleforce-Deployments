@@ -87,18 +87,21 @@
     <filter>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Lauri&apos;s,Jeremy&apos;s Powerhouse,Jen&apos;s Test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Customer_Surveys__r$Survey_Categorization__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Negative Survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>National</value>

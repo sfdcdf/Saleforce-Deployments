@@ -36,12 +36,14 @@
     <filter>
         <criteriaItems>
             <column>Case.YBNRequestDetail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN Corporate Site Development,YBN Locations Template Development</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Request</value>

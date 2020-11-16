@@ -20,24 +20,28 @@
         <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
         <criteriaItems>
             <column>Call_Answering__c.Setup_Submit_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>9/1/2015 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Setup_Submit_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>9/30/2015 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Setup_Complete_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>9/30/2015 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Setup_Complete_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>9/30/2015 12:00 AM</value>

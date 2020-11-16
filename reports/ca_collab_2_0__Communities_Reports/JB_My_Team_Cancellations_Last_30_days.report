@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Account$Sales_Rep_Name_YL__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Frank Castillo,Emily Sloyer,Christopher Harris,Angelica De Alba,Taylor Levos,Austin Sims,Jesse Campos</value>

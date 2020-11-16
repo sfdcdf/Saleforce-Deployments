@@ -62,12 +62,14 @@
     <filter>
         <criteriaItems>
             <column>Case.LiveChatTranscripts$AverageResponseTimeOperator</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>miles bloxson,kyle girardi,paul ware,Ryan McDonald,Matt Keehn,Jarrah Garrett,Andrew Salazar,Beth Shorter,Bonnie Jenkins,Courtney Christian,Emma McCrary,Mila Raisovich,Sara Davis,Laura Gentry,Shaneka Hill,Tamika Seda</value>

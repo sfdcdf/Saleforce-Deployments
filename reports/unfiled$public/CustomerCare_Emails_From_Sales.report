@@ -18,18 +18,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Cases$Origin</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>customercare@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$SuppliedEmail</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Description</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Quality Monitoring Professional,Quality Support Specialist</value>

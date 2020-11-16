@@ -53,12 +53,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS_Operations__c.Upsell_Tracking</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,jackie riedl,erik vicars,makenzie cunningham,elayne hoover,rory diller,sherri aguinaga</value>

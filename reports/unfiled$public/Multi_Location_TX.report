@@ -48,18 +48,21 @@
     <filter>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Ellie McIntyre</value>
         </criteriaItems>
         <criteriaItems>
             <column>ADDRESS1_STATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TX</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_Company_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>multi</value>

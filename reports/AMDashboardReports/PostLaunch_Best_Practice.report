@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Evaluation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Post Launch Associate Queue</value>

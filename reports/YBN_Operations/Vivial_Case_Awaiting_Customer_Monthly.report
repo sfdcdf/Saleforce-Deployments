@@ -39,12 +39,14 @@
     <filter>
         <criteriaItems>
             <column>HSTATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Awaiting Customer Response</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.Partner_Inbound_Inquiry,Case.XJen_Test_NCS_No_Use</value>

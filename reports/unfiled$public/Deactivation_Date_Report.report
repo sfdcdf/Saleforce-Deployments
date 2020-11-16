@@ -15,6 +15,7 @@
     <filter>
         <criteriaItems>
             <column>ObjectHistory__c.FieldName__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Deactivation Date</value>

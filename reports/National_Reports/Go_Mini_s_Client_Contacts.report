@@ -30,6 +30,7 @@
     <filter>
         <criteriaItems>
             <column>PARENT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Go Minis</value>

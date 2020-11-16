@@ -48,18 +48,21 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Forms__c.CSC_Essentials_Total_Grade__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller_Team__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Kent Warren</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Max,Organic</value>

@@ -27,12 +27,14 @@
     <filter>
         <criteriaItems>
             <column>Activity$Assigned_To_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Press Miller,Taylor Hess</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$CallDurationInSeconds</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>1</value>

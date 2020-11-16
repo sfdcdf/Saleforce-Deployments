@@ -18,18 +18,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Outbound_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Adoption Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>miles bloxson,kyle girardi,paul ware,Ryan McDonald,Matt Keehn,Jarrah Garrett,Andrew Salazar,Beth Shorter,Bonnie Jenkins,Courtney Christian,Emma McCrary,Mila Raisovich,Sara Davis,Laura Gentry,Shaneka Hill</value>

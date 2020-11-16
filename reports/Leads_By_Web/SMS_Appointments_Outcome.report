@@ -18,6 +18,7 @@
     <filter>
         <criteriaItems>
             <column>FK_$Account.Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

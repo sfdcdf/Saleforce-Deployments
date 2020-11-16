@@ -102,12 +102,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Best_Practice_Evaluation__c.QA_Audit</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c.User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Jay Skelton,Jacki Breen,Tyler Gerrior,Angus MacNeil,Chris Halverson,Phillip Harpell,Sarah Taft,Kelsey MacLennan</value>

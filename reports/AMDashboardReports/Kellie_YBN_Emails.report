@@ -54,12 +54,14 @@
     <filter>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>google listing maintenance</value>
         </criteriaItems>
         <criteriaItems>
             <column>EMAILTEMPLATENAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Google Shared Listing Instructions - Centermark</value>

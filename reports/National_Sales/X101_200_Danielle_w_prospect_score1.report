@@ -24,24 +24,28 @@
     <filter>
         <criteriaItems>
             <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National-Master Prospect</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_SDR_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>danielle krieg</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_Segment_Color__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>green,yellow</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Number_of_Locations__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>101-200 (Large)</value>

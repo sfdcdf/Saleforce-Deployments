@@ -40,30 +40,35 @@
     <filter>
         <criteriaItems>
             <column>National_Support_Request__c.Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Jeremy&apos;s Powerhouse Gym</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National_Support_Request__c.Proposal_Contract_Review_for_Existing</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Sub_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Proposal Approved,Contract Approved</value>
         </criteriaItems>
         <criteriaItems>
             <column>National_Support_Request__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed</value>

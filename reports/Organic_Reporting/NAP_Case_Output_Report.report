@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.PIN_Team_Agent__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Jeffrey Brown,Joseph Sanchez,Michal Swiader,Bryan Chapman,Rhonda Maxius,Charles Thomas,Josh Cooper</value>

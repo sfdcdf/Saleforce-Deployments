@@ -34,18 +34,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Closing_Script_Auto_Launch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Developmental_Supervisor_del__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Michael Ray,Candace Luther,Andrew Johnson,Stephanie Nassib,Katy Good,William Campbell,Kyle Campbell,Justin Joseph,Patrick Barrett,Martin Kearns</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Sales_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Colin King,John Daly,Justin Purkeypile,Andrew Mcmath</value>

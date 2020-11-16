@@ -34,12 +34,14 @@
     <filter>
         <criteriaItems>
             <column>LEAD_SOURCE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>JCI Portal</value>
         </criteriaItems>
         <criteriaItems>
             <column>FIRST_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>test</value>

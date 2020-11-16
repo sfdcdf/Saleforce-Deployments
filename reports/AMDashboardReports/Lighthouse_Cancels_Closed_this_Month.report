@@ -68,48 +68,56 @@
         <booleanFilter>((1 AND 2 AND 3 AND 7) OR (1 AND 2 AND 3 AND 4 AND 5 AND 6)) AND 8</booleanFilter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Cancellation_Request__c.LH_Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Cancellation_Code__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Charge Failure</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Cancellation_Code_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>includes</operator>
             <value>Pricing Initiative</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Cancellation_Code_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>excludes</operator>
             <value>3rd Party Sync,Acquisition - Leaving for Competitor,Auto-Confirm Issues,Better Confirmation Support,Better Review Solicitation,Business Too Small To See Value,Calendar/Schedule Issues,Client Did Not Provide Info,Closing Practice / Shop,Consolidating Accounts,Consumables Pricing,Don&apos;t Have Funds,Existing Contract,Free OBC,Incorrect Billing,Issues with Social,Lack of Value - Automated Messages,Lack of Value - Essentials,Message/Patient History,Message Customization,Misc Portal Issue,Newsletters,No Follow Up from CS,Not Enough Training,Office Error,Online Bill Pay / Payments,Out of Sync Errors,Paperless Records / Online Patient Forms,Patient Confirmation Issues,Phone System Offers Messaging,PMS Offers Messaging,Poor Call Quality,Poor Lead Volume,Poor ROI,Portal for Patients,Print Functionality,Recall Reactivation Issue,Reports/Reporting,Sales Expectations,Seasonality,Self-Service Message Schedule,Selling Practice / Shop,Setup Error</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Cancellation_Code_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>excludes</operator>
             <value>Technical Issues/Bug,Texting (Fresh Text),Texting (Mass Text),Texting (TWT),Unable to Collect Payment,Unscheduled Treatment Plan,Unsupported PMS/SMS,User Permissions,Price Compared to Competitor</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Cancellation_Code_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>excludes</operator>
             <value>Pricing Initiative</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Ads</value>

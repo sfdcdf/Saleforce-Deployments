@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
         <fullName>CS_Operations_New_Request_Alert_New</fullName>
         <description>CS Operations New Request Alert New</description>
         <protected>false</protected>
@@ -8,7 +9,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/CS_Ops_Alert_New</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>CS_Operations_New_Request_to_be_estimated2</fullName>
         <description>CS Operations - New Request to be estimated</description>
         <protected>false</protected>
@@ -17,7 +19,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/CS_Ops_Alert_New</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>CS_Operations_New_Request_to_be_reviewed_by_channel_lead</fullName>
         <description>CS Operations - New Request to be reviewed by channel lead</description>
         <protected>false</protected>
@@ -27,7 +30,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/CS_Operations_New_Change_Request_to_Channel_Lead</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>CS_Operations_Project_Backlogged_By_Channel_Lead</fullName>
         <description>CS Operations Project Backlogged By Channel Lead</description>
         <protected>false</protected>
@@ -37,7 +41,8 @@
         <senderAddress>csops@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CS_Ops_Object/CS_Operations_Project_Declined_By_Channel_Lead</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>CS_Ops_Auto_Assign_Sophie</fullName>
         <ccEmails>sfdc@yodle.com</ccEmails>
         <description>CS Ops - Auto Assign Sophie</description>
@@ -48,7 +53,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>CS_Ops_Object/CS_Ops_Auto_Assign_Sophie</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>CS_Ops_In_Progress_Request</fullName>
         <description>CS Ops - In Progress Request</description>
         <protected>false</protected>
@@ -58,7 +64,8 @@
         <senderAddress>sfdc@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CS_Ops_Object/CS_Ops_In_Progress</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>CS_Ops_In_Review_Request</fullName>
         <description>CS Ops - In Review Request</description>
         <protected>false</protected>
@@ -68,7 +75,8 @@
         <senderAddress>csops@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CS_Ops_Object/CS_Ops_In_Review_Request</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>CS_Ops_Ineligibility_Request</fullName>
         <description>CS Ops - Ineligibility Request</description>
         <protected>false</protected>
@@ -78,7 +86,8 @@
         <senderAddress>csops@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CS_Ops_Object/CS_Ops_Ineligible_Request</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>CS_Ops_On_Hold_Request</fullName>
         <description>CS Ops - On Hold Request</description>
         <protected>false</protected>
@@ -88,7 +97,8 @@
         <senderAddress>csops@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CS_Ops_Object/CS_Ops_On_Hold_Request</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>CS_Ops_Operations_Request_Completed</fullName>
         <description>CS Ops - Operations Request Completed</description>
         <protected>false</protected>
@@ -98,7 +108,8 @@
         <senderAddress>sfdc@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Support/CS_Ops_Request_Completed</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>CS_Ops_Strategic_Account_Growth_Ineligible_Request</fullName>
         <ccEmails>aelbaum@yodle.com</ccEmails>
         <description>CS Ops - Strategic Account Growth Ineligible Request</description>
@@ -110,7 +121,8 @@
         <senderAddress>csops@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CS_Ops_Object/CS_Ops_Strategic_Account_Growth_Ineligible_Request</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>CS_Ops_Strategic_Account_Growth_Request_Added</fullName>
         <ccEmails>aelbaum@yodle.com</ccEmails>
         <description>CS Ops - Strategic Account Growth Request Added</description>
@@ -122,7 +134,8 @@
         <senderAddress>csops@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CS_Ops_Object/CS_Ops_Strategic_Account_Growth_Request_Added</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>New_Ops_Request_Submitted_Sent_email_to_creator</fullName>
         <description>New Ops Request Submitted - Sent email to creator</description>
         <protected>false</protected>
@@ -132,7 +145,8 @@
         <senderAddress>sfdc@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Support/New_Ops_Request_Email_to_Creator2</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>YBN_approval_denied_for_account_update</fullName>
         <description>YBN approval denied for account update</description>
         <protected>false</protected>
@@ -141,7 +155,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Leadership_Approval_Denied</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>YBn_e</fullName>
         <description>YBn - email ybn leadership for approval</description>
         <protected>false</protected>
@@ -159,7 +174,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Leadership_Approval_Needed</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>email_alert_to_michele_for_account_service_level_change</fullName>
         <description>email alert to michele for account service level change</description>
         <protected>false</protected>
@@ -169,7 +185,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_IL_Service_Level_Approval</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>ybn_account_updateapproved</fullName>
         <description>ybn account update approved</description>
         <protected>false</protected>
@@ -179,7 +196,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_accoutn_update_approved</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>ybn_new_ops_request_email_alert</fullName>
         <description>ybn - new ops request email alert</description>
         <protected>false</protected>
@@ -189,7 +207,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/CS_Ops_Alert_New</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>ybn_notify_creator_case_is_completed</fullName>
         <description>ybn notify creator case is completed</description>
         <protected>false</protected>
@@ -198,7 +217,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_operations_case_completed</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>ybn_servic_level_update</fullName>
         <ccEmails>ybnoperations@yodle.com</ccEmails>
         <description>ybn -servic level update</description>
@@ -213,7 +233,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Leadership_Approval_Needed</template>
-    </alerts><fieldUpdates>
+    </alerts>
+    <fieldUpdates>
         <fullName>CS_Operations_Closed_Date</fullName>
         <field>Closed_Date__c</field>
         <formula>today()</formula>
@@ -221,7 +242,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CS_Operations_Date_Approved_To_Today</fullName>
         <field>Date_Approved_by_Channel_Lead__c</field>
         <formula>TODAY()</formula>
@@ -229,7 +252,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CS_Operations_Opened_Date</fullName>
         <field>Opened_Date__c</field>
         <formula>today()</formula>
@@ -237,7 +262,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CS_Operations_Owner_to_Sophie_Lavin</fullName>
         <field>OwnerId</field>
         <lookupValue>mary.kellum@yodle.com</lookupValue>
@@ -246,7 +273,9 @@
         <notifyAssignee>true</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CS_Operations_Owner_to_YBN_Operations</fullName>
         <field>OwnerId</field>
         <lookupValue>YBN_Operations</lookupValue>
@@ -255,7 +284,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CS_Operations_Status_to</fullName>
         <field>Status__c</field>
         <literalValue>Pending Channel Lead</literalValue>
@@ -263,7 +294,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CS_Operations_Status_to_Pending_Estimate</fullName>
         <field>Status__c</field>
         <literalValue>Pending Estimate</literalValue>
@@ -271,7 +304,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CS_Ops_Expected_Completion_Date</fullName>
         <field>Expected_Completion_Date__c</field>
         <formula>Today() + 7</formula>
@@ -279,7 +314,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CS_Ops_Request_Owner</fullName>
         <field>OwnerId</field>
         <lookupValue>CSOperations275821</lookupValue>
@@ -288,7 +325,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CS_Ops_Status_In_Progress</fullName>
         <field>Status__c</field>
         <literalValue>In Progress</literalValue>
@@ -296,7 +335,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CS_Ops_Status_to_Pending_Ops_Assignment</fullName>
         <field>Status__c</field>
         <literalValue>Pending Ops Assignment</literalValue>
@@ -304,7 +345,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CS_Ops_Web_Dev_Escalation</fullName>
         <field>OwnerId</field>
         <lookupValue>scornwall@yodle.com</lookupValue>
@@ -313,7 +356,9 @@
         <notifyAssignee>true</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Classification_Field</fullName>
         <field>Classification__c</field>
         <literalValue>Administrative</literalValue>
@@ -321,7 +366,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Classification_Field_for_Jira_Tic</fullName>
         <field>Classification__c</field>
         <literalValue>New Request</literalValue>
@@ -329,7 +376,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Upsell_Cases_to_CS_Operations</fullName>
         <field>OwnerId</field>
         <lookupValue>CSOperations275821</lookupValue>
@@ -338,7 +387,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>YBN_Account_Update</fullName>
         <field>OwnerId</field>
         <lookupValue>YBN_Leadership</lookupValue>
@@ -347,7 +398,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>YBN_approval_status_request_denied</fullName>
         <field>Status__c</field>
         <literalValue>Closed - Not Approved</literalValue>
@@ -355,7 +408,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>YBN_status_update</fullName>
         <field>Status__c</field>
         <literalValue>Pending approval from YBN Leadership</literalValue>
@@ -363,7 +418,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>update_ops_owner</fullName>
         <field>OwnerId</field>
         <lookupValue>mbrevig@yodle.com</lookupValue>
@@ -372,7 +429,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>update_to_operations_owner</fullName>
         <field>OwnerId</field>
         <lookupValue>YBN_Operations</lookupValue>
@@ -381,7 +440,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><rules>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
         <fullName>Add Administrative on Operations Cases</fullName>
         <actions>
             <name>Update_Classification_Field</name>
@@ -394,7 +455,8 @@
             <value>Application Request/Changes,Essentials Features Request</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Operation Owner Alert</fullName>
         <actions>
             <name>CS_Operations_New_Request_to_be_estimated2</name>
@@ -403,7 +465,8 @@
         <active>false</active>
         <formula>And(  RecordType.Id ="012600000009XNe", ischanged (  OwnerId  ))</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Operations Estimate Complete</fullName>
         <actions>
             <name>CS_Operations_New_Request_to_be_reviewed_by_channel_lead</name>
@@ -443,7 +506,8 @@
             <value>Change/Project</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Operations Estimate Complete for Error Fix</fullName>
         <actions>
             <name>CS_Ops_Request_Owner</name>
@@ -470,7 +534,8 @@
             <value>Fixing Error</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Auto Assign Sophie</fullName>
         <actions>
             <name>CS_Ops_Auto_Assign_Sophie</name>
@@ -512,7 +577,8 @@
             <value>YBN</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Auto Assign YBN Operations</fullName>
         <actions>
             <name>CS_Operations_Owner_to_YBN_Operations</name>
@@ -546,7 +612,8 @@
             <value>YBN</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Closed Date</fullName>
         <actions>
             <name>CS_Operations_Closed_Date</name>
@@ -559,7 +626,8 @@
             <value>Closed</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Date Approved by Channel Lead To Today</fullName>
         <actions>
             <name>CS_Operations_Date_Approved_To_Today</name>
@@ -583,7 +651,8 @@
             <value>National</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Expected Completion Date</fullName>
         <actions>
             <name>CS_Ops_Expected_Completion_Date</name>
@@ -601,7 +670,8 @@
             <value>National Project Request</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - In Progress Request</fullName>
         <actions>
             <name>CS_Ops_In_Progress_Request</name>
@@ -624,7 +694,8 @@
             <value>Lighthouse,Local,Operations,OPT,Partner,Performance,SEM Marketing Ops,SEO Marketing Ops</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - In Review Request</fullName>
         <actions>
             <name>CS_Ops_In_Review_Request</name>
@@ -642,7 +713,8 @@
             <value>Administrative Items,Operations Help Desk,Batch Uploads,SalesForce Assistance,National Project,Weekly Reports Update</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Ineligible Request</fullName>
         <actions>
             <name>CS_Ops_Ineligibility_Request</name>
@@ -660,7 +732,8 @@
             <value>Closed - Not Eligible</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - On Hold Request</fullName>
         <actions>
             <name>CS_Ops_On_Hold_Request</name>
@@ -678,7 +751,8 @@
             <value>Administrative Items,Batch Uploads &amp; Changes,Operations Help Desk,SalesForce Assistance,Weekly Reports Assistance</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Opened Date</fullName>
         <actions>
             <name>CS_Operations_Opened_Date</name>
@@ -690,7 +764,8 @@
             <operation>notEqual</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Operation Upsell Additions</fullName>
         <actions>
             <name>CS_Ops_Status_In_Progress</name>
@@ -718,7 +793,8 @@
             <value>True</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Operations Request</fullName>
         <actions>
             <name>CS_Ops_Status_to_Pending_Ops_Assignment</name>
@@ -736,7 +812,8 @@
             <value>Operations Request</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Operations Request Complete</fullName>
         <actions>
             <name>CS_Ops_Operations_Request_Completed</name>
@@ -749,7 +826,8 @@
             <value>Closed - Added,Closed - Not Eligible,Closed - Completed/Updates Made,Closed - Completed,Closed - Could Not Complete,Closed - Review for CS Ops Plan,Closed - Declined by Channel Lead,Closed - Not Approved</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Owner CS Operations NEW</fullName>
         <actions>
             <name>CS_Operations_New_Request_Alert_New</name>
@@ -773,7 +851,8 @@
 Field update to operations owner
 Email Alert to the person who submitted the request with the details of their request</description>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Partner Escalation</fullName>
         <active>false</active>
         <criteriaItems>
@@ -792,7 +871,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>False</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Project Declined by Channel Lead</fullName>
         <actions>
             <name>CS_Operations_Project_Backlogged_By_Channel_Lead</name>
@@ -805,7 +885,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Closed - Declined by Channel Lead</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Request Owner</fullName>
         <actions>
             <name>CS_Ops_Request_Owner</name>
@@ -844,7 +925,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>YBN Operations Request</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Strategic Account Growth Ineligible Request</fullName>
         <actions>
             <name>CS_Ops_Strategic_Account_Growth_Ineligible_Request</name>
@@ -862,7 +944,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Closed - Not Eligible</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Strategic Account Growth Request Added</fullName>
         <actions>
             <name>CS_Ops_Strategic_Account_Growth_Request_Added</name>
@@ -880,7 +963,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Strategic Account Growth Addition</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>CS Ops - Web Dev Escalation</fullName>
         <actions>
             <name>CS_Ops_Web_Dev_Escalation</name>
@@ -903,7 +987,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>False</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Essentials Features Request - Assign to Sophie</fullName>
         <actions>
             <name>CS_Operations_Owner_to_Sophie_Lavin</name>
@@ -916,7 +1001,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Essentials Features Request</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Operations Estimate to CS Operations</fullName>
         <actions>
             <name>CS_Operations_New_Request_to_be_estimated2</name>
@@ -952,7 +1038,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Administrative Items,Operations Help Desk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Operations Estimate to Ellie - YBN</fullName>
         <actions>
             <name>CS_Operations_New_Request_to_be_estimated2</name>
@@ -983,7 +1070,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Administrative Items,Operations Help Desk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Classification Field for Jira Tickets</fullName>
         <actions>
             <name>Update_Classification_Field_for_Jira_Tic</name>
@@ -1000,7 +1088,8 @@ Email Alert to the person who submitted the request with the details of their re
             <operation>notEqual</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>WBN Cases to YBN Operations</fullName>
         <actions>
             <name>update_to_operations_owner</name>
@@ -1018,7 +1107,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Request New Account</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>YBN - Needs Michele Brevig Approval</fullName>
         <actions>
             <name>email_alert_to_michele_for_account_service_level_change</name>
@@ -1045,7 +1135,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Service Level Update/Assignment</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>YBN - SD Assignment</fullName>
         <actions>
             <name>YBn_e</name>
@@ -1071,7 +1162,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Request New Account</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>YBN AD Assignment</fullName>
         <actions>
             <name>ybn_new_ops_request_email_alert</name>
@@ -1088,7 +1180,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Account Director Assignment/Update</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>YBN approval status - request approved</fullName>
         <actions>
             <name>ybn_account_updateapproved</name>
@@ -1130,7 +1223,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Pending approval from YBN Leadership</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>YBN approval status - request denied</fullName>
         <actions>
             <name>YBN_approval_denied_for_account_update</name>
@@ -1153,7 +1247,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Request Denied</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>YBN new ops request alert</fullName>
         <actions>
             <name>update_to_operations_owner</name>
@@ -1171,7 +1266,8 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Request New Account</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>ybn operations request completed</fullName>
         <actions>
             <name>ybn_notify_creator_case_is_completed</name>
@@ -1189,4 +1285,5 @@ Email Alert to the person who submitted the request with the details of their re
             <value>Closed - Completed/Updates Made</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules></Workflow>
+    </rules>
+</Workflow>

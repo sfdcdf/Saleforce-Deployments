@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>Account$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$StageName</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Solution,Contract,M001 - Set Local Demo,M002 - Complete local demo (IL),M003 - Contract (IL),Closed Won,Closed Lost,Adoption,Qualify,Educate,Validate,Negotiate,Long Term Nurture,Demo - Hold,In Discussion,TBD,Implementation,Submit for Approval</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Kevin Noonan,Nick Dispenza,Nimish Amin,Josh Schure,Zack Fishman,Andrew Little,Rick Basch</value>

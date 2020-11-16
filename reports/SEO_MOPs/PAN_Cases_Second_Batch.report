@@ -69,24 +69,28 @@
         <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.PIN_Action_Needed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>7/27/2016 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>134840,143537,174873,185165,193538,207986,239022,243367,244137,244402,244675,244778,244876,244905,244928,244965,245163,245173,245183,245335,245343,245364,245388,245504,245510,245512,245771,245775,245816,245911,245974,245986,245993,246002,246003,246101,246125,246141,246150,246207,246230,246242,246308,246347,246350,246353,246384,246405,246577,246579,246610,246720,246803,246835,246837,246856,246864,246893,246937,246965,247073,247139,247509,247601,247909,248126,248175,249080,249206,249338,249358,249386,250016,250191,250503,250548,250550,250642,250747,250767,250770,250819,250860,250898,250903,251065,251111,251216,251324,251375,251411,251516,251579,178611,222043,222564,245472,247804,247821,247945,247986,248155,248193,248261,248394,248457,248488,249775,249831,249954,249999,250037,250045,250846</value>

@@ -35,18 +35,21 @@
         <booleanFilter>(1 OR 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>Call_Answering__c.Call_Answering_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Change Requested,Question/Issue,Cancel Service,Active</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Answering__c.Cancel_Complete_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>9/30/2015 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>9/30/2015 12:00 AM</value>

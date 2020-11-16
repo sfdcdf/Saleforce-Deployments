@@ -27,18 +27,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.YBNRequestReason__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>PImS</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Created_by_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Solutions Architect</value>

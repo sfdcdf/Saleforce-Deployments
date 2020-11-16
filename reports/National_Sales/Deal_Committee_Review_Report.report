@@ -45,12 +45,14 @@
     <filter>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Solution</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPP_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity</value>

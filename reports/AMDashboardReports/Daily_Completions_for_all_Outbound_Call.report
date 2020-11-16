@@ -21,6 +21,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Completed_Call_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

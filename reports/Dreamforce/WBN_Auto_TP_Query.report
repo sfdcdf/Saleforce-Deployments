@@ -39,30 +39,35 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Account.Standard,Account.YBN_Corporate_Relationship</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.YBN_Relationship__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Hand &amp; Stone - Master,Senior Helpers,Maaco</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Individual_Location_Service_Level__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Service Level A+,Service Level A</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>National Account,National Master Account,YBN</value>

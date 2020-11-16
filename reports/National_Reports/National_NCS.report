@@ -75,24 +75,28 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.New_Client_Setup,Case.SEO_Tasks,012600000009TfB</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>howe,lytton,pyle,delaura,mcmillian,mullaley,vielleux,normoyle,o’leary,wilder,otrezov,eisenmenger,lilly,davis,stone,blouin,clark,elbaum,locke,mccurdy,emmanuelidis,gertz,smith,schill,archueleta,goldfarb,lamanna,liesch,pagonas,machado,garrison</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>post-launch</value>

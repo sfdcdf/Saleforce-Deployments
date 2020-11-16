@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
         <fullName>MLS_Worksheet_Email_Completed_Notice</fullName>
         <description>MLS Worksheet - Email Completed Notice</description>
         <protected>false</protected>
@@ -8,7 +9,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/MLS_Worksheet_Complete</template>
-    </alerts><fieldUpdates>
+    </alerts>
+    <fieldUpdates>
         <fullName>MLS_Worksheet_Subject</fullName>
         <field>Subject__c</field>
         <formula>"MLS Setup for Client "+ Account_Name__r.Client_ID__c</formula>
@@ -16,7 +18,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Populate_Client_s_Phone_Number</fullName>
         <field>Client_Phone_Number__c</field>
         <formula>Account_Name__r.Phone</formula>
@@ -24,7 +28,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Client_ID_Field</fullName>
         <field>Client_ID__c</field>
         <formula>Account_Name__r.Client_ID__c</formula>
@@ -32,7 +38,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><rules>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
         <fullName>MLS Subject Populate</fullName>
         <actions>
             <name>MLS_Worksheet_Subject</name>
@@ -49,7 +57,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Populate Client%27s Phone Number</fullName>
         <actions>
             <name>Populate_Client_s_Phone_Number</name>
@@ -61,7 +70,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Client ID Field</fullName>
         <actions>
             <name>Update_Client_ID_Field</name>
@@ -73,7 +83,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>MLS Worksheet - Email Setup Team When Complete</fullName>
         <actions>
             <name>MLS_Worksheet_Email_Completed_Notice</name>
@@ -92,4 +103,5 @@
         </criteriaItems>
         <description>This WFR emails the MLS Setup team when ticket is Completed</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules></Workflow>
+    </rules>
+</Workflow>

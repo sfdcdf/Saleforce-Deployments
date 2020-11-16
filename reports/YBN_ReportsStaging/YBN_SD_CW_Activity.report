@@ -50,6 +50,7 @@
     <filter>
         <criteriaItems>
             <column>Activity.created_by_profile__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National Sales - NAM</value>

@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Local Pod Queue,Shelia Kelly</value>

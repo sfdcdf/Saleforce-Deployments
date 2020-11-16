@@ -21,24 +21,28 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Attempts_to_Contact__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>1,2,3,4,5,6,7+</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Retention</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>call</value>

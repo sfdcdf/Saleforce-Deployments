@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Case.QA_Partner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>bridgers,carr,dimaggio,golden,gett,warrichaiet</value>

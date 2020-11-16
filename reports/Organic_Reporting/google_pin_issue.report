@@ -30,18 +30,21 @@
     <filter>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>SFDC Sync</value>
         </criteriaItems>
         <criteriaItems>
             <column>field_key</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Google Listing Status</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.G_Pin_Receipt__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>10/3/2015</value>

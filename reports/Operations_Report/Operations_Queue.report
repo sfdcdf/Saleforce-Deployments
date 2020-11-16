@@ -30,24 +30,28 @@
     <filter>
         <criteriaItems>
             <column>CS_Operations__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>CS_Operations__c.Upsell_Tracking,CS_Operations__c.Operation_Upsell_Additions,CS_Operations__c.YO_2_0_Free_Time_Request,CS_Operations__c.Strategic_Account_Growth_Addition,CS_Operations__c.National_Project_Request,CS_Operations__c.YBN_Operations_Request,CS_Operations__c.CS_Nomination_Form</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Long Term Project/Plan</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS Operations</value>

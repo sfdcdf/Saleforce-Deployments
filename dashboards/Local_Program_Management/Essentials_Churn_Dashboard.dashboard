@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -16,6 +16,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
+            <groupingSortProperties />
             <header>Cancel Requests: Current Calendar Year</header>
             <legendPosition>Bottom</legendPosition>
             <report>Local_Program_Management/Cancellation_Codes_Last_30_Essentials</report>
@@ -34,6 +35,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>Local_Program_Management/ME_Cancellation_Codes_Last_30_C</report>
             <showPercentage>true</showPercentage>
@@ -51,6 +53,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>Local_Program_Management/ME_Cancellation_Codes_Last_30_Saved</report>
             <showPercentage>true</showPercentage>
@@ -68,6 +71,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>Cancellation Codes - MOM</header>
             <legendPosition>Bottom</legendPosition>
             <report>Local_Program_Management/ME_Cancellation_Codes_MOM</report>
@@ -89,6 +93,7 @@
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
             <footer>Limited to top 10</footer>
+            <groupingSortProperties />
             <header>Cancel Requests Re: Web - Last 30</header>
             <legendPosition>Bottom</legendPosition>
             <maxValuesDisplayed>10</maxValuesDisplayed>
@@ -107,6 +112,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>Cancel Requests Re: Current Features - Last 30</header>
             <legendPosition>Bottom</legendPosition>
             <report>Local_Program_Management/ME_Cancellation_Codes_Current_Features</report>
@@ -121,6 +127,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <header>Cancel Requests Re: Missing Features - Last 30</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -139,6 +146,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>Limited to top 20</footer>
+            <groupingSortProperties />
             <header>New Sales By Segment - Last 30</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -155,6 +163,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>Limited to top 20</footer>
+            <groupingSortProperties />
             <header>Cancellation By Segment - Last 30</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -173,6 +182,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>Lost to Competitor - MOM</header>
             <legendPosition>Bottom</legendPosition>
             <report>Local_Program_Management/ME_Cancellation_Codes_By_Competitor</report>

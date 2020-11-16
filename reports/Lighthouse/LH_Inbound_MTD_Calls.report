@@ -10,18 +10,21 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Case_Owner_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Kyle Day,Shannon Vaughn,Christopher Baker,Brooke Grossman</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Karen MacNeil,Marjorie Goodyear</value>

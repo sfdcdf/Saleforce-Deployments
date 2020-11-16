@@ -12,18 +12,21 @@
     <filter>
         <criteriaItems>
             <column>Case.IMS_Completing_Opt2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Matt Austin</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT_ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Miracle</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Request</value>

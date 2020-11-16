@@ -54,12 +54,14 @@
     <filter>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>How To Add Yodle As A Co-Manager</value>
         </criteriaItems>
         <criteriaItems>
             <column>EMAILTEMPLATENAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Google Shared Listing Instructions - Yodle</value>

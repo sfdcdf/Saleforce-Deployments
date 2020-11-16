@@ -21,36 +21,42 @@
     <filter>
         <criteriaItems>
             <column>Account$AdStation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>OFF</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Days_Since_Live__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>2</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>012600000009TzQ</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>goldfarb,normoyle,turk</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Live_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LAST_N_DAYS:8</value>

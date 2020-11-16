@@ -31,24 +31,28 @@
         <booleanFilter>((1 or 2) AND 3) AND 4</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account Acceptance Issue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_for_AA_Issue__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Deactivation_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>THIS_MONTH,LAST_N_MONTHS:4</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Moving_Forward__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Rejected</value>

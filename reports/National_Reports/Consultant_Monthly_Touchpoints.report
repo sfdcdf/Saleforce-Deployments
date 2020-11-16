@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Month 1 Check In,Monthly Touch Point</value>

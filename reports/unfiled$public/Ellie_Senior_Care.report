@@ -48,12 +48,14 @@
     <filter>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>ryan volkel,ellie mcintyre</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Segment_YL__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>assisted living home,home health care provider,nursing homes,respite</value>

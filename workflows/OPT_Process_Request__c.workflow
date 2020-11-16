@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
         <fullName>Alert_Channel_Lead_of_New_Request</fullName>
         <description>Alert Channel Lead of New Request</description>
         <protected>false</protected>
@@ -8,7 +9,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Alert_to_Channel_Lead_For_Organic_Process_Request</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>Organic_Process_Request_Alert_Creator_In_Progress</fullName>
         <description>Organic Process Request - Alert Creator In Progress</description>
         <protected>false</protected>
@@ -17,7 +19,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Organic_Process_Request_In_Progress</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>Organic_Process_Request_Alert_John_King_of_Rogers_MOPs_Update</fullName>
         <description>Organic Process Request - Alert John King of Rogers MOPs Update</description>
         <protected>false</protected>
@@ -27,7 +30,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Organic_Process_Request_Completed</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>Organic_Process_Request_Alert_Michal_of_Web_Dev_Update</fullName>
         <description>Organic Process Request - Alert Michal of Web Dev Update</description>
         <protected>false</protected>
@@ -37,7 +41,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Organic_Process_Request_Completed</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>Organic_Process_Request_Alert_Rusty_of_MA_Update</fullName>
         <description>Organic Process Request - Alert Rusty of MA Update</description>
         <protected>false</protected>
@@ -47,7 +52,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Organic_Process_Request_Completed</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>Organic_Process_Request_Alert_User_Channel_Lead_Approved</fullName>
         <description>Organic Process Request - Alert User Channel Lead Approved</description>
         <protected>false</protected>
@@ -56,7 +62,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Organic</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>Organic_Process_Request_Status_Moved_to_Completed</fullName>
         <description>Organic Process Request - Status Moved to Completed</description>
         <protected>false</protected>
@@ -77,7 +84,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Organic_Process_Request_Completed</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>Organic_Process_Request_Status_Moved_to_Completed_Denied</fullName>
         <description>Organic Process Request - Status Moved to Completed Denied</description>
         <protected>false</protected>
@@ -86,7 +94,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Organic_Process_Request_Completed_Denied</template>
-    </alerts><fieldUpdates>
+    </alerts>
+    <fieldUpdates>
         <fullName>Assign_to_Organic_Process_Request_Queue</fullName>
         <field>OwnerId</field>
         <lookupValue>Production_Requests</lookupValue>
@@ -95,7 +104,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>OR_Proc_Req_Update_Approval_Date</fullName>
         <field>Approved_Date__c</field>
         <formula>Today()</formula>
@@ -103,7 +114,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>OR_Proc_Req_Update_Channel_Appr_Date</fullName>
         <field>Channel_Lead_Approval_Date__c</field>
         <formula>Today()</formula>
@@ -111,7 +124,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Organic_Process_Request_Created_Date</fullName>
         <description>Updates Created Date field on Organic Process Request Object with date on which object was created.</description>
         <field>Created_Date_2__c</field>
@@ -120,7 +135,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><rules>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
         <fullName>Organic Process Request - Created Date</fullName>
         <actions>
             <name>Organic_Process_Request_Created_Date</name>
@@ -133,7 +150,8 @@
         </criteriaItems>
         <description>Updates Created Date with date of creation.</description>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Organic Process Request - Status Completed%2C MA Impacted</fullName>
         <actions>
             <name>Organic_Process_Request_Alert_Rusty_of_MA_Update</name>
@@ -152,7 +170,8 @@
         </criteriaItems>
         <description>Organic Process Request status changed to "Completed" &amp; MA impacted</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Organic Process Request - Status Completed%2C Rogers Mops Impacted</fullName>
         <actions>
             <name>Organic_Process_Request_Alert_John_King_of_Rogers_MOPs_Update</name>
@@ -171,7 +190,8 @@
         </criteriaItems>
         <description>Organic Process Request status changed to "Completed" &amp; Rogers Mops impacted</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Organic Process Request - Status Completed%2C Web Dev Impacted</fullName>
         <actions>
             <name>Organic_Process_Request_Alert_Michal_of_Web_Dev_Update</name>
@@ -190,7 +210,8 @@
         </criteriaItems>
         <description>Organic Process Request status changed to "Completed" &amp; Web Dev as Impacted Team</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Organic Process Request - Status changed to Completed</fullName>
         <actions>
             <name>Organic_Process_Request_Status_Moved_to_Completed</name>
@@ -204,7 +225,8 @@
         </criteriaItems>
         <description>Organic Process Request status changed to "Completed"</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Organic Process Request - Status changed to Completed Denied</fullName>
         <actions>
             <name>Organic_Process_Request_Status_Moved_to_Completed_Denied</name>
@@ -218,7 +240,8 @@
         </criteriaItems>
         <description>Organic Process Request status changed to "Completed - Approval Denied"</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Organic Process Request - Status changed to In Progress</fullName>
         <actions>
             <name>Organic_Process_Request_Alert_Creator_In_Progress</name>
@@ -236,7 +259,8 @@
         </criteriaItems>
         <description>Organic Process Request status changed to "In Progress"</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Status changed to Pending MOPS OPT Discussion</fullName>
         <actions>
             <name>Organic_Process_Request_Alert_User_Channel_Lead_Approved</name>
@@ -254,7 +278,8 @@
         </criteriaItems>
         <description>Status changed to "Channel Lead Approved - Pending OPT/MOPS Discussion"</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Upon Creation Default to Channel Lead</fullName>
         <actions>
             <name>Alert_Channel_Lead_of_New_Request</name>
@@ -270,4 +295,5 @@
             <operation>notEqual</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules></Workflow>
+    </rules>
+</Workflow>

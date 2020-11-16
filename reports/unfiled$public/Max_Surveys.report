@@ -18,6 +18,7 @@
     <filter>
         <criteriaItems>
             <column>FK_$Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>max</value>

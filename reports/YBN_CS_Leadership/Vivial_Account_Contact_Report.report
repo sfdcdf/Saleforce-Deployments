@@ -37,18 +37,21 @@
         <booleanFilter>1 OR 2 OR 3</booleanFilter>
         <criteriaItems>
             <column>EMAIL</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>@vivial.net</value>
         </criteriaItems>
         <criteriaItems>
             <column>Contact.Alternate_Email__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>@vivial.net</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Alternate_Email__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>@vivial.net</value>

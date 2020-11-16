@@ -60,30 +60,35 @@
         <booleanFilter>((1 or 2) AND 3 AND 4) AND 5</booleanFilter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>lead stream support,local pod queue,lbw customer service,platinum support,Erika Persil,Jennifer Degreef,Keegan Sandman,Mark Nagy,Reagan Neely,Shelby Cowman,Kyler Wood,Jordan Sanchez,Ron Brown,Samantha Starett,Sara Davis,Sherri Aguinaga,Thad Dameris,Valerie Garner,Alvin Jobe,Alyson MacDonald,Angela Hoddinott,Blake MacPhee,Gwen Doyle,Karen Park,Kayla Muir,Kimberley Boutilier,Marilyn Slaunwhite,Mark Cosh,Robert Jones,Rondell Humphreys,Stephen Gerrior,Walter Rundle,April Law,Aaron Wilson,Erik Vicars,Shelia Kelly,Barb Jenkins,Leonard Edwards,Adam Kovacs,Amber Tamayo,James Brady,Paul Mascitti,Andrew Smith,Kathy Caldwell,Angela Snow,Kathryn Leadbeater,Marilyn Bray,Nina Avery,Kathleen Wilson</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Retention_Consultant__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LBWCustomerService@web.com,lbw support,diane mulkey,elayne hoover,erik vicars,jackie riedl,kelly o&apos;brien,lynn tobias,sherri aguinaga,rory diller,Makenzie Cunningham,local pod queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>call</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>am,pm</value>

@@ -61,12 +61,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Owner_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Jordan Sanchez,Keegan Sandman,Kyler Wood,Reagan Neely,Shelby Cowman</value>
         </criteriaItems>
         <criteriaItems>
             <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Call,Email,General To Do,Other</value>

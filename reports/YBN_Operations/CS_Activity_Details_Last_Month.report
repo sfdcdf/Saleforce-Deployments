@@ -30,6 +30,7 @@
     <filter>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Account Director A,YBN: Consultant,YBN: Senior Consultant,YBN: Customer Success Manager,YBN: Solutions Architect</value>

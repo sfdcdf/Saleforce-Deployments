@@ -98,24 +98,28 @@
         <booleanFilter>(1 AND 2 AND 3) AND 4</booleanFilter>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Amber Tamayo,amber woodhams</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.invoiced_last_mtd__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Next_Billing_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>NEXT_MONTH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Days_Live__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>56</value>

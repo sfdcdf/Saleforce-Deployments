@@ -45,36 +45,42 @@
     <filter>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web,clientsuccess@yodle.com,CS@Outrank.com,customercare@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPEN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>marketing ops</value>
         </criteriaItems>
         <criteriaItems>
             <column>WEBEMAIL</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>sfsync@yodle.com,itprosalesforce@yodle.com,customercare@yodle.com,noreply@yodle.com,no-reply@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>8/1/2015 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,email to case outrank support,local email queue,outrank customer support</value>

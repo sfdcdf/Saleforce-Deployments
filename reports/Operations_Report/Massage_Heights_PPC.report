@@ -37,18 +37,21 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>massage heights</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.PPC_Contract_Length__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>ppc</value>

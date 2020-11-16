@@ -31,12 +31,14 @@
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <column>Account$Parent</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Econo Lube N&apos; Tune &amp; Brakes (Meineke Partner)</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Econo Lube N&apos; Tune &amp; Brakes (Meineke Partner)</value>

@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National-Master Prospect</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_Segment_Color__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

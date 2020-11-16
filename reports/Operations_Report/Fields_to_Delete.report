@@ -15,6 +15,7 @@
     <filter>
         <criteriaItems>
             <column>Case.IMS_Follow_Up_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

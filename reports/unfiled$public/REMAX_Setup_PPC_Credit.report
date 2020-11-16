@@ -33,18 +33,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.XJen_Test_COBRA,Case.TORCHx_NCS_AutoLaunch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>TORCHx</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Promotional_PPC_Credit__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Criteria Met,Ads Provisioned and Credit Applied</value>

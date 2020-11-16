@@ -73,96 +73,112 @@
         <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 or 6 or 7 or 8) AND 9 AND 10 AND 11 AND (12 or 13 or 14 or 15) AND 16</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Client Refuses Claim,Owner-Verified/Pending Management,Owner-Verified/Managed,Un-Claimable</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Product_Type_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>ads,web</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>National,Partner Consultant,Partner Manager,YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_1_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Owner-Verified,Un-Claimable,Owner-Verified/Managed,Claiming in Client&apos;s Other Account,Cleaned Out Listing,&quot;Client&apos;s Other Listing, Do Not Claim&quot;,Report to Google,Removed by Google,Reported to Google,Do Not Claim</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_2_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Owner-Verified,Un-Claimable,Owner-Verified/Managed,Claiming in Client&apos;s Other Account,&quot;Client&apos;s Other Listing, Do Not Claim&quot;,Removed by Google,Report to Google,Reported to Google,Cleaned Out Listing,Do Not Claim</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_3_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Owner-Verified,Un-Claimable,Owner-Verified/Managed,Claiming in Client&apos;s Other Account,&quot;Client&apos;s Other Listing, Do Not Claim&quot;,Removed by Google,Report to Google,Reported to Google,Cleaned Out Listing,Do Not Claim</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_4_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Owner-Verified,Un-Claimable,Owner-Verified/Managed,Claiming in Client&apos;s Other Account,Cleaned Out Listing,Report to Google,Removed by Google,Reported to Google,Do Not Claim,&quot;Client&apos;s Other Listing, Do Not Claim&quot;</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$AdStation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Owner_Verified_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Owner-Verified/Pending Management,Owner-Verified/Managed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Product_Type_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Lighthouse Standalone</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_1_URL_IT_Pro__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_2_URL_IT_Pro__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_3_URL_IT_Pro__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_4_URL_IT_Pro__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_White_List_Test__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

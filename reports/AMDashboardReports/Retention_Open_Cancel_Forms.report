@@ -93,18 +93,21 @@
         <booleanFilter>1 AND 2 AND 3</booleanFilter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>kent warren,scott luikart,shelia kelly,nick johnson,kaylissa spurlock,local pod queue,diane mulkey,jackie riedl,Elayne Hoover,erik vicars,riedl,Sherri Aguinaga,rory diller,Makenzie Cunningham,kyle zaffin</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner_Manger__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Angela Anderson</value>

@@ -26,12 +26,14 @@
         <booleanFilter>1 or 2</booleanFilter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Andrew,Minert,Andrew Minert</value>
         </criteriaItems>
         <criteriaItems>
             <column>Performance_Analysis__c.Opt_Completed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Andrew,Minert,Andrew Minert</value>

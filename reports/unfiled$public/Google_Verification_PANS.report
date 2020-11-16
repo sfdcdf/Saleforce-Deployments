@@ -52,48 +52,56 @@
         <booleanFilter>((1 AND ((2 AND 3) or (3 AND 5) or 4)) AND 6 AND 7 AND 8)</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.PIN_Action_Needed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Setup_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>THIS_MONTH,LAST_MONTH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Cannot Complete,Closed,Delete Case,Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>New,In Progress,Scheduled Call,Pending Reattempt</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Closed_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>THIS_MONTH,LAST_MONTH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Parent</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Hand and Stone - Master,The Grove,Affordable Dentures,Mini U Storage,LivHOME,Maaco,Mr. Rooter,Aire Serv Heating &amp; Air Conditioning Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>ProSource</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Cannot_Complete_Reason__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Duplicate case</value>

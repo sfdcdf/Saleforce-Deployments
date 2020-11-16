@@ -21,6 +21,7 @@
     <filter>
         <criteriaItems>
             <column>CREATED_ALIAS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>ssync</value>

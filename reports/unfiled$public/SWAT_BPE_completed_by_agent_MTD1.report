@@ -21,18 +21,21 @@
     <filter>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Evaluation_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New,Closed,Complete- Review and Changes Needed,Complete- Review Only</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$Account_Setup_For__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Dana Parker,Matt Austin</value>
         </criteriaItems>
         <criteriaItems>
             <column>Best_Practice_Evaluation__c$User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Matt Austin</value>

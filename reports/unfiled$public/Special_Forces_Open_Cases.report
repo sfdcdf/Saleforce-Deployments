@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Victoria Cardosi,Ronald Lancaster,Benjamin Francois,Matthew Hausman,Joshua Cummings,Aaron Woodul,Trevor Bye,Samantha Starett,Elizabeth Koepke</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPEN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>0</value>

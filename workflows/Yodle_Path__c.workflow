@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
         <fullName>Email_for_Survey_on_Yodle_Path_Setup_Call_Complete</fullName>
         <description>Email for Survey on Yodle Path Setup Call Complete</description>
         <protected>false</protected>
@@ -9,7 +10,8 @@
         <senderAddress>kevinbiggs@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Support/Yodle_Path_Setup_Call_Survey</template>
-    </alerts><fieldUpdates>
+    </alerts>
+    <fieldUpdates>
         <fullName>Change_Record_Type</fullName>
         <field>RecordTypeId</field>
         <lookupValue>Coaching_Call_4th_Attempt</lookupValue>
@@ -18,7 +20,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Closed_Date</fullName>
         <field>Completed_Date__c</field>
         <formula>Today()</formula>
@@ -26,7 +30,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Set_Date</fullName>
         <field>Pass_Fail_Date__c</field>
         <formula>TODAY()</formula>
@@ -34,7 +40,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Stamp_Closed_Date_TIme</fullName>
         <field>Completed_Date_Time__c</field>
         <formula>Now()</formula>
@@ -42,7 +50,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Stamp_Closing_User</fullName>
         <field>Yodle_Path_Completed_by__c</field>
         <formula>LastModifiedBy.Full_Name__c</formula>
@@ -50,7 +60,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Status_Update</fullName>
         <field>Status__c</field>
         <literalValue>In Progress</literalValue>
@@ -58,7 +70,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Status_Update_for_Fails</fullName>
         <field>Status__c</field>
         <literalValue>In Progress</literalValue>
@@ -67,7 +81,8 @@
         <operation>Literal</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Status_Update_for_Passes</fullName>
         <field>Status__c</field>
         <literalValue>Completed</literalValue>
@@ -75,7 +90,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Touch_Plan_1_Pass_Fail</fullName>
         <field>Touch_Plan_Pass_Fail__c</field>
         <formula>TP1_Goal__c</formula>
@@ -84,7 +101,8 @@
         <operation>Formula</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Touch_Plan_2_Pass_Fail</fullName>
         <field>Touch_Plan_Pass_Fail__c</field>
         <formula>TP2_Goal__c</formula>
@@ -93,7 +111,8 @@
         <operation>Formula</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Touch_Plan_3_Pass_Fail</fullName>
         <field>Touch_Plan_Pass_Fail__c</field>
         <formula>TP3_Goal__c</formula>
@@ -102,7 +121,8 @@
         <operation>Formula</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Attempt_1_By</fullName>
         <field>X1st_Attempt_By__c</field>
         <formula>LastModifiedBy.Full_Name__c</formula>
@@ -110,7 +130,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Record_Type_Setup_Call</fullName>
         <field>RecordTypeId</field>
         <lookupValue>Setup_Call_4th_Attempt</lookupValue>
@@ -120,7 +142,8 @@
         <operation>LookupValue</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Status_to_Did_Not_Complete</fullName>
         <field>Status__c</field>
         <literalValue>Did Not Complete</literalValue>
@@ -129,7 +152,8 @@
         <operation>Literal</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates><fieldUpdates>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Workflow_Field</fullName>
         <field>In_Progress_Date__c</field>
         <formula>Today ()</formula>
@@ -137,7 +161,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>X2nd_Attempt_by</fullName>
         <field>X2nd_Attempt_By__c</field>
         <formula>LastModifiedBy.Full_Name__c</formula>
@@ -145,7 +171,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>X3rd_Attempt_by</fullName>
         <field>X3rd_Attempt_By__c</field>
         <formula>LastModifiedBy.Full_Name__c</formula>
@@ -153,7 +181,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><rules>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
         <fullName>Close Install Call after 14 days</fullName>
         <active>true</active>
         <criteriaItems>
@@ -180,7 +210,8 @@
             <timeLength>14</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Close Reschedule Setup Call after 14 days</fullName>
         <active>true</active>
         <criteriaItems>
@@ -212,7 +243,8 @@
             <timeLength>14</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Close Setup Call after 14 days</fullName>
         <active>true</active>
         <criteriaItems>
@@ -243,7 +275,8 @@
             <timeLength>14</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Close Setup Call after 14 days New</fullName>
         <active>false</active>
         <criteriaItems>
@@ -275,7 +308,8 @@
             <timeLength>14</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Stamp Closing User</fullName>
         <actions>
             <name>Closed_Date</name>
@@ -300,7 +334,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Stamp attempt 1 by</fullName>
         <actions>
             <name>Status_Update</name>
@@ -320,7 +355,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Stamp attempt 2 by</fullName>
         <actions>
             <name>X2nd_Attempt_by</name>
@@ -336,7 +372,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Stamp attempt 3 by</fullName>
         <actions>
             <name>X3rd_Attempt_by</name>
@@ -352,7 +389,8 @@
             <operation>equals</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Record Type - Coaching Call</fullName>
         <actions>
             <name>Change_Record_Type</name>
@@ -375,7 +413,8 @@
             <value>In Progress</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Record Type - Setup Call</fullName>
         <actions>
             <name>Update_Record_Type_Setup_Call</name>
@@ -398,7 +437,8 @@
             <value>In Progress</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Reschedule Status for Coaching Call - 7 days</fullName>
         <active>true</active>
         <criteriaItems>
@@ -425,7 +465,8 @@
             <timeLength>7</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Reschedule Status for TP1 - 5 days</fullName>
         <active>true</active>
         <criteriaItems>
@@ -452,7 +493,8 @@
             <timeLength>5</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Reschedule Status for TP2 - 5 days</fullName>
         <active>true</active>
         <criteriaItems>
@@ -479,7 +521,8 @@
             <timeLength>5</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Reschedule Status for TP3 - 5 days</fullName>
         <active>true</active>
         <criteriaItems>
@@ -506,7 +549,8 @@
             <timeLength>5</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Status for Coaching Call - 7 days</fullName>
         <active>true</active>
         <criteriaItems>
@@ -532,7 +576,8 @@
             <timeLength>7</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Status for Coaching Call%2C TP1%2C TP2%2C and TP3 - 8 days</fullName>
         <active>false</active>
         <criteriaItems>
@@ -554,7 +599,8 @@
             <timeLength>8</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Status for TP1 - 5 days</fullName>
         <active>false</active>
         <criteriaItems>
@@ -580,7 +626,8 @@
             <timeLength>5</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Status for TP1%2C TP2%2C and TP3 - 5 days</fullName>
         <active>true</active>
         <criteriaItems>
@@ -614,7 +661,8 @@
             <timeLength>5</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Status for TP1%2C TP2%2C and TP3 - 5 days - No coaching Call Criteria</fullName>
         <active>true</active>
         <criteriaItems>
@@ -636,7 +684,8 @@
             <timeLength>5</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update TP1 Pass%2FFail</fullName>
         <active>false</active>
         <criteriaItems>
@@ -652,7 +701,8 @@
             <timeLength>7</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update TP1 Pass%2FFail and Set Date</fullName>
         <active>true</active>
         <criteriaItems>
@@ -672,7 +722,8 @@
             <timeLength>7</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update TP2 Pass%2FFail</fullName>
         <active>false</active>
         <criteriaItems>
@@ -688,7 +739,8 @@
             <timeLength>7</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update TP2 Pass%2FFail and Set Date</fullName>
         <active>true</active>
         <criteriaItems>
@@ -708,7 +760,8 @@
             <timeLength>7</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update TP3 Pass%2FFail</fullName>
         <active>false</active>
         <criteriaItems>
@@ -724,7 +777,8 @@
             <timeLength>7</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update TP3 Pass%2FFail and Set Date</fullName>
         <active>true</active>
         <criteriaItems>
@@ -744,7 +798,8 @@
             <timeLength>7</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Yodle Path Status</fullName>
         <actions>
             <name>Status_Update_for_Passes</name>
@@ -757,7 +812,8 @@
             <value>Pass</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Yodle Path Status Fail</fullName>
         <actions>
             <name>Status_Update_for_Fails</name>
@@ -774,4 +830,5 @@
             <value>FAIL</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules></Workflow>
+    </rules>
+</Workflow>

@@ -33,30 +33,35 @@
         <booleanFilter>(1 AND 2 AND (3 OR 4)) AND 5</booleanFilter>
         <criteriaItems>
             <column>PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>PostNet</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed Won</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Products__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>PPC</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Products__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Foundations</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSE_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>9/22/2016</value>

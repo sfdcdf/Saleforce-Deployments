@@ -21,30 +21,35 @@
     <filter>
         <criteriaItems>
             <column>Activity$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>7/11/2016 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$CallDurationInSeconds</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$LOCC_App__campaignname__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>YBN,LH,Lighthouse</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$What</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>YO,LH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$What</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

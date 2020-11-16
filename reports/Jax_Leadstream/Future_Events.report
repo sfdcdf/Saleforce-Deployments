@@ -20,24 +20,28 @@
         <booleanFilter>((1 or 2) AND 3) AND 4</booleanFilter>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>lead stream support,LBW Customer Service,platinum support,local pod queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Assigned_To_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>nathaniel nipper,randy dewey,adam kovacs</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>PTO,Not Scheduled,LUNCH,loa,ooo,out of office,supervisor</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>CSC,CS Touch Plan,Proactive Touch,CR Follow Up</value>

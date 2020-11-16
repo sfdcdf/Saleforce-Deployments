@@ -111,18 +111,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Customer_Surveys__c.NPS_Survey_YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Yodle,Jeremy&apos;s Powerhouse</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_ACC_PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>ProSource</value>

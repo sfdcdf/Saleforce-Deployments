@@ -19,12 +19,14 @@
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <column>Customer_Surveys__c.Issue_Resolved__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>No</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Issue_Survey_Was_your_issue_resolved__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>No</value>

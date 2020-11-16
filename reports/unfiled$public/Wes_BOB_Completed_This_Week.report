@@ -29,18 +29,21 @@
     <filter>
         <criteriaItems>
             <column>Case.IMS_Completing_Opt2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>shawna kays,ciurdar</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.New_Client_Setup,Case.Performance_Issue,Case.O_Account_Update,Case.YBN_Master_Case,Case.YBN_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT_ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Miracle-Ear,Miracle Ear,Hand &amp; Stone,Hand and</value>

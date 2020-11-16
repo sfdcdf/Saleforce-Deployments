@@ -54,24 +54,28 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.CSC_Worksheet_Dental,Lighthouse_Worksheets__c.CSC_Worksheet_Medical,Lighthouse_Worksheets__c.CSC_Worksheet_Auto</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.CSC_Completed_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.CSC_Completed_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>THIS_MONTH,LAST_N_MONTHS:11</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Office_Location__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>CA</value>

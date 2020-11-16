@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><fieldUpdates>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
         <fullName>CSC_Monitoring_Forms_2_1</fullName>
         <field>CSC_Monitoring_Forms_Text_Formula_2_1__c</field>
         <formula>CSC_Monitoring_Forms_Formula_21__c</formula>
@@ -6,7 +7,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CSC_Monitoring_Forms_2_2</fullName>
         <field>CSC_Monitoring_Forms_Text_Formula_2_2__c</field>
         <formula>CSC_Monitoring_Forms_Formula_22__c</formula>
@@ -14,7 +17,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adher_Grade_Essentials_Setup_Call</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Introduction__c,
@@ -70,7 +75,9 @@ CASE(Post_Call_Tasks__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adhere_Grade_Advanced_Features</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Greeting_and_Goals__c, 
@@ -106,7 +113,9 @@ CASE(closing__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adhere_Grade_Lighthouse_Save_Call</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Opening__c, 
@@ -172,7 +181,9 @@ CASE(Salesforce_Work__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adhere_Grade_TORCHx_CSC_Building</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Greeting_and_Goals__c, 
@@ -248,7 +259,9 @@ CASE(closing__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adhere_Grade_TORCHx_CSC_Managing</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Greeting_and_Goals__c, 
@@ -324,7 +337,9 @@ CASE(closing__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adherence_Grade_Adoption_Call</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Introduction__c, 
@@ -385,7 +400,9 @@ CASE(Post_Call_Tasks__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adherence_Grade_CSC_Monitoring</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Introduction__c, 
@@ -501,7 +518,9 @@ CASE(Post_Call_Tasks__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adherence_Grade_Collections_Call</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Opening__c, 
@@ -542,7 +561,9 @@ CASE(Necessary_Follow_Up_Work__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adherence_Grade_InboundMonitoring</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Opening__c, 
@@ -588,7 +609,9 @@ CASE(Proper_Closing_Transfer__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adherence_Grade_LBW_Onboarding</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Introduction__c, 
@@ -644,7 +667,9 @@ CASE(closing__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adherence_Grade_LBW_Performance</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Precall_Work__c, 
@@ -710,7 +735,9 @@ CASE(closing__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adherence_Grade_LH_Inbound_Call</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Opening__c, 
@@ -756,7 +783,9 @@ CASE(Thank_Client__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adherence_Grade_Lighthouse_CSC</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Introduction__c, 
@@ -837,7 +866,9 @@ CASE(Message_Activation__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adherence_Grade_TORCHx_Inbound_Call</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Opening__c, 
@@ -883,7 +914,9 @@ CASE(Thank_Client__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adherence_Grade_TORCHx_Save_Call</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Opening__c, 
@@ -949,7 +982,9 @@ CASE(Necessary_Follow_Up_Work__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Adherence_LH_CSC_Essentials</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Greeting_and_Goals__c, 
@@ -1030,7 +1065,9 @@ CASE(Message_Activation__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_Advanced_Features</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Greeting_and_Goals__c, 
@@ -1085,7 +1122,9 @@ CASE( Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_CSC_Monitoring</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Introduction__c, 
@@ -1231,7 +1270,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_Collections_Call</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Opening__c, 
@@ -1302,7 +1343,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_Inbound_Monitoring</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Opening__c, 
@@ -1384,7 +1427,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_LBW_Onboarding</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Introduction__c, 
@@ -1475,7 +1520,9 @@ CASE(Perspective__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_LBW_Performance</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Precall_Work__c, 
@@ -1576,7 +1623,9 @@ CASE(Perspective__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_LH_Inbound_Call</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Opening__c, 
@@ -1646,7 +1695,9 @@ CASE( Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_Lighthouse_CSC</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Introduction__c, 
@@ -1751,7 +1802,9 @@ CASE( Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_Lighthouse_Save_Call</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Opening__c, 
@@ -1846,7 +1899,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_TORCHx_CSC_Building</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Greeting_and_Goals__c, 
@@ -1946,7 +2001,9 @@ CASE( Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_TORCHx_CSC_Managing</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Greeting_and_Goals__c, 
@@ -2046,7 +2103,9 @@ CASE( Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_TORCHx_Inbound_Call</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Opening__c, 
@@ -2116,7 +2175,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Grade_TORCHx_Save_Call</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Opening__c, 
@@ -2211,7 +2272,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Lighthouse_CSC_Essentials</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Call_control__c, 
@@ -2316,7 +2379,9 @@ CASE(Message_Activation__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Score_Adoption_Call</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Introduction__c, 
@@ -2407,7 +2472,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Final_Score_Essentials_Setup_Call</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Attitude_Tone_Empathy__c,
@@ -2493,7 +2560,9 @@ CASE(Post_Call_Tasks__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qual_Grade_Advanced_Features</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Call_control__c,
@@ -2518,7 +2587,9 @@ CASE( Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qual_Grade_Collections_Call</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Attitude_Tone_Empathy__c, 
@@ -2554,7 +2625,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qual_Grade_Essentials_Setup_Call</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Attitude_Tone_Empathy__c,
@@ -2590,7 +2663,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qual_Grade_Inbound_Monitoring</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Attitude_Tone_Empathy__c, 
@@ -2632,7 +2707,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qual_Grade_Lighthouse_Save_Call</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Call_control__c, 
@@ -2667,7 +2744,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qual_Grade_TORCHX_CSC_Building</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Call_control__c,
@@ -2697,7 +2776,9 @@ CASE( Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qual_Grade_TORCHX_CSC_Managing</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Call_control__c,
@@ -2727,7 +2808,9 @@ CASE( Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qual_Grade_TORCHx_Inbound_Call</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Call_control__c, 
@@ -2757,7 +2840,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qual_Grade_TORCHx_Save_Call</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Call_control__c, 
@@ -2792,7 +2877,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qualitative_Grade_Adoption_Call</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Attitude_Tone_Empathy__c,
@@ -2828,7 +2915,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qualitative_Grade_LBW_Onboarding</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Attitude_Tone_Empathy__c, 
@@ -2869,7 +2958,9 @@ CASE(Perspective__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qualitative_Grade_LBW_Performance</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Attitude_Tone_Empathy__c, 
@@ -2910,7 +3001,9 @@ CASE(Perspective__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qualitative_Grade_Lighthouse_CSC</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Call_control__c,
@@ -2940,7 +3033,9 @@ CASE( Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qualitative_Grade_Owner_Verified</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Attitude_Tone_Empathy__c,
@@ -2976,7 +3071,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qualitative_LH_CSC_Essentials</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Call_control__c, 
@@ -3006,7 +3103,9 @@ CASE( Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qualitative_LH_Inbound_Call</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Call_control__c,
@@ -3036,7 +3135,9 @@ CASE( Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qualitative_PIN_Collection</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Call_control__c,
@@ -3068,7 +3169,9 @@ CASE( Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calc_Qualititive_Grade_CSC_Monitoring</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Attitude_Tone_Empathy__c,
@@ -3104,7 +3207,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Adherence_Grade_Local_Chat</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Confirm_Ability_to_Help__c, 
@@ -3168,7 +3273,9 @@ CASE(Changes_Completed_Correctly__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Adherence_Grade_Local_Email</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Proper_Template_Used__c, 
@@ -3225,7 +3332,9 @@ CASE(Changes_Completed_Correctly__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Adherence_Grade_Local_MAXCSC</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Introduction__c, 
@@ -3341,7 +3450,9 @@ CASE(Proper_Closing_Transfer__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Adherence_Grade_Owner_Verified</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE( Opening__c,
@@ -3372,7 +3483,9 @@ CASE(Salesforce_Work__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Adherence_Grade_PIN_Collection</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE( Opening__c,
@@ -3468,7 +3581,9 @@ CASE( X4_Client_Satisfied_With_Response__c ,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Adherence_Grade_Save_Call</fullName>
         <field>Adherence_Grade__c</field>
         <formula>(CASE(Opening__c, 
@@ -3542,7 +3657,9 @@ CASE(Necessary_Follow_Up_Work__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Final_Score_Local_Chat</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Confirm_Ability_to_Help__c, 
@@ -3634,7 +3751,9 @@ CASE(Chat_Control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Final_Score_Local_Email</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Proper_Template_Used__c, 
@@ -3701,7 +3820,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Final_Score_Local_MAX_CSC</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Introduction__c, 
@@ -3842,7 +3963,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Final_Score_Owner_Verified</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE( Opening__c, 
@@ -3903,7 +4026,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Final_Score_PIN_Collection</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Call_control__c,
@@ -4025,7 +4150,9 @@ CASE( X4_Client_Satisfied_With_Response__c ,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Final_Score_Save_Call</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE(Opening__c, 
@@ -4127,7 +4254,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Maps_Quality_Assurance_Final</fullName>
         <field>Final_Score__c</field>
         <formula>(CASE( Contact_Date__c ,
@@ -4261,7 +4390,9 @@ CASE(  Is_Google_Account_listed_in_MIC__c ,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Qualitative_Grade_Local_Chat</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Attitude_Tone_Empathy__c, 
@@ -4298,7 +4429,9 @@ CASE(Chat_Control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Qualitative_Grade_Local_Emai</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Resolution_Skills__c, 
@@ -4314,7 +4447,9 @@ CASE(Information_Accuracy__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Qualitative_Grade_Local_MAX</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Attitude_Tone_Empathy__c,
@@ -4345,7 +4480,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Calculate_Qualitative_Grade_Save_Call</fullName>
         <field>Qualitative_Grade__c</field>
         <formula>(CASE(Attitude_Tone_Empathy__c,
@@ -4384,7 +4521,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Call_Flow_Formula_2</fullName>
         <field>Call_Flow_Adherence_Formula_2_Text__c</field>
         <formula>Call_Flow_Adherence_Formula_2__c</formula>
@@ -4392,7 +4531,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Formula</fullName>
         <field>Formula_Text__c</field>
         <formula>Formula__c</formula>
@@ -4400,7 +4541,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Formula_2</fullName>
         <field>Formula_2_Text__c</field>
         <formula>Formula_2__c</formula>
@@ -4408,7 +4551,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Inbound_Monitoring_Forms</fullName>
         <field>Inbound_Monitoring_Text_Formula__c</field>
         <formula>Inbound_Monitoring_Formula__c</formula>
@@ -4416,7 +4561,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Inbound_Monitoring_Forms_2</fullName>
         <field>Inbound_Monitoring_Text_Formula_2__c</field>
         <formula>Inbound_Monitoring_Formula_2__c</formula>
@@ -4424,7 +4571,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Formula_1</fullName>
         <field>Call_Flow_Adherence_Formula_1_Text__c</field>
         <formula>Call_Flow_Adherence_Formula_1__c</formula>
@@ -4432,7 +4581,9 @@ CASE(Call_control__c,
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><rules>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
         <fullName>CSC Monitoring Forms</fullName>
         <actions>
             <name>CSC_Monitoring_Forms_2_1</name>
@@ -4457,7 +4608,8 @@ CASE(Call_control__c,
         <active>true</active>
         <formula>True  &amp;&amp;  RecordType.Name = 'CSC Monitoring Forms'</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Adoption Call Scores</fullName>
         <actions>
             <name>Calc_Adherence_Grade_Adoption_Call</name>
@@ -4478,7 +4630,8 @@ CASE(Call_control__c,
             <value>Adoption Call</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Collections Call Scores</fullName>
         <actions>
             <name>Calc_Adherence_Grade_Collections_Call</name>
@@ -4499,7 +4652,8 @@ CASE(Call_control__c,
             <value>Collections Call</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Inbound Monitoring Form</fullName>
         <actions>
             <name>Calc_Adherence_Grade_InboundMonitoring</name>
@@ -4520,7 +4674,8 @@ CASE(Call_control__c,
             <value>Inbound Monitoring Forms</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate LBW Onboarding Quality Process Form</fullName>
         <actions>
             <name>Calc_Adherence_Grade_LBW_Onboarding</name>
@@ -4541,7 +4696,8 @@ CASE(Call_control__c,
             <value>LBW Onboarding Quality Process</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate LBW Performance Quality Process Form</fullName>
         <actions>
             <name>Calc_Adherence_Grade_LBW_Performance</name>
@@ -4562,7 +4718,8 @@ CASE(Call_control__c,
             <value>LBW Performance Call Quality Process</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Lighthouse CSC %2B Essentials Scores</fullName>
         <actions>
             <name>Calc_Adherence_LH_CSC_Essentials</name>
@@ -4583,7 +4740,8 @@ CASE(Call_control__c,
             <value>Lighthouse CSC + Essentials</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Lighthouse CSC Scores</fullName>
         <actions>
             <name>Calc_Adherence_Grade_Lighthouse_CSC</name>
@@ -4604,7 +4762,8 @@ CASE(Call_control__c,
             <value>Lighthouse CSC</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Lighthouse Inbound Call Scores</fullName>
         <actions>
             <name>Calc_Adherence_Grade_LH_Inbound_Call</name>
@@ -4625,7 +4784,8 @@ CASE(Call_control__c,
             <value>Lighthouse Inbound Call</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Lighthouse Save Call</fullName>
         <actions>
             <name>Calc_Adhere_Grade_Lighthouse_Save_Call</name>
@@ -4646,7 +4806,8 @@ CASE(Call_control__c,
             <value>Lighthouse Save Call</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Local Chat Scores</fullName>
         <actions>
             <name>Calculate_Adherence_Grade_Local_Chat</name>
@@ -4667,7 +4828,8 @@ CASE(Call_control__c,
             <value>Local - Live Chat Monitoring Form</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Local Email Scores</fullName>
         <actions>
             <name>Calculate_Adherence_Grade_Local_Email</name>
@@ -4688,7 +4850,8 @@ CASE(Call_control__c,
             <value>Local - Email Monitoring Form</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Local MAX CSC Grading Scores</fullName>
         <actions>
             <name>Calculate_Adherence_Grade_Local_MAXCSC</name>
@@ -4709,7 +4872,8 @@ CASE(Call_control__c,
             <value>Local - Max CSC Grading Form</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Maps Owner Verified Score</fullName>
         <actions>
             <name>Calc_Qualitative_Grade_Owner_Verified</name>
@@ -4730,7 +4894,8 @@ CASE(Call_control__c,
             <value>Maps - Owner Verified</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Maps Quality Assurance Form</fullName>
         <actions>
             <name>Calculate_Maps_Quality_Assurance_Final</name>
@@ -4743,7 +4908,8 @@ CASE(Call_control__c,
             <value>Maps - Quality Assurance Form</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate PIN Collection Score</fullName>
         <actions>
             <name>Calc_Qualitative_PIN_Collection</name>
@@ -4764,7 +4930,8 @@ CASE(Call_control__c,
             <value>Maps - PIN Collection</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Save Call Monitoring Scores</fullName>
         <actions>
             <name>Calculate_Adherence_Grade_Save_Call</name>
@@ -4785,7 +4952,8 @@ CASE(Call_control__c,
             <value>Save Call Monitoring Forms</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate TORCHx CSC Advanced Features</fullName>
         <actions>
             <name>Calc_Adhere_Grade_Advanced_Features</name>
@@ -4806,7 +4974,8 @@ CASE(Call_control__c,
             <value>TORCHx CSC - Advanced Features</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate TORCHx CSC Building Awareness and Driving Leads Scores</fullName>
         <actions>
             <name>Calc_Adhere_Grade_TORCHx_CSC_Building</name>
@@ -4827,7 +4996,8 @@ CASE(Call_control__c,
             <value>TORCHx CSC - Building Awareness and Driving Leads</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate TORCHx CSC Managing Relationships</fullName>
         <actions>
             <name>Calc_Adhere_Grade_TORCHx_CSC_Managing</name>
@@ -4848,7 +5018,8 @@ CASE(Call_control__c,
             <value>TORCHx CSC - Managing Relationships</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate TORCHx Inbound Call Scores</fullName>
         <actions>
             <name>Calc_Adherence_Grade_TORCHx_Inbound_Call</name>
@@ -4869,7 +5040,8 @@ CASE(Call_control__c,
             <value>TORCHx Inbound Call</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate TORCHx Save Call</fullName>
         <actions>
             <name>Calc_Adherence_Grade_TORCHx_Save_Call</name>
@@ -4890,7 +5062,8 @@ CASE(Call_control__c,
             <value>TORCHx Save Call</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Essentials Setup Completion Call</fullName>
         <actions>
             <name>Calc_Adher_Grade_Essentials_Setup_Call</name>
@@ -4907,7 +5080,8 @@ CASE(Call_control__c,
         <active>true</active>
         <formula>True  &amp;&amp;  RecordType.Name = 'Essentials Setup Completion Call'</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Inbound Monitoring Forms</fullName>
         <actions>
             <name>Inbound_Monitoring_Forms</name>
@@ -4920,7 +5094,8 @@ CASE(Call_control__c,
         <active>false</active>
         <formula>TRUE  &amp;&amp; RecordTypeId = '01232000000M3c4'</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Save Call Monitoring Forms</fullName>
         <actions>
             <name>Call_Flow_Formula_2</name>
@@ -4941,4 +5116,5 @@ CASE(Call_control__c,
         <active>false</active>
         <formula>TRUE &amp;&amp; RecordTypeId = '01232000000M3bz'</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules></Workflow>
+    </rules>
+</Workflow>

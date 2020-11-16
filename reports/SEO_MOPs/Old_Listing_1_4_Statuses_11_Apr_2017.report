@@ -79,66 +79,77 @@
         <booleanFilter>(((1 AND 2 AND (3 or 4 or 5 or 6) AND 7 AND 8) AND 9) AND 10) AND 11</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Live</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_1_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>None,Claiming in Client&apos;s Other Account,Cleaned Out Listing,&quot;Client&apos;s Other Listing, Do Not Claim&quot;,Listing Claimed &amp; Suspended,Report to Google,Pending Pin Receipt,Removed by Google,Reported to Google,Un-Claimable,Owner-Verified/Managed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_2_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>None,Claiming in Client&apos;s Other Account,&quot;Client&apos;s Other Listing, Do Not Claim&quot;,Listing Claimed &amp; Suspended,Pending Pin Receipt,Removed by Google,Report to Google,Reported to Google,Cleaned Out Listing,Un-Claimable,Owner-Verified/Managed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_3_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>None,Claiming in Client&apos;s Other Account,&quot;Client&apos;s Other Listing, Do Not Claim&quot;,Listing Claimed &amp; Suspended,Pending Pin Receipt,Removed by Google,Report to Google,Reported to Google,Cleaned Out Listing,Un-Claimable,Owner-Verified/Managed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Listing_4_Action_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>None,Claiming in Client&apos;s Other Account,Cleaned Out Listing,&quot;Client&apos;s Other Listing, Do Not Claim&quot;,Listing Claimed &amp; Suspended,Report to Google,Pending Pin Receipt,Removed by Google,Reported to Google,Un-Claimable,Owner-Verified/Managed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Bulk_Google_AccountPL__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>New Listing Created</value>

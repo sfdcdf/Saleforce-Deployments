@@ -44,12 +44,14 @@
         <booleanFilter>1 AND 2</booleanFilter>
         <criteriaItems>
             <column>Case.Requested_Website_Updates__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>New ProSite Creation,YBN Custom Project,YBN Display Creative,YBN Metropage/LP Creation,YBN Presale Mockup,YBN Template Creation,YBN Template Update/Change,YBN  Portal Creation,YBN Portal Update/Change,YBN Corporate Site Update/Change,YBN Corporate Site Creation</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

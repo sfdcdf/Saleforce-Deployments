@@ -86,30 +86,35 @@
     <filter>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>am,pm</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>casey hatch,michael means,suzanne baudoin,chuck seppanen,zachary lowe,ron patel</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

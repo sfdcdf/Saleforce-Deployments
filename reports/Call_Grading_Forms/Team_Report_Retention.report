@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller_Team__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Dior Goodwin,Clarke Raines,Gettes Marshall,Christopher Kellogg,William Redden</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.Save_Call</value>

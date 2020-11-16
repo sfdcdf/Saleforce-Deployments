@@ -45,30 +45,35 @@
     <filter>
         <criteriaItems>
             <column>Case.Yodle_Path__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yodle_Path__c.Setup_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Rusty&apos;s Cleaning Service - Test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$X1st_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$LastModifiedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Press Miller,Chrystabel Sifflet,Farley Edward,Dania Eugene,Petra Bellas- Stanislas,Alexandra Moise,Becky JnBaptiste,Chris Dominique,Chrystal Prosper,Dyane Edwards,Emma Joseph,Eva Lauren,Garna Charlery,Jacqueline Richard,Jesse Taylor,Keri Wilson,Kevin Cadette,Kisha Elibox,Kurcy Montoute,Kurina Joseph,Nicole Joseph,Petra Bellas,Russelle Lord,Shannon Rock,Suprena George,Velma Viville,Johan Evariste,Aalliyah Aimable,Windel Alexander</value>

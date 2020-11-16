@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Erik Vicars,Shelia Kelly,Sherri Aguinaga,Ron Brown,Samantha Starett,Amber Tamayo,Adam Kovacs,LBW,POD,Platinum,Dedicated,Reagan Neely,Mark Nagy,Sara Davis,Thad Dameris,Christina Yeckley,Jennifer Degreef</value>

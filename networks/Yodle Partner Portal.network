@@ -12,8 +12,10 @@
     <enableDirectMessages>false</enableDirectMessages>
     <enableGuestChatter>false</enableGuestChatter>
     <enableGuestFileAccess>false</enableGuestFileAccess>
+    <enableGuestMemberVisibility>false</enableGuestMemberVisibility>
     <enableInvitation>false</enableInvitation>
     <enableKnowledgeable>false</enableKnowledgeable>
+    <enableMemberVisibility>true</enableMemberVisibility>
     <enableNicknameDisplay>false</enableNicknameDisplay>
     <enablePrivateMessages>false</enablePrivateMessages>
     <enableReputation>false</enableReputation>
@@ -26,15 +28,6 @@
     <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
     <logoutUrl>http://yodle-community.force.com/LighthouseDental</logoutUrl>
-    <navigationLinkSet>
-        <navigationMenuItem>
-            <label>Topics</label>
-            <position>1</position>
-            <publiclyAvailable>true</publiclyAvailable>
-            <target>ShowMoreTopics</target>
-            <type>NavigationalTopic</type>
-        </navigationMenuItem>
-    </navigationLinkSet>
     <networkMemberGroups>
         <permissionSet>Partner_Training_Permission_Sets</permissionSet>
         <permissionSet>Partner_Community_User_Management_Permission_Set</permissionSet>

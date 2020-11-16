@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Proposal &amp; SOW Review Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>,test,dorm</value>

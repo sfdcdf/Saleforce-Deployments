@@ -45,24 +45,28 @@
     <filter>
         <criteriaItems>
             <column>Opportunity$SDR__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Activities$Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Discovery Call,Scheduled Discovery Call,Scheduled Demo,Demo &amp; Value Presentation</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Activities$Close_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Activities$ActivityDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessThan</operator>
             <value>TODAY</value>

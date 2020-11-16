@@ -52,18 +52,21 @@
     <filter>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Client Discovery,Demo/Value Prop,Solution,Contract</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Opportunity_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>YBN Corporate Opportunity,Renewal</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSE_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>4/1/2016</value>

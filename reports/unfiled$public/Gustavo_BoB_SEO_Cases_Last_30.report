@@ -34,24 +34,28 @@
         <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Organic_Optimization_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>National,YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Parent</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Affordable Dentures,Merry Maids,Merry Maids Canada,Deca Dental,Painting With A Twist,Maaco,Driven Brands,Four Seasons Sunrooms Master,Cordell &amp; Cordell</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Affordable Dentures,Merry Maids,Deca Dental,Painting With A Twist,Maaco,Four Seasons,Cordell &amp; Cordell</value>

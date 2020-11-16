@@ -37,60 +37,70 @@
         <booleanFilter>((1 and ((2 and 4)  or (3 and 5) or (8 and ( 6 or 7)))) AND 9) AND 10</booleanFilter>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Jeremy&apos;s Powerhouse Gym,test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National_Support_Request__c.Initiation_Form</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National_Support_Request__c.Pre_Sale_Questions</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$RM_Strategic_AM__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$Staffing__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Accepted,Rejected</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$RM_Strategic_AM__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Rejected</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Steve Jones</value>

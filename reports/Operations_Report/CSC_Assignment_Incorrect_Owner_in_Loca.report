@@ -21,18 +21,21 @@
     <filter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Local NCS Queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Total_Acct_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessThan</operator>
             <value>1000</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Next_Scheduled_CSC2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>NEXT_N_DAYS:5</value>

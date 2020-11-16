@@ -18,6 +18,7 @@
     <filter>
         <criteriaItems>
             <column>Case.Resolution_Attempt_Status_1__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Saved - Free Time</value>

@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>LAST_UPDATE_BY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Dyane Edwards,Eva Lauren,Velma Viville,Kevin Cadette,Garna Charlery,Keri Wilson,Gabriela Beaubrun,Dania Eugene,farley edward,Alexandra moise,Chrystal prosper,Kurcy montoute,Nicole joseph,kent warren,jacqueline richard,shannon rock,jesse taylor,kurina joseph,kisha elibox,suprena george,becky jnbaptiste,chris dominique,crystal preston,emma joseph,russelle lord,Aalliyah Aimable,Benica Bowers,Germaine Eugene,Johan Evariste,Petra Bellas,Tiffany Samuels,Windel Alexander,Chrystabel Sifflet</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Outbound_Call</value>

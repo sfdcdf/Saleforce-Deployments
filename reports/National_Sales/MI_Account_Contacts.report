@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>Account$BillingState</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>MI</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,Ari Katz,Brian Heppner,Kevin Noonan,Mark Armstrong,Minde Fawcett,Nick Dispenza,Peter Szalkowski,Daniel Boyce,Danielle Krieg,Ellie McIntyre</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Type</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National-Master Prospect,Customer</value>

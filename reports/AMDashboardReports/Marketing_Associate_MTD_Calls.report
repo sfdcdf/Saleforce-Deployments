@@ -86,18 +86,21 @@
     <filter>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>BucketField_55127037</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Kevin Hobbs</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0,1</value>

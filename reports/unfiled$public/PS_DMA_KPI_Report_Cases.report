@@ -34,12 +34,14 @@
     <filter>
         <criteriaItems>
             <column>Case.IMS_Completing_Opt2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>chase woodhams,chaides,shawna kays,Minert,Ferrell</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Request,Case.New_Client_Setup,Case.Performance_Issue,Case.O_Account_Update,Case.YBN_Master_Case</value>

@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>LAST_UPDATE_BY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Bonnie Jenkins,Emma McCrary,Christina Madison,Beth Shorter,Mila Raisovich,Dawn Sevcik,Andrew Salazar,Michele Burch,Sara Davis,Roy Lazorwitz,Courtney Christian,Terrell Pasley,Cynthia Mota,Brittanie Walker,Jordan Sanchez,katie Tillman,Felicia Morales,Sharica Thomas,Gary Poole,Thomas Standing,Ryan McDonald,Matthew Keehn,Dayna Horton,Jarrah Garrett</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Outbound_Call</value>

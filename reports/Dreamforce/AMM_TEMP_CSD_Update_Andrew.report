@@ -37,18 +37,21 @@
         <booleanFilter>1 OR 2 OR 3</booleanFilter>
         <criteriaItems>
             <column>PARENT_ID</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0016000000guoGK</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT_ID</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0016000000guoGK</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Parent_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>prosource</value>

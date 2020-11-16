@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
         <fullName>Best_Practice_Evaluation</fullName>
         <description>Best Practice Evaluation</description>
         <protected>false</protected>
@@ -8,7 +9,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Best_Practive_Evaluation_to_IMS</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>Opt_Evaluation_Completed</fullName>
         <description>Opt Evaluation Completed</description>
         <protected>false</protected>
@@ -26,7 +28,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Optimization_Evaluation</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>QA_Audit_Assigned</fullName>
         <description>QA Audit Assigned Outrank</description>
         <protected>false</protected>
@@ -39,7 +42,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Best_Practive_Evaluation_to_IMS</template>
-    </alerts><fieldUpdates>
+    </alerts>
+    <fieldUpdates>
         <fullName>Date_Sent_to_Queue</fullName>
         <field>Date_Sent_to_Queue__c</field>
         <formula>Today()</formula>
@@ -47,7 +51,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><rules>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
         <fullName>Best Practice Eval Assigned</fullName>
         <actions>
             <name>Best_Practice_Evaluation</name>
@@ -75,7 +81,8 @@
             <value>Call Answering,Outrank +,National SEM,YO 2.0,Outrank</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Best Practice Eval Assigned - National</fullName>
         <active>true</active>
         <criteriaItems>
@@ -94,7 +101,8 @@
             <value>Opt Evaluation</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Best Practice Eval Assigned Outrank</fullName>
         <actions>
             <name>QA_Audit_Assigned</name>
@@ -117,7 +125,8 @@
             <value>QA Audit</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Opt Eval Completed</fullName>
         <actions>
             <name>Opt_Evaluation_Completed</name>
@@ -134,7 +143,8 @@
             <operation>notEqual</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>QA Audit - Date Sent to Queue</fullName>
         <actions>
             <name>Date_Sent_to_Queue</name>
@@ -147,4 +157,5 @@
             <value>Post Launch Associate Queue</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules></Workflow>
+    </rules>
+</Workflow>

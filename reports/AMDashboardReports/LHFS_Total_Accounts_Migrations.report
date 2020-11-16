@@ -30,12 +30,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>lighthouse field service</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Test_Management__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Test Accounts for Internal Use</value>

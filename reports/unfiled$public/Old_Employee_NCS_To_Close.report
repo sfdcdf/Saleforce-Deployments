@@ -48,18 +48,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.New_Client_Setup</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>JCI Setup Queue,JCI Outbound,Zachary Kumnick,Todd Weiss,Timothy Mcelrea,Taylor Smith,Samantha Grande,Sabreena Ahmed,John Scott,Raji Green,Nikki Carver,Natalie Lance,Michele Oglesby,Meera Pattison,Logan Rollier,LeRonnie Reed,Lawrence Liles,Kimberly Williams,Jordan Heller,Eric Lindberg,Emily Kareiva,Elizabeth Groce,Don Keeton,Customer Care,Conor Mooney,Christine Begley,Casey Hatch,Ben Frank,Anna Hammett,Akilah Greene,Angelica Ripson</value>

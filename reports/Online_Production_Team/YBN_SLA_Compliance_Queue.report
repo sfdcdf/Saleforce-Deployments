@@ -49,54 +49,63 @@
         <booleanFilter>(1 OR 2) AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Web Dev,Theorem</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Web Dev</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Core,Partner,Local</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Offer Verification,Weekly Global Setup Audit - Campaign/Website Updates,Daily Global Setup Audit - Campaign/Website Updates,Daily Global Change Case Audit - Campaign/Website Updates - Theorem</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Case.New_Client_Setup,Case.XJen_Test_COBRA,Case.SEO_Tasks,Case.XJen_Test_NCS_No_Use</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Requested_Website_Updates__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Mass Website Updates,YBN Presale Pricing Request,YBN Locations Template Update/Change,YBN Metropage Template Update/Change,YBN Email Marketing Template Update/Change,YBN Presale Mockup,YBN Corporate Site Creation,YBN  Portal Creation,YBN Corporate Site Update/Change,YBN Mass Update,YBN Metropage/LP Creation,YBN Template Update/Change,YBN Template Creation,Immediate Teardown - G &amp; B Listings</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Age__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>0.6</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>logo@lighthousepmg.com</value>

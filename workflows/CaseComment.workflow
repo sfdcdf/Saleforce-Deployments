@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
         <fullName>Notify_Case_Creator_of_Case_Comment</fullName>
         <description>Notify Case Creator of Case Comment</description>
         <protected>false</protected>
@@ -7,7 +8,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/Case_Comment_Added</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>YBN_Case_Comment_Fire_Drill_Taxonomy</fullName>
         <description>YBN Case Comment Fire Drill - Taxonomy</description>
         <protected>false</protected>
@@ -21,7 +23,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Fire_Drill_Case_Comment_Added</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>YBN_new_case_comment</fullName>
         <description>YBN new case comment email alert</description>
         <protected>false</protected>
@@ -31,7 +34,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_new_case_comment</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>YBN_new_case_comment_email_alert</fullName>
         <description>YBN new case comment email alert</description>
         <protected>false</protected>
@@ -41,7 +45,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_new_case_comment</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>YBN_new_case_comment_email_alertS</fullName>
         <description>YBN new case comment email alert</description>
         <protected>false</protected>
@@ -51,7 +56,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_new_case_comment</template>
-    </alerts><fieldUpdates>
+    </alerts>
+    <fieldUpdates>
         <fullName>lock_case_comment_true</fullName>
         <field>lock_case_comments__c</field>
         <literalValue>1</literalValue>
@@ -59,8 +65,10 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
         <targetObject>ParentId</targetObject>
-    </fieldUpdates><rules>
+    </fieldUpdates>
+    <rules>
         <fullName>Lock LH Maser Case Comment When Case Closed</fullName>
         <actions>
             <name>lock_case_comment_true</name>
@@ -78,7 +86,8 @@
             <value>LH Master</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Notify Case Creator Of Case Comment</fullName>
         <actions>
             <name>Notify_Case_Creator_of_Case_Comment</name>
@@ -102,4 +111,5 @@
             <value>YBN Master</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules></Workflow>
+    </rules>
+</Workflow>

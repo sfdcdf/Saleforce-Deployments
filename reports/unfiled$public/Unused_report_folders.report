@@ -25,6 +25,7 @@
     <filter>
         <criteriaItems>
             <column>LASTRUNDATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessThan</operator>
             <value>11/29/2016 12:00 AM</value>

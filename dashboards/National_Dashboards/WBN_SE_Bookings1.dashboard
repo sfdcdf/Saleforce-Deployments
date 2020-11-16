@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -15,6 +15,7 @@
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
                 <footer>LEX - SE Weekly Bookling</footer>
+                <groupingSortProperties />
                 <header>LEX - SE Weekly Bookings</header>
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
@@ -38,6 +39,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
+                <groupingSortProperties />
                 <header>LEX - SE Monthly Bookings</header>
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
@@ -69,6 +71,7 @@
                 <enableHover>true</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>FULL_NAME</groupingColumn>
+                <groupingSortProperties />
                 <header>Weekly Leaderboard</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>National_Sales/Weekly_SE_Sales_for_Commissions</report>
@@ -92,6 +95,7 @@
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
                 <footer>LEX - SE Weekly Bookings</footer>
+                <groupingSortProperties />
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -114,6 +118,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
+                <groupingSortProperties />
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -138,6 +143,7 @@
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
                 <footer>LEX - SE Weekly Bookings - Amount</footer>
+                <groupingSortProperties />
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -162,6 +168,7 @@
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
                 <footer>LEX - SE Monthly Bookings (WBN Opp Amount)</footer>
+                <groupingSortProperties />
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -192,6 +199,7 @@
                 <expandOthers>false</expandOthers>
                 <footer>LEX - MTD NCSE Sales for Commissions</footer>
                 <groupingColumn>FULL_NAME</groupingColumn>
+                <groupingSortProperties />
                 <header>MTD Leaderboard</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>WBN_SE_MGMT/LEX_MTD_NCSE_Sales_for_Commissions</report>
@@ -214,7 +222,8 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
-                <header>Last Week&apos;s Bookings</header>
+                <groupingSortProperties />
+                <header>Last Week's Bookings</header>
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -239,6 +248,7 @@
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
                 <footer>Goal: $140,400</footer>
+                <groupingSortProperties />
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
@@ -259,6 +269,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
+                <groupingSortProperties />
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -282,7 +293,8 @@
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
                 <footer>LEX - Last Month SE Monthly Bookings - Total LRR</footer>
-                <header>Last Month&apos;s Monthly Bookings</header>
+                <groupingSortProperties />
+                <header>Last Month's Monthly Bookings</header>
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -311,6 +323,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>FULL_NAME</groupingColumn>
+                <groupingSortProperties />
                 <header>MTD Goal Attainment</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>WBN_SE_MGMT/LEX_SE_Monthly_Bookings</report>
@@ -333,6 +346,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
+                <groupingSortProperties />
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -357,6 +371,7 @@
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
                 <footer>LEX - Last Month SE Monthly Bookings (WBN Opp Amount)</footer>
+                <groupingSortProperties />
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
@@ -376,6 +391,7 @@
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <footer>Weekly Goal = $3900/rep</footer>
+                <groupingSortProperties />
                 <header>Weekly LRR - % Quota by Rep</header>
                 <report>WBN_SE_MGMT/LEX_SE_Weekly_Summary</report>
                 <showPicturesOnTables>false</showPicturesOnTables>
@@ -408,6 +424,7 @@
                 <displayUnits>Integer</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
+                <groupingSortProperties />
                 <indicatorHighColor>#54C254</indicatorHighColor>
                 <indicatorLowColor>#C25454</indicatorLowColor>
                 <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -442,6 +459,7 @@
                 <displayUnits>Integer</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
+                <groupingSortProperties />
                 <indicatorHighColor>#54C254</indicatorHighColor>
                 <indicatorLowColor>#C25454</indicatorLowColor>
                 <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -470,7 +488,8 @@
                 <expandOthers>false</expandOthers>
                 <footer>LEX - FaceBook - This Month - Total Price</footer>
                 <groupingColumn>FULL_NAME</groupingColumn>
-                <header>This Month&apos;s Facebook Sales</header>
+                <groupingSortProperties />
+                <header>This Month's Facebook Sales</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>WBN_SE_MGMT/LEX_FaceBook_This_Month</report>
                 <showPercentage>false</showPercentage>
@@ -499,7 +518,8 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>FULL_NAME</groupingColumn>
-                <header>Last Month&apos;s Facebook Sales</header>
+                <groupingSortProperties />
+                <header>Last Month's Facebook Sales</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>WBN_SE_MGMT/LEX_Facebook_Last_Month1</report>
                 <showPercentage>false</showPercentage>

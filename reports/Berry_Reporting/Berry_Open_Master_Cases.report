@@ -27,30 +27,35 @@
     <filter>
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master,012600000009PKs,Case.XJenTest_No_Use</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$IsClosed</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>OFF</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>failed landing page,low impression,low lead</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>sfdc sync</value>

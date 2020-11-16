@@ -52,12 +52,14 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Decision_Tree_Optimization</value>
         </criteriaItems>
         <criteriaItems>
             <column>CASE_COMMENT_CREATED_BY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lavner,ni,sievers,rhee</value>

@@ -38,36 +38,42 @@
         <booleanFilter>(1 AND 2 AND (3 OR 4)) AND (5 or 6)</booleanFilter>
         <criteriaItems>
             <column>Account.Cases$Status</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Escalated</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$IsClosed</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Created_by_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Customer Success Consultant,YBN: Senior Customer Success Consultant,YBN: Customer Success Director,Web: Customer Success Director</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$IMS_Rep_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Customer Success Consultant,YBN: Senior Customer Success Consultant,YBN: Customer Success Director</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>PROSOURCE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Parent</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>PROSOURCE</value>

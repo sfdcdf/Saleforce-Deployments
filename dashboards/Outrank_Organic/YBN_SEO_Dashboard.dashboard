@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -17,6 +17,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>Nationals - Sales Velocity</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/New_Nationals_SEO_Launches_By_Month</report>
@@ -35,6 +36,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>Nationals - Maps Initial Claiming</header>
             <legendPosition>Right</legendPosition>
             <report>Organic_Reporting/Nationals_Maps_Claiming_Volume</report>
@@ -54,6 +56,7 @@
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
             <footer>Current &amp; Previous CY</footer>
+            <groupingSortProperties />
             <header>YBN - Reactive Escalations MAX Days Open</header>
             <legendPosition>Bottom</legendPosition>
             <report>Organic_Reporting/Nationals_Closed_SEO_Escalations_Weekly</report>
@@ -72,13 +75,14 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>YBN - Reactive Escalations AVG Days Open</header>
             <legendPosition>Bottom</legendPosition>
             <report>Organic_Reporting/Nationals_Closed_SEO_Escalations_AVG</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Weekly Closed SEO Escalations Cont&apos;d</title>
+            <title>Weekly Closed SEO Escalations Cont'd</title>
             <useReportChart>true</useReportChart>
         </components>
         <components>
@@ -91,6 +95,7 @@
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
             <footer>All OPEN Nationals Case Escalations arranged by SLA</footer>
+            <groupingSortProperties />
             <header>YBN - OPEN Escalations</header>
             <legendPosition>Bottom</legendPosition>
             <report>Organic_Reporting/Nationals_SEO_Performance_Escalations</report>
@@ -110,6 +115,7 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>Current &amp; Previous FQ</footer>
+            <groupingSortProperties />
             <header>YBN - Proactive Escalations</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/Nationals_Circuit_Breakers</report>
@@ -131,6 +137,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>YBN - Maps Listing Progress</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/Nationals_Maps_Google_Listing_Status1</report>
@@ -149,6 +156,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>YBN Maps Cases With Build Issues</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/YBN_Maps_Cases_Issues_With_Build</report>
@@ -164,6 +172,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>MA team completes changes, MOPs changes it in bulk account.</footer>
+            <groupingSortProperties />
             <header>Bulk Google Account Update Cases</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -180,6 +189,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>Count of all Client-Side SEO Assessments by case status</footer>
+            <groupingSortProperties />
             <header>National Client-Side SEO Assessments</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -199,6 +209,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <footer>How many national audits are open and when were they created?</footer>
+            <groupingSortProperties />
             <header>All YBN Relationship Audits</header>
             <legendPosition>Bottom</legendPosition>
             <report>National_Reports/National_Audit_Report</report>
@@ -215,6 +226,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>Count of all National Relationship Audits created by week.</footer>
+            <groupingSortProperties />
             <header>National Audit Report (Count by Week)</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>

@@ -65,18 +65,21 @@
     <filter>
         <criteriaItems>
             <column>Case.Activities$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brittanie Walker,Courtney Schoonover,Cynthia Mota,Felicia Morales,Gary Poole,Jordan Sanchez,Katie Tillman,Nick Johnson,Sharica Thomas,Valencia Wilson</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$IsClosed</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

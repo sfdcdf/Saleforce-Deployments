@@ -21,18 +21,21 @@
     <filter>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>customer care</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.invoiced_last_mtd__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>,0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Secondary_Segments__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Accountant</value>

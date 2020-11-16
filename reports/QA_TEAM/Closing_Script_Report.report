@@ -49,18 +49,21 @@
         <booleanFilter>((1 OR 2) AND 3)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Closing_Script_Auto_Launch</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Closing_Script_Auto_Launch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Sales_Director__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Flores,Gillen,Griswold,Gast</value>

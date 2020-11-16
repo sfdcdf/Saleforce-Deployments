@@ -60,30 +60,35 @@
     <filter>
         <criteriaItems>
             <column>Customer_Surveys__c.Agent_Name_Captured_in_Survey__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse Customer Support Survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Closed Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Customer_Surveys__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Not Complete</value>

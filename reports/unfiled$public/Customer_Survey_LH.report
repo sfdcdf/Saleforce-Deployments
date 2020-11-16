@@ -9,6 +9,7 @@
     <filter>
         <criteriaItems>
             <column>Customer_Surveys__c.Segment__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Dentist</value>

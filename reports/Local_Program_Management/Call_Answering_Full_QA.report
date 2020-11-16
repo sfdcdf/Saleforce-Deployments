@@ -54,6 +54,7 @@
     <filter>
         <criteriaItems>
             <column>FK_$Account.Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

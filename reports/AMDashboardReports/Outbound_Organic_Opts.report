@@ -18,18 +18,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Emma McCrary,Courtney Christian,Bonnie Jenkins,Beth Shorter,Mila Raisovich,Andrew Salazar,Sara Davis,Matthew Keehn,Ryan McDonald,Jarrah Garrett,Thomas Standing,Dayna Horton,Sheneka Hill,Tamika Seda,Miles Bloxson,Kyle Girardi,Laura Gentry,Paul Ware,Ryan Newland</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Organic_Optimization_Request</value>

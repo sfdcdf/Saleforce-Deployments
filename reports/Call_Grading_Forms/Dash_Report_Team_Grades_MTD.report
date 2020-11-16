@@ -36,6 +36,7 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller_Team__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Casey McCurdy,Matthew Moberly,Press Miller,Sommer Wells</value>

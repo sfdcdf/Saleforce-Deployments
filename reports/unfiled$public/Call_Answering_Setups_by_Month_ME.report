@@ -12,12 +12,14 @@
     <filter>
         <criteriaItems>
             <column>Call_Answering__c.Setup_Complete_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Miracle-Ear,Miracle Ear</value>

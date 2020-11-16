@@ -46,18 +46,21 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Request,Case.YBN_Master_Case,Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.YBNRequestDetail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>SOW</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>SOW</value>

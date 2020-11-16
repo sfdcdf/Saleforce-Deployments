@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>britt putzer,blair pollard,christopher carr,christopher cottrell,joseph belk,kaylissa spurlock,kimberly wildes,natalie barreda,peter gett,rachel fisher,torrey scott</value>

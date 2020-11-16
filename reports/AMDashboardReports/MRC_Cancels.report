@@ -42,18 +42,21 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Closed_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Duplicate Retention Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>THIS_MONTH,LAST_N_MONTHS:2</value>

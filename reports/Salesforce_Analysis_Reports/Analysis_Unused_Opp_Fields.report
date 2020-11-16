@@ -70,6 +70,7 @@
     <filter>
         <criteriaItems>
             <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>All Opportunities created this year</value>

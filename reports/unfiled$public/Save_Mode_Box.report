@@ -92,6 +92,7 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.No_Save_Mode__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>0</value>

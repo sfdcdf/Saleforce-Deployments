@@ -18,18 +18,21 @@
     <filter>
         <criteriaItems>
             <column>Case$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Yodle_Path_Experience</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$ActivityTimeOnly</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>10/19/2015 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Press Miller,Chrystabel Sifflet,Farley Edward,Dania Eugene,Petra Bellas- Stanislas,Alexandra Moise,Becky JnBaptiste,Chris Dominique,Chrystal Prosper,Dyane Edwards,Emma Joseph,Eva Lauren,Garna Charlery,Jacqueline Richard,Jesse Taylor,Keri Wilson,Kevin Cadette,Kisha Elibox,Kurcy Montoute,Kurina Joseph,Nicole Joseph,Petra Bellas,Russelle Lord,Shannon Rock,Suprena George,Velma Viville,Johan Evariste,Aalliyah Aimable,Windel Alexander,Kevin Leo,DAnne DeBeauville,Natasha Byron,Benjamin Sookwa,D&apos;Anne DeBeauville</value>

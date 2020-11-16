@@ -42,12 +42,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Performance_Issue,Case.YBN_Master_Case,Case.Master,Case.O_Account_Update,Case.New_Client_Setup</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Submission_Quality__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Unsatisfactory</value>

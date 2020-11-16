@@ -21,18 +21,21 @@
     <filter>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Alex Renner,Andrew Little,Derek Rosenzweig,greg boyle,josh schure,justin platt,kevin noonan,nick dispenza,nimish amin,zack fishman</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Segment_YL__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>gym,Specialty Fitness Class</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>

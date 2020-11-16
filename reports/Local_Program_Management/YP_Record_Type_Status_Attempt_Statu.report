@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Case$Account</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Rusty&apos;s Cleaning Service - Test</value>

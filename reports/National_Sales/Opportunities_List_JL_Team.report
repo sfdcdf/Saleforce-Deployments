@@ -25,24 +25,28 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal,Opportunity.YBN_Individual_Location</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Contract Signed,Implementation,Closed Won,Closed Lost,Adoption,Opportunity Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test,dorm</value>
         </criteriaItems>
         <criteriaItems>
             <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lane Teitelbaum,Chad Glenn,Steve Kennedy,Derek Rosenzweig,Justin Platt,Greg Boyle</value>

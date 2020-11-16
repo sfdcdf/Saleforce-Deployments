@@ -56,12 +56,14 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Saved with Upsell</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>local pod queue,diane mulkey,jackie riedl,Elayne Hoover,erik vicars,riedl,Sherri Aguinaga,rory diller,Makenzie Cunningham,kyle zaffin</value>

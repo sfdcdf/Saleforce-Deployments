@@ -18,18 +18,21 @@
     <filter>
         <criteriaItems>
             <column>FK_$Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>TORCHx</value>
         </criteriaItems>
         <criteriaItems>
             <column>Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Complete,Backed Out</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Rusty&apos;s Cleaning Service - Test</value>

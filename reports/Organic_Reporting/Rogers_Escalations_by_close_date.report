@@ -39,18 +39,21 @@
     <filter>
         <criteriaItems>
             <column>Account$Channel_Development__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Rogers</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Reason_for_Submission__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>012600000009V0o,Organic_Analysis__c.Organic_Optimization_Request,Organic_Analysis__c.Underperforming</value>

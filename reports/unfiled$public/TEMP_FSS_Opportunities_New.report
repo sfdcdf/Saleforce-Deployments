@@ -33,24 +33,28 @@
     <filter>
         <criteriaItems>
             <column>Account$Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>136198,131681,131647,131683,123744,300296,123733,123759,348393,123817,123824,123708,123679,123784,123724,123718,123665,344504,338420,340020,344422,339907,344417,338422,206367,344202,123760,123756,123765,123713,123815,312183,123837,348207,347442,348375,348362,348762,348354,348378,348385,348384,348358,348357,123798,123712,123813,123691,123703,123808,123702,291924,344446,321429,123668,345552,317479,123727,277096,123730,123659,123779,329998,334600,336523,348387,348386,123805,123682,123656,123726,123728,123849,123707,123818,321176,131675,131652,131673,149398,142748,344419,344491,344416,344420,123572,123541,227641,217683,249136,348377,246413,309992,280532,277101,123687,326713,334815,336690,348376,123706,123737,123812,123711,123769,123823,123828,349690</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$IsClosed</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Individual_Location</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>messineo</value>

@@ -33,18 +33,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Test_Management__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>yodle path</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Total_Logins_last_30_Days__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>2</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Test_Management__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>control</value>

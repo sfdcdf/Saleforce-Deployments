@@ -33,24 +33,28 @@
     <filter>
         <criteriaItems>
             <column>Case.Case_Closed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Jordan Laughlin</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Day 40 Day,Day 20 Day,Day 60 Day</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Account_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>OFF : OFF</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Entered_Save_Mode__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>

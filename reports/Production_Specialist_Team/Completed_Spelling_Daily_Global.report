@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>Case.IMS_Completing_Opt2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Jared Pfaff,Stephanie Cinque,Andrea Wilson,Michael Chaides,Ashleigh Ratkovich,Ashland Murphy</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.general_notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>spelling</value>

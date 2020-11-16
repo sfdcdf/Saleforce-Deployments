@@ -19,18 +19,21 @@
         <booleanFilter>(1 or 3) and 2</booleanFilter>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Erik Vicars</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>PTO,Not Scheduled,LUNCH,loa,ooo,out of office,supervisor</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Assigned_To_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Erik Vicars</value>

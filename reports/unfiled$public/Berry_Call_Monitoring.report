@@ -33,18 +33,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.Partner_Inbound_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller_Team__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Wendy Manley</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>rogers</value>

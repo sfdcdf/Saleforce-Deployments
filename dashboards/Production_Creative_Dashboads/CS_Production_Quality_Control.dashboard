@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -16,6 +16,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>DGA Cases</header>
             <legendPosition>Bottom</legendPosition>
             <report>Jeremy_Coggin_Report_List/DGA_Cases</report>
@@ -33,6 +34,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>Berry Setups</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Berry_Setups4</report>
@@ -51,6 +53,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>PLQA  To Do</header>
             <legendPosition>Bottom</legendPosition>
             <report>Online_Production_Team/PLQA_MA_Cases_to_QA</report>
@@ -78,6 +81,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <header>Change Case QA Queue Open</header>
             <indicatorBreakpoint1>150.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>250.0</indicatorBreakpoint2>
@@ -96,6 +100,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>BPE 2</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/BPE_2</report>
@@ -113,6 +118,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>LBW daily</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/lbw_productivity</report>
@@ -133,6 +139,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>False Positives</header>
             <legendPosition>Bottom</legendPosition>
             <report>Jeremy_Coggin_Report_List/Mature_Accounts_QA_False_Positive</report>
@@ -150,6 +157,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>LBW Setups</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/LBW_Setups</report>
@@ -168,6 +176,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>PLQA Completed today</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Completed_PL_QA_s</report>

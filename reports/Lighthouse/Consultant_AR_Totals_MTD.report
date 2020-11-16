@@ -9,12 +9,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.AR_Request_Form</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete</value>

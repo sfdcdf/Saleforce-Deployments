@@ -49,48 +49,56 @@
     <filter>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web,CS@Outrank.com,Local Pooled VM,customercare@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>[Auto-reply],re-optimization,csc has been assigned,billing error</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Renewal / Upsell</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>7/24/2015 11:03 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>WEBEMAIL</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>autosupport@lighthousepmg.com,info@laborlawnewsupdates.com,medicalsupport@lighthousepmg.com,mailer-daemon@salesforce.com,noreply@rogersoutrank.com,mailer@office.lhmailer.com,no-reply@servicetask.com,support@lighthousepmg.com,no-reply@yodle.com,noreply@yodle.com,customercare@yodle.com,sfsync@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>WEBEMAIL</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>itprosalesforce@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Yodle,Inc.,Lighthouse Dummy Account</value>

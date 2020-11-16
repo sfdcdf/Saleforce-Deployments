@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Entered_Save_Mode__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

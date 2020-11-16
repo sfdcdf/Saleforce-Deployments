@@ -52,18 +52,21 @@
         <booleanFilter>1 AND 3 AND 2</booleanFilter>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Email:</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Assigned_To_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>makenzie cunningham,erik vicars,barb jenkins,shelia kelly,leonard edwards,adam kovacs,randy dewey</value>

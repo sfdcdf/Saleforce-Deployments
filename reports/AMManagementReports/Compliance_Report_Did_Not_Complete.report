@@ -24,48 +24,56 @@
     <filter>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yodle_Path__c.Touch_Plan_1,Yodle_Path__c.Touch_Plan_2,Yodle_Path__c.Touch_Plan_3</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Did Not Complete</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$X1st_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$X2nd_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases.Yodle_Path__r$X3rd_Attempt_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Rusty&apos;s Cleaning Service - Test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Current_Active_Cancel_Form__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Provisioning,Live</value>

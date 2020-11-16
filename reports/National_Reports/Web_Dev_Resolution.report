@@ -49,42 +49,49 @@
         <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR (5 AND 6)) AND 7</booleanFilter>
         <criteriaItems>
             <column>Case.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Date_Sent_to_Production__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Requested_Website_Updates__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>YBN Corporate Site Creation,YBN Corporate Site Update/Change,YBN Custom Project,YBN Display Creative,YBN Display Retargeting,YBN Metropage/LP Creation,YBN Presale Mockup,YBN Template Creation,YBN Template Update/Change,YBN  Portal Creation,Immediate Teardown - G &amp; B Listings,YBN Mass Update,Client Side Account,None</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Customer Success Consultant,YBN: Senior Customer Success Consultant,Web Dev,YBN: Customer Success Director</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web Dev</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Account.YBN_Corporate_Relationship</value>

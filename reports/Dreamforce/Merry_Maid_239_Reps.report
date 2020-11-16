@@ -52,12 +52,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Corp_Acct_in_YL_Parent_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>239</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Account_Director__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Grace Merten</value>

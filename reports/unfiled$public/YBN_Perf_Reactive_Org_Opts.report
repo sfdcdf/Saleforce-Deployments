@@ -60,18 +60,21 @@
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Organic_Optimization_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$MOPs_Analyst__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>jaffe,wesley adams,paul zwicker,melissa cornine,matt austin,joshua golden,joshua fortunatus,anderson allen,gibbs,dembitzer,gustavo,kunis</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$IMS_Completing_Opt__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>jaffe,wesley adams,paul zwicker,melissa cornine,matt austin,joshua golden,joshua fortunatus,anderson allen,gibbs,dembitzer,gustavo,kunis</value>

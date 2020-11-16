@@ -41,24 +41,28 @@
     <filter>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Test_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>,client communication,cancel request,other/unknown,maps verification,taxonomy,feature support,Feature Support - Essentials,performance,Billing,Client Escalation,CRM,Feature Support - LH Auto,Free Time Performance Request,Inbound Inquiry,Outbound Call,Quality Team,technical issues,request to cancel,administration,common questions,post cancel,proactive touch,product feedback,product feedback essentials,sales feedback,setup call,other</value>

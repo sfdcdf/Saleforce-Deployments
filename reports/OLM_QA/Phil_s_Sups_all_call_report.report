@@ -90,24 +90,28 @@
         <booleanFilter>(1 AND 2 AND 3 AND 4)</booleanFilter>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1,2</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$CallDurationInSeconds</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>450</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Status</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Case_Owner_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>shelia kelly,Barb Jenkins</value>

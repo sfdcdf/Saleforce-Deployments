@@ -36,12 +36,14 @@
     <filter>
         <criteriaItems>
             <column>Account.Cases$Status</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Escalated</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$IsClosed</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

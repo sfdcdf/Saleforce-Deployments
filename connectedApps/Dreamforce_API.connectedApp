@@ -6,6 +6,13 @@
     <oauthConfig>
         <callbackUrl>https://notreal.com/api/callback</callbackUrl>
         
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
         <scopes>Full</scopes>
     </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
 </ConnectedApp>

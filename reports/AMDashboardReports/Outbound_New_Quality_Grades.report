@@ -65,12 +65,14 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Assigned_To_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Nathan Thompson,Leonard Edwards,Andrew Roy</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Closed - Grading Complete</value>

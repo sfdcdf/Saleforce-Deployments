@@ -25,12 +25,14 @@
     <filter>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Madeline Klaman,Jordan Sanchez,Koula Barsakis,Peyden Edwards,Zachary Kirchem,Mariano Carrese,Priyanka Rao,Sonny Perea,Bea Peikert,Beau Osteros,Rory Diller,Jeremiah Lerma,Rolando Gonzalez,Brooke Grossman,Jacqueline Leona,Jennifer Agulay,Julia Correa,Kati Yee,Katura Daniel,Kelly Costello,Krystal Bell,Linzi Plummer,Lynn Tobias,Mark Champ,Matthew Kerlin,Matthew Scott,Meagan Holdiman,Steven Russell,Travis Dube,Tricia Valadez,Lauren Fischer,Joseph Janisch,Zach Bailey</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Master</value>

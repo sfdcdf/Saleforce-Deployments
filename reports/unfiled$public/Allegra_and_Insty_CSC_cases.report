@@ -33,60 +33,70 @@
     <filter>
         <criteriaItems>
             <column>Account$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Individual_Location_Service_Level__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Service Level A,Service Level B,Service Level C,Service Level D</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Status</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New,Needs 2nd Attempt,Rescheduled on 1st Attempt</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Outbound_Touch_Point</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$YBN_CSC_Completed_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Jordan Heller,Samantha Grande,Dan McMullen,Anna Hammett,John Scott,Natalie Lance,Raji Green,Ryan Wilson,Casey Hatch,Sabreena Ahmed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Client_Contact_Preference__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Prefers No Contact</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>startsWith</operator>
             <value>allegra,insty</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Client_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>332876,332848,332841,332838,332837,332835,332834,332875,332874,332863,332858,332832,332816,332814,332799,332794,332787,332809,332803,332802,332797,332793,331425,332782,332781,332771,332747,332745,332713,332744,332720,332715,332697,332696,332691,332690,332689,332686,332684,332682,332666,332662,332661,332659,332650,332638,332629,332673,332671,332665,332660,332658,332656,332651,332649,332643,332639,332637,332619,332617,332603,332600,332586,332585,332584,332575,332574,332573,332571,332568,343466,340562,332883,332882,332881,332862,332844,332830,332820,332817,332850,332849,332845,332836,332829,332819,332798,332786,332811,332808,332805,332795,332785,332735,332729,332726,332704,332700,332698,332741,332734,332725,332721,332703,332699,332695,332692,332680,332676,332670,332668,332657,332655,332635,332683,332681,332679,332667,332646,332634,332631,332625,332615,332608,332605</value>

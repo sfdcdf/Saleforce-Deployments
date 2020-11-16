@@ -89,30 +89,35 @@
     <filter>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>am,pm</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$LOCC_App__campaignname__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Local Pod</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$created_by_profile__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Dedicated CS Support,Partner CS Team</value>

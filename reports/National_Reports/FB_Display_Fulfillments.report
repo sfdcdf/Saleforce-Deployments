@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>Fulfillment__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Onboarding</value>
         </criteriaItems>
         <criteriaItems>
             <column>Fulfillment__c.Products_Sold__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Corporate Funded Display,Facebook</value>

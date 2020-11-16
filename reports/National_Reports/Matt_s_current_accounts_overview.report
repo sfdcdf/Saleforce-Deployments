@@ -18,30 +18,35 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_Account_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Customer</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Account_Director__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>angela orbon,ben malki,emily currin,gabe goldberg,jared ray,jeffrey davis,morgan rigsbee,parker small,paul escobedo,ryan deller,ryan keller,sommer wells,zachary stein,elliot wiley</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Relationship_Service_Level_C__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

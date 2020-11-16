@@ -27,30 +27,35 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>CS_Operations__c.YBN_Operations_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Request_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Indiviudal Location Service Level Update - For All Accounts,Individual Location Service Level Update - For 1 Account or Subset of Accounts</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.CS_Approval_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Request Approved,Request Denied</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed - Added,Closed - Not Eligible,Closed - Completed/Updates Made,Closed - Completed,Closed - Could Not Complete,Closed - Review for CS Ops Plan,Closed - Declined by Channel Lead,Closed - Not Approved</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Request_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>test</value>

@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Heather Young,Jorge Suarez,Crystal Eckel,Brandon Fry,Javier Quiroz,Kyle Blair,Nikki Carver,Beau Osteros,Angela Ratliff,Christine Horn</value>

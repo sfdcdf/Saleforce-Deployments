@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><alerts>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
         <fullName>Automated_TP_Event_Scheduled</fullName>
         <description>Automated TP Event Scheduled</description>
         <protected>false</protected>
@@ -7,7 +8,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/Automated_TP_Event_Scheduled</template>
-    </alerts><alerts>
+    </alerts>
+    <alerts>
         <fullName>YBN_Automated_TP_Event_Rescheduled</fullName>
         <description>YBN - Automated TP Event Rescheduled</description>
         <protected>false</protected>
@@ -16,7 +18,8 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/Automated_TP_Event_Rescheduled</template>
-    </alerts><fieldUpdates>
+    </alerts>
+    <fieldUpdates>
         <fullName>YBN_date_stamp_close_plan</fullName>
         <field>Close_Date__c</field>
         <formula>TODAY()</formula>
@@ -24,7 +27,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>ybn_update_close_date_when_closed</fullName>
         <field>Close_Date__c</field>
         <formula>TODAY()</formula>
@@ -32,7 +37,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Event_Start_Time</fullName>
         <field>Event_Start_time__c</field>
         <formula>ActivityDateTime</formula>
@@ -40,7 +47,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><rules>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
         <fullName>WBN - Automated TP Alert Created</fullName>
         <actions>
             <name>Automated_TP_Event_Scheduled</name>
@@ -53,7 +62,8 @@
             <value>WBN Calendar Blocker</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>WBN - Automated TP Alert Updated</fullName>
         <actions>
             <name>YBN_Automated_TP_Event_Rescheduled</name>
@@ -62,7 +72,8 @@
         <active>true</active>
         <formula>AND(   RecordType.Name = "WBN Calendar Blocker",    OR(     ISCHANGED(ActivityDate),     ISCHANGED(ActivityDateTime)   ) )</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>YBN Update Close Date for Events</fullName>
         <actions>
             <name>YBN_date_stamp_close_plan</name>
@@ -75,7 +86,8 @@
             <value>Completed</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>ybn event update date when closed</fullName>
         <actions>
             <name>ybn_update_close_date_when_closed</name>
@@ -88,7 +100,8 @@
             <value>Completed,LifeCycle Milestone Completed,Closed - Not Completed</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Update Event Start Time</fullName>
         <actions>
             <name>Update_Event_Start_Time</name>
@@ -100,4 +113,5 @@
             <operation>notEqual</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules></Workflow>
+    </rules>
+</Workflow>

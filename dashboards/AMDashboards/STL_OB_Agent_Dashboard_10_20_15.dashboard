@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -13,7 +13,8 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <footer>Find your case, and update to associate with the OB Call case, or the &quot;Child level&quot; off the Yodle Path case. If an IB Call not associated with any account associate it with the Yodle Acct # 1364.</footer>
+            <footer>Find your case, and update to associate with the OB Call case, or the "Child level" off the Yodle Path case. If an IB Call not associated with any account associate it with the Yodle Acct # 1364.</footer>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -28,6 +29,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -42,6 +44,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <header>TPs Acted On Today</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -56,6 +59,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <header>TPs Acted On Yesterday</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -73,7 +77,8 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <footer>Issue: Setup Call was completed based on Attempt Status, but the Setup Call was not marked as &quot;Completed.&quot; The Coaching Call will not show for CS to call.</footer>
+            <footer>Issue: Setup Call was completed based on Attempt Status, but the Setup Call was not marked as "Completed." The Coaching Call will not show for CS to call.</footer>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -88,7 +93,8 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <footer>Issue: Coaching Call was completed based on Attempt Status but not closed as &quot;completed.&quot; Will prevent the TP cases from firing and for CS from receiving bonus credit.</footer>
+            <footer>Issue: Coaching Call was completed based on Attempt Status but not closed as "completed." Will prevent the TP cases from firing and for CS from receiving bonus credit.</footer>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -104,6 +110,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>Issue: If Coaching Call scheduled, but Setup Call not marked as Complete. The Coaching Call case will not show for calling.</footer>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -119,6 +126,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>Issue: Agent completed Setup Call without marking or scheduling the Coaching Call.</footer>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -147,6 +155,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -162,7 +171,8 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <footer>You shouldn&apos;t have your name on any call cases before you leave at the end of the day. Go in and properly remove name &amp; update cases.</footer>
+            <footer>You shouldn't have your name on any call cases before you leave at the end of the day. Go in and properly remove name &amp; update cases.</footer>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -177,14 +187,15 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <footer># of cases in your &quot;My Open Cases&quot; view. Make sure you are taking care of actionable ones before you leave. If a case has been sitting for more than 24 hours, check it out and find out why!</footer>
+            <footer># of cases in your "My Open Cases" view. Make sure you are taking care of actionable ones before you leave. If a case has been sitting for more than 24 hours, check it out and find out why!</footer>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>AMDashboardReports/Open_Cases_in_Outbound_Team_Name</report>
             <showPicturesOnTables>false</showPicturesOnTables>
             <sortBy>RowValueDescending</sortBy>
-            <title>Open Acct Update Cases In Agent&apos;s Name</title>
+            <title>Open Acct Update Cases In Agent's Name</title>
         </components>
     </rightSection>
     <runningUser>kwarren@yodle.com</runningUser>

@@ -45,18 +45,21 @@
     <filter>
         <criteriaItems>
             <column>Opportunity$SDR__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Activities$Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Discovery Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Activities$Close_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>

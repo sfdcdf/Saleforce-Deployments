@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata"><fieldUpdates>
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
         <fullName>Update_Monthly_Value</fullName>
         <field>MonthlyValue__c</field>
         <formula>AdoptionPct__c * Quantity__c * SalesPrice__c</formula>
@@ -6,7 +7,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><fieldUpdates>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Total_Value</fullName>
         <field>TotalValue__c</field>
         <formula>AdoptionPct__c * Quantity__c * SalesPrice__c * AdoptionLen__c</formula>
@@ -14,7 +17,9 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates><rules>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
         <fullName>Calculate Values - One Time</fullName>
         <actions>
             <name>Update_Total_Value</name>
@@ -33,7 +38,8 @@
   )
 )</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules><rules>
+    </rules>
+    <rules>
         <fullName>Calculate Values - Recurring</fullName>
         <actions>
             <name>Update_Monthly_Value</name>
@@ -53,4 +59,5 @@
   ISCHANGED(ApexUpdate__c) 
 )</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules></Workflow>
+    </rules>
+</Workflow>

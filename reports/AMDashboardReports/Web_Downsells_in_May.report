@@ -15,12 +15,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Resolution_Attempt_Status_1__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Saved - Web Downsell</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>5/2/2013 12:00 AM</value>

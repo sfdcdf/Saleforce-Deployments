@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -16,6 +16,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/SDR_Corp_Scheduled_Disco_30_Day</report>
             <showPercentage>false</showPercentage>
@@ -39,6 +40,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>Opportunity$SDR__c</groupingColumn>
             <groupingColumn>Opportunity$SDR__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/SDR_Corp_Scheduled_Activities</report>
             <showPercentage>false</showPercentage>
@@ -62,6 +64,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>Opportunity$SDR__c</groupingColumn>
             <groupingColumn>Opportunity$SDR__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/Corp_SDR_Last_120_Completed_Activities</report>
             <showPercentage>false</showPercentage>
@@ -85,6 +88,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>Opportunity$SDR__c</groupingColumn>
             <groupingColumn>Opportunity$SDR__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/CORP_SDR_Flaked_Activities</report>
             <showPercentage>false</showPercentage>
@@ -105,6 +109,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/SDR_Corp_Scheduled_Disco_MTD</report>
             <showPercentage>false</showPercentage>
@@ -128,6 +133,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>Opportunity$SDR__c</groupingColumn>
             <groupingColumn>Opportunity$SDR__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/SDR_Corp_Scheduled_Activities_MTD</report>
             <showPercentage>false</showPercentage>
@@ -151,6 +157,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>Opportunity.SDR__c</groupingColumn>
             <groupingColumn>Opportunity.SDR__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/SDR_Opportunity_Stages_All_Open</report>
             <showPercentage>false</showPercentage>
@@ -177,6 +184,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>Opportunity$SDR__c</groupingColumn>
             <groupingColumn>Opportunity$SDR__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/Corp_SDR_MTD_Completed_Activities1</report>
             <showPercentage>false</showPercentage>
@@ -200,6 +208,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>Opportunity.SDR__c</groupingColumn>
             <groupingColumn>Opportunity.SDR__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/SDR_Opportunity_Stages_Last_30_Day</report>
             <showPercentage>false</showPercentage>
@@ -223,6 +232,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>Opportunity.SDR__c</groupingColumn>
             <groupingColumn>Opportunity.SDR__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/SDR_Opportunity_Stages_YTD</report>
             <showPercentage>false</showPercentage>

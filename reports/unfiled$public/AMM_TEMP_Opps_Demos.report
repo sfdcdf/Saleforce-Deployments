@@ -30,24 +30,28 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Activities$Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>demo</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Parent_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Chem-Dry Carpet &amp; Upholstery Cleaning,DKI Ventures,LLC (Disaster Kleenup International),Flooring America Corporate,Four Seasons Sunrooms Master,HomeTeam Inspection Services,International Design Guild,Johnson Controls - Liberties Dealers,Painting with a Twist,LLC,The Floor Trader/Stone Mountain/GCO,The Little Gym</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Activities$IsClosed</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Activities$Status</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Not Started,Scheduled,Rescheduled,In Progress</value>

@@ -48,6 +48,7 @@
     <filter>
         <criteriaItems>
             <column>Fulfillment__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Project Complete</value>

@@ -45,12 +45,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.Lighthouse_Upsell_Opportunity</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Sarah Vickers,Philip Schaffer,Georgiann Ray,Beau Osteros,Kat Dooley,Sophie Lavin,Steven Russell,Pryianka Rao,Matthew Scott,Jordan Sanchez,Courtney Schoonover</value>

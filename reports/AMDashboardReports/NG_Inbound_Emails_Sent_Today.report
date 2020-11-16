@@ -43,18 +43,21 @@
         <booleanFilter>1 AND 2 AND 3</booleanFilter>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Origin</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Web,CS@Outrank.com,Local Pooled VM,customercare@yodle.com,CS Upsell,YodleGoldService@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$Assigned_To_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Angela Anderson,Kendel McArdle</value>

@@ -28,48 +28,56 @@
         <booleanFilter>1 AND 2 AND 3 AND (4 OR 5) and (6 or 7) and 8</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Requested_Updates__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>Address Update,Unpaid Tracking Phone #,Domain Swap</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Live</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Bulk_Google_AccountPL__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Bulk_Bing_AccountPL__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT_ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Brightway Insurance,Cordell &amp; Cordell,Critter Control,Hand &amp; Stone,Johnson Controls - Corporate,Miracle Method Surface Refinishing,Mr. Electric,Speedpro Imaging Center,TWO MEN AND A TRUCK,Orthology Inc.,Mr. Appliance</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Brightway Insurance,Cordell &amp; Cordell,Critter Control,Hand &amp; Stone,Johnson Controls - Corporate,Miracle Method Surface Refinishing,Mr. Electric,Speedpro Imaging Center,TWO MEN AND A TRUCK,Orthology Inc.,Mr. Appliance</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New</value>

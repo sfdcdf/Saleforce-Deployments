@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>ryan wilson,Lyndsay Spa,Jelena Kolomejac,Christopher Grau,Derrek Shank,Emily Brock,zach kumnick,charlotte adams,logan rollier,greta oldach</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Rogers_in_Contract_Cancelation</value>

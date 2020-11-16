@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -13,6 +13,7 @@
                     <column>FORMULA3</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
+                <groupingSortProperties />
                 <header>LEX - SE Weekly Bookings</header>
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
@@ -43,6 +44,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>true</expandOthers>
                 <groupingColumn>FAMILY</groupingColumn>
+                <groupingSortProperties />
                 <header>LEX - Product Family - This Month</header>
                 <legendPosition>Right</legendPosition>
                 <report>WBN_SE_MGMT/LEX_Product_Family_This_Month</report>
@@ -72,6 +74,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>true</expandOthers>
                 <groupingColumn>FAMILY</groupingColumn>
+                <groupingSortProperties />
                 <header>LEX - Product Family - Last Month</header>
                 <legendPosition>Right</legendPosition>
                 <report>WBN_SE_MGMT/LEX_Product_Family_Last_Month</report>
@@ -94,6 +97,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <footer>LEX - SE Weekly Bookings</footer>
+                <groupingSortProperties />
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -123,6 +127,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>true</expandOthers>
                 <groupingColumn>FULL_NAME</groupingColumn>
+                <groupingSortProperties />
                 <header>LEX - PPC- This Month</header>
                 <legendPosition>Right</legendPosition>
                 <report>WBN_SE_MGMT/LEX_PPC_This_Month</report>
@@ -152,6 +157,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>true</expandOthers>
                 <groupingColumn>FULL_NAME</groupingColumn>
+                <groupingSortProperties />
                 <header>LEX - PPC- Last Month</header>
                 <legendPosition>Right</legendPosition>
                 <report>WBN_SE_MGMT/LEX_PPC_This_Month1</report>
@@ -175,6 +181,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <footer>LEX - SE Weekly Bookings</footer>
+                <groupingSortProperties />
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -205,6 +212,7 @@
                 <expandOthers>true</expandOthers>
                 <footer>LEX - FaceBook - This Month</footer>
                 <groupingColumn>FULL_NAME</groupingColumn>
+                <groupingSortProperties />
                 <header>Facebook Sales - This Month</header>
                 <legendPosition>Right</legendPosition>
                 <report>WBN_SE_MGMT/LEX_FaceBook_This_Month</report>
@@ -235,6 +243,7 @@
                 <expandOthers>false</expandOthers>
                 <footer>LEX - FaceBook - Last Month</footer>
                 <groupingColumn>FULL_NAME</groupingColumn>
+                <groupingSortProperties />
                 <legendPosition>Right</legendPosition>
                 <report>WBN_SE_MGMT/LEX_FaceBook_Last_Month</report>
                 <showPercentage>false</showPercentage>
@@ -264,6 +273,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>true</expandOthers>
                 <groupingColumn>FULL_NAME</groupingColumn>
+                <groupingSortProperties />
                 <header>LEX - Foundations - This Month</header>
                 <legendPosition>Right</legendPosition>
                 <report>WBN_SE_MGMT/LEX_Foundations_This_Month</report>
@@ -293,6 +303,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>true</expandOthers>
                 <groupingColumn>FULL_NAME</groupingColumn>
+                <groupingSortProperties />
                 <header>LEX - Foundations - Last Month</header>
                 <legendPosition>Right</legendPosition>
                 <report>WBN_SE_MGMT/LEX_Foundations_Last_Month</report>

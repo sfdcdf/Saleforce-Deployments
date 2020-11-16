@@ -46,12 +46,14 @@
         <booleanFilter>1 AND 2</booleanFilter>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>deca dental,ideal dental,cornerstone,Milestone Dental,Sunnyvale Smiles,Midway Crossing,Frisco Dental,Ideal Smiles,Hictory Center,Teasley Center,Lake Worth Center,Allen Center,Plano Center</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Escalated__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

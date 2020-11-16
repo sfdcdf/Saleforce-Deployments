@@ -22,42 +22,49 @@
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 or 7)</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Google_Listing_Created__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Listing Resides in Bulk Account</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Organic_Live_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>1/1/2014</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Bulk_Google_Account_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Parent</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>TWO MEN AND A TRUCK,Johnson Controls - Liberties Dealers,Hand &amp; Stone,Charles D. Jone,Virginia Air,Design Air,The Republic Co,US Air Condition,Coleman Heating,Century Air,North Florida Heat,American Air,Ferguson Enterp,Mid-City Supply,ABCO Refrigeration,Calverley Supply,Yeomans Distrib,Mid City Supply,Aircon Engineer,Norman S. Wright Company,Gustav A Larson Company,Le Groupe Master,Keller Supply Company,Refrigerative Supply,Starr Service Company,Thos Somerville Co HQ,Upstate Systems,Inc.,Canada Branch,Johnson Air,M &amp; A Supply,Winstel Controls Inc,Badger Metals,Solar Supply,Johnson Controls,cfm Distrib,Century AAA LTD,FW Webb,Pipeline Supply,Plumbers Supply,Johnson Supply,Famous Supply,Luxaire,York,ACU</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>TWO MEN AND A TRUCK,Johnson Controls - Liberties Dealers,Hand &amp; Stone,Charles D. Jone,Virginia Air,Design Air,The Republic Co,US Air Condition,Coleman Heating,Century Air,North Florida Heat,American Air,Ferguson Enterp,Mid-City Supply,ABCO Refrigeration,Calverley Supply,Yeomans Distrib,Mid City Supply,Aircon Engineer,Norman S. Wright Company,Gustav A Larson Company,Le Groupe Master,Keller Supply Company,Refrigerative Supply,Starr Service Company,Thos Somerville Co HQ,Upstate Systems,Inc.,Canada Branch,Johnson Air,M &amp; A Supply,Winstel Controls Inc,Badger Metals,Solar Supply,Johnson Controls,cfm Distrib,Century AAA LTD,FW Webb,Pipeline Supply,Plumbers Supply,Johnson Supply,Famous Supply,Luxaire,York,ACU</value>

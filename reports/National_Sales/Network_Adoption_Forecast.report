@@ -62,48 +62,56 @@
         <booleanFilter>(((1 or 4)  AND 2 AND 3 AND (5 OR 6 OR 7))) AND 8</booleanFilter>
         <criteriaItems>
             <column>Opportunity.Forecasted_PPC_Adoption_Total_Value__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Dorm,test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Forecasted_Reviews__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Foundations_Adoption_Target_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Reviews_Adoption_Target_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.PPC_Adoption_Target_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Lost</value>

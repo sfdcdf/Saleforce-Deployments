@@ -9,12 +9,14 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Agent_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Mark Champ,Lauren Fischer,Tricia Valadez,Joe Janisch</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Kati Yee,Christopher Baker,Brooke Grossman</value>

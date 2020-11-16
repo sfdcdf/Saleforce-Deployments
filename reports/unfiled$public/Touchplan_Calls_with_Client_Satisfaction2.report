@@ -61,30 +61,35 @@
     <filter>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1,2</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Status</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Complete</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Reason</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>CS Touch Plan,CS Touch Plan - Dedicated</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>leads by web</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Client_Satisfaction__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

@@ -69,24 +69,28 @@
     <filter>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Non-Actionable Email</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Non-Actionable Email,Spam</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Local Consultant,Local CSM</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>CS Upsell,Web,@lighthousepmg.com,LH Medical VM,LH Auto VM,LH Field Services VM,Platinum Support,Local Pooled VM,CS@Outrank.com,customercare@yodle.com,Rogers Dedicated VM,Rogers Pooled VM,outranksupport@service.rogersoutrank.com,rogerssupport@service.rogersoutrank.com,LBWCustomerService@web.com,LBW VM,YodleGoldService@yodle.com</value>

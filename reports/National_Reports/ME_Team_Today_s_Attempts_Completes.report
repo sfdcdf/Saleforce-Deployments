@@ -25,36 +25,42 @@
         <booleanFilter>(1 AND (2 OR 3 OR (4 AND 5))) AND 6</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.YBN_Outbound_Touch_Point</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Attempt_Date_1__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Attempt_Date_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Completed,Completed on Callback,Incomplete after 2nd Attempt,Closed - Rescheduled</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Jeanie Isenhour,Cristina Fioramonti,Chase Alyeshmerni</value>

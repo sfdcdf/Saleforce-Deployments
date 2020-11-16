@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>FK_$Yodle_Path__c.Touch_Plan_Pass_Fail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>PASS</value>

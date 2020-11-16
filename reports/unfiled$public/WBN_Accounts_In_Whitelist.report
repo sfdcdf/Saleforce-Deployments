@@ -22,42 +22,49 @@
         <booleanFilter>((1 AND 2 AND 3 AND (4 OR 5)) AND 6) AND 7</booleanFilter>
         <criteriaItems>
             <column>Organic_Analysis__c.YO_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Live</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>YBN,National</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Google_Login_Email__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>googlecertification,googleverification</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.GMBL_Login_E_Mail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>googlecertification,googleverification</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Owner_Verified_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Owner-Verified/Managed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Parent_Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Johnson Controls</value>

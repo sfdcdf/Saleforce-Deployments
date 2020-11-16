@@ -21,18 +21,21 @@
     <filter>
         <criteriaItems>
             <column>Case$IsClosed</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.XJen_Test_NCS_No_Use</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Origin</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>confirmation@berrylocalleads.com,Vivial Sales</value>

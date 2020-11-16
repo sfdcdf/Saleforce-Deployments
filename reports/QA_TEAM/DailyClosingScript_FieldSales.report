@@ -37,12 +37,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Closing_Script_Auto_Launch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Sales_Director__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Goodwin,Kay,Terrell,Mills,LaLonde,McCallister,Kearns,Haug,Crawford</value>

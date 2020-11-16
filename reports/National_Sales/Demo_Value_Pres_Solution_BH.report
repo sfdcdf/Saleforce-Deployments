@@ -13,24 +13,28 @@
         <booleanFilter>(((1 OR 3) AND 2)) AND 4</booleanFilter>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>M003 - Demo/Value Presentation,M008 - Solutions in Action Presentation</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Interaction_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Follow Up,Prep</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Demo &amp; Value Presentation,Solution Review Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Sales/Account Director C,YBN: Sales Director Manager (East Coast B)</value>

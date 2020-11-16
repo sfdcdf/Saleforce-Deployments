@@ -22,18 +22,21 @@
         <booleanFilter>(1 AND 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.Auto_Support_Ticket</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Segment__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Auto Repair Shop</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Delete Case</value>

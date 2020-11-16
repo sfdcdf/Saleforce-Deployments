@@ -15,6 +15,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Account_Description__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>$1000 Lawyer Pod Test</value>

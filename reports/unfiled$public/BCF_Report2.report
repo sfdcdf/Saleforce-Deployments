@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Customer_Surveys__c.CSC_Business_Customization_Form</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Jeremy&apos;s Powerhouse</value>

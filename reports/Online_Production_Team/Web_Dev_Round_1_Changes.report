@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Web_Dev_User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Web_Dev_User__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Quinn Campbell</value>

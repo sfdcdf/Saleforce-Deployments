@@ -29,60 +29,70 @@
         <booleanFilter>(1 AND 3 AND 4 AND 5 AND 6 AND (2 OR 7 OR 8) AND 9) AND 10</booleanFilter>
         <criteriaItems>
             <column>Organic_Analysis__c.Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Account_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Lead</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>National Account</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>National Master Account</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.SFDC_to_CTS_Sync_Enabled__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Account_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Essentials</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Account_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Yodle</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.External_Ticket_ID__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed</value>

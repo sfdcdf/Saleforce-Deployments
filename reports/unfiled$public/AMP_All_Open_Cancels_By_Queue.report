@@ -96,18 +96,21 @@
         <booleanFilter>(1 AND (2 OR 3))</booleanFilter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lead stream support,LBW Customer Service,platinum support,local pod queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Retention_Consultant__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>LBW Customer Service,lbw support,platinum support,local pod queue</value>

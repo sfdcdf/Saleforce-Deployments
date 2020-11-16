@@ -15,7 +15,16 @@
     <oauthConfig>
         <callbackUrl>https://localhost:44317/api/callback/</callbackUrl>
         
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
         <scopes>Full</scopes>
     </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <permissionSetName>Quality Team Rep Management Access</permissionSetName>
+    <profileName>System Administrator</profileName>
     <startUrl>https://localhost:44317/</startUrl>
 </ConnectedApp>

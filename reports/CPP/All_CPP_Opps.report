@@ -42,6 +42,7 @@
     <filter>
         <criteriaItems>
             <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Eric Brief,Martin Kearns</value>

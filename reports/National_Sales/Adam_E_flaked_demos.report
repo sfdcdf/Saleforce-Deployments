@@ -22,24 +22,28 @@
         <booleanFilter>1 AND 2 AND (3 or 4)</booleanFilter>
         <criteriaItems>
             <column>Account.National_SDR_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Adam Elliott</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Disposition__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Flaked</value>
         </criteriaItems>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Mark Armstrong</value>
         </criteriaItems>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Team VanSluyters</value>

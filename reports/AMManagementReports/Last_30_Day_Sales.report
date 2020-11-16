@@ -29,36 +29,42 @@
         <booleanFilter>(((1 AND (2 or 3)) AND 4) AND 5) AND 6</booleanFilter>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>essentials,max,leads by web</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.invoiced_last_mtd__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>,0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.invoiced_this_MTD__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>,0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Days_Since_Live__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>3</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Days_Since_Live__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessThan</operator>
             <value>15</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>YBN: Customer Success Consultant</value>

@@ -7,24 +7,28 @@
         <booleanFilter>(1 AND (2 or 3)) AND 4</booleanFilter>
         <criteriaItems>
             <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>ames Gardner,Alex Renner,Nimish Amin,Kevin Noonan,Nick Dispenza,Josh Schure,Rahul Saluja,Leffie Crawford</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Activity_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Prospecting</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>M000 - Conversation Initiation</value>
         </criteriaItems>
         <criteriaItems>
             <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National-Master Prospect,Prospect</value>

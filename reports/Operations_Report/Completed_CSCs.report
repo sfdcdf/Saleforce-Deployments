@@ -19,24 +19,28 @@
         <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
         <criteriaItems>
             <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>new client setup</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.CSC_Reschedule_Date_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>NEXT_N_DAYS:30</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.GCC_Completed_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LAST_N_DAYS:7</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.CSC_Reschedule_Date_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>LAST_N_DAYS:7</value>

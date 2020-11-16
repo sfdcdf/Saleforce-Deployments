@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>Service_Audit__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New</value>
         </criteriaItems>
         <criteriaItems>
             <column>Service_Audit__c.Issue_Catagory_Group__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>feature support</value>

@@ -20,24 +20,28 @@
         <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.Installation_Worksheet</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Backfill,Complete,Backed Out Sale,Delete Case</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.CSC_Worksheet_Dental,Lighthouse_Worksheets__c.CSC_Worksheet_Medical,Lighthouse_Worksheets__c.CSC_Worksheet_Auto</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Messages Activated,Backed Out Sale,Delete Case,Backfill</value>

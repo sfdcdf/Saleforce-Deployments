@@ -34,78 +34,91 @@
         <booleanFilter>(((((1 OR 2) AND 3 AND 4 AND 5 AND 6 AND (7 OR 12) AND 8 AND 9) AND 10) AND 11) AND 12) AND 13</booleanFilter>
         <criteriaItems>
             <column>Account.Opportunities$last_activity_date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$Days_Since_last_Activity__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>90</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Individual_Location</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$StageName</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Won,Closed Lost</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$Opportunity_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Upsell</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$YBN_Sub_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Budget Increase</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$Monthly_Advertising_Charges__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Next_TP_Needed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>THIS_MONTH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Parent</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>,Affordable Dentures,AllState,Bath Fitter,Benevis,Concrete Craft,Cordell,Cottman,Deca Dental,Dimensional,Forefront,Hand &amp; Stone,Hansons,Heartland,HDC,InterDent,Mini U,Miracle-Ear,West Coast Dental</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>Prosource</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$YBN_Max_PPC_Budget_Opportunity__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>**</value>

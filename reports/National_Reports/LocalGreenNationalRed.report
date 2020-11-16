@@ -12,12 +12,14 @@
     <filter>
         <criteriaItems>
             <column>Segment__c.National_Segment_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>RED</value>
         </criteriaItems>
         <criteriaItems>
             <column>Segment__c.Local_Segment_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>red</value>

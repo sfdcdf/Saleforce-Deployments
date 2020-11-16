@@ -90,18 +90,21 @@
         <booleanFilter>3 AND 1 AND 2</booleanFilter>
         <criteriaItems>
             <column>Case.Activities$CallType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Activities$CallDurationInSeconds</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>450</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Reason</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Inbound Call,LH Postcard,LH Retention Form,Lighthouse Logo,Lighthouse QA,Lighthouse Support Needed</value>

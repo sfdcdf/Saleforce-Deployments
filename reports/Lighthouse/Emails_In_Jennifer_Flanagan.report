@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Jennifer Flanagan</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Email,Web,medicalsupport@lighthousepmg.com,autosupport@lighthousepmg.com,customercare@lighthousepmg.com,support@lighthousepmg.com,LH Medical VM,LH Auto VM,LH Field Services VM,Voicemail</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New,In Progress,Awaiting Customer Response</value>

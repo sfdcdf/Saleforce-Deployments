@@ -33,18 +33,21 @@
     <filter>
         <criteriaItems>
             <column>Quality_Case__c.IsClosed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Quality_Case__c.Local_Master_Quality</value>
         </criteriaItems>
         <criteriaItems>
             <column>Quality_Case__c.Case_Closed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>david hamrick,anna cibulsky,anna maria cibulsky,g paul swanson,patrick koepke,michael erwin,victoria kanicka,kevin yee,joseph sanchez,Dan McMullen,Crystal Perez,Sophie Hamann,Jordan Houston,andrew frenenski</value>

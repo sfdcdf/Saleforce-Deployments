@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>CS_Operations__c.Created_by_Role__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Sales/Account Director D,YBN: Sales/Account Director C</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed - Completed/Updates Made,Closed - Not Approved,Closed - Could Not Complete</value>

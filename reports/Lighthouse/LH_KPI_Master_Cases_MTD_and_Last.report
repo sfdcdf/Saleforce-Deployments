@@ -45,18 +45,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Master,Case.TORCHx_Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>CASE_NUMBER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>9976647,9712974,10032388,9891680,9869217,9985249,9772323,9862903,10010054,9816408,9800398,10113160,10010245,9259709,10424347,10424261,10424208,10423346,10423454,10423481,10423678,10422132,10423721</value>
         </criteriaItems>
         <criteriaItems>
             <column>CASE_NUMBER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>10449215,10450067,10450318,10450055,10449874,10449752,10449576,10450338,10450635</value>

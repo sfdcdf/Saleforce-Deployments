@@ -46,30 +46,35 @@
         <booleanFilter>1 AND 2 AND (3 OR 4 OR 5)</booleanFilter>
         <criteriaItems>
             <column>Case.Yodle_Path__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yodle_Path__c.Touch_Plan_1,Yodle_Path__c.Touch_Plan_2,Yodle_Path__c.Touch_Plan_3</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Account</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Rusty&apos;s cleaning service</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$X1st_Attempt_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$X2nd_Attempt_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Yodle_Path__r$X3rd_Attempt_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>

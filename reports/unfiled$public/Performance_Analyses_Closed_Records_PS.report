@@ -36,12 +36,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>kelsey delaney,vincent justice,tonya perry,jacob kirk,marlon mills,paul mcgee,daniel baker,sean waldron,kelsie banker,marissa gelardi,becky ochs,Account Performance Queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Performance_Analysis__c.isClosed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

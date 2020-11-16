@@ -31,42 +31,49 @@
         <booleanFilter>(1 AND 2 AND 3 AND 4) OR (5 AND 6 AND 7)</booleanFilter>
         <criteriaItems>
             <column>Case.Scheduled_Call__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>CS Touch Plan,CSC,Proactive Touch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>TORCHx</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPEN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.TORCHx_NCS_AutoLaunch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.CSC_Reschedule_Date_2__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>NEXT_N_DAYS:7</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Web_Dev_Score_for_IMS__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>

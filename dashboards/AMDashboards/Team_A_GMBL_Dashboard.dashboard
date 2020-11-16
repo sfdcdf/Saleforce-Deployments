@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -17,6 +17,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>OnChart</legendPosition>
             <report>unfiled$public/Maaco_Owned_Co_managed</report>
             <showPercentage>true</showPercentage>
@@ -35,6 +36,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>OnChart</legendPosition>
             <report>unfiled$public/PWAT_Owned_Co_Managed_Rate</report>
             <showPercentage>true</showPercentage>
@@ -53,6 +55,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>OnChart</legendPosition>
             <report>unfiled$public/Lawn_Doctor_Owned_Co_managed</report>
             <showPercentage>true</showPercentage>
@@ -71,6 +74,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>OnChart</legendPosition>
             <report>unfiled$public/Novus_Owned_Co_managed</report>
             <showPercentage>true</showPercentage>
@@ -89,6 +93,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>OnChart</legendPosition>
             <report>unfiled$public/SpeedPro_Owned_Co_managed</report>
             <showPercentage>true</showPercentage>
@@ -107,6 +112,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <legendPosition>OnChart</legendPosition>
             <report>unfiled$public/Retro_Fitness_Owned_Co_Managed_Rate</report>
             <showPercentage>true</showPercentage>
@@ -133,6 +139,7 @@
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Account$IMS_Rep__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Maaco_Need_Comanagement_Only</report>
             <showPercentage>false</showPercentage>
@@ -151,6 +158,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/PWAT_Need_Co_Management_Only1</report>
             <showPercentage>false</showPercentage>
@@ -174,6 +182,7 @@
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Account$IMS_Rep__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Lawn_Doctor_Need_Co_management_Only</report>
             <showPercentage>false</showPercentage>
@@ -197,6 +206,7 @@
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Account$IMS_Rep__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Novus_Need_Co_management_Only</report>
             <showPercentage>false</showPercentage>
@@ -220,6 +230,7 @@
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Account$IMS_Rep__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/SpeedPro_Need_Co_management</report>
             <showPercentage>false</showPercentage>
@@ -243,6 +254,7 @@
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Account$IMS_Rep__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Retro_Fitness_Need_Co_Management_Only</report>
             <showPercentage>false</showPercentage>
@@ -269,6 +281,7 @@
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Account$IMS_Rep__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Maaco_Need_PIN_Only</report>
             <showPercentage>false</showPercentage>
@@ -287,6 +300,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/PWAT_Need_PIN_Only</report>
             <showPercentage>false</showPercentage>
@@ -310,6 +324,7 @@
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Account$IMS_Rep__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Lawn_Doctor_Need_PIN_Only</report>
             <showPercentage>false</showPercentage>
@@ -333,6 +348,7 @@
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Account$IMS_Rep__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Novus_Need_PIN_Only</report>
             <showPercentage>false</showPercentage>
@@ -356,6 +372,7 @@
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Account$IMS_Rep__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/SpeedPro_Need_PIN_Only</report>
             <showPercentage>false</showPercentage>
@@ -379,6 +396,7 @@
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Account$IMS_Rep__c</groupingColumn>
+            <groupingSortProperties />
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Retro_Fitness_GMBL_Need_PIN_Only</report>
             <showPercentage>false</showPercentage>

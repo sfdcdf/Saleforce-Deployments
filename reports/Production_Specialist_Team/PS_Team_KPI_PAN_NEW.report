@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.PIN_Action_Needed</value>
         </criteriaItems>
         <criteriaItems>
             <column>Organic_Analysis__c.PIN_Action_Owner__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brian Pekarek,Andrea Wilson,Andrea Murray,Michael Chaides,Stephanie Cinque,Ashleigh Ratkovich,Ashland Murphy,Jared Pfaff,Kavar McDaniel,Tiffany Cleveland</value>

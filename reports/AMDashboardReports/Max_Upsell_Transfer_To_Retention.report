@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Max Upsell Campaign</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Transfer__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Transferred to Retention</value>

@@ -25,24 +25,28 @@
         <booleanFilter>(((1 AND 2 AND 3 AND 4)))</booleanFilter>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN Operations</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Request_Details__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Mia,Michele,Cecily,Kristen</value>
         </criteriaItems>
         <criteriaItems>
             <column>CS_Operations__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Closed</value>

@@ -14,6 +14,7 @@
     <contentSniffingProtection>true</contentSniffingProtection>
     <cspUpgradeInsecureRequests>true</cspUpgradeInsecureRequests>
     <description>Dreamforce Portal for non-licensed Salesforce users to access specific Salesforce data</description>
+    <enableAuraRequests>true</enableAuraRequests>
     <fileNotFoundPage>FileNotFound</fileNotFoundPage>
     <genericErrorPage>Exception</genericErrorPage>
     <inMaintenancePage>InMaintenance</inMaintenancePage>
@@ -22,6 +23,7 @@
     <masterLabel>Dreamforce Portal</masterLabel>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <requireHttps>true</requireHttps>
+    
     
     <siteTemplate>SiteTemplate</siteTemplate>
     <siteType>Visualforce</siteType>

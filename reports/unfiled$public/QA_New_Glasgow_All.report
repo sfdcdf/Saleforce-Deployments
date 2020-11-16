@@ -47,18 +47,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Form_2_0__c.Local_Live_Chat_Monitoring_Form,Call_Grading_Form_2_0__c.Local_Email_Monitoring_Form,Call_Grading_Form_2_0__c.Local_Max_CSC_Grading_Form,Call_Grading_Form_2_0__c.Maps_PIN_Collection,Call_Grading_Form_2_0__c.Maps_Owner_Verified,Call_Grading_Form_2_0__c.Essentials_Setup_Completion_Call,Call_Grading_Form_2_0__c.CSC_Monitoring_Forms,Call_Grading_Form_2_0__c.Save_Call_Monitoring_Forms,Call_Grading_Form_2_0__c.Inbound_Monitoring_Forms,Call_Grading_Form_2_0__c.Adoption_Call,Call_Grading_Form_2_0__c.Collections_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Shelia Kelly,Erik Vicars,Makenzie Cunningham,Barb Jenkins,Christopher Baker</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed - Call Calibration</value>

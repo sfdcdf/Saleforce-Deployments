@@ -93,18 +93,21 @@
         <booleanFilter>(1 AND 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Email:</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Assigned_To_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>barb jenkins</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Onboarding Call Recap</value>

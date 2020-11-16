@@ -21,6 +21,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Corporate_Billing_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

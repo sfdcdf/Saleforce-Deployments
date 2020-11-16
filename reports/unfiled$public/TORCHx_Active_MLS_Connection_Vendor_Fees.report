@@ -48,6 +48,7 @@
     <filter>
         <criteriaItems>
             <column>MLS__c.Total_Active_Account_MLS_Connection__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>0</value>

@@ -18,6 +18,7 @@
     <filter>
         <criteriaItems>
             <column>Dashboard$RunningUser</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>miller,rustin,reeder,Spinelli</value>

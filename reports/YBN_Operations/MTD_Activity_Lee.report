@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>YBN: Sales/Account Director A,YBN: Sales/Account Director B,YBN: Sales/Account Director C,YBN: Sales/Account Director D,YBN: Sales Director Manager (East Coast B),YBN: Sales Director Manager (East Coast C)</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Milestone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Discovery Call,Demo &amp; Value Presentation,Executive Review Call,Solution Review Call,Proposal &amp; SOW Review Call,Contract Review</value>

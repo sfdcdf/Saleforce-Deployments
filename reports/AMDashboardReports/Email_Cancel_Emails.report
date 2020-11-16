@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>local email queue,email call back queue,email to case outrank support</value>
         </criteriaItems>
         <criteriaItems>
             <column>DESCRIPTION</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>do not want to continue,cancellation,not planning to renew,not planning on renewing,canceling,cancel,stop service,stopping service,refund</value>

@@ -25,36 +25,42 @@
         <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 or 6)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Account.YBN_Corporate_Relationship</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_SDR_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Adam Elliott</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Time_Zone__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>(GMT-07:00) Mountain Standard Time (America/Denver)****America/Denver,(GMT-07:00) Mountain Standard Time (America/Phoenix),(GMT-08:00) Pacific Standard Time (America/Los_Angeles)</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Hit_List__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Mark Armstrong</value>
         </criteriaItems>
         <criteriaItems>
             <column>ROLLUP_DESCRIPTION</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Team VanSluyters</value>

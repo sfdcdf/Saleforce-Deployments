@@ -27,18 +27,21 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse_Worksheets__c.CSC_Worksheet_Dental,Lighthouse_Worksheets__c.CSC_Worksheet_Medical,Lighthouse_Worksheets__c.CSC_Worksheet_Auto</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lighthouse_Worksheets__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>New,Messages Activated,Delete Case,Backed Out Sale,Backfill,RFC</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>David Rose,Gretchen Grant,Amanda Arkell,Ashley Moody,Beth Garrison,Blair Kurland,Doreen Towhey,Elizabeth Saltzman,Kraig Wilson,Marc Foley,LH CSC,Jamie Boldt,Sandy Staffieri,Taylor Martin,Tricia Llanas</value>

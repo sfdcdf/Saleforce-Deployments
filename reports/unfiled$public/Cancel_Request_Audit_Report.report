@@ -13,12 +13,14 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Aimable,Moise,JnBaptiste,Bowers,Dominique,Sifflet,Preston,Eugene,Joseph,Lauren,Edward,Beaubrun,Charlery,Richard,Taylor,Evariste,Wilson,Cadette,Elibox,Montoute,Bellas,Lord,Rock,Samuels,Viville,Alexander,Korpi,Jenkins,McCrary,Madison,Shorter,Raisovich,Sevcik,Frenenski,Salazar,Burch,Davis,Lazorwitz,Christian,Cade,Pasley,Mota,Walker,Sanchez,Tillman,Morales,Thomas,Poole,Schoonover</value>

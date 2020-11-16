@@ -31,30 +31,35 @@
         <booleanFilter>1 AND 2 AND 4 and (3 or 5)</booleanFilter>
         <criteriaItems>
             <column>Account.National_SDR_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>adam elliott</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_Company_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Franchise</value>
         </criteriaItems>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Mark Armstrong</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Hit_List__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>ROLLUP_DESCRIPTION</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Team VanSluyters</value>

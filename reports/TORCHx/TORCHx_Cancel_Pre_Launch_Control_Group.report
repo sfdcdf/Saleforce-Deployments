@@ -21,36 +21,42 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Cancellation_Request__c.TORCHx_Cancellation_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Cancelled,Save Mode</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.Test_Management__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>TORCHx Fulfillment Engagement Test</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
             <value>9/24/2017 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessThan</operator>
             <value>10/15/2017 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.Live_Date__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value></value>

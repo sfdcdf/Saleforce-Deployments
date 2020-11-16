@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -16,7 +16,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
-            <header>Last Week&apos;s Prospecting Activity</header>
+            <groupingSortProperties />
+            <header>Last Week's Prospecting Activity</header>
             <legendPosition>Bottom</legendPosition>
             <report>National_Reports/Geo_SD_Prospecting_Activity</report>
             <showPercentage>false</showPercentage>
@@ -34,7 +35,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
-            <header>Last Week&apos;s All Activity</header>
+            <groupingSortProperties />
+            <header>Last Week's All Activity</header>
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/Last_Weeks_All_SD_Activity_Email</report>
             <showPercentage>false</showPercentage>
@@ -55,7 +57,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
-            <header>Last Week&apos;s Key Activity</header>
+            <groupingSortProperties />
+            <header>Last Week's Key Activity</header>
             <legendPosition>Bottom</legendPosition>
             <report>National_Reports/Geo_SD_Key_Activity_Report</report>
             <showPercentage>false</showPercentage>
@@ -70,6 +73,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties />
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -90,6 +94,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingSortProperties />
             <header>MTD Prospecting &amp; Key SD Activity</header>
             <legendPosition>Bottom</legendPosition>
             <report>National_Reports/MTD_All_Geo_Activity</report>
@@ -108,7 +113,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
-            <header>Last Month&apos;s Prospecting &amp; Key SD Activity</header>
+            <groupingSortProperties />
+            <header>Last Month's Prospecting &amp; Key SD Activity</header>
             <legendPosition>Bottom</legendPosition>
             <report>National_Sales/Last_Month_s_All_Geo_Activity_updated</report>
             <showPercentage>false</showPercentage>

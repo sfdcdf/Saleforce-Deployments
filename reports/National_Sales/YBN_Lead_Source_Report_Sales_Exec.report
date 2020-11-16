@@ -31,12 +31,14 @@
     <filter>
         <criteriaItems>
             <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New Business,Upsell</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_PROFILE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Nationally Certified Sales Executive</value>

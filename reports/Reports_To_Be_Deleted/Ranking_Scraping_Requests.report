@@ -16,42 +16,49 @@
         <booleanFilter>((1 AND 2  AND 3 AND 4) or ( 5 AND 6)) AND 7</booleanFilter>
         <criteriaItems>
             <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National_Support_Request__c.New_Initiation_Form</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$Submit_Request_for_Ranking_Scrape__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$Ranking_Scrape_Completed__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>National_Support_Request__c.Pre_Sale_Questions</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Chris</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.National_On_boarding_Support__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed</value>

@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>Case.Customer_Surveys__r$Customer_Survey_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Issue Resolution Survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Customer_Surveys__r$Issue_Survey_CS_Satisfaction__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>9</value>

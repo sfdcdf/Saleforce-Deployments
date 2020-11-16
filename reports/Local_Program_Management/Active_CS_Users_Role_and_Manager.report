@@ -9,18 +9,21 @@
     <filter>
         <criteriaItems>
             <column>User$IsActive</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>User$UserRole</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>,yodle team,quality,sales,product,finance,operations,vp,ybn,pes</value>
         </criteriaItems>
         <criteriaItems>
             <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>John Berkowitz</value>

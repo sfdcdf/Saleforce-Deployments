@@ -83,12 +83,14 @@
     <filter>
         <criteriaItems>
             <column>LiveChatTranscript$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>William Alexander,Kevin Faust</value>
         </criteriaItems>
         <criteriaItems>
             <column>LiveChatTranscript$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Brittanie Walker,Courtney Schoonover,Cynthia Mota,Felicia Morales,Gary Poole,Jordan Sanchez,Katie Tillman,Nick Johnson,Sharica Thomas,Valencia Wilson</value>

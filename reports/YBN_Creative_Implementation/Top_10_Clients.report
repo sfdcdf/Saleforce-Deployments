@@ -34,30 +34,35 @@
         <booleanFilter>((1 OR 2) AND 3 AND 4) AND 5</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Web Dev,Theorem,Tyler Klepfish,Jennifer Wilder,Ernest Cook,Joshua Price,Mike Cross</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>YBN: Creative,YBN Marketing,Web Dev</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Requested_Website_Updates__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>includes</operator>
             <value>New ProSite Creation,YBN Custom Project,YBN Display Creative,YBN Metropage/LP Creation,YBN Presale Mockup,YBN Template Creation,YBN Template Update/Change,YBN  Portal Creation,YBN Portal Update/Change,YBN Corporate Site Update/Change,YBN Corporate Site Creation</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Deca,Ideal Dental,Miracle-Ear,Affordable Dentures,Maaco,Pro Oil,Driven Brands,InterDent,Dwyer,Four Seasons,JCI,Johnson Controls,Hand,Gotcha Covered,Merry Maids,Two Men,TMT,FSS,Clockwork</value>

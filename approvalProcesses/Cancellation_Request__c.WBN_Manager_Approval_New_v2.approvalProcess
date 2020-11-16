@@ -134,6 +134,7 @@ NOT(ispickval(Cancel_Code_2__c , &quot;Out of Business&quot;))
         <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>
     </nextAutomatedApprover>
+    <processOrder>2</processOrder>
     <recallActions>
         <action>
             <name>Update_Cancel_Outcome_In_Progress</name>

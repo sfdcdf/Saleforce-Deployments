@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Information_Accuracy__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>,Great,Very Good,N/A</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Qualitative_Adherence__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

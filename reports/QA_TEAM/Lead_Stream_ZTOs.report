@@ -87,12 +87,14 @@
     <filter>
         <criteriaItems>
             <column>Case.QA_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Max,Ads Only,Essentials Only,Essentials Only (Down-sell)</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Result_of_QA__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

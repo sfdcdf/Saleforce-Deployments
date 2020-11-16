@@ -21,6 +21,7 @@
     <filter>
         <criteriaItems>
             <column>Customer_Surveys__c.Overall_Satisfaction__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Delighted</value>

@@ -43,12 +43,14 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.Master,Case.Charge_Failure,Case.LH_Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Closed,Closed - changes made,Closed - Created in YL Tracker,Closed - never received confirmation,Closed - Opt Complete,Closed - Opt Not Necessary,Complete,Complete AutoLaunch,Closed - Upsell Accepted,Closed - Budget Change Accepted,Completed,Completed on Callback,Closed - Multi Location Owner,Closed - Rescheduled</value>

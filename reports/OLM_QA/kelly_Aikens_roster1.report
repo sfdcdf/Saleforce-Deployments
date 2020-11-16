@@ -61,12 +61,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Owner_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Mark Champ,Tricia Valadez,Joe Janisch,Kati Yee,Lauren Fischer,Peyden Edwards,Krystal Janisch,Luis Espinosa,Kristan Lemmons,Chelsey Willey,Amanda McKeever,Seata Moji,Koula Barsakis,Lynn Tobias,Jacqueline Leona,Annie Benedict,Laura Osegueda,terrance Jackson,gina murphy,James Thomas,Shannon Saunders,Jasmin Butcher,Jamie Boldt,Alison Sexton,Janet DeYoung,Kami Banner,Kayla Westfall,Marc Foley,Philip Schaffer,Karen Dameron,Saige Hilton,Tameka Davidson,Adrienne Glenn,Andrea McNerney,Scott Meyers-Pillon,CandaceMacPhee,Karen MacNeil,Marjorie Goodyear</value>
         </criteriaItems>
         <criteriaItems>
             <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Call,Email,General To Do,Other</value>

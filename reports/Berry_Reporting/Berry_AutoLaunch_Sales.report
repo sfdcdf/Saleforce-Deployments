@@ -12,6 +12,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Partner_Salesrep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>weaver,gerspacher,grogan,eldred,curran,hammers</value>

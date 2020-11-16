@@ -97,30 +97,35 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Opportunity.YBN_Individual_Location</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>test,dorm</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>The Little Gym,UKW Franchising,Retro Fitness,DKI Ventures,Go Minis,Miracle Method,Chem-Dry Carpet &amp; Upholstery Cleaning,Four Seasons Sunrooms,Speedpro,Johnson Controls - Liberties Dealers,Flooring America Corporate,International Design Guild,Padgett Business Services</value>
         </criteriaItems>
         <criteriaItems>
             <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Debra Lozano,Eric Brief,John Licciardi,Russell Tvedt,Aly Gangemi,Ian Burris,Jacob Ahern,John Naylor,Tyler Kaufman</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Closed Won,Closed Lost</value>

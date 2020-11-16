@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Essentials</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.invoiced_this_MTD__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterThan</operator>
             <value>500</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.invoiced_this_MTD__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

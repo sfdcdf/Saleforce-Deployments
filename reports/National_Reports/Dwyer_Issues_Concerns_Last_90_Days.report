@@ -21,12 +21,14 @@
     <filter>
         <criteriaItems>
             <column>Activity.Issues_or_Concerns_Raised__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Yes</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOUNT</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Mr. Electric,Mr. Rooter,Aire Serv</value>

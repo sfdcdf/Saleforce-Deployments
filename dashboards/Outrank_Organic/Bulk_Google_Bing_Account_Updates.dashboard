@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>TopToBottom</backgroundFadeDirection>
@@ -17,6 +17,7 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>See also: https://na4.salesforce.com/01Z60000000Tf1b</footer>
+            <groupingSortProperties />
             <header>CUMULATIVE YBN Launches In 2013</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/YBN_Portfolio_ALL_NON_LOCAL</report>
@@ -36,6 +37,7 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>GOAL: OBSERVE CUMULATIVE LAUNCH TRENDS</footer>
+            <groupingSortProperties />
             <header>CUMULATIVE YBN Launches IN 2013 W/ BULK ACCOUNTS</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/YBN_Client_Launches</report>
@@ -52,6 +54,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>GOAL: OBSERVE YBN PORTFOLIO</footer>
+            <groupingSortProperties />
             <header>Any YBN Client</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -75,6 +78,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <footer>GOAL: OBSERVE NCS CASE TRENDS W/BULK ACCTS.</footer>
+            <groupingSortProperties />
             <header>YBN Launches W/ BULK ACCOUNTS by Relationship</header>
             <legendPosition>Bottom</legendPosition>
             <report>Reports_To_Be_Deleted/YBN_Client_Launches</report>
@@ -91,6 +95,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>GOAL: OBSERVE BULK ACCT. PORTFOLIO</footer>
+            <groupingSortProperties />
             <header>A Portfolio Of Any YBN Client W/ Bulk Acct.</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -107,6 +112,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>GOAL: ADD ANY NEW CLIENTS TO BULK ACCTS.</footer>
+            <groupingSortProperties />
             <header>YBN Account Launches W/ Bulk Listings</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -126,6 +132,7 @@
             <footer>GOAL: KEEP THIS GAUGE AT ZERO</footer>
             <gaugeMax>3.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
+            <groupingSortProperties />
             <header>Check Daily For Bulk Acct. Updates</header>
             <indicatorBreakpoint1>1.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>2.0</indicatorBreakpoint2>
@@ -146,6 +153,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <footer>GOAL: KEEP THIS REPORT EMPTY</footer>
+            <groupingSortProperties />
             <header>Check Daily For Bulk Acct. Updates</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>

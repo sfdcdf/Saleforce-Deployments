@@ -53,18 +53,21 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>cameron mcclure,elizabeth koepke,david hamrick,anna maria cibulsky,anna cibulsky,patrick koepke,victoria kanicka,joseph sanchez,jordan houston</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Lighthouse,Lighthouse Essentials</value>

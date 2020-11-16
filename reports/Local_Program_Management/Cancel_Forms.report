@@ -9,18 +9,21 @@
     <filter>
         <criteriaItems>
             <column>FK_$Account.Product_Type_Transactional__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Essentials,Yodle Max</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.Channel_Development__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Cancellation_Request__c.Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Saved with No Concessions,Saved with Hard Concessions,Saved with Soft Concessions,Saved with Upsell</value>

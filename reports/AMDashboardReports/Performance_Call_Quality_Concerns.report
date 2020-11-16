@@ -24,6 +24,7 @@
     <filter>
         <criteriaItems>
             <column>Account.Call_Quality_Concerns__r$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>guidry,almus,micah,belk,delph,rawling,barreda,gelardi,carr,wesley adams,shiv,enrique,shaikha,pollard,lawson,kelsie,hunter,herin,delaura,o&apos;leary,golden,linville,collins</value>

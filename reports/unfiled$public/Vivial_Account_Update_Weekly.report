@@ -24,30 +24,35 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Partner</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Result_of_QA__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Error Free,Error Found,Error Free - Suggestion</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QAed_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Tyler Gerrior,Jacki Breen,Connor Terris,Kelsey MacLennan,Shannon York</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Owner_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Andrew Roy,Janine Martin</value>

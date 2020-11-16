@@ -53,18 +53,21 @@
     <filter>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>,david hamrick,anna maria hernandez,anna hernandez,anna maria cibulsky,anna cibulsky,patrick koepke,meredith henry,victoria kanicka,kevin yee,meredith kelman,kimberly davis,charles thomas,crystal perez,patrick trinidad</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.QA_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Lighthouse,Lighthouse Essentials,TORCHx for Agent,TORCHx + Ads for Agent,TORCHx for Team,TORCHx + Ads for Team,TORCHx for Broker,TORCHx + Ads for Broker</value>

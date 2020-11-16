@@ -30,12 +30,14 @@
     <filter>
         <criteriaItems>
             <column>FK_$Yodle_Path__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Did Not Complete</value>
         </criteriaItems>
         <criteriaItems>
             <column>Yodle_Path__c.Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Rusty&apos;s Cleaning Service</value>

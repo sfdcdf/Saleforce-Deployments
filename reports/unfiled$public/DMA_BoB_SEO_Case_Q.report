@@ -69,42 +69,49 @@
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7)</booleanFilter>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Organic_Analysis__c.Organic_Optimization_Request</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>New,In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>IT Pro</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>National,YBN</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>SDB Users</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account$Parent</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Brightway Insurance,Cordell &amp; Cordell,Critter Control,Hand &amp; Stone,Johnson Controls - Corporate,Miracle Method Surface Refinishing,Mr. Electric,Speedpro Imaging Center,TWO MEN AND A TRUCK,Orthology Inc.,Mr. Appliance</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Organic_Analyses__r$Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Brightway Insurance,Cordell &amp; Cordell,Critter Control,Hand &amp; Stone,Johnson Controls - Corporate,Miracle Method Surface Refinishing,Mr. Electric,Speedpro Imaging Center,TWO MEN AND A TRUCK,Orthology Inc.,Mr. Appliance</value>

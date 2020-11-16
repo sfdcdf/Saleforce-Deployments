@@ -24,12 +24,14 @@
     <filter>
         <criteriaItems>
             <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Amy Kramer,Tricia Gahagan,Ellie McIntyre,Ryan Volkel</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Days_Since_Last_Activity__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>greaterOrEqual</operator>
             <value>60</value>

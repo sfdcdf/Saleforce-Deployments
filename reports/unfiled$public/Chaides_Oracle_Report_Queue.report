@@ -33,12 +33,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_OWNER_ALIAS</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>National Performance Queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Performance_Analysis__c.Parent_Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Heartland Dental,HDC,Heartland,Rebath,Re-bath,Re Bath,Prosource,Pro Source</value>

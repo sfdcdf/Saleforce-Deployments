@@ -37,30 +37,35 @@
         <booleanFilter>((1 OR 2 or 5) AND (3 or 4))</booleanFilter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner_Manger__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>makenzie cunningham,Erik vicars,shelia kelly,barb jenkins,leonard edwards,adam kovacs,nathaniel nipper,randy dewey</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Retention_Consultant__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>lead stream support,LBW Customer Service,rogers dedicated queue,lbw support,platinum support,local pod queue,Jennifer Degreef,Jordan Sanchez,Keegan Sandman,Kyler Wood,Mark Nagy,Reagan Neely,Shelby Cowman,Shelia Kelly,Adam Kovacs,Amber Tamayo,Andrew Smith,James Brady,Paul Mascitti,Ryan Crary,Suzanne Oyenarte,Erik Vicars,Erika Persil,Ron Brown,Samantha Starett,Sara Davis,Sherri Aguinaga,Thad Dameris,Valerie Garner,Angela Hoddinott,Karen Park,Kayla Muir,Kimberley Boutilier,Leonard Edwards,Stephen Gerrior,Walter Rundle,Alvin Jobe,Alyson MacDonald,Angela Snow,April Law,Barb Jenkins,Blake MacPhee,Gwen Doyle,Kathleen Wilson,Kathryn Leadbeater,Kathy Caldwell,Lesa Lemay Marilyn Bray,Marilyn Slaunwhite,Mark Cosh,Nina Avery,Robert Jones,Rondell Humphreys,Samantha Sewell,Brittany Fountain</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Date_of_Cancellation_Request__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>amber tamayo,adam kovacs</value>

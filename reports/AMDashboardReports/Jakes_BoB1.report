@@ -30,24 +30,28 @@
     <filter>
         <criteriaItems>
             <column>Account.Client_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Local,Partner</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>LIVE,PROVISIONING</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>SEM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Secondary_Segments__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Advertising Services,Airport Shuttles,Allergists,Alterations &amp; Tailoring,Art School,Assisted Living Home,Auto Body Shop,Auto Dealer,Auto Detailing Service,Auto Glass Repair Shop,Auto Muffler and Exhaust,Auto Repair Shop,Auto Upholstery Services,Automobile Alarm Store,Bathroom Remodeling,Beauty and Hair Salon,Beds &amp; Mattresses,Car Parts,Car Rental,Caterer,Chiropodist,Churches,Driving Schools,General Contractor,Golf Course,Home Health Care Provider,home remodeling,Home Remodeling,Home System Installer,Kitchen Remodeling,Marketing,Material Handling Equipment,Naturopath,Office Supplies &amp; Equipment,Ophthalmologist,Optician,Pet Grooming,Physician,Restaurant Supplies &amp; Equipment,Shipping Service,Siding Contractor,Signs,Spa,Surgeons,Therapist,Tourist Attractions,Towing Service,Used Car Dealers,Weight Loss Clinic,Wheel &amp; Tire Dealer,Window Tinting</value>

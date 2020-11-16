@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Customer_Surveys__c.True_Escalation__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

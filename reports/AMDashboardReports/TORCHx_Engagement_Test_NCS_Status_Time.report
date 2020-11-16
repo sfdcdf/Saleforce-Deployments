@@ -128,18 +128,21 @@
     <filter>
         <criteriaItems>
             <column>Case.Object_History__r$Field_Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1-MA Setup AutoLaunch,Escalated,2-QA AutoLaunch</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Object_History__r$FieldValue__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>In Progress,Launched,Mirror Issue,Acct Acceptance Issue,MLS - Client,Sales/Client Expectation Mismatch,QA Completed - Needs Fix</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$Test_Management__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>TORCHx Fulfillment Engagement Test</value>

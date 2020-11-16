@@ -24,18 +24,21 @@
     <filter>
         <criteriaItems>
             <column>Case.Submitted_By__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Circuit Breaker - 5 in 60,Circuit Breaker - 1 in 30,Circuit Breaker - 4 in 60</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>liesch,o&apos;leary,bauer,locke,vernon,delaura,koloda,lytton,goldfarb,flannick</value>

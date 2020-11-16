@@ -36,18 +36,21 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.O_Account_Update</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Michael Jaffe,Lenee Knoblauch,Rustin Fincke,Kaylissa Spurlock,Tiffany Gonzalez,Brock Williams,Shayla Story,Rodolfo Ramirez,Louis Montemayor,Kelly O&apos;Brien,Heather Rubio,Allana Maximin,Allison Smith,Chantell Joseph,Gezel Stephen,Joanne Caul,Kimbally Gedeon,Lionel Mason,Melinda Fraser,Petra Bellas,Rhonda Maxius,Shernelle Richard,Shirmiah Jn Baptiste,Steve Henry,Zaina Pamphile,Zenah Isaac,Aaron Woodul,Patrick Trinidad,Charles Thomas,Trevor Bye,Greg Palmer</value>
         </criteriaItems>
         <criteriaItems>
             <column>field_key</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case Owner,Status</value>

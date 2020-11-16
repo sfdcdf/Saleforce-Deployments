@@ -12,18 +12,21 @@
     <filter>
         <criteriaItems>
             <column>CALLTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Assigned_To_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Kyle Day,Shannon Vaughn,Christopher Baker</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.LOCC_App__campaignname__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>TORCHx Inbound</value>

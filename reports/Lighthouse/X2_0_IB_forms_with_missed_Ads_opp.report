@@ -20,12 +20,14 @@
     <filter>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Agent_Name__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Annie Benedict,Laura Osegueda,Lauren Fischer,Tricia Valadez,Mark Champ,Joe Janisch,Joshua Lowrey,Krystal Janisch,Matthew Scott,Sonny Perea,Steven Russell,Priyanka Rao,Amanda McKeever,Bea Peikert,Courtney Christian,Chelsey Willey,Jacqueline Leona,Julia Correa,Kati Yee,Koula Barsakis,Kristan Lemmons,Luis Espinosa,Lynn Tobias,Matt Kerlin,Peyden Edwards,Seata Moji</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Form_2_0__c.Ads_Upsell_Pitched__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>1,0</value>

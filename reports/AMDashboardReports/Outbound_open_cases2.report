@@ -104,18 +104,21 @@
     <filter>
         <criteriaItems>
             <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Dayna Horton,Ryan McDonald,Matt Keehn,Thomas Standing,Jarrah Garrett,Andrew Salazar,Beth Shorter,Bonnie Jenkins,Courtney Christian,Emma McCrary,Mila Raisovich,Sara Davis,Terrell Pasley,Laura Gentry,Shaneka Hill,Tamika Seda</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPEN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Circuit Breaker</value>

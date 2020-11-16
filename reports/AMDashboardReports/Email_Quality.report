@@ -94,12 +94,14 @@
     <filter>
         <criteriaItems>
             <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Call_Grading_Forms__c.Email,Call_Grading_Forms__c.Live_Chat,Call_Grading_Forms__c.Inbound_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Grading_Forms__c.Caller__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Malik Khendek,Thomas Standing,Dayna Horton,Brittanie Walker,Courtney Schoonover,Cynthia Mota,Felicia Morales,Gary Poole,Jordan Sanchez,Katie Tillman,Carly Cade,Sharica Thomas,Valencia Wilson</value>

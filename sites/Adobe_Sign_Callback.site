@@ -14,6 +14,7 @@
     <contentSniffingProtection>false</contentSniffingProtection>
     <cspUpgradeInsecureRequests>false</cspUpgradeInsecureRequests>
     <description>Allows Adobe Sign to support sending and receiving large documents.</description>
+    <enableAuraRequests>true</enableAuraRequests>
     <fileNotFoundPage>FileNotFound</fileNotFoundPage>
     <genericErrorPage>Exception</genericErrorPage>
     <inMaintenancePage>InMaintenance</inMaintenancePage>
@@ -23,6 +24,7 @@
     <referrerPolicyOriginWhenCrossOrigin>false</referrerPolicyOriginWhenCrossOrigin>
     <requireHttps>false</requireHttps>
     <siteAdmin>mary.kellum@yodle.com</siteAdmin>
+    
     <siteTemplate>SiteTemplate</siteTemplate>
     <siteType>Visualforce</siteType>
     <subdomain>yodle</subdomain>

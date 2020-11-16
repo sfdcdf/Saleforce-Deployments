@@ -6,6 +6,7 @@
     <filter>
         <criteriaItems>
             <column>OPT_Process_Request__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Pending Channel Lead</value>

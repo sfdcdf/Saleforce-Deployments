@@ -30,12 +30,14 @@
     <filter>
         <criteriaItems>
             <column>COMPANY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>servicemaster,service master</value>
         </criteriaItems>
         <criteriaItems>
             <column>CONVERTED</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>0</value>

@@ -9,6 +9,7 @@
     <filter>
         <criteriaItems>
             <column>OPT_Process_Request__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Completed - Approval Denied,Completed</value>

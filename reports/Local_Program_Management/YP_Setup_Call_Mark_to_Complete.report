@@ -36,18 +36,21 @@
     <filter>
         <criteriaItems>
             <column>FK_$Yodle_Path__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Completed</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Yodle_Path__c.Scheduled_Coaching_Call__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
         <criteriaItems>
             <column>Yodle_Path__c.Account__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notContain</operator>
             <value>Rusty&apos;s Cleaning Service - Test</value>

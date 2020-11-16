@@ -18,12 +18,14 @@
     <filter>
         <criteriaItems>
             <column>Cancellation_Request__c.Facebook_Post_For_You__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Offered and Accepted</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Account.Important_National_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>contains</operator>
             <value>Facebook post for you</value>

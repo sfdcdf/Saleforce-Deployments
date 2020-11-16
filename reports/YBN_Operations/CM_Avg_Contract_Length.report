@@ -27,6 +27,7 @@
     <filter>
         <criteriaItems>
             <column>Opportunity.Centermark_Contract_Length__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

@@ -61,30 +61,35 @@
         <booleanFilter>1 AND 3 AND 4 AND 2 AND 5</booleanFilter>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Retention Duplicate Audit Queue,kyle zaffin,diane mulkey,elayne hoover,erik vicars,jackie riedl,kelly o&apos;brien,lynn tobias,sherri aguinaga,rory diller,Makenzie Cunningham,local pod queue</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Retention_Consultant__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Retention Duplicate Audit Queue,kyle zaffin,diane mulkey,elayne hoover,erik vicars,jackie riedl,kelly o&apos;brien,lynn tobias,sherri aguinaga,rory diller,Makenzie Cunningham</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>lessOrEqual</operator>
             <value>N_DAYS_AGO:30</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Outcome__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>In Progress</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cancellation_Requests__r$Owner_Manger__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Angela Anderson</value>

@@ -27,36 +27,42 @@
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Case.LH_Master</value>
         </criteriaItems>
         <criteriaItems>
             <column>REASON</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Consumables Adjustments</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Reason_Detail__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Feature Activation,Turn Feature On</value>
         </criteriaItems>
         <criteriaItems>
             <column>CLOSED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.IMS_Rep__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Elizabeth Saltzman,Jamie Boldt,Marc Foley,Kayla Westfall,Amanda Arkell,Alison Sexton,Kami Banner,Gretchen Grant,Janet Deyoung,Sandy Staffieri,Doreen Towhey,Karole Waters,Ben Block,Beth Taylor,Joseph Vickers</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.LH_Feature_Addition__c</column>
+            <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>Automated Phone Calls ($0.29/call),Automated Phone Calls (Additional $30/month)</value>
