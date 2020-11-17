@@ -14105,6 +14105,27 @@ or(
         <label>Rogers Unshared Accounts</label>
     </listViews>
     <listViews>
+        <fullName>SMB_Accounts</fullName>
+        <columns>Parent_Name__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Standard</value>
+        </filters>
+        <filters>
+            <field>Parent_Name__c</field>
+            <operation>contains</operation>
+            <value>SMB</value>
+        </filters>
+        <label>SMB Accounts</label>
+    </listViews>
+    <listViews>
         <fullName>Subba_NonCSI_WebRemaining_Clients</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>PARENT_NAME</columns>

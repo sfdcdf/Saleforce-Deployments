@@ -20728,6 +20728,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Prospect_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Lead.Prospect_Tier__c</field>
         <readable>true</readable>
@@ -20760,6 +20765,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Radio_2010__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Rating</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

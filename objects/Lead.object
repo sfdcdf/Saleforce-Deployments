@@ -9376,6 +9376,25 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <label>CPP - PMS</label>
     </listViews>
     <listViews>
+        <fullName>Enspire_Corporate_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.RATING</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lead.WBN_Corporate_Lead</value>
+        </filters>
+        <label>Enspire Corporate Leads</label>
+    </listViews>
+    <listViews>
         <fullName>My_CPP_Leads</fullName>
         <columns>Quality_of_Partner__c</columns>
         <columns>LEAD.LAST_ACTIVITY</columns>
@@ -9465,6 +9484,25 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             <value>IT Integrator</value>
         </filters>
         <label>CPP - All CPP Leads IT</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Enspire_Corporate_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.RATING</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>LEAD.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lead.WBN_Corporate_Lead</value>
+        </filters>
+        <label>My Enspire Corporate Leads</label>
     </listViews>
     <listViews>
         <fullName>Partner</fullName>
