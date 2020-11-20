@@ -1210,49 +1210,9 @@ IF(AND(DAY(Live_Date__c) = 29,MONTH(Live_Date__c ) = 02) , 28, DAY(Live_Date__c)
                     <label>Enterprise Online</label>
                 </value>
                 <value>
-                    <fullName>Domains</fullName>
+                    <fullName>SMB</fullName>
                     <default>false</default>
-                    <label>Domains</label>
-                </value>
-                <value>
-                    <fullName>Online Essentials</fullName>
-                    <default>false</default>
-                    <label>Online Essentials</label>
-                </value>
-                <value>
-                    <fullName>Online Presence</fullName>
-                    <default>false</default>
-                    <label>Online Presence</label>
-                </value>
-                <value>
-                    <fullName>Business Accelerators</fullName>
-                    <default>false</default>
-                    <label>Business Accelerators</label>
-                </value>
-                <value>
-                    <fullName>Vertical Solutions</fullName>
-                    <default>false</default>
-                    <label>Vertical Solutions</label>
-                </value>
-                <value>
-                    <fullName>Lead Solutions</fullName>
-                    <default>false</default>
-                    <label>Lead Solutions</label>
-                </value>
-                <value>
-                    <fullName>Premium Presence</fullName>
-                    <default>false</default>
-                    <label>Premium Presence</label>
-                </value>
-                <value>
-                    <fullName>WBN</fullName>
-                    <default>false</default>
-                    <label>WBN</label>
-                </value>
-                <value>
-                    <fullName>Web.com</fullName>
-                    <default>false</default>
-                    <label>Web.com</label>
+                    <label>SMB</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -14952,35 +14912,7 @@ or(
         <picklistValues>
             <picklist>Biz_Dev_Internal_Product_Division__c</picklist>
             <values>
-                <fullName>Business Accelerators</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Domains</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Essentials</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Premium Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Vertical Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>WBN</fullName>
+                <fullName>Enterprise Online</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -19769,35 +19701,7 @@ or(
         <picklistValues>
             <picklist>Biz_Dev_Internal_Product_Division__c</picklist>
             <values>
-                <fullName>Business Accelerators</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Domains</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Essentials</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Premium Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Vertical Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>WBN</fullName>
+                <fullName>Enterprise Online</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -24650,35 +24554,7 @@ or(
         <picklistValues>
             <picklist>Biz_Dev_Internal_Product_Division__c</picklist>
             <values>
-                <fullName>Business Accelerators</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Domains</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Essentials</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Premium Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Vertical Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>WBN</fullName>
+                <fullName>Enterprise Online</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -29424,35 +29300,7 @@ or(
         <picklistValues>
             <picklist>Biz_Dev_Internal_Product_Division__c</picklist>
             <values>
-                <fullName>Business Accelerators</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Domains</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Essentials</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Premium Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Vertical Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>WBN</fullName>
+                <fullName>Enterprise Online</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -34653,35 +34501,7 @@ or(
         <picklistValues>
             <picklist>Biz_Dev_Internal_Product_Division__c</picklist>
             <values>
-                <fullName>Business Accelerators</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Domains</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Essentials</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Premium Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Vertical Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>WBN</fullName>
+                <fullName>Enterprise Online</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -39359,35 +39179,7 @@ or(
         <picklistValues>
             <picklist>Biz_Dev_Internal_Product_Division__c</picklist>
             <values>
-                <fullName>Business Accelerators</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Domains</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Essentials</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Premium Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Vertical Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>WBN</fullName>
+                <fullName>Enterprise Online</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -43941,7 +43733,7 @@ or(
                 <default>false</default>
             </values>
             <values>
-                <fullName>Web%2Ecom</fullName>
+                <fullName>SMB</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -48627,7 +48419,7 @@ or(
                 <default>false</default>
             </values>
             <values>
-                <fullName>Web%2Ecom</fullName>
+                <fullName>SMB</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -53158,35 +52950,7 @@ or(
         <picklistValues>
             <picklist>Biz_Dev_Internal_Product_Division__c</picklist>
             <values>
-                <fullName>Business Accelerators</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Domains</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Lead Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Essentials</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Online Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Premium Presence</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Vertical Solutions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>WBN</fullName>
+                <fullName>Enterprise Online</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
