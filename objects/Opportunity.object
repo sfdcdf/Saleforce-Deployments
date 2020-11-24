@@ -96961,23 +96961,6 @@ NOT(ISPICKVAL(Stage_Detail__c, "SA Client Discovery"))
         <errorDisplayField>Stage_Detail__c</errorDisplayField>
         <errorMessage>Solution stage must start with "SA Client Discovery".</errorMessage>
     </validationRules>
-    <validationRules>
-        <fullName>Probabilty_override_rule</fullName>
-        <active>true</active>
-        <description>Probability field can only be overridden for Corporate opportunities and by National RM profile users (custom settings used)</description>
-        <errorConditionFormula>AND(
- $Setup.Validation_Rule_Permissions__c.Opportunity_Probability_Edit_Bypass__c = False,
-
-NOT(OR(
-RecordType.Id = "012600000009YRE",
-RecordType.Id = "012600000009YRJ",
-RecordType.Id = "012600000009YRO")),
-
-ISCHANGED( Probability ) 
-
-)</errorConditionFormula>
-        <errorMessage>Probability can only be changed for Corporate Opportunities</errorMessage>
-    </validationRules>
     <webLinks>
         <fullName>Create_in_YL_Local</fullName>
         <availability>online</availability>

@@ -99,7 +99,7 @@
                 <stringValue>DATEVALUE([Case].Initial_DateTime_Closed__c) </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_A1_9692980453</name>
+        <name>formula_2_myRule_1_A1_1104886543</name>
         <dataType>Date</dataType>
         <expression>DATEVALUE({!myVariable_current.Initial_DateTime_Closed__c})</expression>
     </formulas>
@@ -110,7 +110,7 @@
                 <stringValue>DATEVALUE([Case].Initial_DateTime_Closed__c) </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_5_myRule_4_A1_5247661729</name>
+        <name>formula_5_myRule_4_A1_2426690365</name>
         <dataType>Date</dataType>
         <expression>DATEVALUE({!myVariable_current.Initial_DateTime_Closed__c})</expression>
     </formulas>
@@ -121,7 +121,7 @@
                 <stringValue>DATEVALUE([Case].Initial_DateTime_Closed__c) </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_8_myRule_7_A1_9923366008</name>
+        <name>formula_8_myRule_7_A1_2492163080</name>
         <dataType>Date</dataType>
         <expression>DATEVALUE({!myVariable_current.Initial_DateTime_Closed__c})</expression>
     </formulas>
@@ -142,7 +142,8 @@
       ISPICKVAL([Case].Status, &apos;Completed on Callback&apos;),
       ISPICKVAL([Case].Status, &apos;Closed - Multi Location Owner&apos;),
       ISPICKVAL([Case].Status, &apos;Call Scheduled – No Show&apos;),
-      ISPICKVAL([Case].Status, &apos;Closed - Rescheduled&apos;)
+      ISPICKVAL([Case].Status, &apos;Closed - Rescheduled&apos;),
+      ISPICKVAL([Case].Status, &apos;Completed - ROI Report Opened&apos;)
    )
 )</stringValue>
             </value>
@@ -162,7 +163,8 @@
       ISPICKVAL({!myVariable_current.Status}, &apos;Completed on Callback&apos;),
       ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Multi Location Owner&apos;),
       ISPICKVAL({!myVariable_current.Status}, &apos;Call Scheduled – No Show&apos;),
-      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Rescheduled&apos;)
+      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Rescheduled&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Completed - ROI Report Opened&apos;)
    )
 )</expression>
     </formulas>
@@ -185,7 +187,8 @@
       ISPICKVAL([Case].Status, &apos;Closed - Multi Location Owner&apos;),
       ISPICKVAL([Case].Status, &apos;Completed - Client Declined&apos;),
       ISPICKVAL([Case].Status, &apos;Call Scheduled – No Show&apos;),
-      ISPICKVAL([Case].Status, &apos;Closed - Rescheduled&apos;)
+      ISPICKVAL([Case].Status, &apos;Closed - Rescheduled&apos;),
+      ISPICKVAL([Case].Status, &apos;Completed - ROI Report Opened&apos;)
 
    )
 )</stringValue>
@@ -208,7 +211,8 @@
       ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Multi Location Owner&apos;),
       ISPICKVAL({!myVariable_current.Status}, &apos;Completed - Client Declined&apos;),
       ISPICKVAL({!myVariable_current.Status}, &apos;Call Scheduled – No Show&apos;),
-      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Rescheduled&apos;)
+      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Rescheduled&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Completed - ROI Report Opened&apos;)
 
    )
 )</expression>
@@ -237,7 +241,8 @@ ISPICKVAL([Case].Reason_Detail__c, &quot;Weekly Touch Point&quot;)
       ISPICKVAL([Case].Status, &apos;Closed - Multi Location Owner&apos;),
       ISPICKVAL([Case].Status, &apos;Completed - Client Declined&apos;),
       ISPICKVAL([Case].Status, &apos;Call Scheduled – No Show&apos;),
-      ISPICKVAL([Case].Status, &apos;Closed - Rescheduled&apos;)
+      ISPICKVAL([Case].Status, &apos;Closed - Rescheduled&apos;),
+      ISPICKVAL([Case].Status, &apos;Completed - ROI Report Opened&apos;)
    )
 )
 </stringValue>
@@ -265,11 +270,12 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
       ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Multi Location Owner&apos;),
       ISPICKVAL({!myVariable_current.Status}, &apos;Completed - Client Declined&apos;),
       ISPICKVAL({!myVariable_current.Status}, &apos;Call Scheduled – No Show&apos;),
-      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Rescheduled&apos;)
+      ISPICKVAL({!myVariable_current.Status}, &apos;Closed - Rescheduled&apos;),
+      ISPICKVAL({!myVariable_current.Status}, &apos;Completed - ROI Report Opened&apos;)
    )
 )</expression>
     </formulas>
-    <interviewLabel>Case_YBN_TouchPoint_Dates-10_InterviewLabel</interviewLabel>
+    <interviewLabel>Case_YBN_TouchPoint_Dates-11_InterviewLabel</interviewLabel>
     <label>Case - YBN TouchPoint Dates</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -369,7 +375,7 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             </processMetadataValues>
             <field>YBN_CSC_Completed_Date__c</field>
             <value>
-                <elementReference>formula_2_myRule_1_A1_9692980453</elementReference>
+                <elementReference>formula_2_myRule_1_A1_1104886543</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>
@@ -447,7 +453,7 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             </processMetadataValues>
             <field>Month_1_Check_In_Completed_Date__c</field>
             <value>
-                <elementReference>formula_5_myRule_4_A1_5247661729</elementReference>
+                <elementReference>formula_5_myRule_4_A1_2426690365</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>
@@ -522,7 +528,7 @@ ISPICKVAL({!myVariable_current.Reason_Detail__c}, &quot;Weekly Touch Point&quot;
             </processMetadataValues>
             <field>Last_Completed_YBN_TP__c</field>
             <value>
-                <elementReference>formula_8_myRule_7_A1_9923366008</elementReference>
+                <elementReference>formula_8_myRule_7_A1_2492163080</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>
