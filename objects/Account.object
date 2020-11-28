@@ -1954,7 +1954,7 @@ ISPICKVAL(Channel_Development__c, "")),
         <length>10</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>true</unique>
     </fields>
@@ -2685,7 +2685,7 @@ ISPICKVAL(Channel_Development__c, "")),
         <required>false</required>
         <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Percent</type>
     </fields>
     <fields>
@@ -4158,7 +4158,7 @@ So that ...accounts can be excluded from auto TP process</description>
         <externalId>false</externalId>
         <label>Auto-Verified</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -6272,7 +6272,7 @@ today() ) - MONTH( Live_Date__c ) ) )</formula>
         <required>false</required>
         <scale>2</scale>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -6294,7 +6294,7 @@ today() ) - MONTH( Live_Date__c ) ) )</formula>
         <required>false</required>
         <scale>2</scale>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -6324,7 +6324,7 @@ today() ) - MONTH( Live_Date__c ) ) )</formula>
         <label>Next Scheduled Touchpoint</label>
         <required>false</required>
         <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>DateTime</type>
     </fields>
     <fields>
@@ -10400,7 +10400,7 @@ If(BillingState = "","NA","West")))))))))))))))))))))))))))))</formula>
         <externalId>false</externalId>
         <label>Touchplan Created</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
