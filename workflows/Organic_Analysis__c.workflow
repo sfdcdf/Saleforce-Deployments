@@ -2777,10 +2777,6 @@ NOW () + 1
     </rules>
     <rules>
         <fullName>Rogers - Day 1 Pin Request</fullName>
-        <actions>
-            <name>Rogers_Day_1_Google_Pin_Request</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Organic_Analysis__c.G_Postcard_Request__c</field>
@@ -2811,10 +2807,6 @@ NOW () + 1
     </rules>
     <rules>
         <fullName>Rogers All Pins Received</fullName>
-        <actions>
-            <name>Rogers_Google_Pin_Received</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
         <criteriaItems>
