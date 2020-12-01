@@ -4,6 +4,15 @@
         <field>Report$Name</field>
     </columns>
     <columns>
+        <field>Report$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Report.DashboardComponents$Dashboard.Type</field>
+    </columns>
+    <columns>
+        <field>Report.DashboardComponents$Dashboard.RunningUser</field>
+    </columns>
+    <columns>
         <field>Report$Owner</field>
     </columns>
     <columns>
@@ -11,6 +20,9 @@
     </columns>
     <columns>
         <field>Report.DashboardComponents$Id</field>
+    </columns>
+    <columns>
+        <field>Report.DashboardComponents$CreatedBy</field>
     </columns>
     <columns>
         <field>Report$LastRunDate</field>
@@ -38,8 +50,6 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Report$Name</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Report$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

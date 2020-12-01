@@ -4,13 +4,13 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
-        <field>Account.IMS_Rep__c</field>
-    </columns>
-    <columns>
         <field>Account.Client_ID__c</field>
     </columns>
     <columns>
         <field>Account.Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.IMS_Rep__c</field>
     </columns>
     <columns>
         <field>Account.Live_Date__c</field>
@@ -44,7 +44,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value></value>
+            <value>,Enspire Support</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_Type__c</column>

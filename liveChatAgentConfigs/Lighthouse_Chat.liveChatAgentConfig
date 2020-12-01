@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <users>
+            <user>alewis@yodle.com</user>
+        </users>
+    </assignments>
     <autoGreeting>Thanks for contacting Lighthouse. My name is {!User_FirstName}. For account security, may I please have your first and last name?</autoGreeting>
     <capacity>3</capacity>
     <criticalWaitTime>20</criticalWaitTime>
