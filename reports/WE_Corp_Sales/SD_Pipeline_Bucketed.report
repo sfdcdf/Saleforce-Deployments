@@ -125,6 +125,18 @@
     <columns>
         <field>RECORDTYPE</field>
     </columns>
+    <columns>
+        <field>Opportunity.On_Hold_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.On_Hold_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Hold_Status_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Hold_Status__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>User.Role_Name__c</column>
@@ -175,11 +187,11 @@
     </params>
     <params>
         <name>co</name>
-        <value>1</value>
+        <value>0</value>
     </params>
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
