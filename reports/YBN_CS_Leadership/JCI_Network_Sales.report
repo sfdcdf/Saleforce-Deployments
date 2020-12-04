@@ -50,6 +50,9 @@
         <field>Account.Parent_Name__c</field>
     </columns>
     <columns>
+        <field>Opportunity.Client_ID__c</field>
+    </columns>
+    <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
@@ -143,6 +146,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_CURRENTQ</interval>
     </timeFrameFilter>
 </Report>
