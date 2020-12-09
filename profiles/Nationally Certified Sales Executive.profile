@@ -25254,6 +25254,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Hold_Removal_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.How_Many_Services_Last_Month__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -26668,7 +26673,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Opportunity.Solutions_Architect__c</field>
         <readable>true</readable>
     </fieldPermissions>

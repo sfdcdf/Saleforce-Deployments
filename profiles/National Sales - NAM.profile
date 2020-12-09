@@ -24141,7 +24141,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Opportunity.Additional_Feedback_For_SDR__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -25193,6 +25193,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Historical_Performance_Benchmarks__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Hold_Removal_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

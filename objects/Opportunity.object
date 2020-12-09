@@ -4255,6 +4255,17 @@ IF(NOT(ISBLANK(Run_Rate__c)), CloseDate + ROUND(((Run_Rate__c/5)*7),0)  , CloseD
         <type>TextArea</type>
     </fields>
     <fields>
+        <fullName>Hold_Removal_Date__c</fullName>
+        <description>Date Opportunity was taken off hold</description>
+        <externalId>false</externalId>
+        <label>Hold Removal Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>How_Many_Services_Last_Month__c</fullName>
         <externalId>false</externalId>
         <label>How Many Services Last Month?</label>
