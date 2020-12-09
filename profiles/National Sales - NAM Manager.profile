@@ -24936,7 +24936,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Opportunity.Corporate_SDR_Demo_Held__c</field>
         <readable>true</readable>
     </fieldPermissions>
