@@ -10981,6 +10981,23 @@ false)</formula>
     </fields>
     <label>Cancellation Form</label>
     <listViews>
+        <fullName>Enspire_Cxl_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Name__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Approved__c</columns>
+        <columns>IsClosed__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Cancellation_Request__c.WBN_Cancellation_Request</value>
+        </filters>
+        <label>Enspire Cxl Requests</label>
+    </listViews>
+    <listViews>
         <fullName>LBW_Support_Cancellation_Request</fullName>
         <columns>NAME</columns>
         <columns>OWNER.ALIAS</columns>

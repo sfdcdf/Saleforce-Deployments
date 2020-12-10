@@ -43,6 +43,7 @@
         <connector>
             <targetReference>Hold_Removal_Date</targetReference>
         </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
         <filterLogic>and</filterLogic>
         <filters>
             <field>On_Hold_Status__c</field>

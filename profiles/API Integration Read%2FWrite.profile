@@ -41245,7 +41245,7 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>true</default>
+        <default>false</default>
         <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -41257,7 +41257,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -41265,9 +41265,10 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Cancellation_Request__c.WBN_Cancellation_Request</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
