@@ -229,10 +229,6 @@
     <rules>
         <fullName>Organic Process Request - Status changed to In Progress</fullName>
         <actions>
-            <name>Organic_Process_Request_Alert_Creator_In_Progress</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
             <name>OR_Proc_Req_Update_Approval_Date</name>
             <type>FieldUpdate</type>
         </actions>
