@@ -22467,7 +22467,10 @@ false)</formula>
             </values>
         </picklistValues>
     </recordTypes>
-    <searchLayouts />
+    <searchLayouts>
+        <searchFilterFields>Client_ID__c</searchFilterFields>
+        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Cannot_Change_Owner_for_LWB</fullName>
