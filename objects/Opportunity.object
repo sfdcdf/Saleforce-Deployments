@@ -7262,6 +7262,26 @@ Corporate_Enhanced_SEO_Setup_Fee_Per_Loc__c)
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Opportunity_Confirmed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Confirmed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Confirmed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Opportunity Confirmed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Opportunity_Detail__c</fullName>
         <externalId>false</externalId>
         <label>Opportunity Detail</label>
