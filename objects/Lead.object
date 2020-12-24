@@ -5607,6 +5607,11 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                     <label>Consulting</label>
                 </value>
                 <value>
+                    <fullName>Courier, Messenger and Delivery Services</fullName>
+                    <default>false</default>
+                    <label>Courier, Messenger and Delivery Services</label>
+                </value>
+                <value>
                     <fullName>Criminal/DUI</fullName>
                     <default>false</default>
                     <label>Criminal/DUI</label>
@@ -5740,6 +5745,11 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                     <fullName>Home and Car Loans</fullName>
                     <default>false</default>
                     <label>Home and Car Loans</label>
+                </value>
+                <value>
+                    <fullName>Home Builder</fullName>
+                    <default>false</default>
+                    <label>Home Builder</label>
                 </value>
                 <value>
                     <fullName>Home Entertainment</fullName>
@@ -6057,6 +6067,11 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                     <label>Self Defense</label>
                 </value>
                 <value>
+                    <fullName>Senior Care</fullName>
+                    <default>false</default>
+                    <label>Senior Care</label>
+                </value>
+                <value>
                     <fullName>Settlement and Title</fullName>
                     <default>false</default>
                     <label>Settlement and Title</label>
@@ -6090,6 +6105,11 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                     <fullName>Tattoo / Body Art</fullName>
                     <default>false</default>
                     <label>Tattoo / Body Art</label>
+                </value>
+                <value>
+                    <fullName>Tax Preparation Services</fullName>
+                    <default>false</default>
+                    <label>Tax Preparation Services</label>
                 </value>
                 <value>
                     <fullName>Technology</fullName>
@@ -6217,6 +6237,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             <valueSettings>
                 <controllingFieldValue>Health and Medicine</controllingFieldValue>
                 <valueName>Reflexology Training</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Health and Medicine</controllingFieldValue>
+                <valueName>Senior Care</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Health and Medicine</controllingFieldValue>
@@ -6577,6 +6601,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Legal and Financial Services</controllingFieldValue>
+                <valueName>Tax Preparation Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal and Financial Services</controllingFieldValue>
                 <valueName>Traffic</valueName>
             </valueSettings>
             <valueSettings>
@@ -6606,6 +6634,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             <valueSettings>
                 <controllingFieldValue>Business and Professional Services</controllingFieldValue>
                 <valueName>Consulting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business and Professional Services</controllingFieldValue>
+                <valueName>Courier, Messenger and Delivery Services</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Business and Professional Services</controllingFieldValue>
@@ -6686,6 +6718,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             <valueSettings>
                 <controllingFieldValue>Real Estate</controllingFieldValue>
                 <valueName>Apartment Rentals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Real Estate</controllingFieldValue>
+                <valueName>Home Builder</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Real Estate</controllingFieldValue>
@@ -30617,6 +30653,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
             <values>
+                <fullName>Courier%2C Messenger and Delivery Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Criminal%2FDUI</fullName>
                 <default>false</default>
             </values>
@@ -30718,6 +30758,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Heating and Air Conditioning - HVAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Builder</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -30977,6 +31021,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
             <values>
+                <fullName>Senior Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Settlement and Title</fullName>
                 <default>false</default>
             </values>
@@ -31002,6 +31050,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Tattoo %2F Body Art</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Preparation Services</fullName>
                 <default>false</default>
             </values>
             <values>

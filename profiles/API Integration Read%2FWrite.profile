@@ -37864,27 +37864,27 @@
         <recordType>Call_Grading_Forms__c.Outbound_Call_Non_Touch_Point</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-20 Day</layout>
+        <layout>Call_Grading_Forms__c-CSC</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_Training_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-20 Day</layout>
+        <layout>Call_Grading_Forms__c-CSC</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_CSC_Essentials</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-20 Day</layout>
+        <layout>Call_Grading_Forms__c-CSC</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_CSC_Auto</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-20 Day</layout>
+        <layout>Call_Grading_Forms__c-CSC</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_Training_TEST</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-20 Day</layout>
+        <layout>Call_Grading_Forms__c-CSC</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_Inbound_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-20 Day</layout>
+        <layout>Call_Grading_Forms__c-CSC</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_Save_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
