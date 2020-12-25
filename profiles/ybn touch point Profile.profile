@@ -5261,10 +5261,10 @@
         <layout>UserAlt-User Profile Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Worksheets__c-MLS Worksheet</layout>
+        <layout>Worksheets__c-MLS Worksheet %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Worksheets__c-MLS Worksheet</layout>
+        <layout>Worksheets__c-MLS Worksheet %28feed%29</layout>
         <recordType>Worksheets__c.MLS_Worksheet</recordType>
     </layoutAssignments>
     <layoutAssignments>

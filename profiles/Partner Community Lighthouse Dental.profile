@@ -29040,7 +29040,7 @@
         <layout>Partner_MDF_Quarterly_Budget_Setting__mdt-Partner MDF Quarterly Budget Setting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Partner_Marketing_Development_Fund__c-Request View for Client</layout>
+        <layout>Partner_Marketing_Development_Fund__c-Partner Marketing Development Fund Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Partner_Name__c-Partner - non-admins</layout>
