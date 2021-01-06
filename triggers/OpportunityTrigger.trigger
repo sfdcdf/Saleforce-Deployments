@@ -5,7 +5,7 @@
  * Date : 5/29/2019
  * Jira :https://jira.registeredsite.com/browse/TEAM-36749
 
- * ****************************************************************************************/
+ * *****************************************************************************************/
 
 
 trigger OpportunityTrigger on Opportunity (before Insert, Before Update, after update) {
@@ -23,18 +23,18 @@ trigger OpportunityTrigger on Opportunity (before Insert, Before Update, after u
         }
     } // Modification of Mahesh Ended here for https://jira.registeredsite.com/browse/TEAM-36749
     
-    if(trigger.isAfter && trigger.isUpdate){
-		Id partnerCppChildAcctRecordTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Partner - CPP Child Account').getRecordTypeId();
-		Set<Id> verifyCertificationAcctIdSet = new Set<Id>();
+  /*  if(trigger.isAfter && trigger.isUpdate){
+		//Id partnerCppChildAcctRecordTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Partner - CPP Child Account').getRecordTypeId();
+		//Set<Id> verifyCertificationAcctIdSet = new Set<Id>();
 		Set<Id> opportunityIdRecentlyClosedSet = new Set<Id>();
 
 		for(Opportunity record : trigger.New){
 			Opportunity oldRecord = trigger.oldMap.get(record.Id);
-			if((oldRecord.Date_certification_complete__c != record.Date_certification_complete__c || oldRecord.Partner_Products_Available_To_Sell__c != record.Partner_Products_Available_To_Sell__c) && String.isNotBlank(record.AccountId)){
+			/*if((oldRecord.Date_certification_complete__c != record.Date_certification_complete__c || oldRecord.Partner_Products_Available_To_Sell__c != record.Partner_Products_Available_To_Sell__c) && String.isNotBlank(record.AccountId)){
 				verifyCertificationAcctIdSet.add(record.AccountId);
 			}
 
-			if(record.IsClosed && record.StageName != oldRecord.StageName && record.RecordTypeId == partnerCppChildAcctRecordTypeId){
+			if(record.IsClosed && record.StageName != oldRecord.StageName /*&& record.RecordTypeId == partnerCppChildAcctRecordTypeId){
 				opportunityIdRecentlyClosedSet.add(record.Id);
 			}
 		}
@@ -50,8 +50,8 @@ trigger OpportunityTrigger on Opportunity (before Insert, Before Update, after u
 			}
 		}
 
-		if(!verifyCertificationAcctIdSet.isEmpty()){
+		/*if(!verifyCertificationAcctIdSet.isEmpty()){
 			PartnerCommunityUtil.updatePartnerUserProfile(verifyCertificationAcctIdSet);
 		}
-	}
+	}***S***/
 }
