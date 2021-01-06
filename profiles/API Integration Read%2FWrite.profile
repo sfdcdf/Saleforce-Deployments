@@ -41513,7 +41513,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Contract.Amendments</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -42249,7 +42249,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Contract.Service_Agreement</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
