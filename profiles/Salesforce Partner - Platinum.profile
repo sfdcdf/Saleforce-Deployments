@@ -39784,7 +39784,7 @@
         <recordType>Account.LH_Master_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Multi Location Parent %28feed%29</layout>
+        <layout>Account-SysAdmin %28feed%29</layout>
         <recordType>Account.Multi_Location_Parent</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -39838,6 +39838,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Apex_Debug_Log__c-Apex Debug Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AppAnalyticsQueryRequest-App Analytics Query Request Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-WBN - LEX IL Sales</layout>
@@ -43072,7 +43075,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Multi_Location_Parent</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>

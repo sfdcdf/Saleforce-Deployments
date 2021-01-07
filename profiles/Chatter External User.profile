@@ -20000,6 +20000,9 @@
         <layout>Apex_Debug_Log__c-Apex Debug Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>AppAnalyticsQueryRequest-App Analytics Query Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -21742,7 +21745,7 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>true</default>
+        <default>false</default>
         <recordType>Account.Rogers_National_Account</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -21752,9 +21755,10 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Account.YBN_Corporate_Relationship</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>

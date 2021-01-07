@@ -31485,7 +31485,7 @@
         <recordType>Account.LH_Master_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Multi Location Parent %28feed%29</layout>
+        <layout>Account-Account Layout %28Feed%29</layout>
         <recordType>Account.Multi_Location_Parent</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -31532,6 +31532,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Apex_Debug_Log__c-Apex Debug Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AppAnalyticsQueryRequest-App Analytics Query Request Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
@@ -33546,7 +33549,7 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>true</default>
+        <default>false</default>
         <recordType>Account.Rogers_National_Account</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -33556,9 +33559,10 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Account.YBN_Corporate_Relationship</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>

@@ -3701,6 +3701,9 @@
         <layout>Apex_Debug_Log__c-Apex Debug Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>AppAnalyticsQueryRequest-App Analytics Query Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
