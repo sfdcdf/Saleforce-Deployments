@@ -804,6 +804,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>SupportedObjectsForDMLDemoClass</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TLS_Checker</apexClass>
         <enabled>true</enabled>
     </classAccesses>
