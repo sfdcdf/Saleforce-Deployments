@@ -15,8 +15,6 @@
         <apexClass>icCancelAppointmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <custom>true</custom>
-    <description>View to accounts, cases, and cancellation forms</description>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -33738,5 +33736,4 @@
         <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
-    <userLicense>Company Communities</userLicense>
 </Profile>
