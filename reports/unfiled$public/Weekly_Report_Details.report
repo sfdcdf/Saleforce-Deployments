@@ -116,6 +116,8 @@
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_CURNEXTFY</interval>
+        <endDate>2022-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-11-01</startDate>
     </timeFrameFilter>
 </Report>
