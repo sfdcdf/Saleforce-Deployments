@@ -15,6 +15,7 @@
         <apexClass>icCancelAppointmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <custom>true</custom>
     <pageAccesses>
         <apexPage>Aha_Feedback</apexPage>
         <enabled>true</enabled>
@@ -31246,4 +31247,5 @@
         <tab>Welcome_Page</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+    <userLicense>Partner Community</userLicense>
 </Profile>

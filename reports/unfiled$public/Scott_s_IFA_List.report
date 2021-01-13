@@ -89,9 +89,16 @@
             <operator>equals</operator>
             <value>scott tanenbaum</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_SOURCE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>ifa</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>Scott&apos;s Opportunities</name>
+    <name>Scott&apos;s IFA List</name>
     <params>
         <name>open</name>
         <value>open</value>

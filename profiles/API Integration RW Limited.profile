@@ -655,6 +655,8 @@
         <apexClass>icCancelAppointmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <custom>true</custom>
+    <description>Used by BI Team for Fivetran Redshift Integration</description>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -40694,4 +40696,5 @@
         <tab>Welcome_Page</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
+    <userLicense>Salesforce</userLicense>
 </Profile>

@@ -75,6 +75,8 @@
         <apexClass>icCancelAppointmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <custom>true</custom>
+    <description>Specifically for our third party vendors.</description>
     <pageAccesses>
         <apexPage>Aha_Feedback</apexPage>
         <enabled>true</enabled>
@@ -35213,4 +35215,5 @@
         <tab>Welcome_Page</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
+    <userLicense>Salesforce</userLicense>
 </Profile>

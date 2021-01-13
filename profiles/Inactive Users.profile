@@ -71,6 +71,7 @@
         <apexClass>icCancelAppointmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <custom>true</custom>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -35088,4 +35089,5 @@
         <object>Location</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <userLicense>Salesforce</userLicense>
 </Profile>
