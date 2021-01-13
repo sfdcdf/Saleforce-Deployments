@@ -1455,6 +1455,11 @@
         <apexClass>lhDeleteBatchFailureCasesScheduleTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <custom>false</custom>
+    <loginIpRanges>
+        <endAddress>255.255.255.255</endAddress>
+        <startAddress>0.0.0.0</startAddress>
+    </loginIpRanges>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -42003,4 +42008,5 @@
         <tab>Welcome_Page</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
+    <userLicense>Salesforce</userLicense>
 </Profile>

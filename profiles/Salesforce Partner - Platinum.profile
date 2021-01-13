@@ -1383,6 +1383,7 @@
         <apexClass>ybnUtilsEvents</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <custom>true</custom>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -44189,4 +44190,5 @@
         <tab>zzContract__c</tab>
         <visibility>DefaultOff</visibility>
     </tabVisibilities>
+    <userLicense>Salesforce</userLicense>
 </Profile>
