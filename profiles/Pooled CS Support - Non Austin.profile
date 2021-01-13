@@ -79,6 +79,7 @@
         <apexClass>icCancelAppointmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <custom>true</custom>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -36194,4 +36195,5 @@
         <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+    <userLicense>Salesforce</userLicense>
 </Profile>

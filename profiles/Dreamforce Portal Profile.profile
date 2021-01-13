@@ -1407,6 +1407,7 @@
         <apexClass>ybnUtilsEvents</apexClass>
         <enabled>false</enabled>
     </classAccesses>
+    <custom>true</custom>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>false</enabled>
@@ -43048,4 +43049,5 @@
         <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
+    <userLicense>Guest User License</userLicense>
 </Profile>

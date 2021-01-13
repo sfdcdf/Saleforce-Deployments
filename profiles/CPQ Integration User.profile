@@ -113,6 +113,7 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
+    <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AD_Mentor__c</field>
@@ -34922,4 +34923,5 @@
         <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+    <userLicense>CPQ Integration User</userLicense>
 </Profile>

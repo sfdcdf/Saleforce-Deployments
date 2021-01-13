@@ -655,6 +655,8 @@
         <apexClass>icCancelAppointmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <custom>true</custom>
+    <description>Used by BI Team for Fivetran Redshift Integration</description>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -39790,4 +39792,5 @@
         <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+    <userLicense>Salesforce</userLicense>
 </Profile>

@@ -109,6 +109,7 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
+    <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.AD_Mentor__c</field>
@@ -23499,4 +23500,5 @@
         <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
+    <userLicense>Chatter External</userLicense>
 </Profile>

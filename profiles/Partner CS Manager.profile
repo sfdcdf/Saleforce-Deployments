@@ -75,6 +75,8 @@
         <apexClass>icCancelAppointmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <custom>true</custom>
+    <description>Updated to Support WBN And Vivial Accounts</description>
     <pageAccesses>
         <apexPage>AccountFees</apexPage>
         <enabled>true</enabled>
@@ -36903,4 +36905,5 @@
         <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+    <userLicense>Salesforce</userLicense>
 </Profile>

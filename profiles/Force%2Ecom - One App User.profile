@@ -75,6 +75,7 @@
         <apexClass>icCancelAppointmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <custom>false</custom>
     <pageAccesses>
         <apexPage>Aha_Feedback</apexPage>
         <enabled>true</enabled>
@@ -29181,4 +29182,5 @@
         <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+    <userLicense>Force.com - One App</userLicense>
 </Profile>

@@ -75,6 +75,8 @@
         <apexClass>icCancelAppointmentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <custom>true</custom>
+    <description>Specifically for our third party vendors.</description>
     <pageAccesses>
         <apexPage>Aha_Feedback</apexPage>
         <enabled>true</enabled>
@@ -35164,4 +35166,5 @@
         <tab>MarketoLeadSFAccountMapping__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+    <userLicense>Salesforce</userLicense>
 </Profile>
