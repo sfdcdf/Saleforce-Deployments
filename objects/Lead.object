@@ -29159,27 +29159,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>Bulk Upload</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Client Site</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Cold Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Corporate Paid - No Lead Source</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Display Ad</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Dun and Bradstreet</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -29195,31 +29175,7 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
             <values>
-                <fullName>Industry Event</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Internal Referral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>JCI Portal</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>LinkedIn</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Local Event</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Network Communications Portal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Networking Meeting</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -29231,18 +29187,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outbound %28Call %2F Email%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Paid Search - Bing</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Paid Search - Display</fullName>
                 <default>false</default>
             </values>
@@ -29251,35 +29195,11 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner Inquiry</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Personal contact</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Purchased List</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Referral</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Referral - 2nd Business</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reseller</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SDR - Sandy Martinez</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Self-Sourced</fullName>
+                <fullName>SalesIntel</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -29288,14 +29208,6 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>facebook</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>youtube</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

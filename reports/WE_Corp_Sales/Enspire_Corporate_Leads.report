@@ -10,6 +10,9 @@
         <field>TITLE</field>
     </columns>
     <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
         <field>COMPANY</field>
     </columns>
     <columns>
@@ -42,6 +45,12 @@
     <columns>
         <field>CONVERTED</field>
     </columns>
+    <columns>
+        <field>LEAD_ID</field>
+    </columns>
+    <columns>
+        <field>Lead.Prospect_ID__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
@@ -71,6 +80,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
-        <interval>INTERVAL_PREV1</interval>
+        <interval>INTERVAL_PREVCURY</interval>
     </timeFrameFilter>
 </Report>
