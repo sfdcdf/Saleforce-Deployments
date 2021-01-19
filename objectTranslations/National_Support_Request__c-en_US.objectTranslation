@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
         <value>National Support Request</value>
@@ -3761,10 +3761,6 @@ Strategic member should be present on at least first performance call. --></help
     </recordTypes>
     <startsWith>Consonant</startsWith>
     <validationRules>
-        <errorMessage><!-- Required in Stage 5 and Do they Use CRM is Yes --></errorMessage>
-        <name>Conf_Check_Box_CRM_Yes</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- You must fill out the following fields when choosing Manufacturer  Relationship Type:
    -Current Total Spend
    -How will locations be solicited?
@@ -3772,14 +3768,6 @@ Strategic member should be present on at least first performance call. --></help
    -30-60 Days
    -Client Use CRM Currently? --></errorMessage>
         <name>Initiation_Form_Manufacturer_Fields</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Fill out Total Number of Locations, Nat. Relat. Type, Specific Services to Highlight, Corporate Website Domain, Local Website Structure, Who Host Local Sites, Who maintains and updates sites, what online marketing efforts, Own Maps, and Prospect Defining --></errorMessage>
-        <name>Initiation_Form_Stage_2_Demo_Requirement</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- When Stage 3 is selected, you must fill out fields in Stage 3 section. --></errorMessage>
-        <name>Initiation_Form_Stage_3_Prop_Requirement</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- When selecting, &quot;Yes&quot; for &quot;Do they use a CRM&quot;, you must fill out this field. --></errorMessage>

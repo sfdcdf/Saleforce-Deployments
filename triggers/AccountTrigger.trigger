@@ -3,17 +3,9 @@ Modification 9.24.2019 ERoss:
 
 Commented out code line: Set<String> ybnTouchplanClientGroup = new Set<String>{'Hand & Stone - Master', 'Senior Helpers', 'Maaco'}; 
 Removed all references to that Set<String> list which limited to Accounts in the list for WBN Touch Plans
-
-
-Modification 10-14-2020 
-Introduced Checkrecursive as the code is running infinete loop
 ***********************************************************************************/
 
 trigger AccountTrigger on Account (before insert, after insert, before update, after update, after delete) {
-    
-   if(CheckRecursive.runAfterUpdate()==false)
-   {    
-    
     if(Test.isRunningTest()){
         TestCustomSettingInitializer testInit = new TestCustomSettingInitializer();
     }
@@ -490,6 +482,4 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
         MarketoLeadIdSFAccountMapper.mapSFAccountToMarketoLead(JSON.serialize(acctListToMarketo));
         AccountObjectHelper.accountObjectHelperAlreadyFired = true;
     }
-       
-   }     
 }

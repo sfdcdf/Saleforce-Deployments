@@ -65,10 +65,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>First_Response_Atual_Elapse_Time__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>OwnerId</field>
             </layoutItems>
             <layoutItems>
@@ -126,6 +122,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>IsEscalated</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>First_Response_Actual_Elapse_Time__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -326,12 +326,7 @@
         <editHeading>true</editHeading>
         <label>WSO Team</label>
         <layoutColumns/>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CSS_Resolution__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
@@ -358,34 +353,8 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>QA Information</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>QAed_By__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Result_of_QA__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>QA_Notes__c</field>
-            </layoutItems>
-        </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>QA_Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>MA_Corrected_QA_Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Error_Type__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
+        <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
@@ -419,10 +388,6 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PIN_Team_Agent__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>IT_Pro_Member__c</field>
             </layoutItems>
         </layoutColumns>
@@ -439,12 +404,7 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>SEO MOPs Specific Information</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>MOPs_Analyst__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>

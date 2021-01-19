@@ -113,10 +113,6 @@
                 <field>Total_Acct_Revenue__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Orkweb_ID__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>Status</field>
             </layoutItems>
@@ -139,10 +135,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CMS_3_0_Test__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Referrer__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -280,10 +272,6 @@
                 <field>JIRA_Issue_ID__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>JIRA_URL__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>External_Ticket_System__c</field>
             </layoutItems>
@@ -319,23 +307,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Acct_Acceptance_Rep__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Reason_for_AA_Issue__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>AA_Resolution__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Refund_Amount__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Called_By__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -558,10 +530,6 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Initial_Website_Setup_do_not_edit__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Other_reason_detail__c</field>
             </layoutItems>
         </layoutColumns>
@@ -583,18 +551,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Spell_Check_Business_Profile_del__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Checked_Bulk_URL_Manager__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Geo_Terms_Appropriate__c</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Quality_Ad_Copies__c</field>
@@ -680,12 +640,7 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Detail</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Total_Minutes_for_All_Changes__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <style>OneColumn</style>
     </layoutSections>
     <layoutSections>

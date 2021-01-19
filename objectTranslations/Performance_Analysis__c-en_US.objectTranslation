@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
         <help><!-- Select an Account for this Performance Analysis --></help>
         <label><!-- Account --></label>
@@ -937,10 +937,6 @@ Fill Out Unpaid Section and Unpaid Notes --></help>
         <name>Auto_Performance_Insights</name>
     </recordTypes>
     <validationRules>
-        <errorMessage><!-- Please add Notes before Closing this Issue --></errorMessage>
-        <name>Close_Notes_Required</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- This had a status of False Positive, False Positive Notes are required. --></errorMessage>
         <name>False_Positive_Notes_Required</name>
     </validationRules>
@@ -949,15 +945,7 @@ Fill Out Unpaid Section and Unpaid Notes --></help>
         <name>Paid_Optimization_Checks</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- You can not modify this record if it&apos;s already closed. Please contact @Salesforce Support in the Chatter Feed on this record if you closed by mistake or need assistance! --></errorMessage>
-        <name>Performance_No_Changes_after_Closed</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- Please enter in the Time to Complete in Minutes --></errorMessage>
         <name>Time_to_Complete_required</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Please fill out all fields in the Unpaid Optimization Tactics and Unpaid Optimization Notes --></errorMessage>
-        <name>Unpaid_Optimization_Checks</name>
     </validationRules>
 </CustomObjectTranslation>

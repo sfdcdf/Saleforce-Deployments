@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
         <label><!-- Account Name --></label>
         <name>Account_Name__c</name>
@@ -723,10 +723,6 @@
     <validationRules>
         <errorMessage><!-- You must enter the notes field if you select &quot;multiple lines same issue&quot;, &quot;multiple lines different issue&quot;  or &quot;Other&quot;. --></errorMessage>
         <name>Notes_Required</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- You must enter numbers to be blacklisted when there have been solicitor calls. --></errorMessage>
-        <name>Solicitor_Calls_Opens_Numbers_Blacklist</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Only numbers should be entered into the Tracking Number fields. Please edit accordingly. --></errorMessage>

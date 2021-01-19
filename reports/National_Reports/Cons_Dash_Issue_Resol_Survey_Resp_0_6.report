@@ -19,7 +19,7 @@
         <field>CUST_CREATED_DATE</field>
     </columns>
     <columns>
-        <field>Customer_Surveys__c.Issue_Survey_CS_Satisfaction__c</field>
+        <field>Customer_Surveys__c.Issue_Survey_Overall_Satisfaction__c</field>
     </columns>
     <columns>
         <field>CUST_NAME</field>
@@ -64,7 +64,7 @@
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Customer_Surveys__c.Issue_Survey_CS_Satisfaction__c</column>
+            <column>Customer_Surveys__c.Issue_Survey_Overall_Satisfaction__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessOrEqual</operator>

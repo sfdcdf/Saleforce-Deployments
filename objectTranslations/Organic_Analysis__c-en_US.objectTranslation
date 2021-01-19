@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Organic Case</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Organic Cases</value>
+    </caseValues>
     <fields>
         <label><!-- ASW/OPO keywords mismatched? --></label>
         <name>ASW_OPO__c</name>
@@ -4848,6 +4856,10 @@
         <name>Organic_Product__c</name>
     </fields>
     <fields>
+        <label><!-- OrgnicCase18 --></label>
+        <name>OrgnicCase18__c</name>
+    </fields>
+    <fields>
         <label><!-- Other --></label>
         <name>Other__c</name>
         <picklistValues>
@@ -7038,15 +7050,6 @@
             <translation><!-- Yes --></translation>
         </picklistValues>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Organic Case</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Organic Cases</value>
-    </caseValues>
-    <startsWith>Vowel</startsWith>
     <layouts>
         <layout>Canada Maps Claiming</layout>
         <sections>
@@ -7162,33 +7165,6 @@
         </sections>
     </layouts>
     <layouts>
-        <layout>Deprecated MIC</layout>
-        <sections>
-            <label><!-- Account Information --></label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label><!-- Bing Listing Data --></label>
-            <section>Bing Listing Data</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Existing Listing Information --></label>
-            <section>Existing Listing Information</section>
-        </sections>
-        <sections>
-            <label><!-- Google Listing Data --></label>
-            <section>Google Listing Data</section>
-        </sections>
-        <sections>
-            <label><!-- Maps Verification Team --></label>
-            <section>Maps Verification Team</section>
-        </sections>
-    </layouts>
-    <layouts>
         <layout>Google Listing Photo Update</layout>
         <sections>
             <label><!-- Account Information --></label>
@@ -7201,49 +7177,6 @@
         <sections>
             <label><!-- Google Listing Photo Update --></label>
             <section>Google Listing Photo Update</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>IT Pro Maps Initial Claiming</layout>
-        <sections>
-            <label><!-- Account Information --></label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label><!-- Automated Email Schedule --></label>
-            <section>Automated Email Schedule</section>
-        </sections>
-        <sections>
-            <label><!-- Citation Building (IYPs) - IT PRO --></label>
-            <section>Citation Building (IYPs) - IT PRO</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Customer Support Claiming - Outbound Support --></label>
-            <section>Customer Support Claiming - Outbound Support</section>
-        </sections>
-        <sections>
-            <label><!-- GLocal Existing Listing Analysis - IT PRO / Outbound Support --></label>
-            <section>GLocal Existing Listing Analysis - IT PRO / Outbound Support</section>
-        </sections>
-        <sections>
-            <label><!-- Google &amp; Bing Optimization - IT PRO --></label>
-            <section>Google &amp; Bing Optimization - IT PRO</section>
-        </sections>
-        <sections>
-            <label><!-- Listing Build Information - IT PRO --></label>
-            <section>Listing Build Information - IT PRO</section>
-        </sections>
-        <sections>
-            <label><!-- MOps Listing Optimization - SDB Team --></label>
-            <section>MOps Listing Optimization - SDB Team</section>
-        </sections>
-        <sections>
-            <label><!-- Outrank 1.0 Only - SDB Team --></label>
-            <section>Outrank 1.0 Only - SDB Team</section>
         </sections>
     </layouts>
     <layouts>
@@ -7267,37 +7200,6 @@
     </layouts>
     <layouts>
         <layout>Maps Initial Claiming - Pin View</layout>
-        <sections>
-            <label><!-- Account Information --></label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label><!-- Bing Listing Data --></label>
-            <section>Bing Listing Data</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Existing Listing Information --></label>
-            <section>Existing Listing Information</section>
-        </sections>
-        <sections>
-            <label><!-- GMBL Listing Data --></label>
-            <section>GMBL Listing Data</section>
-        </sections>
-        <sections>
-            <label><!-- Google Listing Data --></label>
-            <section>Google Listing Data</section>
-        </sections>
-        <sections>
-            <label><!-- Maps Verification Team --></label>
-            <section>Maps Verification Team</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Maps Initial Claiming - Pin View - Restricted Edit</layout>
         <sections>
             <label><!-- Account Information --></label>
             <section>Account Information</section>
@@ -7422,37 +7324,6 @@
         </sections>
     </layouts>
     <layouts>
-        <layout>Maps Initial Claiming IT Pro</layout>
-        <sections>
-            <label><!-- Account Information --></label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label><!-- Bing Listing Data --></label>
-            <section>Bing Listing Data</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Existing Listing Information --></label>
-            <section>Existing Listing Information</section>
-        </sections>
-        <sections>
-            <label><!-- GMBL Listing Data --></label>
-            <section>GMBL Listing Data</section>
-        </sections>
-        <sections>
-            <label><!-- Google Listing Data --></label>
-            <section>Google Listing Data</section>
-        </sections>
-        <sections>
-            <label><!-- Listing Build Information --></label>
-            <section>Listing Build Information</section>
-        </sections>
-    </layouts>
-    <layouts>
         <layout>Maps Initial Claiming Oct</layout>
         <sections>
             <label><!-- Account Information --></label>
@@ -7532,91 +7403,6 @@
         <sections>
             <label><!-- SEO MOps Diasnosis --></label>
             <section>SEO MOps Diasnosis</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Organic Consultation</layout>
-        <sections>
-            <label><!-- Account Information --></label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label><!-- Consultation Information --></label>
-            <section>Consultation Information</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Organic Optimization - SEO Mops</layout>
-        <sections>
-            <label><!-- Account Diagnosis --></label>
-            <section>Account Diagnosis</section>
-        </sections>
-        <sections>
-            <label><!-- Account Information --></label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label><!-- Actions Taken --></label>
-            <section>Actions Taken</section>
-        </sections>
-        <sections>
-            <label><!-- Case Information --></label>
-            <section>Case Information</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Existing Listing Information --></label>
-            <section>Existing Listing Information</section>
-        </sections>
-        <sections>
-            <label><!-- SEO MOps Diagnosis --></label>
-            <section>SEO MOps Diagnosis</section>
-        </sections>
-        <sections>
-            <label><!-- Summary --></label>
-            <section>Summary</section>
-        </sections>
-        <sections>
-            <label><!-- Yodle Live Information --></label>
-            <section>Yodle Live Information</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Organic Optimization - YBN</layout>
-        <sections>
-            <label><!-- Account Information --></label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label><!-- Actions Taken --></label>
-            <section>Actions Taken</section>
-        </sections>
-        <sections>
-            <label><!-- Case Information --></label>
-            <section>Case Information</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- SEO MOps Diagnosis --></label>
-            <section>SEO MOps Diagnosis</section>
-        </sections>
-        <sections>
-            <label><!-- Summary --></label>
-            <section>Summary</section>
-        </sections>
-        <sections>
-            <label><!-- Yodle Live Information --></label>
-            <section>Yodle Live Information</section>
         </sections>
     </layouts>
     <layouts>
@@ -7821,6 +7607,7 @@
         <label><!-- YO Initial Error Check --></label>
         <name>YO_Initial_Error_Check</name>
     </recordTypes>
+    <startsWith>Vowel</startsWith>
     <validationRules>
         <errorMessage><!-- If Status is in Pending Reattampt, Attempts to Contact cannot be blank or 0 --></errorMessage>
         <name>Attempts_to_Contact</name>
@@ -7828,14 +7615,6 @@
     <validationRules>
         <errorMessage><!-- If Status is Completed, Attempts to Contact cannot be blank or 0 --></errorMessage>
         <name>Attempts_to_Contact_2</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- If you are claiming a pin, please enter your name --></errorMessage>
-        <name>B_PIN_Received_By</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Please enter the case difficulty, case writing rating and audit pass before closing a case. --></errorMessage>
-        <name>Case_Rating_Required</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- If you select submission reason &quot;Google Communications Manager Request&quot;, &quot;Google Co-Management Request&quot;, &quot;Google Ownership Transfer Request&quot; or &quot;Google Co-Ownership Request&quot;, you must fill out the &quot;Client&apos;s Email Address&quot; field --></errorMessage>
@@ -7848,14 +7627,6 @@
     <validationRules>
         <errorMessage><!-- Must have manager approval to escalate an organic case --></errorMessage>
         <name>Escalate_Organic_Opts</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- If you are claiming a pin, please enter your name --></errorMessage>
-        <name>G_PIN_Received_By</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Must input IT Pro Members name, Proxy IP, Created Email UN, and Created email PW --></errorMessage>
-        <name>MAPS_Claiming</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Google White List must not be selected when Bulk Google Account is &quot;Yes&quot;. --></errorMessage>
@@ -7948,10 +7719,6 @@
     <validationRules>
         <errorMessage><!-- Only Production, IT Pro, YBN, and SEO MOps teams can select &quot;G&amp;B Login Issues&quot; as Reason for Submission --></errorMessage>
         <name>Reason_for_Submission_GB_Login_Issues</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Must fill out Client Services Manager --></errorMessage>
-        <name>YBN_Must_fill_out_client_svcs_mgr_to_es</name>
     </validationRules>
     <webLinks>
         <label><!-- Update_Lead_in_Marketo_ADMIN_ONLY --></label>

@@ -139,6 +139,22 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>A Custom Object to hold Logs of type Error and Information created from various other Apex Classes. Unlike the native Debug Logs, the data or log created here are mere records and hence they're persistent.
+
+Please employ the Apex Class named "ApexDebugLog" to utilize this Custom Object to save or log Errors or Information. There are also methods to create logs even via JavaScript.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Apex_Class__c</fullName>
         <externalId>false</externalId>
@@ -206,23 +222,20 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>A Custom Object to hold Logs of type Error and Information created from various other Apex Classes. Unlike the native Debug Logs, the data or log created here are mere records and hence they're persistent.
-
-Please employ the Apex Class named "ApexDebugLog" to utilize this Custom Object to save or log Errors or Information. There are also methods to create logs even via JavaScript.</description>
-    <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Apex Debug Log</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Type__c</columns>
+        <columns>Apex_Class__c</columns>
+        <columns>Message__c</columns>
+        <columns>Method__c</columns>
+        <columns>Record_Id__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <displayFormat>ADL-{0}</displayFormat>
         <label>Apex Debug Log ID</label>
@@ -264,17 +277,4 @@ Please employ the Apex Class named "ApexDebugLog" to utilize this Custom Object 
     <sharingModel>ReadWrite</sharingModel>
     <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
-    <listViews>
-        <fullName>All</fullName>
-        <columns>NAME</columns>
-        <columns>Type__c</columns>
-        <columns>Apex_Class__c</columns>
-        <columns>Message__c</columns>
-        <columns>Method__c</columns>
-        <columns>Record_Id__c</columns>
-        <columns>CREATEDBY_USER</columns>
-        <columns>CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
 </CustomObject>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
         <value>Operations</value>
@@ -2343,33 +2343,6 @@
         </sections>
     </layouts>
     <layouts>
-        <layout>YBN Ops Request</layout>
-        <sections>
-            <label><!-- Account Update Details --></label>
-            <section>Account Update Details</section>
-        </sections>
-        <sections>
-            <label><!-- Close Notes --></label>
-            <section>Close Notes</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Notes --></label>
-            <section>Notes</section>
-        </sections>
-        <sections>
-            <label><!-- Ops Details --></label>
-            <section>Ops Details</section>
-        </sections>
-        <sections>
-            <label><!-- Request Details --></label>
-            <section>Request Details</section>
-        </sections>
-    </layouts>
-    <layouts>
         <layout>YO 2.0 Free Time Request (feed)</layout>
         <sections>
             <label><!-- CS Ops --></label>
@@ -2491,75 +2464,19 @@
         <name>Cannot_Re_Open_Cases</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- You must fill out the following fields when closing out a CS Ops request: Operations Owner, Request Category, Minutes to Complete Request and Summary of Request --></errorMessage>
-        <name>Fields_Required_Upon_Closing</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Franchise Affected must be filled out when submitting a National Project Request --></errorMessage>
-        <name>Franchise_Affected_Required</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- The minimum &quot;Estimate Minutes to Complete&quot; and &quot;Minutes to Complete Request&quot; is 15. Please change to 15 and re-save. --></errorMessage>
-        <name>Minimum_Time_to_Complete</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- Please complete the close notes when moving to a closed status. --></errorMessage>
         <name>Must_Complete_Close_Notes</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- You must fill out an expected completion date --></errorMessage>
-        <name>Must_Fill_Out_Expected_Completion_Date</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please select a request type that best reflects your request. --></errorMessage>
         <name>Must_Select_Request_Type</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- When closing a National Project request, you must fill out the &quot;Macro Used?&quot; field. If a macro was used to complete the request, please select Yes. Otherwise, select No. --></errorMessage>
-        <name>National_Project_Macro</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- When using a macro to complete a National Project request, you must select the Bulk Change Type field and include the minutes saved by using the macro. If the appropriate change type is not present, please escalate to get it added. --></errorMessage>
-        <name>National_Project_Macro_Used</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Only requests coming from the National Channel can use the National Project type. Please select another type that more accurately reflects your request. --></errorMessage>
-        <name>National_Project_Must_be_National_Channe</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- You must fill out the client id of the original account when submitting a new account addition. --></errorMessage>
         <name>New_Account_Must_add_Old_Client_ID</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- You must fill in the new report request priority when selecting a new report. --></errorMessage>
-        <name>New_Report_Request_Priority</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- If you are nominating an individual, you must fill out the Nominee Name field --></errorMessage>
-        <name>Nominee_Name_must_be_filled_out</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- If you are nominating a team for Team of the Month, you must fill out the Nominated Team field --></errorMessage>
-        <name>Team_name_must_be_filled_out</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- Must Fill Out Other Notes if &quot;Other&quot; is selection for Upgrade Reason or if &quot;Other / Missing Feature&quot; is selected for Downgrade Reason --></errorMessage>
         <name>Upgrade_Downgrade_Other_Notes_filled_out</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- The &quot;Account&quot; field must be filled out with the specific account you wish to update. --></errorMessage>
-        <name>YBN_Account_or_Service_Level_Update</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- The &quot;proposed IL service level&quot; and &quot;existing IL service level&quot; fields must be filled out --></errorMessage>
-        <name>YBN_IL_Service_Level_Update</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- The &quot;proposed corporate service level&quot; and &quot;proposed IL service level&quot; must be filled out --></errorMessage>
-        <name>YBN_Service_Level_Assignment_for_newacct</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- The &quot;proposed corporate service level&quot; and &quot;existing corporate service level&quot; fields must be filled out --></errorMessage>
-        <name>YBN_Service_Level_Update</name>
     </validationRules>
 </CustomObjectTranslation>

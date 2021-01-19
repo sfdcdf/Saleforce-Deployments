@@ -34,7 +34,7 @@ trigger ybnTaskEmailUserSignUp on Task (after insert) {
             if (toAddresses.size() == 0) continue;
             mail.setToAddresses(toAddresses);
             
-            mail.setReplyTo('sfdc@enspireforenterprise.com');
+            mail.setReplyTo('sfdc@yodle.com');
             mail.setSenderDisplayName('Yodle SFDC');
             mail.setSubject('network communication portal ' + t.Relationship_Name__c);
             

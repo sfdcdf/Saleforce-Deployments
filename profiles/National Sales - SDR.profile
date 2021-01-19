@@ -168,76 +168,6 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__AllTabSet</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__AppLauncher</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Chatter</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Content</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Insights</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningSales</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningSalesConsole</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningService</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Marketing</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Platform</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Sales</application>
-        <default>true</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__SalesforceCMS</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Service</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__ServiceConsole</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.AVERAGE_SUCCESS_RATE_OF_A_FRANCHISE__c</field>
@@ -3355,16 +3285,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Account.leadfeederapp__LatestWebsiteVisit__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.leadfeederapp__LeadfeederLink__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Account.leadspace_CompanyCity__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -5506,221 +5426,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CS_Operations__c.What_is_the_new_process__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Additional_Business_Info__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.After_Hours_Details__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Business_Address__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Business_Hours_Days_Open__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Call_Answering_Status__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Cancel_Complete_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Cancel_Submit_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Case__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Change_Complete_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Change_Request_Details__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Change_Submit_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Client_Cell_Phone_2_For_Text_Message__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Client_Cell_Phone_3_For_Text_Message__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Client_Email_2_For_Email_Message__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Client_Email_3_For_Email_Message__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Client_Email__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Call_Answering__c.Client_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Client_Phone_Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Call_Answering__c.Client_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Custom_Greeting_del__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Call_Answering__c.Days_Since_Open__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Call_Answering__c.Days_to_Close_Question__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Call_Answering__c.Days_to_Complete_Cancel__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Call_Answering__c.Days_to_Complete_Change__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Call_Answering__c.Days_to_Setup_Business__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Emergency_Hours__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.If_specific_lines_please_list_below__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Info_to_Verify_on_the_Call__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Call_Answering__c.Initial_Setup_Complete__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.List_of_Services__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Names_of_Key_Staff__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Phonetic_Spelling_of_Company_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Question_Complete_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Question_Issue__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Question_Submit_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Call_Answering__c.Requested_By_Email__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Call_Answering__c.Requested_By__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Call_Answering__c.Segment_2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Setup_Complete_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Setup_Submit_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Setup_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.Yodle_Call_Tracking_Numbers__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Call_Answering__c.of_Rings_Before_Answer__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9980,11 +9685,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.AA_Resolution__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.AC_Created_Did_not_attend_webinar__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -10001,11 +9701,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Account_Days_Live__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Account_Goes_Against_AAG__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10026,11 +9721,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Account_Updates_Changes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Acct_Acceptance_Rep__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10061,36 +9751,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Added_Additional_Services__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Added_Better_Performing_Service__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Added_Negatives_Low_CVR__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Added_Negatives_No_Obvious_Issues__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Added_Negatives_Overspend__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Added_Pending_Keywords_Low_CVR__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Added_Pending_Keywords_No_Obvious_Iss__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10135,11 +9795,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Algo_Issues__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.All_Website_Info_Received__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -10166,11 +9821,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Apex_Case_Cloned__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Are_All_of_the_Above_Okay__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10264,18 +9914,8 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Bad_Broad_Matching__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Case.Berry_Account_Manager_Email__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Berry_Client__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10296,11 +9936,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Bing_WMT_Username__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Broadened_Geo_Messaging_Low_CVR__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10389,11 +10024,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.CSS_Resolution__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Case.CS_Approved__c</field>
         <readable>true</readable>
@@ -10401,16 +10031,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.CS_Support_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.CTR__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.CVR__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10435,37 +10055,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Call_Quality_Reason__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Call_Tracking__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Called_By__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Campaign_Setup_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Cancel_Next_Month__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Cancel_Sub_Details__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Cancel_within_30__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10514,23 +10109,8 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Charge_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Chat_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Case.Checked_Bulk_URL_Manager__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Checked_Site_Link_Ext_Bulk_URL_Low_CVR__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10550,17 +10130,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Checked_for_Call_Tracking_Issues__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Checked_for_Spend_Blockers_del__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.City__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10596,11 +10166,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Client_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Client_Initiated_Interaction__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10680,26 +10245,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Completed_Competitive_Anaysis__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Completed_Lead_Audit_CVR__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Completed_Lead_Audit_No_Obvious_Issues__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Completed_Website_Changes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Completed_on_Callback_By__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -10730,11 +10275,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Conflicting_Negatives__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Consultant_Notes__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -10750,27 +10290,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Contact_Business_Phone__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Contacts_Today__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.CopyConfirmedExported__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.CopyProviderId__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.CopyReady__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10786,16 +10311,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Copy_fulfillment_test__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Corrected_Geo_Targeting__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Corrected_Inconsistent_Geo_Messaging__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10845,11 +10360,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Customers_Prior_to_Call__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.DNS_Received__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -10861,11 +10371,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Dashboard__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Date_Contract_Received__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10886,11 +10391,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Date_Opt_Completed__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Date_Processed_QA__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10969,11 +10469,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Date_to_Stop_Service__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Case.Days_Closed__c</field>
         <readable>true</readable>
@@ -11015,17 +10510,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Defer_Until__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Demo_Recorded__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Description_Summary__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11051,11 +10546,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Details_of_Next_Contact__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Disapproved_Ads__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11125,11 +10615,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Escalation_Notes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Escalation_Potential__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -11151,11 +10636,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Estimated_Completion_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Estimated_of_Hours_to_Complete__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11186,11 +10666,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Fail_Reason__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Favorite_Least_Favorite__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11265,11 +10740,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Frequency__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Future_Monthly_Revenue__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -11320,22 +10790,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Geo_Message_Disconnect__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Geo_Targeting_Correct_Non_Metropage__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Geo_Targeting_Population__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Geo_Terms_Appropriate__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11380,21 +10840,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.High_CPC__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.High_CPCs__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.High_PPL__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Homepage__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -11424,11 +10869,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.IMS_Follow_Up_Notes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Case.IMS_Rep_Email__c</field>
         <readable>true</readable>
@@ -11455,11 +10895,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Improvements__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.In_Contract__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -11470,17 +10905,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Initial_MLS_Contact_Paperwork__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Initial_Product__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Initial_Website_Setup_do_not_edit__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11506,11 +10931,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.IsStopped</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Issue2__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11544,23 +10964,8 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.JIRA_URL__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.KeyWord_1_Page_Old_URL__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Case.KeyWord_1_Service_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.KeyWord_1_Site_Page_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11575,17 +10980,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.KeyWord_2_Page_Old_URL__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.KeyWord_2_Service_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.KeyWord_2_Site_Page_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11600,17 +10995,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.KeyWord_3_Page_Old_URL__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.KeyWord_3_Service_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.KeyWord_3_Site_Page_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11621,11 +11006,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.KeyWord_3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Keyword_Issue_Provider__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11649,23 +11029,8 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.LH_360_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.LH_Client_Portal__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Case.LH_Escalation__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.LH_Feature_Addition__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11681,11 +11046,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Landing_page_URL__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Language_Settings__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11714,11 +11074,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Level_2_Assistance_Needed__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Case.Link_to_Client_Dashboard__c</field>
         <readable>true</readable>
@@ -11736,11 +11091,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Listings_Information__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.LiveChat_Case_User_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11775,21 +11125,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Low_Conversion_Rate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Loyalty_Rep__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.MA_Corrected_QA_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.MA_Notes__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -11806,11 +11141,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.MLS_Setup_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.MOPs_Analyst__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11841,11 +11171,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.MilestoneStatusIcon</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Minutes_Recorded__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11891,11 +11216,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Names_of_Key_Staff__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.National_Video_Approved__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12020,42 +11340,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.No_Call_Tracking__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.No_Listings_Left_Behind__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.No_Obvious_Issues__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Not_Enough_Campaigns__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Notes_Escalation__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Notes__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Number_of_Attempts_to_Complete_ICC__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Number_of_Jobs_Recurring__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12080,17 +11370,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.OPT_Case_Completion_Quality_Feedback__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.OPT_Case_Completion_Quality__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Offering__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12145,11 +11425,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Orkweb_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Other_Cancel_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -12160,17 +11435,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Outcome_After_QA__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Outcome__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Overspend__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12210,11 +11475,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.PIN_Team_Agent__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.PPC_Credit_Given_L1__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -12241,11 +11501,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.PPL_Performing__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.PPL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12330,16 +11585,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Pooled_Web_to_Case_Check__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Poor_Ad_Copy__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Post_Call__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -12366,11 +11611,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Pre_Call__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Pre_Launch__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12455,32 +11695,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Publishers_Citation_Network__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.QA_Action_Taken__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.QA_Completed_By__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.QA_Completed_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.QA_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.QA_Notes__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12495,22 +11715,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.QAed_By__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Quality_Ad_Copies__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Quality_Offense__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.RAF_Followup__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12540,17 +11745,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Reason_For_Submitting_Optimization__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Reason__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Reason_for_AA_Issue__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12571,11 +11766,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Reduced_Contract_Term__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Referrer__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12631,11 +11821,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Rep_Emailed_QA__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Reported_By__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12715,22 +11900,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Reson_For_Optimization_Submission__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Response_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Response_Time__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Result_of_QA__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12756,26 +11931,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Rogers_Cancellation_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Rogers_Downsell_Offers__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Rogers_Outcome_Sales_Save_Attemps__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.SEM_Complete__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.SEM_Completed_By__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12840,11 +11995,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Sales_Director__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Sales_Notes__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -12861,16 +12011,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Sales_Rep_E_mail_Address__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Sales_Rep_Phone_Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Sales_Rep__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12896,11 +12036,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Scheduled_Call__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Seasonality__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12975,11 +12110,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Spell_Check_Business_Profile_del__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Spell_Check_Completed__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -12991,16 +12121,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Spend_Accuracy_Performing__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Spend_Blockers__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Spending_How__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13035,11 +12155,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Sub_Reason__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Sub_Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -13065,22 +12180,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Submitted_Taxonomy_Case__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Suggested_Adversite__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Suggested_Budget_Downsell__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Suggested_Budget_Upsell__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13110,17 +12210,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Survey_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.TP_Rescheduled_Date_Time__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Targeting_Small_Population__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13151,11 +12241,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Threatening__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Tier_2_Support__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13205,11 +12290,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Total_Minutes_for_All_Changes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Total_of_Accounts_Affected__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -13226,16 +12306,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Training_Opportunity__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Transfer__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.True_Escalation__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13289,11 +12359,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Used_Current_bill_as_Cancellation_Fee__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Case.User_Case_Creator__c</field>
         <readable>true</readable>
@@ -13311,16 +12376,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.User_Created_By__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Using_Client_Owned_Domain__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.VPL_Cap_Issue__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13410,16 +12465,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Website_Complete__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Website_Completed_By__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Website_Issues__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -13460,22 +12505,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Will_we_be_taking_over_this_URL__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Winback_CSC_Script__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Within_SLA__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Words_Transcribed__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13540,11 +12575,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Yodle_Action_Required__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.Yodle_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -13565,11 +12595,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.Zip_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.client_email__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -13580,17 +12605,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.low_conversion__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Case.of_Rings_Before_Answer__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.site_Session_Tracker_Present__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -14196,76 +13211,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>ContactPointTypeConsent.EffectiveTo</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contest__c.Complete__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contest__c.Count_of_Yodlers__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contest__c.Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contest__c.Feedback_Potential_Changes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contest__c.Money_Allotted__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contest__c.Notes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contest__c.Percent_Spent__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contest__c.Prize_s__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contest__c.Rating__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contest__c.Region__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contest__c.Team__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contest__c.Total_Flight_Costs__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contest__c.Total_Spent__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contest__c.parameters__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -17305,36 +16250,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Executive_Client_Scorecard__c.Client_Contact_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Executive_Client_Scorecard__c.Date_of_Conversation__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Executive_Client_Scorecard__c.Willingness_to_Renew_with_YBN__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Executive_Client_Scorecard__c.YBN_Contact_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Executive_Client_Scorecard__c.YBN_Exceeding_Client_Expectations__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Executive_Client_Scorecard__c.YBN_Exceeding_ROI_Expectations__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>FAQ__kav.Attachment_1__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -18966,16 +17881,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.lead_gen_rep_profile__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.leadfeederapp__LatestWebsiteVisit__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.leadfeederapp__LeadfeederLink__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -27115,16 +26020,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.leadfeederapp__LatestWebsiteVisit__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Opportunity.leadfeederapp__LeadfeederLink__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Opportunity.of_Dealers__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -29955,286 +28850,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Prize_Winner__c.Airline__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Arrival_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Birthdate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Bookings__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Deals__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Departure_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Dials__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Flight_Confirmation__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Flight_Cost__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Gender__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Airline__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Arrival_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Birthdate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Confirmation__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Departure_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_First_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Flight_Cost__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Gender__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Last_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Outbound_Flight_Arrival__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Outbound_Flight_Depature__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Outbound_Flight_Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Passport_Expiration_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Passport_Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Return_Airport__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Return_Flight_Arrival__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Return_Flight_Depature__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_Return_Flight_Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Guest_T_Shirt_Size__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Included_in_Commission_Check__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Launches__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Outbound_Airport__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Outbound_Flight_Arrival__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Outbound_Flight_Depature__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Outbound_Flight_Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Passport_Expiration_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Passport_Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Percent_To_Goal__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Platinum__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Prez_Club_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Prize_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Prize_Won__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Quota__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Received_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Received__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Return_Airport__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Return_Flight_Arrival__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Return_Flight_Depature__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Return_Flight_Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Room_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Prize_Winner__c.Salesrep_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.TalkTime__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.Team__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Prize_Winner__c.Total_Flight_Costs__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.guest_outbound_airport__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Prize_Winner__c.tshirt_Size__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Process_Documentation__kav.Attachment_1__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -32663,11 +31278,7 @@
         <recordType>Account.Business_Development</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Lighthouse CS %28feed%29</layout>
-        <recordType>Account.LH_Master_Account</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Multi Location Parent %28feed%29</layout>
+        <layout>Account-YBN Individual Location Account %28feed%29</layout>
         <recordType>Account.Multi_Location_Parent</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -32677,10 +31288,6 @@
     <layoutAssignments>
         <layout>Account-Partner %28CPP%29 %28feed%29</layout>
         <recordType>Account.Partner_Master_Account</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Rogers National Account %28feed%29</layout>
-        <recordType>Account.Rogers_National_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-YBN Corporate Relationship Account %28feed%29</layout>
@@ -32721,6 +31328,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Apex_Debug_Log__c-Apex Debug Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AppAnalyticsQueryRequest-App Analytics Query Request Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
@@ -32849,13 +31459,6 @@
         <layout>CTS_Salesforce_Object_Ref__mdt-CTS Salesforce Object Ref Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Answering__c-Call Answering Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Answering__c-Call Answering Layout</layout>
-        <recordType>Call_Answering__c.Call_Answering</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Call_Grading_Form_2_0__c-Adoption Call %28feed%29</layout>
         <recordType>Call_Grading_Form_2_0__c.Adoption_Call</recordType>
     </layoutAssignments>
@@ -32887,19 +31490,19 @@
         <recordType>Call_Grading_Form_2_0__c.LBW_Performance_Call_Quality_Process</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Lighthouse CSC</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Lighthouse CSC %2B Essentials %28feed%29</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.Lighthouse_CSC_Essentials</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Lighthouse Inbound Call %28feed%29</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.Lighthouse_Inbound_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-Lighthouse Save Call</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.Lighthouse_Save_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -32931,23 +31534,23 @@
         <recordType>Call_Grading_Form_2_0__c.Save_Call_Monitoring_Forms</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx CSC - Advanced Features</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Advanced_Features</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx CSC - Building Awareness and Driving Leads</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Building_Awareness_and_Driving_Leads</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx CSC - Managing Relationships</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.TORCHx_CSC_Managing_Relationships</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx Inbound Call</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.TORCHx_Inbound_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Form_2_0__c-TORCHx Save Call</layout>
+        <layout>Call_Grading_Form_2_0__c-Maps - PIN Collection</layout>
         <recordType>Call_Grading_Form_2_0__c.TORCHx_Save_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -32970,27 +31573,27 @@
         <recordType>Call_Grading_Forms__c.Outbound_Call_Non_Touch_Point</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Lighthouse CSC</layout>
+        <layout>Call_Grading_Forms__c-CSC</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_Training_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Lighthouse CSC %2B Essentials</layout>
+        <layout>Call_Grading_Forms__c-CSC</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_CSC_Essentials</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Lighthouse CSC - Auto</layout>
+        <layout>Call_Grading_Forms__c-CSC</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_CSC_Auto</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Lighthouse CSC New Portal</layout>
+        <layout>Call_Grading_Forms__c-CSC</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_Training_TEST</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Lighthouse Inbound Call</layout>
+        <layout>Call_Grading_Forms__c-CSC</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_Inbound_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Call_Grading_Forms__c-Lighthouse Save Call</layout>
+        <layout>Call_Grading_Forms__c-CSC</layout>
         <recordType>Call_Grading_Forms__c.Lighthouse_Save_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33120,15 +31723,15 @@
         <recordType>Cancellation_Request__c.Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-Rogers Cancellation Request %28feed%29</layout>
+        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
         <recordType>Cancellation_Request__c.Rogers_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-LH Cancellation Request</layout>
+        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
         <recordType>Cancellation_Request__c.LH_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Cancellation_Request__c-TORCHx Cancellation Request %28feed%29</layout>
+        <layout>Cancellation_Request__c-Cancellation Request %28feed%29</layout>
         <recordType>Cancellation_Request__c.TORCHx_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33176,23 +31779,23 @@
         <recordType>Case.Facebook_Post_For_You</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Cancel Request %28feed%29</layout>
+        <layout>Case-2016 - YBN Request %28feed%29</layout>
         <recordType>Case.LH_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Closing Script - Auto Launch %28feed%29</layout>
+        <layout>Case-2016 - YBN Request %28feed%29</layout>
         <recordType>Case.LH_Closing_Script_Auto_Launch</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Master %28feed%29</layout>
+        <layout>Case-2016 - YBN Request %28feed%29</layout>
         <recordType>Case.LH_Master</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Product Feedback %28feed%29</layout>
+        <layout>Case-2016 - YBN Request %28feed%29</layout>
         <recordType>Case.FS_Product_Feedback</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-LH Product Feedback %28feed%29</layout>
+        <layout>Case-2016 - YBN Request %28feed%29</layout>
         <recordType>Case.LH_Product_Feedback</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33247,7 +31850,7 @@
         <recordType>Case.Renewals_and_Upsells</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Rogers In Contract Cancelation %28feed%29</layout>
+        <layout>Case-2016 - YBN Request %28feed%29</layout>
         <recordType>Case.Rogers_in_Contract_Cancelation</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33263,15 +31866,15 @@
         <recordType>Case.Outbound_Call</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-TORCHx Master %28feed%29</layout>
+        <layout>Case-2016 - YBN Request %28feed%29</layout>
         <recordType>Case.TORCHx_Master</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-TORCHx NCS - AutoLaunch %28feed%29</layout>
+        <layout>Case-2016 - YBN Request %28feed%29</layout>
         <recordType>Case.TORCHx_NCS_AutoLaunch</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-TORCHx Product Feedback %28feed%29</layout>
+        <layout>Case-2016 - YBN Request %28feed%29</layout>
         <recordType>Case.TORCHx_Product_Feedback</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33399,11 +32002,11 @@
         <recordType>Case.Charge_Failure</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CaseClose-LH Cancel Request Close</layout>
+        <layout>CaseClose-Account Update Close</layout>
         <recordType>Case.LH_Cancellation_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CaseClose-LH Master Close</layout>
+        <layout>CaseClose-Account Update Close</layout>
         <recordType>Case.LH_Master</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33525,18 +32128,10 @@
         <layout>ContactPointPhone-Contact Point Phone Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ContentAsset-Asset File Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ContentVersion-General</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contest__c-Contest Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contest__c-Contest Layout</layout>
-        <recordType>Contest__c.master</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contest__c-Event-Based Contests</layout>
-        <recordType>Contest__c.Events</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contract-Biz Dev Layout</layout>
@@ -33620,31 +32215,31 @@
         <recordType>Customer_Surveys__c.YBN_Issue_Resolution_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse Customer Support Survey</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Issue_Resolution_Lighthouse</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse Exit Interview Survey</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Lighthouse_Exit_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse NPS Survey Auto</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Auto</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse NPS Survey Dental%2FChiro</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Dental_Chiro</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse NPS Survey Essentials%2FMax</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Lighthouse_NPS_Survey_Essentials_Max</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse Post-Install Survey</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Ligthouse_Post_Install_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-Lighthouse Post-Setup Survey</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.Lighthouse_Post_Setup_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33656,11 +32251,11 @@
         <recordType>Customer_Surveys__c.NPS_Survey_LBW</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-NPS Survey Lighthouse</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.NPS_Survey_Lighthouse</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-NPS Survey TORCHx</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.NPS_Survey_TORCHx</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33680,7 +32275,7 @@
         <recordType>Customer_Surveys__c.NPS_Survey_Yodle_Non_Essentials</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-OutRank CSC Survey</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.OutRank_CSC_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33688,7 +32283,7 @@
         <recordType>Customer_Surveys__c.POD_Resolution_Survey</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer_Surveys__c-TORCHx Post Call Survey</layout>
+        <layout>Customer_Surveys__c-45 Day Survey</layout>
         <recordType>Customer_Surveys__c.TORCHx_Post_Call_Surveys</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -33773,9 +32368,6 @@
         <recordType>Event.YBN_Client_Services_Event</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Executive_Client_Scorecard__c-Executive Client Scorecard Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>FAQ__kav-FAQ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -33852,35 +32444,35 @@
         <layout>Lighthouse_PMS_and_SMS_Guides__kav-Lighthouse Documentation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-AR Request Form %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.AR_Request_Form</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Auto Support Ticket %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.Auto_Support_Ticket</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-CSC Worksheet - Auto %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Auto</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-CSC Worksheet - Dental %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-CSC Worksheet - Medical %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Medical</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Installation Worksheet %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.Installation_Worksheet</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-LH OOS %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.LH_OOS</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
@@ -33948,7 +32540,7 @@
         <layout>Mgmt_Goal__c-Mgmt Goal Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MilestoneSnapshotobj__c-MilestoneSnapshotobj Layout</layout>
+        <layout>MilestoneForReporting__c-MilestoneForReporting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Milestone_Conversion__c-Milestone Conversion Layout</layout>
@@ -34043,10 +32635,6 @@
         <recordType>Opportunity.Forecast_Network_Sales</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-LH - Upsell Opportunity</layout>
-        <recordType>Opportunity.Lighthouse_Upsell_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Opportunity-Local - Upsell Opportunity</layout>
         <recordType>Opportunity.Local_Upsell_Opportunity</recordType>
     </layoutAssignments>
@@ -34080,10 +32668,6 @@
     <layoutAssignments>
         <layout>Opportunity-WBN Forecast</layout>
         <recordType>Opportunity.Plan_Network_Sales</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-TORCHx - Cross-Sell Opportunity</layout>
-        <recordType>Opportunity.TORCHx_Upsell_Opportunity</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-YBN - Improved Layout</layout>
@@ -34233,17 +32817,6 @@
         <layout>PricebookEntry-Price Book Entry Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Prize_Winner__c-President%27s Club</layout>
-        <recordType>Prize_Winner__c.President_s_Club</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Prize_Winner__c-Prize Winner Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Prize_Winner__c-Prize Winner Layout</layout>
-        <recordType>Prize_Winner__c.master</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Process_Documentation__kav-Process Documentation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -34261,18 +32834,18 @@
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-Lighthouse Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.Local_Master_Quality</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -34283,13 +32856,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>SFDCToCTSAsynchRequest__c-SFDCToCTSAsynchRequest Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SMS_Tracking__c-SMS Tracking Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SMS_Tracking__c-SMS Tracking Layout</layout>
-        <recordType>SMS_Tracking__c.Default</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Sales_Attachments__c-Sales Attachments Layout</layout>
@@ -36222,8 +34788,8 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
-        <tab>MilestoneSnapshotobj__c</tab>
-        <visibility>DefaultOn</visibility>
+        <tab>MilestoneForReporting__c</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
@@ -36374,10 +34940,6 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Call_Answering__c</tab>
-        <visibility>DefaultOff</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Call_Grading_Form_2_0__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -36504,10 +35066,6 @@
     <tabVisibilities>
         <tab>SFDCToCTSAsynchRequest__c</tab>
         <visibility>DefaultOff</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>SMS_Tracking__c</tab>
-        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Scheduled_Data_Pull_from_YL_to_SF__c</tab>

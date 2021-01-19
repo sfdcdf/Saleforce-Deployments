@@ -37,13 +37,6 @@
             <value>Closed</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.MOPs_Analyst__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>Melissa Cornine,Dustin O&apos;Leary</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>PARENT_ACCOUNT_NAME</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
@@ -52,11 +45,6 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Case.MOPs_Analyst__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <name>Account Update Cases Completed - Pilot</name>
     <params>
         <name>units</name>

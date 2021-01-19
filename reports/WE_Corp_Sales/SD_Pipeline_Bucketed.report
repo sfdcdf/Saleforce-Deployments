@@ -125,20 +125,32 @@
     <columns>
         <field>RECORDTYPE</field>
     </columns>
+    <columns>
+        <field>Opportunity.On_Hold_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.On_Hold_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Hold_Status_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Hold_Status__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>User.Role_Name__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>YBN: Sales/Account Director,YBN: Sales Director Manager,Solutions Architect</value>
+            <operator>notContain</operator>
+            <value>Customer Success,SVP</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal,Opportunity.YBN_Strategic_Partner_Opportunity</value>
+            <value>Opportunity.YBN_Initial_Transaction,Opportunity.YBN_Growth_Opportunity,Opportunity.YBN_Renewal,012320000009fnE</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ACTIVE</column>
@@ -175,11 +187,11 @@
     </params>
     <params>
         <name>co</name>
-        <value>1</value>
+        <value>0</value>
     </params>
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

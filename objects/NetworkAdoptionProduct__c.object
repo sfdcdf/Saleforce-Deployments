@@ -325,31 +325,6 @@
     <pluralLabel>Network Adoption Products</pluralLabel>
     <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
-    <validationRules>
-        <fullName>AdoptionLen_Greater_Than_0</fullName>
-        <active>false</active>
-        <errorConditionFormula>NOT(AdoptionLen__c &gt; 0)</errorConditionFormula>
-        <errorDisplayField>AdoptionLen__c</errorDisplayField>
-        <errorMessage>Must be greater than 0.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>AdoptionPct_Between_0_100</fullName>
-        <active>false</active>
-        <description>Must be between 0 and 100</description>
-        <errorConditionFormula>OR(
-  AdoptionPct__c = 0,
-  AdoptionPct__c &gt; 1
-)</errorConditionFormula>
-        <errorDisplayField>AdoptionPct__c</errorDisplayField>
-        <errorMessage>Must be between 0 and 100.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Quantity_Greater_Than_Zero</fullName>
-        <active>false</active>
-        <errorConditionFormula>NOT(Quantity__c &gt; 0)</errorConditionFormula>
-        <errorDisplayField>Quantity__c</errorDisplayField>
-        <errorMessage>Must be greater than 0.</errorMessage>
-    </validationRules>
     <visibility>Public</visibility>
     <webLinks>
         <fullName>Setup_Adoption_Products</fullName>

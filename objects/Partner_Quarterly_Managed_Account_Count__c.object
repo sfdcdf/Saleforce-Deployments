@@ -182,6 +182,17 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
+    <fields>
+        <fullName>Partner_Quarterly_Managed_AccountCount18__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner Quarterly Managed AccountCount18</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <label>Partner Quarterly Managed Account Count</label>
     <nameField>
         <displayFormat>PQMAC-{0000000}</displayFormat>

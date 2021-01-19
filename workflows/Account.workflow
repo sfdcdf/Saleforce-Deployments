@@ -24,54 +24,6 @@
         <template>Partner_Email_Templates/SEM_Future_Add_Date</template>
     </alerts>
     <alerts>
-        <fullName>Lighthouse_Exit_Survey</fullName>
-        <description>Lighthouse Exit Survey</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Client_E_mail__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>accountservices@lighthousepmg.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/Lighthouse_Exit_Survey</template>
-    </alerts>
-    <alerts>
-        <fullName>NPS_Email_YBN</fullName>
-        <description>NPS Email - YBN</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Email_for_Touchplan__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>cunningham@yodle.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/NPS_YBN_Email_Template</template>
-    </alerts>
-    <alerts>
-        <fullName>NPS_Email_Yodle</fullName>
-        <description>NPS Email - Yodle</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Email_for_Touchplan__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>cunningham@yodle.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/NPS_Yodle_Email_Template</template>
-    </alerts>
-    <alerts>
-        <fullName>NPS_Email_Yodle_Non_Essentials</fullName>
-        <description>NPS Email - Yodle Non Essentials</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Client_E_mail__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>cunningham@yodle.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/NPS_Yodle_NonEssentials_Email_Template</template>
-    </alerts>
-    <alerts>
         <fullName>Non_SEM</fullName>
         <description>Non SEM</description>
         <protected>false</protected>
@@ -84,36 +36,12 @@
         <template>Support/Non_SEM_Distro_Network_to_IMS</template>
     </alerts>
     <alerts>
-        <fullName>Rogers_Exit_Email</fullName>
-        <description>Rogers Exit Email</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Client_E_mail__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>rogerssupport@service.rogersoutrank.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Partner_Email_Templates/Rogers_Exit_Email</template>
-    </alerts>
-    <alerts>
         <fullName>Rogers_New_Client_Alert</fullName>
         <ccEmails>rogersalerts@yodle.com</ccEmails>
         <description>Rogers - New Client Alert</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>
         <template>Partner_Email_Templates/Rogers_New_Client</template>
-    </alerts>
-    <alerts>
-        <fullName>Rogers_Send_70_Day</fullName>
-        <description>Rogers Send 70 Day</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Client_E_mail__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>rogerssupport@service.rogersoutrank.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Support/Rogers_70_Day</template>
     </alerts>
     <alerts>
         <fullName>Testing_Days_Live</fullName>
@@ -431,52 +359,12 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>LH_Exit_Survey_Sent_Date</fullName>
-        <field>LH_Exit_Survey_Sent_Date__c</field>
-        <formula>today()</formula>
-        <name>LH Exit Survey Sent Date</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>LH_PPP_Important_Account_Notes_MAX</fullName>
-        <field>Important_National_Notes__c</field>
-        <formula>"This is a PPP customer with a $400 budget (listed as $0 in YL - we are issuing credits each month)"</formula>
-        <name>LH PPP Important Account Notes - MAX</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>LH_PPP_Important_Account_Notes_ORGANIC</fullName>
-        <field>Important_National_Notes__c</field>
-        <formula>"This is a PPP customer"</formula>
-        <name>LH PPP Important Account Notes - ORGANIC</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Live_Date_Update_Timestamp</fullName>
         <field>Live_Date__c</field>
         <formula>TODAY ()</formula>
         <name>Live Date Update - Timestamp</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Marketo_Sync_Checkbox_Update_for_Marketo</fullName>
-        <field>Sync_to_Marketo__c</field>
-        <literalValue>1</literalValue>
-        <name>Sync to Marketo On Demand</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
@@ -1125,72 +1013,6 @@ MOD(Last_Completed_YBN_TP__c - DATE(1900,1,7),7 ),
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
-        <fullName>LH PPP Important Account Notes - MAX</fullName>
-        <actions>
-            <name>LH_PPP_Important_Account_Notes_MAX</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Account.Product_Type__c</field>
-            <operation>contains</operation>
-            <value>Price Per Patient</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type__c</field>
-            <operation>contains</operation>
-            <value>Sponsored</value>
-        </criteriaItems>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH PPP Important Account Notes - ORGANIC</fullName>
-        <actions>
-            <name>LH_PPP_Important_Account_Notes_ORGANIC</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Account.Product_Type__c</field>
-            <operation>contains</operation>
-            <value>Price Per Patient</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type__c</field>
-            <operation>notContain</operation>
-            <value>Sponsored</value>
-        </criteriaItems>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Upsell Result Detail</fullName>
-        <actions>
-            <name>Date_Pitched_to_Today</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Pitched_By_User_Fill_In</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <formula>ISCHANGED ( Upsell_Result__c )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>LHFS SSU Email - Marketo</fullName>
-        <actions>
-            <name>Marketo_Sync_Checkbox_Update_for_Marketo</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Account.LHFS_Self_Sign_Up__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Letters Price for Non-US</fullName>
         <actions>
             <name>Consumables_Price_to_2_49</name>
@@ -1261,53 +1083,6 @@ MOD(Last_Completed_YBN_TP__c - DATE(1900,1,7),7 ),
         </criteriaItems>
         <description>Timestamps the Live date when an account goes to LIVE</description>
         <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>NPS YBN Survey</fullName>
-        <actions>
-            <name>NPS_Email_YBN</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>NPS_Survey_Type_Sent_YBN</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
-        <criteriaItems>
-            <field>Account.NPS_Survey_Send__c</field>
-            <operation>notEqual</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Survey_Opt_Out__c</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Status__c</field>
-            <operation>equals</operation>
-            <value>LIVE</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.ParentId</field>
-            <operation>notContain</operation>
-            <value>Berry</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Client_Type__c</field>
-            <operation>contains</operation>
-            <value>National,YBN</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.IMS_Rep__c</field>
-            <operation>notContain</operation>
-            <value>Lighthouse</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>National Notes form Parent</fullName>
@@ -1447,81 +1222,6 @@ NOT(CONTAINS(IMS_Rep__c, "Lighthouse")))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Rogers Billing Reminder</fullName>
-        <active>false</active>
-        <criteriaItems>
-            <field>Account.Days_Live__c</field>
-            <operation>greaterThan</operation>
-            <value>60</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Rogers</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-        <workflowTimeTriggers>
-            <offsetFromField>Account.Next_Billing_Date__c</offsetFromField>
-            <timeLength>-3</timeLength>
-            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
-        </workflowTimeTriggers>
-    </rules>
-    <rules>
-        <fullName>Rogers Exit Email</fullName>
-        <actions>
-            <name>Rogers_Exit_Email</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
-        <criteriaItems>
-            <field>Account.Status__c</field>
-            <operation>equals</operation>
-            <value>OFF</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Suppress_Exit_Email__c</field>
-            <operation>notEqual</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Client_Type__c</field>
-            <operation>contains</operation>
-            <value>OEM</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Rogers</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Rogers IMS Rep Fills</fullName>
-        <active>true</active>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>notEqual</operation>
-            <value>Rogers</value>
-        </criteriaItems>
-        <description>converts the IMS rep to a text field</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Rogers Send 70 Day</fullName>
-        <actions>
-            <name>Rogers_Send_70_Day</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Account.Rogers_Send_70_Day__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Sales Person Is Riley Hughes</fullName>
         <active>false</active>
         <criteriaItems>
@@ -1550,10 +1250,6 @@ NOT(ISNULL(PRIORVALUE(Service_Model_Local__c))))</formula>
     </rules>
     <rules>
         <fullName>Test</fullName>
-        <actions>
-            <name>Lighthouse_Exit_Survey</name>
-            <type>Alert</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Account.Name</field>

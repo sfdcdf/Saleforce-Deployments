@@ -153,7 +153,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>ACL_Guidelines_Followed2__c</fullName>
         <externalId>false</externalId>
@@ -13734,29 +13734,6 @@ All issues identified &amp; tackled - 100%</inlineHelpText>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
-        <fullName>Local_Auditors_to_fill_in_Website_Tiers</fullName>
-        <active>false</active>
-        <errorConditionFormula>and(
- ispickval (Account_Channel_Type__c, "Local"),
- RecordTypeId = "012600000009U17",
-or( OwnerId = "005600000017KAF",
-OwnerId = "005600000017t64",
-OwnerId = "005600000017MDB",
-OwnerId = "005600000018ins",
-OwnerId = "005600000018xpy",
-OwnerId = "005600000016cgO",
-OwnerId = "00560000001GKAD"),
-or(
-ispickval (Page_Count__c, "" ),
-ispickval( Banner_Customization__c, "" ),
-ispickval( Template_Out_of_Segment__c, "" ),
-ispickval( Web_to_Email_Form_Customization__c, "" ),
-ispickval( Color_Customization__c, "" ),
-ispickval( Photo_Gallery__c, "" )))</errorConditionFormula>
-        <errorDisplayField>Page_Count__c</errorDisplayField>
-        <errorMessage>For Local Accounts, you must fill in the 6 Website Tier fields for Compliance.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>National_Audit_Implementation_Data_Sync</fullName>
         <active>true</active>
         <description>If data sync with ASW equals sync mismatches, must list issues</description>
@@ -13907,18 +13884,6 @@ ISPICKVAL(  Client_works_with_existing_or_prev__c  , "Yes"),
 isblank(  Vendor__c ))</errorConditionFormula>
         <errorDisplayField>Vendor__c</errorDisplayField>
         <errorMessage>Please list the vendor</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Setup_Eval_Channel_Fields</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND ( 
-OR(isblank (USPs_Added__c  ), 
-isblank ( ACL_Guidelines_Followed__c ), 
-isblank (  Geo_Radius__c )),
-NOT(ispickval( Account_Channel_Type__c , "National")), 
-(RecordTypeId = "012600000009ThM"))</errorConditionFormula>
-        <errorDisplayField>Account_Channel_Type__c</errorDisplayField>
-        <errorMessage>For Local and Partner accounts, all fields must be filled in with a value.</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

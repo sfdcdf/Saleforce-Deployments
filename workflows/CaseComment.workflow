@@ -24,36 +24,6 @@
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Fire_Drill_Case_Comment_Added</template>
     </alerts>
-    <fieldUpdates>
-        <fullName>lock_case_comment_true</fullName>
-        <field>lock_case_comments__c</field>
-        <literalValue>1</literalValue>
-        <name>lock case comment = true</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-        <targetObject>ParentId</targetObject>
-    </fieldUpdates>
-    <rules>
-        <fullName>Lock LH Maser Case Comment When Case Closed</fullName>
-        <actions>
-            <name>lock_case_comment_true</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
     <rules>
         <fullName>Notify Case Creator Of Case Comment</fullName>
         <actions>

@@ -172,10 +172,6 @@
                 <behavior>Edit</behavior>
                 <field>Attempt_Date_2__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Customers_Prior_to_Call__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
@@ -194,12 +190,7 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Cancel Request</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Cancel_Sub_Details__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>

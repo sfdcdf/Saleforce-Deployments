@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
         <label><!-- Account --></label>
         <name>Account__c</name>
@@ -596,9 +596,5 @@
     <validationRules>
         <errorMessage><!-- Please fill in the scheduled coaching call date because you were able to cover the complete - full script of this call. --></errorMessage>
         <name>Require_If_Full_Script_Coaching_Date</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Make sure to fill in the Scheduled Date/Time of the Coaching Call. --></errorMessage>
-        <name>Require_Schedule_Coaching_Call</name>
     </validationRules>
 </CustomObjectTranslation>

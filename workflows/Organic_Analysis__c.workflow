@@ -21,18 +21,6 @@
         <template>Support/Organic_Escalation_Standard</template>
     </alerts>
     <alerts>
-        <fullName>Lighthouse_Received_Pins</fullName>
-        <description>Lighthouse - Received Pins</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Client_Email_Address__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>customercare@lighthousepmg.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Pin_Collection_Templates/Lighthouse_Received_All_Pins</template>
-    </alerts>
-    <alerts>
         <fullName>National_Canada_Day_1_Pin</fullName>
         <description>National - Canada Day 1 Pin</description>
         <protected>false</protected>
@@ -83,54 +71,6 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Organic_Cases_Underperforming_Consult_Assigned_to_User</template>
-    </alerts>
-    <alerts>
-        <fullName>Rogers_Day_1_Google_Pin_Request</fullName>
-        <description>Rogers - Day 1 Google Pin Request</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Client_Email_Address__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>pinsupport@service.rogersoutrank.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Pin_Collection_Templates/YO_Rogers_Pin_Email_Day_1</template>
-    </alerts>
-    <alerts>
-        <fullName>Rogers_Google_Not_Bing</fullName>
-        <description>Rogers Google Not Bing</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Client_Email_Address__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>rogerssupport@service.rogersoutrank.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Pin_Collection_Templates/Rogers_Google_Not_Bing</template>
-    </alerts>
-    <alerts>
-        <fullName>Rogers_Google_PIN_Needed_Email</fullName>
-        <description>Rogers - Google PIN Needed Email</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Client_Email_Address__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>rogerssupport@service.rogersoutrank.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Pin_Collection_Templates/Rogers_Bing_Not_Google</template>
-    </alerts>
-    <alerts>
-        <fullName>Rogers_Google_Pin_Received</fullName>
-        <description>Rogers - Google Pin Received</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Client_Email_Address__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>pinsupport@service.rogersoutrank.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Pin_Collection_Templates/YO_Rogers_Pin_Received</template>
     </alerts>
     <alerts>
         <fullName>YBN_Organic_Case_Escalation</fullName>
@@ -1399,46 +1339,6 @@ NOW () + 1
             <field>Organic_Analysis__c.Google_White_List_Test__c</field>
             <operation>equals</operation>
             <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Lighthouse Received All Pins</fullName>
-        <actions>
-            <name>Lighthouse_Received_Pins</name>
-            <type>Alert</type>
-        </actions>
-        <active>false</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
-        <criteriaItems>
-            <field>Organic_Analysis__c.G_Pin_Receipt__c</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.B_Pin_Receipt__c</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.Product_Type_Account__c</field>
-            <operation>contains</operation>
-            <value>Outrank</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Maps Initial Claiming</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.Product_Type_Account__c</field>
-            <operation>contains</operation>
-            <value>Lighthouse</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.Status__c</field>
-            <operation>notEqual</operation>
-            <value>Non Compliant Client</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -2781,10 +2681,6 @@ NOW () + 1
     </rules>
     <rules>
         <fullName>Rogers - Day 1 Pin Request</fullName>
-        <actions>
-            <name>Rogers_Day_1_Google_Pin_Request</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Organic_Analysis__c.G_Postcard_Request__c</field>
@@ -2815,10 +2711,6 @@ NOW () + 1
     </rules>
     <rules>
         <fullName>Rogers All Pins Received</fullName>
-        <actions>
-            <name>Rogers_Google_Pin_Received</name>
-            <type>Alert</type>
-        </actions>
         <active>true</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
         <criteriaItems>
@@ -2853,99 +2745,6 @@ NOW () + 1
             <field>Organic_Analysis__c.Status__c</field>
             <operation>notEqual</operation>
             <value>Non Compliant Client</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Rogers Received Bing NOT Google</fullName>
-        <actions>
-            <name>Rogers_Google_PIN_Needed_Email</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
-        <criteriaItems>
-            <field>Organic_Analysis__c.G_Pin_Receipt__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.B_Pin_Receipt__c</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.Product_Type_Account__c</field>
-            <operation>contains</operation>
-            <value>Outrank</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Canada Maps Claiming</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.Client_Type__c</field>
-            <operation>contains</operation>
-            <value>OEM</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.IMS_Rep__c</field>
-            <operation>notContain</operation>
-            <value>Lighthouse</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.Status__c</field>
-            <operation>notEqual</operation>
-            <value>Non Compliant Client</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Rogers Received Google NOT Bing</fullName>
-        <actions>
-            <name>Rogers_Google_Not_Bing</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 and 2 and 3 and 4 and 5 and 6 and 7 and 8</booleanFilter>
-        <criteriaItems>
-            <field>Organic_Analysis__c.G_Pin_Receipt__c</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.B_Pin_Receipt__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.Product_Type_Account__c</field>
-            <operation>contains</operation>
-            <value>Outrank</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Canada Maps Claiming</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.Client_Type__c</field>
-            <operation>contains</operation>
-            <value>OEM</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.IMS_Rep__c</field>
-            <operation>notContain</operation>
-            <value>Lighthouse</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.Status__c</field>
-            <operation>notEqual</operation>
-            <value>Non Compliant Client</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Organic_Analysis__c.Product_Type__c</field>
-            <operation>notEqual</operation>
-            <value>OR 1.0</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -3024,7 +2823,7 @@ NOW () + 1
         <criteriaItems>
             <field>Organic_Analysis__c.CreatedDate</field>
             <operation>greaterThan</operation>
-            <value>1/2/2013 1:00 AM</value>
+            <value>1/2/2013 2:00 AM</value>
         </criteriaItems>
         <description>Fill the setup date if it is not input in the case</description>
         <triggerType>onCreateOnly</triggerType>

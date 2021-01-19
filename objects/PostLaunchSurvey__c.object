@@ -151,18 +151,8 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <label>PostLaunch Survey</label>
-    <nameField>
-        <displayFormat>P-{000000}</displayFormat>
-        <label>Post Launch Name</label>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>PostLaunch Surveys</pluralLabel>
-    <searchLayouts />
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <listViews>
         <fullName>Rogers_Support_PostLaunchSurvey</fullName>
         <filterScope>Queue</filterScope>
@@ -181,4 +171,14 @@
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
+    <nameField>
+        <displayFormat>P-{000000}</displayFormat>
+        <label>Post Launch Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>PostLaunch Surveys</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

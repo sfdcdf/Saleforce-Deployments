@@ -153,7 +153,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Account_Pinned_in_Bomgar2__c</fullName>
         <externalId>false</externalId>
@@ -48344,15 +48344,6 @@ ISBLANK( Yodle_IDs_of_Existing_Locations__c ))</errorConditionFormula>
         <errorMessage>If a customer has multiple locations, please add the Yodle ID(s) of any current customers to the "Yodle IDs of Existing Locations" field. If they do not have any additional locations currently on board with us, please put None.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Fast_Track</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(
- ISPICKVAL(Fast_Track_Picklist__c, ""),
- ISPICKVAL(Status__c , "Post Install Ready")
-)</errorConditionFormula>
-        <errorMessage>Please select whether or not this was a Fast Track client.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Fill_out_Install_Completed_Date</fullName>
         <active>true</active>
         <description>You must fill out the Install Completed Date in order to move the IW into Post Install Ready or Complete</description>
@@ -48576,19 +48567,6 @@ ISPICKVAL( Status__c ,"Post Install Ready"),
 CONTAINS( Segment__c ,"Auto"),
 ISPICKVAL(  Hardware_Needed_from_Bolt_On__c,""  ))</errorConditionFormula>
         <errorMessage>Whenever completing an Auto Install, you must select their Hardware needs</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Must_Set_Special_Pricing_for_Canada</fullName>
-        <active>false</active>
-        <description>You must set special pricing for postcards and letters when the customer is in Canada</description>
-        <errorConditionFormula>AND(
- Add_PC_Letter_Pricing_for_Canada__c = FALSE,
- CONTAINS(RecordType.Name , "CSC Worksheet"), 
- NOT(CONTAINS( Office_Location__c ,"US")),
- NOT(CONTAINS( Office_Location__c ,"United States")),
- NOT(CONTAINS( Office_Location__c ,"USA")),
- ISPICKVAL( Status__c ,"Messages Activated"))</errorConditionFormula>
-        <errorMessage>You must set special pricing for postcards and letters when the customer is in Canada</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Name_Announcement_Required_for_AutoCalls</fullName>

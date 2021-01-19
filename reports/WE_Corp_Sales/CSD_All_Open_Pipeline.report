@@ -112,7 +112,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>National RM,CS Manager</value>
+            <value>National RM,CS Manager,National IMS</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ACTIVE</column>
@@ -172,6 +172,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_CURY</interval>
+        <endDate>2021-03-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-01-01</startDate>
     </timeFrameFilter>
 </Report>

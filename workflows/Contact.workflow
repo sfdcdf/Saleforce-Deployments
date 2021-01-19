@@ -13,9 +13,6 @@
             <recipient>dlynch@web.com</recipient>
             <type>user</type>
         </recipients><recipients>
-            <recipient>jennifer.hendrickson@yodle.com</recipient>
-            <type>user</type>
-        </recipients><recipients>
             <recipient>raymond.rosario@web.com</recipient>
             <type>user</type>
         </recipients></alerts>

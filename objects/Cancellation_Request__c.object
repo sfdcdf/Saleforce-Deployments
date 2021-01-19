@@ -152,7 +152,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Account_IMS__c</fullName>
         <externalId>false</externalId>
@@ -10981,52 +10981,21 @@ false)</formula>
     </fields>
     <label>Cancellation Form</label>
     <listViews>
-        <fullName>LBW_Support_Cancellation_Request</fullName>
+        <fullName>Enspire_Cxl_Requests</fullName>
         <columns>NAME</columns>
-        <columns>OWNER.ALIAS</columns>
+        <columns>Account_Name__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Approved__c</columns>
+        <columns>IsClosed__c</columns>
         <columns>CREATED_DATE</columns>
-        <filterScope>Queue</filterScope>
-        <label>LBW Customer Service</label>
-        <queue>LBW_Customer_Service</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>LH_Auto_Retention_Cancellation_Request</fullName>
-        <filterScope>Queue</filterScope>
-        <label>LH Auto Retention</label>
-        <queue>LH_Auto_Retention</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>LH_Auto_Support_Cancellation_Request</fullName>
-        <filterScope>Queue</filterScope>
-        <label>LH Auto Support</label>
-        <queue>LH_Auto_Support</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>LH_Retention_Cancellation_Request</fullName>
-        <filterScope>Queue</filterScope>
-        <label>LH Retention</label>
-        <queue>LH_Retention</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Local_Pod_Queue_Cancellation_Request</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Local Pod Queue</label>
-        <queue>Local_Pod_Queue</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Cancellation_Request__c.WBN_Cancellation_Request</value>
+        </filters>
+        <label>Enspire Cxl Requests</label>
     </listViews>
     <listViews>
         <fullName>My_Open_Cancellation_Requests</fullName>
@@ -11050,96 +11019,6 @@ false)</formula>
             <value>In Progress,New,Save Mode,Dollar Sync Period</value>
         </filters>
         <label>My Open Cancellation Requests</label>
-    </listViews>
-    <listViews>
-        <fullName>Retention_Duplicate_Audit_Queue_Cancellation_Request</fullName>
-        <columns>NAME</columns>
-        <columns>Outcome__c</columns>
-        <columns>CREATED_DATE</columns>
-        <filterScope>Queue</filterScope>
-        <filters>
-            <field>Outcome__c</field>
-            <operation>notEqual</operation>
-            <value>Duplicate Retention Case</value>
-        </filters>
-        <label>Retention Duplicate Audit Queue</label>
-        <queue>Retention_Duplicate_Audit_Queue</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Rogers_Outrank_Cancellation_Request</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Rogers Outrank</label>
-        <queue>Rogers_Outrank</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Rogers_Support_Cancellation_Request</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Rogers Support</label>
-        <queue>Rogers_Support</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Send_To_Rogers_Cancellation_Request</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Send To Rogers</label>
-        <queue>Send_To_Rogers</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Subba_LH_Cancellation_Request</fullName>
-        <booleanFilter>1 AND 2 AND (3 or 4)</booleanFilter>
-        <columns>NAME</columns>
-        <columns>Case__c</columns>
-        <columns>Outcome__c</columns>
-        <columns>Cancel_Outcome_Sub_Status__c</columns>
-        <columns>Cancellation_Code__c</columns>
-        <columns>CREATED_DATE</columns>
-        <columns>RECORDTYPE</columns>
-        <columns>Cancel_Type__c</columns>
-        <columns>Account_Product_Type__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Cancellation_Request__c.LH_Cancellation_Request</value>
-        </filters>
-        <filters>
-            <field>Account_Product_Type__c</field>
-            <operation>equals</operation>
-            <value>Lighthouse + PP,Lighthouse + Pro Pack</value>
-        </filters>
-        <filters>
-            <field>Outcome__c</field>
-            <operation>equals</operation>
-            <value>Churned</value>
-        </filters>
-        <filters>
-            <field>Outcome__c</field>
-            <operation>contains</operation>
-            <value>Downsold</value>
-        </filters>
-        <label>Subba - LH Cancellation Request</label>
-    </listViews>
-    <listViews>
-        <fullName>TORCHx_Retention_Cancellation_Request</fullName>
-        <columns>NAME</columns>
-        <columns>LH_TORCHx_Escalation__c</columns>
-        <filterScope>Queue</filterScope>
-        <label>TORCHx Retention</label>
-        <queue>TORCHx_Retention</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
     </listViews>
     <nameField>
         <displayFormat>CR-{0000}</displayFormat>
@@ -22435,7 +22314,11 @@ false)</formula>
             </values>
         </picklistValues>
     </recordTypes>
-    <searchLayouts />
+    <searchLayouts>
+        <searchFilterFields>Client_ID__c</searchFilterFields>
+        <searchResultsAdditionalFields>Client_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Name__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Cannot_Change_Owner_for_LWB</fullName>
@@ -22496,18 +22379,6 @@ NOT(ISPICKVAL( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate
 OR(
 ISBLANK( Additional_Notes__c )))</errorConditionFormula>
         <errorMessage>When closing this record, you must fill in the Additional Notes field.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Closing_must_fill_out_After_call_work</fullName>
-        <active>false</active>
-        <errorConditionFormula>and(NOT(RecordType.Name = "TORCHx Cancellation Request"),
-NOT(RecordType.Name = "WBN Cancellation Request"),
-NOT(RecordType.Name = "LH Cancellation Request"),
-NOT(RecordType.Name = "Cancellation Request"),  
-not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
-or(
-ispickval( After_Call_Work_Complete__c  ,"")))</errorConditionFormula>
-        <errorMessage>When closing this record, you must fill in the After Call Work Complete field.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Closing_must_fill_out_Agent_Confirmation</fullName>
@@ -22590,74 +22461,11 @@ isblank( Current_Monthly_Revenue__c )))</errorConditionFormula>
         <errorMessage>When closing this record, you must fill in the Current Monthly Revenue field.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Closing_must_fill_out_Retention_Consulta</fullName>
-        <active>false</active>
-        <errorConditionFormula>and(NOT(RecordType.Name = "TORCHx Cancellation Request"), 
-NOT(RecordType.Name = "WBN Cancellation Request"),
-NOT(RecordType.Name = "LH Cancellation Request"), 
-NOT(RecordType.Name = "Cancellation Request"), 
-not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
-or(
-isblank( Retention_Consultant__c )))</errorConditionFormula>
-        <errorDisplayField>Account_Name__c</errorDisplayField>
-        <errorMessage>When closing this record, you must fill in the Retention Consultant field.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Closing_must_fill_out_Send_Confirmation</fullName>
-        <active>false</active>
-        <errorConditionFormula>and(NOT(RecordType.Name = "TORCHx Cancellation Request"),
-NOT(RecordType.Name = "WBN Cancellation Request"),
-NOT(RecordType.Name = "LH Cancellation Request"), 
-NOT($User.Email = "sfdc@enspireforenterprise.com"),  
-not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
-or(
-ispickval( Send_Confirmation_to_Client__c  ,"")))</errorConditionFormula>
-        <errorMessage>When closing this record, you must fill in the Send Confirmation to Client field.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Closing_must_fill_out_Verify_Product_cha</fullName>
-        <active>false</active>
-        <errorConditionFormula>and(
-NOT(RecordType.Name = "WBN Cancellation Request"),
-NOT(RecordType.Name = "LH Cancellation Request"),
-NOT(RecordType.Name = "Cancellation Request"), 
-NOT(RecordType.Name = "Rogers Cancellation Request"), 
-not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
-or(
-ispickval( Verify_Product_Changes_Status_in_YL__c  ,"")))</errorConditionFormula>
-        <errorDisplayField>Account_Name__c</errorDisplayField>
-        <errorMessage>When closing this record, you must fill in the Verify Product Changes Status in YL field.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Closing_must_fill_out_Within_SLA</fullName>
-        <active>false</active>
-        <errorConditionFormula>and(RecordType.Name &lt;&gt; "TORCHx Cancellation Request",
-RecordType.Name &lt;&gt; "WBN Cancellation Request",
-RecordType.Name &lt;&gt; "LH Cancellation Request", 
-RecordType.Name &lt;&gt; "Cancellation Request", 
-not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
-or(
-ispickval( Within_SLA__c  ,"")))</errorConditionFormula>
-        <errorDisplayField>Account_Name__c</errorDisplayField>
-        <errorMessage>When closing this record, you must fill in the Within SLA field.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Duplicate_Cancel_Request</fullName>
         <active>true</active>
         <description>Used for Duplicate Cancel Requests</description>
         <errorConditionFormula>ISPICKVAL(Outcome__c, 'Duplicate Retention Case')  &amp;&amp;   ISBLANK(Additional_Notes__c )</errorConditionFormula>
         <errorMessage>Please fill in the Additional Notes field to save this as a duplicate Cancellation Form.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Duplicate_can_only_be_selected_by_Matt_H</fullName>
-        <active>false</active>
-        <description>Duplicate can only be selected by Matt Hausman</description>
-        <errorConditionFormula>AND(
- ISPICKVAL(Outcome__c,"Duplicate"),
-OR(
-$Profile.Name&lt;&gt;"Client Services Manager - Austin",
-$Profile.Name&lt;&gt;"System Administrator"))</errorConditionFormula>
-        <errorMessage>You cannot select "duplicate" Cancel Reason. Please assign duplicate cases to Matthew Hausman to review. Thanks!</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>If_refund_ammount_require_approved_by</fullName>
@@ -22723,36 +22531,6 @@ OR(
 ISPICKVAL(Type__c,"Field Service"), 
 ISPICKVAL(Type__c,"Auto")))</errorConditionFormula>
         <errorMessage>Only Dental and Chiro customers are eligible for Free Time Period</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>LH_Cancel_Required_Fields</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request", 
-
-OR( 
-ISPICKVAL(Outcome__c,"Saved with No Concessions"),
-ISPICKVAL(Outcome__c,"Saved - Bailout Pricing - Standard"),
-ISPICKVAL(Outcome__c,"Saved - Bailout Pricing - Custom"),
-ISPICKVAL(Outcome__c,"Saved with Discount"),
-ISPICKVAL(Outcome__c,"Saved with OBC Package"),
-ISPICKVAL(Outcome__c,"Downsold to LH Only"),
-ISPICKVAL(Outcome__c,"Downsold to LH+ProPack"),
-ISPICKVAL(Outcome__c,"Downsold to LH+ProPack+Mobile Manager"),
-ISPICKVAL(Outcome__c,"Ad Station Credit")),
-
-OR(ISBLANK(Future_Monthly_Revenue__c), 
-Future_Monthly_Revenue__c &lt;= 0))</errorConditionFormula>
-        <errorDisplayField>Future_Monthly_Revenue__c</errorDisplayField>
-        <errorMessage>When closing a LH Cancel Request case, you must fill out Future Monthly Revenue</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>LH_Free_Time_Requires_Switching_Systems</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request", 
-ISPICKVAL(Outcome__c, "Dollar Sync Period"),
-ISPICKVAL(Switching_Systems__c,""))</errorConditionFormula>
-        <errorDisplayField>Switching_Systems__c</errorDisplayField>
-        <errorMessage>Please Fill in Switching Systems? Field</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Local_or_LBW_Refund_Requested_Close</fullName>
@@ -22997,18 +22775,6 @@ CASE( Future_Product__c ,
         <errorMessage>When the future product is different than the initial product, please change the selection for Product Change to 'Offered and Accepted'.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Cancel_Code_is_Lost_to_Competitor</fullName>
-        <active>false</active>
-        <description>If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field</description>
-        <errorConditionFormula>and(
-or(
-ispickval( Cancel_Code__c ,"Lost to Competitor"),
-ispickval( Second_Cancel_Code__c ,"Lost to Competitor")),
-isblank( Competitor_Name__c ))</errorConditionFormula>
-        <errorDisplayField>Competitor_Name__c</errorDisplayField>
-        <errorMessage>If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Cancel_Code_is_Lost_to_Competitor_new</fullName>
         <active>true</active>
         <description>Using Cancel Code 1 
@@ -23022,18 +22788,6 @@ isblank( Competitor_Name__c ))</errorConditionFormula>
         <errorMessage>If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Cancel_Code_is_Other_must_fill_out_Other</fullName>
-        <active>false</active>
-        <description>If you choose Other as a Cancel Code, you must fill out Other Notes text box.</description>
-        <errorConditionFormula>and(
-or(
-ispickval( Cancel_Code__c ,"Other"),
-ispickval( Second_Cancel_Code__c ,"Other")),
-isblank( Other_Cancel_Code__c ))</errorConditionFormula>
-        <errorDisplayField>Other_Cancel_Code__c</errorDisplayField>
-        <errorMessage>If you choose Other as a Cancel Code, you must fill out Other Notes text box.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Cancel_Codes_Code_2_Requires_Details</fullName>
         <active>true</active>
         <description>New Cancel Codes - if the secondary Cancel code is selected, then the details are required as well.</description>
@@ -23043,19 +22797,6 @@ ISPICKVAL(Cancel_Code_2_Details__c , "")
 )</errorConditionFormula>
         <errorDisplayField>Cancel_Code_2_Details__c</errorDisplayField>
         <errorMessage>If you select a second Cancel Code, please also select a Cancel Code 2 Detail</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Closing_must_fill_out_Cancel_Code</fullName>
-        <active>false</active>
-        <errorConditionFormula>and(
-$User.ProfileId &lt;&gt; '00e60000000nQe9', /*sys admin*/
-RecordType.Name &lt;&gt; "LH Cancellation Request", 
-RecordType.Name &lt;&gt; "TORCHx Cancellation Request",
-NOT($User.Email = "sfdc@yodle.com"),  
-not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate Retention Case") ),
-or(
-ispickval( Cancel_Code__c , "")))</errorConditionFormula>
-        <errorMessage>When closing this record, you must fill in the Cancel Code field.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Closing_must_fill_out_Cancel_Code_new</fullName>
@@ -23069,18 +22810,6 @@ not(ispickval( Outcome__c , "In Progress") ||  ISPICKVAL(Outcome__c , "Duplicate
 or(
 ispickval(  Cancel_Code_1__c , "")))</errorConditionFormula>
         <errorMessage>When closing this record, you must fill in the Cancel Code field.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>LH_Cancel_Churned_Required_Fields</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request", 
-ISPICKVAL(Outcome__c, "Churned"), 
-OR(ISPICKVAL(Cancellation_Date_Entered__c, ""),
-ISPICKVAL(Cancellation_Code__c, ""), 
-ISBLANK(Cancellation_Code_Details__c), 
-ISBLANK(Current_Monthly_Revenue__c),
-ISBLANK(Date_to_Stop_Service_Date__c)))</errorConditionFormula>
-        <errorMessage>When Cancel Outcome is Churned, Cancellation Date Entered, Cancellation Code, Cancellation Code Details, Current Monthly Revenue, Date to Stop Service (Date) must be filled in.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>LH_Cancel_Churned_Required_Fields_new</fullName>
@@ -23108,17 +22837,6 @@ ISBLANK(Current_Monthly_Revenue__c)))</errorConditionFormula>
         <errorMessage>When customer is in the Free Time Period Cancel Outcome, please fill out the Next Scheduled Contact Date, Cancellation Code, Cancellation Code Details, and Current Monthly Revenue.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>LH_Cancel_Free_Time_Require_Contact_Date</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request",
-ISPICKVAL(Outcome__c, "Dollar Sync Period"),
-OR(ISBLANK(Next_Scheduled_Contact_Date__c),
-ISPICKVAL(Cancellation_Code__c, ""), 
-ISBLANK(Cancellation_Code_Details__c), 
-ISBLANK(Current_Monthly_Revenue__c)))</errorConditionFormula>
-        <errorMessage>When customer is in the Free Time Period Cancel Outcome, please fill out the Next Scheduled Contact Date, Cancellation Code, Cancellation Code Details, and Current Monthly Revenue.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>LH_Cancel_Reqd_Fields_Cancel_Codes_new</fullName>
         <active>true</active>
         <description>New Cancel Codes</description>
@@ -23139,51 +22857,6 @@ OR(ISPICKVAL( Cancel_Code_1__c , ""),
 ISBLANK(Text( Cancel_Code_1_Details__c )),
 ISBLANK(Current_Monthly_Revenue__c)))</errorConditionFormula>
         <errorMessage>When closing a LH Cancel Request case, you must fill out the Cancellation Code, Cancellation Code Details, and Current Monthly Revenue</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>LH_Cancel_Required_Fields_Cancel_Codes</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(RecordType.Name = "LH Cancellation Request", 
-
-OR( 
-ISPICKVAL(Outcome__c,"Saved with No Concessions"), 
-ISPICKVAL(Outcome__c,"Saved - Bailout Pricing - Standard"), 
-ISPICKVAL(Outcome__c,"Saved - Bailout Pricing - Custom"), 
-ISPICKVAL(Outcome__c,"Saved with Discount"), 
-ISPICKVAL(Outcome__c,"Saved with OBC Package"), 
-ISPICKVAL(Outcome__c,"Downsold to LH Only"), 
-ISPICKVAL(Outcome__c,"Downsold to LH+ProPack"), 
-ISPICKVAL(Outcome__c,"Downsold to LH+ProPack+Mobile Manager"), 
-ISPICKVAL(Outcome__c,"Ad Station Credit")), 
-
-OR(ISPICKVAL(Cancellation_Code__c, ""),
-ISBLANK(Cancellation_Code_Details__c),
-ISBLANK(Current_Monthly_Revenue__c)))</errorConditionFormula>
-        <errorMessage>When closing a LH Cancel Request case, you must fill out the Cancellation Code, Cancellation Code Details, and Current Monthly Revenue</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Must_fill_out_Cancel_Code_Notes</fullName>
-        <active>false</active>
-        <description>You must fill out Cancel Code Notes if you select a Cancel Code</description>
-        <errorConditionFormula>and(
-RecordType.Name &lt;&gt; "WBN Cancellation Request",
-RecordType.Name &lt;&gt; "TORCHx Cancellation Request",
-RecordType.Name &lt;&gt; "LH Cancellation Request", 
-ISBlank(First_Cancel_Code_Notes__c),
-NOT(ispickval(Cancel_Code__c,"")))</errorConditionFormula>
-        <errorDisplayField>First_Cancel_Code_Notes__c</errorDisplayField>
-        <errorMessage>You must fill out First Cancel Code Notes field if you select a Cancel Code</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Must_fill_out_Cancel_Code_Notes_2</fullName>
-        <active>false</active>
-        <description>You must fill out Cancel Code Notes if you select a Cancel Code</description>
-        <errorConditionFormula>and(
-RecordType.Name &lt;&gt; "WBN Cancellation Request",
-ISBlank(Second_Cancel_Code_Notes__c),
-NOT(ispickval( Second_Cancel_Code__c ,"")))</errorConditionFormula>
-        <errorDisplayField>Second_Cancel_Code_Notes__c</errorDisplayField>
-        <errorMessage>You must fill out Second Cancel Code Notes field if you select a Cancel Code</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Must_fill_out_Cancel_Code_Notes_2_new</fullName>
@@ -23233,22 +22906,6 @@ ISBLANK(TEXT( Cancel_Code_1_Details__c) )
         <errorMessage>Please fill in the Additional Notes, Attempts to Contact, Cancellation Code, Cancelaltion Code Details, and Retention Consultant fields.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>TORCHx_Fields_that_Must_Be_Filled_Out</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(RecordTypeId = "012320000005P4X", 
-NOT(ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info")), 
-NOT(ISPICKVAL(Outcome__c , "In Progress")), 
-NOT(ISPICKVAL(Outcome__c , "Duplicate Retention Case")), 
-
-OR(ISBLANK(Additional_Notes__c), 
-ISBLANK(Retention_Consultant__c), 
-ISPICKVAL(Attempts_to_Contact__c ,""),
-ISPICKVAL(Cancellation_Code__c,""),
-ISBLANK(Cancellation_Code_Details__c)
-))</errorConditionFormula>
-        <errorMessage>Please fill in the Additional Notes, Attempts to Contact, Cancellation Code, Cancelaltion Code Details, and Retention Consultant fields.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>TORCHx_Must_FillOut_PreLaunch_Cancel_new</fullName>
         <active>true</active>
         <description>New Cancel codes</description>
@@ -23267,59 +22924,6 @@ Pre_Launch_Cancel__c = FALSE,
 NOT(ISPICKVAL(Outcome__c , "In Progress")), 
 NOT(ISPICKVAL(Outcome__c , "Duplicate Retention Case")))</errorConditionFormula>
         <errorMessage>Please fill out the Pre Launch Cancel Field.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>TORCHx_Must_Fill_out_PreLaunch_Cancel</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(RecordType.Name = "TORCHx Cancellation Request", 
-ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info"),
-Pre_Launch_Cancel__c = FALSE,
-NOT(ISPICKVAL(Outcome__c , "In Progress")), 
-NOT(ISPICKVAL(Outcome__c , "Duplicate Retention Case")))</errorConditionFormula>
-        <errorMessage>Please fill out the Pre Launch Cancel Field.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>TORCHx_Must_fill_out_Cancel_Code_Notes</fullName>
-        <active>false</active>
-        <description>You must fill out Cancel Code Notes if you select a Cancel Code</description>
-        <errorConditionFormula>AND(RecordType.Name = "TORCHx Cancellation Request",
-NOT(ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info")),
-ISBLANK(First_Cancel_Code_Notes__c),
-NOT(ispickval(Cancellation_Code__c,"")))</errorConditionFormula>
-        <errorDisplayField>First_Cancel_Code_Notes__c</errorDisplayField>
-        <errorMessage>You must fill out First Cancel Code Notes field if you select a Cancel Code</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>WBN_Additional_Notes_Required</fullName>
-        <active>false</active>
-        <description>For WBN the additional notes field is required when certain cancellation codes are selected.</description>
-        <errorConditionFormula>AND(
-  RecordType.Name = "WBN Cancellation Request",
-  ISBLANK(Additional_Notes__c),
-  OR(
-    CASE(Cancel_Code__c,
-    "Price", 1, 
-    "Lost to Competitor", 1,
-    "Performance", 1,
-    "Corporate Mandate Departure", 1,
-    "Dashboard Functionality", 1,
-    "Product Expectations", 1,
-    "Product Performance", 1,
-    0) = 1,
-
-    CASE(Second_Cancel_Code__c,
-    "Price", 1, 
-    "Lost to Competitor", 1,
-    "Performance", 1,
-    "Corporate Mandate Departure", 1,
-    "Dashboard Functionality", 1,
-    "Product Expectations", 1,
-    "Product Performance", 1,
-    0) = 1
-  )
-)</errorConditionFormula>
-        <errorDisplayField>Additional_Notes__c</errorDisplayField>
-        <errorMessage>Additional Notes are required for the cancellation codes selected.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Closing_must_fill_out_future_Product</fullName>

@@ -156,7 +156,7 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
-    <externalSharingModel>Read</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
@@ -513,6 +513,10 @@
             </values>
             <values>
                 <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eGift</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

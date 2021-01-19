@@ -181,14 +181,6 @@
                 <behavior>Edit</behavior>
                 <field>Sub_Status__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Outcome_After_QA__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Rogers_Outcome_Sales_Save_Attemps__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -203,10 +195,6 @@
                 <behavior>Edit</behavior>
                 <field>Description</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Transcript__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -217,10 +205,6 @@
         <label>Cancellation Details</label>
         <layoutColumns/>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Rogers_Downsell_Offers__c</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>general_notes__c</field>
@@ -234,12 +218,7 @@
         <editHeading>true</editHeading>
         <label>Escalation Details</label>
         <layoutColumns/>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Escalation_Notes__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
@@ -251,10 +230,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Issue_Type__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Issue2__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

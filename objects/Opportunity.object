@@ -16151,7 +16151,7 @@ Used by YBN.</description>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Opportunity.CPP_Initial_Transaction</value>
+            <value>01232000000JMzk</value>
         </filters>
         <filters>
             <field>OPPORTUNITY.STAGE_NAME</field>
@@ -16213,7 +16213,7 @@ Used by YBN.</description>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Opportunity.CPP_Initial_Transaction</value>
+            <value>01232000000JMzk</value>
         </filters>
         <filters>
             <field>OPPORTUNITY.STAGE_NAME</field>
@@ -16245,7 +16245,7 @@ Used by YBN.</description>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Opportunity.CPP_Initial_Transaction</value>
+            <value>01232000000JMzk</value>
         </filters>
         <filters>
             <field>OPPORTUNITY.STAGE_NAME</field>
@@ -16271,7 +16271,7 @@ Used by YBN.</description>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Opportunity.CPP_Initial_Transaction</value>
+            <value>01232000000JMzk</value>
         </filters>
         <filters>
             <field>of_people_attended_CS_Training__c</field>
@@ -16293,7 +16293,7 @@ Used by YBN.</description>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Opportunity.CPP_Initial_Transaction</value>
+            <value>01232000000JMzk</value>
         </filters>
         <filters>
             <field>OPPORTUNITY.STAGE_NAME</field>
@@ -16316,7 +16316,7 @@ Used by YBN.</description>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Opportunity.CPP_Initial_Transaction</value>
+            <value>01232000000JMzk</value>
         </filters>
         <filters>
             <field>OPPORTUNITY.STAGE_NAME</field>
@@ -16351,7 +16351,7 @@ Used by YBN.</description>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Opportunity.CPP_Initial_Transaction</value>
+            <value>01232000000JMzk</value>
         </filters>
         <filters>
             <field>OPPORTUNITY.STAGE_NAME</field>
@@ -16386,7 +16386,7 @@ Used by YBN.</description>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Opportunity.CPP_Initial_Transaction</value>
+            <value>01232000000JMzk</value>
         </filters>
         <filters>
             <field>OPPORTUNITY.STAGE_NAME</field>
@@ -16421,7 +16421,7 @@ Used by YBN.</description>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Opportunity.CPP_Initial_Transaction</value>
+            <value>01232000000JMzk</value>
         </filters>
         <filters>
             <field>OPPORTUNITY.STAGE_NAME</field>
@@ -16455,7 +16455,7 @@ Used by YBN.</description>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Opportunity.CPP_Initial_Transaction</value>
+            <value>01232000000JMzk</value>
         </filters>
         <filters>
             <field>OPPORTUNITY.STAGE_NAME</field>
@@ -16513,6 +16513,35 @@ Used by YBN.</description>
             <value>iburr</value>
         </filters>
         <label>Handyman Matters</label>
+    </listViews>
+    <listViews>
+        <fullName>Jeff_s_Opportunities</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Mutually_Agreed_Upon_Next_Steps__c</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>Lost_Reason__c</columns>
+        <columns>Lost_Reason_Detail__c</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Closed Lost</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Lost Opportunities</label>
     </listViews>
     <listViews>
         <fullName>Legacy_Web</fullName>
@@ -48407,7 +48436,7 @@ Used by YBN.</description>
     </recordTypes>
     <recordTypes>
         <fullName>Local</fullName>
-        <active>true</active>
+        <active>false</active>
         <businessProcess>Standard</businessProcess>
         <label>Local</label>
         <picklistValues>
@@ -95832,18 +95861,6 @@ Used by YBN.</description>
     </searchLayouts>
     <sharingModel>Read</sharingModel>
     <validationRules>
-        <fullName>Cannot_edit_IL_Opp_after_CW</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(
-  ISPICKVAL(PRIORVALUE(StageName),"Closed Won"),
-  RecordTypeId = "012600000009YRT",
-  NOT(OR($Profile.Id = "00e60000000iy7K",$Profile.Id = "00e60000000imvV")),
-  NOT(ISCHANGED(Total_of_Activities__c)), 
-  NOT(ISCHANGED(First_Activity_DateTime__c))
-)</errorConditionFormula>
-        <errorMessage>You cannot edit an Opportunity after it has been Closed Won. Please contact Operations.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Close_Date_Should_Not_Be_Future_Won</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -95930,15 +95947,6 @@ Or
         <errorMessage>You must fill out Lead Source</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Lead_Source_cannot_be_ASK_PROSPECT</fullName>
-        <active>false</active>
-        <description>This prevents a rep from closing out an opportunity with a lead source of ASK PROSPECT.</description>
-        <errorConditionFormula>OR(
-(AND( Probability =1, ISPICKVAL( LeadSource , "ask prospect"))),
-(AND( Probability =0, ISPICKVAL( LeadSource , "ask prospect"))))</errorConditionFormula>
-        <errorMessage>You cannot close out an opportunity with ASK PROSPECT as the lead source.  Please update.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Lost_Reason_Detail_Must_be_filled_out</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -95979,46 +95987,6 @@ ISPICKVAL(StageName , "Closed Lost"),
 ISPICKVAL( Lost_Reason__c ,""))</errorConditionFormula>
         <errorDisplayField>Lost_Reason__c</errorDisplayField>
         <errorMessage>If Stage is Closed Lost you must fill out a Lost Reason</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>M1_to_M2_Validation</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(
-ISPICKVAL((StageName),"M2 - Demo &amp; Value Presentation"),
-NOT( OR(ISPICKVAL(PRIORVALUE(StageName),"M1 - Discovery"),ISPICKVAL(PRIORVALUE(StageName),"M3 - Executive Review Call"),ISPICKVAL(PRIORVALUE(StageName),"M2 - Demo &amp; Value Presentation") )))</errorConditionFormula>
-        <errorMessage>Opportunity must be in stage M1 before proceeding to stage M2.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>M2_to_M3_Validation</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(
-ISPICKVAL((StageName),"M3 - Executive Review Call"),
-NOT( OR(ISPICKVAL(PRIORVALUE(StageName),"M2 - Demo &amp; Value Presentation"),ISPICKVAL(PRIORVALUE(StageName),"M4 - Solutions Review"),ISPICKVAL(PRIORVALUE(StageName),"M3 - Executive Review Call") )))</errorConditionFormula>
-        <errorMessage>Opportunity must be in stage M2 before proceeding to stage M3.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>M3_to_M4_Validation</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(
-ISPICKVAL((StageName),"M4 - Solutions Review"),
-NOT( OR(ISPICKVAL(PRIORVALUE(StageName),"M3 - Executive Review Call"),ISPICKVAL(PRIORVALUE(StageName),"M5 - Proposal"),ISPICKVAL(PRIORVALUE(StageName),"M4 - Solutions Review")  )))</errorConditionFormula>
-        <errorMessage>Opportunity must be in stage M3 before proceeding to stage M4.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>M4_to_M5_Validation</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(
-ISPICKVAL((StageName),"M5 - Proposal"),
-NOT( OR(ISPICKVAL(PRIORVALUE(StageName),"M4 - Solutions Review"),ISPICKVAL(PRIORVALUE(StageName),"M6 - Contract"),ISPICKVAL(PRIORVALUE(StageName),"M5 - Proposal")  )))</errorConditionFormula>
-        <errorMessage>Opportunity must be in stage M4 before proceeding to stage M5.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>M5_to_M6_Validation</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND( 
-ISPICKVAL((StageName),"M6 - Contract"), 
-NOT( OR(ISPICKVAL(PRIORVALUE(StageName),"M5 - Proposal"),ISPICKVAL(PRIORVALUE(StageName),"M6 - Contract") )))</errorConditionFormula>
-        <errorMessage>Opportunity must be in stage M5 before proceeding to stage M6.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Must_Fill_Out_Initially_Pitched_By_Field</fullName>
@@ -96075,20 +96043,6 @@ OR(
  ISBLANK(Sales_Rep_Name__c))</errorConditionFormula>
         <errorDisplayField>Sales_Rep_Name__c</errorDisplayField>
         <errorMessage>When Field Sales Initiated is checked, you must fill out the Sales Rep Name field.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Sub_type_required_for_new_customer</fullName>
-        <active>false</active>
-        <description>No longer needed WBN IL Sales.  Made required on the page layout.</description>
-        <errorConditionFormula>and (
- (RecordTypeId = "012600000009YRT"),
- ISPICKVAL( YBN_Sub_Type__c , ""),
-And(
-or(
- ISPICKVAL( Opportunity_Detail__c , "New Customer"),
- ISPICKVAL( Opportunity_Detail__c , "Upsell"))))</errorConditionFormula>
-        <errorDisplayField>YBN_Sub_Type__c</errorDisplayField>
-        <errorMessage>Sub Type is Required for all New Customers</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>WBN_ClosedWon_Products_Required</fullName>
@@ -96223,44 +96177,6 @@ $User.Full_Name__c &lt;&gt; "Ron Gong"
         <errorMessage>Proposal must be approved by Executives before sending to client.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>YBNClose_Date_Must_be_in_the_future</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
-((CloseDate)&lt;TODAY()),
-((Probability)&lt;100))</errorConditionFormula>
-        <errorMessage>"Close Date" must be in the future</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBNEstimated_launch_date_required</fullName>
-        <active>false</active>
-        <description>estimated launch date is required when opportunity moves to the implementation stage</description>
-        <errorConditionFormula>And(
-Or(
-(RecordTypeId  = "012600000009YRE"),
-(RecordTypeId  = "012600000009YRJ")),
-ispickval(StageName ,"Closed Won"),
-Or(
-And(
-INCLUDES(Products__c,"Corporate Funded PPC" ),
-isblank(PPC_Estimated_Launch_Date__c)),
-And(
-INCLUDES(Products__c,"Centermark" ),
-isblank(Centermark_Estimated_Launch_Date__c)),
-And(
-INCLUDES(Products__c,"Centermark Lite" ),
-isblank(Centermark_Estimated_Launch_Date__c)),
-And(
-INCLUDES(Products__c,"Website Template" ),
-isblank(Website_Template_Estimated_Launch_date__c )),
-And(
-INCLUDES(Products__c,"Custom Implementation" ),
-isblank(Custom_Implementation_Estimated_Launch__c)),
-And(
-INCLUDES(Products__c,"Corporate Funded Display" ),
-isblank(Display_Estimated_Launch_Date__c))))</errorConditionFormula>
-        <errorMessage>Estimated launch date is required</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>YBN_CW_Validation</fullName>
         <active>true</active>
         <errorConditionFormula>AND(OR( RecordType.Id = "012600000009YRJ",RecordType.Id = "012600000009YRE",RecordType.Id = "012600000009YRO"),
@@ -96339,19 +96255,6 @@ NOT(OR(ISPICKVAL(PRIORVALUE(StageName),"Contract"),ISPICKVAL(PRIORVALUE(StageNam
         <errorMessage>Ensure Location Enhanced SEO Contract Length, # of Locations and Contract Length are filled out.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>YBN_Contract_Value_Needed_For_IL</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(
-( RecordTypeId ="012600000009YRT"),
-ISPICkVAL( StageName ,"Closed Won"),
-( Total_Contract_Value__c  &lt;1),
-And(
-Or(
-ISPICKVAL(   YBN_Sub_Type__c   ,"Influence/ Bottoms Up"),
-ISPICKVAL(   YBN_Sub_Type__c   ,"Preferred Partner Agreement"))))</errorConditionFormula>
-        <errorMessage>All Fees, budget and contract length fields must be filled out</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>YBN_Est_launch_date_changed_reason</fullName>
         <active>true</active>
         <errorConditionFormula>AND(AND(OR(RecordTypeId="012600000009YRE",RecordTypeId="012600000009YRJ"),(AND(OR((AND(ISCHANGED(Website_Template_Estimated_Launch_date__c), NOT(ISNULL(PRIORVALUE(Website_Template_Estimated_Launch_date__c))))),(AND(ISCHANGED(Centermark_Estimated_Launch_Date__c),NOT(ISNULL(PRIORVALUE(Centermark_Estimated_Launch_Date__c))))),(AND(ISCHANGED(Custom_Implementation_Estimated_Launch__c),NOT(ISNULL(PRIORVALUE(Custom_Implementation_Estimated_Launch__c))))),(AND(ISCHANGED(Portal_Estimated_Launch_Date__c),NOT(ISNULL(PRIORVALUE(Portal_Estimated_Launch_Date__c))))),(AND(ISCHANGED(PPC_Estimated_Launch_Date__c),NOT(ISNULL(PRIORVALUE(PPC_Estimated_Launch_Date__c))))),(AND(ISCHANGED(Reviews_Estimated_Launch_Date__c),NOT(ISNULL(PRIORVALUE(Reviews_Estimated_Launch_Date__c))))),(AND(ISCHANGED(Display_Estimated_Launch_Date__c),NOT(ISNULL(PRIORVALUE(Display_Estimated_Launch_Date__c)))))),(AND(OR(ISPICKVAL(Launch_Date_Change_Reason__c,""),ISBLANK(Launch_Date_Change_Reason_Detail__c))))))))</errorConditionFormula>
@@ -96410,18 +96313,6 @@ OR( RecordType.Name = "YBN - Growth Opportunity",RecordType.Name = "YBN - Initia
         <errorMessage>Enter a Corporate Site Contract Length</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>YBN_Force_Display_Contract_Length</fullName>
-        <active>false</active>
-        <description>If Monthly Display fees are greater than zero, contract length is required on YBN-Individual location opportunities.</description>
-        <errorConditionFormula>AND(
-RecordTypeId = "012600000009YRT",    
-Monthly_Display_Fees__c    &gt; 0, 
- ISBLANK(   Display_Contract_Length__c    ) 
- )</errorConditionFormula>
-        <errorDisplayField>Display_Contract_Length__c</errorDisplayField>
-        <errorMessage>Enter a Display Contract Length</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>YBN_Force_Email_ContractLength_Locations</fullName>
         <active>true</active>
         <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Email Fee Per Location is populated, contract length and number of locations is required.</description>
@@ -96462,29 +96353,6 @@ Monthly_Display_Fees__c    &gt; 0,
         <errorMessage>Enter an Organic Contract Length and/or Organic # of Locations</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>YBN_Force_Organic_Contract_Length</fullName>
-        <active>false</active>
-        <description>If Organic fees are greater than zero, contract length is required on YBN-Individual location opportunities.</description>
-        <errorConditionFormula>AND( 
-  $Setup.Validation_Rule_Permissions__c.Opportunity_Bypass_All__c = False, 
-  RecordType.Name = "YBN - Individual Location",  
-  Organic_fees__c  &gt; 0,  
-  ISBLANK( Organic_Contract_Length__c  ) 
-)</errorConditionFormula>
-        <errorDisplayField>Organic_Contract_Length__c</errorDisplayField>
-        <errorMessage>Enter an Organic Contract Length</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_Force_PPC_Contract_Length</fullName>
-        <active>false</active>
-        <description>If Monthly PPC Budget or Media Management fees are greater than zero, contract length is required on YBN-Individual location opportunities.</description>
-        <errorConditionFormula>AND(
- $User.Full_Name__c &lt;&gt; "Ryan Volkel",
-RecordTypeId = "012600000009YRT",  OR( Monthly_Advertising_Charges__c &gt; 0, corp_Media_Management_Fee__c &gt; 0),  ISBLANK(    PPC_Contract_Length__c     ) )</errorConditionFormula>
-        <errorDisplayField>PPC_Contract_Length__c</errorDisplayField>
-        <errorMessage>Enter a PPC Contract Length</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>YBN_Force_RM_ContractLength_Locations</fullName>
         <active>true</active>
         <description>For YBN Growth, Initial Transaction, and Renewal Opportunity, if Review Management Fee Per Location is populated, contract length and number of locations is required.</description>
@@ -96503,14 +96371,6 @@ RecordTypeId = "012600000009YRT",  OR( Monthly_Advertising_Charges__c &gt; 0, co
 )</errorConditionFormula>
         <errorDisplayField>Review_Management_Fee_Per_Location__c</errorDisplayField>
         <errorMessage>Enter a Review Management Contract Length and/or Review Management # of Locations</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_Force_Review_Mgmt_Contract_Length</fullName>
-        <active>false</active>
-        <description>If Review Management fees are greater than zero, contract length is required on YBN-Individual location opportunities.</description>
-        <errorConditionFormula>AND(RecordTypeId = "012600000009YRT",   Review_Management_Fee_Per_Location__c   &gt; 0,  ISBLANK(  Review_Management_Contract_Length__c   ) )</errorConditionFormula>
-        <errorDisplayField>Review_Management_Contract_Length__c</errorDisplayField>
-        <errorMessage>Enter a Review Management Contract Length</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>YBN_Force_Setup_Locations</fullName>
@@ -96537,28 +96397,6 @@ RecordTypeId = "012600000009YRT",  OR( Monthly_Advertising_Charges__c &gt; 0, co
 )</errorConditionFormula>
         <errorDisplayField>Corporate_Monthly_Mgmt_Fees__c</errorDisplayField>
         <errorMessage>Enter a Yodle Web Contract Length and/or Yodle Web # of Locations</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_Force_Yodle_Web_Contract_Length</fullName>
-        <active>false</active>
-        <description>If Yodle Web fees are greater than zero, contract length is required on YBN-Individual location opportunities.</description>
-        <errorConditionFormula>AND(RecordTypeId = "012600000009YRT", Monthly_Management_Fees__c &gt; 0,  ISBLANK(Yodle_Web_Contract_Length__c ) )</errorConditionFormula>
-        <errorDisplayField>Yodle_Web_Contract_Length__c</errorDisplayField>
-        <errorMessage>Enter a Yodle Web Contract Length</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_Forecasted_Revor_Estaimted_PV_Rev</fullName>
-        <active>false</active>
-        <description>Require that forecasted revenue or estimated PV revenue is filled out</description>
-        <errorConditionFormula>And(
-Or(
-(RecordTypeId = "012600000009YRE"),
-(RecordTypeId = "012600000009YRJ"), 
-(RecordTypeId = "012600000009YRO")), 
-and(
-isblank(Forecasted_Revenue__c ),
-isblank( Estimated_Revenue_for_PV__c )))</errorConditionFormula>
-        <errorMessage>"Forecasted Revenue" or "Estimated Revenue for PV" must be filled out</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>YBN_On_Hold_Reason_Required</fullName>
@@ -96684,188 +96522,6 @@ ISNULL( Products__c )
         <errorMessage>Opportunity must be in stage Demo Value Prop before proceeding to stage Solution.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>YBN_Territory_restrictions</fullName>
-        <active>false</active>
-        <description>Details on territory restrictions</description>
-        <errorConditionFormula>And(
-Or(
-(RecordTypeId = "012600000009YRE"),
-(RecordTypeId = "012600000009YRJ"), 
-(RecordTypeId = "012600000009YRO")), 
-and(
-ispickval(Are_there_Territory_Restrictions__c,"Yes"),
-isblank(   Territory_Restrictions__c   )))</errorConditionFormula>
-        <errorMessage>"Territory Restrictions" needs to be filled out when "Yes" is selected for "Are There Territory Restrictions"</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_Total_Contract_Value_Needed</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
-Or(
-(RecordTypeId = "012600000009YRE"),
-(RecordTypeId = "012600000009YRJ"), 
-(RecordTypeId = "012600000009YRO")), 
-Or(
-ISPICKVAL( YBN_Sub_Type__c ,"Location Expansion"),
-ISPICKVAL( YBN_Sub_Type__c ,"Product Expansion"),
-ISPICKVAL( YBN_Sub_Type__c ,"Additional Funds"),
-ISPICKVAL( YBN_Sub_Type__c ,"New Full Roll Out"),
-ISPICKVAL( YBN_Sub_Type__c ,"Location Expansion"),
-ISPICKVAL( YBN_Sub_Type__c ,"New Seasonal Fixed Length Campaign"),
-ISPICKVAL( YBN_Sub_Type__c ,"New Project Campaign"),
-ISPICKVAL( YBN_Sub_Type__c ,"Proof of Value"),
-ISPICKVAL( YBN_Sub_Type__c ,"Full Roll Out"),
-ISPICKVAL( YBN_Sub_Type__c ,"Initial Roll Out"),
-ISPICKVAL( YBN_Sub_Type__c ,"Seasonal Fixed Length Campaign"),
-ISPICKVAL( YBN_Sub_Type__c ,"Project Campaign")),
-and(
-( Total_Contract_Value__c  &lt;1),
-(Total_Network_Adoption_Value__c &lt; 1)))</errorConditionFormula>
-        <errorMessage>Corporate funded fees and/or network adoption sections must be filled out</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_custom_contract_stipulations</fullName>
-        <active>false</active>
-        <description>custom mobile implementation taxonomy details</description>
-        <errorConditionFormula>And(
-Or(
-(RecordTypeId = "012600000009YRE"),
-(RecordTypeId = "012600000009YRJ"), 
-(RecordTypeId = "012600000009YRO")), 
-and(
-ispickval(Are_there_custom_contract_stipulatio__c  ,"Yes"),
-isblank( Custom_Contract_Stipulations__c)),
-isblank( Special_Contract_Stipulation_Details__c ))</errorConditionFormula>
-        <errorMessage>"Special Contract Stipulations" and "Special Contract Stipulation Details" needs to be filled out when "Yes" is selected for "Are There Special Contract Stipulations?"</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_milestone_required</fullName>
-        <active>false</active>
-        <description>require a milestone when the stage is transaction or implementation</description>
-        <errorConditionFormula>And(
-Or(
-ispickval(StageName ,"Transaction"),
-ispickval(StageName ,"Implementation")),
-And(
-ispickval( Milestone__c ,"")))</errorConditionFormula>
-        <errorDisplayField>Milestone__c</errorDisplayField>
-        <errorMessage>Current milestone must be updated</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_mobile_implementation</fullName>
-        <active>false</active>
-        <description>custom mobile implementation taxonomy details</description>
-        <errorConditionFormula>And(
-Or(
-(RecordTypeId = "012600000009YRE"),
-(RecordTypeId = "012600000009YRJ"), 
-(RecordTypeId = "012600000009YRO")), 
-and(
-ispickval(    Mobile_Implementation__c    ,"Custom"),
-isblank(    Mobile_Implementation_Notes__c     )))</errorConditionFormula>
-        <errorMessage>"Custom Mobile Implementation Details" needs to be filled out when "Custom" is selected for "Mobile Implementation"</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_mututally_areed_upon_date_of_next</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
-or(
-(RecordTypeId = "012600000009YRE"),
-(RecordTypeId = "012600000009YRJ"),
-(RecordTypeId = "012600000009YRO")),
-((Date_of_Mutually_Agreed_Upon_Next_Step__c )&lt;TODAY()))</errorConditionFormula>
-        <errorMessage>"Date of Mututally Agreed Upon Next Step" must be in the future</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_organic_strategy</fullName>
-        <active>false</active>
-        <description>detail custom organic strategy</description>
-        <errorConditionFormula>And(
-Or(
-(RecordTypeId = "012600000009YRE"),
-(RecordTypeId = "012600000009YRJ"), 
-(RecordTypeId = "012600000009YRO")), 
-and(
-ispickval(  Organic_Strategy_Build_Process__c  ,"Custom Strategy"),
-isblank(   Organic_Build_Process_Details__c   )))</errorConditionFormula>
-        <errorMessage>"Organic Build Process Details" needs to be filled out when "Custom Strategy" is selected for "Organic Strategy/Build Process"</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_organic_taxonomy</fullName>
-        <active>false</active>
-        <description>organic taxonomy details</description>
-        <errorConditionFormula>And(
-Or(
-(RecordTypeId = "012600000009YRE"),
-(RecordTypeId = "012600000009YRJ"), 
-(RecordTypeId = "012600000009YRO")), 
-and(
-ispickval(   Organic_taxonomy_update_needed__c   ,"Yes"),
-isblank(    Organic_taxonomy_details__c     )))</errorConditionFormula>
-        <errorMessage>"Organic Taxonomy Details" needs to be filled out when "Yes" is selected for "Organic Taxonomy Update Needed"</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_other_competitors</fullName>
-        <active>false</active>
-        <description>competitors we are up against</description>
-        <errorConditionFormula>And(
-Or(
-(RecordTypeId = "012600000009YRE"),
-(RecordTypeId = "012600000009YRJ"), 
-(RecordTypeId = "012600000009YRO")), 
-and(
-includes( Competitors_We_Are_Up_Against__c ,"Other"),
-isblank(  Other_Competitors__c  )))</errorConditionFormula>
-        <errorMessage>"other competitors" needs to be filled out when "other" is selected for "Competitors We Are Up Against"</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_parent_opportunity</fullName>
-        <active>false</active>
-        <description>competitors we are up against</description>
-        <errorConditionFormula>And(
-(RecordTypeId = "012600000009YRT"),
-and(
-ispickval(  YBN_Sub_Type__c ,"Preferred Partner Agreement"),
-isblank(   Parent_Opportunity__c   )))</errorConditionFormula>
-        <errorMessage>"Parent Opportunity" must be filled out for any preferred partner agreement individual location opportunity</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_participating_number_of_locations</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
-isblank( Participating_Number_of_Locations__c ),
-(Corporate_Monthly_Organic_Fees__c  &lt;&gt; 0 ))</errorConditionFormula>
-        <errorMessage>Participating number of locations must be filled out</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_reccomended_margin</fullName>
-        <active>false</active>
-        <description>competitors we are up against</description>
-        <errorConditionFormula>And(
-Or(
-(RecordTypeId = "012600000009YRE"),
-(RecordTypeId = "012600000009YRJ"), 
-(RecordTypeId = "012600000009YRO")), 
-and(
-ispickval(  Margin_Adjustment_Recommended__c  ,"Yes"),
-isblank(   Recommended_Margin__c   )))</errorConditionFormula>
-        <errorMessage>"Recommended Margin %" needs to be filled out when "Yes" is selected for "Margin Adjustment Recommended"</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_submit_keywords_to_scrape_2</fullName>
-        <active>false</active>
-        <description>rules for submitting keywords to scraping</description>
-        <errorConditionFormula>And(
-Or(
-(RecordTypeId = "012600000009YRE"),
-(RecordTypeId = "012600000009YRJ"), 
-(RecordTypeId = "012600000009YRO")), 
-and(
-ispickval( Local_Domain_Naming_Convention__c ,"Yes - there is a standard naming convention"),
-isblank(  Local_Domain_Naming_Conventiondetails__c )))</errorConditionFormula>
-        <errorMessage>"Local Domain Naming Convention Details" must be filled out when "Yes" is selected for "Local Domain Naming Convention"</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>amount_greater_than_57</fullName>
         <active>true</active>
         <errorConditionFormula>AND(( Amount &lt;= 58), (Probability&gt;0.25),   ($RecordType.Name = "master")
@@ -96883,21 +96539,6 @@ ISPICKVAL(Payment_Status__c , "Other"),
         <errorMessage>If you select Payment Status Other you must fill in Payment Notes.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>require_estimated_launch_for_CM_product</fullName>
-        <active>false</active>
-        <description>if products sold contains centermark, require Centermark Estimated Launch Date</description>
-        <errorConditionFormula>And( 
-Or( 
-(RecordTypeId = "012600000009YRE"), 
-(RecordTypeId = "012600000009YRJ"),
-(RecordTypeId = "012600000009YRO")), 
-And(OR(INCLUDES(Products__c, 'Centermark'), 
-INCLUDES(Products__c, 'Centermark Lite')), 
-And( 
-isblank(Centermark_Estimated_Launch_Date__c))))</errorConditionFormula>
-        <errorMessage>Please fill out Centermark Estimated Launch Date</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>splits</fullName>
         <active>true</active>
         <errorConditionFormula>AND (
@@ -96907,17 +96548,6 @@ LEN(  Second_Rep__c ) &lt;= 0,
 )</errorConditionFormula>
         <errorDisplayField>Second_Rep__c</errorDisplayField>
         <errorMessage>Please add the name of the person with whom you are splitting this account</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>zzWBN_IL_Oppty_Name_Less_Than_80</fullName>
-        <active>false</active>
-        <description>The oppty name must be less than 80 characters at Closed/Won so the contract can be created.  The contract name only holds 80 characters.</description>
-        <errorConditionFormula>AND(
-RecordTypeId = "012600000009YRT", /*YBN - Individual Location*/
-ISPICKVAL(StageName,"Closed Won"), 
-(LEN(Name) &gt; 80)
-)</errorConditionFormula>
-        <errorMessage>The Opportunity Name cannot be greater than 80 characters (includes spaces).</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>WBN_StandardAcc_ILOppsOnly</fullName>
@@ -97454,7 +97084,7 @@ calcTime(sOffset,freq,sEnd,"tz__local_time_opp_btn");</url>
         <height>600</height>
         <isResizable>true</isResizable>
         <linkType>page</linkType>
-        <masterLabel>Sales Wizard (BETA)</masterLabel>
+        <masterLabel>Launch Sales Wizard</masterLabel>
         <openType>newWindow</openType>
         <page>LaunchSalesWizard</page>
         <position>none</position>

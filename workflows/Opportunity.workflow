@@ -14,14 +14,6 @@
         <template>National_Templates/Completed_SEOPPC_Scrape_to_Opportunity_Owner_and_AD</template>
     </alerts>
     <alerts>
-        <fullName>LH_Opportunity_Stage_changed_to_Demo</fullName>
-        <description>LH Opportunity Stage changed to Demo</description>
-        <protected>false</protected>
-        
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/New_LH_Opportunity_in_Demo_Stage</template>
-    </alerts>
-    <alerts>
         <fullName>New_Initial_Transaction_Opp_Launched</fullName>
         <description>New Initial Transaction Opp Launched</description>
         <protected>false</protected>
@@ -143,49 +135,46 @@
         <fullName>YBN_Contract_Signed</fullName>
         <description>YBN Contract Signed</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>emily.garza@web.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jennifer.hendrickson@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>justin.petrillo@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>lcuiman@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mark.fucaloro@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mpugh@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mswiader@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ryan.ciampi@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>scornwall@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Contract_Signed</template>
-    </alerts>
+    <recipients>
+            <recipient>emily.garza@web.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>justin.petrillo@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>lcuiman@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>mark.fucaloro@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>mbrevig@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>mpugh@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>mswiader@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>ryan.ciampi@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>scornwall@yodle.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <alerts>
         <fullName>YBN_Contract_Signed_Assign_AD</fullName>
         <description>YBN Contract Signed-Assign AD</description>
@@ -368,9 +357,6 @@
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
         </recipients><recipients>
-            <recipient>jennifer.hendrickson@yodle.com</recipient>
-            <type>user</type>
-        </recipients><recipients>
             <recipient>jswitzer@yodle.com</recipient>
             <type>user</type>
         </recipients><recipients>
@@ -530,16 +516,6 @@
         <field>Probability</field>
         <formula>0.30</formula>
         <name>CPP - Update Probability % to 30%</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>CPP_Update_Probability_to_5</fullName>
-        <field>Probability</field>
-        <formula>0.05</formula>
-        <name>CPP - Update Probability % to 5%</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -760,17 +736,6 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Owner_to_Beau</fullName>
-        <field>OwnerId</field>
-        <lookupValue>sfdc@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Owner to Beau</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Phone_Demo_Completed_today</fullName>
         <field>Phone_demo_completed_date__c</field>
         <formula>today()</formula>
@@ -906,26 +871,6 @@ CloseDate +(30* (Minimum_Contract_Length__c)))))</formula>
         <field>Phase_3_Original_Est_Launch_Date__c</field>
         <formula>Phase_3_Estimated_Launch_Date__c</formula>
         <name>Update Phase 3 Original Est Launch Date</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Update_Probibility_to_15</fullName>
-        <field>Probability</field>
-        <formula>0.15</formula>
-        <name>Update Probibility to 15%</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Update_Probibility_to_25</fullName>
-        <field>Probability</field>
-        <formula>0.25</formula>
-        <name>Update Probibility to 25%</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -2072,30 +2017,7 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
-        <fullName>Assign LH Opportunity Upon Creation Demo Status</fullName>
-        <actions>
-            <name>Owner_to_Beau</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Opportunity.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Lighthouse - Upsell Opportunity</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Opportunity.StageName</field>
-            <operation>equals</operation>
-            <value>Demo</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>CPP Probability %25 update Stage - Long-term Nurture</fullName>
-        <actions>
-            <name>CPP_Update_Probability_to_5</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Opportunity.RecordTypeId</field>
@@ -2268,58 +2190,6 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>LH Upsell Probability %25 update Stage - Demo</fullName>
-        <actions>
-            <name>LH_Opportunity_Stage_changed_to_Demo</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>Update_Probibility_to_15</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <formula>AND(    RecordType.Name = "Lighthouse - Upsell Opportunity", ISCHANGED(StageName), ISPICKVAL(StageName,"Demo")   )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Upsell Probability %25 update Stage - In Discussion</fullName>
-        <actions>
-            <name>CPP_Update_Probability_to_5</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Opportunity.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>TORCHx - Cross-Sell Opporunity,Lighthouse - Upsell Opportunity</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Opportunity.StageName</field>
-            <operation>equals</operation>
-            <value>In Discussion</value>
-        </criteriaItems>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Upsell Probability %25 update Stage - Negotiate</fullName>
-        <actions>
-            <name>Update_Probibility_to_25</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Opportunity.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>,Lighthouse - Upsell Opportunity,TORCHx - Cross-Sell Opporunity</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Opportunity.StageName</field>
-            <operation>equals</operation>
-            <value>Negotiate</value>
-        </criteriaItems>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
         <fullName>Local - Add Next bill date to Opportunity</fullName>
         <actions>
             <name>Update_Next_Bill_Date</name>
@@ -2435,16 +2305,6 @@ If (INCLUDES( Products__c ,"Centermark"),1,0.1))))</formula>
             <value>True</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Owner to Beau when LH Opp is Demo</fullName>
-        <actions>
-            <name>Owner_to_Beau</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <formula>AND( RecordTypeId = "01232000000JOTR", ISPICKVAL(StageName,"Demo"),  ISPICKVAL(PRIORVALUE(StageName), "In Discussion")  )</formula>
-        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>SDR %3D true</fullName>

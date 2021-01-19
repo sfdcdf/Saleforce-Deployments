@@ -68,6 +68,13 @@
             <operator>notContain</operator>
             <value>stone,benevis,landstar,tenet</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Case$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.YBN_Inbound_Inquiry</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -75,7 +82,7 @@
         <field>Case$Owner</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>CCA IB &amp; OB Emails &amp; Calls</name>
+    <name>CCA IB Emails &amp; Calls</name>
     <params>
         <name>co</name>
         <value>1</value>

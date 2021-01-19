@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
         <value>Best Practice Evaluation</value>
@@ -2717,10 +2717,6 @@ All issues identified &amp; tackled - 100% --></help>
     </recordTypes>
     <startsWith>Consonant</startsWith>
     <validationRules>
-        <errorMessage><!-- For Local Accounts, you must fill in the 6 Website Tier fields for Compliance. --></errorMessage>
-        <name>Local_Auditors_to_fill_in_Website_Tiers</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- Please list ASW sync issues --></errorMessage>
         <name>National_Audit_Implementation_Data_Sync</name>
     </validationRules>
@@ -2767,9 +2763,5 @@ All issues identified &amp; tackled - 100% --></help>
     <validationRules>
         <errorMessage><!-- Please list the vendor --></errorMessage>
         <name>National_Audit_Vendor</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- For Local and Partner accounts, all fields must be filled in with a value. --></errorMessage>
-        <name>Setup_Eval_Channel_Fields</name>
     </validationRules>
 </CustomObjectTranslation>

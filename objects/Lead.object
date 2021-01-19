@@ -404,7 +404,7 @@
     </compactLayouts>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Activity_Indicator__c</fullName>
         <externalId>false</externalId>
@@ -606,7 +606,7 @@
         <label>Annual PEV</label>
         <precision>18</precision>
         <required>false</required>
-        <scale>2</scale>
+        <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
@@ -4215,6 +4215,11 @@ if(
                     <label>Consulting</label>
                 </value>
                 <value>
+                    <fullName>Courier, Messenger and Delivery Services</fullName>
+                    <default>false</default>
+                    <label>Courier, Messenger and Delivery Services</label>
+                </value>
+                <value>
                     <fullName>Criminal/DUI</fullName>
                     <default>false</default>
                     <label>Criminal/DUI</label>
@@ -4348,6 +4353,11 @@ if(
                     <fullName>Home and Car Loans</fullName>
                     <default>false</default>
                     <label>Home and Car Loans</label>
+                </value>
+                <value>
+                    <fullName>Home Builder</fullName>
+                    <default>false</default>
+                    <label>Home Builder</label>
                 </value>
                 <value>
                     <fullName>Home Entertainment</fullName>
@@ -4665,6 +4675,11 @@ if(
                     <label>Self Defense</label>
                 </value>
                 <value>
+                    <fullName>Senior Care</fullName>
+                    <default>false</default>
+                    <label>Senior Care</label>
+                </value>
+                <value>
                     <fullName>Settlement and Title</fullName>
                     <default>false</default>
                     <label>Settlement and Title</label>
@@ -4698,6 +4713,11 @@ if(
                     <fullName>Tattoo / Body Art</fullName>
                     <default>false</default>
                     <label>Tattoo / Body Art</label>
+                </value>
+                <value>
+                    <fullName>Tax Preparation Services</fullName>
+                    <default>false</default>
+                    <label>Tax Preparation Services</label>
                 </value>
                 <value>
                     <fullName>Technology</fullName>
@@ -4825,6 +4845,10 @@ if(
             <valueSettings>
                 <controllingFieldValue>Health and Medicine</controllingFieldValue>
                 <valueName>Reflexology Training</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Health and Medicine</controllingFieldValue>
+                <valueName>Senior Care</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Health and Medicine</controllingFieldValue>
@@ -5185,6 +5209,10 @@ if(
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Legal and Financial Services</controllingFieldValue>
+                <valueName>Tax Preparation Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal and Financial Services</controllingFieldValue>
                 <valueName>Traffic</valueName>
             </valueSettings>
             <valueSettings>
@@ -5214,6 +5242,10 @@ if(
             <valueSettings>
                 <controllingFieldValue>Business and Professional Services</controllingFieldValue>
                 <valueName>Consulting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business and Professional Services</controllingFieldValue>
+                <valueName>Courier, Messenger and Delivery Services</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Business and Professional Services</controllingFieldValue>
@@ -5294,6 +5326,10 @@ if(
             <valueSettings>
                 <controllingFieldValue>Real Estate</controllingFieldValue>
                 <valueName>Apartment Rentals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Real Estate</controllingFieldValue>
+                <valueName>Home Builder</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Real Estate</controllingFieldValue>
@@ -8486,394 +8522,23 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         <unique>false</unique>
     </fields>
     <listViews>
-        <fullName>CPP_LH_360_PMS_Leads</fullName>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
+        <fullName>Enspire_Corporate_Leads</fullName>
         <columns>FULL_NAME</columns>
         <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>Quality_of_Partner__c</columns>
-        <columns>LEAD.URL</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>Suffix__c</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.CPP</value>
-        </filters>
-        <filters>
-            <field>LEAD.LEAD_SOURCE</field>
-            <operation>notEqual</operation>
-            <value>Inbound</value>
-        </filters>
-        <filters>
-            <field>Business_type__c</field>
-            <operation>equals</operation>
-            <value>PMS</value>
-        </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested,Bad Info,Not Qualified,Bad Data</value>
-        </filters>
-        <label>CPP - LH 360 PMS Leads</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_LH_360_PMS_Leads1</fullName>
-        <columns>LEAD.STATUS</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>Total_of_Activities__c</columns>
-        <columns>Quality_of_Partner__c</columns>
-        <columns>LEAD.URL</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>Suffix__c</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.CPP</value>
-        </filters>
-        <filters>
-            <field>LEAD.LEAD_SOURCE</field>
-            <operation>notEqual</operation>
-            <value>Inbound</value>
-        </filters>
-        <filters>
-            <field>Business_type__c</field>
-            <operation>equals</operation>
-            <value>PMS</value>
-        </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested,Not Qualified</value>
-        </filters>
-        <label>CPP - ACTIVE LH 360 PMS Leads</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_March_1_15_Sprint_Leads</fullName>
-        <columns>LEAD.STATUS</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>Total_of_Activities__c</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>Quality_of_Partner__c</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>LEAD.URL</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested,Bad Info,Not Qualified,Bad Data</value>
-        </filters>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.CPP</value>
-        </filters>
-        <filters>
-            <field>Business_type__c</field>
-            <operation>notEqual</operation>
-            <value>PMS,Marketing,IT Integrator</value>
-        </filters>
-        <filters>
-            <field>LEAD.LEAD_SOURCE</field>
-            <operation>notEqual</operation>
-            <value>Inbound</value>
-        </filters>
-        <filters>
-            <field>LEAD.LEAD_SOURCE</field>
-            <operation>notEqual</operation>
-        </filters>
-        <label>CPP - March 1-15 Sprint Leads</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_My_CPP_Leads</fullName>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
         <columns>LEAD.STATE</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.CPP</value>
-        </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested,Not Qualified,Bad Data</value>
-        </filters>
-        <filters>
-            <field>LEAD.LEAD_SOURCE</field>
-            <operation>notEqual</operation>
-        </filters>
-        <filters>
-            <field>LEAD.LAST_ACTIVITY</field>
-            <operation>lessThan</operation>
-            <value>8/1/2016</value>
-        </filters>
-        <label>CPP -Self Sourced</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_My_CPP_Leads_NY</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
         <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>LEAD.RATING</columns>
         <columns>LEAD.STATUS</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Affiliate,Lead.Association,Lead.CPP</value>
-        </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested</value>
-        </filters>
-        <filters>
-            <field>LEAD.STATE</field>
-            <operation>contains</operation>
-            <value>NY</value>
-        </filters>
-        <label>CPP - My CPP Leads NY</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_My_CPP_Leads_NY_Inbound</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Affiliate,Lead.Association,Lead.CPP</value>
-        </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested</value>
-        </filters>
-        <filters>
-            <field>Business_Description__c</field>
-            <operation>contains</operation>
-            <value>Inbound Transfer</value>
-        </filters>
-        <label>CPP - My CPP Leads NY Inbound</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_My_CPP_Leads_Qualified</fullName>
-        <columns>LEAD.STATUS</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.CPP</value>
-        </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>equals</operation>
-            <value>Qualified</value>
-        </filters>
-        <filters>
-            <field>Suffix__c</field>
-            <operation>notEqual</operation>
-            <value>1,2,3</value>
-        </filters>
-        <filters>
-            <field>LEAD.LEAD_SOURCE</field>
-            <operation>notEqual</operation>
-        </filters>
-        <label>CPP -Self Sourced Qualified</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_New_Leads</fullName>
-        <columns>Quality_of_Partner__c</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.FAX</columns>
-        <columns>LEAD.URL</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.CPP</value>
-        </filters>
-        <filters>
-            <field>Product_Category__c</field>
-            <operation>equals</operation>
-            <value>Lighthouse Dental</value>
-        </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>equals</operation>
-            <value>New</value>
-        </filters>
-        <label>CPP - New Leads</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_OneTouch</fullName>
-        <columns>Total_of_Activities__c</columns>
         <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>Quality_of_Partner__c</columns>
-        <columns>LEAD.URL</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested,Not Qualified,Bad Data</value>
-        </filters>
-        <filters>
-            <field>Product_Category__c</field>
-            <operation>equals</operation>
-            <value>Lighthouse Dental</value>
-        </filters>
-        <filters>
-            <field>Total_of_Activities__c</field>
-            <operation>lessOrEqual</operation>
-            <value>1,0</value>
-        </filters>
-        <label>CPP - One Touch</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_Recent_Leads_4_1_16</fullName>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>Quality_of_Partner__c</columns>
-        <columns>LEAD.URL</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested,Not Qualified,Bad Data</value>
-        </filters>
-        <filters>
-            <field>Product_Category__c</field>
-            <operation>equals</operation>
-            <value>Lighthouse Dental</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>greaterOrEqual</operation>
-            <value>4/25/2016 12:00 AM</value>
-        </filters>
-        <label>CPP - Recent Leads (4/1/16)</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_Self_Sourced_DemandForce</fullName>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.FAX</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>LEAD.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Lead.CPP</value>
+            <value>Lead.WBN_Corporate_Lead</value>
         </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested,Not Qualified,Bad Data</value>
-        </filters>
-        <filters>
-            <field>LEAD.LEAD_SOURCE</field>
-            <operation>equals</operation>
-            <value>Self-Sourced</value>
-        </filters>
-        <filters>
-            <field>Business_Description__c</field>
-            <operation>equals</operation>
-            <value>DemandForce</value>
-        </filters>
-        <label>CPP -Self Sourced - DemandForce</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_Self_Sourced_NO_ADMC</fullName>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>Total_of_Activities__c</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.CPP</value>
-        </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested,Not Qualified,Bad Data</value>
-        </filters>
-        <filters>
-            <field>Business_type__c</field>
-            <operation>equals</operation>
-            <value>PMS</value>
-        </filters>
-        <label>CPP - PMS</label>
+        <label>Enspire Corporate Leads</label>
     </listViews>
     <listViews>
         <fullName>JCI_Leads_Admin_View</fullName>
@@ -8902,300 +8567,23 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>My_CPP_Leads</fullName>
-        <columns>Quality_of_Partner__c</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>Total_of_Activities__c</columns>
+        <fullName>My_Enspire_Corporate_Leads</fullName>
         <columns>FULL_NAME</columns>
         <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
+        <columns>LEAD.STATE</columns>
         <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.FAX</columns>
-        <columns>LEAD.URL</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Everything</filterScope>
+        <columns>LEAD.RATING</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
         <filters>
             <field>LEAD.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Lead.CPP</value>
+            <value>Lead.WBN_Corporate_Lead</value>
         </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested,Not Qualified,Bad Data</value>
-        </filters>
-        <filters>
-            <field>Product_Category__c</field>
-            <operation>equals</operation>
-            <value>Lighthouse Dental</value>
-        </filters>
-        <label>CPP - All CPP Leads</label>
-    </listViews>
-    <listViews>
-        <fullName>My_CPP_Leads1</fullName>
-        <columns>Quality_of_Partner__c</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>Total_of_Activities__c</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.FAX</columns>
-        <columns>LEAD.URL</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested,Not Qualified,Bad Data</value>
-        </filters>
-        <filters>
-            <field>Product_Category__c</field>
-            <operation>equals</operation>
-            <value>Lighthouse Dental</value>
-        </filters>
-        <label>CPP - All CPP Leads1</label>
-    </listViews>
-    <listViews>
-        <fullName>My_CPP_Leads1IT</fullName>
-        <columns>Quality_of_Partner__c</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>Total_of_Activities__c</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.FAX</columns>
-        <columns>LEAD.URL</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Not Interested,Not Qualified,Bad Data</value>
-        </filters>
-        <filters>
-            <field>Product_Category__c</field>
-            <operation>equals</operation>
-            <value>Lighthouse Dental</value>
-        </filters>
-        <filters>
-            <field>Business_type__c</field>
-            <operation>equals</operation>
-            <value>IT Integrator</value>
-        </filters>
-        <label>CPP - All CPP Leads IT</label>
-    </listViews>
-    <listViews>
-        <fullName>Partner</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Partner</label>
-        <queue>Partner</queue>
-        <sharedTo>
-            <role>ExecutiveVP</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>ServiceMaster4</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Parent_Account__c</field>
-            <operation>contains</operation>
-            <value>servicemaster</value>
-        </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>equals</operation>
-            <value>Record,Confirmed Existence,Qualified,Not Interested</value>
-        </filters>
-        <label>ServiceMaster</label>
-        <sharedTo>
-            <group>YBN_Sales_Execs</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>The_Bar_Method</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.COMPANY</field>
-            <operation>contains</operation>
-            <value>bar method</value>
-        </filters>
-        <label>The Bar Method</label>
-        <sharedTo>
-            <group>YBN_Sales_Execs</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>TodaysLeads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.LEAD_SOURCE</field>
-            <operation>contains</operation>
-            <value>lawfirms</value>
-        </filters>
-        <label>TotalSearch</label>
-        <sharedTo>
-            <role>ExecutiveVP</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Tuffy</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.COMPANY</field>
-            <operation>contains</operation>
-            <value>tuffy</value>
-        </filters>
-        <label>Tuffy</label>
-        <sharedTo>
-            <group>SalesExec</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Upper_Cervical_Health_Centers</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <columns>LEAD.PHONE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.COMPANY</field>
-            <operation>contains</operation>
-            <value>Upper Cervical Health Centers</value>
-        </filters>
-        <label>Upper Cervical Health Centers</label>
-        <sharedTo>
-            <group>YBN_Sales_Execs</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>rooterman</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.COMPANY</field>
-            <operation>contains</operation>
-            <value>rooterman</value>
-        </filters>
-        <label>rooterman</label>
-        <sharedTo>
-            <group>YBN_Sales_Execs</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>title_boxing1</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.COMPANY</field>
-            <operation>contains</operation>
-            <value>Title Boxing</value>
-        </filters>
-        <label>title boxing</label>
-        <sharedTo>
-            <group>YBN_Sales_Execs</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>unigroup2</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Lead_Source_Detail__c</field>
-            <operation>contains</operation>
-            <value>unigroup</value>
-        </filters>
-        <label>unigroup</label>
-        <sharedTo>
-            <group>YBN_Sales_Execs</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>united_studio_of_defense</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.COMPANY</field>
-            <operation>contains</operation>
-            <value>united studio</value>
-        </filters>
-        <label>united studio of defense</label>
-        <sharedTo>
-            <group>YBN_Sales_Execs</group>
-        </sharedTo>
+        <label>My Enspire Corporate Leads</label>
     </listViews>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
@@ -28609,6 +27997,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
             <values>
+                <fullName>EFE Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Email Marketing</fullName>
                 <default>false</default>
             </values>
@@ -28645,6 +28037,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
             <values>
+                <fullName>OppaDay</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Organic Search</fullName>
                 <default>false</default>
             </values>
@@ -28658,6 +28054,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Paid Search - Bing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid Search - Display</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -30067,6 +29467,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
             <values>
+                <fullName>Courier%2C Messenger and Delivery Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Criminal%2FDUI</fullName>
                 <default>false</default>
             </values>
@@ -30168,6 +29572,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Heating and Air Conditioning - HVAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Builder</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -30427,6 +29835,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
                 <default>false</default>
             </values>
             <values>
+                <fullName>Senior Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Settlement and Title</fullName>
                 <default>false</default>
             </values>
@@ -30452,6 +29864,10 @@ IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,"")
             </values>
             <values>
                 <fullName>Tattoo %2F Body Art</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Preparation Services</fullName>
                 <default>false</default>
             </values>
             <values>

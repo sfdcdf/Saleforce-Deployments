@@ -11,16 +11,6 @@
         <template>Support/Alert_to_Channel_Lead_For_Organic_Process_Request</template>
     </alerts>
     <alerts>
-        <fullName>Organic_Process_Request_Alert_Creator_In_Progress</fullName>
-        <description>Organic Process Request - Alert Creator In Progress</description>
-        <protected>false</protected>
-        <recipients>
-            <type>creator</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Organic_Process_Request_In_Progress</template>
-    </alerts>
-    <alerts>
         <fullName>Organic_Process_Request_Alert_Michal_of_Web_Dev_Update</fullName>
         <description>Organic Process Request - Alert Michal of Web Dev Update</description>
         <protected>false</protected>
@@ -225,10 +215,6 @@
     </rules>
     <rules>
         <fullName>Organic Process Request - Status changed to In Progress</fullName>
-        <actions>
-            <name>Organic_Process_Request_Alert_Creator_In_Progress</name>
-            <type>Alert</type>
-        </actions>
         <actions>
             <name>OR_Proc_Req_Update_Approval_Date</name>
             <type>FieldUpdate</type>

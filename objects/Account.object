@@ -236,7 +236,7 @@
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>AC_OCC_Created__c</fullName>
         <defaultValue>false</defaultValue>
@@ -2142,7 +2142,7 @@ ISPICKVAL(Channel_Development__c, "")),
         <summaryFilterItems>
             <field>Opportunity.CreatedDate</field>
             <operation>greaterOrEqual</operation>
-            <value>12/31/2015 11:00 PM</value>
+            <value>1/1/2016 12:00 AM</value>
         </summaryFilterItems>
         <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
         <summaryOperation>sum</summaryOperation>
@@ -12407,7 +12407,7 @@ LiveOps_VM_ID_Standard__c,
     </fields>
     <fields>
         <fullName>MLP_Group_ID__c</fullName>
-        <externalId>false</externalId>
+        <externalId>true</externalId>
         <label>MLP Group ID</label>
         <length>25</length>
         <required>false</required>
@@ -12926,225 +12926,6 @@ or(
         <type>Date</type>
     </fields>
     <listViews>
-        <fullName>A_Plus_Transmissions</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <label>A Plus Transmissions</label>
-    </listViews>
-    <listViews>
-        <fullName>All_Biz_Dev_Records</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Biz_Dev_Account_Type__c</columns>
-        <columns>Product_Team_Applicability__c</columns>
-        <columns>ACCOUNT.LAST_ACTIVITY</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Account.Business_Development</value>
-        </filters>
-        <label>All Biz Dev Records</label>
-    </listViews>
-    <listViews>
-        <fullName>BULK_GOOGLE_and_BULK_BING</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.SITE</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>Bulk_Google_Account__c</columns>
-        <columns>Bulk_Google_AccountPL__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Account.Standard,Account.YBN_Corporate_Relationship</value>
-        </filters>
-        <filters>
-            <field>Bulk_Google_Account__c</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <label>BULK GOOGLE and BULK BING</label>
-        <sharedTo>
-            <group>YBN_Operations</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Brians_West_Prospects</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.SITE</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.LAST_NAME</field>
-            <operation>equals</operation>
-            <value>Armstrong</value>
-        </filters>
-        <filters>
-            <field>Account_Owner_Last_Modified_Date__c</field>
-            <operation>equals</operation>
-            <value>8/25/2014 12:00 AM</value>
-        </filters>
-        <label>Brians West Prospects</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_My_CPP_Accounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>Partner_Status__c</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>ACCOUNT.LAST_ACTIVITY</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Account.Partner_Master_Account</value>
-        </filters>
-        <label>CPP - My CPP Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>CPP_Program</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>Partner_Status__c</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>OEM_Customer_Identifier__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Account.Partner_Master_Account</value>
-        </filters>
-        <filters>
-            <field>Partner_Status__c</field>
-            <operation>equals</operation>
-            <value>Customer</value>
-        </filters>
-        <label>CPP - All CPP Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>Client_Side_Client_Update</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.SITE</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>Client_Side_ClientPL__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Client_Side_ClientPL__c</field>
-            <operation>equals</operation>
-        </filters>
-        <label>Client Side Client Update</label>
-        <sharedTo>
-            <group>YBN_Operations</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Clockwork_Sponsored_OFF_OFF</fullName>
-        <booleanFilter>(1 OR 2 OR 3) AND 4 AND 5 AND 6</booleanFilter>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.NAME</field>
-            <operation>contains</operation>
-            <value>one hour air</value>
-        </filters>
-        <filters>
-            <field>ACCOUNT.NAME</field>
-            <operation>contains</operation>
-            <value>ben franklin</value>
-        </filters>
-        <filters>
-            <field>ACCOUNT.NAME</field>
-            <operation>contains</operation>
-            <value>Mister Sparky</value>
-        </filters>
-        <filters>
-            <field>AdStation_Status__c</field>
-            <operation>equals</operation>
-            <value>OFF</value>
-        </filters>
-        <filters>
-            <field>Email__c</field>
-            <operation>notContain</operation>
-            <value>adfund</value>
-        </filters>
-        <filters>
-            <field>Client_First_Name__c</field>
-            <operation>notEqual</operation>
-            <value>ad</value>
-        </filters>
-        <label>Clockwork Sponsored OFF</label>
-        <sharedTo>
-            <group>SalesExec</group>
-            <role>YBN_SDR_IL</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>JCI2</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>PARENT_NAME</field>
-            <operation>contains</operation>
-            <value>Johnson Control</value>
-        </filters>
-        <filters>
-            <field>AdStation_Status__c</field>
-            <operation>equals</operation>
-            <value>SALES,OFF</value>
-        </filters>
-        <filters>
-            <field>Sub_Status__c</field>
-            <operation>equals</operation>
-            <value>live</value>
-        </filters>
-        <label>JCI</label>
-    </listViews>
-    <listViews>
-        <fullName>Lighthouse_PP_or_WS</fullName>
-        <booleanFilter>1 OR 2</booleanFilter>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.SITE</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Product_Type_Transactional__c</field>
-            <operation>contains</operation>
-            <value>PP</value>
-        </filters>
-        <filters>
-            <field>Product_Type_Transactional__c</field>
-            <operation>contains</operation>
-            <value>WS</value>
-        </filters>
-        <label>Lighthouse PP or WS</label>
-    </listViews>
-    <listViews>
         <fullName>Live_Accounts_w_o_Service_Levels</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.ADDRESS1_STATE</columns>
@@ -13175,125 +12956,6 @@ or(
         <label>Live Accounts w/o Service Levels</label>
     </listViews>
     <listViews>
-        <fullName>Lockbox_round_7_Yellow</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>Number_of_Locations__c</columns>
-        <columns>Number_of_Locations_Specific__c</columns>
-        <columns>National_Segment_Color__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.TYPE</field>
-            <operation>contains</operation>
-            <value>National-Master Prospect</value>
-        </filters>
-        <filters>
-            <field>Marketing_Initiative__c</field>
-            <operation>notContain</operation>
-            <value>Lockbox Campaign</value>
-        </filters>
-        <filters>
-            <field>National_Segment_Color__c</field>
-            <operation>contains</operation>
-            <value>Yellow</value>
-        </filters>
-        <filters>
-            <field>National_Account_Status__c</field>
-            <operation>notContain</operation>
-            <value>Customer,Inactive,Former Customer</value>
-        </filters>
-        <label>Lockbox round 7 Yellow</label>
-    </listViews>
-    <listViews>
-        <fullName>Mark_Montgomery_Active_Master_Accounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Client_ID__c</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Account_Director__c</field>
-            <operation>equals</operation>
-            <value>Mark Montgomery</value>
-        </filters>
-        <filters>
-            <field>ACCOUNT.TYPE</field>
-            <operation>equals</operation>
-            <value>Customer</value>
-        </filters>
-        <label>Mark Montgomery Active Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>Mark_Montgomery_Prospect_Master_Accounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Account.YBN_Corporate_Relationship</value>
-        </filters>
-        <filters>
-            <field>Account_Director__c</field>
-            <operation>equals</operation>
-            <value>Mark Montgomery</value>
-        </filters>
-        <filters>
-            <field>National_Account_Status__c</field>
-            <operation>equals</operation>
-            <value>Prospect</value>
-        </filters>
-        <label>Mark Montgomery Prospect Master Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>Mark_Montgomery_Recent_Activity_All</fullName>
-        <columns>Days_Since_Last_Activity__c</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Account_Director__c</field>
-            <operation>equals</operation>
-            <value>Mark Montgomery</value>
-        </filters>
-        <filters>
-            <field>Days_Since_Last_Activity__c</field>
-            <operation>lessThan</operation>
-            <value>7</value>
-        </filters>
-        <label>Mark Montgomery Accounts 7 Day Activity</label>
-    </listViews>
-    <listViews>
-        <fullName>Mark_Montgomery_YBN_Master_Accounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Account_Director__c</field>
-            <operation>equals</operation>
-            <value>Mark Montgomery</value>
-        </filters>
-        <filters>
-            <field>National_Account_Status__c</field>
-            <operation>equals</operation>
-            <value>Customer</value>
-        </filters>
-        <label>Mark Montgomery YBN Master Accounts</label>
-    </listViews>
-    <listViews>
         <fullName>My_Accounts</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>Relationship_ID__c</columns>
@@ -13308,118 +12970,55 @@ or(
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Naturalawn</fullName>
+        <fullName>My_Accounts_Standard</fullName>
         <columns>ACCOUNT.NAME</columns>
+        <columns>Relationship_ID__c</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Client_Type__c</columns>
         <columns>ACCOUNT.ADDRESS1_STATE</columns>
         <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
+        <filterScope>Mine</filterScope>
         <filters>
-            <field>PARENT_NAME</field>
-            <operation>contains</operation>
-            <value>Naturalawn</value>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Standard</value>
         </filters>
-        <label>Naturalawn</label>
+        <filters>
+            <field>IMS_Rep__c</field>
+            <operation>equals</operation>
+            <value>Emily Garza</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>LIVE</value>
+        </filters>
+        <label>My Accounts_Standard</label>
         <sharedTo>
-            <group>SalesExec</group>
+            <roleAndSubordinates>Operations</roleAndSubordinates>
         </sharedTo>
     </listViews>
     <listViews>
         <fullName>New_This_Week</fullName>
+        <columns>Parent_Name__c</columns>
         <columns>ACCOUNT.NAME</columns>
+        <columns>Client_ID__c</columns>
+        <columns>Client_Type__c</columns>
         <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
         <columns>ACCOUNT.TYPE</columns>
         <columns>CORE.USERS.ALIAS</columns>
+        <columns>Status__c</columns>
         <columns>Product_Type__c</columns>
+        <columns>ACCOUNT.RECORDTYPE</columns>
+        <columns>Biz_Dev_Internal_Product_Division__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>ACCOUNT.CREATED_DATE</field>
             <operation>equals</operation>
             <value>THIS_WEEK</value>
-        </filters>
-        <filters>
-            <field>Product_Type__c</field>
-            <operation>equals</operation>
-            <value>organic</value>
         </filters>
         <label>New This Week</label>
-    </listViews>
-    <listViews>
-        <fullName>New_This_Week2</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.CREATED_DATE</field>
-            <operation>equals</operation>
-            <value>THIS_WEEK</value>
-        </filters>
-        <filters>
-            <field>Yodle_Client_Type__c</field>
-            <operation>equals</operation>
-            <value>yodle live</value>
-        </filters>
-        <filters>
-            <field>ACCOUNT.TYPE</field>
-            <operation>equals</operation>
-            <value>National-Master Prospect</value>
-        </filters>
-        <label>New This Week2</label>
-    </listViews>
-    <listViews>
-        <fullName>PartnerAccount_Report_vs_Apex_Page</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Product_Type__c</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>Client_Type__c</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
-        <columns>Status__c</columns>
-        <columns>Product_Type_Transactional__c</columns>
-        <columns>Sales_Rep_Name_YL__c</columns>
-        <columns>Contact_Name__c</columns>
-        <columns>Client_ID__c</columns>
-        <columns>IMS_Rep__c</columns>
-        <columns>PARENT_NAME</columns>
-        <columns>Channel_Development__c</columns>
-        <columns>Channel_Partner_Type__c</columns>
-        <columns>Children_Accounts_Live__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Account.Partner_Master_Account,Account.LH_Master_Account,Account.Multi_Location_Parent</value>
-        </filters>
-        <filters>
-            <field>ACCOUNT.NAME</field>
-            <operation>contains</operation>
-            <value>dental</value>
-        </filters>
-        <label>Subba PartnerAccount Report vs Apex Page</label>
-    </listViews>
-    <listViews>
-        <fullName>Rogers_Unshared_Accounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Rogers</value>
-        </filters>
-        <filters>
-            <field>CONNECTION_SENT.NAME</field>
-            <operation>equals</operation>
-        </filters>
-        <label>Rogers Unshared Accounts</label>
     </listViews>
     <listViews>
         <fullName>SD_My_Corporate_Accounts</fullName>
@@ -13441,232 +13040,25 @@ or(
         <label>SDs -  My Corporate Accounts</label>
     </listViews>
     <listViews>
-        <fullName>Subba_LightHouse_Accounts</fullName>
+        <fullName>SMB_Accounts</fullName>
+        <columns>Parent_Name__c</columns>
         <columns>ACCOUNT.NAME</columns>
-        <columns>PARENT_NAME</columns>
-        <columns>Multi_Location_Owner_Primary_CID__c</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>Cancellation_Status__c</columns>
-        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
-        <columns>Client_Type__c</columns>
-        <columns>Marketo_ID__c</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Client_ID__c</columns>
         <columns>Status__c</columns>
-        <columns>Product_Type_Transactional__c</columns>
-        <columns>Sales_Rep_Name_YL__c</columns>
-        <columns>Contact_Name__c</columns>
-        <columns>Client_ID__c</columns>
-        <columns>IMS_Rep__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Product_Type__c</field>
-            <operation>contains</operation>
-            <value>Lighthouse</value>
-        </filters>
-        <filters>
-            <field>Status__c</field>
-            <operation>equals</operation>
-            <value>LIVE</value>
-        </filters>
-        <label>Subba LightHouse Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>Subba_NonCSI_WebRemaining_Clients</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>PARENT_NAME</columns>
-        <columns>Client_Type__c</columns>
-        <columns>Product_Type_Transactional__c</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>Cancellation_Status__c</columns>
-        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
-        <columns>Client_ID__c</columns>
-        <columns>Marketo_ID__c</columns>
-        <columns>Multi_Location_Owner_Primary_CID__c</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
-        <columns>Status__c</columns>
-        <columns>Sales_Rep_Name_YL__c</columns>
-        <columns>Contact_Name__c</columns>
-        <columns>IMS_Rep__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Client_Type__c</field>
-            <operation>contains</operation>
-            <value>Local</value>
-        </filters>
-        <filters>
-            <field>Status__c</field>
-            <operation>equals</operation>
-            <value>LIVE</value>
-        </filters>
-        <label>Subba NonCSI WebRemaining Clients</label>
-    </listViews>
-    <listViews>
-        <fullName>Subba_Recently_Created_Accounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>PARENT_NAME</columns>
-        <columns>Product_Type_Transactional__c</columns>
-        <columns>Client_ID__c</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
         <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <columns>Cancellation_Status__c</columns>
-        <columns>Client_Type__c</columns>
-        <columns>Marketo_ID__c</columns>
-        <columns>Status__c</columns>
-        <columns>YO_Status__c</columns>
-        <columns>Client_E_mail__c</columns>
-        <columns>Contact_Name__c</columns>
         <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.CREATED_DATE</field>
-            <operation>equals</operation>
-            <value>LAST_N_DAYS:10</value>
-        </filters>
-        <label>Subba Recently Created Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>Subba_WBN_CSI_and_NonCSI_Clients</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>PARENT_NAME</columns>
-        <columns>Client_Type__c</columns>
-        <columns>Product_Type_Transactional__c</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>Cancellation_Status__c</columns>
-        <columns>Client_ID__c</columns>
-        <columns>Marketo_ID__c</columns>
-        <columns>Multi_Location_Owner_Primary_CID__c</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
-        <columns>Status__c</columns>
-        <columns>Sales_Rep_Name_YL__c</columns>
-        <columns>Contact_Name__c</columns>
-        <columns>IMS_Rep__c</columns>
-        <columns>Biz_Dev_Internal_Product_Division__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Client_Type__c</field>
-            <operation>equals</operation>
-            <value>YBN</value>
-        </filters>
         <filters>
             <field>ACCOUNT.RECORDTYPE</field>
             <operation>equals</operation>
             <value>Account.Standard</value>
         </filters>
-        <label>Subba WBN CSI and NonCSI Clients</label>
-    </listViews>
-    <listViews>
-        <fullName>Subba_WBN_TouchPoint_All_Accounts</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND ( 4 or 5)</booleanFilter>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>PARENT_NAME</columns>
-        <columns>Product_Type_Transactional__c</columns>
-        <columns>Individual_Location_Service_Level__c</columns>
-        <columns>Last_Completed_YBN_TP__c</columns>
-        <columns>Next_TP_Trigger_Date__c</columns>
-        <columns>Marketo_ID__c</columns>
-        <columns>Marketo_ID_For_Touchplan__c</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
-        <columns>Status__c</columns>
-        <columns>ACCOUNT.RECORDTYPE</columns>
-        <columns>YBN_Relationship__c</columns>
-        <columns>Client_ID__c</columns>
-        <columns>Multi_Location_Owner_Primary_CID__c</columns>
-        <columns>Primary_Multi_Location_Owner_For_TP__c</columns>
-        <filterScope>Everything</filterScope>
         <filters>
-            <field>Next_TP_Trigger_Date__c</field>
-            <operation>notEqual</operation>
+            <field>Parent_Name__c</field>
+            <operation>contains</operation>
+            <value>SMB</value>
         </filters>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Account.Standard,Account.YBN_Corporate_Relationship</value>
-        </filters>
-        <filters>
-            <field>Status__c</field>
-            <operation>equals</operation>
-            <value>LIVE</value>
-        </filters>
-        <filters>
-            <field>Multi_Location_Owner_Primary_CID__c</field>
-            <operation>equals</operation>
-        </filters>
-        <filters>
-            <field>Primary_Multi_Location_Owner_For_TP__c</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <label>Subba WBN TouchPoint All Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>Subba_WBN_TouchPoint_Triggered_Accounts</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND ( 5 or 6)</booleanFilter>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>PARENT_NAME</columns>
-        <columns>Product_Type_Transactional__c</columns>
-        <columns>Individual_Location_Service_Level__c</columns>
-        <columns>Last_Completed_YBN_TP__c</columns>
-        <columns>Next_TP_Trigger_Date__c</columns>
-        <columns>Next_TP_Needed_By__c</columns>
-        <columns>Marketo_ID__c</columns>
-        <columns>Marketo_ID_For_Touchplan__c</columns>
-        <columns>Status__c</columns>
-        <columns>ACCOUNT.RECORDTYPE</columns>
-        <columns>YBN_Relationship__c</columns>
-        <columns>Client_ID__c</columns>
-        <columns>Multi_Location_Owner_Primary_CID__c</columns>
-        <columns>Primary_Multi_Location_Owner_For_TP__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Next_TP_Trigger_Date__c</field>
-            <operation>notEqual</operation>
-        </filters>
-        <filters>
-            <field>YBN_Relationship__c</field>
-            <operation>equals</operation>
-            <value>Hand &amp; Stone - Master,Senior Helpers,Maaco</value>
-        </filters>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Account.Standard,Account.YBN_Corporate_Relationship</value>
-        </filters>
-        <filters>
-            <field>Status__c</field>
-            <operation>equals</operation>
-            <value>LIVE</value>
-        </filters>
-        <filters>
-            <field>Multi_Location_Owner_Primary_CID__c</field>
-            <operation>equals</operation>
-        </filters>
-        <filters>
-            <field>Primary_Multi_Location_Owner_For_TP__c</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <label>Subba WBN TouchPoint Triggered Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>submit</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>Partner_ID__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Yodle_Submit_Type__c</field>
-            <operation>equals</operation>
-            <value>Registered</value>
-        </filters>
-        <filters>
-            <field>Sales_Person__c</field>
-            <operation>equals</operation>
-        </filters>
-        <label>submit</label>
+        <label>SMB Accounts</label>
     </listViews>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
@@ -29303,6 +28695,10 @@ or(
                 <fullName>Enterprise Online</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>SMB</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Biz_Dev_Partner_Status__c</picklist>
@@ -31585,6 +30981,10 @@ or(
                 <default>false</default>
             </values>
             <values>
+                <fullName>Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>N%2FA</fullName>
                 <default>false</default>
             </values>
@@ -31597,6 +30997,10 @@ or(
                 <default>false</default>
             </values>
             <values>
+                <fullName>Public Administration</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Real Estate and Rental and Leasing</fullName>
                 <default>false</default>
             </values>
@@ -31606,6 +31010,10 @@ or(
             </values>
             <values>
                 <fullName>Transportation and Warehousing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -31939,6 +31347,10 @@ or(
             </values>
             <values>
                 <fullName>OMSVision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oasis</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -32919,6 +32331,133 @@ or(
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vendor_Type__c</picklist>
+            <values>
+                <fullName>Ads%2FSEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Analytics%2FBI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Booking%2FScheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call Center Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative%2FAgency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development-for-hire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Directory%2FListings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resources%2FRecruiting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMS%2FSMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photos%2FImages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platform%2FCompetitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reviews</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software%2FTechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Values</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Websites</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

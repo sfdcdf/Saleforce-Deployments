@@ -153,7 +153,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -1412,14 +1412,6 @@ ISPICKVAL( Reason_2__c , "Multiple Lines Same Issue"),
 ISPICKVAL( Reason_2__c , "Other"),
 ISPICKVAL( Reason_2__c , "Multiple Lines Different Issue")))</errorConditionFormula>
         <errorMessage>You must enter the notes field if you select "multiple lines same issue", "multiple lines different issue"  or "Other".</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Solicitor_Calls_Opens_Numbers_Blacklist</fullName>
-        <active>false</active>
-        <description>When you select that the client is receiving solicitor calls, it opens the field for numbers to be blacklisted.</description>
-        <errorConditionFormula>AND(ispickval(Solicitor_Calls__c,"Yes"),
-isblank(Numbers_to_be_blacklisted__c))</errorConditionFormula>
-        <errorMessage>You must enter numbers to be blacklisted when there have been solicitor calls.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Tracking_Number_Must_Be_Numbers</fullName>

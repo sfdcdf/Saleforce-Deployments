@@ -153,7 +153,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -24450,49 +24450,6 @@ ISPICKVAL(PRIORVALUE( Status__c ), "Closed - Could Not Complete")))</errorCondit
         <errorMessage>You cannot move from a Closed Status to an Opened Status. In order to re-open a case, you must clone and re-submit.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Fields_Required_Upon_Closing</fullName>
-        <active>false</active>
-        <description>You must fill out the following fields when closing out a CS Ops request: Operations Owner, Request Category, Minutes to Complete Request and Summary of Request</description>
-        <errorConditionFormula>AND(
-not ( ispickval(Type__c , "Operation Upsell Additions")),
-not( RecordTypeId = "012600000009ZFV"),
-not ( RecordTypeId = "012600000009brR"),
-OR(
-ISBLANK( Operations_Owner__c ),
-ISBLANK( TEXT(Request_Category__c )),
-ISBLANK( Minutes_to_Complete_Request__c ),
-ISBLANK( Summary_of_Request__c )),
-OR(
-ISPICKVAL( Status__c ,"Closed - Added"),
-ISPICKVAL( Status__c,"Closed - Not Eligible"),
-ISPICKVAL( Status__c,"Closed - Completed"),
-ISPICKVAL( Status__c,"Closed - Could Not Complete")))</errorConditionFormula>
-        <errorMessage>You must fill out the following fields when closing out a CS Ops request: Operations Owner, Request Category, Minutes to Complete Request and Summary of Request</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Franchise_Affected_Required</fullName>
-        <active>false</active>
-        <description>Franchise Affected must be filled out when submitting a National Project Request</description>
-        <errorConditionFormula>AND(
-ISBLANK (Franchise_Affected__c ),
-ISPICKVAL( Request_Type__c , "National Project Request"))</errorConditionFormula>
-        <errorMessage>Franchise Affected must be filled out when submitting a National Project Request</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Minimum_Time_to_Complete</fullName>
-        <active>false</active>
-        <description>The minimum "Estimate Minutes to Complete" and "Minutes to Complete Request" is 15. Please change to 15 and re-save.</description>
-        <errorConditionFormula>OR(
-AND(
-OR(Minutes_to_Complete_Request__c &lt; 15, Estimated_Minutes_to_Complete__c &lt;15),
-NOT(ispickval(Channel_Requested_By__c, "National"))),
-
-AND(
-OR(Minutes_to_Complete_Request__c &lt; 5, Estimated_Minutes_to_Complete__c &lt;5),
-ispickval(Channel_Requested_By__c, "National")))</errorConditionFormula>
-        <errorMessage>The minimum "Estimate Minutes to Complete" and "Minutes to Complete Request" is 15. Please change to 15 and re-save.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Must_Complete_Close_Notes</fullName>
         <active>true</active>
         <errorConditionFormula>and (
@@ -24502,31 +24459,6 @@ ispickval (Status__c, "Closed - Could Not Complete")),
 isblank (Close_Notes__c))</errorConditionFormula>
         <errorDisplayField>Close_Notes__c</errorDisplayField>
         <errorMessage>Please complete the close notes when moving to a closed status.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Must_Fill_Out_Expected_Completion_Date</fullName>
-        <active>false</active>
-        <description>Must fill out expected completion date</description>
-        <errorConditionFormula>AND( 
-( RecordTypeId = "012600000009XNe"), 
-AND( 
-ISBLANK( Expected_Completion_Date__c ), 
-AND( 
-OR (ISPICKVAL( Status__c,"In Progress"), 
-ISPICKVAL( Status__c,"Closed - Completed"), 
-ISPICKVAL( Status__c,"Closed - Could Not Complete"), 
-ISPICKVAL( Status__c,"Closed - Added"), 
-ISPICKVAL( Status__c,"Closed - Not Eligible"), 
-ISPICKVAL( Status__c,"Closed - Not Approved"), 
-ISPICKVAL( Status__c,"Closed: Upgraded"), 
-ISPICKVAL( Status__c,"Closed - Declined by Channel Lead"), 
-ISPICKVAL( Status__c,"Closed: Downgraded")
-
- 
-
-))))</errorConditionFormula>
-        <errorDisplayField>Expected_Completion_Date__c</errorDisplayField>
-        <errorMessage>You must fill out an expected completion date</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Must_Select_Request_Type</fullName>
@@ -24544,45 +24476,6 @@ ispickval (Request_Type__c,""))</errorConditionFormula>
         <errorMessage>Please select a request type that best reflects your request.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>National_Project_Macro</fullName>
-        <active>false</active>
-        <description>When closing a National Project request, you must fill out the "Macro Used?" field. If a macro was used to complete the request, please select Yes. Otherwise, select No.</description>
-        <errorConditionFormula>and (  
-
-OR( $RecordType.Id = "012600000009WI0", 
-ISPICKVAL(Type__c , "National Project")),
-
-ispickval (Status__c, "Closed - Completed"), 
-NOT(ispickval ( Macro_Used__c,"Yes")),
-NOT(ispickval ( Macro_Used__c,"No")))</errorConditionFormula>
-        <errorDisplayField>Macro_Used__c</errorDisplayField>
-        <errorMessage>When closing a National Project request, you must fill out the "Macro Used?" field. If a macro was used to complete the request, please select Yes. Otherwise, select No.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>National_Project_Macro_Used</fullName>
-        <active>false</active>
-        <description>When using a macro to complete a National Project request, you must select the Bulk Change Type field and include the minutes saved by using the macro. If the appropriate change type is not present, please escalate to get it added.</description>
-        <errorConditionFormula>and ( 
-ispickval ( Macro_Used__c,"Yes"),
-
-OR(
-ispickval (  Bulk_Change_Type__c, ""),
-isblank ( Minutes_Saved__c )) )</errorConditionFormula>
-        <errorDisplayField>Bulk_Change_Type__c</errorDisplayField>
-        <errorMessage>When using a macro to complete a National Project request, you must select the Bulk Change Type field and include the minutes saved by using the macro. If the appropriate change type is not present, please escalate to get it added.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>National_Project_Must_be_National_Channe</fullName>
-        <active>false</active>
-        <description>Only requests coming from the National Channel can use the National Project type. Please select another type that more accurately reflects your request.</description>
-        <errorConditionFormula>AND( 
-AND(NOT(ISPICKVAL(Channel_Requested_By__c, "National")),
-NOT(ISPICKVAL(Channel_Requested_By__c, "Operations"))),
-ISPICKVAL(Type__c, "National Project"))</errorConditionFormula>
-        <errorDisplayField>Type__c</errorDisplayField>
-        <errorMessage>Only requests coming from the National Channel can use the National Project type. Please select another type that more accurately reflects your request.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>New_Account_Must_add_Old_Client_ID</fullName>
         <active>true</active>
         <errorConditionFormula>and ( 
@@ -24590,34 +24483,6 @@ ispickval (Request_Type__c , "New Account Addition"),
 isblank ( If_New_Account_Original_Client_ID__c ))</errorConditionFormula>
         <errorDisplayField>If_New_Account_Original_Client_ID__c</errorDisplayField>
         <errorMessage>You must fill out the client id of the original account when submitting a new account addition.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>New_Report_Request_Priority</fullName>
-        <active>false</active>
-        <errorConditionFormula>and(
-ISPICKVAL(New_Report_Request_Priortiy__c, ""),
-ISPICKVAL( Type__c , "New Report Request"))</errorConditionFormula>
-        <errorMessage>You must fill in the new report request priority when selecting a new report.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Nominee_Name_must_be_filled_out</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(
-OR(
-ISPICKVAL(Recognition_Category__c,"Superstar"),
-ISPICKVAL(Recognition_Category__c,"Superstar Manager"),
-ISPICKVAL(Recognition_Category__c,"President's Club - Customers Rule"),
-ISPICKVAL(Recognition_Category__c,"President's Club - Leadership")),
-ISBLANK( Nominee_Name__c ))</errorConditionFormula>
-        <errorMessage>If you are nominating an individual, you must fill out the Nominee Name field</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Team_name_must_be_filled_out</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND(
-ISPICKVAL(Recognition_Category__c,"Team of the Month"),
-ISBLANK( Nominated_Team_if_applicable__c))</errorConditionFormula>
-        <errorMessage>If you are nominating a team for Team of the Month, you must fill out the Nominated Team field</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Upgrade_Downgrade_Other_Notes_filled_out</fullName>
@@ -24629,52 +24494,6 @@ ISPICKVAL(Upgrade_Reason__c,"Other"),
 ISPICKVAL(Downgrade_Reason__c,"Missing feature / Other")))</errorConditionFormula>
         <errorDisplayField>Upgrade_Downgrade_Other_Notes__c</errorDisplayField>
         <errorMessage>Must Fill Out Other Notes if "Other" is selection for Upgrade Reason or if "Other / Missing Feature" is selected for Downgrade Reason</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_Account_or_Service_Level_Update</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
-(RecordTypeId ="012600000009ZFV"),
-ispickval(  Type__c ,"Account Update"),
-isblank( Account__c ))</errorConditionFormula>
-        <errorDisplayField>Account__c</errorDisplayField>
-        <errorMessage>The "Account" field must be filled out with the specific account you wish to update.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_IL_Service_Level_Update</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
-(RecordTypeId ="012600000009ZFV"),
-ispickval(Request_Type__c ,"Indiviudal Location Service Level Update - For All Accounts"),
-AND(
-Or(
-ispickval(  Service_Level_Type__c ,"" ),
-ispickval(    Existing_Service_Level__c   ,"" ))))</errorConditionFormula>
-        <errorMessage>The "proposed IL service level" and "existing IL service level" fields must be filled out</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_Service_Level_Assignment_for_newacct</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
-(RecordTypeId ="012600000009ZFV"),
-ispickval(Request_Type__c ,"Service Level Assignment for New Relationship"),
-AND(
-Or(
-ispickval( Proposed_Corporate_Service_Level__c,"" ),
-ispickval(  Service_Level_Type__c ,"" ))))</errorConditionFormula>
-        <errorMessage>The "proposed corporate service level" and "proposed IL service level" must be filled out</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_Service_Level_Update</fullName>
-        <active>false</active>
-        <errorConditionFormula>And(
-(RecordTypeId ="012600000009ZFV"),
-ispickval(Request_Type__c ,"Service Level Update/Assignment"),
-AND(
-Or(
-ispickval( Proposed_Corporate_Service_Level__c,"" ),
-ispickval(   Exisiting_Corporate_Service_Level__c  ,"" ))))</errorConditionFormula>
-        <errorMessage>The "proposed corporate service level" and "existing corporate service level" fields must be filled out</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

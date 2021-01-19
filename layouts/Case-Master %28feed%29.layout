@@ -145,10 +145,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>RAF_Followup__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Consumables_Retained__c</field>
             </layoutItems>
         </layoutColumns>
@@ -160,10 +156,6 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Reason_Detail__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Tier_2_Support__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -187,27 +179,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>LH_Client_Portal__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>LH_360_ID__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
                 <field>Important_National_Notes_del__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Chat_Code__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>JIRA_Issue_ID__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>JIRA_URL__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -350,15 +326,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Survey_Code__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Survey_Code_2__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>True_Escalation__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -406,10 +374,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Sales_Person_text__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Developmental_Supervisor_del__c</field>
             </layoutItems>
             <layoutItems>
@@ -417,32 +381,7 @@
                 <field>Reason_for_QA__c</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Result_of_QA__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Quality_Offense__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Minutes_Recorded__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Words_Transcribed__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Date_Processed_QA__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>QA_Action_Taken__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
@@ -648,10 +587,6 @@
         </relatedLists>
         <relatedLists>
             <fields>NAME</fields>
-            <relatedList>Call_Answering__c.Case__c</relatedList>
-        </relatedLists>
-        <relatedLists>
-            <fields>NAME</fields>
             <relatedList>Cancellation_Request__c.Case__c</relatedList>
         </relatedLists>
     </miniLayout>
@@ -741,10 +676,6 @@
         <relatedList>Quality_Case__c.Parent_Case__c</relatedList>
         <sortField>Created_Date__c</sortField>
         <sortOrder>Desc</sortOrder>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Call_Answering__c.Case__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>

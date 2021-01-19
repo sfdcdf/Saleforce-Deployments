@@ -153,7 +153,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -6410,6 +6410,8 @@ Estimated_In__c &lt; 20001),
         <columns>CREATED_DATE</columns>
         <columns>UPDATEDBY_USER</columns>
         <columns>LAST_UPDATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>RECORDTYPE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -18333,22 +18335,6 @@ Estimated_In__c &lt; 20001),
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
-        <fullName>Conf_Check_Box_CRM_Yes</fullName>
-        <active>false</active>
-        <description>When in Stage 5 and Do they Use a CRM is yes, the confirmation checkbox is required.</description>
-        <errorConditionFormula>AND(
- RecordTypeId   = "012600000009WvT",
-OR(
-ISPICKVAL(  Sub_Status__c , "Contract Review"),
-ISPICKVAL(Sub_Status__c, "Revised Contract Review"),
-ISPICKVAL( Sub_Status__c, "Contract Signed")),
-AND(
-ISPICKVAL( Do_they_use_CRM__c , "Yes"),
-( Confirmation__c = FALSE)))</errorConditionFormula>
-        <errorDisplayField>Confirmation__c</errorDisplayField>
-        <errorMessage>Required in Stage 5 and Do they Use CRM is Yes</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Initiation_Form_Manufacturer_Fields</fullName>
         <active>true</active>
         <errorConditionFormula>and(
@@ -18366,42 +18352,6 @@ isblank ( Client_Use_CRM__c )))</errorConditionFormula>
    -15-30 Days
    -30-60 Days
    -Client Use CRM Currently?</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Initiation_Form_Stage_2_Demo_Requirement</fullName>
-        <active>false</active>
-        <description>All requirements when Status is Stage 2 - Demo on the Initiation Form</description>
-        <errorConditionFormula>AND(
-RecordTypeId    = "012600000009WvT",
- ISPICKVAL(Status__c, "Stage 2 – Demo"),
-OR(
-ISNULL( Demo_Date__c ),
-ISBLANK( Total_Number_of_Locations__c ),
-ISPICKVAL( National_Relationship_Type__c ,""),
-ISBLANK ( Specific_Services_to_highlight__c ),
-ISBLANK( Corporate_Website_Domain__c ),
-ISPICKVAL( Local_Website_Structure__c , ""),
-ISPICKVAL ( Who_Hosts_Local_Sites__c, "" ),
-ISPICKVAL( Who_maintains_and_updates_local_sites__c, "" ),
-ISBLANK( What_online_marketing_efforts_are_in_use__c ),
-ISBLANK ( Who_created_maintained_owns_maps__c ),
-ISBLANK( Prospect_defining_success__c )))</errorConditionFormula>
-        <errorMessage>Fill out Total Number of Locations, Nat. Relat. Type, Specific Services to Highlight, Corporate Website Domain, Local Website Structure, Who Host Local Sites, Who maintains and updates sites, what online marketing efforts, Own Maps, and Prospect Defining</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Initiation_Form_Stage_3_Prop_Requirement</fullName>
-        <active>false</active>
-        <description>Requires fiels when Stage 3 Proposal is selected as a status</description>
-        <errorConditionFormula>AND(
- RecordTypeId = "012600000009WvT",
-ISPICKVAL(  Sub_Status__c  , "Submit Proposal for Review"),
-OR(
-ISBLANK( Conversion_rate_from_lead_to_sale__c ),
-ISBLANK( Average_Order_Value__c ),
-isblank( Prospect_defining_success__c ),
-ispickval( Do_they_use_CRM__c , ""),
-ispickval(  Franchisee_Territories__c , "")))</errorConditionFormula>
-        <errorMessage>When Stage 3 is selected, you must fill out fields in Stage 3 section.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Initiation_Form_Stage_4_Impl_CRM</fullName>

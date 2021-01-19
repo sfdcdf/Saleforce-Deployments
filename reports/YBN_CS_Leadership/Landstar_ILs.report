@@ -85,7 +85,7 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <name>Landstar Live Locations</name>
+    <name>Landstar Locations</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -95,7 +95,7 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortColumn>Account.Status__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>

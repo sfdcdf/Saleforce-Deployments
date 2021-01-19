@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
         <value>Cancellation Form</value>
@@ -4949,111 +4949,6 @@
         </sections>
     </layouts>
     <layouts>
-        <layout>LH Cancellation Request</layout>
-        <sections>
-            <label><!-- Account Information --></label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label><!-- Cancellation Codes --></label>
-            <section>Cancellation Codes</section>
-        </sections>
-        <sections>
-            <label><!-- Cancellation Details --></label>
-            <section>Cancellation Details</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Field Service --></label>
-            <section>Field Service</section>
-        </sections>
-        <sections>
-            <label><!-- Next Steps --></label>
-            <section>Next Steps</section>
-        </sections>
-        <sections>
-            <label><!-- System Information --></label>
-            <section>System Information</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Rogers Cancellation Request (feed)</layout>
-        <sections>
-            <label><!-- Account Information --></label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label><!-- Cancellation Code --></label>
-            <section>Cancellation Code</section>
-        </sections>
-        <sections>
-            <label><!-- Cancellation Outcome --></label>
-            <section>Cancellation Outcome</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Details --></label>
-            <section>Details</section>
-        </sections>
-        <sections>
-            <label><!-- Hard Concessions --></label>
-            <section>Hard Concessions</section>
-        </sections>
-        <sections>
-            <label><!-- Next Steps --></label>
-            <section>Next Steps</section>
-        </sections>
-        <sections>
-            <label><!-- Notes --></label>
-            <section>Notes</section>
-        </sections>
-        <sections>
-            <label><!-- Secondary Cancel Code --></label>
-            <section>Secondary Cancel Code</section>
-        </sections>
-        <sections>
-            <label><!-- Soft Concessions --></label>
-            <section>Soft Concessions</section>
-        </sections>
-        <sections>
-            <label><!-- Upsell Details --></label>
-            <section>Upsell Details</section>
-        </sections>
-        <sections>
-            <label><!-- Wrap-Up &amp; Confirmation --></label>
-            <section>Wrap-Up &amp; Confirmation</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>TORCHx Cancellation Request (feed)</layout>
-        <sections>
-            <label><!-- Account Information --></label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label><!-- Cancellation Code --></label>
-            <section>Cancellation Code</section>
-        </sections>
-        <sections>
-            <label><!-- Cancellation Outcome --></label>
-            <section>Cancellation Outcome</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Old Cancel Codes --></label>
-            <section>Old Cancel Codes</section>
-        </sections>
-    </layouts>
-    <layouts>
         <layout>WBN Cancellation Request (feed)</layout>
         <sections>
             <label><!-- Account Information --></label>
@@ -5131,15 +5026,7 @@
     <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field --></errorMessage>
-        <name>Cancel_Code_is_Lost_to_Competitor</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field --></errorMessage>
         <name>Cancel_Code_is_Lost_to_Competitor_new</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- If you choose Other as a Cancel Code, you must fill out Other Notes text box. --></errorMessage>
-        <name>Cancel_Code_is_Other_must_fill_out_Other</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- If you select a second Cancel Code, please also select a Cancel Code 2 Detail --></errorMessage>
@@ -5166,20 +5053,12 @@
         <name>Closing_must_fill_out_Additional_Notes</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- When closing this record, you must fill in the After Call Work Complete field. --></errorMessage>
-        <name>Closing_must_fill_out_After_call_work</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- When closing this record, you must fill in the Agent Confirmation field. --></errorMessage>
         <name>Closing_must_fill_out_Agent_Confirmation</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- When closing this record, you must fill in the Attempts to Contact field. --></errorMessage>
         <name>Closing_must_fill_out_Attempts_to_Contac</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- When closing this record, you must fill in the Cancel Code field. --></errorMessage>
-        <name>Closing_must_fill_out_Cancel_Code</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- When closing this record, you must fill in the Cancel Code field. --></errorMessage>
@@ -5202,32 +5081,12 @@
         <name>Closing_must_fill_out_Monthly_Revenue</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- When closing this record, you must fill in the Retention Consultant field. --></errorMessage>
-        <name>Closing_must_fill_out_Retention_Consulta</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- When closing this record, you must fill in the Send Confirmation to Client field. --></errorMessage>
-        <name>Closing_must_fill_out_Send_Confirmation</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- When closing this record, you must fill in the Verify Product Changes Status in YL field. --></errorMessage>
-        <name>Closing_must_fill_out_Verify_Product_cha</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- When closing this record, you must fill in the Within SLA field. --></errorMessage>
-        <name>Closing_must_fill_out_Within_SLA</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- When closing this record, you must fill in the Future Product field. --></errorMessage>
         <name>Closing_must_fill_out_future_Product</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please fill in the Additional Notes field to save this as a duplicate Cancellation Form. --></errorMessage>
         <name>Duplicate_Cancel_Request</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- You cannot select &quot;duplicate&quot; Cancel Reason. Please assign duplicate cases to Matthew Hausman to review. Thanks! --></errorMessage>
-        <name>Duplicate_can_only_be_selected_by_Matt_H</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- You do not have the permission to edit approved records. --></errorMessage>
@@ -5246,20 +5105,12 @@
         <name>LBW_Last_TP_Completed_Required</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- When Cancel Outcome is Churned, Cancellation Date Entered, Cancellation Code, Cancellation Code Details, Current Monthly Revenue, Date to Stop Service (Date) must be filled in. --></errorMessage>
-        <name>LH_Cancel_Churned_Required_Fields</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- When Cancel Outcome is Churned, Cancellation Date Entered, Cancel Code 1, Cancel Code 1 Details, Current Monthly Revenue, Date to Stop Service (Date) must be filled in. --></errorMessage>
         <name>LH_Cancel_Churned_Required_Fields_new</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- When customer is in the Free Time Period Cancel Outcome, please fill out the Next Scheduled Contact Date, Cancellation Code, Cancellation Code Details, and Current Monthly Revenue. --></errorMessage>
         <name>LH_Cancel_FreeTime_Req_Contact_Date_new</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- When customer is in the Free Time Period Cancel Outcome, please fill out the Next Scheduled Contact Date, Cancellation Code, Cancellation Code Details, and Current Monthly Revenue. --></errorMessage>
-        <name>LH_Cancel_Free_Time_Require_Contact_Date</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Future Monthly Revenue must be $0 when Churned. --></errorMessage>
@@ -5274,28 +5125,8 @@
         <name>LH_Cancel_Reqd_Fields_Cancel_Codes_new</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- When closing a LH Cancel Request case, you must fill out Future Monthly Revenue --></errorMessage>
-        <name>LH_Cancel_Required_Fields</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- When closing a LH Cancel Request case, you must fill out the Cancellation Code, Cancellation Code Details, and Current Monthly Revenue --></errorMessage>
-        <name>LH_Cancel_Required_Fields_Cancel_Codes</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Please Fill in Switching Systems? Field --></errorMessage>
-        <name>LH_Free_Time_Requires_Switching_Systems</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- Please update Refund field to the correct approved/declined value. --></errorMessage>
         <name>Local_or_LBW_Refund_Requested_Close</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- You must fill out First Cancel Code Notes field if you select a Cancel Code --></errorMessage>
-        <name>Must_fill_out_Cancel_Code_Notes</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- You must fill out Second Cancel Code Notes field if you select a Cancel Code --></errorMessage>
-        <name>Must_fill_out_Cancel_Code_Notes_2</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- You must fill out Second Cancel Code Notes field if you select a Cancel Code 2 option --></errorMessage>
@@ -5390,28 +5221,12 @@
         <name>TORCHx_Fields_that_Must_Be_FilledOut_new</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please fill in the Additional Notes, Attempts to Contact, Cancellation Code, Cancelaltion Code Details, and Retention Consultant fields. --></errorMessage>
-        <name>TORCHx_Fields_that_Must_Be_Filled_Out</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- Please fill out the Pre Launch Cancel Field. --></errorMessage>
         <name>TORCHx_Must_FillOut_PreLaunch_Cancel_new</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please fill out the Pre Launch Cancel Field. --></errorMessage>
-        <name>TORCHx_Must_Fill_out_PreLaunch_Cancel</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- You must fill out First Cancel Code Notes field if you select a Cancel Code --></errorMessage>
-        <name>TORCHx_Must_fill_out_Cancel_Code_Notes</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- You must enter a Teardown Date that is in the FUTURE when changing the Outcome to Cancelled. --></errorMessage>
         <name>Teardown_Date_Missing_on_Cancel</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Additional Notes are required for the cancellation codes selected. --></errorMessage>
-        <name>WBN_Additional_Notes_Required</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- You must fill out the Revenue Lost/Month --></errorMessage>

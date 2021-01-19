@@ -10,10 +10,10 @@
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
-        <field>Case.External_Ticket_ID__c</field>
+        <field>SUBJECT</field>
     </columns>
     <columns>
-        <field>SUBJECT</field>
+        <field>Case.Reason__c</field>
     </columns>
     <columns>
         <field>Account.Product_Type_Transactional__c</field>
@@ -45,13 +45,6 @@
             <operator>equals</operator>
             <value>Case.Charge_Failure</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>CREATED_DATE</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>TODAY</value>
-        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>Current Day Charge Failures</name>
@@ -72,6 +65,6 @@
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_TODAY</interval>
     </timeFrameFilter>
 </Report>

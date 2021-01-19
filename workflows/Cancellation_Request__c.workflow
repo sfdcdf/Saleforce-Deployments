@@ -8,38 +8,6 @@
         <template>unfiled$public/LBW_New_Cancellation_Alert</template>
     </alerts>
     <alerts>
-        <fullName>LH_Cancel_Ownership_Change_Alert</fullName>
-        <description>LH Cancel - Ownership Change Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Cancellation_Case_has_been_Assigned</template>
-    </alerts>
-    <alerts>
-        <fullName>LH_Canceled_Lighthouse_Auto_Account_Alert_to_BoltOn</fullName>
-        <ccEmails>billing@boltontechnology.com</ccEmails>
-        <description>LH - Canceled Lighthouse Auto Account - Alert to BoltOn</description>
-        <protected>false</protected>
-        
-        
-        <senderType>CurrentUser</senderType>
-        <template>Lighthouse_Auto_IB_OB/Canceled_Lighthouse_Auto_Account_Alert_to_BoltOn</template>
-    </alerts>
-    <alerts>
-        <fullName>LH_Cancellation_Request_Churned</fullName>
-        <description>LH Cancellation Request - Churned</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>LH_Cancel_Requests</recipient>
-            <type>group</type>
-        </recipients>
-        <senderAddress>cancel@lighthousepmg.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Support/LH_Cancellation_Request_Churned</template>
-    </alerts>
-    <alerts>
         <fullName>LSFS_Cancellation_Reqeust_Notification</fullName>
         <description>LSFS Cancellation Reqeust Notification</description>
         <protected>false</protected>
@@ -50,46 +18,6 @@
         <senderAddress>leadstreamsupport@web.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Lead_Stream_Templates/LSFS_Cancellation_Request_Notification</template>
-    </alerts>
-    <alerts>
-        <fullName>New_LH_Auto_Cancel_Request_has_been_created</fullName>
-        <description>New LH Auto Cancel Request has been created</description>
-        <protected>false</protected>
-        
-        <senderAddress>csops@yodle.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Lighthouse_Field_Service_Retention/Cancellation_Confirmation_Field_Service</template>
-    </alerts>
-    <alerts>
-        <fullName>TORCHx_Back_Down_Never_Went_Live</fullName>
-        <description>TORCHx Back Down/Never Went Live - Send Email</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Client_Email_from_Account__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>support@torchx.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Support/TORCHx_Unresponsive_Client_Cancellation_Email</template>
-    </alerts>
-    <alerts>
-        <fullName>TORCHx_Cancellation_Resolution_Email</fullName>
-        <description>TORCHx Cancellation Resolution Email</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>bosteros@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>james.carr@web.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>julia.correa@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Admin_Email_Templates/TORCHx_Cancellation_Email</template>
     </alerts>
     <alerts>
         <fullName>WBN_Alert_Owner_of_Approval</fullName>
@@ -256,16 +184,6 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Client_Email_from_Account</fullName>
-        <field>Client_Email_from_Account__c</field>
-        <formula>Account_Name__r.Email__c</formula>
-        <name>Client Email from Account</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>First_Cancel_Code_unknown</fullName>
         <field>Cancel_Code__c</field>
         <literalValue>Unknown</literalValue>
@@ -315,72 +233,12 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>LH_Cancel_Free_Time_Period</fullName>
-        <field>Free_Time__c</field>
-        <literalValue>1</literalValue>
-        <name>LH Cancel - Free Time Period</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>LH_Cancel_Free_Time_Period_CallDate</fullName>
-        <field>Next_Scheduled_Contact_Date__c</field>
-        <formula>NOW()+30</formula>
-        <name>LH Cancel - Free Time Period - CallDate</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>LH_Cancel_Free_Time_Period_Checkbox</fullName>
-        <field>Free_Time__c</field>
-        <literalValue>1</literalValue>
-        <name>LH Cancel - Free Time Period - Checkbox</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>LH_Cancellation_Fill_in_Date_of_Cancel</fullName>
-        <field>Date_of_Cancellation_Request__c</field>
-        <formula>TODAY()</formula>
-        <name>LH Cancellation - Fill in Date of Cancel</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>LH_Cancellation_Request_Churned</fullName>
-        <field>Future_Monthly_Revenue__c</field>
-        <formula>0</formula>
-        <name>LH Cancellation Request - Churned</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Office_Phone_FillIn</fullName>
         <field>Client_s_Phone__c</field>
         <formula>Account_Name__r.Phone</formula>
         <name>Office Phone FillIn</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>PreLaunch_Cancel_Select</fullName>
-        <field>Pre_Launch_Cancel__c</field>
-        <literalValue>1</literalValue>
-        <name>PreLaunch Cancel Select</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
@@ -471,17 +329,6 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <lookupValue>LBW_Customer_Service</lookupValue>
         <lookupValueType>Queue</lookupValueType>
         <name>Update Owner to LBW Customer Care</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Update_Owner_to_TORCHx_Retention_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>TORCHx_Retention</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Auto Assign to TORCHx Retention Team</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
@@ -617,21 +464,6 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
-        <fullName>Auto Assign to TORCHx Retention Team</fullName>
-        <actions>
-            <name>Update_Owner_to_TORCHx_Retention_Queue</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Cancellation_Request__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>TORCHx Cancellation Request</value>
-        </criteriaItems>
-        <description>Assigns TORCHx cancel forms to TORCHx Retention Queue</description>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>CF - Days Live at Created Date</fullName>
         <actions>
             <name>CF_Days_Live_at_Created_Date</name>
@@ -713,35 +545,6 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Canceled Lighthouse Auto Account - Alert to BoltOn</fullName>
-        <actions>
-            <name>LH_Canceled_Lighthouse_Auto_Account_Alert_to_BoltOn</name>
-            <type>Alert</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Cancellation_Request__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Cancellation Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Cancellation_Request__c.Type__c</field>
-            <operation>equals</operation>
-            <value>Auto</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Cancellation_Request__c.Account_Product_Type__c</field>
-            <operation>contains</operation>
-            <value>PP</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Cancellation_Request__c.Outcome__c</field>
-            <operation>equals</operation>
-            <value>Churned,Downsold to LH Only</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Cancellation - LBW Auto Close Clear Date</fullName>
         <actions>
             <name>Cancellation_Auto_Close_Clear_Date</name>
@@ -772,7 +575,7 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
         <criteriaItems>
             <field>User.Email</field>
             <operation>notEqual</operation>
-            <value>sfdc@enspireforenterprise.com</value>
+            <value>sfdc@yodle.com</value>
         </criteriaItems>
         <criteriaItems>
             <field>Cancellation_Request__c.Refund2__c</field>
@@ -883,85 +686,6 @@ Account_Name__r.Product_Type_Transactional__c)</formula>
             <field>Cancellation_Request__c.Auto_Close_Date__c</field>
             <operation>equals</operation>
             <value>TODAY</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Cancel - Free Time Period</fullName>
-        <actions>
-            <name>LH_Cancel_Free_Time_Period</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>LH_Cancel_Free_Time_Period_CallDate</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>LH_Cancel_Free_Time_Period_Checkbox</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>LH_Cancellation_Fill_in_Date_of_Cancel</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Cancellation_Request__c.Outcome__c</field>
-            <operation>equals</operation>
-            <value>Saved With Free Time,Dollar Sync Period</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Cancellation_Request__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Cancellation Request,TORCHx Cancellation Request</value>
-        </criteriaItems>
-        <description>.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Cancel - Ownership Change Alert</fullName>
-        <actions>
-            <name>LH_Cancel_Ownership_Change_Alert</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <formula>AND(RecordType.Name = "LH Cancellation Request", ISCHANGED( OwnerId ), LEFT(PRIORVALUE(OwnerId),3) = '00G', LEFT(OwnerId,3) = '005' )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Cancellation - Fill in Date of Cancellation Request</fullName>
-        <actions>
-            <name>LH_Cancellation_Fill_in_Date_of_Cancel</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Cancellation_Request__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Cancellation Request</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Cancellation Request - Churned</fullName>
-        <actions>
-            <name>LH_Cancellation_Request_Churned</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>LH_Cancellation_Request_Churned</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Cancellation_Request__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Cancellation Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Cancellation_Request__c.Outcome__c</field>
-            <operation>equals</operation>
-            <value>Churned</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -1086,80 +810,6 @@ Original Leadstream Auto Close First Cancel Code</description>
             <value>System Administrator</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx Back Down%2FNever Went Live</fullName>
-        <actions>
-            <name>TORCHx_Back_Down_Never_Went_Live</name>
-            <type>Alert</type>
-        </actions>
-        <active>false</active>
-        <formula>AND(  Account_Name__r.Product_Type_Transactional__c = "TORCHx",  ISPICKVAL( Outcome__c , "Cancelled"),  ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info"),  Includes(Cancellation_Code_Details__c, "Never Went Live"))</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx Back Down%2FNever Went Live New</fullName>
-        <actions>
-            <name>TORCHx_Back_Down_Never_Went_Live</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <description>New Cancel Codes Sends email to Customer when Cancellation Closed do to no response.</description>
-        <formula>AND(   Account_Name__r.Product_Type_Transactional__c = "TORCHx",   ISPICKVAL( Outcome__c , "Cancelled"),    OR(   AND(/*old codes*/     ISPICKVAL(Cancellation_Code__c, "Unresponsive Client: Website Info"),       Includes(Cancellation_Code_Details__c, "Never Went Live")      ),   AND( /*new codes*/     ISPICKVAL( Cancel_Code_1__c , "Unable To Make Contact"),       ISPICKVAL(  Cancel_Code_1_Details__c  , "Unresponsive to Fulfillment")     ),   AND(    ISPICKVAL( Cancel_Code_2__c , "Unable To Make Contact"),       ISPICKVAL(  Cancel_Code_2_Details__c  , "Unresponsive to Fulfillment")     )   ) )</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx Cancel Form fill out Client Email from Accout</fullName>
-        <actions>
-            <name>Client_Email_from_Account</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Cancellation_Request__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>TORCHx Cancellation Request</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx Cancellation Email</fullName>
-        <actions>
-            <name>TORCHx_Cancellation_Resolution_Email</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Cancellation_Request__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>TORCHx Cancellation Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Cancellation_Request__c.Outcome__c</field>
-            <operation>equals</operation>
-            <value>Saved with No Concessions,Saved with Hard Concessions,Saved with Soft Concessions,Saved with Upsell,Saved By Sales,Cancelled</value>
-        </criteriaItems>
-        <description>Fires Email Alert When TORCH Cancel Is Closed</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx PreLaunch Cancel Auto Check</fullName>
-        <actions>
-            <name>PreLaunch_Cancel_Select</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Cancellation_Request__c.Days_Live_at__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Cancellation_Request__c.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>TORCHx Cancellation Request</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Update Ownership to Duplicate Team</fullName>

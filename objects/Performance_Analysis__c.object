@@ -153,7 +153,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -4187,18 +4187,6 @@ Fill Out Unpaid Section and Unpaid Notes</inlineHelpText>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
-        <fullName>Close_Notes_Required</fullName>
-        <active>false</active>
-        <description>Add Notes before closing. This was deactivated and notes for each section are now required.</description>
-        <errorConditionFormula>And(
-RecordType.DeveloperName="Auto_Performance_Insights",
-/*RecordTypeId="0122a0000008TlS", Performance*/
-ISPICKVAL(Status__c, "Relevant Issue &amp; Work Completed"),
-LEN(Notes__c)&lt;10)</errorConditionFormula>
-        <errorDisplayField>Notes__c</errorDisplayField>
-        <errorMessage>Please add Notes before Closing this Issue</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>False_Positive_Notes_Required</fullName>
         <active>true</active>
         <description>If there is a False Positive Status than False Positive Notes are required.</description>
@@ -4262,22 +4250,6 @@ ISBLANK(TEXT(P_Updated_Geo_Messaging__c)),
         <errorMessage>Please fill out all fields in the Paid Optimization Tactics and Paid Optimization Notes</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Performance_No_Changes_after_Closed</fullName>
-        <active>false</active>
-        <description>prevent users from reopening these records.</description>
-        <errorConditionFormula>AND(
-RecordType.DeveloperName="Auto_Performance_Insights",
-$User.ProfileId&lt;&gt;"00e60000000nQe9" /*sys admin*/,
-NOT(Isblank(PRIORVALUE(Date_Opt_Completed__c))),
-Or(
-ISPICKVAL(PRIORVALUE(Status__c), "Relevant Issue &amp; Work Completed"),
-ISPICKVAL(PRIORVALUE(Status__c), "False Positive - Work Not Completed")
-)
-
-)</errorConditionFormula>
-        <errorMessage>You can not modify this record if it's already closed. Please contact @Salesforce Support in the Chatter Feed on this record if you closed by mistake or need assistance!</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Time_to_Complete_required</fullName>
         <active>true</active>
         <description>Time to complete is required on Closed and Relevant opportunities for Oracle</description>
@@ -4288,54 +4260,6 @@ ISBLANK(Time_To_Complete_Minutes__c)
 )</errorConditionFormula>
         <errorDisplayField>Time_To_Complete_Minutes__c</errorDisplayField>
         <errorMessage>Please enter in the Time to Complete in Minutes</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Unpaid_Optimization_Checks</fullName>
-        <active>false</active>
-        <description>All Unpaid Optimization must be filled in.</description>
-        <errorConditionFormula>AND( 
-ISPICKVAL(Status__c, "Relevant Issue &amp; Work Completed"),
-RecordType.DeveloperName="Auto_Performance_Insights", 
-/*RecordTypeId="0122a0000008TlS", Performance*/ 
-OR( 
-ISPICKVAL(HC_First_Page_Ranking_Below_Target__c, "Yes"), 
-ISPICKVAL(HC_Unpaid_Lead_Drop__c, "Yes")
-), 
-OR( 
-ISBLANK(TEXT(UP_Added_Schema_Mark_Up__c)), 
-ISBLANK(TEXT(UP_Created_Custom_Content_Case__c)),
-ISBLANK(TEXT(UP_Checked_Site_Speed__c)),
-ISBLANK(TEXT(UP_Fixed_Broken_Links__c)), 
-
-ISBLANK(TEXT(UP_Performed_Code_Clean_up__c)), 
-ISBLANK(TEXT(UP_Published_Site__c)), 
-ISBLANK(TEXT(UP_Recommended_Website_Updates__c)), 
-ISBLANK(TEXT(UP_Cleaned_Up_Schema_Mark_up__c)), 
-
-ISBLANK(TEXT(UP_Resolved_Crawl_Errors__c)), 
-ISBLANK(TEXT(UP_Resolved_Sitemap_Errors__c)), 
-ISBLANK(TEXT(UP_Submitted_to_G_B_Webmaster_Tools__c)), 
-
-ISBLANK(TEXT(UP_Updated_Bing_Listing__c)), 
-ISBLANK(TEXT(UP_Updated_Bing_Webmaster_Tools__c)), 
-ISBLANK(TEXT(UP_Updated_GMB_Listing__c)),
-
-
-ISBLANK(TEXT(UP_Updated_Google_Search_Console__c)), 
-ISBLANK(TEXT(UP_Updated_H_Tags__c)), 
-ISBLANK(TEXT(UP_Updated_Images_Title_Alt_Tags__c)), 
-ISBLANK(TEXT(UP_Updated_Meta_Data__c)), 
-ISBLANK(TEXT(UP_Updated_Unpaid_Tracking__c)), 
-ISBLANK(TEXT(UP_Updated_Yext__c)), 
-ISBLANK(TEXT(UP_Vendor_Built_Additional_Citations__c)), 
-ISBLANK(TEXT(UP_Vendor_Built_Backlinks__c)), 
-ISBLANK(TEXT(UP_Vendor_Cleaned_Up_Citations__c)), 
-ISBLANK(TEXT(UP_Vendor_Produced_Enhanced_Content__c)), 
-ISBLANK(TEXT(UP_Vendor_Reclaimed_Backlinks__c)),
-ISBLANK(TEXT(UP_Checked_non_200_ok_or_non_301_codes__c)),
-LEN(Unpaid_Optimization_Notes__c)&lt;10
-))</errorConditionFormula>
-        <errorMessage>Please fill out all fields in the Unpaid Optimization Tactics and Unpaid Optimization Notes</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

@@ -153,7 +153,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>ASW_OPO__c</fullName>
         <externalId>false</externalId>
@@ -8908,6 +8908,18 @@ contains(Account_Name__r.Product_Type__c , "Organic"),
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>OrgnicCase18__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>OrgnicCase18</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Other__c</fullName>
         <externalId>false</externalId>
         <label>Other</label>
@@ -13464,82 +13476,15 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
     </fields>
     <label>Organic Case</label>
     <listViews>
-        <fullName>Bulk_Close_Photo_Upload</fullName>
+        <fullName>IT_Pro_SEO_Optimization</fullName>
         <columns>NAME</columns>
-        <columns>Status__c</columns>
-        <columns>Client_ID__c</columns>
-        <columns>Open_Date__c</columns>
-        <columns>OBJECT_ID</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Organic_Analysis__c.Google_Listing_Photo_Update</value>
-        </filters>
-        <filters>
-            <field>Status__c</field>
-            <operation>notEqual</operation>
-            <value>Closed,Closed - Errors Found</value>
-        </filters>
-        <label>Bulk Close Photo Upload</label>
-    </listViews>
-    <listViews>
-        <fullName>Co_Manage_to_Delete</fullName>
-        <columns>NAME</columns>
-        <columns>OWNER.ALIAS</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Google_Listing_Created__c</columns>
+        <columns>RECORDTYPE</columns>
         <filterScope>Queue</filterScope>
-        <filters>
-            <field>Status__c</field>
-            <operation>notEqual</operation>
-            <value>Closed,Delete Case,Cannot Complete,Completed</value>
-        </filters>
-        <filters>
-            <field>RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Organic_Analysis__c.PIN_Action_Needed</value>
-        </filters>
-        <filters>
-            <field>YO_Status__c</field>
-            <operation>equals</operation>
-            <value>Off</value>
-        </filters>
-        <label>Co-Manage to Delete</label>
-        <queue>PinCollection</queue>
-        <sharedTo>
-            <role>Pin_Collection_Associate</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Lawn_Doctor_MIC_Cases</fullName>
-        <columns>Account_Name__c</columns>
-        <columns>NAME</columns>
-        <columns>OWNER.ALIAS</columns>
-        <columns>Days_Since_Bing_Pin_Sent__c</columns>
-        <columns>BPin_Received__c</columns>
-        <columns>Days_Since_Google_Pin_Sent__c</columns>
-        <columns>Days_Since_Google_Pin_Received__c</columns>
-        <columns>Day_4_After_Google_Request__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Account_Name__c</field>
-            <operation>contains</operation>
-            <value>Avelient -</value>
-        </filters>
-        <filters>
-            <field>RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
-        </filters>
-        <label>Avelient - Vision Source MIC Cases</label>
-    </listViews>
-    <listViews>
-        <fullName>Local_Manager_Approval_Queue_Organic_Analysis</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Local Manager Approval Queue</label>
-        <queue>Local_Manager_Approval_Queue</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
+        <label>IT Pro SEO Optimization</label>
+        <queue>IT_Pro_SEO_Optimization</queue>
     </listViews>
     <listViews>
         <fullName>Maps_Customer_Support</fullName>
@@ -13564,31 +13509,6 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         </filters>
         <label>Maps Customer Support</label>
         <queue>MapsCustomerSupport</queue>
-    </listViews>
-    <listViews>
-        <fullName>OR_Escalations</fullName>
-        <columns>NAME</columns>
-        <columns>Account_Name__c</columns>
-        <columns>YO_Status__c</columns>
-        <columns>CREATED_DATE</columns>
-        <columns>Product_Type_Account__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Organic_Analysis__c.Maps_Initial_Claiming</value>
-        </filters>
-        <filters>
-            <field>SDB_Escalation_Status__c</field>
-            <operation>equals</operation>
-            <value>Optimization Needed</value>
-        </filters>
-        <filters>
-            <field>Product_Type__c</field>
-            <operation>contains</operation>
-            <value>Outrank</value>
-        </filters>
-        <label>OR Escalations</label>
     </listViews>
     <listViews>
         <fullName>PAN_Needs_PARSE</fullName>
@@ -13675,27 +13595,6 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
             <value>Closed</value>
         </filters>
         <label>PIN Action Needed Cases</label>
-    </listViews>
-    <listViews>
-        <fullName>Pending_Pin_Receipt_Assignment_Audit</fullName>
-        <columns>NAME</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>OWNER.FIRST_NAME</field>
-            <operation>equals</operation>
-            <value>IT</value>
-        </filters>
-        <filters>
-            <field>YO_Status__c</field>
-            <operation>equals</operation>
-            <value>LIVE</value>
-        </filters>
-        <filters>
-            <field>RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming</value>
-        </filters>
-        <label>Not in Maps Customer Support</label>
     </listViews>
     <listViews>
         <fullName>Pin_Action_Needed_Comanage</fullName>
@@ -13835,49 +13734,10 @@ ISPICKVAL( On_Page_Complete_Escalate_to_Web_Dev__c,"No"),
         <label>Pin Action Needed - Google Support</label>
     </listViews>
     <listViews>
-        <fullName>Rogers_Support_Organic_Analysis</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Rogers Support</label>
-        <queue>Rogers_Support</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Send_To_Rogers_Organic_Analysis</fullName>
         <filterScope>Queue</filterScope>
         <label>Send To Rogers</label>
         <queue>Send_To_Rogers</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>SubbaMaps_Initial_Claiming_Case</fullName>
-        <columns>NAME</columns>
-        <columns>Account_Name__c</columns>
-        <columns>AdStation_Status__c</columns>
-        <columns>Google_PIN_Send_Attempts__c</columns>
-        <columns>Location_Group_Id__c</columns>
-        <columns>Google_Login_Email__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Organic_Analysis__c.Maps_Initial_Claiming,Organic_Analysis__c.Canda_Maps_Claiming,Organic_Analysis__c.Maps_Initial_Claiming_Test</value>
-        </filters>
-        <filters>
-            <field>CSC_Date_Time__c</field>
-            <operation>equals</operation>
-            <value>LAST_N_DAYS:30</value>
-        </filters>
-        <label>SubbaMaps Initial Claiming Case</label>
-    </listViews>
-    <listViews>
-        <fullName>YBN_PES_Team_Organic_Analysis</fullName>
-        <filterScope>Queue</filterScope>
-        <label>(DONOTUSE) YBN PES Team</label>
-        <queue>YBN_PES_Team</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
@@ -64324,33 +64184,6 @@ ISPICKVAL( Attempts_to_Contact__c ,"")))</errorConditionFormula>
         <errorMessage>If Status is Completed, Attempts to Contact cannot be blank or 0</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>B_PIN_Received_By</fullName>
-        <active>false</active>
-        <errorConditionFormula>and(
-RecordTypeId = "012600000009UWj",
-B_Pin_Receipt__c  &gt;  DATE(2013, 5, 29 ),
-ISBLANK( B_PIN_Received_By__c ),
- not ($UserRole.Name = "Third Party Vendor"))</errorConditionFormula>
-        <errorDisplayField>B_PIN_Received_By__c</errorDisplayField>
-        <errorMessage>If you are claiming a pin, please enter your name</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Case_Rating_Required</fullName>
-        <active>false</active>
-        <description>you must rate the case and difficulty before closing and fill in audit pass</description>
-        <errorConditionFormula>and( 
-RecordTypeId = "012600000009WCb",
-OR(
-ISPICKVAL(Status__c, "Closed"),
-ISPICKVAL(Status__c, "Closed - Sent to SDB"),
-ISPICKVAL(Status__c, "Opt Not Completed - Invalid Case")),
-OR(
-ISPICKVAL(Case_Rating__c , ""),
-ISPICKVAL(Case_Difficulty__c , ""),
-ISPICKVAL(Audit_Pass__c , "")))</errorConditionFormula>
-        <errorMessage>Please enter the case difficulty, case writing rating and audit pass before closing a case.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Client_Email_Address_must_be_filled_out</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -64380,35 +64213,6 @@ ISPICKVAL(Submission_Reason__c , "Google Ownership Transfer Request")))</errorCo
  ISPICKVAL( Priority__c , "escalated"),
 Manager_Approved_Escalation__c = false)</errorConditionFormula>
         <errorMessage>Must have manager approval to escalate an organic case</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>G_PIN_Received_By</fullName>
-        <active>false</active>
-        <errorConditionFormula>and(
-or(
-RecordTypeId = "012600000009UWj",
-RecordTypeId = "012600000009Vh9"),
-G_Pin_Receipt__c &gt;  DATE(2013, 5, 29 ),
-ISBLANK(G_PIN_Received_By__c ),
- not ($UserRole.Name = "Third Party Vendor"))</errorConditionFormula>
-        <errorDisplayField>G_PIN_Received_By__c</errorDisplayField>
-        <errorMessage>If you are claiming a pin, please enter your name</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MAPS_Claiming</fullName>
-        <active>false</active>
-        <description>must be input when saving a MAPs claiming case</description>
-        <errorConditionFormula>and(  
-not(ispickval( Status__c , "Delete Case")),
-DATEVALUE(CreatedDate) &gt; DATEVALUE("2013-01-08"),
-RecordTypeId = "012600000009UWj",  
-or(
-ISPICKVAL(IT_Pro_Member__c , ""),
-ISBLANK(Proxy_IP_Used__c),
-ISBLANK( Created_Email_UN__c),
-ISBLANK( Created_Email_PW__c)
-))</errorConditionFormula>
-        <errorMessage>Must input IT Pro Members name, Proxy IP, Created Email UN, and Created email PW</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>MICC_Google_Whitelist_Restricted</fullName>
@@ -64747,14 +64551,6 @@ Includes(Reason_for_Submission__c ,"G&amp;B Login Issues"),
 ISPICKVAL( Submission_Reason__c ,"G&amp;B Login Issues")))</errorConditionFormula>
         <errorDisplayField>Reason_for_Submission__c</errorDisplayField>
         <errorMessage>Only Production, IT Pro, YBN, and SEO MOps teams can select "G&amp;B Login Issues" as Reason for Submission</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>YBN_Must_fill_out_client_svcs_mgr_to_es</fullName>
-        <active>false</active>
-        <errorConditionFormula>and(Client_Type__c = "YBN", 
-Escalated__c = true,
-ISBLANK(Client_Services_Manager__c))</errorConditionFormula>
-        <errorMessage>Must fill out Client Services Manager</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>PAN_Case_Creation_Limit</fullName>

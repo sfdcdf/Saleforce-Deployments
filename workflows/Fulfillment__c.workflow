@@ -72,9 +72,6 @@
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
         </recipients><recipients>
-            <recipient>jennifer.hendrickson@yodle.com</recipient>
-            <type>user</type>
-        </recipients><recipients>
             <recipient>jswitzer@yodle.com</recipient>
             <type>user</type>
         </recipients><recipients>

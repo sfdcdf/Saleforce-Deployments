@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
         <label><!-- Adoption Length (Mth) --></label>
         <name>AdoptionLen__c</name>
@@ -92,18 +92,6 @@
             <section>Custom Links</section>
         </sections>
     </layouts>
-    <validationRules>
-        <errorMessage><!-- Must be greater than 0. --></errorMessage>
-        <name>AdoptionLen_Greater_Than_0</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Must be between 0 and 100. --></errorMessage>
-        <name>AdoptionPct_Between_0_100</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Must be greater than 0. --></errorMessage>
-        <name>Quantity_Greater_Than_Zero</name>
-    </validationRules>
     <webLinks>
         <label><!-- Setup_Adoption_Products --></label>
         <name>Setup_Adoption_Products</name>

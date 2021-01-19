@@ -75,10 +75,6 @@
                 <field>AccountId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Reported_By__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Parent_Case_Open_Time__c</field>
             </layoutItems>
@@ -115,10 +111,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Request__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Frequency__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

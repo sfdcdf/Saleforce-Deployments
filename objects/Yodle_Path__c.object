@@ -152,7 +152,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -1894,12 +1894,6 @@ ISPICKVAL( X2nd_Attempt_Status__c, 'Complete - Full Script') ||
 ISPICKVAL( X3rd_Attempt_Status__c , 'Complete - Full Script')) 
 || ISPICKVAL(Status__c , 'Completed')) &amp;&amp; ISBLANK(Scheduled_Coaching_Call__c)</errorConditionFormula>
         <errorMessage>Please fill in the scheduled coaching call date because you were able to cover the complete - full script of this call.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Require_Schedule_Coaching_Call</fullName>
-        <active>false</active>
-        <errorConditionFormula>Schedule_coaching_call__c = True &amp;&amp; ISNULL(Scheduled_Coaching_Call__c)</errorConditionFormula>
-        <errorMessage>Make sure to fill in the Scheduled Date/Time of the Coaching Call.</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

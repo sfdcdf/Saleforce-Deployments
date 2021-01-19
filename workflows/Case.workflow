@@ -10,15 +10,6 @@
         <template>National_Templates/Alert_New_Inbound_Email</template>
     </alerts>
     <alerts>
-        <fullName>Berry_72_Hour_Email</fullName>
-        <ccEmails>support@viviallocalleads.com</ccEmails>
-        <description>Berry 72 Hour Email</description>
-        <protected>false</protected>
-        <senderAddress>berrysales@yodle.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Partner_Email_Templates/Berry_72_Hour_Emails</template>
-    </alerts>
-    <alerts>
         <fullName>Berry_Additional_Notes_Escalated_to_Berry</fullName>
         <ccEmails>yodle-escalations@theberrycompany.com</ccEmails>
         <description>Berry Additional Notes - Escalated to Berry</description>
@@ -74,18 +65,6 @@
         <template>Partner_Email_Templates/Berry_Red_Segment_Email</template>
     </alerts>
     <alerts>
-        <fullName>Berry_SW_Issue</fullName>
-        <ccEmails>yodle-escalations@theberrycompany.com</ccEmails>
-        <description>Berry Sales Wizard Issue</description>
-        <protected>false</protected>
-        <recipients>
-            <type>creator</type>
-        </recipients>
-        <senderAddress>berryswconfirmation@yodle.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Partner_Email_Templates/Berry_SW_Incomplete</template>
-    </alerts>
-    <alerts>
         <fullName>Berry_case_open_for_6_days</fullName>
         <description>Berry - WO Almost at SLA</description>
         <protected>false</protected>
@@ -115,17 +94,6 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Partner_Email_Templates/Berry_5_days_still_no_contract</template>
-    </alerts>
-    <alerts>
-        <fullName>Bolt_On_Cancellation_Cancel_All</fullName>
-        <ccEmails>support@boltontechnology.com</ccEmails>
-        <ccEmails>pmcgee@boltontechnology.com</ccEmails>
-        <description>Bolt On Cancellation - Cancel All</description>
-        <protected>false</protected>
-        
-        <senderAddress>support@lighthousepmg.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Support/Bolt_On_Cancellation_ProPack_Welcome_Station</template>
     </alerts>
     <alerts>
         <fullName>CPP_Setup_Complete</fullName>
@@ -173,18 +141,6 @@
             <type>user</type>
         </recipients></alerts>
     <alerts>
-        <fullName>CSC_Survey_Dedicated_Email</fullName>
-        <description>CSC Survey Dedicated - Email</description>
-        <protected>false</protected>
-        <recipients>
-            <field>client_email__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>kevinbiggs@yodle.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/CSC_Survey_Email_Dedicated</template>
-    </alerts>
-    <alerts>
         <fullName>CSC_Survey_Pooled_Email</fullName>
         <description>CSC Survey - Email</description>
         <protected>false</protected>
@@ -219,15 +175,6 @@
             <recipient>sfdc@yodle.com</recipient>
             <type>user</type>
         </recipients></alerts>
-    <alerts>
-        <fullName>Case_Assigned_to_LH_Auto_Support_send_email</fullName>
-        <ccEmails>LHAutoTechBots@yodle.com</ccEmails>
-        <description>Case Assigned to LH Auto Support send email</description>
-        <protected>false</protected>
-        <senderAddress>csops@yodle.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Support/LH_Auto_Case_Owner</template>
-    </alerts>
     <alerts>
         <fullName>Case_Assigned_to_You_Alert</fullName>
         <description>Case Assigned to You Alert</description>
@@ -328,23 +275,6 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Support/Notification_to_Case_Creator_upon_Close_or_Awaiting_Internal_Response</template>
-    </alerts>
-    <alerts>
-        <fullName>Case_Send_LH_Winback_Notification</fullName>
-        <ccEmails>eric.gallegos@lighthousepmg.com</ccEmails>
-        <ccEmails>KBrewer@yodle.com</ccEmails>
-        <description>Case - Send LH Winback Notification</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>apierpont@web.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mhenry@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>DefaultWorkflowUser</senderType>
-        <template>Support/Case_Send_LH_Winback_Notification_2</template>
     </alerts>
     <alerts>
         <fullName>Case_Updated_Changed_or_Assigned_to_you</fullName>
@@ -548,18 +478,6 @@
         <template>Support/GreenSky_Finance_MA_Work_Complete_Email</template>
     </alerts>
     <alerts>
-        <fullName>GreenSky_Finance_MA_Work_Complete_Email_LBW</fullName>
-        <description>GreenSky Finance - MA Work Complete Email - LBW.</description>
-        <protected>false</protected>
-        <recipients>
-            <field>client_email__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>leadstreamsupport@web.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Support/GreenSky_Finance_MA_Work_Complete_Email_LBW</template>
-    </alerts>
-    <alerts>
         <fullName>Greenskye_Sales_Lab_Alert</fullName>
         <ccEmails>GreenSkyReferral@yodle.com</ccEmails>
         <description>Greenskye Sales Lab Alert</description>
@@ -589,89 +507,6 @@
         <template>Support/JCI_Issue_Tracker_Notice_to_Melissa_Lidey</template>
     </alerts>
     <alerts>
-        <fullName>LBW_CSC_Survey</fullName>
-        <description>LBW CSC Survey</description>
-        <protected>false</protected>
-        <recipients>
-            <field>client_email__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>leadstreamsupport@web.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/CSC_Survey_LBW</template>
-    </alerts>
-    <alerts>
-        <fullName>LH_Logo_Work_Complete</fullName>
-        <ccEmails>config@lighthousepmg.com</ccEmails>
-        <description>LH Logo Work Complete</description>
-        <protected>false</protected>
-        <senderType>CurrentUser</senderType>
-        <template>Support/LH_Logo_Work_Complete</template>
-    </alerts>
-    <alerts>
-        <fullName>LH_Master_Escalation</fullName>
-        <description>LH Master Escalation</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>alewis@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>dcambouris@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jamartini@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mstaffieri@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>ta.stanton@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>treece@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Escalation_Standard_Email</template>
-    </alerts>
-    <alerts>
-        <fullName>LH_New_Training_Email_from_Support</fullName>
-        <description>LH New Training Email from Support</description>
-        <protected>false</protected>
-        
-        <senderType>CurrentUser</senderType>
-        <template>Support/LH_Support_Email_to_Casey</template>
-    </alerts>
-    <alerts>
-        <fullName>LH_Surveys_Issue_Res</fullName>
-        <description>LH Issue Resolution Survey Email</description>
-        <protected>false</protected>
-        <recipients>
-            <field>client_email__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>accountservices@lighthousepmg.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/Lighthouse_Issue_Res_Survey</template>
-    </alerts>
-    <alerts>
-        <fullName>LH_Surveys_Issue_Res_AUTO</fullName>
-        <description>LH Issue Resolution Survey Email AUTO</description>
-        <protected>false</protected>
-        <recipients>
-            <field>client_email__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>accountservices@lighthousepmg.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/Lighthouse_Issue_Res_Survey_LH_Auto</template>
-    </alerts>
-    <alerts>
         <fullName>LSFS_Onboarding_Notification</fullName>
         <description>LSFS Onboarding Notification</description>
         <protected>false</protected>
@@ -696,59 +531,6 @@
         <template>Lead_Stream_Templates/LSFS_Performance_Calls_Notification</template>
     </alerts>
     <alerts>
-        <fullName>Lighthouse_Business_Customization_Form_Auto</fullName>
-        <description>Lighhouse Business Customization Form - Auto</description>
-        <protected>false</protected>
-        <recipients>
-            <field>client_email__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>autosupport@lighthousepmg.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/Lighthouse_Business_Customization_Form_BCF_Auto</template>
-    </alerts>
-    <alerts>
-        <fullName>Lighthouse_Business_Customization_Form_Chiro</fullName>
-        <description>Lighhouse Business Customization Form - Chiro</description>
-        <protected>false</protected>
-        <recipients>
-            <field>client_email__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>medicalsupport@lighthousepmg.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/Lighthouse_Business_Customization_Form_BCF_Chiro</template>
-    </alerts>
-    <alerts>
-        <fullName>Lighthouse_Business_Customization_Form_Dental</fullName>
-        <description>Lighhouse Business Customization Form - Dental</description>
-        <protected>false</protected>
-        <recipients>
-            <field>client_email__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>support@lighthousepmg.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/Lighthouse_Business_Customization_Form_BCF_Dental</template>
-    </alerts>
-    <alerts>
-        <fullName>Lighthouse_Follow_Up_Needed</fullName>
-        <ccEmails>support@lighthousepmg.com</ccEmails>
-        <description>Lighthouse Follow Up Needed</description>
-        <protected>false</protected>
-        <senderAddress>customercare@lighthousepmg.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Support/Lighthouse_Follow_Up_Needed</template>
-    </alerts>
-    <alerts>
-        <fullName>Lighthouse_Site_Listing_Teardown_owner_email_alert</fullName>
-        <description>LH Master Needs Your Attention to Adam Stanton</description>
-        <protected>false</protected>
-        
-        <senderType>CurrentUser</senderType>
-        <template>Support/LH_Master_Site_Listing_Teardown</template>
-    </alerts>
-    <alerts>
         <fullName>NCS_AutoLaunch_to_Sales</fullName>
         <description>NCS Case Escalation Notification to Owner</description>
         <protected>false</protected>
@@ -770,16 +552,6 @@
         <template>Support/new_client_setup_sales</template>
     </alerts>
     <alerts>
-        <fullName>NCS_case_notify_owner_on_Status_change</fullName>
-        <description>NCS case notify owner on Status change</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/NCS_case_notify_owner_on_Status_change</template>
-    </alerts>
-    <alerts>
         <fullName>New_Greenskymerchant_web_com_email_sent</fullName>
         <description>New Greenskymerchant@web.com email sent</description>
         <protected>false</protected>
@@ -794,17 +566,6 @@
         <senderAddress>csops@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Support/New_GreenSkyMerchant_Web_com_Case</template>
-    </alerts>
-    <alerts>
-        <fullName>New_TORCHx_CSC_Case_Created</fullName>
-        <description>New TORCHx CSC Case Created</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>TORCHx_CSC_Email_Alerts</recipient>
-            <type>group</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/TORCHx_New_CSC_Case_Create</template>
     </alerts>
     <alerts>
         <fullName>Notification_New_Case_Created</fullName>
@@ -898,64 +659,18 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>iitenberg@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>jennifer.hendrickson@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mmachado@yodle.com</recipient>
             <type>user</type>
         </recipients>
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Fire_Drill</template>
-    </alerts>
-    <alerts>
-        <fullName>Rogers_QA_Assigned_Anna</fullName>
-        <ccEmails>aburleigh@rogersoutrank.com</ccEmails>
-        <description>Rogers QA Assigned Anna</description>
-        <protected>false</protected>
-        <senderAddress>rogerssupport@service.rogersoutrank.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Partner_Email_Templates/Rogers_QA_Assigned</template>
-    </alerts>
-    <alerts>
-        <fullName>Rogers_QA_Assigned_Ashlee</fullName>
-        <ccEmails>awallace@rogersoutrank.com</ccEmails>
-        <description>Rogers QA Assigned Ashlee</description>
-        <protected>false</protected>
-        <senderAddress>rogerssupport@service.rogersoutrank.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Partner_Email_Templates/Rogers_QA_Assigned</template>
-    </alerts>
-    <alerts>
-        <fullName>Rogers_QA_Assigned_Julie</fullName>
-        <ccEmails>jwojteczko@rogersoutrank.com</ccEmails>
-        <description>Rogers QA Assigned Julie</description>
-        <protected>false</protected>
-        <senderAddress>rogerssupport@service.rogersoutrank.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Partner_Email_Templates/Rogers_QA_Assigned</template>
-    </alerts>
-    <alerts>
-        <fullName>Rogers_Sales_Wizard_Issue</fullName>
-        <ccEmails>qualityassurance@rogersoutrank.com</ccEmails>
-        <description>Rogers Sales Wizard Issue</description>
-        <protected>false</protected>
-        <recipients>
-            <type>creator</type>
-        </recipients>
-        <recipients>
-            <field>Partner_Rep_E_mail__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>rogerssupport@service.rogersoutrank.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Partner_Email_Templates/Rogers_Sales_Wizard_Incomplete</template>
     </alerts>
     <alerts>
         <fullName>SEM_Escalated_To_Berry</fullName>
@@ -1021,36 +736,6 @@
         <template>National_Templates/YBN_Strategy_Document_Ready_for_Creation</template>
     </alerts>
     <alerts>
-        <fullName>Send_Email_to_LHFS_Reps_for_Yodle_Gold</fullName>
-        <description>Send Email to LHFS Reps for Yodle Gold</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>kday@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>tdube@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Lighthouse_Gold_Service_Notification</template>
-    </alerts>
-    <alerts>
-        <fullName>Send_Email_to_LHFS_Reps_for_Yodle_Gold_Medical</fullName>
-        <description>Send Email to LHFS Reps for Yodle Gold</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>crystal.bellew@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>klewis@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Lighthouse_Gold_Service_Notification</template>
-    </alerts>
-    <alerts>
         <fullName>Send_Email_to_Yodle_Gold_Email_Manager</fullName>
         <description>Send Email to Yodle Gold Email Manager</description>
         <protected>false</protected>
@@ -1073,75 +758,6 @@
         <senderAddress>kentwarren@yodle.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Survey_Emails/Issue_Resolution_May_2016</template>
-    </alerts>
-    <alerts>
-        <fullName>TORCHx_CSC_Proactive_Touch_Email_to_Owner_Email_Alert</fullName>
-        <description>TORCHx CSC/Proactive Touch Email to Owner - Email Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderAddress>support@torchx.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Support/TORCHx_Notify_Owner_of_New_Email</template>
-    </alerts>
-    <alerts>
-        <fullName>TORCHx_Escalation_Case</fullName>
-        <description>TORCHx Escalation Case</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>TORCHx_Escalations</recipient>
-            <type>group</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/Escalation_Standard_Email</template>
-    </alerts>
-    <alerts>
-        <fullName>TORCHx_Issue_Resolution_Survey_Email_Alert</fullName>
-        <description>TORCHx Issue Resolution Survey Email Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <field>client_email__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>kentwarren@yodle.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Survey_Emails/TORCHx_Issue_Resolution</template>
-    </alerts>
-    <alerts>
-        <fullName>TORCHx_NCS_Email_to_Owner_Email_Alert</fullName>
-        <ccEmails>support@torchx.com</ccEmails>
-        <description>TORCHx NCS Email to Owner - Email Alert</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderAddress>support@torchx.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Support/TORCHx_NCS_Email</template>
-    </alerts>
-    <alerts>
-        <fullName>TORCHx_Optimization_case_Status_notification_to_Client</fullName>
-        <description>TORCHx Optimization case notify Client when the performance team completes/closes the Optimization Case</description>
-        <protected>false</protected>
-        <recipients>
-            <field>client_email__c</field>
-            <type>email</type>
-        </recipients>
-        <senderAddress>support@torchx.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>TorchX_Onboarding_Engagement_Test/TORCHx_Service_Performance_Request_Completed</template>
-    </alerts>
-    <alerts>
-        <fullName>TORCHx_Outbound_Time_Rescheduled_to_Today</fullName>
-        <description>TORCHx Outbound Time Rescheduled to Today</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>TORCHx_CSC_Email_Alerts</recipient>
-            <type>group</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Support/TORCHx_Outbound_Case_rescheduled_to_today</template>
     </alerts>
     <alerts>
         <fullName>Target_Service_Area_Added</fullName>
@@ -3531,40 +3147,6 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Assign_to_Makenzie_Cunningham</fullName>
-        <description>Changed to Randy Dewey - 1/8/2019 with the departure of Makenzie.</description>
-        <field>OwnerId</field>
-        <lookupValue>rdewey@web.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Assign to Makenzie Cunningham</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Assign_to_OBC_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>OBC_Queue</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Case Owner to OBC Queue</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Assign_to_TORCHx_Post_Launch_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>TORCHx_Post_Launch_Queue</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Assign to TORCHx Post Launch Queue</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Assigned_to_Vendor_Date</fullName>
         <field>Assigned_to_Vendor_Date__c</field>
         <formula>Today()</formula>
@@ -3634,16 +3216,6 @@
         <name>Berry Web to Case Change Owner</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Business_Address_Fill_In</fullName>
-        <field>Business_Address__c</field>
-        <formula>Account.BillingStreet &amp; BR() &amp;  Account.BillingCity &amp; ", " &amp; Account.BillingState &amp; " "&amp; Account.BillingPostalCode</formula>
-        <name>Business Address Fill-In</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
@@ -3733,90 +3305,11 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Case_Owner_to_Kyle_Zaffin</fullName>
-        <description>Updates Case Owner to Kyle Zaffin</description>
-        <field>OwnerId</field>
-        <lookupValue>kzaffin@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Case Owner to Kyle Zaffin</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Owner_to_LH_CSC</fullName>
-        <field>OwnerId</field>
-        <lookupValue>LH_Training</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Case Owner to LH CSC</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Owner_to_LH_Future_Request</fullName>
-        <field>OwnerId</field>
-        <lookupValue>LH_Future_Request</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Case Owner to LH Future Request</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Case_Owner_to_LH_Marketing_Associates</fullName>
         <field>OwnerId</field>
         <lookupValue>LH_Future_Request</lookupValue>
         <lookupValueType>Queue</lookupValueType>
         <name>Case Owner to LH Future Request</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Owner_to_LH_Support_Sugar_Hill</fullName>
-        <field>OwnerId</field>
-        <lookupValue>LH_Support_Sugar_Hill</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Case Owner to LH Support - Sugar Hill</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Owner_to_Lighthouse_Field_Service</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Lighthouse_Field_Service</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Case Owner to Lighthouse Field Service</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Owner_to_Lighthouse_Logos</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Lighthouse_Logos</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Case Owner to Lighthouse Logos</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Owner_to_Local_Email_Queue</fullName>
-        <description>Sets Owner to the Local Email Queue</description>
-        <field>OwnerId</field>
-        <lookupValue>Local_Email_Queue</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Case Owner to Local Email Queue</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
@@ -3840,28 +3333,6 @@
         <lookupValue>PostLaunchAssociateQueue275821</lookupValue>
         <lookupValueType>Queue</lookupValueType>
         <name>Case Owner to Post Launch Queue</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Owner_to_Quality_Team_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>QualityTeam295311</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Case Owner to Quality Team Queue</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Owner_to_Sophie_Lavin</fullName>
-        <field>OwnerId</field>
-        <lookupValue>anne.fulton@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Case Owner to Anne Marie Fulton</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
@@ -3903,26 +3374,6 @@
         <field>Reason</field>
         <literalValue>Escalated Email Response</literalValue>
         <name>Case Reason to Escalated Email Response</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Reason_to_LH_Postcard</fullName>
-        <field>Reason</field>
-        <literalValue>LH Postcard</literalValue>
-        <name>Case Reason to LH Postcard</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Reason_to_Lighthouse_Logo</fullName>
-        <field>Reason</field>
-        <literalValue>Lighthouse Logo</literalValue>
-        <name>Case Reason to Lighthouse Logo</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -3975,27 +3426,6 @@
         <name>Case - Stopped -&gt; True</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_TORCHx_NCS_Autolaunch_Subject</fullName>
-        <field>Subject</field>
-        <formula>"New TORCHx NCS Case"</formula>
-        <name>Case - TORCHx NCS Autolaunch Subject</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_TORCHx_NCS_Record_Type_Change</fullName>
-        <field>RecordTypeId</field>
-        <lookupValue>TORCHx_NCS_AutoLaunch</lookupValue>
-        <lookupValueType>RecordType</lookupValueType>
-        <name>Case - TORCHx NCS Record Type Change</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
@@ -4375,62 +3805,6 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>LBW_Case_Owner_Change</fullName>
-        <description>Changes case owner to LBW Customer Service Queue</description>
-        <field>OwnerId</field>
-        <lookupValue>leadstreamsupport@web.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>LBW Case Owner Change</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>LHMA_Post_Launch</fullName>
-        <field>OwnerId</field>
-        <lookupValue>LHMA_Post_Launch</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>LHMA Post Launch</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>LH_Assign_to_LH_Support_Austin</fullName>
-        <field>OwnerId</field>
-        <lookupValue>LH_Support_Austin</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Case Owner to LH Support - Austin</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>LH_Postcard_Assign_to_LH_Postcard</fullName>
-        <field>OwnerId</field>
-        <lookupValue>LH_Postcard</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Case Owner to LH Postcard</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>LH_Upsell_Case_Owner</fullName>
-        <field>OwnerId</field>
-        <lookupValue>LH_Upsells</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>LH Upsell Case Owner</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Link_to_Script_FS_Adoption_Call</fullName>
         <field>Link_to_Script__c</field>
         <formula>"https://na26.salesforce.com/articles/Scripts/Lighthouse-Setup-Completion-Call-Script-Field-Services"</formula>
@@ -4458,16 +3832,6 @@
         <name>Case Owner to Quality Team</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Mark_Escalated_Field</fullName>
-        <field>Escalated__c</field>
-        <literalValue>1</literalValue>
-        <name>Mark Escalated? Field</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
@@ -4704,16 +4068,6 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Outrank_Wordpress_Email_to_Case_Reason</fullName>
-        <field>Reason</field>
-        <literalValue>Inbound Inquiry</literalValue>
-        <name>Case Reason to Inbound Inquiry</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Owner_Updated_to_Berry_VM_Queue</fullName>
         <description>Update the Case Owner to Berry Voicemail Queue</description>
         <field>OwnerId</field>
@@ -4743,17 +4097,6 @@
         <lookupValue>sfdc@yodle.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>Owner Updates To Lynn Tobias</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_to_TORCHx</fullName>
-        <field>OwnerId</field>
-        <lookupValue>TORCHx_Outbound</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Owner to TORCHx Support</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
@@ -4794,26 +4137,6 @@
         <field>Reason_Detail__c</field>
         <literalValue>Conf Call</literalValue>
         <name>Reason Detail to Conf Call</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Reason_Detail_to_Lighthouse_Support</fullName>
-        <field>Reason_Detail__c</field>
-        <literalValue>Lighthouse Support</literalValue>
-        <name>Reason Detail to Lighthouse Support</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Reason_Detail_to_QA_Request_Lighthouse</fullName>
-        <field>Reason_Detail__c</field>
-        <literalValue>QA Request Lighthouse</literalValue>
-        <name>Reason Detail to QA Request Lighthouse</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -4943,16 +4266,6 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Status_to_Delete_Case</fullName>
-        <field>Status</field>
-        <literalValue>Delete Case</literalValue>
-        <name>Status to Delete Case</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Status_to_New</fullName>
         <field>Status</field>
         <literalValue>New</literalValue>
@@ -4983,43 +4296,12 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Subject_for_OBC_Request</fullName>
-        <field>Subject</field>
-        <formula>Account.Client_ID__c &amp; "  -  " &amp; Account.Name &amp; " - OBC Request"</formula>
-        <name>Subject for OBC Request</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Subject_to_NCS_Product_Type</fullName>
         <field>Subject</field>
         <formula>"NCS - " + TEXT(SEO_Product__c)</formula>
         <name>Subject to NCS - Product Type</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>TORCHx_NCS_Email_to_Owner_Uncheck</fullName>
-        <field>TORCHx_NCS_Email_Notification__c</field>
-        <literalValue>0</literalValue>
-        <name>TORCHx NCS Email to Owner - Uncheck</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>TORCHx_NCS_Reschedule_Reassignment</fullName>
-        <field>OwnerId</field>
-        <lookupValue>TORCHx_Outbound</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>TORCHx NCS Reschedule Reassignment</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
@@ -5083,28 +4365,6 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Update_Case_IMS_Rep_LBW_Customer_Service</fullName>
-        <field>IMS_Rep__c</field>
-        <lookupValue>leadstreamsupport@web.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Update Case IMS Rep-LBW Customer Service</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Update_Case_Owner_LBW_Customer_Service</fullName>
-        <field>OwnerId</field>
-        <lookupValue>leadstreamsupport@web.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Update Case Owner - LBW Customer Service</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Update_Case_Reason</fullName>
         <field>Reason</field>
         <literalValue>Touchplan Response</literalValue>
@@ -5146,16 +4406,6 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Update_Case_Subject</fullName>
-        <field>Subject</field>
-        <formula>"LH Upsell Email"</formula>
-        <name>Update Case Subject</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Update_Client_Phone</fullName>
         <field>Client_Phone_Number__c</field>
         <formula>Account.Phone</formula>
@@ -5171,17 +4421,6 @@
         <name>Update Desccription</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Null</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Update_IMS_Rep_to_Platinum_Support</fullName>
-        <field>IMS_Rep__c</field>
-        <lookupValue>platinumsupport@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Update IMS Rep to Platinum Support</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
@@ -5317,17 +4556,6 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Web_Dev_Completed_Date_to_Today</fullName>
-        <description>This fills in the date with TODAY</description>
-        <field>Web_Dev_Score_for_IMS__c</field>
-        <formula>TODAY()</formula>
-        <name>Web Dev Completed Date to Today</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Web_Dev_Member</fullName>
         <field>Web_Dev_User__c</field>
         <name>Web Dev Member</name>
@@ -5457,17 +4685,6 @@ Account.Next_TP_Needed_By__c</formula>
         <lookupValue>mbrevig@yodle.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>YBN: Case Owner to Michele Brevig</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>YBN_Case_Owner_to_Sarah_McMillian</fullName>
-        <field>OwnerId</field>
-        <lookupValue>nationalclientsupport@yodle.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>YBN Case Owner to National Client Suppor</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
@@ -6147,25 +5364,6 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Account Update - TORCHx Accounts</fullName>
-        <actions>
-            <name>Assign_to_TORCHx_Post_Launch_Queue</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Account Update</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Client_Experience_Key__c</field>
-            <operation>contains</operation>
-            <value>torchx</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>AcutitySchedulingWebhookTrigger</fullName>
         <actions>
             <name>AcuitySchedulingWebhook</name>
@@ -6179,24 +5377,6 @@ ISPICKVAL(Account.Client_Type__c, 'YBN') &amp;&amp;
 ISPICKVAL(Reason, 'Proactive Touch') &amp;&amp;
 ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Add Business Address to LH Cancel</fullName>
-        <actions>
-            <name>Business_Address_Fill_In</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Cancel Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Business_Address__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Add Client Phone Number to Case</fullName>
@@ -6285,10 +5465,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
     </rules>
     <rules>
         <fullName>Assign Platinum Support to IMS Rep on Outbound Cases</fullName>
-        <actions>
-            <name>Update_IMS_Rep_to_Platinum_Support</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Case.RecordTypeId</field>
@@ -6324,20 +5500,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
             <value>Global Content Review,Global Image Review</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>Assign to LH CSC queue</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_CSC</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>AR Request</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Attempt 1 Field Updates</fullName>
@@ -6671,44 +5833,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Berry - SW Issue</fullName>
-        <actions>
-            <name>Berry_SW_Issue</name>
-            <type>Alert</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Berry Sales Wizard Issue</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Berry 72 Hour Email</fullName>
-        <actions>
-            <name>Berry_72_Hour_Email</name>
-            <type>Alert</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.Partner_Account4__c</field>
-            <operation>contains</operation>
-            <value>Berry</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>contains</operation>
-            <value>3-CSC AutoLaunch</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Berry Account Manager Email</fullName>
         <actions>
             <name>Berry_Account_Manager_Email</name>
@@ -6926,30 +6050,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Berry NCS Initial Req Fulfilled</fullName>
-        <actions>
-            <name>SEM_Initial_Req_Fulfilled</name>
-            <type>Alert</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - New Client Setup,XJen - Partner NCS ASW</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Date_of_Initial_Req_Fulfilled__c</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-            <value>Berry Group</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Berry NCS No Contract after 7 Days</fullName>
         <actions>
             <name>Berry_no_contract_after_5_days</name>
@@ -7099,10 +6199,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
     </rules>
     <rules>
         <fullName>Bolt On Cancellation - Cancel All</fullName>
-        <actions>
-            <name>Bolt_On_Cancellation_Cancel_All</name>
-            <type>Alert</type>
-        </actions>
         <active>false</active>
         <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
         <criteriaItems>
@@ -7187,10 +6283,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
     </rules>
     <rules>
         <fullName>CS Upsell Cases</fullName>
-        <actions>
-            <name>Assign_to_Makenzie_Cunningham</name>
-            <type>FieldUpdate</type>
-        </actions>
         <actions>
             <name>Update_Case_Reason_to_Product</name>
             <type>FieldUpdate</type>
@@ -7283,44 +6375,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
             <value>Lighthouse</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>CSC Business Customization Form - Lighthouse Auto - Case</fullName>
-        <actions>
-            <name>Lighthouse_Business_Customization_Form_Auto</name>
-            <type>Alert</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.Check_to_send_BCF__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Secondary_Segments__c</field>
-            <operation>contains</operation>
-            <value>Auto</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>CSC Business Customization Form - Lighthouse Chiro - Case</fullName>
-        <actions>
-            <name>Lighthouse_Business_Customization_Form_Chiro</name>
-            <type>Alert</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.Check_to_send_BCF__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Secondary_Segments__c</field>
-            <operation>contains</operation>
-            <value>Chiro</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>CSC Business Customization Form - Plumber</fullName>
@@ -7476,61 +6530,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>CSC Survey - LBW</fullName>
-        <actions>
-            <name>LBW_CSC_Survey</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>CSC_Survey_E_mail_Sent_True</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8</booleanFilter>
-        <criteriaItems>
-            <field>Account.Client_Type__c</field>
-            <operation>equals</operation>
-            <value>Local</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type_Transactional__c</field>
-            <operation>equals</operation>
-            <value>Leads by Web,Lead Stream ATV</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Outbound Call</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>CSC</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Complete</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Status__c</field>
-            <operation>notEqual</operation>
-            <value>OFF</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.IMS_Rep__c</field>
-            <operation>notContain</operation>
-            <value>Lighthouse,TORCHx,Customer Care</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Survey_Opt_Out__c</field>
-            <operation>notEqual</operation>
-            <value>True</value>
-        </criteriaItems>
-        <description>Post CSC survey sent upon call completion for LBW CSCs</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>CSC Survey - LO%2FSC</fullName>
         <actions>
             <name>CSC_Survey_Pooled_Email</name>
@@ -7612,75 +6611,6 @@ ISPICKVAL(Attempt_1_Method__c, 'Auto-Email')</formula>
             <value>Dedicated</value>
         </criteriaItems>
         <description>Post CSC survey sent upon call completion for pooled and dedicated support once LO/SC go GA</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>CSC Survey Dedicated</fullName>
-        <actions>
-            <name>CSC_Survey_Dedicated_Email</name>
-            <type>Alert</type>
-        </actions>
-        <active>false</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 AND 12</booleanFilter>
-        <criteriaItems>
-            <field>Account.Service_Model_Local__c</field>
-            <operation>equals</operation>
-            <value>Dedicated</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Client_Type__c</field>
-            <operation>notContain</operation>
-            <value>National,OEM,Master,Partner,YBN,Lighthouse</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Send Survey</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>Client Setup Call</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Closed</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.IMS_Rep__c</field>
-            <operation>notContain</operation>
-            <value>Lighthouse</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Survey_Opt_Out__c</field>
-            <operation>notEqual</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Issue_ID__c</field>
-            <operation>notEqual</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>notContain</operation>
-            <value>Pin Collection</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Status__c</field>
-            <operation>equals</operation>
-            <value>LIVE</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type_Transactional__c</field>
-            <operation>notContain</operation>
-            <value>Web</value>
-        </criteriaItems>
-        <description>Post CSC survey sent upon call completion</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -7888,56 +6818,6 @@ Case Reason - Proactive Touch</description>
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
-        <fullName>Case - Rogers to Local Email Queue</fullName>
-        <actions>
-            <name>Case_Owner_to_Local_Email_Queue</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND (4 OR 5)</booleanFilter>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Rogers Support,Outrank Customer Support,Rogers Outrank</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>notEqual</operation>
-            <value>Circuit Breaker</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>notContain</operation>
-            <value>Canceled:,Accepted:,Initial Setup,Survey,Organic,Low Adv,Client Spend,Decline,Low Advertising Funds,Credit Card Declined</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>startsWith</operation>
-            <value>RE:</value>
-        </criteriaItems>
-        <description>This rule moves cases in the Rogers Support Queue into the Local Email Queue instead.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Case - Send LH Winback Notification</fullName>
-        <actions>
-            <name>Case_Send_LH_Winback_Notification</name>
-            <type>Alert</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>equals</operation>
-            <value>LHWB@yodle.com</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>Case - Start SLA Timer</fullName>
         <actions>
             <name>Case_Stopped_False</name>
@@ -7958,60 +6838,6 @@ Case Reason - Proactive Touch</description>
         <description>Stop the SLA Timer for WBN cases when Status changes to Awaiting....</description>
         <formula>AND(      OR(     RecordTypeId = "012320000009epJ", /* YBN Inbound Inquiry */        RecordTypeId = "012320000009flI", /* Partner Inbound Inquiry */  	RecordTypeId = "012600000009TnK" /* Partner New Client Setup  */    ),   NOT(ISBLANK(EntitlementId)),      IsStopped = false,      OR(          ISPICKVAL(Status, "Awaiting Customer Response"),         ISPICKVAL(Status, "Awaiting Case Work Completion")      )  )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Case - TORCHx NCS Autolaunch Subject</fullName>
-        <actions>
-            <name>Case_TORCHx_NCS_Autolaunch_Subject</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>TORCHX NCS - AutoLaunch</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>equals</operation>
-            <value>New Client Setup Case</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Case - TORCHx NCS Record Type Change</fullName>
-        <actions>
-            <name>Case_TORCHx_NCS_Record_Type_Change</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>NCS - AutoLaunch</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type_Transactional__c</field>
-            <operation>contains</operation>
-            <value>TORCHX</value>
-        </criteriaItems>
-        <description>This changes NCS Cases to TORCHx NCS cases with the Account Product Type contains TORCHx</description>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>Case - TORCHx NCS Reschedule Reassignment</fullName>
-        <actions>
-            <name>TORCHx_NCS_Reschedule_Reassignment</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <formula>AND(RecordTypeId = "012600000009cjs", ISCHANGED(Scheduled_Call__c),  $User.Id = "00532000005K6nE",  CONTAINS(Product_Type__c, "TORCHx"))</formula>
-        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>Case - Unscheduled Attempt</fullName>
@@ -9024,10 +7850,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
             <name>Email_to_Case_Outrank_Support</name>
             <type>FieldUpdate</type>
         </actions>
-        <actions>
-            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7</booleanFilter>
         <criteriaItems>
@@ -9071,10 +7893,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
         <fullName>Email to Case - Outrank Support Updated 12 11 13</fullName>
         <actions>
             <name>Email_to_Case_Outrank_Support</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
             <type>FieldUpdate</type>
         </actions>
         <active>false</active>
@@ -9124,34 +7942,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
             <value>Please review the comments (if applicable) in the survey below.</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>Email2Case - Lighthouse Field Service</fullName>
-        <actions>
-            <name>Case_Owner_to_Lighthouse_Field_Service</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>equals</operation>
-            <value>customercare@lighthousepmg.com,LH Field Services VM,LHFS Service Task VM</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Jennifer Flanagan,Salesforce Automation</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>New</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Email2Case - Notify Owner Of New Case</fullName>
@@ -9283,14 +8073,10 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     <rules>
         <fullName>Escalated Email Response New</fullName>
         <actions>
-            <name>Case_Owner_to_Sophie_Lavin</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
             <name>Case_Reason_to_Escalated_Email_Response</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -9325,11 +8111,7 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>Exit Email Case Routing to Anne Marie Fulton</fullName>
-        <actions>
-            <name>Case_Owner_to_Sophie_Lavin</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -9349,10 +8131,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>Exit Email Case Routing to Ron Lancaster</fullName>
-        <actions>
-            <name>Case_Owner_to_Sophie_Lavin</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -9456,35 +8234,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
             <value>Yes</value>
         </criteriaItems>
         <description>Sends email to Sales lab automatically when green sky checkbox is selected.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Greensky LBW- Send Email to client when Account Update Case is complete</fullName>
-        <actions>
-            <name>GreenSky_Finance_MA_Work_Complete_Email_LBW</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Account Update</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>equals</operation>
-            <value>greenskymerchant@web.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Closed</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type_Transactional__c</field>
-            <operation>equals</operation>
-            <value>Leads by Web,Lead Stream ATV</value>
-        </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -9731,10 +8480,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>LBW Email Route</fullName>
-        <actions>
-            <name>LBW_Case_Owner_Change</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Account.Product_Type_Transactional__c</field>
@@ -9760,14 +8505,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
     </rules>
     <rules>
         <fullName>LBW Outbound Call</fullName>
-        <actions>
-            <name>Update_Case_IMS_Rep_LBW_Customer_Service</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Update_Case_Owner_LBW_Customer_Service</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
         <criteriaItems>
@@ -9803,663 +8540,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
-        <fullName>LH - Assign to LH Support Sugar Hill</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Feature Request,Consumables Adjustments,Customization,Export Patient Group</value>
-        </criteriaItems>
-        <description>Updated with https://jira.yodle.com/browse/YO-60625</description>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH - Assign to Sugar Hill Support</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>(1 or 2) and 3</booleanFilter>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>,Customization,Consumables Adjustments,Investigate,Pre-MA Changes</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Priority</field>
-            <operation>equals</operation>
-            <value>Escalated</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH - Close out Upsell Emails</fullName>
-        <actions>
-            <name>Status_to_Closed</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>contains</operation>
-            <value>Lighthouse 360: Setup Call Recap,Your Lighthouse Messages are now active</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>equals</operation>
-            <value>support@lighthousepmg.com,medicalsupport@lighthousepmg.com,autosupport@lighthousepmg.com</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH - Lighthouse Gold Service for Field Service</fullName>
-        <actions>
-            <name>Send_Email_to_LHFS_Reps_for_Yodle_Gold</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>LHGS</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>notEqual</operation>
-            <value>Closed,Delete Case</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Help_Portal_Product_Type__c</field>
-            <operation>equals</operation>
-            <value>Lighthouse Field Service</value>
-        </criteriaItems>
-        <description>Sends an email to LHGS Field Service Reps</description>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH - Lighthouse Gold Service for Medical</fullName>
-        <actions>
-            <name>Send_Email_to_LHFS_Reps_for_Yodle_Gold_Medical</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>LHGS</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>notEqual</operation>
-            <value>Closed,Delete Case</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Help_Portal_Product_Type__c</field>
-            <operation>contains</operation>
-            <value>Lighthouse Dental,Lighthouse Chiro</value>
-        </criteriaItems>
-        <description>Sends an email to LHGS Medical</description>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH DF Review Migration To SH Support</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>DF Review Migration</value>
-        </criteriaItems>
-        <description>DF Review Migration Case Reason will assign to SH Support</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Inbound Support Email to Crystal</fullName>
-        <actions>
-            <name>LH_New_Training_Email_from_Support</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>equals</operation>
-            <value>support@lighthousepmg.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>LH Training</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Logo Work Complete</fullName>
-        <actions>
-            <name>LH_Logo_Work_Complete</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Lighthouse Logo</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Closed</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Master - Bounce List</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Clear Bounce List</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Master - Change to LH Future Request</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Future_Request</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>Consolidating 3 Workflow Rules.  Disabling 2, removed this Field update on another one. Using Case to compare if values not in the list</description>
-        <formula>AND( RecordTypeId = "012600000009bZX", /* LH Master RT */ OR(      ISPICKVAL(Reason, "Custom Message Migration"),     ISPICKVAL(Reason, "Delayed Consumables"),     ISPICKVAL(Reason, "Remove Newsletter Special Pricing"),     ISPICKVAL(Reason, "Site/Listings Teardown"),     ISPICKVAL(Reason, "Transports On/Off") ),  OR(     ISNEW() ,   /*check if the reason changed to something outside this list */   AND(             NOT(ISNEW()), 	   Case( 		 TEXT(Reason), 		 "Custom Message Migration",1,  		 "Delayed Consumables", 1, 		 "Remove Newsletter Special Pricing", 1, 		 "Site/Listings Teardown", 1, 		 "Transports On/Off",1, 		 0) 	   &lt;&gt; 	   Case( 		 TEXT(PRIORVALUE(Reason)), 		 "Custom Message Migration",1,  		 "Delayed Consumables", 1, 		 "Remove Newsletter Special Pricing", 1, 		 "Site/Listings Teardown", 1, 		 "Transports On/Off",1, 		 0) 	) ) )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Master - Config Detail - Marks as Escalated</fullName>
-        <actions>
-            <name>Mark_Escalated_Field</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <formula>AND(   RecordType.Id = "012600000009bZX", /*LH Master */  OR(  INCLUDES(Config_Detail__c, "New Template Update - Feedback Only"),  INCLUDES(Config_Detail__c, "New Template Update - All Campaigns")))</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Master - Delayed Consumable</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Future_Request</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Delayed Consumables,Site/Listings Teardown,Transports On/Off</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Master - Disable Newsletter Promo Created</fullName>
-        <actions>
-            <name>Account_Email_Populate_to_Case</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Case_Origin_to_Internal</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Description_for_Disable_Newsletter_Promo</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Due_Date_to_1_Year_from_Today</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Subject_for_Disable_Newsletter_Promo</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Remove Newsletter Special Pricing</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Master - Escalated</fullName>
-        <actions>
-            <name>Escalated_Priority</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Awaiting Customer Response,Escalated (Dev),Escalated (Internal),Awaiting Internal Response,Bug Reported</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <description>Need to indicate escalated for LH Master cases when in status Awaiting Customer Response, Awaiting Internal Response, Escalated (Internal), Bug Reported and Escalated (Dev)</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Master - Production Team Mistake</fullName>
-        <actions>
-            <name>Mark_Escalated_Field</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>ProductionTeam Mistake</value>
-        </criteriaItems>
-        <description>Mark Escalated? when production team mistake is selected</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Master Case Escalation</fullName>
-        <actions>
-            <name>LH_Master_Escalation</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Manager_Approved_Changes__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Priority</field>
-            <operation>equals</operation>
-            <value>Escalated</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH New PPP CSC</fullName>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>PPP CSC</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>NCS - AutoLaunch</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH OBC Recording</fullName>
-        <actions>
-            <name>Assign_to_OBC_Queue</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Subject_for_OBC_Request</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>OBC Recording</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Postcard Email2Case</fullName>
-        <actions>
-            <name>Case_Reason_to_LH_Postcard</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>LH_Postcard_Assign_to_LH_Postcard</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>equals</operation>
-            <value>Lh-postcards@lighthousepmg.com</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Quality</fullName>
-        <actions>
-            <name>Manager_Approved_Quality</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Reason_Detail_to_QA_Request_Lighthouse</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>SEM_Ops_Status</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Quality Team</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH Master</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Support Email2Case Delete Emails</fullName>
-        <actions>
-            <name>Status_to_Delete_Case</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND (2 OR 4 or 5 or (3 and 6) or 7)</booleanFilter>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>contains</operation>
-            <value>support@lighthousepmg.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>equals</operation>
-            <value>Your scheduled payment has been declined,Client Spend Alert</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>contains</operation>
-            <value>Thank You for Your Order</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>startsWith</operation>
-            <value>[JIRA]</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>startsWith</operation>
-            <value>Lighthouse 360: Please contact patient</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.SuppliedEmail</field>
-            <operation>contains</operation>
-            <value>lighthousepmg.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>equals</operation>
-            <value>The TIME on your Server is incorrect,The TIME ZONE on your Server is incorrect</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Support Email2Case to Austin</fullName>
-        <actions>
-            <name>LH_Assign_to_LH_Support_Austin</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Reason_Detail_to_Lighthouse_Support</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>(1 and 2 and 3 and 4 and 5 and 6 and 7 and 9 and 10) or 8</booleanFilter>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>contains</operation>
-            <value>support@lighthousepmg.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>notEqual</operation>
-            <value>The TIME on your Server is incorrect,The TIME ZONE on your Server is incorrect,Your scheduled payment has been declined</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>notContain</operation>
-            <value>Failed Task Lists,Failed transferring batch resource</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.SuppliedEmail</field>
-            <operation>notEqual</operation>
-            <value>root@app03.localdomain,root@lh-betaapp3.lhprod.yodle.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>notContain</operation>
-            <value>failure notice,SendGrid - Statistics</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.SuppliedEmail</field>
-            <operation>notEqual</operation>
-            <value>MAILER-DAEMON@mailer.lpmg360.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>New</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>equals</operation>
-            <value>LH Medical VM,LH Auto VM</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Salesforce Automation</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Blank for Email Catch All</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Support Email2Case to Sugar Hill</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Reason_Detail_to_Lighthouse_Support</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND ((2 AND 3) OR 4) and 5</booleanFilter>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>contains</operation>
-            <value>support@lighthousepmg.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>startsWith</operation>
-            <value>Failed Task Lists,Failed transferring batch resource:</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.SuppliedEmail</field>
-            <operation>equals</operation>
-            <value>root@lh-betaapp3.lhprod.yodle.com,root@app03.localdomain</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>startsWith</operation>
-            <value>Failed transferring batch resource,[BULK]  Failed transferring batch resource</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>notEqual</operation>
-            <value>Blank for Email Catch All</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Support Email2Case to Tricia</fullName>
-        <actions>
-            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Reason_Detail_to_Lighthouse_Support</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>contains</operation>
-            <value>support@lighthousepmg.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Subject</field>
-            <operation>startsWith</operation>
-            <value>SendGrid - Statistics -</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>LH Upsell Cases</fullName>
-        <actions>
-            <name>LH_Upsell_Case_Owner</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Update_Case_Reason_to_Product</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Update_Case_Record_Type_To_Master</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Update_Case_Subject</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Update_Reason_Detail_to_Upsell</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>equals</operation>
-            <value>LH Upsell</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>notEqual</operation>
-            <value>LH Upsell - Walkme</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>LHMA Post Launch</fullName>
-        <actions>
-            <name>LHMA_Post_Launch</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Requested_Updates__c</field>
-            <operation>equals</operation>
-            <value>Domain Swap,Metro Move</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>New</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type__c</field>
-            <operation>contains</operation>
-            <value>Lighthouse,LH</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>LandstarSupport</fullName>
         <actions>
             <name>YBN_Request_Detail</name>
@@ -10474,49 +8554,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
             <field>Case.Origin</field>
             <operation>equals</operation>
             <value>LandstarSupport@web.com</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>Lighthouse Follow Up Needed</fullName>
-        <actions>
-            <name>Lighthouse_Follow_Up_Needed</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Lighthouse Follow-Up Needed</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Lighthouse Logos Email2Case</fullName>
-        <actions>
-            <name>Case_Owner_to_Lighthouse_Logos</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Case_Reason_to_Lighthouse_Logo</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 OR 2</booleanFilter>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>equals</operation>
-            <value>logo@lighthousepmg.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Lighthouse Logo</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
     </rules>
@@ -10639,39 +8676,6 @@ NOT(ISBLANK(Date_Sent_to_Production__c)))</formula>
             <field>Case.Manager_Approved_Changes__c</field>
             <operation>equals</operation>
             <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Manager Approved Website Escalation</fullName>
-        <actions>
-            <name>Escalated_Priority</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Website_Tier_Mgr_Approve_to_Web_Dev</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>equals</operation>
-            <value>Website Change/Update</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Manager_Approved_Changes__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Priority</field>
-            <operation>equals</operation>
-            <value>Escalated,Critical,Blocker</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -11560,40 +9564,6 @@ NOT(ISPICKVAL(Status, "Unscheduled - 4+ Attempts"))
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
-        <fullName>Outbound Case To Kyle Zaffin</fullName>
-        <actions>
-            <name>Case_Owner_to_Kyle_Zaffin</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Outbound Call</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Channel_Type__c</field>
-            <operation>equals</operation>
-            <value>Local</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>CS Touch Plan</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type_Transactional__c</field>
-            <operation>contains</operation>
-            <value>Leads By Web,Lead Stream ATV</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.IMS_Rep_Full_Name__c</field>
-            <operation>equals</operation>
-            <value>Kyle Zaffin</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>Outbound JCI - Attempt 1</fullName>
         <actions>
             <name>Case_Owner_to_JCI_Outbound</name>
@@ -11918,32 +9888,6 @@ NOT(ISPICKVAL(Status, "Unscheduled - 4+ Attempts"))
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Outbound Outrank Plus - Attempt 3 Completed</fullName>
-        <actions>
-            <name>Outbound_Outrank_Plus_Attempt_3_By</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Outbound_Touch_Attempts_Priority_3</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>NCS - AutoLaunch</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Attempt_Date_3__c</field>
-            <operation>notEqual</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.X3rd_Attempt_By__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Outbound Outrank Plus - Attempt 4</fullName>
         <actions>
             <name>Case_Owner_to_Touch_Plan_Queue</name>
@@ -12046,10 +9990,6 @@ NOT(ISPICKVAL(Status, "Unscheduled - 4+ Attempts"))
             <name>Email_to_Case_Outrank_Support</name>
             <type>FieldUpdate</type>
         </actions>
-        <actions>
-            <name>Outrank_Wordpress_Email_to_Case_Reason</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -12064,20 +10004,6 @@ NOT(ISPICKVAL(Status, "Unscheduled - 4+ Attempts"))
         <criteriaItems>
             <field>Case.Reason_Detail__c</field>
             <operation>equals</operation>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Owner %3D LH Auto Support</fullName>
-        <actions>
-            <name>Case_Assigned_to_LH_Auto_Support_send_email</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>LH Auto Support</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -12176,10 +10102,6 @@ OwnerId = "00G60000001CJm2"))</formula>
         <actions>
             <name>Pre_MA_Case_Assigned_to_Sugar_Hill_Support</name>
             <type>Alert</type>
-        </actions>
-        <actions>
-            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
-            <type>FieldUpdate</type>
         </actions>
         <active>true</active>
         <criteriaItems>
@@ -12282,30 +10204,6 @@ OwnerId = "00G60000001CJm2"))</formula>
             <field>Case.Reason</field>
             <operation>equals</operation>
             <value>Call Quality - Reactive</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Rogers - SW Issue</fullName>
-        <actions>
-            <name>Rogers_Sales_Wizard_Issue</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Partner - Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Rogers Sales Wizard Issue</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>notEqual</operation>
-            <value>No Physical Address for Organic/Combo</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -12640,490 +10538,6 @@ OwnerId = "00G60000001CJm2"))</formula>
             <value>Out of Sync,Charge,Adoption,Maps Verification,Unknown,Cancel,Touch,Setup,Upsell,Pin Collection,Downsell,Invoice,Proactive</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Surveys - LH Issue Resolution SC%2FLO</fullName>
-        <actions>
-            <name>LH_Surveys_Issue_Res</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 and 12 AND 13 AND 14</booleanFilter>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type_Transactional__c</field>
-            <operation>contains</operation>
-            <value>lighthouse</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Client_Type__c</field>
-            <operation>contains</operation>
-            <value>Lighthouse</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Charge_Failure_Status__c</field>
-            <operation>notContain</operation>
-            <value>billing decline</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type__c</field>
-            <operation>notEqual</operation>
-            <value>Yodle Web</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Survey_Opt_Out__c</field>
-            <operation>notEqual</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Status__c</field>
-            <operation>notEqual</operation>
-            <value>OFF</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Suppress_Exit_Email__c</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Sent_LH_Issue_Resolution_Survey__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>notContain</operation>
-            <value>Out of Sync,Charge,Adoption,Maps Verification,Unknown,Cancel,Touch,Setup,Upsell,Pin Collectionn,Downsell,Invoice,Proactive</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>notContain</operation>
-            <value>Out of Sync,Charge,Adoption,Maps Verification,Unknown,Cancel,Touch,Setup,Upsell,Pin Collection,Downsell,Invoice,Proactive</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Secondary_Segments__c</field>
-            <operation>notContain</operation>
-            <value>Auto</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Surveys - LH Issue Resolution SC%2FLO AUTO</fullName>
-        <actions>
-            <name>LH_Surveys_Issue_Res_AUTO</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 and 12 AND 13 AND 14</booleanFilter>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type_Transactional__c</field>
-            <operation>contains</operation>
-            <value>lighthouse</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Channel_Development__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Client_Type__c</field>
-            <operation>contains</operation>
-            <value>Lighthouse</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Charge_Failure_Status__c</field>
-            <operation>notContain</operation>
-            <value>billing decline</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type__c</field>
-            <operation>notEqual</operation>
-            <value>Yodle Web</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Survey_Opt_Out__c</field>
-            <operation>notEqual</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Status__c</field>
-            <operation>notEqual</operation>
-            <value>OFF</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Suppress_Exit_Email__c</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Sent_LH_Issue_Resolution_Survey__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>notContain</operation>
-            <value>Out of Sync,Charge,Adoption,Maps Verification,Unknown,Cancel,Touch,Setup,Upsell,Pin Collectionn,Downsell,Invoice,Proactive</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>notContain</operation>
-            <value>Out of Sync,Charge,Adoption,Maps Verification,Unknown,Cancel,Touch,Setup,Upsell,Pin Collection,Downsell,Invoice,Proactive</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Secondary_Segments__c</field>
-            <operation>contains</operation>
-            <value>Auto</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Surveys - TORCHx Issue Resolution</fullName>
-        <actions>
-            <name>TORCHx_Issue_Resolution_Survey_Email_Alert</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>Account_Email_Populate_to_Case</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 and 12 AND 13</booleanFilter>
-        <criteriaItems>
-            <field>Case.IsClosed</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type_Transactional__c</field>
-            <operation>notContain</operation>
-            <value>lighthouse,field service</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Plan_Id__c</field>
-            <operation>contains</operation>
-            <value>torchx</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Client_Type__c</field>
-            <operation>notContain</operation>
-            <value>OEM,National,Partner,Lighthouse</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.IMS_Rep__c</field>
-            <operation>notContain</operation>
-            <value>Lighthouse</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type__c</field>
-            <operation>notEqual</operation>
-            <value>Yodle Web</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Survey_Opt_Out__c</field>
-            <operation>notEqual</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Status__c</field>
-            <operation>notEqual</operation>
-            <value>OFF</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Suppress_Exit_Email__c</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Issue_Resolved_Survey_Send_Date__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason_Detail__c</field>
-            <operation>notContain</operation>
-            <value>Out of Sync,Charge,Adoption,Maps Verification,Unknown,Cancel,Touch,Setup,Upsell,Pin Collectionn,Downsell,Invoice,Proactive</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>notContain</operation>
-            <value>Out of Sync,Charge,Adoption,Maps Verification,Unknown,Cancel,Touch,Setup,Upsell,Pin Collection,Downsell,Invoice,Proactive</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx - Email Members with new CSC</fullName>
-        <actions>
-            <name>New_TORCHx_CSC_Case_Created</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Account.Client_Experience_Key__c</field>
-            <operation>contains</operation>
-            <value>torchx</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Outbound Call</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>CSC</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.CreatedById</field>
-            <operation>notContain</operation>
-            <value>Rustin,Rustan</value>
-        </criteriaItems>
-        <description>Email the team when a new CSC case is created</description>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx - NCS Case CSC Date Filled Out</fullName>
-        <actions>
-            <name>Web_Dev_Completed_Date_to_Today</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.CSC_Reschedule_Date_2__c</field>
-            <operation>notEqual</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Web_Dev_Score_for_IMS__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>TORCHx NCS - AutoLaunch</value>
-        </criteriaItems>
-        <description>When the CSC Reschedule Date is filled out, this will populate the WebDev Complete Date for CSC Case Creation Automation.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx CSC%2FProactive Touch Email to Owner - Email Alert</fullName>
-        <actions>
-            <name>TORCHx_CSC_Proactive_Touch_Email_to_Owner_Email_Alert</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>TORCHx_NCS_Email_to_Owner_Uncheck</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.TORCHx_NCS_Email_Notification__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>TORCHx CSC,Proactive Touch</value>
-        </criteriaItems>
-        <description>This Sends an Email to the Case Owner when someone replies to an Open Proactive Touch or TORCHx CSC Case</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx Master Escalation Notification</fullName>
-        <actions>
-            <name>TORCHx_Escalation_Case</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>TORCHx Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.IsEscalated</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx Master Owner to Quality Team</fullName>
-        <actions>
-            <name>Case_Owner_to_Quality_Team_Queue</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>TORCHx Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Quality Team</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx Master Owner to Sugar Hill</fullName>
-        <actions>
-            <name>Case_Owner_to_LH_Support_Sugar_Hill</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>TORCHx Master</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>notEqual</operation>
-            <value>Quality Team</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx NCS Case Sub Status change notification</fullName>
-        <actions>
-            <name>NCS_case_notify_owner_on_Status_change</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>TORCHx NCS - AutoLaunch</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Sub_Status__c</field>
-            <operation>equals</operation>
-            <value>Site Build</value>
-        </criteriaItems>
-        <description>Notify NCS Case owner when the NCS case sub status is changed to "Site Build"</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx NCS Email to Owner - Email Alert</fullName>
-        <actions>
-            <name>TORCHx_NCS_Email_to_Owner_Email_Alert</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>TORCHx_NCS_Email_to_Owner_Uncheck</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.TORCHx_NCS_Email_Notification__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>TORCHx NCS - AutoLaunch</value>
-        </criteriaItems>
-        <description>This sends an email notice to case owner for TORCHx</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx Optimization Case completed Email notification to Client</fullName>
-        <actions>
-            <name>TORCHx_Optimization_case_Status_notification_to_Client</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Optimization</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Closed - Opt Complete</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Product_Type_Transactional__c</field>
-            <operation>contains</operation>
-            <value>TORCHx</value>
-        </criteriaItems>
-        <description>Once the TORCHx Service Performance Team completes/closes an Optimization Case. This sends an email notification to the client email address on the Account.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx Outbound Call Case Rescheduled Today</fullName>
-        <actions>
-            <name>TORCHx_Outbound_Time_Rescheduled_to_Today</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <formula>AND(  RecordTypeId = "012600000009cjs",   CONTAINS(Account.Client_Experience_Key__c,"torchx"),  ISCHANGED( Scheduled_Call__c ),  DATEVALUE(Scheduled_Call__c) = TODAY(),   OR(     ISPICKVAL(  Reason ,"CSC"),  CONTAINS( Subject,"Managing Relationships"),  CONTAINS( Subject,"Advanced Features")   ) )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>TORCHx Owner Update for new TPs</fullName>
-        <actions>
-            <name>Owner_to_TORCHx</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>New</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Account.Client_Experience_Key__c</field>
-            <operation>contains</operation>
-            <value>TORCHx</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Outbound Call</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>CS Touch Plan</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Rustan Valino,Salesforce Automation</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
         <fullName>Target Service Area Added</fullName>
@@ -14302,10 +11716,6 @@ ISCHANGED(Estimated_Completion_Date__c)
             <name>YBN</name>
             <type>Alert</type>
         </actions>
-        <actions>
-            <name>YBN_Case_Owner_to_Sarah_McMillian</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
@@ -15318,31 +12728,6 @@ ISCHANGED(Estimated_Completion_Date__c)
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Z- LH - Assign James Martini</fullName>
-        <actions>
-            <name>priort_critical</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>LH OOS</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Created_by_Role__c</field>
-            <operation>notContain</operation>
-            <value>admin,operations</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Created_by_Role__c</field>
-            <operation>contains</operation>
-            <value>inbound specialist</value>
-        </criteriaItems>
-        <description>Deactivated for this ticket:  https://jira.yodle.com/browse/YO-60625</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>budget change - renewals %26 upsells</fullName>
         <actions>
             <name>budget_difference_renewals_upsells</name>
@@ -15405,7 +12790,7 @@ ISCHANGED(Estimated_Completion_Date__c)
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
-        <fullName>charge failure case</fullName>
+        <fullName>Charge failure Case</fullName>
         <actions>
             <name>charge_failure_case_EmailElert</name>
             <type>Alert</type>

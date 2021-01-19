@@ -185,20 +185,12 @@
                 <field>JIRA_Issue_ID__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>JIRA_URL__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>IMS_Rep__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Yodle_Path_Test_Group__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>RAF_Followup__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -269,10 +261,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Called_By__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Manager_Approved_Changes__c</field>
             </layoutItems>
             <layoutItems>
@@ -283,15 +271,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Survey_Code__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Survey_Code_2__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>True_Escalation__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -339,10 +319,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Sales_Person_text__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Developmental_Supervisor_del__c</field>
             </layoutItems>
             <layoutItems>
@@ -350,32 +326,7 @@
                 <field>Reason_for_QA__c</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Result_of_QA__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Quality_Offense__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Minutes_Recorded__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Words_Transcribed__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Date_Processed_QA__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>QA_Action_Taken__c</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
@@ -440,20 +391,12 @@
                 <field>Close_Notes__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>LH_Client_Portal__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Date_time_In_Progress__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Issue_Resolved_Survey_Send_Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Sent_LH_Issue_Resolution_Survey__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -488,10 +431,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Help_Portal_Product_Type__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>LH_360_ID__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -556,10 +495,6 @@
             <fields>RECORDTYPE</fields>
             <fields>Status__c</fields>
             <relatedList>Organic_Analysis__c.Case_URL__c</relatedList>
-        </relatedLists>
-        <relatedLists>
-            <fields>NAME</fields>
-            <relatedList>Call_Answering__c.Case__c</relatedList>
         </relatedLists>
         <relatedLists>
             <fields>NAME</fields>
@@ -648,10 +583,6 @@
         <fields>Client_Type__c</fields>
         <fields>IMS_Rep__c</fields>
         <relatedList>Organic_Analysis__c.Case_URL__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Call_Answering__c.Case__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>

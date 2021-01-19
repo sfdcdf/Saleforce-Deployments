@@ -100,76 +100,6 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__AllTabSet</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__AppLauncher</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Chatter</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Content</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Insights</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningSales</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningSalesConsole</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningService</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Marketing</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Platform</application>
-        <default>true</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Sales</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__SalesforceCMS</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Service</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__ServiceConsole</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.AccountSource</field>
@@ -3415,6 +3345,9 @@
         <layout>Apex_Debug_Log__c-Apex Debug Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>AppAnalyticsQueryRequest-App Analytics Query Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3539,13 +3472,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>CTS_Salesforce_Object_Ref__mdt-CTS Salesforce Object Ref Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Answering__c-Call Answering Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Call_Answering__c-Call Answering Layout</layout>
-        <recordType>Call_Answering__c.Call_Answering</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Call_Grading_Form_2_0__c-CSC Monitoring Form %28feed%29</layout>
@@ -4077,18 +4003,10 @@
         <layout>ContactPointPhone-Contact Point Phone Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ContentAsset-Asset File Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ContentVersion-General</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contest__c-Contest Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contest__c-Contest Layout</layout>
-        <recordType>Contest__c.Events</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contest__c-Contest Layout</layout>
-        <recordType>Contest__c.master</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contract-Contract Layout</layout>
@@ -4325,9 +4243,6 @@
         <recordType>Event.YBN_Sales_Event_IL</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Executive_Client_Scorecard__c-Executive Client Scorecard Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>FAQ__kav-FAQ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4404,38 +4319,38 @@
         <layout>Lighthouse_PMS_and_SMS_Guides__kav-Lighthouse Documentation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.AR_Request_Form</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.Auto_Support_Ticket</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Auto</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Dental</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.CSC_Worksheet_Medical</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.Installation_Worksheet</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.LH_OOS</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lighthouse_Worksheets__c-Lighthouse Worksheets Layout %28feed%29</layout>
+        <layout>Lighthouse_Worksheets__c-PMS Swap Form %28feed%29</layout>
         <recordType>Lighthouse_Worksheets__c.PMS_Swap_Form</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -4500,7 +4415,7 @@
         <layout>Mgmt_Goal__c-Mgmt Goal Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MilestoneSnapshotobj__c-MilestoneSnapshotobj Layout</layout>
+        <layout>MilestoneForReporting__c-MilestoneForReporting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Milestone_Conversion__c-Milestone Conversion Layout</layout>
@@ -4785,17 +4700,6 @@
         <layout>PricebookEntry-Price Book Entry Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Prize_Winner__c-Prize Winner Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Prize_Winner__c-Prize Winner Layout</layout>
-        <recordType>Prize_Winner__c.President_s_Club</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Prize_Winner__c-Prize Winner Layout</layout>
-        <recordType>Prize_Winner__c.master</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Process_Documentation__kav-Process Documentation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4805,26 +4709,26 @@
         <layout>Promotion__c-Promo Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.Acquisio_Master_Quality</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.Closing_Script_Auto_Launch</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.Lighthouse_Master_Quality</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.Local_Master_Quality</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Quality_Case__c-TORCHx Master Quality</layout>
+        <layout>Quality_Case__c-Closing Script Auto Launch</layout>
         <recordType>Quality_Case__c.TORCHx_Master_Quality</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -4835,13 +4739,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>SFDCToCTSAsynchRequest__c-SFDCToCTSAsynchRequest Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SMS_Tracking__c-SMS Tracking Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SMS_Tracking__c-SMS Tracking Layout</layout>
-        <recordType>SMS_Tracking__c.Default</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Sales_Attachments__c-Sales Attachments Layout</layout>
@@ -5014,10 +4911,10 @@
         <layout>UserAlt-User Profile Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Worksheets__c-MLS Worksheet</layout>
+        <layout>Worksheets__c-MLS Worksheet %28feed%29</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Worksheets__c-MLS Worksheet</layout>
+        <layout>Worksheets__c-MLS Worksheet %28feed%29</layout>
         <recordType>Worksheets__c.MLS_Worksheet</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -6157,7 +6054,7 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>true</default>
+        <default>false</default>
         <recordType>Opportunity.Local</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -6192,9 +6089,10 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Opportunity.YBN_Individual_Location</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -6497,7 +6395,7 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
-        <tab>MilestoneSnapshotobj__c</tab>
+        <tab>MilestoneForReporting__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -6649,10 +6547,6 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Call_Answering__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Call_Grading_Form_2_0__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -6778,10 +6672,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>SFDCToCTSAsynchRequest__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>SMS_Tracking__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
