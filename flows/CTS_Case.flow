@@ -116,22 +116,6 @@
         </inputParameters>
     </actionCalls>
     <apiVersion>49.0</apiVersion>
-    <assignments>
-        <name>myVariable_waitStartTimeAssignment</name>
-        <label>myVariable_waitStartTimeAssignment</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Flow.CurrentDateTime</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>myDecision</targetReference>
-        </connector>
-    </assignments>
     <decisions>
         <processMetadataValues>
             <name>index</name>
@@ -996,7 +980,7 @@
         </rules>
     </decisions>
     <description>Validate SFDC Object and create an AsynchRequest in SFDCToCTSAsynchRequest Object to send to CTS</description>
-    <interviewLabel>CTS_Case-7_InterviewLabel</interviewLabel>
+    <interviewLabel>CTS_Case-8_InterviewLabel</interviewLabel>
     <label>CTS - Case</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -1023,8 +1007,8 @@
         </value>
     </processMetadataValues>
     <processType>Workflow</processType>
-    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
-    <status>Active</status>
+    <startElementReference>myDecision</startElementReference>
+    <status>Draft</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>
@@ -1040,15 +1024,5 @@
         <isInput>true</isInput>
         <isOutput>false</isOutput>
         <objectType>Case</objectType>
-    </variables>
-    <variables>
-        <name>myVariable_waitStartTimeVariable</name>
-        <dataType>DateTime</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <elementReference>$Flow.CurrentDateTime</elementReference>
-        </value>
     </variables>
 </Flow>
