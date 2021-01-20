@@ -10586,6 +10586,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.Description_Summary__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.Description_of_the_Business__c</field>
         <readable>true</readable>
     </fieldPermissions>
