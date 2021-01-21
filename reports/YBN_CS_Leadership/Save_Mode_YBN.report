@@ -50,6 +50,13 @@
             <operator>contains</operator>
             <value>Slocum,Greene</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>OFF</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
