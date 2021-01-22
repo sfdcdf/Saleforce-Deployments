@@ -3151,6 +3151,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.tz__DST_Setting__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.tz__Local_Time_24_Short__c</field>
         <readable>true</readable>
@@ -3172,6 +3177,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.tz__Timezone_DST_Full__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.tz__Timezone_DST__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.tz__Timezone_F__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.tz__Timezone_Full_F__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.tz__Timezone_Full__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3183,6 +3208,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.tz__Timezone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.tz__UTC_Offset_DST__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.tz__UTC_Offset_F__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13962,6 +13997,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.tz__DST_Setting__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.tz__Local_Time_24_Short__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -13982,6 +14022,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.tz__Timezone_DST_Full__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__Timezone_DST__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__Timezone_F__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__Timezone_Full_F__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.tz__Timezone_Full__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -13993,6 +14053,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.tz__Timezone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__UTC_Offset_DST__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.tz__UTC_Offset_F__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -18866,6 +18936,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__DST_Setting__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Lead.tz__Local_Time_24_Short__c</field>
         <readable>true</readable>
@@ -18887,6 +18962,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Lead.tz__Timezone_DST_Full__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__Timezone_DST__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__Timezone_F__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__Timezone_Full_F__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Lead.tz__Timezone_Full__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -18898,6 +18993,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Lead.tz__Timezone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__UTC_Offset_DST__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.tz__UTC_Offset_F__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
