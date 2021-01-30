@@ -13,6 +13,12 @@
         <field>Case$Time_To_Complete_Task_Minutes__c</field>
     </columns>
     <columns>
+        <field>Case$Client_Satisfaction_Rating__c</field>
+    </columns>
+    <columns>
+        <field>Case$Negative_Satisfaction_Rating_Details__c</field>
+    </columns>
+    <columns>
         <field>Case$IMS_Rep_Email__c</field>
     </columns>
     <columns>
@@ -78,7 +84,7 @@
         <field>Case$Owner</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>IB Cases - AHS</name>
+    <name>IB Cases w/ Satisfaction - AHS</name>
     <params>
         <name>co</name>
         <value>1</value>
