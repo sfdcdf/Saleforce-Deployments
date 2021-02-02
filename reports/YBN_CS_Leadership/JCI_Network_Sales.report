@@ -36,14 +36,6 @@
         </values>
     </buckets>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Opportunity.WBN_Opp_Amount_TEMP__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Opportunity.Monthly_Average_Revenue__c</field>
-    </columns>
-    <columns>
         <field>CLOSE_DATE</field>
     </columns>
     <columns>
@@ -87,10 +79,6 @@
     </columns>
     <columns>
         <field>Opportunity.Contract_Term_in_months__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Opportunity.Total_Monthly_Charges__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -146,6 +134,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_CURRENTQ</interval>
+        <endDate>2021-03-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-09-01</startDate>
     </timeFrameFilter>
 </Report>
