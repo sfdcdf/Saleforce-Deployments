@@ -14,31 +14,28 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>ami.dave@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>jswitzer@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>ryan.deller@web.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>sarah.mctate@yodle.com</recipient>
             <type>user</type>
         </recipients>
+        
+        
+        
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/FUL_Phased_Launch_Date_Changed</template>
     </alerts>
@@ -50,10 +47,7 @@
             <recipient>YBN_Customer_Success_Manager</recipient>
             <type>role</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/FUL_YBN_Estimated_Launch_Dates_Needed</template>
     </alerts>
@@ -79,9 +73,6 @@
             <type>user</type>
         </recipients><recipients>
             <recipient>kelly.rix@yodle.com</recipient>
-            <type>user</type>
-        </recipients><recipients>
-            <recipient>mbrevig@yodle.com</recipient>
             <type>user</type>
         </recipients><recipients>
             <recipient>mpugh@yodle.com</recipient>

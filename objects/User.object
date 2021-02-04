@@ -457,6 +457,16 @@ Temporarily Exclude [ We will use this to exclude the user from deactivating bat
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>X18_digit__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>18 digit</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>echosign_dev1__EchoSign_Allow_Delegated_Sending__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>

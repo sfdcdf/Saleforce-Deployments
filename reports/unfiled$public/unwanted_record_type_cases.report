@@ -4,16 +4,10 @@
         <field>OWNER</field>
     </columns>
     <columns>
-        <field>RECORDTYPE</field>
-    </columns>
-    <columns>
         <field>CASE_ID</field>
     </columns>
     <columns>
         <field>SUBJECT</field>
-    </columns>
-    <columns>
-        <field>CREATED_DATE</field>
     </columns>
     <columns>
         <field>AGE</field>
@@ -36,7 +30,17 @@
             <value>Case.LS_ATV_Organic_Setup,Case.Blank_for_Email_Catch_All,Case.TORCHx_Product_Feedback,Case.Facebook_Post_For_You,Case.FS_Product_Feedback,Case.Partner_Inbound_Inquiry,Case.Yodle_Gold_Service,Case.LH_Closing_Script_Auto_Launch,Case.TORCHx_NCS_AutoLaunch,Case.TORCHx_Master,Case.LBW_Content_Organic_Setup,Case.Master,Case.Channel_Partner,Case.Renewals_and_Upsells,Case.SEO_Tasks,Case.Decision_Tree_Optimization,Case.Performance_Issue,Case.XJenTest_No_Use,Case.XJen_Test_NCS_No_Use,Case.XJen_Test_COBRA,Case.O_Account_Update,Case.Touch_Plan,Case.Survey_Send,Case.LH_Cancellation_Request,Case.LH_Master,Case.Winback,Case.Service_Task_Setup,Case.Outbound_Call,Case.Cancellation_Request,Case.Call_Answering,Case.Closing_Script_Auto_Launch,Case.LH_Product_Feedback,Case.Rogers_in_Contract_Cancelation,Case.Product_Ideas</value>
         </criteriaItems>
     </filter>
-    <format>Tabular</format>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>unwanted record type cases</name>
     <params>
         <name>units</name>
@@ -48,13 +52,11 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2021-01-11</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-01-01</startDate>
+        <interval>INTERVAL_CURPREVQ</interval>
     </timeFrameFilter>
 </Report>

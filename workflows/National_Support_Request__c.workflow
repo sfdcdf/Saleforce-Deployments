@@ -100,37 +100,31 @@
         <fullName>Initiation_Form_New</fullName>
         <description>Initiation Form New</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>jpyle@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mmachado@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>pdelk@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>tgahagan@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/New_Tier_4_Form</template>
-    </alerts>
+    <recipients>
+            <recipient>jpyle@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>mmachado@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>pdelk@yodle.com</recipient>
+            <type>user</type>
+        </recipients><recipients>
+            <recipient>tgahagan@yodle.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <alerts>
         <fullName>Initiation_Form_Organic_Analysis_Needed</fullName>
         <description>Initiation Form - Organic Analysis Needed</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>sfdc@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/Initiation_Form_Client_Side_Organic_Analysis_Needed</template>
     </alerts>

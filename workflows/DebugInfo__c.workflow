@@ -3,10 +3,7 @@
         <fullName>OrganicCustomContentSetupCaseBatch_Email_Alert</fullName>
         <description>OrganicCustomContentSetupCaseBatch Email Alert</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>sfdc@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>Admin_Email_Templates/OrganicCustomContentSetupCaseBatch_Failed_Email_Template</template>
     </alerts>

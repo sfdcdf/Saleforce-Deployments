@@ -170,9 +170,6 @@
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Contract_Signed</template>
     <recipients>
-            <recipient>emily.garza@web.com</recipient>
-            <type>user</type>
-        </recipients><recipients>
             <recipient>justin.petrillo@yodle.com</recipient>
             <type>user</type>
         </recipients><recipients>
@@ -180,9 +177,6 @@
             <type>user</type>
         </recipients><recipients>
             <recipient>mark.fucaloro@yodle.com</recipient>
-            <type>user</type>
-        </recipients><recipients>
-            <recipient>mbrevig@yodle.com</recipient>
             <type>user</type>
         </recipients><recipients>
             <recipient>mpugh@yodle.com</recipient>
@@ -248,10 +242,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <recipients>
-            <recipient>emily.garza@web.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/WBN_IL_Boom_Email</template>
     </alerts>
@@ -279,10 +270,7 @@
         <ccEmails>emcintyre@yodle.com</ccEmails>
         <description>YBN Opp in Contract Phase-Assign Force Field SD</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>sfdc@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Contract_Signed_Assign_Force_Field_SD</template>
     </alerts>
@@ -342,31 +330,28 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>ami.dave@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>doleary@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>jswitzer@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>ryan.deller@web.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>sarah.mctate@yodle.com</recipient>
             <type>user</type>
         </recipients>
+        
+        
+        
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Phased_Launch_Date_Changed</template>
     </alerts>
@@ -392,9 +377,6 @@
             <type>user</type>
         </recipients><recipients>
             <recipient>kelly.rix@yodle.com</recipient>
-            <type>user</type>
-        </recipients><recipients>
-            <recipient>mbrevig@yodle.com</recipient>
             <type>user</type>
         </recipients><recipients>
             <recipient>mmachado@yodle.com</recipient>
@@ -449,14 +431,8 @@
             <field>Sales_Director_Email__c</field>
             <type>email</type>
         </recipients>
-        <recipients>
-            <recipient>jswitzer@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <recipients>
             <field>Account_Director__c</field>
             <type>userLookup</type>
@@ -464,6 +440,9 @@
         <recipients>
             <field>Strategic_Project_Manager__c</field>
             <type>userLookup</type>
+        </recipients><recipients>
+            <recipient>jswitzer@yodle.com</recipient>
+            <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_CSM_Begins_Filling_Out_Run_Book</template>
@@ -475,23 +454,20 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>iitenberg@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>jwilder@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mmachado@yodle.com</recipient>
             <type>user</type>
         </recipients>
+        
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Website_Template_Launched</template>
     </alerts>
@@ -523,15 +499,12 @@
         <recipients>
             <recipient>YBN_Customer_Success_Manager</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>aelkin@yodle.com</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Estimated_Launch_Dates_Needed</template>
     </alerts>
@@ -4552,7 +4525,7 @@ CreatedBy.ProfileId ="00e60000000ibuQ",
     </tasks>
     <tasks>
         <fullName>WBN_Never_Launched_Opportunity_Lost</fullName>
-        <assignedTo>emily.garza@web.com</assignedTo>
+        <assignedTo>emily.garza@enspireforenterprise.com</assignedTo>
         <assignedToType>user</assignedToType>
         <description>Please update the Opportunity to reflect it as a Partial or Complete Closed Lost Opportunity.</description>
         <dueDateOffset>2</dueDateOffset>

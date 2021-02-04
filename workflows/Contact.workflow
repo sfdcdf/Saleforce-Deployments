@@ -10,9 +10,6 @@
         <senderType>CurrentUser</senderType>
         <template>National_Templates/WBN_New_Key_Contact_YBN_Master_Account</template>
     <recipients>
-            <recipient>dlynch@web.com</recipient>
-            <type>user</type>
-        </recipients><recipients>
             <recipient>lmayo@web.com</recipient>
             <type>user</type>
         </recipients><recipients>

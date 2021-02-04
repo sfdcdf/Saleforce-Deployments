@@ -3,10 +3,7 @@
         <fullName>Lead_Mktg_Alert_ION_lead_validated</fullName>
         <description>Lead - Mktg - Alert ION lead validated</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>dlynch@web.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>Marketing/New_Lead_Notification_ION</template>
     </alerts>

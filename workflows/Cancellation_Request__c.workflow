@@ -3,10 +3,7 @@
         <fullName>LBW_Cancellation_Alert</fullName>
         <description>LBW Cancellation Alert</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>sfdc@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/LBW_New_Cancellation_Alert</template>
     </alerts>

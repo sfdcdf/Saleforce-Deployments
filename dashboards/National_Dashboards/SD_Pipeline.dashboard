@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
@@ -18,7 +18,7 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>Includes Opps in Contract Stage</footer>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>SD Opps in Contract Stage by Month</header>
             <legendPosition>Bottom</legendPosition>
             <report>YBN_Operations/SD_Pipeline_Opps_in_Contract_Stage</report>
@@ -44,7 +44,7 @@
             <footer>Includes all Open Opp Stages Closing in the 4 Months</footer>
             <groupingColumn>FULL_NAME</groupingColumn>
             <groupingColumn>BucketField_20139526</groupingColumn>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>SD Pipeline Pre-Contract vs. Contract</header>
             <legendPosition>Bottom</legendPosition>
             <report>YBN_Operations/SD_Pipeline_Pre_Contract_vs_Contract2</report>
@@ -66,7 +66,7 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>Includes all Open Opp Stages Closing in the 4 Months</footer>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>SD Pipeline - Next 4 Months (All Open Opps)</header>
             <legendPosition>Bottom</legendPosition>
             <report>YBN_Operations/SD_Pipeline_Next_4_Mths</report>
@@ -86,7 +86,7 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>Includes all Open Opp Stages Closing in the 4 Months</footer>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>SD Pipeline by Month</header>
             <legendPosition>Bottom</legendPosition>
             <report>YBN_Operations/SD_Pipeline_Next_4_Mths</report>
@@ -113,7 +113,7 @@
             <expandOthers>false</expandOthers>
             <footer>Includes Opps with a Past Close Date</footer>
             <groupingColumn>FULL_NAME</groupingColumn>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>Open Opps with an old Close Date - REQUIRES ACTION</header>
             <legendPosition>Bottom</legendPosition>
             <report>YBN_Operations/SD_Pipeline_Open_Opps_in_Past</report>
@@ -139,7 +139,7 @@
             <footer>Includes Opps Created in the Current and Previous Quarters in Open Stages</footer>
             <groupingColumn>FULL_NAME</groupingColumn>
             <groupingColumn>CREATED_DATE</groupingColumn>
-            <groupingSortProperties/>
+            <groupingSortProperties />
             <header>SD Pipeline - Opps Opened by Month</header>
             <legendPosition>Bottom</legendPosition>
             <report>YBN_Operations/SD_Pipeline_Created_Date</report>

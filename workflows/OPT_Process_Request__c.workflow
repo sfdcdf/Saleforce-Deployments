@@ -24,10 +24,7 @@
         <fullName>Organic_Process_Request_Alert_Michal_of_Web_Dev_Update</fullName>
         <description>Organic Process Request - Alert Michal of Web Dev Update</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>sfdc@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>Support/Organic_Process_Request_Completed</template>
     </alerts>
@@ -35,10 +32,7 @@
         <fullName>Organic_Process_Request_Alert_Rusty_of_MA_Update</fullName>
         <description>Organic Process Request - Alert Rusty of MA Update</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>sfdc@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>Support/Organic_Process_Request_Completed</template>
     </alerts>

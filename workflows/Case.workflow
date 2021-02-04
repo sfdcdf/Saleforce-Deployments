@@ -220,10 +220,7 @@
         <ccEmails>copywritingcts@web.com</ccEmails>
         <description>CTS - Send Organic cases to  CopywritingCTS@web.com</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>sfdc@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderAddress>copywritingsfdc@web.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CTS_Templates/CTS_OrganicCases_Send</template>
@@ -1486,10 +1483,7 @@
             <recipient>YBN_Customer_Success_Manager</recipient>
             <type>role</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <recipients>
             <field>LastModifiedById</field>
             <type>userLookup</type>
@@ -1516,10 +1510,7 @@
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <recipients>
             <field>LastModifiedById</field>
             <type>userLookup</type>
@@ -2268,19 +2259,16 @@
         <recipients>
             <field>Case_Creator_Manager_Email__c</field>
             <type>email</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>aelkin@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>jwilder@yodle.com</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Escalated_Case</template>
     </alerts>
@@ -2665,15 +2653,12 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>christine.bergman@yodle.com</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Fire_Drill</template>
     </alerts>
@@ -2769,15 +2754,12 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>christine.bergman@yodle.com</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Fire_Drill</template>
     </alerts>
@@ -2803,19 +2785,16 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>aelkin@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>jwilder@yodle.com</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Fire_Drill</template>
     </alerts>
@@ -2905,15 +2884,12 @@
         <recipients>
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>christine.bergman@yodle.com</recipient>
             <type>user</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>Support/YBN_Fire_Drill</template>
     </alerts>
@@ -3009,10 +2985,7 @@
         <fullName>YBN_Relationship_Budget_Estimates_Completed</fullName>
         <description>YBN Relationship Budget Estimates Completed</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>emily.garza@web.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Relationship_Budget_Estimates_Completed</template>
     </alerts>
@@ -3058,10 +3031,7 @@
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Escalation_Path_Issue_Resolved</template>
     </alerts>
@@ -3136,10 +3106,7 @@
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Escalation_Path_Issue_Resolved</template>
     </alerts>
@@ -3185,10 +3152,7 @@
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Escalation_Path_Submission</template>
     </alerts>
@@ -3263,10 +3227,7 @@
             <recipient>YBN_VP_of_Client_Services</recipient>
             <type>role</type>
         </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Escalation_Path_Submission</template>
     </alerts>
@@ -3274,10 +3235,7 @@
         <fullName>YBN_Requests_Escalated_for_Production_Specialists</fullName>
         <description>YBN Requests Escalated for Production Specialists</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>edson.gonzalez@web.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>Support/Escalation_Standard_Email</template>
     </alerts>
@@ -3452,23 +3410,20 @@
         <protected>false</protected>
         <recipients>
             <type>owner</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>cbolton@yodle.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>kristen.antoline@web.com</recipient>
             <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
+        </recipients><recipients>
             <recipient>mpagonas@yodle.com</recipient>
             <type>user</type>
         </recipients>
+        
+        
+        
+        
         <senderType>DefaultWorkflowUser</senderType>
         <template>National_Templates/NCS_Case_Not_Touched_in_4_days</template>
     </alerts>
@@ -4783,7 +4738,7 @@
     <fieldUpdates>
         <fullName>Owner_Updates_To_Beau_Osteros</fullName>
         <field>OwnerId</field>
-        <lookupValue>sfdc@yodle.com</lookupValue>
+        <lookupValue>sfdc@enspireforenterprise.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>Owner Updates To Beau Osteros</name>
         <notifyAssignee>true</notifyAssignee>
@@ -4795,7 +4750,7 @@
         <fullName>Owner_Updates_To_Lynn_Tobias</fullName>
         <description>Case Owner field updates to Lynn Tobias</description>
         <field>OwnerId</field>
-        <lookupValue>sfdc@yodle.com</lookupValue>
+        <lookupValue>sfdc@enspireforenterprise.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>Owner Updates To Lynn Tobias</name>
         <notifyAssignee>false</notifyAssignee>
@@ -5536,7 +5491,7 @@ Account.Next_TP_Needed_By__c</formula>
     <fieldUpdates>
         <fullName>YBN_Case_Owner_to_Michele_Brevig</fullName>
         <field>OwnerId</field>
-        <lookupValue>mbrevig@yodle.com</lookupValue>
+        <lookupValue>michele.brevig@enspireforenterprise.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>YBN: Case Owner to Michele Brevig</name>
         <notifyAssignee>false</notifyAssignee>
@@ -5981,7 +5936,7 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
         <fields>Subject</fields>
         <fields>Sync_to_Marketo__c</fields>
         <includeSessionId>true</includeSessionId>
-        <integrationUser>sfdc@yodle.com</integrationUser>
+        <integrationUser>sfdc@enspireforenterprise.com</integrationUser>
         <name>AcuitySchedulingWebhook</name>
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>

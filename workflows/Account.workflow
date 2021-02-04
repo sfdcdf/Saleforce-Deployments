@@ -182,14 +182,8 @@
         <fullName>YBN_CSM_Begins_Filling_Out_Run_Book</fullName>
         <description>YBN CSM Begins Filling Out Run Book</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>jswitzer@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <recipients>
             <field>Account_Director__c</field>
             <type>userLookup</type>
@@ -205,6 +199,9 @@
         <recipients>
             <field>Sales_Director__c</field>
             <type>userLookup</type>
+        </recipients><recipients>
+            <recipient>jswitzer@yodle.com</recipient>
+            <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_CSM_Begins_Filling_Out_Run_Book</template>
@@ -261,10 +258,7 @@
         <fullName>YBN_e</fullName>
         <description>YBN email alert for ILs with no service level</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <recipients>
             <field>IMS_Rep__c</field>
             <type>userLookup</type>

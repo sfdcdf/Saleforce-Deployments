@@ -167,10 +167,7 @@
         <fullName>email_alert_to_michele_for_account_service_level_change</fullName>
         <description>email alert to michele for account service level change</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_IL_Service_Level_Approval</template>
     </alerts>
@@ -211,17 +208,14 @@
         <ccEmails>ybnoperations@yodle.com</ccEmails>
         <description>ybn -servic level update</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>alex.cuevas@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mbrevig@yodle.com</recipient>
-            <type>user</type>
-        </recipients>
+        
+        
         <senderType>CurrentUser</senderType>
         <template>National_Templates/YBN_Leadership_Approval_Needed</template>
-    </alerts>
+    <recipients>
+            <recipient>alex.cuevas@yodle.com</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <fieldUpdates>
         <fullName>CS_Operations_Closed_Date</fullName>
         <field>Closed_Date__c</field>
@@ -328,7 +322,7 @@
         <fullName>CS_Ops_Web_Dev_Escalation</fullName>
         <description>Original User (Sean Cornwall) was deactivated as a user; Salesforce Automation put in place to ensure deactivation of user</description>
         <field>OwnerId</field>
-        <lookupValue>sfdc@yodle.com</lookupValue>
+        <lookupValue>sfdc@enspireforenterprise.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>CS Ops Owner to Sean Cornwall</name>
         <notifyAssignee>false</notifyAssignee>
@@ -401,7 +395,7 @@
     <fieldUpdates>
         <fullName>update_ops_owner</fullName>
         <field>OwnerId</field>
-        <lookupValue>mbrevig@yodle.com</lookupValue>
+        <lookupValue>michele.brevig@enspireforenterprise.com</lookupValue>
         <lookupValueType>User</lookupValueType>
         <name>CS Ops Owner to Michele Brevig</name>
         <notifyAssignee>false</notifyAssignee>
