@@ -4,6 +4,9 @@
         <field>ACCOUNT</field>
     </columns>
     <columns>
+        <field>Activity.Communication_Type__c</field>
+    </columns>
+    <columns>
         <field>SUBJECT</field>
     </columns>
     <columns>
@@ -14,15 +17,6 @@
     </columns>
     <columns>
         <field>TASK_TYPE</field>
-    </columns>
-    <columns>
-        <field>TASK_SUBTYPE</field>
-    </columns>
-    <columns>
-        <field>DUE_DATE</field>
-    </columns>
-    <columns>
-        <field>STATUS</field>
     </columns>
     <columns>
         <field>TASK</field>
@@ -37,7 +31,7 @@
         <field>OPPORTUNITY</field>
     </columns>
     <filter>
-        <booleanFilter>(1 OR 2) AND 3 AND 4</booleanFilter>
+        <booleanFilter>(1 OR 2) AND ((3 AND 4) OR 5)</booleanFilter>
         <criteriaItems>
             <column>OWNER_ROLE</column>
             <columnToColumn>false</columnToColumn>
@@ -66,11 +60,33 @@
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Task.YBN_Sales_Corporate</value>
+        </criteriaItems>
     </filter>
-    <format>Summary</format>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>DUE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TASK_SUBTYPE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Corp Sales Activites</name>
@@ -89,11 +105,9 @@
     <reportType>Activity</reportType>
     <roleHierarchyFilter>Operations</roleHierarchyFilter>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>DUE_DATE</sortColumn>
-    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
         <interval>INTERVAL_CURY</interval>

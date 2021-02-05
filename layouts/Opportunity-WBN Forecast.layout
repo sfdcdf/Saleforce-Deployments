@@ -121,12 +121,14 @@
         <fields>UnitPrice</fields>
         <fields>Quantity</fields>
         <fields>ContractLength__c</fields>
-        <fields>SUBTOTAL</fields>
         <fields>TotalPrice</fields>
         <fields>AnnualProductValue__c</fields>
         <fields>TotalProductValue__c</fields>
         <fields>ServiceDate</fields>
+        <fields>Description</fields>
         <relatedList>RelatedLineItemList</relatedList>
+        <sortField>UnitPrice</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <customButtons>Setup_Adoption_Products</customButtons>
