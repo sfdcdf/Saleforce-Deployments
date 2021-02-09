@@ -11310,6 +11310,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.Negative_Satisfaction_Rating_Cause__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.Negative_Satisfaction_Rating_Details__c</field>
         <readable>true</readable>
     </fieldPermissions>
