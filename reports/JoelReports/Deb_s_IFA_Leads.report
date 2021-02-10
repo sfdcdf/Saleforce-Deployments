@@ -1,76 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Lead$Name</field>
+        <field>FIRST_NAME</field>
     </columns>
     <columns>
-        <field>Lead$Title</field>
+        <field>LAST_NAME</field>
     </columns>
     <columns>
-        <field>Lead$Email</field>
+        <field>TITLE</field>
     </columns>
     <columns>
-        <field>Lead$LeadSource</field>
+        <field>STATUS</field>
     </columns>
     <columns>
-        <field>Lead$LastActivityDate</field>
+        <field>COMPANY</field>
     </columns>
     <columns>
-        <field>Lead$Days_Since_Last_Activity__c</field>
+        <field>RATING</field>
     </columns>
     <columns>
-        <field>Lead$Vertical__c</field>
+        <field>LEAD_SOURCE</field>
     </columns>
     <columns>
-        <field>Lead$Status</field>
+        <field>LAST_ACTIVITY</field>
     </columns>
     <columns>
-        <field>Lead$Rating</field>
+        <field>Lead.Activity_Indicator__c</field>
     </columns>
     <columns>
-        <field>Lead$National_Company_Type__c</field>
+        <field>EMAIL</field>
     </columns>
     <columns>
-        <field>Lead$No_of_Locations__c</field>
+        <field>Lead.No_of_Locations__c</field>
     </columns>
     <columns>
-        <field>Lead$Activity_Indicator__c</field>
+        <field>Lead.Corporate_Website__c</field>
     </columns>
     <columns>
-        <field>Lead$Next_Activity_Date__c</field>
+        <field>Lead.National_Company_Type__c</field>
     </columns>
     <columns>
-        <field>Lead$CreatedDate</field>
-    </columns>
-    <columns>
-        <field>Lead.Activities$CreatedBy</field>
-    </columns>
-    <columns>
-        <field>Lead.Activities$CreatedDate</field>
-    </columns>
-    <columns>
-        <field>Lead.Activities$Subject</field>
+        <field>Lead.Annual_PEV__c</field>
     </columns>
     <filter>
         <criteriaItems>
-            <column>Lead$Owner</column>
+            <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Debra Lozano</value>
+            <value>Lead.WBN_Corporate_Lead</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Lead$LeadSource</column>
+            <column>LEAD_SOURCE</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>IFA 2021</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Debra Lozano</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Lead$Company</field>
+        <field>OWNER</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Deb&apos;s IFA Leads</name>
@@ -78,15 +76,15 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>Leads_with_Tasks__c</reportType>
-    <scope>useronly</scope>
+    <reportType>LeadList</reportType>
+    <scope>org</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Lead$Name</sortColumn>
-    <sortOrder>Asc</sortOrder>
+    <sortColumn>LAST_ACTIVITY</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Lead$CreatedDate</dateColumn>
-        <interval>INTERVAL_CURPREV1</interval>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_PREVCURY</interval>
     </timeFrameFilter>
 </Report>
