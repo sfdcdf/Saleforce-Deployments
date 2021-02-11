@@ -106,6 +106,9 @@
     <columns>
         <field>FISCAL_QUARTER</field>
     </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>OWNER_PROFILE</column>
@@ -133,7 +136,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value>Opportunity.Forecast_Client_Services</value>
+            <value>Opportunity.Forecast_Client_Services,Opportunity.Plan_Client_Services</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

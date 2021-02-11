@@ -111,6 +111,7 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>WBN_IL</fullName>
         <fields>Subject</fields>
@@ -122,6 +123,7 @@
         <fields>Status__c</fields>
         <label>WBN-IL</label>
     </compactLayouts>
+    <enableFeeds>true</enableFeeds>
     <fields>
         <fullName>ActivityDate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
@@ -200,11 +202,6 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>true</enableFeeds>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <searchLayouts />
-    <sharingModel>ControlledByParent</sharingModel>
     <listViews>
         <fullName>CompletedTasks</fullName>
         <columns>SUBJECT</columns>
@@ -382,6 +379,7 @@
         </filters>
         <label>ENCODED:{!FilterNames.Task_UnscheduledTasks}</label>
     </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypes>
         <fullName>Executive_Sponsor_Activity</fullName>
         <active>true</active>
@@ -13354,7 +13352,7 @@
             <picklist>Activity_Type__c</picklist>
             <values>
                 <fullName>External Customer Activity</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
             <values>
                 <fullName>Internal YBN Sales Activities</fullName>
@@ -13450,7 +13448,7 @@
             </values>
             <values>
                 <fullName>Phone Call</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -13692,10 +13690,7 @@
                 <fullName>Conference</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>Connected with Gate Keeper</fullName>
-                <default>false</default>
-            </values>
+            
             <values>
                 <fullName>Contract Review</fullName>
                 <default>false</default>
@@ -14022,7 +14017,7 @@
             </values>
             <values>
                 <fullName>Status Call</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
             <values>
                 <fullName>Status Update</fullName>
@@ -15408,6 +15403,8 @@
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
         <fullName>Activity_detail_for_prospecting_external</fullName>
         <active>true</active>
