@@ -4,7 +4,7 @@
     <assignments>
         <name>Move_Event_To_Opp</name>
         <label>Move Event To Opp</label>
-        <locationX>28</locationX>
+        <locationX>220</locationX>
         <locationY>835</locationY>
         <assignmentItems>
             <assignToReference>objEvent.WhatId</assignToReference>
@@ -41,7 +41,7 @@
     <decisions>
         <name>Check_Contract_Sent</name>
         <label>Check Contract Sent</label>
-        <locationX>484</locationX>
+        <locationX>676</locationX>
         <locationY>443</locationY>
         <defaultConnector>
             <targetReference>Set_Stage_To_Complete_Demo</targetReference>
@@ -66,7 +66,7 @@
     <decisions>
         <name>Corporate_or_Individual_Location</name>
         <label>Corporate or Individual Location</label>
-        <locationX>198</locationX>
+        <locationX>390</locationX>
         <locationY>34</locationY>
         <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
         <rules>
@@ -76,7 +76,7 @@
                 <leftValueReference>varRecordType</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>YBN Sales - Corporate</stringValue>
+                    <stringValue>Sales - Corporate</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -115,7 +115,7 @@
     <decisions>
         <name>Event_Status</name>
         <label>Event Status</label>
-        <locationX>197</locationX>
+        <locationX>389</locationX>
         <locationY>282</locationY>
         <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
         <rules>
@@ -202,7 +202,7 @@
     <decisions>
         <name>Find_Completed_Task</name>
         <label>Find Completed Task</label>
-        <locationX>510</locationX>
+        <locationX>702</locationX>
         <locationY>817</locationY>
         <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
         <rules>
@@ -224,7 +224,7 @@
     <decisions>
         <name>Find_Existing_Scheduled_Task</name>
         <label>Find Existing Scheduled Task</label>
-        <locationX>257</locationX>
+        <locationX>449</locationX>
         <locationY>821</locationY>
         <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
         <rules>
@@ -246,7 +246,7 @@
     <decisions>
         <name>Found_Open_Opportunities</name>
         <label>Found Open Opportunities</label>
-        <locationX>27</locationX>
+        <locationX>219</locationX>
         <locationY>535</locationY>
         <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
         <rules>
@@ -277,11 +277,23 @@
     </formulas>
     <interviewLabel>EventFlo - Update Opportunity {!$Flow.CurrentDateTime}</interviewLabel>
     <label>EventFlo - Update Opportunity</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordCreates>
         <name>Create_Completed_Task</name>
         <label>Create Completed Task</label>
-        <locationX>511</locationX>
+        <locationX>703</locationX>
         <locationY>949</locationY>
         <connector>
             <targetReference>Find_Scheduled_Task</targetReference>
@@ -339,7 +351,7 @@
     <recordCreates>
         <name>Create_Demo_Scheduled_Task</name>
         <label>Create Demo Scheduled Task</label>
-        <locationX>27</locationX>
+        <locationX>219</locationX>
         <locationY>741</locationY>
         <connector>
             <targetReference>Move_Event_To_Opp</targetReference>
@@ -397,7 +409,7 @@
     <recordCreates>
         <name>Create_Scheduled_Task_Opp</name>
         <label>Create Scheduled Task (Opp)</label>
-        <locationX>257</locationX>
+        <locationX>449</locationX>
         <locationY>952</locationY>
         <inputAssignments>
             <field>ActivityDate</field>
@@ -452,7 +464,7 @@
     <recordCreates>
         <name>New_Opportunity</name>
         <label>New Opportunity</label>
-        <locationX>26</locationX>
+        <locationX>218</locationX>
         <locationY>653</locationY>
         <assignRecordIdToReference>varOppId</assignRecordIdToReference>
         <connector>
@@ -487,7 +499,7 @@
     <recordLookups>
         <name>Find_Scheduled_Task</name>
         <label>Find Scheduled Task</label>
-        <locationX>257</locationX>
+        <locationX>449</locationX>
         <locationY>725</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -529,7 +541,7 @@
     <recordLookups>
         <name>Get_Demo_Event</name>
         <label>Get Demo Event</label>
-        <locationX>198</locationX>
+        <locationX>390</locationX>
         <locationY>170</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -560,7 +572,7 @@
     <recordLookups>
         <name>Lookup_Completed_Task</name>
         <label>Lookup Completed Task</label>
-        <locationX>505</locationX>
+        <locationX>697</locationX>
         <locationY>720</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -602,7 +614,7 @@
     <recordLookups>
         <name>Open_Opportunities</name>
         <label>Open Opportunities</label>
-        <locationX>27</locationX>
+        <locationX>219</locationX>
         <locationY>441</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -632,7 +644,7 @@
     <recordUpdates>
         <name>Set_Stage_To_Complete_Demo</name>
         <label>Set Stage To Complete Demo</label>
-        <locationX>673</locationX>
+        <locationX>865</locationX>
         <locationY>620</locationY>
         <connector>
             <targetReference>Lookup_Completed_Task</targetReference>
@@ -684,7 +696,7 @@
     <recordUpdates>
         <name>Set_Stage_To_Contract0</name>
         <label>Set Stage To Contract</label>
-        <locationX>484</locationX>
+        <locationX>676</locationX>
         <locationY>586</locationY>
         <connector>
             <targetReference>Lookup_Completed_Task</targetReference>
@@ -729,7 +741,7 @@
     <recordUpdates>
         <name>Update_Completed_Presentation_Task_Field</name>
         <label>Update Completed Presentation Task Field</label>
-        <locationX>499</locationX>
+        <locationX>691</locationX>
         <locationY>36</locationY>
         <filterLogic>and</filterLogic>
         <filters>
@@ -757,11 +769,17 @@
     <recordUpdates>
         <name>Update_IL_Event</name>
         <label>Update IL Event</label>
-        <locationX>28</locationX>
+        <locationX>220</locationX>
         <locationY>926</locationY>
         <inputReference>objEvent</inputReference>
     </recordUpdates>
-    <startElementReference>Corporate_or_Individual_Location</startElementReference>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Corporate_or_Individual_Location</targetReference>
+        </connector>
+    </start>
     <status>Active</status>
     <variables>
         <name>lstOpenTasks</name>

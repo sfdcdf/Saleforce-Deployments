@@ -655,6 +655,11 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                     <default>false</default>
                     <label>Event</label>
                 </value>
+                <value>
+                    <fullName>Presentation</fullName>
+                    <default>false</default>
+                    <label>Presentation</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -2263,6 +2268,31 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
                     <default>false</default>
                     <label>Closed Won Opportunity</label>
                 </value>
+                <value>
+                    <fullName>Needs Analysis</fullName>
+                    <default>false</default>
+                    <label>Needs Analysis</label>
+                </value>
+                <value>
+                    <fullName>Opportunity Summary</fullName>
+                    <default>false</default>
+                    <label>Opportunity Summary</label>
+                </value>
+                <value>
+                    <fullName>Market Research</fullName>
+                    <default>false</default>
+                    <label>Market Research</label>
+                </value>
+                <value>
+                    <fullName>Presentation Deck</fullName>
+                    <default>false</default>
+                    <label>Presentation Deck</label>
+                </value>
+                <value>
+                    <fullName>Capabilities Discussion</fullName>
+                    <default>false</default>
+                    <label>Capabilities Discussion</label>
+                </value>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
@@ -2295,8 +2325,23 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
-                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
-                <valueName>Account Round-table Meeting</valueName>
+                <valueName>Needs Analysis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
+                <valueName>Opportunity Summary</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
+                <valueName>Market Research</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
+                <valueName>Presentation Deck</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
+                <valueName>Capabilities Discussion</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Service Level Touch Points</controllingFieldValue>
@@ -2462,11 +2507,6 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <controllingFieldValue>Prospecting</controllingFieldValue>
-                <valueName>Customer Email</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>External Customer Activity</controllingFieldValue>
                 <valueName>Status Call</valueName>
             </valueSettings>
             <valueSettings>
@@ -2483,19 +2523,11 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <valueName>Custom Implementation Review Call</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>External Customer Activity</controllingFieldValue>
                 <valueName>Scheduled Demo</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
                 <valueName>Demo &amp; Value Presentation</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <valueName>Executive Review Call</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
@@ -2536,19 +2568,7 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <valueName>Other - Customer Activity</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>External Customer Activity</controllingFieldValue>
                 <valueName>Attempted Customer Contact</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <valueName>Quarterly Business Review</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <valueName>Monthly RD Relationship Call</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
@@ -2586,6 +2606,10 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
                 <valueName>Individual &amp; Manager 1-1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Account Round-table Meeting</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
@@ -3006,6 +3030,10 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             <valueSettings>
                 <controllingFieldValue>Prospecting</controllingFieldValue>
                 <valueName>M000 - Conversation Initiation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>Customer Email</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Network Communications Portal Notification</controllingFieldValue>

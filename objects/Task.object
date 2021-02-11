@@ -111,6 +111,7 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>WBN_IL</fullName>
         <fields>Subject</fields>
@@ -122,6 +123,7 @@
         <fields>Status__c</fields>
         <label>WBN-IL</label>
     </compactLayouts>
+    <enableFeeds>true</enableFeeds>
     <fields>
         <fullName>ActivityDate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
@@ -200,11 +202,6 @@
         <fullName>WhoId</fullName>
         <type>Lookup</type>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>true</enableFeeds>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <searchLayouts />
-    <sharingModel>ControlledByParent</sharingModel>
     <listViews>
         <fullName>CompletedTasks</fullName>
         <columns>SUBJECT</columns>
@@ -382,6 +379,7 @@
         </filters>
         <label>ENCODED:{!FilterNames.Task_UnscheduledTasks}</label>
     </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypes>
         <fullName>Executive_Sponsor_Activity</fullName>
         <active>true</active>
@@ -13307,7 +13305,7 @@
         <fullName>YBN_Sales_Corporate</fullName>
         <active>true</active>
         <description>WBN.</description>
-        <label>YBN Sales - Corporate</label>
+        <label>Sales - Corporate</label>
         <picklistValues>
             <picklist>AM_Type__c</picklist>
             <values>
@@ -13354,7 +13352,7 @@
             <picklist>Activity_Type__c</picklist>
             <values>
                 <fullName>External Customer Activity</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
             <values>
                 <fullName>Internal YBN Sales Activities</fullName>
@@ -13450,6 +13448,10 @@
             </values>
             <values>
                 <fullName>Phone Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13689,13 +13691,14 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Conference</fullName>
+                <fullName>Capabilities Discussion</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Connected with Gate Keeper</fullName>
+                <fullName>Conference</fullName>
                 <default>false</default>
             </values>
+            
             <values>
                 <fullName>Contract Review</fullName>
                 <default>false</default>
@@ -13717,14 +13720,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Custom Implementation Review Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Customer Email</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Customer Meeting</fullName>
                 <default>false</default>
             </values>
@@ -13742,10 +13737,6 @@
             </values>
             <values>
                 <fullName>Exec Dry Run</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Executive Review Call</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13945,11 +13936,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Market Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Webinar Presentation</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Monthly RD Relationship Call</fullName>
+                <fullName>Needs Analysis</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13965,6 +13960,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Opportunity Summary</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
@@ -13974,6 +13973,10 @@
             </values>
             <values>
                 <fullName>Other - Internal Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation Deck</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13990,10 +13993,6 @@
             </values>
             <values>
                 <fullName>Prospecting%3A Connected with Target</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Quarterly Business Review</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14022,7 +14021,7 @@
             </values>
             <values>
                 <fullName>Status Call</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
             <values>
                 <fullName>Status Update</fullName>
@@ -15408,6 +15407,8 @@
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
         <fullName>Activity_detail_for_prospecting_external</fullName>
         <active>true</active>
