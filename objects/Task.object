@@ -15489,7 +15489,7 @@ isblank(WhatId ))</errorConditionFormula>
     </validationRules>
     <validationRules>
         <fullName>activity_detail</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And(
 ispickval(   Status , "Completed"),
 ispickval(   Milestone__c ,""),
