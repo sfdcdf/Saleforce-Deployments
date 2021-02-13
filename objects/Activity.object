@@ -300,7 +300,7 @@
                 <value>
                     <fullName>Internal YBN Sales Activities</fullName>
                     <default>false</default>
-                    <label>Internal YBN Sales Activities</label>
+                    <label>Internal Sales Activities</label>
                 </value>
                 <value>
                     <fullName>Retention</fullName>
@@ -2325,23 +2325,7 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
-                <valueName>Needs Analysis</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
-                <valueName>Opportunity Summary</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
-                <valueName>Market Research</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
-                <valueName>Presentation Deck</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
-                <valueName>Capabilities Discussion</valueName>
+                <valueName>Account Round-table Meeting</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Service Level Touch Points</controllingFieldValue>
@@ -2439,7 +2423,6 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Account Support</controllingFieldValue>
-                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
                 <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
                 <valueName>LM1 - Sales &amp; AD Meeting</valueName>
             </valueSettings>
@@ -2563,7 +2546,6 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
                 <valueName>Network Adoption Meeting</valueName>
             </valueSettings>
             <valueSettings>
@@ -2572,28 +2554,11 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
-                <valueName>Exec Dry Run</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
-                <valueName>Internal Customer Audit</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
-                <valueName>Internal Download Call</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
                 <valueName>Internal Planning &amp; Prep</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
                 <valueName>Internal Stakeholder Kickoff</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
-                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
-                <valueName>LM2 - Sales Account Meeting</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
@@ -2609,7 +2574,23 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
-                <valueName>Account Round-table Meeting</valueName>
+                <valueName>Needs Analysis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Opportunity Summary</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Market Research</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Presentation Deck</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Capabilities Discussion</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
@@ -2964,6 +2945,10 @@ ISPICKVAL ( Interaction_Type__c,"Initial Milestone")),1,0)</formula>
             <valueSettings>
                 <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
                 <valueName>In Person Review Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>LM2 - Sales Account Meeting</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
