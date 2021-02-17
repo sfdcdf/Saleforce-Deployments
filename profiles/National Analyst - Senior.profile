@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <classAccesses>
+        <apexClass>AutoCreateCaseEntitlement</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CompleteResolutionCaseMilestone</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PC_ConvertLead</apexClass>
         <enabled>true</enabled>
     </classAccesses>

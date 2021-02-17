@@ -928,7 +928,7 @@ LEFT( WhatId ,3)= '001' /* Account */
                 <value>
                     <fullName>Internal YBN Sales Activities</fullName>
                     <default>false</default>
-                    <label>Internal YBN Sales Activities</label>
+                    <label>Internal Sales Activities</label>
                 </value>
                 <value>
                     <fullName>Retention</fullName>
@@ -1133,6 +1133,11 @@ LEFT( WhatId ,3)= '001' /* Account */
                     <fullName>Event</fullName>
                     <default>false</default>
                     <label>Event</label>
+                </value>
+                <value>
+                    <fullName>Presentation</fullName>
+                    <default>false</default>
+                    <label>Presentation</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -2556,6 +2561,31 @@ LEFT( WhatId ,3)= '001' /* Account */
                     <default>false</default>
                     <label>Closed Won Opportunity</label>
                 </value>
+                <value>
+                    <fullName>Needs Analysis</fullName>
+                    <default>false</default>
+                    <label>Needs Analysis</label>
+                </value>
+                <value>
+                    <fullName>Opportunity Summary</fullName>
+                    <default>false</default>
+                    <label>Opportunity Summary</label>
+                </value>
+                <value>
+                    <fullName>Market Research</fullName>
+                    <default>false</default>
+                    <label>Market Research</label>
+                </value>
+                <value>
+                    <fullName>Presentation Deck</fullName>
+                    <default>false</default>
+                    <label>Presentation Deck</label>
+                </value>
+                <value>
+                    <fullName>Capabilities Discussion</fullName>
+                    <default>false</default>
+                    <label>Capabilities Discussion</label>
+                </value>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
@@ -2588,7 +2618,6 @@ LEFT( WhatId ,3)= '001' /* Account */
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Activities</controllingFieldValue>
-                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
                 <valueName>Account Round-table Meeting</valueName>
             </valueSettings>
             <valueSettings>
@@ -2687,7 +2716,6 @@ LEFT( WhatId ,3)= '001' /* Account */
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Account Support</controllingFieldValue>
-                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
                 <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
                 <valueName>LM1 - Sales &amp; AD Meeting</valueName>
             </valueSettings>
@@ -2755,11 +2783,6 @@ LEFT( WhatId ,3)= '001' /* Account */
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <controllingFieldValue>Prospecting</controllingFieldValue>
-                <valueName>Customer Email</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>External Customer Activity</controllingFieldValue>
                 <valueName>Status Call</valueName>
             </valueSettings>
             <valueSettings>
@@ -2776,19 +2799,11 @@ LEFT( WhatId ,3)= '001' /* Account */
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <valueName>Custom Implementation Review Call</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>External Customer Activity</controllingFieldValue>
                 <valueName>Scheduled Demo</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
                 <valueName>Demo &amp; Value Presentation</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <valueName>Executive Review Call</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
@@ -2824,24 +2839,11 @@ LEFT( WhatId ,3)= '001' /* Account */
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
                 <valueName>Network Adoption Meeting</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <valueName>Other - Customer Activity</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>External Customer Activity</controllingFieldValue>
                 <valueName>Attempted Customer Contact</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <valueName>Quarterly Business Review</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>External Customer Activity</controllingFieldValue>
-                <valueName>Monthly RD Relationship Call</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
@@ -2865,11 +2867,6 @@ LEFT( WhatId ,3)= '001' /* Account */
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
-                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
-                <valueName>LM2 - Sales Account Meeting</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
                 <valueName>Other - Internal Activity</valueName>
             </valueSettings>
             <valueSettings>
@@ -2879,6 +2876,26 @@ LEFT( WhatId ,3)= '001' /* Account */
             <valueSettings>
                 <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
                 <valueName>Individual &amp; Manager 1-1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Needs Analysis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Opportunity Summary</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Market Research</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Presentation Deck</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Internal YBN Sales Activities</controllingFieldValue>
+                <valueName>Capabilities Discussion</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Bulk Onboarding</controllingFieldValue>
@@ -3236,6 +3253,10 @@ LEFT( WhatId ,3)= '001' /* Account */
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
+                <valueName>LM2 - Sales Account Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lifecycle Milestone</controllingFieldValue>
                 <valueName>Sales Account Meeting</valueName>
             </valueSettings>
             <valueSettings>
@@ -3299,6 +3320,10 @@ LEFT( WhatId ,3)= '001' /* Account */
             <valueSettings>
                 <controllingFieldValue>Prospecting</controllingFieldValue>
                 <valueName>M000 - Conversation Initiation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospecting</controllingFieldValue>
+                <valueName>Customer Email</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Network Communications Portal Notification</controllingFieldValue>

@@ -13305,7 +13305,7 @@
         <fullName>YBN_Sales_Corporate</fullName>
         <active>true</active>
         <description>WBN.</description>
-        <label>YBN Sales - Corporate</label>
+        <label>Sales - Corporate</label>
         <picklistValues>
             <picklist>AM_Type__c</picklist>
             <values>
@@ -13449,6 +13449,10 @@
             <values>
                 <fullName>Phone Call</fullName>
                 <default>true</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
+                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -13687,10 +13691,13 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Capabilities Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Conference</fullName>
                 <default>false</default>
             </values>
-            
             <values>
                 <fullName>Contract Review</fullName>
                 <default>false</default>
@@ -13712,14 +13719,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Custom Implementation Review Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Customer Email</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Customer Meeting</fullName>
                 <default>false</default>
             </values>
@@ -13737,10 +13736,6 @@
             </values>
             <values>
                 <fullName>Exec Dry Run</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Executive Review Call</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13940,11 +13935,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Market Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Webinar Presentation</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Monthly RD Relationship Call</fullName>
+                <fullName>Needs Analysis</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13960,6 +13959,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Opportunity Summary</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
@@ -13969,6 +13972,10 @@
             </values>
             <values>
                 <fullName>Other - Internal Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation Deck</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13985,10 +13992,6 @@
             </values>
             <values>
                 <fullName>Prospecting%3A Connected with Target</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Quarterly Business Review</fullName>
                 <default>false</default>
             </values>
             <values>
