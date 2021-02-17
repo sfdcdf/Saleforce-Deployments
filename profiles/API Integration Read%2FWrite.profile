@@ -404,6 +404,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>WBNChildAcctUpdateForMaster</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>YL2SFOnDemandSync</apexClass>
         <enabled>true</enabled>
     </classAccesses>
