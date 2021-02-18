@@ -16,6 +16,15 @@
         <field>PARENT.NAME</field>
     </columns>
     <columns>
+        <field>Account.Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Email_for_Touchplan__c</field>
+    </columns>
+    <columns>
+        <field>Account.Email__c</field>
+    </columns>
+    <columns>
         <field>Account.IMS_Rep__c</field>
     </columns>
     <columns>
@@ -44,7 +53,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>PROVISIONING,LIVE,OFF</value>
+            <value>PROVISIONING,LIVE</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Client_ID__c</column>

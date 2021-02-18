@@ -27,7 +27,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Lawrence Liles,Tommie Hayes,LeRonnie Reed,Adeel Sohail,Mairaj Naeem</value>
+            <value>Lawrence Liles,Tommie Hayes,Adeel Sohail,Mairaj Naeem</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Entered_Save_Mode__c</column>
@@ -61,7 +61,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>CREATED_DATE</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <dateColumn>Account.Entered_Save_Mode__c</dateColumn>
+        <interval>INTERVAL_LAST60</interval>
     </timeFrameFilter>
 </Report>
