@@ -35596,10 +35596,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Event.YBN_Prospecting</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Event.YBN_Sales_Event_Corporate</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -35970,7 +35971,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Task.Network_Communications_Portal</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -36015,10 +36016,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Task.YBN_Prospecting_Task</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Task.YBN_Sales_Corporate</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
