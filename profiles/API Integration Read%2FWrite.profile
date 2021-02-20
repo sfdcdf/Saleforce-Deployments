@@ -41575,7 +41575,7 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Case.YBN_Corporate_Interaction</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
