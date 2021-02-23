@@ -15146,7 +15146,7 @@
     <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
         <fullName>Activity_detail_for_prospecting_external</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>And(
 ispickval(Activity_Type__c ,"External Customer Activity"),
 ispickval(Milestone__c ,""),
