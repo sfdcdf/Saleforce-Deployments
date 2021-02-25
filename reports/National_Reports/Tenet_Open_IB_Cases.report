@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>PARENT_ACCOUNT_NAME</field>
+    </columns>
+    <columns>
         <field>Case.Client_ID__c</field>
     </columns>
     <columns>
@@ -10,13 +16,7 @@
         <field>Account.IMS_Rep__c</field>
     </columns>
     <columns>
-        <field>Case.Initial_DateTime_Closed__c</field>
-    </columns>
-    <columns>
         <field>ORIGIN</field>
-    </columns>
-    <columns>
-        <field>Account.Corp_Acct_in_YL_Parent_Account__c</field>
     </columns>
     <columns>
         <field>Account.Individual_Location_Service_Level__c</field>
@@ -25,27 +25,13 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <aggregateTypes>Average</aggregateTypes>
-        <field>Case.Time_To_Complete_Task_Minutes__c</field>
-    </columns>
-    <columns>
         <field>STATUS</field>
-    </columns>
-    <columns>
-        <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
         <field>SUBJECT</field>
     </columns>
     <columns>
-        <field>CLOSED</field>
-    </columns>
-    <columns>
         <field>CREATED_DATEONLY</field>
-    </columns>
-    <columns>
-        <field>CLOSED_DATEONLY</field>
     </columns>
     <filter>
         <booleanFilter>(1 AND (2 OR 3)) AND 4</booleanFilter>
@@ -81,12 +67,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>PARENT_ACCOUNT_NAME</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>OWNER</field>
+        <field>ACCOUNT.NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Tenet Open IB Cases</name>
