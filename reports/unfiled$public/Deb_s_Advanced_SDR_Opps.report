@@ -10,10 +10,16 @@
         <field>STAGE_NAME</field>
     </columns>
     <columns>
-        <field>Opportunity.Stage_Detail__c</field>
+        <field>Opportunity.Demo_Completed__c</field>
     </columns>
     <columns>
-        <field>ACCOUNT_OWNER</field>
+        <field>Opportunity.Client_Discovery_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Confirmed__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Confirmed_Date__c</field>
     </columns>
     <columns>
         <field>ACCOUNT_NAME</field>
@@ -29,12 +35,6 @@
     </columns>
     <columns>
         <field>PROBABILITY</field>
-    </columns>
-    <columns>
-        <field>Account.Prospect_Account_Tier__c</field>
-    </columns>
-    <columns>
-        <field>Account.Key_Account__c</field>
     </columns>
     <columns>
         <field>LEAD_SOURCE</field>
@@ -60,15 +60,6 @@
     </columns>
     <columns>
         <field>Opportunity.OpportunityId18__c</field>
-    </columns>
-    <columns>
-        <field>Account.National_Company_Type__c</field>
-    </columns>
-    <columns>
-        <field>Account.NAICS__c</field>
-    </columns>
-    <columns>
-        <field>Account.Segment_YL__c</field>
     </columns>
     <filter>
         <criteriaItems>
