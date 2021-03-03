@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cancellation Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cancellation Requests</value>
+    </caseValues>
     <fields>
         <label><!-- Account IMS --></label>
         <name>Account_IMS__c</name>
@@ -255,10 +263,6 @@
             <translation><!-- CRM Functionality --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>CRM lacking features</masterLabel>
-            <translation><!-- CRM lacking features --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Campaign setup work completed incorrectly</masterLabel>
             <translation><!-- Campaign setup work completed incorrectly --></translation>
         </picklistValues>
@@ -357,10 +361,6 @@
         <picklistValues>
             <masterLabel>Email/Text Communication</masterLabel>
             <translation><!-- Email/Text Communication --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Essentials Too Much Work</masterLabel>
-            <translation><!-- Essentials Too Much Work --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Features</masterLabel>
@@ -561,6 +561,10 @@
         <picklistValues>
             <masterLabel>Product lacks third party integrations</masterLabel>
             <translation><!-- Product lacks third party integrations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reallocating Funds to Another Product</masterLabel>
+            <translation><!-- Reallocating Funds to Another Product --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Recall Reactivation Issue</masterLabel>
@@ -821,10 +825,6 @@
             <translation><!-- CRM Functionality --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>CRM lacking features</masterLabel>
-            <translation><!-- CRM lacking features --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Campaign setup work completed incorrectly</masterLabel>
             <translation><!-- Campaign setup work completed incorrectly --></translation>
         </picklistValues>
@@ -923,10 +923,6 @@
         <picklistValues>
             <masterLabel>Email/Text Communication</masterLabel>
             <translation><!-- Email/Text Communication --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Essentials Too Much Work</masterLabel>
-            <translation><!-- Essentials Too Much Work --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Features</masterLabel>
@@ -1127,6 +1123,10 @@
         <picklistValues>
             <masterLabel>Product lacks third party integrations</masterLabel>
             <translation><!-- Product lacks third party integrations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reallocating Funds to Another Product</masterLabel>
+            <translation><!-- Reallocating Funds to Another Product --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Recall Reactivation Issue</masterLabel>
@@ -4846,15 +4846,6 @@
         <label><!-- Yodle Gold Service? --></label>
         <name>Yodle_Gold_Service__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Cancellation Form</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Cancellation Requests</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
     <layouts>
         <layout>Cancellation Request (feed)</layout>
         <sections>
@@ -5129,6 +5120,7 @@
         <label><!-- WBN Cancellation Request --></label>
         <name>WBN_Cancellation_Request</name>
     </recordTypes>
+    <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- If you choose Lost to Competitor as a Cancel Code, you must fill out Competitor Name field --></errorMessage>
         <name>Cancel_Code_is_Lost_to_Competitor</name>

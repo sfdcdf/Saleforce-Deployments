@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Account.Client_ID__c</field>
+        <field>Case.Client_ID__c</field>
     </columns>
     <columns>
         <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
     </columns>
     <columns>
         <field>PRIORITY</field>
@@ -16,90 +19,56 @@
         <field>Case.SEO_Product__c</field>
     </columns>
     <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
         <field>SUBJECT</field>
     </columns>
     <columns>
         <field>CREATED_DATE</field>
     </columns>
     <columns>
-        <field>CLOSED_DATE</field>
-    </columns>
-    <columns>
-        <field>Case.YBNRequestReason__c</field>
-    </columns>
-    <columns>
-        <field>Case.YBNRequestDetail__c</field>
-    </columns>
-    <columns>
-        <field>MILESTONESTATUS</field>
-    </columns>
-    <columns>
-        <field>CLOSED</field>
-    </columns>
-    <columns>
         <field>Case.IMS_Completing_Opt2__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
         <field>Case.Time_To_Complete_Task_Minutes__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Average</aggregateTypes>
         <field>Case.Case_Age_Business_Days__c</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND 4 and (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Case.YBN_Request</value>
+            <value>Case.New_Client_Setup</value>
         </criteriaItems>
         <criteriaItems>
-            <column>OWNER</column>
+            <column>CLOSED</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>National Performance Queue</value>
+            <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>OWNER_ROLE</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>Performance Analyst</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Case.YBNRequestReason__c</column>
+            <column>Case.User_Case_Owner__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Performance Team</value>
+            <value>1</value>
         </criteriaItems>
     </filter>
-    <format>Matrix</format>
-    <groupingsAcross>
-        <dateGranularity>Day</dateGranularity>
-        <field>STATUS</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsAcross>
-    <groupingsAcross>
-        <dateGranularity>Quarter</dateGranularity>
-        <field>CREATED_DATEONLY</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsAcross>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>RECORDTYPE</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
+    <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>OWNER</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>All Performance YBN Requests</name>
+    <name>My DMA NCS Cases</name>
     <params>
         <name>units</name>
         <value>h</value>
@@ -110,11 +79,11 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_CURPREVQ</interval>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>
