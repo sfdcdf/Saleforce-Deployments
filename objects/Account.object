@@ -7124,6 +7124,16 @@ Null))))))</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>PPC_Live_Date__c</fullName>
+        <description>Date PPC Ads product went Live</description>
+        <externalId>false</externalId>
+        <label>PPC Live Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>PPC_Rank_Check__c</fullName>
         <externalId>false</externalId>
         <label>PPC Rank Check</label>
@@ -12933,6 +12943,7 @@ or(
         <columns>Individual_Location_Service_Level__c</columns>
         <columns>IMS_Rep_Full_Name__c</columns>
         <columns>PARENT_NAME</columns>
+        <columns>PPC_Live_Date__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>ACCOUNT.RECORDTYPE</field>

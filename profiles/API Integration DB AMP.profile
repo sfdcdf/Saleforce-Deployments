@@ -3134,6 +3134,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.PPC_Live_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.PPC_Market_Opp_Budget__c</field>
         <readable>true</readable>
     </fieldPermissions>
