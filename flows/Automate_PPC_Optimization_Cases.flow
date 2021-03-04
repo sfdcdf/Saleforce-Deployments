@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>51.0</apiVersion>
+    <decisions>
+        <name>Adstation_Status_is_ON_before_creating_records</name>
+        <label>Adstation Status is ON before creating records</label>
+        <locationX>459</locationX>
+        <locationY>428</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Adstation_Status_is_ON_before_creating</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>accountId.AdStation_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ON</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>caserecords</targetReference>
+            </connector>
+            <label>Adstation Status is ON before creating</label>
+        </rules>
+    </decisions>
     <interviewLabel>Automate PPC Optimization Cases {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Automate PPC Optimization Cases</label>
     <processMetadataValues>
@@ -12,7 +34,7 @@
     <processMetadataValues>
         <name>CanvasMode</name>
         <value>
-            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
         </value>
     </processMetadataValues>
     <processMetadataValues>
@@ -25,8 +47,8 @@
     <recordCreates>
         <name>caserecords</name>
         <label>caserecords</label>
-        <locationX>176</locationX>
-        <locationY>398</locationY>
+        <locationX>629</locationX>
+        <locationY>521</locationY>
         <inputAssignments>
             <field>AccountId</field>
             <value>
@@ -81,8 +103,8 @@
     <recordLookups>
         <name>GetRecordtype</name>
         <label>getRecordtype</label>
-        <locationX>176</locationX>
-        <locationY>158</locationY>
+        <locationX>623</locationX>
+        <locationY>206</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>NationalCharlotte</targetReference>
@@ -104,11 +126,11 @@
     <recordLookups>
         <name>NationalCharlotte</name>
         <label>NationalCharlotte</label>
-        <locationX>176</locationX>
-        <locationY>278</locationY>
+        <locationX>623</locationX>
+        <locationY>326</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>caserecords</targetReference>
+            <targetReference>Adstation_Status_is_ON_before_creating_records</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -125,13 +147,13 @@
         </outputAssignments>
     </recordLookups>
     <start>
-        <locationX>50</locationX>
-        <locationY>0</locationY>
+        <locationX>497</locationX>
+        <locationY>48</locationY>
         <connector>
             <targetReference>GetRecordtype</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>accountId</name>
         <dataType>SObject</dataType>

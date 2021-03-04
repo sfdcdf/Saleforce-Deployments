@@ -587,7 +587,7 @@
                 <leftValueReference>myVariable_current.PPC_Live_Date__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>formula_2_myRule_1_9217971807</elementReference>
+                    <elementReference>formula_2_myRule_1_6340123243</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -767,7 +767,7 @@
                 <leftValueReference>myVariable_current.PPC_Live_Date__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>formula_2_myRule_1_9217971807</elementReference>
+                    <elementReference>formula_2_myRule_1_6340123243</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -862,7 +862,7 @@
                 <leftValueReference>myVariable_old.PPC_Live_Date__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>formula_3_myRule_1_pmetrule_1876786669</elementReference>
+                    <elementReference>formula_3_myRule_1_pmetrule_2590418811</elementReference>
                 </rightValue>
             </conditions>
             <label>Previously Met - Prev</label>
@@ -875,7 +875,7 @@
                 <stringValue>Today()</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_9217971807</name>
+        <name>formula_2_myRule_1_6340123243</name>
         <dataType>Date</dataType>
         <expression>Today()</expression>
     </formulas>
@@ -886,11 +886,11 @@
                 <stringValue>Today()</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_3_myRule_1_pmetrule_1876786669</name>
+        <name>formula_3_myRule_1_pmetrule_2590418811</name>
         <dataType>Date</dataType>
         <expression>Today()</expression>
     </formulas>
-    <interviewLabel>Case_Automate_PPC_Optimization-14_InterviewLabel</interviewLabel>
+    <interviewLabel>Case_Automate_PPC_Optimization-17_InterviewLabel</interviewLabel>
     <label>Case - Automate PPC Optimization</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -924,7 +924,7 @@
     </processMetadataValues>
     <processType>Workflow</processType>
     <startElementReference>myPreWaitDecision_myWait_myRule_1</startElementReference>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>cancelWaits</name>
         <dataType>String</dataType>
