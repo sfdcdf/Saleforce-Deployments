@@ -3,7 +3,7 @@
         <fullName>Basic assignments</fullName>
         <active>true</active>
         <ruleEntry>
-            <assignedTo>NationalCharlotte</assignedTo>
+            <assignedTo>National_Performance_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <formula>AND( RecordType.Name = "YBN Request", ISPICKVAL(Type, "Work Item"), ISPICKVAL(YBNRequestReason__c, "Performance Team") )</formula>
         </ruleEntry>
@@ -162,7 +162,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>NationalCharlotte</assignedTo>
+            <assignedTo>National_Performance_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
                 <field>Case.RecordTypeId</field>
@@ -327,7 +327,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>NationalCharlotte</assignedTo>
+            <assignedTo>National_Performance_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
                 <field>Case.RecordTypeId</field>
@@ -583,7 +583,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>NationalCharlotte</assignedTo>
+            <assignedTo>National_Performance_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
             <criteriaItems>
@@ -728,7 +728,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>NationalCharlotte</assignedTo>
+            <assignedTo>National_Performance_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <booleanFilter>1 OR 2 OR 3</booleanFilter>
             <criteriaItems>
@@ -777,7 +777,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>NationalCharlotte</assignedTo>
+            <assignedTo>National_Performance_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
                 <field>Case.Reason_Detail__c</field>

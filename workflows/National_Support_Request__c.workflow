@@ -636,7 +636,7 @@ Stage 2 Demo</description>
     <fieldUpdates>
         <fullName>Owner_to_National_Performance_Queue</fullName>
         <field>OwnerId</field>
-        <lookupValue>NationalCharlotte</lookupValue>
+        <lookupValue>National_Performance_Queue</lookupValue>
         <lookupValueType>Queue</lookupValueType>
         <name>Owner to National Performance Queue</name>
         <notifyAssignee>false</notifyAssignee>
@@ -678,7 +678,7 @@ Stage 2 Demo</description>
     <fieldUpdates>
         <fullName>Stage_3_Proposal_Creation_Queue_Assign</fullName>
         <field>OwnerId</field>
-        <lookupValue>NationalCharlotte</lookupValue>
+        <lookupValue>National_Performance_Queue</lookupValue>
         <lookupValueType>Queue</lookupValueType>
         <name>Stage 3 - Proposal Creation Queue Assign</name>
         <notifyAssignee>true</notifyAssignee>

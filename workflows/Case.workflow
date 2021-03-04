@@ -5716,7 +5716,7 @@ If( Created_by_Role__c="YBN: Sales/Account Director C", "bheppner@yodle.com",
     <fieldUpdates>
         <fullName>YBN_zip_code_metropage_analysis_need</fullName>
         <field>OwnerId</field>
-        <lookupValue>NationalCharlotte</lookupValue>
+        <lookupValue>National_Performance_Queue</lookupValue>
         <lookupValueType>Queue</lookupValueType>
         <name>Case Owner to National Performance Queue</name>
         <notifyAssignee>false</notifyAssignee>
