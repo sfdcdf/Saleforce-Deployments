@@ -92,6 +92,12 @@
     <columns>
         <field>Case.Attempt_2_Contact_Made_With__c</field>
     </columns>
+    <columns>
+        <field>PARENT_CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>PARENT_CASE_ID</field>
+    </columns>
     <filter>
         <booleanFilter>(1 OR (3 AND 4)) AND 2</booleanFilter>
         <criteriaItems>
