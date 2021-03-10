@@ -587,7 +587,7 @@
                 <leftValueReference>myVariable_current.PPC_Live_Date__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>formula_2_myRule_1_6340123243</elementReference>
+                    <elementReference>formula_2_myRule_1_1450938138</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -767,7 +767,7 @@
                 <leftValueReference>myVariable_current.PPC_Live_Date__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>formula_2_myRule_1_6340123243</elementReference>
+                    <elementReference>formula_2_myRule_1_1450938138</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -862,7 +862,7 @@
                 <leftValueReference>myVariable_old.PPC_Live_Date__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>formula_3_myRule_1_pmetrule_2590418811</elementReference>
+                    <elementReference>formula_3_myRule_1_pmetrule_5565125622</elementReference>
                 </rightValue>
             </conditions>
             <label>Previously Met - Prev</label>
@@ -875,7 +875,7 @@
                 <stringValue>Today()</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_6340123243</name>
+        <name>formula_2_myRule_1_1450938138</name>
         <dataType>Date</dataType>
         <expression>Today()</expression>
     </formulas>
@@ -886,7 +886,7 @@
                 <stringValue>Today()</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_3_myRule_1_pmetrule_2590418811</name>
+        <name>formula_3_myRule_1_pmetrule_5565125622</name>
         <dataType>Date</dataType>
         <expression>Today()</expression>
     </formulas>
@@ -911,12 +911,6 @@
         </value>
     </processMetadataValues>
     <processMetadataValues>
-        <name>RecursiveCountVariable</name>
-        <value>
-            <elementReference>RecursiveCountVariable</elementReference>
-        </value>
-    </processMetadataValues>
-    <processMetadataValues>
         <name>TriggerType</name>
         <value>
             <stringValue>onAllChanges</stringValue>
@@ -924,7 +918,7 @@
     </processMetadataValues>
     <processType>Workflow</processType>
     <startElementReference>myPreWaitDecision_myWait_myRule_1</startElementReference>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>cancelWaits</name>
         <dataType>String</dataType>
@@ -987,14 +981,6 @@
         <value>
             <booleanValue>false</booleanValue>
         </value>
-    </variables>
-    <variables>
-        <name>RecursiveCountVariable</name>
-        <dataType>Number</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-        <scale>2</scale>
     </variables>
     <waits>
         <name>myWait_myRule_1</name>
