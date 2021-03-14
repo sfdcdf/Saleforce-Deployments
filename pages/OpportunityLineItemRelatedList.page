@@ -35,7 +35,8 @@
                 <apex:column headerValue="Quantity" value="{!Sched.Quantity__c}"/> 
                 <apex:column headerValue="Revenue" value="{!Sched.Revenue__c}"/> 
                 <apex:column headerValue="Avg Revenue Per Unit (ARPU)" value="{!Sched.Avg_Revenue_Per_Unit_ARPU__c}"/> 
-                <apex:column headerValue="Churn Units" value="{!Sched.Churn_Units__c}"/> 
+                <apex:column headerValue="Churn Units" value="{!Sched.Churn_Units__c}"/>
+                <apex:column headerValue="Owner" value="{!Sched.Owner.Name}"/> 
                 <apex:column headerValue="Comments" value="{!Sched.Comments__c}"/> 
 
             </apex:pageBlockTable>            
