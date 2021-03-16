@@ -5,15 +5,15 @@ Created Date : 03/13/2020
 Modified Date :  
 Purpose : Function for displaying Quantity and Revenue Schedule On Custom Object 
 ***************************************************************************************************************/ 
-public class ScheduleRelatedListController {     
+public with sharing class ScheduleRelatedListController {     
 
-    public List<Schedule_Split__c> Schedules{get;set;} 
+    public List<Schedule_Split__c> schedules{get;set;} 
 
-    public OpportunityLineItem OpportunityLineItems{get;set;} 
+    public OpportunityLineItem opportunityLineItems{get;set;} 
 
-    public OpportunityLineItem Ole {get;set;} 
+    public OpportunityLineItem ole {get;set;} 
     
-    Public id OleId{get;set;}
+    Public id oleId{get;set;}
 
      
 
@@ -28,7 +28,7 @@ public class ScheduleRelatedListController {
        OpportunityLineItems = [SELECT id FROM OpportunityLineItem WHERE id=: Ole.id]; 
        
 
-       Schedules= [SELECT id,OpportunityLineItemId__c, Start_Date__c, End_Date__c,Revenue__c,Quantity__c,Avg_Revenue_Per_Unit_ARPU__c,Churn_Units__c,Comments__c  FROM Schedule_Split__c WHERE OpportunityLineItemId__c= :OpportunityLineItems.id ORDER BY Start_Date__c];     
+       Schedules= [SELECT id,OpportunityLineItemId__c, Start_Date__c, End_Date__c,Revenue__c,Quantity__c,Avg_Revenue_Per_Unit_ARPU__c,Churn_Units__c,Comments__c,Owner.Name  FROM Schedule_Split__c WHERE OpportunityLineItemId__c= :OpportunityLineItems.id ORDER BY Start_Date__c];     
 
 } 
 
@@ -65,7 +65,7 @@ public class ScheduleRelatedListController {
         else
         {   
             pageRef=ApexPages.currentPage();
-            ApexPages.Message Msg = new ApexPages.message(ApexPages.severity.INFO,'No Schedules to Edit');
+            ApexPages.Message msg = new ApexPages.message(ApexPages.severity.INFO,'No Schedules to Edit');
             apexpages.addmessage(msg);
         }
         return pageRef ;
@@ -81,10 +81,10 @@ public class ScheduleRelatedListController {
          }
         //String SchedId = Apexpages.currentpage().getParameters().get('OpportunityLineItemId__c');  
 
-        list<Schedule_Split__c> SchedSplitList = new List<Schedule_Split__c>();
-        for(Schedule_Split__c Temp:[SELECT Id FROM Schedule_Split__c WHERE OpportunityLineItemId__c = : OleId])
+        list<Schedule_Split__c> schedSplitList = new List<Schedule_Split__c>();
+        for(Schedule_Split__c temp:[SELECT Id FROM Schedule_Split__c WHERE OpportunityLineItemId__c = : OleId])
         {
-            SchedSplitList.add(Temp);
+            SchedSplitList.add(temp);
         }
         
         if (SchedSplitList!=null) {

@@ -48,20 +48,12 @@
         <field>Case.Case_Age_Business_Days__c</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND 4 and (2 OR 3)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Case.YBN_Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>OWNER</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>National Performance Queue</value>
+            <value>Case.YBN_Corporate_Interaction</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER_ROLE</column>
@@ -69,13 +61,6 @@
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Performance Analyst</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Case.YBNRequestReason__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Performance Team</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -85,7 +70,7 @@
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsAcross>
-        <dateGranularity>Month</dateGranularity>
+        <dateGranularity>Day</dateGranularity>
         <field>CLOSED_DATEONLY</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
@@ -99,7 +84,7 @@
         <field>OWNER</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>All Performance YBN Requests</name>
+    <name>All Performance Corp Interaction Cases</name>
     <params>
         <name>units</name>
         <value>h</value>

@@ -70,8 +70,8 @@
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsAcross>
-        <dateGranularity>Quarter</dateGranularity>
-        <field>CREATED_DATEONLY</field>
+        <dateGranularity>Month</dateGranularity>
+        <field>CLOSED_DATEONLY</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
@@ -99,7 +99,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_CURPREVQ</interval>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>
