@@ -1,20 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>AllInternalUsers</sharedTo>
         <sharedToType>Organization</sharedToType>
     </folderShares>
-    <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>emily.garza@enspireforenterprise.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>michele.brevig@enspireforenterprise.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
+    
+    
+    
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>National_Sales_SDR</sharedTo>
@@ -89,6 +82,14 @@
         <accessLevel>View</accessLevel>
         <sharedTo>YBN_Operations</sharedTo>
         <sharedToType>Group</sharedToType>
+    </folderShares><folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>emily.garza@enspireforenterprise.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares><folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>michele.brevig@enspireforenterprise.com</sharedTo>
+        <sharedToType>User</sharedToType>
     </folderShares>
     <name>YBN Dashboards</name>
 </DashboardFolder>
