@@ -13,9 +13,6 @@
         <field>PRIORITY</field>
     </columns>
     <columns>
-        <field>CASE_NUMBER</field>
-    </columns>
-    <columns>
         <field>OWNER</field>
     </columns>
     <columns>
@@ -23,9 +20,6 @@
     </columns>
     <columns>
         <field>STATUS</field>
-    </columns>
-    <columns>
-        <field>SUBJECT</field>
     </columns>
     <columns>
         <field>CREATED_DATE</field>
@@ -60,6 +54,16 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Case.IMS_Completing_Opt2__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SUBJECT</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CASE_NUMBER</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Recent Closed Cases</name>
