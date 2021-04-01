@@ -6,7 +6,7 @@
     <name>Completed Budget Change Email</name>
     <style>none</style>
     <subject>Your Budget Change is Complete</subject>
-    <textOnly>Dear {!Case.Client_First_Name__c},
+    <textOnly>Dear {!Case.00N60000001mTXI},
 
 I want to inform you that the process to change your budget from {!Case.Old_Budget__c} to {!Case.Budget__c} is complete and we will begin spending with your new budget.
 

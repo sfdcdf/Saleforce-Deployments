@@ -915,11 +915,6 @@
             <field>YO_Status__c</field>
             <table>Account</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Check_to_send_BCF__c</field>
-            <table>Account.Cases</table>
-        </columns>
         <masterLabel>Accounts</masterLabel>
     </sections>
     <sections>
@@ -1030,17 +1025,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Client_First_Name__c</field>
-            <table>Account.Cases</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Client_ID__c</field>
-            <table>Account.Cases</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Client_Last_Name__c</field>
             <table>Account.Cases</table>
         </columns>
         <columns>
@@ -1240,11 +1225,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Max_Upsell_Outcome__c</field>
-            <table>Account.Cases</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>IMS_Rep__c</field>
             <table>Account.Cases</table>
         </columns>
@@ -1266,11 +1246,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedDate</field>
-            <table>Account.Cases</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LH_Escalation__c</field>
             <table>Account.Cases</table>
         </columns>
         <columns>
@@ -1656,11 +1631,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Manager_Approved_Changes__c</field>
-            <table>Account.Cases</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Monthly_Mgmt_Fees__c</field>
             <table>Account.Cases</table>
         </columns>
         <columns>

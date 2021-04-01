@@ -6,7 +6,7 @@
     <name>Completed Upsell Email</name>
     <style>none</style>
     <subject>Yodle - Your Upsell is Complete!</subject>
-    <textOnly>Dear {!Case.Client_First_Name__c},
+    <textOnly>Dear {!Case.00N60000001mTXI},
 
 I&apos;m excited that you&apos;ve decided to increase your AdStation budget for {!Case.Business_Name__c} so you can generate even more results with Yodle! I want to inform you that the process is complete and we will begin spending with your new budget of {!Case.Budget__c}.
 
