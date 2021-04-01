@@ -4525,7 +4525,7 @@ CreatedBy.ProfileId ="00e60000000ibuQ",
     </tasks>
     <tasks>
         <fullName>WBN_Never_Launched_Opportunity_Lost</fullName>
-        <assignedTo>emily.garza@enspireforenterprise.com</assignedTo>
+        <assignedTo>sfdc@enspireforenterprise.com</assignedTo>
         <assignedToType>user</assignedToType>
         <description>Please update the Opportunity to reflect it as a Partial or Complete Closed Lost Opportunity.</description>
         <dueDateOffset>2</dueDateOffset>
